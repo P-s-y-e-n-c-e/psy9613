@@ -52,6 +52,8 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Profitt_2005_see-the-ball-hit-the-ball.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_01_Introduction/Lectures_optionnelles/Profitt_2005_see-the-ball-hit-the-ball.pdf) *(49 Ko)*
 
 ### 📖 Semaine 2 (21 sept.) — IA : Perspectives historiques
+* **🎙️ Podcast audio d'introduction :**
+  * [La_perception_est_une_hallucination_contrôlée.m4a](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a) — Discussion audio préparatoire (*« La perception est une hallucination contrôlée »*, 43.8 Mo).
 * **Lecture suggérée :**
   * [Haugeland (1981) - Semantic Engines.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Lectures_suggerees/Haugeland%20(1981)%20-%20Semantic%20Engines.pdf) *(1.4 Mo)*
 * **Lectures optionnelles :**
