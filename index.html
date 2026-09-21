@@ -2378,7 +2378,7 @@
     <nav class="mobile-modebar" aria-label="Activités principales">
       <button id="mobBtnStudy" class="mobile-modebar-btn active" onclick="setMode('study')">📚 Étude</button>
       <button id="mobBtnCards" class="mobile-modebar-btn" onclick="setMode('flashcards')">🗂️ Cartes 3D</button>
-      <button id="mobBtnPodcast" class="mobile-modebar-btn" onclick="openPodcastModal()">🎙️ Podcast</button>
+      <button id="mobBtnPodcast" class="mobile-modebar-btn" onclick="scrollToPodcastOrOpen()">🎙️ Podcast</button>
     </nav>
 
     <!-- NAVIGATION BUREAU -->
@@ -2392,8 +2392,8 @@
           <span>🗂️</span> <span>Cartes 3D Leitner</span>
         </button>
 
-        <button class="tool-btn podcast-header-btn" onclick="openPodcastModal()" title="Studio de préparation &amp; Prompt du Podcast Audio">
-          <span>🎙️</span> <span>Studio Podcast</span>
+        <button class="tool-btn podcast-header-btn" onclick="scrollToPodcastOrOpen()" title="Studio de préparation &amp; Prompt du Podcast Audio">
+          <span>🎙️</span> <span>Podcast</span>
         </button>
 
         <div id="masteryBadge" class="mastery-counter" title="Réponses maîtrisées dans cette séance">
@@ -2597,6 +2597,72 @@
 
           <!-- PAGINATION GOOGLE MULTI-PAGES -->
           <div class="google-pagination" id="googlePagination"></div>
+
+        <!-- SECTION PODCAST GEMINI NOTEBOOK (PARITÉ PSY7010) -->
+        <div class="podcast-section-divider" id="optionalResourcesSection">
+          <span>RESSOURCE AUDIO DU COURS • GEMINI NOTEBOOK</span>
+        </div>
+
+        <div class="podcast-banner" id="podcastBanner">
+          <div class="podcast-avatar-circle" id="podcastAvatarCircle" onclick="togglePlayPodcast()" title="Lancer / Mettre en pause l'audio">
+            <span id="podcastPlayIcon">▶️</span>
+          </div>
+
+          <div class="podcast-banner-center">
+            <div class="podcast-banner-tag-row">
+              <span class="podcast-tag-badge">🎙️ Podcast de Révision • Séance 2 (Pr Pierre Poirier)</span>
+              <span class="podcast-duration-tag" id="podcastDurationBadge">Audio M4A • 22:42</span>
+            </div>
+            <h4 class="podcast-banner-title">« La perception est une hallucination contrôlée »</h4>
+            <p class="podcast-banner-desc">
+              Discussion audio préparatoire générée avec Gemini Notebook d'après le corpus officiel de la séance 2 : Haugeland (moteurs sémantiques), Newell &amp; Simon (PSSH), McClelland (modélisation), Sejnowski (LLMs) et Dreyfus (critique incarnée).
+            </p>
+
+            <!-- LECTEUR AUDIO STREAMING INTÉGRÉ -->
+            <div class="podcast-player-wrap">
+              <audio id="localPodcastAudio" preload="metadata" ontimeupdate="updateAudioProgress()" onended="onAudioEnded()">
+                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/mp4">
+                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contrôlée.m4a" type="audio/mp4">
+                <source src="La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/mp4">
+              </audio>
+
+              <div class="custom-audio-controls">
+                <button class="audio-ctrl-btn play-pause-btn" id="audioPlayPauseBtn" onclick="togglePlayPodcast()" title="Lecture / Pause">
+                  <span id="audioPlayPauseIcon">▶️</span> <span id="audioPlayPauseText">Écouter</span>
+                </button>
+
+                <div class="audio-volume-wrap desktop-only" title="Contrôle du volume">
+                  <button type="button" class="audio-mute-btn" id="audioMuteBtn" onclick="toggleAudioMute()" title="Couper le son" aria-label="Couper le son">
+                    <span id="audioVolumeIcon">🔊</span>
+                  </button>
+                  <input type="range" id="audioVolumeSlider" min="0" max="1" step="0.05" value="1" oninput="setAudioVolume(this.value)" style="width: 75px; accent-color: #d97706; cursor: pointer;" aria-label="Volume">
+                </div>
+
+                <div class="audio-timeline-wrap">
+                  <span class="audio-time-label" id="audioCurrentTime">00:00</span>
+                  <input type="range" class="audio-seek-slider" id="audioSeekSlider" value="0" min="0" max="100" step="0.1" oninput="seekAudio(this.value)">
+                  <span class="audio-time-label" id="audioDuration" title="Temps restant">22:42</span>
+                </div>
+
+                <div class="audio-speed-wrap">
+                  <button class="speed-btn" id="audioSpeedBtn" onclick="cycleAudioSpeed()" title="Vitesse de lecture">
+                    1.0×
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-banner-right">
+            <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" download="La_perception_est_une_hallucination_contrôlée.m4a" class="podcast-play-btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); margin-bottom: 4px;" title="Télécharger le fichier audio M4A">
+              ⬇️ Télécharger (.m4a)
+            </a>
+            <button class="podcast-edit-link-btn" onclick="openPodcastModal()" title="Consulter les directives du prompt">
+              ⚙️ Directives &amp; Prompt
+            </button>
+          </div>
+        </div>
+
         </div>
 
       </div>
@@ -3558,46 +3624,25 @@ This study station bridges the empirical foundations of Session 1 with the compu
        MODAL 1 : STUDIO PODCAST PÉDAGOGIQUE (PROMPT NOTEBOOKLM / LLM)
        ========================================================================= -->
   <div class="modal-overlay" id="podcastModal" style="display: none;">
-    <div class="modal-card podcast-modal-content">
+    <div class="modal-card" style="max-width: 620px; max-height: 85vh; overflow-y: auto;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-        <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 10px;">
-          <span>🎙️</span> <span>Studio Podcast Audio — Préparation Séance 2</span>
+        <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 8px;">
+          <span>🎙️</span> <span>Directives Pédagogiques — Gemini Notebook</span>
         </h2>
-        <button class="modal-close-btn" onclick="closePodcastModal()" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted);">✕</button>
+        <button class="modal-close-btn" onclick="closePodcastModal()" style="background:none; border:none; font-size:1.4rem; cursor:pointer; color:var(--text-muted);">✕</button>
       </div>
 
-      <!-- LECTEUR AUDIO STREAMING INTÉGRÉ DU PODCAST -->
-      <div style="background: var(--bg-card-alt); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-          <span style="font-weight: 700; font-size: 1.05rem; color: var(--text-main); display: flex; align-items: center; gap: 8px;">
-            <span>🎧</span> <span>Épisode Audio : <em>« La perception est une hallucination contrôlée »</em></span>
-          </span>
-          <span style="font-size: 0.8rem; background: var(--primary); color: #ffffff; padding: 3px 10px; border-radius: 6px; font-weight: 700;">Séance 2 • Pierre Poirier</span>
-        </div>
-        <audio id="localPodcastAudio" controls preload="metadata" style="width: 100%; outline: none; margin: 8px 0;">
-          <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/mp4">
-          <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contrôlée.m4a" type="audio/mp4">
-          <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/x-m4a">
-          Votre navigateur ne prend pas en charge la lecture audio HTML5.
-        </audio>
-        <div style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-          <span>📁 Fichier : <code>02_Lectures_et_Articles/.../Podcast/</code></span>
-          <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" download="PSY9613_Seance2_Podcast_La_perception_est_une_hallucination_controlee.m4a" style="color: var(--primary); font-weight: 600; text-decoration: underline;">⬇ Télécharger le fichier (.m4a)</a>
-        </div>
-      </div>
-
-      <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-main); margin-bottom: 16px;">
-        Ce prompt hautement calibré pour <strong>Google NotebookLM (Audio Overview)</strong> ou pour tout grand modèle d'IA générative (ChatGPT, Claude) permet de générer un podcast conversationnel immersif de 15 à 20 minutes entre deux chercheurs en sciences cognitives préparant activement Michel à la séance de Pierre Poirier.
+      <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+        Directives pédagogiques et structure conceptuelle ayant servi à générer le dialogue audio de la séance 2 dans <strong>Gemini Notebook</strong>.
       </p>
 
       <div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">
-        <button class="copy-btn" id="copyPodcastPromptBtn" onclick="copyPodcastPrompt()">
-          <span id="copyBtnIcon">📋</span> <span id="copyBtnText">Copier le Prompt Intégral</span>
+        <button class="tool-btn" id="copyPodcastPromptBtn" onclick="copyPodcastPrompt()" style="padding: 6px 14px; font-weight: 600; font-size: 0.82rem;">
+          <span id="copyBtnIcon">📋</span> <span id="copyBtnText">Copier le prompt</span>
         </button>
       </div>
 
-      <div class="prompt-copy-box" id="podcastPromptBox">
-PSY9613 — Séance 2 — Directives pour un script de révision sourcé
+      <div class="prompt-copy-box" id="podcastPromptBox" style="max-height: 250px; overflow-y: auto; font-size: 0.82rem; font-family: monospace; background: var(--bg-card-alt); border: 1px solid var(--border); padding: 12px; border-radius: 8px; white-space: pre-wrap;">PSY9613 — Séance 2 — Directives pour un script de révision sourcé
 
 Produire un dialogue pédagogique en français à partir des documents effectivement fournis et identifiés. Ne pas inventer une conclusion du cours, une priorité d’examen ou une citation. Les documents de l’enseignant priment pour le périmètre; les articles primaires servent à vérifier ce que leurs auteurs soutiennent. Signaler les compléments non assignés.
 
@@ -3622,23 +3667,14 @@ Garde-fous:
 - Aucun propos personnel tiré des notes de préparation du dépôt.
 - Si une source manque, omettre la proposition ou la signaler comme question non résolue dans le dossier, sans en inventer une justification.
 
-Terminer par quelques distinctions à restituer, sans prédire les questions de l’enseignant. L’audio final doit être contrôlé contre la transcription validée, y compris les négations, noms et dates.
-      </div>
+Terminer par quelques distinctions à restituer, sans prédire les questions de l’enseignant. L’audio final doit être contrôlé contre la transcription validée, y compris les négations, noms et dates.</div>
 
-      <div style="margin-top: 20px; padding: 14px 18px; background: var(--bg-card-alt); border-radius: 10px; border-left: 4px solid var(--accent);">
-        <h4 style="margin: 0 0 6px 0; font-size: 0.95rem; color: var(--accent);">💡 Comment l'utiliser avec NotebookLM :</h4>
-        <ol style="margin: 0; padding-left: 20px; font-size: 0.88rem; line-height: 1.5; color: var(--text-muted);">
-          <li>Dépose les PDFs de la Séance 2 (Haugeland, Newell &amp; Simon, McClelland, Sejnowski) dans ton carnet NotebookLM.</li>
-          <li>Clique sur <em>« Audio Overview » (Personnaliser / Customize)</em>.</li>
-          <li>Colle ce prompt dans la boîte de directives personnalisées et génère le podcast !</li>
-        </ol>
+      <div style="margin-top: 16px; display: flex; justify-content: flex-end;">
+        <button class="secondary-btn" onclick="closePodcastModal()" style="padding: 8px 18px; font-size: 0.85rem;">Fermer</button>
       </div>
     </div>
   </div>
 
-  <!-- =========================================================================
-       MODAL 2 : OPTIONS & PRÉFÉRENCES
-       ========================================================================= -->
   <div class="modal-overlay" id="optionsModal" style="display: none;">
     <div class="modal-card" style="max-width: 500px;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
@@ -6540,6 +6576,160 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       initKeyboardShortcuts();
       updateFlashcardStats();
     });
+
+  
+    // =========================================================================
+    // GESTION DU LECTEUR AUDIO DU PODCAST (PARITÉ PSY7010)
+    // =========================================================================
+    const audioSpeeds = [1.0, 1.25, 1.5, 1.75, 2.0];
+    let currentSpeedIdx = 0;
+    let lastAudioVolume = 1.0;
+
+    function getAudioEl() {
+      return document.getElementById('localPodcastAudio');
+    }
+
+    function scrollToPodcastOrOpen() {
+      if (currentMode !== 'study') {
+        setMode('study');
+      }
+      const banner = document.getElementById('podcastBanner');
+      if (banner) {
+        banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        banner.classList.add('pulse-highlight');
+        setTimeout(() => banner.classList.remove('pulse-highlight'), 2200);
+      }
+    }
+
+    function togglePlayPodcast() {
+      const audio = getAudioEl();
+      if (!audio) return;
+      const playBtnText = document.getElementById('audioPlayPauseText');
+      const playBtnIcon = document.getElementById('audioPlayPauseIcon');
+      const avatarIcon = document.getElementById('podcastPlayIcon');
+
+      if (audio.paused) {
+        audio.play().then(() => {
+          if (playBtnText) playBtnText.textContent = 'Pause';
+          if (playBtnIcon) playBtnIcon.textContent = '⏸️';
+          if (avatarIcon) avatarIcon.textContent = '⏸️';
+          document.getElementById('podcastBanner')?.classList.add('playing');
+        }).catch(err => {
+          console.warn("Lecture audio bloquée ou attente du tampon:", err);
+          if (playBtnText) playBtnText.textContent = 'Écouter';
+          if (playBtnIcon) playBtnIcon.textContent = '▶️';
+          if (avatarIcon) avatarIcon.textContent = '▶️';
+          document.getElementById('podcastBanner')?.classList.remove('playing');
+        });
+      } else {
+        audio.pause();
+        if (playBtnText) playBtnText.textContent = 'Écouter';
+        if (playBtnIcon) playBtnIcon.textContent = '▶️';
+        if (avatarIcon) avatarIcon.textContent = '▶️';
+        document.getElementById('podcastBanner')?.classList.remove('playing');
+      }
+    }
+
+    function formatAudioSeconds(sec) {
+      if (isNaN(sec) || sec < 0) return '00:00';
+      const totalSec = Math.floor(sec);
+      const h = Math.floor(totalSec / 3600);
+      const m = Math.floor((totalSec % 3600) / 60);
+      const s = totalSec % 60;
+      if (h > 0) {
+        return h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      }
+      return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    function updateAudioProgress() {
+      const audio = getAudioEl();
+      if (!audio) return;
+      const curTime = document.getElementById('audioCurrentTime');
+      const durationLabel = document.getElementById('audioDuration');
+      const slider = document.getElementById('audioSeekSlider');
+
+      if (audio.duration && !isNaN(audio.duration)) {
+        if (curTime) curTime.textContent = formatAudioSeconds(audio.currentTime);
+        const remaining = Math.max(0, audio.duration - audio.currentTime);
+        if (durationLabel) {
+          durationLabel.textContent = formatAudioSeconds(remaining);
+          durationLabel.title = "Temps restant : " + formatAudioSeconds(remaining);
+        }
+        if (slider) slider.value = (audio.currentTime / audio.duration) * 100;
+      }
+    }
+
+    function seekAudio(percent) {
+      const audio = getAudioEl();
+      if (!audio || !audio.duration) return;
+      audio.currentTime = (percent / 100) * audio.duration;
+      updateAudioProgress();
+    }
+
+    function cycleAudioSpeed() {
+      const audio = getAudioEl();
+      if (!audio) return;
+      currentSpeedIdx = (currentSpeedIdx + 1) % audioSpeeds.length;
+      const speed = audioSpeeds[currentSpeedIdx];
+      audio.playbackRate = speed;
+      const speedBtn = document.getElementById('audioSpeedBtn');
+      if (speedBtn) speedBtn.textContent = speed + '×';
+    }
+
+    function onAudioEnded() {
+      const playBtnText = document.getElementById('audioPlayPauseText');
+      const playBtnIcon = document.getElementById('audioPlayPauseIcon');
+      const avatarIcon = document.getElementById('podcastPlayIcon');
+      const durationLabel = document.getElementById('audioDuration');
+      const slider = document.getElementById('audioSeekSlider');
+      if (playBtnText) playBtnText.textContent = 'Écouter';
+      if (playBtnIcon) playBtnIcon.textContent = '▶️';
+      if (avatarIcon) avatarIcon.textContent = '▶️';
+      if (durationLabel) durationLabel.textContent = '00:00';
+      if (slider) slider.value = 100;
+      document.getElementById('podcastBanner')?.classList.remove('playing');
+    }
+
+    function toggleAudioMute() {
+      const audio = getAudioEl();
+      if (!audio) return;
+      audio.muted = !audio.muted;
+      updateVolumeUI(audio.volume, audio.muted);
+    }
+
+    function setAudioVolume(val) {
+      const audio = getAudioEl();
+      const num = Math.max(0, Math.min(1, parseFloat(val) || 0));
+      if (num > 0) lastAudioVolume = num;
+      if (audio) {
+        audio.volume = num;
+        audio.muted = (num === 0);
+        updateVolumeUI(num, audio.muted);
+      }
+    }
+
+    function updateVolumeUI(volume, isMuted) {
+      const volIcon = document.getElementById('audioVolumeIcon');
+      const muteBtn = document.getElementById('audioMuteBtn');
+      const slider = document.getElementById('audioVolumeSlider');
+
+      if (slider) slider.value = isMuted ? 0 : volume;
+
+      if (isMuted || volume === 0) {
+        if (volIcon) volIcon.textContent = '🔇';
+        if (muteBtn) {
+          muteBtn.title = "Activer le son";
+          muteBtn.setAttribute('aria-label', "Activer le son");
+        }
+      } else {
+        if (volIcon) volIcon.textContent = volume < 0.5 ? '🔉' : '🔊';
+        if (muteBtn) {
+          muteBtn.title = "Couper le son";
+          muteBtn.setAttribute('aria-label', "Couper le son");
+        }
+      }
+    }
 
   </script>
 </body>
