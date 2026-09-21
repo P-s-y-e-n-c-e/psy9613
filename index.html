@@ -791,7 +791,7 @@
       align-items: center;
       gap: 8px;
       flex-shrink: 0;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; overflow-x: auto;
     }
     .search-input {
       flex: 1;
@@ -1305,7 +1305,7 @@
       align-items: center;
       gap: 10px;
       margin: 20px 0 14px 0;
-      color: #b45309;
+      color: var(--warning);
       font-size: 0.72rem;
       font-weight: 800;
       letter-spacing: 0.05em;
@@ -1368,7 +1368,7 @@
     .podcast-tag-badge {
       font-size: 0.72rem;
       font-weight: 800;
-      color: #b45309;
+      color: var(--warning);
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
@@ -1436,7 +1436,7 @@
       background: transparent;
       border: 1px solid #d97706;
       border-radius: 6px;
-      color: #b45309;
+      color: var(--warning);
       cursor: pointer;
       text-align: center;
     }
@@ -1522,7 +1522,7 @@
       border-radius: 6px;
       border: 1px solid #d97706;
       background: transparent;
-      color: #b45309;
+      color: var(--warning);
       font-size: 0.72rem;
       font-weight: 800;
       cursor: pointer;
@@ -2412,6 +2412,91 @@
     .page-num-btn.correct, .pagination-num-btn.has-correct {
       border-bottom: 2px solid #22c55e !important;
     }
+
+    .reader-search-bar {
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      white-space: nowrap !important;
+    }
+    .reader-search-bar .search-input {
+      flex: 1 1 140px;
+      min-width: 120px;
+    }
+    .reader-search-bar > * {
+      flex-shrink: 0;
+    }
+    .reader-search-bar .toggle-text-btn {
+      white-space: nowrap;
+    }
+    /* Masquage flou du texte du lecteur (anti-divulgâchage) */
+    .reader-viewport.masked-text .doc-para,
+    .reader-viewport.masked-text .doc-list,
+    .reader-viewport.masked-text .academic-summary-banner,
+    .reader-viewport.masked-text p,
+    .reader-viewport.masked-text li,
+    .reader-viewport.masked-text blockquote,
+    .reader-viewport.masked-text .source-anchor-target {
+      filter: blur(6px) !important;
+      user-select: none !important;
+      pointer-events: none !important;
+      transition: filter 0.2s ease;
+    }
+    .reader-viewport.text-hidden .doc-para,
+    .reader-viewport.text-hidden .doc-list,
+    .reader-viewport.text-hidden .academic-summary-banner,
+    .reader-viewport.text-hidden p,
+    .reader-viewport.text-hidden li,
+    .reader-viewport.text-hidden blockquote,
+    .reader-viewport.text-hidden .source-anchor-target {
+      filter: blur(6px) !important;
+      user-select: none !important;
+      pointer-events: none !important;
+      transition: filter 0.2s ease;
+    }
+    /* Modales: support pour modal-overlay et modal-card */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      padding: 16px;
+    }
+    .modal-card {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
+    /* Mobile modebar grid 3 colonnes */
+    @media (max-width: 48rem) {
+      .mobile-modebar {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      }
+    }
+    /* Surbrillance de recherche */
+    mark.search-highlight {
+      background: #fef08a;
+      color: #713f12;
+      border-radius: 3px;
+      padding: 0 2px;
+    }
+    body.dark-mode mark.search-highlight {
+      background: rgba(245, 158, 11, 0.35);
+      color: #fde68a;
+    }
+
 </style>
 </head>
 <body>
@@ -2629,7 +2714,7 @@
             <span class="q-counter-text" id="qProgressText">Question 1 sur 30 • 1 point</span>
           </div>
 
-          <div id="qReserveBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; color: #b45309; line-height: 1.5;"></div>
+          <div id="qReserveBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; color: var(--warning); line-height: 1.5;"></div>
           <div class="q-context-box" id="qContextText"></div>
           <h2 class="q-title" id="qQuestionTitle"></h2>
 
@@ -2657,18 +2742,24 @@
                 <span>📍</span> <span>Localiser et surligner l'extrait dans le texte</span>
               </button>
               <div class="fb-explanation" id="fbDocExplanation"></div>
-              <div class="fb-exam-tip" id="fbExamTipText"></div>
+              <div class="fb-tip-box" id="fbExamTipText"></div>
             </div>
           </div>
 
           <!-- BARRE DE CONTRÔLES INFÉRIEURE -->
           <div class="question-nav-row" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px;">
-            <button class="secondary-btn nav-btn" id="prevQuestionBtn" onclick="navigateQuestion(-1)" title="Question précédente" aria-label="Question précédente">
-              ◀ Question précédente
+            <button class="secondary-btn nav-btn" id="prevQuestionBtn" onclick="prevQuestion()" title="Question précédente" aria-label="Question précédente">
+              ◀ <span class="desktop-only-text">Précédente</span>
             </button>
             <div class="google-pagination" id="googlePagination"></div>
-            <button class="primary-btn nav-btn" id="nextQuestionBtn" onclick="navigateQuestion(1)" title="Question suivante" aria-label="Question suivante">
-              Question suivante ▶
+            <!-- SÉLECTEUR MOBILE COMPACT (PARITÉ PSY7010) -->
+            <div class="mobile-pagination mobile-only" id="mobilePagination">
+              <button class="secondary-btn nav-btn prev-btn" id="mobPrevBtn" onclick="prevQuestion()" aria-label="Question précédente" title="Question précédente">◀</button>
+              <select id="mobileQuestionSelect" class="mobile-question-select" aria-label="Choisir une question" onchange="renderQuestion(parseInt(this.value, 10))"></select>
+              <button class="secondary-btn nav-btn next-btn" id="mobNextBtn" onclick="nextQuestion()" aria-label="Question suivante" title="Question suivante">▶</button>
+            </div>
+            <button class="primary-btn nav-btn" id="nextQuestionBtn" onclick="nextQuestion()" title="Question suivante" aria-label="Question suivante">
+              <span class="desktop-only-text">Suivante</span> ▶
             </button>
           </div>
 
@@ -3170,19 +3261,24 @@ Il est établi depuis Kurt Gödel (1931) qu'aucun système formel cohérent et a
 <mark id="anchor_q7_fr" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7 (Français)">L'Hypothèse du Système de Symboles Physiques (PSSH) : Un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale.</mark>
 </p>
 <p class="doc-para">
-<mark id="anchor_q8_fr" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8 (Français)">Un système de symboles physiques consiste en un ensemble d'entités, appelées symboles, qui sont des motifs physiques pouvant apparaître comme composantes d'un autre type d'entité appelé expression (ou structure de symboles)... Un système de symboles contient également une collection de processus opérant sur les expressions pour produire d'autres expressions : processus de création, modification, copie et destruction.</mark>
+<mark class="source-anchor-target" title="Extrait PSSH">Un système de symboles physiques consiste en un ensemble d'entités, appelées symboles, qui sont des motifs physiques pouvant apparaître comme composantes d'un autre type d'entité appelé expression (ou structure de symboles)... Un système de symboles contient également une collection de processus opérant sur les expressions pour produire d'autres expressions : processus de création, modification, copie et destruction.</mark>
 </p>
 <p class="doc-para">
-<mark id="anchor_q9_fr" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9 (Français)">Par « nécessaire », nous entendons que tout système manifestant une intelligence générale s'avérera, à l'analyse, être un système de symboles physiques.</mark> Cela affirme que la pensée humaine est une manipulation de symboles dans un cerveau biologique physique.
+<mark id="anchor_q8_fr" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8 : Condition Nécessaire (Français)">Par « nécessaire », nous entendons que tout système manifestant une intelligence générale s'avérera, à l'analyse, être un système de symboles physiques.</mark> Cela affirme que la pensée humaine est une manipulation de symboles dans un cerveau biologique physique.
 </p>
 <p class="doc-para">
-<mark id="anchor_q10_fr" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10 (Français)">Par « suffisant », nous entendons que tout système de symboles physiques de taille adéquate peut être organisé pour manifester une intelligence générale.</mark> Cela fonde la certitude théorique que l'intelligence artificielle est réalisable sur ordinateur.
+<mark id="anchor_q9_fr" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9 : Condition Suffisante (Français)">Par « suffisant », nous entendons que tout système de symboles physiques de taille adéquate peut être organisé pour manifester une intelligence générale.</mark> Cela fonde la certitude théorique que l'intelligence artificielle est réalisable sur ordinateur.
 </p>
 
 <div class="doc-page-marker" id="page_newell_3_fr"><span class="page-badge">📄 Page 120</span> <span class="page-meta">Newell & Simon (1975) - Recherche Heuristique</span></div>
+
+<p class="doc-para">
+  <mark id="anchor_q12_fr" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12 : Désignation et Interprétation (Français)"><strong>Désignation et Interprétation :</strong> Un symbole ou une expression désigne une entité si le système peut soit affecter l'objet lui-même, soit se comporter en fonction de lui. L'interprétation permet au système d'exécuter l'opération désignée si l'expression représente un processus exécutable.</mark>
+</p>
+
 <h3 class="doc-subheading">3. L'Hypothèse de Recherche Heuristique</h3>
 <p class="doc-para">
-<mark id="anchor_q12_fr" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12 (Français)">L'Hypothèse de Recherche Heuristique : Les solutions aux problèmes sont représentées sous forme de structures de symboles. Un système de symboles physiques exerce son intelligence dans la résolution de problèmes par la recherche - c'est-à-dire en générant et en modifiant progressivement des structures de symboles jusqu'à ce qu'une structure solution soit découverte.</mark>
+<mark id="anchor_q10_fr" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10 : Recherche Heuristique (Français)">L'Hypothèse de Recherche Heuristique : Les solutions aux problèmes sont représentées sous forme de structures de symboles. Un système de symboles physiques exerce son intelligence dans la résolution de problèmes par la recherche - c'est-à-dire en générant et en modifiant progressivement des structures de symboles jusqu'à ce qu'une structure solution soit découverte.</mark>
 </p>
 <p class="doc-para">
 Face à l'explosion combinatoire des espaces de recherche, l'intelligence réside précisément dans l'usage d'heuristiques pour élaguer l'arbre de recherche et guider le système vers des solutions plausibles.
@@ -3190,7 +3286,7 @@ Face à l'explosion combinatoire des espaces de recherche, l'intelligence résid
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_newell_en" style="display: none;">
+<div class="reader-viewport" id="viewport_doc_newell_en" style="display: none;">
 <h2 class="doc-art-title">Allen Newell & Herbert A. Simon (1975) - Computer Science as Empirical Inquiry: Symbols and Search</h2>
 <ul class="doc-list">
   <li><strong>Source publication:</strong> <em>Communications of the ACM</em>, 19(3), March 1976, pp. 113-126 (ACM Turing Award Lecture, 1975).</li>
@@ -3223,19 +3319,24 @@ Face à l'explosion combinatoire des espaces de recherche, l'intelligence résid
 <mark id="anchor_q7" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7">The Physical Symbol System Hypothesis: A physical symbol system has the necessary and sufficient means for general intelligent action.</mark>
 </p>
 <p class="doc-para">
-<mark id="anchor_q8" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8">A physical symbol system consists of a set of entities, called symbols, which are physical patterns that can occur as components of another type of entity called an expression (or symbol structure)... A symbol system also contains a collection of processes that operate on expressions to produce other expressions: processes of creation, modification, copying and destruction.</mark>
+<mark class="source-anchor-target" title="PSSH definition">A physical symbol system consists of a set of entities, called symbols, which are physical patterns that can occur as components of another type of entity called an expression (or symbol structure)... A symbol system also contains a collection of processes that operate on expressions to produce other expressions: processes of creation, modification, copying and destruction.</mark>
 </p>
 <p class="doc-para">
-<mark id="anchor_q9" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9">By 'necessary' we mean that any system that exhibits general intelligence will prove upon analysis to be a physical symbol system.</mark> This asserts that human thinking is symbol manipulation in a physical biological brain.
+<mark id="anchor_q8" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8 : Necessary Condition">By 'necessary' we mean that any system that exhibits general intelligence will prove upon analysis to be a physical symbol system.</mark> This asserts that human thinking is symbol manipulation in a physical biological brain.
 </p>
 <p class="doc-para">
-<mark id="anchor_q10" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10">By 'sufficient' we mean that any physical symbol system of sufficient size can be organized further to exhibit general intelligence.</mark> This establishes the theoretical claim that artificial intelligence is achievable in non-biological computers.
+<mark id="anchor_q9" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9 : Sufficient Condition">By 'sufficient' we mean that any physical symbol system of sufficient size can be organized further to exhibit general intelligence.</mark> This establishes the theoretical claim that artificial intelligence is achievable in non-biological computers.
 </p>
 
 <div class="doc-page-marker" id="page_newell_3"><span class="page-badge">📄 Page 120</span> <span class="page-meta">Newell & Simon (1975) - Heuristic Search</span></div>
+
+<p class="doc-para">
+  <mark id="anchor_q12" class="source-anchor-target" data-qid="12" title="Official excerpt for Question 12: Designation and Interpretation"><strong>Designation and Interpretation:</strong> An expression designates an object if, given the expression, the system can either affect the object itself or behave as contingent upon it. Interpretation means that if the expression designates a process, the system can carry out that process.</mark>
+</p>
+
 <h3 class="doc-subheading">3. The Heuristic Search Hypothesis</h3>
 <p class="doc-para">
-<mark id="anchor_q12" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12">The Heuristic Search Hypothesis: The solutions to problems are represented as symbol structures. A physical symbol system exercises its intelligence in problem solving by search-that is, by generating and progressively modifying symbol structures until a solution structure is found.</mark>
+<mark id="anchor_q10" class="source-anchor-target" data-qid="10" title="Official excerpt for Question 10: Heuristic Search">The Heuristic Search Hypothesis: The solutions to problems are represented as symbol structures. A physical symbol system exercises its intelligence in problem solving by search-that is, by generating and progressively modifying symbol structures until a solution structure is found.</mark>
 </p>
 <p class="doc-para">
 Because search spaces in real-world domains grow exponentially, brute-force exhaustive search is physically impossible. Intelligence consists precisely in using domain heuristics to prune the search tree, guiding the search directly toward plausible solution states.
@@ -3293,7 +3394,7 @@ Because search spaces in real-world domains grow exponentially, brute-force exha
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_mcclelland_en" style="display: none;">
+<div class="reader-viewport" id="viewport_doc_mcclelland_en" style="display: none;">
 <h2 class="doc-art-title">James L. McClelland (2009) - The Place of Modelling in Cognitive Science</h2>
 <ul class="doc-list">
   <li><strong>Source publication:</strong> <em>Topics in Cognitive Science</em>, 1(1), 2009, pp. 11-38.</li>
@@ -3393,7 +3494,7 @@ Because search spaces in real-world domains grow exponentially, brute-force exha
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_sejnowski_en" style="display: none;">
+<div class="reader-viewport" id="viewport_doc_sejnowski_en" style="display: none;">
 <h2 class="doc-art-title">Terrence J. Sejnowski (2023) - Large Language Models and the Reverse Turing Test</h2>
 <ul class="doc-list">
   <li><strong>Source publication:</strong> <em>Neural Computation</em>, 35(3), 2023, pp. 309-342.</li>
@@ -3502,7 +3603,7 @@ Dans sa critique magistrale, Hubert Dreyfus démonte méthodiquement les fondati
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_dreyfus_en" style="display: none;">
+<div class="reader-viewport" id="viewport_doc_dreyfus_en" style="display: none;">
 <h2 class="doc-art-title">Hubert Dreyfus (1972/1992) & The Embodied Counter-Critique</h2>
 <ul class="doc-list">
   <li><strong>Philosophical sources:</strong> Hubert Dreyfus, <em>What Computers Still Can't Do</em> (MIT Press, 1972/1992); John Searle (1980); Stevan Harnad (1990); James J. Gibson (1979).</li>
@@ -3587,7 +3688,7 @@ Cette station d'étude interactive assure la passerelle conceptuelle entre le so
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_context_en" style="display: none;">
+<div class="reader-viewport" id="viewport_doc_context_en" style="display: none;">
 <h2 class="doc-art-title">Pedagogical Continuity & Course Context - PSY9613</h2>
 <ul class="doc-list">
   <li><strong>Course:</strong> PSY9613 - Perception, cognition et intelligence artificielle (UQAM, Fall 2026).</li>
@@ -6047,6 +6148,14 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       renderQuestion(currentQuestionIndex);
       highlightAndScrollSource(q.id, true, true);
     }
+
+    
+    // Aliases globaux de navigation et API
+    function prevQuestion() { navigateQuestion(-1); }
+    function nextQuestion() { navigateQuestion(1); }
+    const flipCard = () => flipCurrentCard();
+    const rateCard = (r) => rateFlashcard(r);
+    const filterFlashcardDeck = (d) => switchFlashcardDeck(d);
 
     function navigateQuestion(dir) {
       renderQuestion(currentQuestionIndex + dir);
