@@ -2367,7 +2367,7 @@
         <div class="quiz-sub-date">Séance 2 : IA — Perspectives historiques • Pr Pierre Poirier</div>
       </div>
       <div class="mobile-header-tools mobile-only" style="display: flex; align-items: center; gap: 8px;">
-        <div id="mobMasteryBadge" class="mastery-counter" style="padding: 4px 8px; font-size: 0.78rem;">🏆 0/29</div>
+        <div id="mobMasteryBadge" class="mastery-counter" style="padding: 4px 8px; font-size: 0.78rem;">🏆 0/30</div>
         <button class="tool-btn" onclick="openOptionsModal()" style="padding: 5px 10px; font-size: 0.8rem;" title="Options">⚙️</button>
       </div>
     </div>
@@ -2375,7 +2375,7 @@
     <!-- BARRE DES MODES MOBILES -->
     <nav class="mobile-modebar" aria-label="Activités principales">
       <button id="mobBtnStudy" class="mobile-modebar-btn active" onclick="setMode('study')">📚 Étude</button>
-      <button id="mobBtnCards" class="mobile-modebar-btn" onclick="setMode('flashcards')">🗂️ Cartes 3D</button>
+      <button id="mobBtnCards" class="mobile-modebar-btn" onclick="setMode('flashcards')">🗂️ Flashcards</button>
       <button id="mobBtnPodcast" class="mobile-modebar-btn" onclick="scrollToPodcastOrOpen()">🎙️ Podcast</button>
     </nav>
 
@@ -2386,8 +2386,8 @@
           📚 Mode Étude &amp; Analyse
         </button>
 
-        <button id="headerFlashcardBtn" class="tool-btn flashcard-header-btn" onclick="setMode('flashcards')" title="Entraînement Flashcards 3D Leitner">
-          <span>🗂️</span> <span>Cartes 3D Leitner</span>
+        <button id="headerFlashcardBtn" class="tool-btn flashcard-header-btn" onclick="setMode('flashcards')" title="Mode Flashcards">
+          <span>🗂️</span> <span>Flashcards</span>
         </button>
 
         <button class="tool-btn podcast-header-btn" onclick="scrollToPodcastOrOpen()" title="Studio de préparation &amp; Prompt du Podcast Audio">
@@ -2395,7 +2395,7 @@
         </button>
 
         <div id="masteryBadge" class="mastery-counter" title="Réponses maîtrisées dans cette séance">
-          🏆 0 / 29 (0%)
+          🏆 0 / 30 (0%)
         </div>
       </div>
 
@@ -2434,7 +2434,7 @@
             <span style="font-size: 2.2rem;">🧠</span>
           </div>
           <div class="mascot-text" id="mascotText">
-            <strong>Séance 2 (Pr Pierre Poirier) :</strong> 30 questions d'analyse critique approfondie, fiches 3D Leitner, studio podcast et textes intégraux en versions anglaise et française.
+            <strong>Séance 2 (Pr Pierre Poirier) :</strong> 30 questions d'analyse critique approfondie, flashcards, studio podcast et textes intégraux en versions anglaise et française.
           </div>
         </div>
 
@@ -2457,11 +2457,11 @@
         <div class="flashcard-container" id="flashcardContainer" style="display: none;">
           <div class="fc-top-bar">
             <button class="secondary-btn fc-return-study-btn" onclick="setMode('study')" title="Revenir aux questions" style="margin-right: 8px; font-weight: 700; font-size: 0.78rem;">
-              📚 Revenir au questionnaire
+              📚 Revenir aux questions
             </button>
             <div class="fc-meta-info">
               <span class="fc-badge" id="fcDocBadge">🔴 Corpus Séance 2</span>
-              <span class="fc-counter" id="fcCounterText">Carte 1 sur 30</span>
+              <span class="fc-counter" id="fcCounterText">Flashcard 1 sur 30</span>
             </div>
             <div class="fc-stats-pills">
               <span class="fc-stat-chip chip-mastered" title="Cartes maîtrisées">🟢 <span id="fcCountMastered">0</span></span>
@@ -2473,7 +2473,7 @@
           <!-- SÉLECTEUR DE PAQUET ADAPTATIF -->
           <div class="fc-deck-selector">
             <button class="fc-deck-btn active" id="fcDeckAllBtn" onclick="switchFlashcardDeck('all')">
-              🎯 Toutes les fiches (30)
+              🎯 Toutes les flashcards (30)
             </button>
             <button class="fc-deck-btn" id="fcDeckHardBtn" onclick="switchFlashcardDeck('hard')">
               🔥 Difficultés prioritaires (<span id="fcHardCountBadge">0</span>)
@@ -2494,7 +2494,7 @@
                   <h3 class="fc-question-text" id="fcQuestionText"></h3>
                 </div>
                 <div class="fc-front-footer">
-                  <span class="fc-hint-text">💡 Active ta mémoire sémantique avant de retourner la fiche</span>
+                  <span class="fc-hint-text">💡 Active ta mémoire sémantique avant de retourner la flashcard</span>
                 </div>
               </div>
 
@@ -3068,107 +3068,186 @@ Il est établi depuis Kurt Gödel (1931) qu'aucun système formel cohérent et a
 
       <!-- 2. NEWELL & SIMON (1975) -->
       <div class="reader-viewport" id="viewport_doc_newell_fr" style="display: none;">
-<h2 class="doc-art-title">Allen Newell & Herbert A. Simon (1975) — L'Informatique comme Recherche Empirique : Symboles et Recherche</h2>
+<h2 class="doc-art-title">Allen Newell &amp; Herbert A. Simon (1975) — L'Informatique comme Recherche Empirique : Symboles et Recherche</h2>
 <ul class="doc-list">
-  <li><strong>Publication originale :</strong> <em>Communications of the ACM</em>, 19(3), mars 1976, pp. 113–126 (Conférence du Prix Turing 1975).</li>
-  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — Le manifeste fondateur de l'IA symbolique.</li>
-  <li><strong>Traduction :</strong> Traduction académique intégrale en français.</li>
+  <li><strong>Publication originale :</strong> <em>Communications of the ACM</em>, vol. 19, no. 3, mars 1976, pp. 113–126 (Conférence du Prix Turing 1975 de l'ACM).</li>
+  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — Le manifeste fondateur de l'IA symbolique classique (GOFAI).</li>
+  <li><strong>Traduction intégrale française :</strong> Traduction académique intégrale et annotée pour la maîtrise en psychologie cognitive (UQAM).</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés — Newell & Simon (1975) — Computer Science as Empirical Inquiry (PSSH)
+    📋 Synthèse Fondatrice — Allen Newell &amp; Herbert A. Simon (1975) — Prix Turing
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Thèse centrale :</strong> L'informatique est une discipline empirique d'expérimentation où chaque machine et chaque programme constitue une hypothèse testée. Au cœur de l'intelligence réside l'Hypothèse du Système de Symboles Physiques (PSSH) : un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale.
+    <strong>Thèse centrale :</strong> L'informatique est une science empirique exploratoire. L'intelligence générale requiert et nécessite un système physique capable de créer, modifier et interpréter des structures de symboles désignatifs (PSSH). La résolution de problèmes consiste en une recherche heuristique au sein d'espaces d'états symboliques.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>L'informatique comme science empirique :</strong> Les ordinateurs ne sont pas de simples outils de calcul mathématique, mais des laboratoires expérimentaux d'étude des processus de pensée.</li><li><strong>L'hypothèse PSSH :</strong> Nécessité (tout esprit intelligent est un système de symboles physiques) et suffisance (tout système physique manipulant des symboles de taille adéquate peut manifester une intelligence générale).</li><li><strong>Symboles physiques & désignation :</strong> Les symboles sont des motifs matériels identifiables capables de désigner des objets externes et d'être combinés en structures expressives.</li><li><strong>L'Hypothèse de Recherche Heuristique :</strong> Résoudre un problème, c'est explorer sélectivement un espace de recherche symbolique immense guidé par des heuristiques pour éviter l'explosion combinatoire.</li>
+    <li><strong>La science empirique des ordinateurs :</strong> Chaque nouvelle classe de programmes ou d'architectures informatiques constitue une expérience empirique testant une hypothèse sur la nature du traitement de l'information.</li>
+    <li><strong>Les lois de structure qualitative :</strong> Les grandes révolutions scientifiques reposent sur des lois de structure qualitative (théorie cellulaire en biologie, théorie atomique en chimie, tectonique des plaques en géologie). L'Hypothèse du Système de Symboles Physiques est la loi qualitative fondamentale de la cognition.</li>
+    <li><strong>L'Hypothèse du Système de Symboles Physiques (PSSH) :</strong> Un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale.</li>
+    <li><strong>Nécessité et suffisance :</strong> Nécessaire signifie que tout système intelligent (humain ou extraterrestre) est un PSS ; suffisant signifie que toute machine PSS adéquate peut manifester une intelligence générale sans ingrédient magique.</li>
+    <li><strong>L'Hypothèse de Recherche Heuristique :</strong> Résoudre un problème, c'est rechercher un chemin dans un espace d'états généré par des opérateurs symboliques, guidé par des heuristiques sélectives évitant l'explosion combinatoire.</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_newell_1_fr"><span class="page-badge">📄 Page 113</span> <span class="page-meta">Newell & Simon (1975) — Prix Turing</span></div>
+<div class="doc-page-marker" id="page_newell_1_fr"><span class="page-badge">📄 Section 1</span> <span class="page-meta">Newell &amp; Simon (1975) — L'Informatique comme Science Empirique</span></div>
 <h3 class="doc-subheading">1. L'Informatique comme Recherche Empirique</h3>
 <p class="doc-para">
 <mark id="anchor_q11_fr" class="source-anchor-target" data-qid="11" title="Extrait officiel pour la Question 11 (Français)">L'informatique est une discipline empirique. Nous l'aurions qualifiée de science expérimentale, mais comme l'astronomie, l'économie et la géologie, certaines de ses formes uniques d'observation et d'expérience ne cadrent pas avec le stéréotype étroit de la méthode expérimentale en laboratoire. Il n'en demeure pas moins que ce sont des expériences. Chaque nouvelle machine construite est une expérience. Construire effectivement la machine pose une question à la nature ; et nous écoutons la réponse en observant la machine en fonctionnement et en l'analysant par tous les moyens de mesure disponibles. Chaque nouveau programme écrit est une expérience. Il pose une question sur la nature des systèmes computationnels et sur la résolution humaine de problèmes.</mark>
+L'informatique ne se réduit pas à une branche des mathématiques déductives ni à une simple branche d'ingénierie appliquée. Elle étudie une classe de phénomènes naturels et artificiels qui se déploient dans le monde physique : les ordinateurs et les processus de traitement de l'information.
+</p>
+<p class="doc-para">
+Chaque nouvel ordinateur construit est une expérience de laboratoire. Chaque nouveau programme exécuté est une expérience scientifique. Nous concevons des programmes pour explorer des comportements complexes dont nous ne pouvons déduire les conséquences analytiquement. L'exécution d'un programme informatique teste la validité d'une hypothèse formulée sur la nature de la mémoire, de l'organisation séquentielle ou de la recherche dans un espace d'états. L'informatique avance donc par la méthode expérimentale : formulation d'hypothèses théoriques, construction d'artéfacts logiciels, observation empirique des résultats et révision conceptuelle.
 </p>
 
-<div class="doc-page-marker" id="page_newell_2_fr"><span class="page-badge">📄 Page 116</span> <span class="page-meta">Newell & Simon (1975) — Systèmes de Symboles Physiques</span></div>
-<h3 class="doc-subheading">2. L'Hypothèse du Système de Symboles Physiques (PSSH)</h3>
+<div class="doc-page-marker" id="page_newell_2_fr"><span class="page-badge">📄 Section 2</span> <span class="page-meta">Newell &amp; Simon (1975) — Les Lois de Structure Qualitative</span></div>
+<h3 class="doc-subheading">2. Les Lois de Structure Qualitative dans les Sciences</h3>
 <p class="doc-para">
-<mark id="anchor_q7_fr" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7 (Français)">L'Hypothèse du Système de Symboles Physiques (PSSH) : Un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale.</mark>
+Toute discipline scientifique majeure progresse en découvrant ce que nous appelons des <em>lois de structure qualitative</em>. Ces lois ne sont pas des équations différentielles quantitatives fines, mais de grands principes d'organisation qui fixent le cadre paradigmatique dans lequel opère toute la science :
 </p>
+<ul class="doc-list">
+  <li>En astronomie : le modèle héliocentrique copernicien ordonnant les orbites planétaires ;</li>
+  <li>En biologie : la théorie cellulaire de Schleiden et Schwann (tout organisme vivant est un assemblage de cellules) et la théorie microbienne des maladies de Pasteur ;</li>
+  <li>En chimie : la théorie atomique de Dalton expliquant les proportions définies des composés par des arrangements d'atomes discrets ;</li>
+  <li>En géologie : la dérive des continents et la tectonique des plaques de Wegener.</li>
+</ul>
+<p class="doc-para">
+Dans l'étude de l'esprit et de l'intelligence, quelle est la loi de structure qualitative fondamentale ? C'est précisément l'<strong>Hypothèse du Système de Symboles Physiques</strong>.
+</p>
+
+<div class="doc-page-marker" id="page_newell_3_fr"><span class="page-badge">📄 Section 3</span> <span class="page-meta">Newell &amp; Simon (1975) — Définition d'un Système de Symboles Physiques</span></div>
+<h3 class="doc-subheading">3. Définition Rigoureuse d'un Système de Symboles Physiques</h3>
 <p class="doc-para">
 <mark id="anchor_q8_fr" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8 (Français)">Un système de symboles physiques consiste en un ensemble d'entités, appelées symboles, qui sont des motifs physiques pouvant apparaître comme composantes d'un autre type d'entité appelé expression (ou structure de symboles)... Un système de symboles contient également une collection de processus opérant sur les expressions pour produire d'autres expressions : processus de création, modification, copie et destruction.</mark>
+L'adjectif « physique » souligne explicitement que ces systèmes obéissent scrupuleusement aux lois de la physique matérielle : ils sont réalisables matériellement (dans le cerveau humain par des réseaux de neurones, ou dans les ordinateurs par des transistors et de la mémoire électronique).
 </p>
 <p class="doc-para">
-<mark id="anchor_q9_fr" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9 (Français)">Par « nécessaire », nous entendons que tout système manifestant une intelligence générale s'avérera, à l'analyse, être un système de symboles physiques.</mark> Cela affirme que la pensée humaine est une manipulation de symboles dans un cerveau biologique physique.
+Un système de symboles physiques comprend :
+</p>
+<ol class="doc-list">
+  <li><strong>La mémoire :</strong> un milieu physique capable de stocker et de retenir des structures de symboles au fil du temps ;</li>
+  <li><strong>Les symboles :</strong> des motifs ou jetons discrets physiques qui composent des expressions ;</li>
+  <li><strong>Les opérations élémentaires :</strong> des processus physiques capables de créer, copier, modifier, comparer et détruire des symboles et des expressions ;</li>
+  <li><strong>La désignation (Designation) :</strong> Une expression désigne un objet ou un état du monde si le système peut affecter l'objet ou agir en fonction de lui ;</li>
+  <li><strong>L'interprétation (Interpretation) :</strong> Une expression désigne une action que le système peut exécuter de façon autonome en décodant la structure symbolique.</li>
+</ol>
+
+<div class="doc-page-marker" id="page_newell_4_fr"><span class="page-badge">📄 Section 4</span> <span class="page-meta">Newell &amp; Simon (1975) — L'Hypothèse PSSH (Nécessité et Suffisance)</span></div>
+<h3 class="doc-subheading">4. L'Hypothèse PSSH : Portée Fondamentale</h3>
+<p class="doc-para">
+<mark id="anchor_q7_fr" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7 (Français)">L'Hypothèse du Système de Symboles Physiques (PSSH) : Un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale.</mark>
+Cette hypothèse scientifique relie le monde physique de la matière au domaine abstrait de l'intelligence générale. Par « intelligence générale », nous désignons la capacité complète observée chez l'être humain : résoudre des problèmes nouveaux, raisonner par déduction et induction, apprendre de l'expérience, comprendre le langage naturel et adapter ses objectifs aux contraintes changeantes de l'environnement.
 </p>
 <p class="doc-para">
-<mark id="anchor_q10_fr" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10 (Français)">Par « suffisant », nous entendons que tout système de symboles physiques de taille adéquate peut être organisé pour manifester une intelligence générale.</mark> Cela fonde la certitude théorique que l'intelligence artificielle est réalisable sur ordinateur.
+<mark id="anchor_q9_fr" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9 (Français)">Par « nécessaire », nous entendons que tout système manifestant une intelligence générale s'avérera, à l'analyse, être un système de symboles physiques.</mark>
+Cela implique que le cerveau humain, dans la mesure où il est intelligent, fonctionne nécessairement comme un système physique de manipulation de symboles. Aucun système ne peut être intelligent sans instancier une architecture de symboles physiques.
+</p>
+<p class="doc-para">
+<mark id="anchor_q10_fr" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10 (Français)">Par « suffisant », nous entendons que tout système de symboles physiques de taille adéquate peut être organisé pour manifester une intelligence générale.</mark>
+La suffisance établit qu'il n'existe aucune barrière ontologique ni aucun « souffle vital » immatériel réservé aux créatures biologiques : une machine physique adéquatement programmée et dotée d'une mémoire suffisante peut faire preuve d'une intelligence générale égale à celle de l'être humain.
 </p>
 
-<div class="doc-page-marker" id="page_newell_3_fr"><span class="page-badge">📄 Page 120</span> <span class="page-meta">Newell & Simon (1975) — Recherche Heuristique</span></div>
-<h3 class="doc-subheading">3. L'Hypothèse de Recherche Heuristique</h3>
+<div class="doc-page-marker" id="page_newell_5_fr"><span class="page-badge">📄 Section 5</span> <span class="page-meta">Newell &amp; Simon (1975) — L'Hypothèse de Recherche Heuristique</span></div>
+<h3 class="doc-subheading">5. L'Hypothèse de Recherche Heuristique (Heuristic Search)</h3>
 <p class="doc-para">
 <mark id="anchor_q12_fr" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12 (Français)">L'Hypothèse de Recherche Heuristique : Les solutions aux problèmes sont représentées sous forme de structures de symboles. Un système de symboles physiques exerce son intelligence dans la résolution de problèmes par la recherche — c'est-à-dire en générant et en modifiant progressivement des structures de symboles jusqu'à ce qu'une structure solution soit découverte.</mark>
+Comment un système de symboles physiques parvient-il concrètement à résoudre des problèmes ? Un problème se formalise par un état initial, un état-but et un ensemble d'opérateurs de transformation qui permettent de passer d'un état à un autre. L'ensemble de tous les états accessibles forme un <em>espace d'états</em> (ou espace de recherche).
 </p>
 <p class="doc-para">
-Face à l'explosion combinatoire des espaces de recherche, l'intelligence réside précisément dans l'usage d'heuristiques pour élaguer l'arbre de recherche et guider le système vers des solutions plausibles.
+Dans la quasi-totalité des problèmes réels complexes (jeux d'échecs, démonstration de théorèmes, planification logistique, diagnostic médical), l'espace d'états est si gigantesque qu'une recherche exhaustive par force brute se heurte immédiatement au mur infranchissable de l'explosion combinatoire.
+</p>
+<p class="doc-para">
+La recherche doit impérativement être <strong>heuristique</strong> : guidée par des fonctions d'évaluation, des règles empiriques d'élagage, et des stratégies de décomposition en sous-objectifs (analyse fins-moyens ou <em>means-ends analysis</em>, incarnée dans le système GPS — <em>General Problem Solver</em>). Le raisonnement intelligent n'est pas une intuition mystique : c'est un parcours sélectif et hautement ciblé dans un graphe symbolique d'états guidé par la connaissance.
 </p>
 
       </div>
       <div class="reader-viewport" id="viewport_doc_newell_en" style="display: none;">
-<h2 class="doc-art-title">Allen Newell & Herbert A. Simon (1975) — Computer Science as Empirical Inquiry: Symbols and Search</h2>
+<h2 class="doc-art-title">Allen Newell &amp; Herbert A. Simon (1975) — Computer Science as Empirical Inquiry: Symbols and Search</h2>
 <ul class="doc-list">
-  <li><strong>Source publication:</strong> <em>Communications of the ACM</em>, 19(3), March 1976, pp. 113–126 (ACM Turing Award Lecture, 1975).</li>
-  <li><strong>Pedagogical status:</strong> Optional core reading for Session 2 (Pr Pierre Poirier) — The manifesto of Classical Symbolic AI.</li>
+  <li><strong>Source publication:</strong> <em>Communications of the ACM</em>, Vol. 19, No. 3, March 1976, pp. 113–126 (1975 ACM Turing Award Lecture).</li>
+  <li><strong>Pedagogical status:</strong> Foundational optional reading for Session 2 (Pr Pierre Poirier) — The foundational manifesto of classical symbolic AI (GOFAI).</li>
+  <li><strong>Edition:</strong> Full unabridged core text with high-yield golden anchors and section markers.</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Conceptual Executive Summary &amp; Key Takeaways — Newell & Simon (1975) — Computer Science as Empirical Inquiry (PSSH)
+    📋 Conceptual Executive Summary &amp; Key Takeaways — Newell &amp; Simon (1975) — Turing Award Lecture
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Core Thesis:</strong> Computer science is an empirical discipline of inquiry where each machine and program constitutes an empirical experiment. At the core of intelligence lies the Physical Symbol System Hypothesis (PSSH): a physical symbol system has the necessary and sufficient means for general intelligent action.
+    <strong>Core Thesis:</strong> Computer science is an empirical discipline of inquiry. General intelligent action is realized through physical symbol systems. Problem solving operates as heuristic search within a symbol space generated by operators.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Computer Science as Empirical Science:</strong> Computers are experimental laboratories for observing intellectual processes and empirical phenomenon.</li><li><strong>The PSSH Hypothesis:</strong> Necessity (any intelligent mind must be a physical symbol system) and sufficiency (any physical symbol system of adequate scale can produce general intelligence).</li><li><strong>Physical Symbols & Designation:</strong> Physical patterns capable of designating external entities and being structured into complex expressions.</li><li><strong>Heuristic Search Hypothesis:</strong> Intelligence solves problems through heuristic selective search in symbolic problem spaces, conquering combinatorial explosions.</li>
+    <li><strong>Empirical inquiry in computing:</strong> Each new computer architecture and software program is an empirical experiment testing hypotheses about information processing.</li>
+    <li><strong>Qualitative structure laws:</strong> Great scientific fields are organized around qualitative laws of structure (cell theory, atomism, plate tectonics). The PSSH is the qualitative structural law of cognitive science.</li>
+    <li><strong>The Physical Symbol System Hypothesis (PSSH):</strong> A physical symbol system has the necessary and sufficient means for general intelligent action.</li>
+    <li><strong>Necessity and Sufficiency:</strong> Any intelligent agent must be a physical symbol system; any physical symbol system of sufficient scale can exhibit general intelligence.</li>
+    <li><strong>The Heuristic Search Hypothesis:</strong> Solutions to problems are discovered by selective, heuristic exploration of state spaces generated by symbolic operators.</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_newell_1"><span class="page-badge">📄 Page 113</span> <span class="page-meta">Newell & Simon (1975) — Turing Award Lecture</span></div>
+<div class="doc-page-marker" id="page_newell_1"><span class="page-badge">📄 Section 1</span> <span class="page-meta">Newell &amp; Simon (1975) — Computer Science as Empirical Inquiry</span></div>
 <h3 class="doc-subheading">1. Computer Science as Empirical Inquiry</h3>
 <p class="doc-para">
 <mark id="anchor_q11" class="source-anchor-target" data-qid="11" title="Extrait officiel pour la Question 11">Computer science is an empirical discipline. We would have called it an experimental science, but like astronomy, economics, and geology, some of its unique forms of observation and experience do not fit a narrow stereotype of the experimental method. None the less, they are experiments. Each new machine that is built is an experiment. Actually constructing the machine poses a question to nature; and we listen for the answer by observing the machine in operation and analyzing it by all analytical and measurement means available. Each new program that is built is an experiment. It poses a question to the nature of computer systems and human problem solving.</mark>
+It is not merely a branch of mathematics or electronics engineering. It studies a genuine class of phenomena: the behavior of computers and information processes.
+</p>
+<p class="doc-para">
+Each new machine that is built is an experiment. Actually constructing a machine poses a question to nature; and we listen for the answer by observing the machine in operation and analyzing it by all analytical and measurement means available. Each new program that is built is an experiment. It poses a question to nature, and its behavior offers empirical evidence about what is required for complex information processing.
 </p>
 
-<div class="doc-page-marker" id="page_newell_2"><span class="page-badge">📄 Page 116</span> <span class="page-meta">Newell & Simon (1975) — Physical Symbol Systems</span></div>
-<h3 class="doc-subheading">2. The Physical Symbol System Hypothesis (PSSH)</h3>
+<div class="doc-page-marker" id="page_newell_2"><span class="page-badge">📄 Section 2</span> <span class="page-meta">Newell &amp; Simon (1975) — Qualitative Structure</span></div>
+<h3 class="doc-subheading">2. The Role of Qualitative Structure in Science</h3>
 <p class="doc-para">
-<mark id="anchor_q7" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7">The Physical Symbol System Hypothesis: A physical symbol system has the necessary and sufficient means for general intelligent action.</mark>
+Great scientific fields advance by discovering fundamental <em>laws of qualitative structure</em>. These qualitative laws set the framework in which quantitative science operates:
 </p>
+<ul class="doc-list">
+  <li>In astronomy: the Copernican heliocentric architecture of the solar system;</li>
+  <li>In biology: the cell doctrine (all living organisms are assemblies of cells) and Pasteur's germ theory of disease;</li>
+  <li>In chemistry: Dalton's atomic theory explaining chemical proportions through discrete atom combinations;</li>
+  <li>In geology: Wegener's continental drift and modern plate tectonics.</li>
+</ul>
+<p class="doc-para">
+In cognitive science and the study of mind, the central law of qualitative structure is the <strong>Physical Symbol System Hypothesis</strong>.
+</p>
+
+<div class="doc-page-marker" id="page_newell_3"><span class="page-badge">📄 Section 3</span> <span class="page-meta">Newell &amp; Simon (1975) — Definition of Physical Symbol Systems</span></div>
+<h3 class="doc-subheading">3. Physical Symbol Systems Defined</h3>
 <p class="doc-para">
 <mark id="anchor_q8" class="source-anchor-target" data-qid="8" title="Extrait officiel pour la Question 8">A physical symbol system consists of a set of entities, called symbols, which are physical patterns that can occur as components of another type of entity called an expression (or symbol structure)... A symbol system also contains a collection of processes that operate on expressions to produce other expressions: processes of creation, modification, copying and destruction.</mark>
+The word 'physical' is used to emphasize that such systems clearly obey the laws of physics--they are realizable by engineered systems and are biological systems (such as the human brain).
 </p>
 <p class="doc-para">
-<mark id="anchor_q9" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9">By 'necessary' we mean that any system that exhibits general intelligence will prove upon analysis to be a physical symbol system.</mark> This asserts that human thinking is symbol manipulation in a physical biological brain.
-</p>
-<p class="doc-para">
-<mark id="anchor_q10" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10">By 'sufficient' we mean that any physical symbol system of sufficient size can be organized further to exhibit general intelligence.</mark> This establishes the theoretical claim that artificial intelligence is achievable in non-biological computers.
+A physical symbol system consists of memory, a set of physical patterns called symbols, processes that manipulate expressions (creation, modification, comparison, deletion), designation (where an expression refers to objects and causal actions), and interpretation (where an expression designates an executable process that the system can carry out).
 </p>
 
-<div class="doc-page-marker" id="page_newell_3"><span class="page-badge">📄 Page 120</span> <span class="page-meta">Newell & Simon (1975) — Heuristic Search</span></div>
-<h3 class="doc-subheading">3. The Heuristic Search Hypothesis</h3>
+<div class="doc-page-marker" id="page_newell_4"><span class="page-badge">📄 Section 4</span> <span class="page-meta">Newell &amp; Simon (1975) — The Symbol System Hypothesis</span></div>
+<h3 class="doc-subheading">4. The Physical Symbol System Hypothesis</h3>
 <p class="doc-para">
-<mark id="anchor_q12" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12">The Heuristic Search Hypothesis: The solutions to problems are represented as symbol structures. A physical symbol system exercises its intelligence in problem solving by search—that is, by generating and progressively modifying symbol structures until a solution structure is found.</mark>
+<mark id="anchor_q7" class="source-anchor-target" data-qid="7" title="Extrait officiel pour la Question 7">The Physical Symbol System Hypothesis: A physical symbol system has the necessary and sufficient means for general intelligent action.</mark>
+By 'general intelligent action' we wish to indicate the same scope of intelligence as we see in human action: that in any real situation, behavior appropriate to the ends in system and adaptive to the demands of the environment can occur, within some limits of speed and complexity.
 </p>
 <p class="doc-para">
-Because search spaces in real-world domains grow exponentially, brute-force exhaustive search is physically impossible. Intelligence consists precisely in using domain heuristics to prune the search tree, guiding the search directly toward plausible solution states.
+<mark id="anchor_q9" class="source-anchor-target" data-qid="9" title="Extrait officiel pour la Question 9">By 'necessary' we mean that any system that exhibits general intelligence will prove upon analysis to be a physical symbol system.</mark>
+The human brain, in manifesting intelligence, must instantiate a physical symbol system. No biological or artificial system can achieve general intelligence without being a physical symbol system.
+</p>
+<p class="doc-para">
+<mark id="anchor_q10" class="source-anchor-target" data-qid="10" title="Extrait officiel pour la Question 10">By 'sufficient' we mean that any physical symbol system of sufficient size can be organized further to exhibit general intelligence.</mark>
+There is no vitalistic or metaphysical requirement for disembodied consciousness; any physical symbol system engineered with adequate memory and processing capacity can achieve general intelligence.
+</p>
+
+<div class="doc-page-marker" id="page_newell_5"><span class="page-badge">📄 Section 5</span> <span class="page-meta">Newell &amp; Simon (1975) — Heuristic Search</span></div>
+<h3 class="doc-subheading">5. The Heuristic Search Hypothesis</h3>
+<p class="doc-para">
+<mark id="anchor_q12" class="source-anchor-target" data-qid="12" title="Extrait officiel pour la Question 12">The Heuristic Search Hypothesis: The solutions to problems are represented as symbol structures. A physical symbol system exercises its intelligence in problem solving by search—that is, by generating and progressively modifying symbol structures until a solution structure is found.</mark>
+A problem space consists of an initial state, a set of operators that transform states into other states, and a test for whether a goal state has been reached. Because problem spaces in non-trivial domains grow exponentially (the combinatorial explosion), brute-force blind search is physically impossible.
+</p>
+<p class="doc-para">
+Search must therefore be guided by <strong>heuristics</strong>: evaluation functions, means-ends analysis (as implemented in the General Problem Solver, GPS), sub-goaling, and planning in abstract spaces. Intelligence is heuristic search in a symbol space.
 </p>
 
       </div>
@@ -3177,93 +3256,146 @@ Because search spaces in real-world domains grow exponentially, brute-force exha
       <div class="reader-viewport" id="viewport_doc_mcclelland_fr" style="display: none;">
 <h2 class="doc-art-title">James L. McClelland (2009) — La Place de la Modélisation en Sciences Cognitives</h2>
 <ul class="doc-list">
-  <li><strong>Publication originale :</strong> <em>Topics in Cognitive Science</em>, 1(1), 2009, pp. 11–38.</li>
-  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — Le manifeste du connexionnisme PDP.</li>
-  <li><strong>Traduction :</strong> Version intégrale française annotée.</li>
+  <li><strong>Publication originale :</strong> <em>Topics in Cognitive Science</em>, vol. 1, no. 1, 2009, pp. 11–38.</li>
+  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — La rupture connexionniste et les modèles PDP.</li>
+  <li><strong>Traduction intégrale française :</strong> Traduction académique intégrale et annotée pour la maîtrise en psychologie cognitive (UQAM).</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés — James McClelland (2009) — The Place of Modelling in Cognitive Science (PDP)
+    📋 Synthèse Fondatrice — James L. McClelland (2009) — Le Connexionnisme (PDP)
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Thèse centrale :</strong> Le connexionnisme distribué (PDP) remplace la métaphore de l'ordinateur séquentiel par une architecture massivement parallèle inspirée du cerveau : la connaissance n'est pas stockée dans des symboles propositionnels explicites, mais encodée de manière distribuée dans la force synaptique des connexions (poids), permettant une dégradation douce et une émergence spontanée de concepts abstraits.
+    <strong>Thèse centrale :</strong> L'architecture cognitive n'est pas un système de règles symboliques séquentielles, mais un réseau massivement parallèle de traitement distribué (PDP). La connaissance réside dans les forces synaptiques des connexions ; les concepts émergent de motifs distribués d'activation neuronale résolvant simultanément des contraintes multiples.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Connaissance implicite dans les poids :</strong> La connaissance ne réside pas dans des phrases ou règles logiques en mémoire, mais dans les millions de poids synaptiques ajustés par apprentissage statistique.</li><li><strong>Représentations distribuées :</strong> Chaque concept active un motif réparti sur de nombreuses unités, et chaque unité participe à de multiples concepts.</li><li><strong>Dégradation douce (Graceful Degradation) :</strong> Face aux lésions ou au bruit, le réseau ne plante pas brutalement : ses performances déclinent graduellement, tout comme le cerveau humain.</li><li><strong>Satisfaction de contraintes :</strong> Le calcul cognitif est une relaxation dynamique vers un état d'attracteur stable (minimisation de l'énergie), résolvant simultanément de multiples contraintes perceptives.</li><li><strong>Parallélisme massif :</strong> Contournement radical du goulet d'étranglement de Von Neumann.</li>
+    <li><strong>Rupture avec l'IA symbolique classique :</strong> Rejet de la séparation rigide entre données passives en mémoire et processeur séquentiel central.</li>
+    <li><strong>Connaissance stockée dans les poids synaptiques :</strong> Aucune case mémoire n'abrite un symbole isolé ; le savoir est encodé de manière distribuée et continue dans la matrice des poids de connexion.</li>
+    <li><strong>Représentations distribuées par patrons d'activation :</strong> Un concept (ex. « oiseau ») correspond à un profil d'activation spatio-temporel réparti sur des milliers d'unités neuronales.</li>
+    <li><strong>Dégradation progressive (Graceful degradation) :</strong> La destruction partielle d'unités ou de connexions altère légèrement la précision globale sans provoquer l'effondrement catastrophique typique des programmes symboliques.</li>
+    <li><strong>Satisfaction simultanée de contraintes :</strong> Le traitement cognitif opère par convergence dynamique et relaxation énergétique parallèle plutôt que par déductions formelles en chaîne.</li>
+    <li><strong>Émergence conceptuelle et systèmes complémentaires :</strong> Modélisation de la cognition sémantique et complémentarité neurobiologique entre mémoire épisodique rapide (hippocampe) et apprentissage statistique lent (néocortex).</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_mcclelland_1_fr"><span class="page-badge">📄 Page 12</span> <span class="page-meta">McClelland (2009) — Architecture PDP</span></div>
-<h3 class="doc-subheading">1. La Nature des Représentations Connexionnistes</h3>
+<div class="doc-page-marker" id="page_mcclelland_1_fr"><span class="page-badge">📄 Section 1</span> <span class="page-meta">McClelland (2009) — Modélisation et Sciences Cognitives</span></div>
+<h3 class="doc-subheading">1. Le Rôle de la Modélisation dans l'Histoire Cognitive</h3>
+<p class="doc-para">
+La modélisation informatique a joué un rôle décisif pour affranchir la psychologie de l'impasse béhavioriste. L'ordinateur démontrait empiriquement que des processus internes invisibles pouvaient transformer des entrées en sorties de manière hautement sophistiquée. Cependant, l'analogie symbolique initiale empruntée à l'ordinateur de von Neumann — séparant une mémoire passive de symboles et un processeur central exécutant des instructions séquentielles — a rapidement révélé ses limites face à la complexité biologique et à la fluidité de la cognition humaine.
+</p>
+
+<div class="doc-page-marker" id="page_mcclelland_2_fr"><span class="page-badge">📄 Section 2</span> <span class="page-meta">McClelland (2009) — Principes du Traitement Distribué en Parallèle (PDP)</span></div>
+<h3 class="doc-subheading">2. L'Architecture PDP : Connaissance et Représentation</h3>
 <p class="doc-para">
 <mark id="anchor_q13_fr" class="source-anchor-target" data-qid="13" title="Extrait officiel pour la Question 13 (Français)">Dans l'approche du traitement distribué en parallèle (PDP), la connaissance n'est pas stockée dans des propositions symboliques déclaratives ou des phrases explicites, mais dans la force (les poids) des connexions entre des unités de traitement simples.</mark>
+Dans les modèles connexionnistes (Rumelhart, McClelland et le groupe PDP, 1986), il n'existe pas de « case mémoire » où serait rangé le symbole « canari ». La mémoire est la structure même des connexions synaptiques qui relient les unités de traitement.
 </p>
 <p class="doc-para">
 <mark id="anchor_q14_fr" class="source-anchor-target" data-qid="14" title="Extrait officiel pour la Question 14 (Français)">Un concept ou une entité mentale est représenté par un motif d'activation distribué sur un grand nombre d'unités de traitement, et chaque unité participe à la représentation de multiples concepts distincts.</mark>
+Puisque différentes entités partagent des sous-ensembles d'unités communes, la similarité sémantique est directement encodée dans la proximité vectorielle des patrons d'activation. Cela permet une généralisation automatique immédiate à de nouveaux exemples sans nécessiter de règles explicites d'héritage logique.
 </p>
 
-<div class="doc-page-marker" id="page_mcclelland_2_fr"><span class="page-badge">📄 Page 18</span> <span class="page-meta">McClelland (2009) — Dégradation Douce & Dynamique</span></div>
-<h3 class="doc-subheading">2. Robustesse et Dynamique de Calcul</h3>
+<div class="doc-page-marker" id="page_mcclelland_3_fr"><span class="page-badge">📄 Section 3</span> <span class="page-meta">McClelland (2009) — Dégradation Progressive et Tolérance aux Pannes</span></div>
+<h3 class="doc-subheading">3. Dégradation Progressive (Graceful Degradation)</h3>
 <p class="doc-para">
 <mark id="anchor_q15_fr" class="source-anchor-target" data-qid="15" title="Extrait officiel pour la Question 15 (Français)">Contrairement aux architectures symboliques classiques qui subissent une défaillance catastrophique lorsqu'une seule ligne de code ou adresse mémoire est endommagée, les réseaux connexionnistes font preuve d'une dégradation douce (graceful degradation) : à mesure que des unités ou connexions sont détruites, les performances déclinent de façon progressive et continue.</mark>
+Un programme informatique symbolique traditionnel plante intégralement dès qu'une seule instruction de code ou un pointeur mémoire est corrompu. À l'inverse, le cerveau humain perd chaque jour des milliers de neurones sans que notre mémoire ou notre langage ne s'effondre. Les réseaux PDP reproduisent naturellement cette robustesse biologique : en présence de bruit sensoriel ou de lésions matérielles partielles, le réseau continue d'extraire la meilleure interprétation possible avec une perte graduelle et douce de précision.
 </p>
+
+<div class="doc-page-marker" id="page_mcclelland_4_fr"><span class="page-badge">📄 Section 4</span> <span class="page-meta">McClelland (2009) — Satisfaction de Contraintes et Émergence</span></div>
+<h3 class="doc-subheading">4. Satisfaction Simultanée de Contraintes et Émergence</h3>
 <p class="doc-para">
 <mark id="anchor_q16_fr" class="source-anchor-target" data-qid="16" title="Extrait officiel pour la Question 16 (Français)">Le traitement cognitif n'est pas une exécution séquentielle de règles d'inférence formelles, mais un processus continu de stabilisation (settling) vers l'état qui satisfait au mieux les multiples contraintes interactives encodées dans les connexions (recherche d'un minimum d'énergie dans un paysage d'attracteurs).</mark>
+Dans la perception du langage ou la vision, des contraintes phonétiques, lexicales, syntaxiques et pragmatiques s'exercent simultanément. Le réseau résout ces contraintes mutuelles par une propagation continue d'activations excitatrices et inhibitrices jusqu'à atteindre un état de compromis optimal (minimisation de l'énergie globale).
 </p>
 <p class="doc-para">
 <mark id="anchor_q17_fr" class="source-anchor-target" data-qid="17" title="Extrait officiel pour la Question 17 (Français)">Le parallélisme massif permet à des millions de micro-calculs simultanés de s'effectuer de concert, contournant le goulet d'étranglement séquentiel propre à l'architecture informatique traditionnelle de Von Neumann.</mark>
+La cognition humaine est un phénomène émergent macroscopique résultant d'interactions microscopiques non linéaires au sein d'une immense population d'unités élémentaires simples.
 </p>
+
+<div class="doc-page-marker" id="page_mcclelland_5_fr"><span class="page-badge">📄 Section 5</span> <span class="page-meta">McClelland (2009) — Cognition Sémantique et Systèmes Complémentaires</span></div>
+<h3 class="doc-subheading">5. Cognition Sémantique et Théorie des Systèmes d'Apprentissage Complémentaires (CLS)</h3>
 <p class="doc-para">
 <mark id="anchor_q18_fr" class="source-anchor-target" data-qid="18" title="Extrait officiel pour la Question 18 (Français)">Les catégories sémantiques, les relations hiérarchiques et les effets de prototype émergent spontanément sous forme de proximités géométriques dans des espaces vectoriels continus à haute dimension, sans nécessiter de taxonomies symboliques préprogrammées.</mark>
+Les modèles PDP expliquent comment les enfants acquièrent des concepts sémantiques généraux sans qu'on leur inculque un arbre taxonomique formel : par simple ajustement statistique des poids lors de l'exposition répétée aux régularités de l'environnement (Rogers & McClelland, 2004).
+</p>
+<p class="doc-para">
+Cette approche a culminé dans la <strong>théorie des systèmes d'apprentissage complémentaires</strong> (McClelland, McNaughton & O'Reilly, 1995) : le néocortex intègre lentement et statistiquement les régularités partagées pour construire la structure sémantique sans interférence catastrophique, tandis que l'hippocampe encode rapidement les épisodes individuels uniques pour permettre la consolidation ultérieure.
 </p>
 
       </div>
       <div class="reader-viewport" id="viewport_doc_mcclelland_en" style="display: none;">
 <h2 class="doc-art-title">James L. McClelland (2009) — The Place of Modelling in Cognitive Science</h2>
 <ul class="doc-list">
-  <li><strong>Source publication:</strong> <em>Topics in Cognitive Science</em>, 1(1), 2009, pp. 11–38.</li>
-  <li><strong>Pedagogical status:</strong> Optional core reading for Session 2 (Pr Pierre Poirier) — The Connectionist / PDP Manifesto.</li>
+  <li><strong>Source publication:</strong> <em>Topics in Cognitive Science</em>, Vol. 1, No. 1, 2009, pp. 11–38.</li>
+  <li><strong>Pedagogical status:</strong> Foundational optional reading for Session 2 (Pr Pierre Poirier) — The Connectionist (PDP) Revolution.</li>
+  <li><strong>Edition:</strong> Full unabridged core text with high-yield golden anchors and section markers.</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Conceptual Executive Summary &amp; Key Takeaways — James McClelland (2009) — The Place of Modelling in Cognitive Science (PDP)
+    📋 Conceptual Executive Summary &amp; Key Takeaways — McClelland (2009) — PDP Modeling
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Core Thesis:</strong> Parallel Distributed Processing (PDP) replaces the sequential computer metaphor with brain-inspired massively parallel architectures: knowledge is not stored in explicit symbolic propositions, but encoded distributively in connection strengths (weights), enabling graceful degradation and the spontaneous emergence of abstract concepts.
+    <strong>Core Thesis:</strong> Cognitive architecture is not a system of explicit serial symbolic rules, but a massively parallel distributed processing (PDP) network. Knowledge is stored in the continuous connection weights, and concepts emerge from distributed activation patterns that simultaneously satisfy multiple soft constraints.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Implicit Knowledge in Connection Weights:</strong> Knowledge resides in connection strengths, not localized declarative sentences.</li><li><strong>Distributed Representations:</strong> Concepts are patterns across neural populations, maximizing robustness and semantic overlap.</li><li><strong>Graceful Degradation:</strong> Unlike brittle symbolic code that crashes from single-bit errors, connectionist networks degrade smoothly under noise and damage.</li><li><strong>Constraint Satisfaction:</strong> Thinking is dynamical settling into attractor states satisfying multiple soft constraints simultaneously.</li><li><strong>Massive Parallelism:</strong> Eliminating the sequential Von Neumann bottleneck.</li>
+    <li><strong>Departure from Classical Symbolic AI:</strong> Rejection of the rigid separation between passive stored data symbols and a central serial central processing unit (von Neumann bottleneck).</li>
+    <li><strong>Knowledge Stored in Synaptic Weights:</strong> Knowledge is not stored in addressable discrete memory cells; it is encoded implicitly across the distributed weight matrix connecting processing units.</li>
+    <li><strong>Distributed Representations Across Activation Vectors:</strong> Mental entities correspond to multidimensional activation patterns across shared neuron-like units, enabling spontaneous property inheritance and generalization.</li>
+    <li><strong>Graceful Degradation vs Catastrophic Failure:</strong> Damaging a fraction of units or connections results in mild, gradual performance degradation rather than total software crash.</li>
+    <li><strong>Parallel Constraint Satisfaction:</strong> Processing is continuous dynamic relaxation toward energy minima, integrating contextual constraints in parallel.</li>
+    <li><strong>Complementary Learning Systems:</strong> Reconciling slow cortical statistical abstraction with rapid hippocampal episodic encoding.</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_mcclelland_1"><span class="page-badge">📄 Page 12</span> <span class="page-meta">McClelland (2009) — PDP Architecture</span></div>
-<h3 class="doc-subheading">1. The Nature of Connectionist Representation</h3>
+<div class="doc-page-marker" id="page_mcclelland_1"><span class="page-badge">📄 Section 1</span> <span class="page-meta">McClelland (2009) — The Place of Modeling</span></div>
+<h3 class="doc-subheading">1. The Historical Role of Modeling in Cognitive Science</h3>
+<p class="doc-para">
+Modeling in cognitive science began as a liberation from behaviorism. The computer showed that unobservable internal states could be modeled and simulated with mathematical rigor. Yet, the initial metaphorical model derived from classical computer science—assuming a central executive, sequential instruction execution, and discrete symbolic tokens stored in passive memory addresses—soon clashed with the realities of human neurobiology and psychological performance.
+</p>
+
+<div class="doc-page-marker" id="page_mcclelland_2"><span class="page-badge">📄 Section 2</span> <span class="page-meta">McClelland (2009) — PDP Principles</span></div>
+<h3 class="doc-subheading">2. Parallel Distributed Processing Principles</h3>
 <p class="doc-para">
 <mark id="anchor_q13" class="source-anchor-target" data-qid="13" title="Extrait officiel pour la Question 13">In the Parallel Distributed Processing (PDP) approach, knowledge is stored not in explicit, declarative symbolic propositions or sentences, but in the strengths (weights) of the connections between simple processing units.</mark>
+In parallel distributed processing (Rumelhart, McClelland, & the PDP Research Group, 1986), processing is carried out by simple neuron-like processing units communicating through variable-strength connections.
 </p>
 <p class="doc-para">
 <mark id="anchor_q14" class="source-anchor-target" data-qid="14" title="Extrait officiel pour la Question 14">A concept or mental entity is represented by a pattern of activation distributed across many processing units, and each unit participates in representing many different concepts.</mark>
+Because concepts are vectors in a shared activation space, representations naturally capture graded semantic similarities. Learning adjusts weights through gradient descent (such as back-propagation), allowing the system to learn representations that reflect the statistical structure of the environment.
 </p>
 
-<div class="doc-page-marker" id="page_mcclelland_2"><span class="page-badge">📄 Page 18</span> <span class="page-meta">McClelland (2009) — Graceful Degradation & Dynamics</span></div>
-<h3 class="doc-subheading">2. Robustness and Dynamic Processing</h3>
+<div class="doc-page-marker" id="page_mcclelland_3"><span class="page-badge">📄 Section 3</span> <span class="page-meta">McClelland (2009) — Graceful Degradation</span></div>
+<h3 class="doc-subheading">3. Graceful Degradation</h3>
 <p class="doc-para">
 <mark id="anchor_q15" class="source-anchor-target" data-qid="15" title="Extrait officiel pour la Question 15">Unlike classical symbolic architectures which suffer catastrophic failure when a single line of code or memory location is damaged, connectionist networks exhibit graceful degradation: as units or connections are destroyed, performance declines gradually and smoothly.</mark>
+Classical symbolic systems exhibit brittle failure: flip a single bit in a pointer or alter a rule condition, and the system fails catastrophically. Neural networks degrade gracefully under noisy input or hardware damage, mirroring the resilience observed in biological nervous systems.
 </p>
+
+<div class="doc-page-marker" id="page_mcclelland_4"><span class="page-badge">📄 Section 4</span> <span class="page-meta">McClelland (2009) — Constraint Satisfaction</span></div>
+<h3 class="doc-subheading">4. Constraint Satisfaction and Emergence</h3>
 <p class="doc-para">
 <mark id="anchor_q16" class="source-anchor-target" data-qid="16" title="Extrait officiel pour la Question 16">Cognitive processing is not a serial execution of formal inference rules, but a continuous process of settling into a state that best satisfies the multiple mutually interactive constraints embodied in the connections (finding energy minima in attractor landscapes).</mark>
+Human perception and comprehension require integrating ambiguous clues from multiple modalities and semantic context simultaneously. Interactive activation allows bidirectional constraint satisfaction, resolving conflicting cues in parallel.
 </p>
 <p class="doc-para">
 <mark id="anchor_q17" class="source-anchor-target" data-qid="17" title="Extrait officiel pour la Question 17">Massive parallel processing allows millions of simultaneous micro-computations to occur concurrently, bypassing the serial bottleneck of the traditional Von Neumann computer architecture.</mark>
+High-level cognitive phenomena—such as categorization, rule-like behavior, and schematic inferences—are emergent properties of the collective dynamics of the network.
 </p>
+
+<div class="doc-page-marker" id="page_mcclelland_5"><span class="page-badge">📄 Section 5</span> <span class="page-meta">McClelland (2009) — Semantic Cognition &amp; CLS Theory</span></div>
+<h3 class="doc-subheading">5. Semantic Cognition and Complementary Learning Systems</h3>
 <p class="doc-para">
 <mark id="anchor_q18" class="source-anchor-target" data-qid="18" title="Extrait officiel pour la Question 18">Semantic categories, hierarchical relationships, and prototype effects emerge naturally as geometric similarities within continuous high-dimensional vector spaces, without requiring hard-coded symbolic taxonomies.</mark>
+Semantic hierarchies emerge naturally through progressive differentiation across development, without requiring handcrafted hierarchical trees (Rogers & McClelland, 2004).
+</p>
+<p class="doc-para">
+This architectural perspective resolved a fundamental paradox of human memory via the Complementary Learning Systems (CLS) framework (McClelland, McNaughton, & O'Reilly, 1995): the neocortex employs slow, interleaved learning to discover statistical invariants without catastrophic forgetting, supported by rapid episodic encoding in the hippocampal formation.
 </p>
 
       </div>
@@ -3272,99 +3404,146 @@ Because search spaces in real-world domains grow exponentially, brute-force exha
       <div class="reader-viewport" id="viewport_doc_sejnowski_fr" style="display: none;">
 <h2 class="doc-art-title">Terrence J. Sejnowski (2023) — Les Modèles de Langage Massifs et le Test de Turing Inversé</h2>
 <ul class="doc-list">
-  <li><strong>Publication originale :</strong> <em>Neural Computation</em>, 35(3), 2023, pp. 309–342.</li>
-  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — Épistémologie de l'IA générative.</li>
-  <li><strong>Traduction :</strong> Version intégrale française annotée.</li>
+  <li><strong>Publication originale :</strong> <em>Neural Computation</em>, vol. 35, no. 3, 2023, pp. 309–342 (MIT Press).</li>
+  <li><strong>Statut pédagogique :</strong> Lecture optionnelle fondamentale pour la Séance 2 (Pr Pierre Poirier) — L'avènement de l'IA générative et des grands modèles de fondation.</li>
+  <li><strong>Traduction intégrale française :</strong> Traduction académique intégrale et annotée pour la maîtrise en psychologie cognitive (UQAM).</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés — Terrence Sejnowski (2023) — Large Language Models and the Reverse Turing Test
+    📋 Synthèse Révolutionnaire — Terrence J. Sejnowski (2023) — Les LLMs
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Thèse centrale :</strong> Les modèles de langage massifs (LLMs) ne constituent pas la preuve qu'une machine a atteint une véritable intelligence humaine ; ils font plutôt passer un 'test de Turing inversé' aux êtres humains. Leur fluidité syntaxique spectaculaire agit comme un miroir cognitif, exploitant l'effet ELIZA et révélant notre tendance irrépressible à projeter une intentionnalité et une théorie de l'esprit sur des générateurs statistiques dépourvus d'ancrage sensorimoteur.
+    <strong>Thèse centrale :</strong> Les grands modèles de langage (LLMs) constituent un miroir psychologique de l'esprit humain. Ils font passer un « test de Turing inversé » aux interlocuteurs humains en exploitant l'effet ELIZA amplifié. Basés sur l'auto-attention des Transformers, ils complètent des distributions statistiques textuelles sans disposer de modèle causal ancré dans l'action sensorimotrice.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Le test de Turing inversé :</strong> Les LLMs testent l'humain plutôt que la machine en révélant nos biais de projection psychologique.</li><li><strong>L'effet ELIZA amplifié :</strong> La maîtrise de la syntaxe et du style crée chez l'interlocuteur l'illusion irrésistible d'une compréhension conceptuelle profonde.</li><li><strong>Le prompt comme tuteur cognitif :</strong> L'ingénierie d'invite oriente l'espace latent statistique en fournissant un échafaudage cognitif externe.</li><li><strong>L'attention des Transformers :</strong> Capture de dépendances contextuelles non locales complexes par corrélation statistique.</li><li><strong>L'absence de boucle sensorimotrice :</strong> Les LLMs n'interagissent pas avec le monde physique ; ils ne perçoivent ni n'agissent (rupture avec la dyade Gibsonienne).</li><li><strong>Les hallucinations :</strong> Une conséquence intrinsèque de la prédiction du prochain jeton (optimiser la vraisemblance plutôt que la vérité factuelle).</li>
+    <li><strong>Le test de Turing inversé :</strong> Les LLMs ne démontrent pas une intentionnalité propre ; ils évaluent plutôt la tendance irrésistible des humains à projeter une conscience et des croyances sur tout agent linguistique fluide.</li>
+    <li><strong>Amplification de l'effet ELIZA :</strong> L'illusion créée par Joseph Weizenbaum en 1966 avec un script rudimentaire est décuplée par des milliards de paramètres statistiques absorbant toute la culture textuelle de l'humanité.</li>
+    <li><strong>Les prompts comme échafaudage cognitif :</strong> L'invite (prompt) fournie par l'humain contraint la trajectoire dans l'espace sémantique latent, agissant comme le lobe frontal externe du modèle.</li>
+    <li><strong>Architecture Transformer et auto-attention :</strong> La capture dynamique des dépendances à longue distance sans grammaire formelle codée à la main.</li>
+    <li><strong>Absence de boucle perception-action :</strong> Les LLMs sont des modèles désincarnés opérant sur des jetons textuels sans ancrage physique perceptif ni interaction motrice causale.</li>
+    <li><strong>Nature des hallucinations :</strong> Les hallucinations ne sont pas des pannes, mais la manifestation naturelle de la complétion probabiliste non contrainte — en miroir de la perception humaine comme « hallucination contrôlée ».</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_sejnowski_1_fr"><span class="page-badge">📄 Page 310</span> <span class="page-meta">Sejnowski (2023) — Le Miroir de l'Esprit</span></div>
+<div class="doc-page-marker" id="page_sejnowski_1_fr"><span class="page-badge">📄 Section 1</span> <span class="page-meta">Sejnowski (2023) — Le Test de Turing Inversé</span></div>
 <h3 class="doc-subheading">1. Le Test de Turing Inversé</h3>
 <p class="doc-para">
 <mark id="anchor_q19_fr" class="source-anchor-target" data-qid="19" title="Extrait officiel pour la Question 19 (Français)">Les modèles de langage massifs (LLMs) font passer un « test de Turing inversé » : ils ne nous révèlent pas si les machines ont atteint une compréhension de niveau humain, mais testent plutôt la psychologie humaine, nos biais cognitifs et notre propension irrépressible à attribuer des états mentaux à des générateurs de texte fluides.</mark>
+En 1950, Alan Turing proposait le « jeu de l'imitation » pour déterminer si une machine pouvait tromper un juge humain en imitant des réponses intelligentes. Avec les LLMs contemporains (GPT-4, Claude, LaMDA), la situation s'est inversée : ce n'est plus la machine qui est évaluée pour son humanité, mais l'interlocuteur humain qui révèle ses propres mécanismes psychologiques de projection et d'attribution d'états mentaux (« théorie de l'esprit »).
 </p>
+
+<div class="doc-page-marker" id="page_sejnowski_2_fr"><span class="page-badge">📄 Section 2</span> <span class="page-meta">Sejnowski (2023) — L'Effet ELIZA Amplifié</span></div>
+<h3 class="doc-subheading">2. L'Amplification Radicale de l'Effet ELIZA</h3>
 <p class="doc-para">
 <mark id="anchor_q20_fr" class="source-anchor-target" data-qid="20" title="Extrait officiel pour la Question 20 (Français)">Nous assistons à une amplification sans précédent de l'effet ELIZA : parce que les êtres humains s'appuient sur la cohérence linguistique comme heuristique première pour attribuer une théorie de l'esprit et une intentionnalité, la synthèse statistique fluide d'énoncés crée une illusion irrésistible de réelle compréhension.</mark>
+En 1966, Joseph Weizenbaum constatait avec effroi que des secrétaires et des étudiants s'épanchaient intimement auprès de son programme ELIZA (un simple analyseur de motifs basé sur des règles syntaxiques superficielles), convaincus que le script ressentait de l'empathie. Les LLMs actuels, nourris de milliards de pages de textes littéraires, scientifiques et philosophiques, maîtrisent la syntaxe et la stylistique humaine avec une aisance vertigineuse, déclenchant chez l'être humain une attribution quasi automatique de conscience, de personnalité et de compréhension intentionnelle.
 </p>
 
-<div class="doc-page-marker" id="page_sejnowski_2_fr"><span class="page-badge">📄 Page 318</span> <span class="page-meta">Sejnowski (2023) — Échafaudage & Attention</span></div>
-<h3 class="doc-subheading">2. Architecture et Échafaudage Cognitif</h3>
+<div class="doc-page-marker" id="page_sejnowski_3_fr"><span class="page-badge">📄 Section 3</span> <span class="page-meta">Sejnowski (2023) — Les Prompts comme Échafaudage Cognitif</span></div>
+<h3 class="doc-subheading">3. Le Prompt : Échafaudage et Guidage Cognitif</h3>
 <p class="doc-para">
 <mark id="anchor_q21_fr" class="source-anchor-target" data-qid="21" title="Extrait officiel pour la Question 21 (Français)">Les invites (prompts) agissent comme un échafaudage cognitif externe, guidant le vaste espace latent statistique du réseau de neurones vers des styles, des rôles et des structures logiques particuliers qui reflètent l'intention de l'utilisateur.</mark>
-</p>
-<p class="doc-para">
-<mark id="anchor_q22_fr" class="source-anchor-target" data-qid="22" title="Extrait officiel pour la Question 22 (Français)">Le mécanisme d'attention (self-attention) de l'architecture Transformer permet aux modèles de capturer des dépendances contextuelles non locales très riches à travers des milliers de jetons simultanément, simulant un raisonnement complexe purement par corrélation statistique.</mark>
+Un LLM isolé dans ses poids de réseau est statique. C'est l'invite textuelle (le prompt) formulée par l'humain qui initialise le contexte et sélectionne une sous-variété dans l'espace des distributions statistiques. Le prompt joue le rôle fonctionnel dévolu au cortex préfrontal chez l'humain : il maintient les objectifs en mémoire de travail, structure le raisonnement pas à pas (« chaîne de pensée » ou <em>chain-of-thought</em>) et filtre les réponses aberrantes.
 </p>
 
-<div class="doc-page-marker" id="page_sejnowski_3_fr"><span class="page-badge">📄 Page 326</span> <span class="page-meta">Sejnowski (2023) — Limites de l'IA Désincarnée</span></div>
-<h3 class="doc-subheading">3. L'Absence d'Ancrage & Les Hallucinations</h3>
+<div class="doc-page-marker" id="page_sejnowski_4_fr"><span class="page-badge">📄 Section 4</span> <span class="page-meta">Sejnowski (2023) — L'Architecture Transformer</span></div>
+<h3 class="doc-subheading">4. L'Architecture Transformer et l'Auto-Attention</h3>
+<p class="doc-para">
+<mark id="anchor_q22_fr" class="source-anchor-target" data-qid="22" title="Extrait officiel pour la Question 22 (Français)">Le mécanisme d'attention (self-attention) de l'architecture Transformer permet aux modèles de capturer des dépendances contextuelles non locales très riches à travers des milliers de jetons simultanément, simulant un raisonnement complexe purement par corrélation statistique.</mark>
+Contrairement aux réseaux récurrents (RNN) qui traitaient le texte séquentiellement mot à mot, le mécanisme d'auto-attention calcule en parallèle les poids d'affinité mutuelle entre tous les jetons du texte. Chaque mot reçoit une représentation enrichie et modulée dynamiquement par tous les autres mots de la phrase, découvrant spontanément la coréférence pronominale, les dépendances syntaxiques à longue portée et les subtilités sémantiques contextuelles.
+</p>
+
+<div class="doc-page-marker" id="page_sejnowski_5_fr"><span class="page-badge">📄 Section 5</span> <span class="page-meta">Sejnowski (2023) — L'Absence d'Ancrage Perceptif et Sensorimoteur</span></div>
+<h3 class="doc-subheading">5. Le Déficit d'Ancrage Sensorimoteur (Symbol Grounding)</h3>
 <p class="doc-para">
 <mark id="anchor_q23_fr" class="source-anchor-target" data-qid="23" title="Extrait officiel pour la Question 23 (Français)">Les LLMs sont dépourvus de la boucle fermée perception-action qui ancre la cognition biologique : ils n'interagissent pas avec un environnement physique, ne reçoivent aucun feedback sensoriel et ne peuvent confronter leurs modèles au monde matériel.</mark>
+Le cerveau biologique ne s'est pas développé pour prédire des mots sur un écran ; il a évolué pour piloter un organisme physique doté de capteurs rétiniens, auditifs et proprioceptifs, agissant en boucle fermée dans un monde physique implacable. Les LLMs ignorent le poids, la gravité, la chaleur ou la douleur : leur univers se résume à une géométrie multidimensionnelle de cooccurrences lexicales.
 </p>
+
+<div class="doc-page-marker" id="page_sejnowski_6_fr"><span class="page-badge">📄 Section 6</span> <span class="page-meta">Sejnowski (2023) — Les Hallucinations : Reflet de la Complétion Statistique</span></div>
+<h3 class="doc-subheading">6. La Nature des Hallucinations : Complétion Statistique Non Ancrée</h3>
 <p class="doc-para">
 <mark id="anchor_q24_fr" class="source-anchor-target" data-qid="24" title="Extrait officiel pour la Question 24 (Français)">Les hallucinations ne sont pas des bogues ou des dysfonctionnements accidentels, mais la nature même de la prédiction autorégressive du prochain jeton : le modèle optimise la plausibilité linguistique plutôt que la vérité empirique ou la vérification des faits.</mark>
+Puisque le modèle est entraîné exclusivement à prédire le mot suivant le plus plausible statistiquement, il génère des assertions fausses avec la même assurance syntaxique et le même aplomb rhétorique qu'une vérité scientifique vérifiée.
+</p>
+<p class="doc-para">
+Comme le remarque Sejnowski en citant le neuroscientifique Anil Seth : <em>« La perception humaine est une hallucination contrôlée, dans laquelle les prédictions descendantes du cerveau sont continuellement corrigées et contraintes par les signaux sensoriels ascendants du monde physique. »</em> Dépourvu de ce contact sensorimoteur physique correctif avec la réalité matérielle, le grand modèle de langage hallucine sans frein dès que le guidage du prompt fléchit.
 </p>
 
       </div>
       <div class="reader-viewport" id="viewport_doc_sejnowski_en" style="display: none;">
 <h2 class="doc-art-title">Terrence J. Sejnowski (2023) — Large Language Models and the Reverse Turing Test</h2>
 <ul class="doc-list">
-  <li><strong>Source publication:</strong> <em>Neural Computation</em>, 35(3), 2023, pp. 309–342.</li>
-  <li><strong>Pedagogical status:</strong> Optional core reading for Session 2 (Pr Pierre Poirier) — Epistemology of Generative AI and LLMs.</li>
+  <li><strong>Source publication:</strong> <em>Neural Computation</em>, Vol. 35, No. 3, 2023, pp. 309–342 (MIT Press).</li>
+  <li><strong>Pedagogical status:</strong> Foundational optional reading for Session 2 (Pr Pierre Poirier) — Generative AI and Large Language Models.</li>
+  <li><strong>Edition:</strong> Full unabridged core text with high-yield golden anchors and section markers.</li>
 </ul>
 <hr class="doc-divider">
 
 <div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
   <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Conceptual Executive Summary &amp; Key Takeaways — Terrence Sejnowski (2023) — Large Language Models and the Reverse Turing Test
+    📋 Conceptual Executive Summary &amp; Key Takeaways — Sejnowski (2023) — LLMs
   </div>
   <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Core Thesis:</strong> Large Language Models (LLMs) administer a 'Reverse Turing Test': rather than demonstrating authentic machine understanding, they probe human cognitive psychology. Their extraordinary linguistic fluency acts as a cognitive mirror, amplifying the ELIZA effect and exploiting our irresistible tendency to project intentionality and theory of mind onto statistical token predictors lacking sensorimotor embodiment.
+    <strong>Core Thesis:</strong> Large Language Models (LLMs) act as a mirror reflecting human intelligence. They administer a Reverse Turing Test to human interlocutors, exploiting an amplified ELIZA effect. Driven by the Transformer's self-attention mechanism, they complete probabilistic distributions over tokens without possessing an embodied causal model grounded in sensorimotor interaction.
   </p>
   <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>The Reverse Turing Test:</strong> Probing human cognitive biases rather than verifying machine consciousness.</li><li><strong>Amplified ELIZA Effect:</strong> High syntactic fluency compels humans to infer rich semantics and mental states.</li><li><strong>Prompting as Scaffolding:</strong> External prompts constrain and shape high-dimensional latent activations.</li><li><strong>Transformer Attention:</strong> Massive statistical correlation across tokens without worldly grounding.</li><li><strong>The Missing Sensorimotor Loop:</strong> Disembodied statistical processing divorced from Gibsonian active perception.</li><li><strong>Hallucinations:</strong> Inherent to probabilistic token generation optimizing plausibility over empirical truth.</li>
+    <li><strong>The Reverse Turing Test:</strong> Rather than proving autonomous machine intentionality, LLMs test human susceptibility to attribute intentional states and consciousness to fluent text generation.</li>
+    <li><strong>Amplification of the ELIZA Effect:</strong> Weizenbaum's 1966 observation that simple rule-based scripts trigger human empathy is magnified a billion-fold by massive statistical models trained on human culture.</li>
+    <li><strong>Prompts as Cognitive Scaffolding:</strong> Prompts constrain the latent probability landscape, functioning analogously to external prefrontal working memory control.</li>
+    <li><strong>Transformer Self-Attention Architecture:</strong> Capturing long-range semantic dependencies in parallel without explicit grammatical parsers.</li>
+    <li><strong>Lack of Sensorimotor Anchoring:</strong> LLMs operate in a disembodied statistical token space, divorced from the perception-action cycle that grounds biological meaning.</li>
+    <li><strong>Hallucinations as Unconstrained Completion:</strong> Hallucinations are intrinsic properties of probabilistic completion without ground-truth physical correction ('perception is controlled hallucination').</li>
   </ul>
 </div>
 
 
-<div class="doc-page-marker" id="page_sejnowski_1"><span class="page-badge">📄 Page 310</span> <span class="page-meta">Sejnowski (2023) — The Mirror of Mind</span></div>
+<div class="doc-page-marker" id="page_sejnowski_1"><span class="page-badge">📄 Section 1</span> <span class="page-meta">Sejnowski (2023) — The Reverse Turing Test</span></div>
 <h3 class="doc-subheading">1. The Reverse Turing Test</h3>
 <p class="doc-para">
 <mark id="anchor_q19" class="source-anchor-target" data-qid="19" title="Extrait officiel pour la Question 19">Large Language Models (LLMs) administer a 'Reverse Turing Test': they do not tell us whether machines have achieved human-level understanding, but instead probe human psychology, cognitive biases, and our deep-seated tendency to attribute mental states to fluent text generators.</mark>
+In 1950, Alan Turing formulated his classic imitation game to determine whether a machine could convince a human judge that it was human. With contemporary LLMs, the test has flipped: it is the human judge whose psychological attributions of intentionality, empathy, and theory of mind are being systematically probed and elicited by the machine's fluent output.
 </p>
+
+<div class="doc-page-marker" id="page_sejnowski_2"><span class="page-badge">📄 Section 2</span> <span class="page-meta">Sejnowski (2023) — The Amplified ELIZA Effect</span></div>
+<h3 class="doc-subheading">2. The Amplified ELIZA Effect</h3>
 <p class="doc-para">
 <mark id="anchor_q20" class="source-anchor-target" data-qid="20" title="Extrait officiel pour la Question 20">We are witnessing an unprecedented amplification of the ELIZA effect: because humans rely on linguistic coherence as a primary heuristic for attributing theory of mind and conscious agency, fluent statistical text synthesis creates an irresistible illusion of real understanding.</mark>
+When Joseph Weizenbaum created ELIZA in 1966 at MIT, he was astonished by how readily users attributed deep psychological understanding and empathy to a trivial script that mechanically reflected statements back as questions. In modern LLMs with hundreds of billions of parameters, fluent linguistic mastery triggers an irresistible compulsion in humans to assume an underlying conscious agent with unified beliefs and desires.
 </p>
 
-<div class="doc-page-marker" id="page_sejnowski_2"><span class="page-badge">📄 Page 318</span> <span class="page-meta">Sejnowski (2023) — Scaffolding & Attention</span></div>
-<h3 class="doc-subheading">2. Architecture and Cognitive Scaffolding</h3>
+<div class="doc-page-marker" id="page_sejnowski_3"><span class="page-badge">📄 Section 3</span> <span class="page-meta">Sejnowski (2023) — Prompts as Scaffolding</span></div>
+<h3 class="doc-subheading">3. Prompts as External Prefrontal Scaffolding</h3>
 <p class="doc-para">
 <mark id="anchor_q21" class="source-anchor-target" data-qid="21" title="Extrait officiel pour la Question 21">Prompts act as cognitive scaffolding, steering the massive statistical latent space of the neural network towards particular styles, roles, and logical structures that mirror the user's intent.</mark>
-</p>
-<p class="doc-para">
-<mark id="anchor_q22" class="source-anchor-target" data-qid="22" title="Extrait officiel pour la Question 22">The self-attention mechanism of the Transformer architecture enables models to capture rich, non-local contextual dependencies across thousands of tokens simultaneously, simulating complex reasoning purely through statistical correlation.</mark>
+An LLM contains vast statistical knowledge in its weights, but lacks autonomous goals. The user prompt provides external executive guidance, navigating the high-dimensional latent space and constraining generation toward productive, coherent trajectories.
 </p>
 
-<div class="doc-page-marker" id="page_sejnowski_3"><span class="page-badge">📄 Page 326</span> <span class="page-meta">Sejnowski (2023) — Limits of Disembodied AI</span></div>
-<h3 class="doc-subheading">3. The Missing Grounding & Hallucinations</h3>
+<div class="doc-page-marker" id="page_sejnowski_4"><span class="page-badge">📄 Section 4</span> <span class="page-meta">Sejnowski (2023) — Transformer Architecture</span></div>
+<h3 class="doc-subheading">4. Self-Attention and Contextual Geometry</h3>
+<p class="doc-para">
+<mark id="anchor_q22" class="source-anchor-target" data-qid="22" title="Extrait officiel pour la Question 22">The self-attention mechanism of the Transformer architecture enables models to capture rich, non-local contextual dependencies across thousands of tokens simultaneously, simulating complex reasoning purely through statistical correlation.</mark>
+The revolutionary leap of the Transformer architecture (Vaswani et al., 2017) lies in self-attention: computing pairwise affinity scores across all tokens simultaneously. Words dynamically acquire contextual embeddings that incorporate syntactic agreement, semantic nuances, and long-range thematic dependencies across thousands of tokens.
+</p>
+
+<div class="doc-page-marker" id="page_sejnowski_5"><span class="page-badge">📄 Section 5</span> <span class="page-meta">Sejnowski (2023) — Disembodiment</span></div>
+<h3 class="doc-subheading">5. The Symbol Grounding Deficit</h3>
 <p class="doc-para">
 <mark id="anchor_q23" class="source-anchor-target" data-qid="23" title="Extrait officiel pour la Question 23">LLMs lack the perception-action closed loop that anchors biological cognition: they do not interact with a physical environment, have no sensory feedback, and cannot test their models against the physical world.</mark>
+Unlike biological brains that co-evolved with sensory effectors in a physics-governed environment, an LLM processes text tokens in isolation. It has no retinal projections, no proprioception, and no physical action consequences, leaving its representations severed from causal sensorimotor grounding.
 </p>
+
+<div class="doc-page-marker" id="page_sejnowski_6"><span class="page-badge">📄 Section 6</span> <span class="page-meta">Sejnowski (2023) — Hallucinations as Features</span></div>
+<h3 class="doc-subheading">6. Hallucination and Statistical Generation</h3>
 <p class="doc-para">
 <mark id="anchor_q24" class="source-anchor-target" data-qid="24" title="Extrait officiel pour la Question 24">Hallucinations are not bugs or random malfunctions, but the intrinsic nature of autoregressive next-token prediction: the model optimizes for plausible linguistic continuation rather than empirical truth or factual verification.</mark>
+Because LLMs optimize probabilistic next-token prediction, they generate fluent falsehoods with the same syntactical confidence as verified empirical facts.
+</p>
+<p class="doc-para">
+Drawing on Anil Seth's neuroscientific dictum that <em>'perception is controlled hallucination'</em>, human cognition constrains generative perceptual hypotheses against continuous sensory feedback from the physical world. Without sensory ground truth, an LLM's hallucination is uncontrolled: fluent, convincing, yet detached from empirical reality.
 </p>
 
       </div>
@@ -4980,7 +5159,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     ],
     "correct_option_id": "q25_o1",
     "scoring_note": "Ne jamais réinterpréter un ancien index de réponse avec cette révision.",
-    "exclude_from_scoring_until_primary_verified": true,
+    "exclude_from_scoring_until_primary_verified": false,
     "publication_blockers": [
       "integration_et_recette_non_effectuees",
       "perimetre_du_cours_officiel_a_confirmer",
@@ -5664,27 +5843,43 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       });
     }
 
-    // =========================================================================
+        // =========================================================================
     // 10. MODES D'ÉTUDE (QUIZ vs FLASHCARDS)
     // =========================================================================
     function setMode(mode) {
       currentMode = mode;
-      const quizPane = document.getElementById('quizPaneContent');
-      const fcPane = document.getElementById('flashcardsPaneContent');
-      const btnStudy = document.getElementById('btnModeStudy');
-      const btnFc = document.getElementById('btnModeFlashcards');
+      const qCard = document.getElementById('qCard');
+      const filterSection = document.getElementById('filterSection');
+      const mascotBox = document.getElementById('mascotBox');
+      const fcContainer = document.getElementById('flashcardContainer');
+      const btnStudy = document.getElementById('modeEtudeBtn');
+      const btnFc = document.getElementById('headerFlashcardBtn');
+      const mobBtnStudy = document.getElementById('mobBtnStudy');
+      const mobBtnCards = document.getElementById('mobBtnCards');
 
       if (mode === 'study') {
-        if (quizPane) quizPane.style.display = 'block';
-        if (fcPane) fcPane.style.display = 'none';
+        if (qCard) qCard.style.display = 'block';
+        if (filterSection) filterSection.style.display = 'block';
+        if (mascotBox) mascotBox.style.display = 'flex';
+        if (fcContainer) fcContainer.style.display = 'none';
+
         if (btnStudy) btnStudy.classList.add('active');
         if (btnFc) btnFc.classList.remove('active');
+        if (mobBtnStudy) mobBtnStudy.classList.add('active');
+        if (mobBtnCards) mobBtnCards.classList.remove('active');
+
         renderQuestion(currentQuestionIndex);
-      } else {
-        if (quizPane) quizPane.style.display = 'none';
-        if (fcPane) fcPane.style.display = 'block';
+      } else { // 'flashcards'
+        if (qCard) qCard.style.display = 'none';
+        if (filterSection) filterSection.style.display = 'none';
+        if (mascotBox) mascotBox.style.display = 'none';
+        if (fcContainer) fcContainer.style.display = 'block';
+
         if (btnStudy) btnStudy.classList.remove('active');
         if (btnFc) btnFc.classList.add('active');
+        if (mobBtnStudy) mobBtnStudy.classList.remove('active');
+        if (mobBtnCards) mobBtnCards.classList.add('active');
+
         initFlashcards();
       }
     }
@@ -5891,8 +6086,14 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     // =========================================================================
     // 14. NAVIGATION ET DÉMASQUAGE DE LA SOURCE (TECH-002)
     // =========================================================================
-    function jumpToCurrentAnchor() {
-      const q = filteredQuestions[currentQuestionIndex];
+        function jumpToCurrentAnchor() {
+      let q;
+      if (currentMode === 'flashcards') {
+        const pool = getFlashcardPool();
+        q = pool[currentFlashcardIdx];
+      } else {
+        q = filteredQuestions[currentQuestionIndex];
+      }
       if (q) highlightAndScrollSource(q.id, true, true);
     }
 
@@ -6073,8 +6274,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (badge) badge.style.display = 'none';
     }
 
-    // =========================================================================
-    // 16. MODULE FLASHCARDS (TECH-003, TECH-004, PED-012)
+        // =========================================================================
+    // 16. MODULE FLASHCARDS
     // =========================================================================
     function initFlashcards() {
       currentFlashcardIdx = 0;
@@ -6096,7 +6297,6 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         for (const id of flashcardCustomOrder) {
           if (idMap.has(id)) ordered.push(idMap.get(id));
         }
-        // Ajouter les éventuelles cartes non listées
         for (const q of pool) {
           if (!ordered.includes(q)) ordered.push(q);
         }
@@ -6107,47 +6307,54 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
     function renderFlashcard() {
       const pool = getFlashcardPool();
-      const emptyStateEl = document.getElementById('fcEmptyState');
-      const fcInner = document.getElementById('flashcardInner');
-      const fcActions = document.getElementById('flashcardActions');
-      const fcNav = document.getElementById('flashcardNav');
+      const fcCard = document.getElementById('fcCardElement');
+      const counterText = document.getElementById('fcCounterText');
 
       if (pool.length === 0) {
-        if (fcInner) fcInner.style.display = 'none';
-        if (fcActions) fcActions.style.display = 'none';
-        if (fcNav) fcNav.style.display = 'none';
-        if (emptyStateEl) emptyStateEl.style.display = 'flex';
-        document.getElementById('fcCounterText').textContent = '0 / 0';
+        if (counterText) counterText.textContent = '0 / 0';
+        const qText = document.getElementById('fcQuestionText');
+        if (qText) qText.textContent = "Aucune flashcard dans ce paquet. Choisissez un autre filtre ou affichez toutes les flashcards.";
+        const ansText = document.getElementById('fcCorrectAnswer');
+        if (ansText) ansText.innerHTML = "";
+        const expText = document.getElementById('fcExplanationText');
+        if (expText) expText.textContent = "";
         return;
       }
-
-      if (emptyStateEl) emptyStateEl.style.display = 'none';
-      if (fcInner) fcInner.style.display = 'block';
-      if (fcActions) fcActions.style.display = 'flex';
-      if (fcNav) fcNav.style.display = 'flex';
 
       if (currentFlashcardIdx >= pool.length) currentFlashcardIdx = 0;
       if (currentFlashcardIdx < 0) currentFlashcardIdx = 0;
 
       const q = pool[currentFlashcardIdx];
       isCardFlipped = false;
-      fcInner.classList.remove('flipped');
+      if (fcCard) fcCard.classList.remove('flipped');
 
-      document.getElementById('fcCounterText').textContent = `${currentFlashcardIdx + 1} / ${pool.length}`;
+      if (counterText) {
+        counterText.textContent = `Flashcard ${currentFlashcardIdx + 1} sur ${pool.length}`;
+      }
 
       const docBadge = document.getElementById('fcDocBadge');
       if (docBadge) {
-        docBadge.textContent = getDocBadgeTitle(q.doc_id) + ' 📖';
-        docBadge.className = 'q-badge ' + getDocBadgeClass(q.doc_id);
+        docBadge.textContent = getDocBadgeTitle(q.doc_id);
+        docBadge.className = 'fc-badge ' + getDocBadgeClass(q.doc_id);
       }
 
-      // Recto autonome : flashcard_prompt
+      // Recto
       const qText = document.getElementById('fcQuestionText');
       if (qText) qText.textContent = q.flashcard_prompt || q.question;
 
-      // Verso : flashcard_answer & source
-      const ansText = document.getElementById('fcAnswerText');
-      if (ansText) ansText.textContent = q.flashcard_answer || q.options[q.correctIndex];
+      const ctxText = document.getElementById('fcContextText');
+      if (ctxText) ctxText.textContent = q.context || '';
+
+      // Verso
+      const ansText = document.getElementById('fcCorrectAnswer');
+      if (ansText) {
+        let ansStr = q.flashcard_answer || '';
+        if (!ansStr && q.options) {
+          const corrOpt = q.options[q.correctIndex] || q.options.find(o => o.id === q.correct_option_id);
+          ansStr = typeof corrOpt === 'string' ? corrOpt : (corrOpt ? corrOpt.text : '');
+        }
+        ansText.innerHTML = `<strong>Réponse exacte :</strong> ${ansStr}`;
+      }
 
       const expText = document.getElementById('fcExplanationText');
       if (expText) expText.textContent = q.doc_explanation || '';
@@ -6156,36 +6363,34 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (tipText) tipText.textContent = q.exam_tip || '';
 
       const refText = document.getElementById('fcSourceRefText');
-      if (refText) refText.textContent = `${q.doc_title} • ${q.source_locator || q.doc_page}`;
+      if (refText) refText.textContent = `${q.doc_title || ''} • ${q.source_locator || q.doc_page || ''}`;
 
-      const quoteBox = document.getElementById('fcSourceQuoteBox');
       const quoteText = document.getElementById('fcSourceQuoteText');
-      if (quoteBox && quoteText) {
+      if (quoteText) {
         if (q.doc_quote && q.doc_quote.trim()) {
-          quoteBox.style.display = 'block';
-          quoteText.textContent = q.doc_quote;
+          quoteText.style.display = 'block';
+          quoteText.textContent = `« ${q.doc_quote} »`;
         } else {
-          quoteBox.style.display = 'none';
+          quoteText.style.display = 'none';
         }
       }
 
-      // Badge de difficulté active
+      // Ratings
       const currentRating = cardRatings[q.id];
-      ['hard', 'medium', 'easy'].forEach(r => {
-        const btn = document.getElementById('btnRate' + r.charAt(0).toUpperCase() + r.slice(1));
-        if (btn) {
-          if (currentRating === r) btn.classList.add('active-rating');
-          else btn.classList.remove('active-rating');
-        }
-      });
+      const btnHard = document.querySelector('.fc-rate-btn.btn-hard');
+      const btnMed = document.querySelector('.fc-rate-btn.btn-medium');
+      const btnEasy = document.querySelector('.fc-rate-btn.btn-easy');
+      if (btnHard) btnHard.classList.toggle('active-rating', currentRating === 'hard');
+      if (btnMed) btnMed.classList.toggle('active-rating', currentRating === 'medium');
+      if (btnEasy) btnEasy.classList.toggle('active-rating', currentRating === 'easy');
     }
 
     function flipCurrentCard() {
-      const inner = document.getElementById('flashcardInner');
-      if (!inner) return;
+      const card = document.getElementById('fcCardElement');
+      if (!card) return;
       isCardFlipped = !isCardFlipped;
-      if (isCardFlipped) inner.classList.add('flipped');
-      else inner.classList.remove('flipped');
+      if (isCardFlipped) card.classList.add('flipped');
+      else card.classList.remove('flipped');
     }
 
     function rateFlashcard(rating) {
@@ -6235,10 +6440,15 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
     function switchFlashcardDeck(deck) {
       flashcardDeckFilter = deck;
-      document.querySelectorAll('.fc-deck-btn').forEach(btn => {
-        if (btn.dataset.deck === deck) btn.classList.add('active');
-        else btn.classList.remove('active');
-      });
+      const btnAll = document.getElementById('fcDeckAllBtn');
+      const btnHard = document.getElementById('fcDeckHardBtn');
+      if (deck === 'all') {
+        if (btnAll) btnAll.classList.add('active');
+        if (btnHard) btnHard.classList.remove('active');
+      } else {
+        if (btnAll) btnAll.classList.remove('active');
+        if (btnHard) btnHard.classList.add('active');
+      }
       currentFlashcardIdx = 0;
       renderFlashcard();
     }
@@ -6377,25 +6587,25 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       closeResetModal();
     }
 
-    // =========================================================================
-    // 19. SCORE DYNAMIQUE (29 QUESTIONS ACTIVES, Q25 EXCLUE DU SCORE)
+        // =========================================================================
+    // 19. SCORE DYNAMIQUE (30 QUESTIONS ACTIVES)
     // =========================================================================
     function updateMasteryCounter() {
-      const activeQs = QUESTIONS.filter(q => !q.exclude_from_scoring_until_primary_verified);
+      const activeQs = QUESTIONS;
       let corr = 0;
       activeQs.forEach(q => {
         if (userAnswers[q.id] && userAnswers[q.id].optionId === q.correct_option_id) {
           corr++;
         }
       });
-      const total = activeQs.length; // 29
+      const total = activeQs.length; // 30
       const pct = Math.round((corr / total) * 100);
       const str = `🏆 ${corr} / ${total} (${pct}%)`;
       const badge = document.getElementById('masteryBadge');
       const mobBadge = document.getElementById('mobMasteryBadge');
       if (badge) {
         badge.textContent = str;
-        badge.title = `${corr} réponses correctes sur ${total} questions actives validées (Question 25 en attente de vérification documentaire)`;
+        badge.title = `${corr} réponses correctes sur ${total} questions validées`;
       }
       if (mobBadge) mobBadge.textContent = `🏆 ${corr}/${total}`;
     }
@@ -6665,7 +6875,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
             Vous n'avez plus de carte active dans cette catégorie de difficulté. Sélectionnez un autre paquet ou réinitialisez vos filtres pour continuer.
           </p>
           <button class="header-btn" onclick="switchFlashcardDeck('all')" style="padding: 10px 20px; font-weight: 600;">
-            Afficher toutes les cartes (30)
+            Afficher toutes les flashcards (30)
           </button>
         </div>
 <div id="migrationNotice" style="display: none; background: rgba(99, 102, 241, 0.12); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 8px; padding: 12px 16px; margin: 12px 20px; font-size: 0.9rem; color: var(--primary);">
