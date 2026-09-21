@@ -1,0 +1,12 @@
+Quelques remarques sur les textes optionnels
+
+- Les textes de Newell et Simon (1975) et de McClelland (2009) permettent de mieux comprendre la relation entre l'intelligence artificielle et la psychologie cognitive. Le texte de Newell et Simon a plus de 50 ans maintenant mais ses leçons sont toujours actuelles.
+- Le texte de Sejnowski (2023) sera à lire au complet à la séance 12. Pour l'instant, vous pourriez vous concentrer sur la partie proprement historique du texte, soit les sections 6 et 7.
+
+Vous pourriez également consulter les ouvrages suivant:
+- Haugeland, J. (1984). Artificial Intelligence: The Very Idea. Cambridge (MA): MIT Press. (Une version étayée du propos présent dans le texte suggéré comme lecture cette semaine Haugeland (1981))
+- Dreyfus, H. (1972). What Computers Still Can’t Do. Cambridge (MA): MIT Press. (La première critique de principe de l'intelligence artificielle, dont plusieurs aspects sont encore pertinents - et qui nous aide à comprendre le chemin qu'a pris l'histoire de l'intelligence artificielle de ses débuts jusqu'à aujourd'hui).
+
+
+
+

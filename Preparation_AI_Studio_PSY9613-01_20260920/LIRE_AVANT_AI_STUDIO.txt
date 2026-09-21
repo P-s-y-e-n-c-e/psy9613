@@ -1,0 +1,35 @@
+PSY9613 — séance 1 du 14 septembre 2026
+
+Dans AI Studio :
+1. Joindre PSY9613-01_RAW_PRÉTRIANGULATION.json.
+2. Joindre PSY9613-01_Transitions_raw.md.
+3. Joindre cours1_Intro.pdf.
+4. Copier le texte de PSY9613-01_PROMPT_AI_STUDIO_TRIANGULATION.txt dans le message.
+
+Le Markdown est une copie intacte du brouillon existant. AI Studio doit produire
+PSY9613-01_Transitions.md. Conserver le brouillon et enregistrer le résultat
+corrigé séparément; il servira ensuite au parcours complet dans ENCORA.
+
+Repères :
+- Audio de référence : PSY9613 - 14 septembre [Master Optimise].m4a.
+- Durée du Master : 02:54:44.041. Les temps du JSON sont relatifs au début
+  de ce Master, pas à l'enregistrement S24D ni aux autres sources séparées.
+- Le brouillon déclare un début à 13:59:44 EDT; ce repère n'a pas été déplacé.
+- Deux enseignants : Dave Saint-Amour et Pierre Poirier.
+- Un seul support joint : cours1_Intro.pdf, 41 pages. Sa page 4 reproduit
+  une page du plan de cours; le plan complet séparé n'a pas été ajouté.
+- Le JSON est une transcription préparatoire WhisperX large-v3 alignée,
+  sans diarisation ni reconstruction éditoriale. Il peut contenir des erreurs
+  de reconnaissance. Ce n'est pas le résultat GOLDEN.
+- Une inspection limitée du brut a relevé des répétitions et des mentions
+  parasites de sous-titrage. Elles sont conservées, sans correction silencieuse;
+  ne pas les interpréter comme du contenu pédagogique ou une preuve de transition.
+- Le segment « 1, 2, 3, 4, 5. », à environ 01:28:57, contient une anomalie
+  d'alignement : start=5337.67 et end=5337.65, soit une inversion de 20 ms.
+  Le brut natif a été conservé tel quel. Ne pas utiliser cette micro-frontière
+  comme repère exact; s'appuyer sur le contexte et les segments voisins.
+
+Lors de la triangulation, distinguer le moment où un sujet est abordé du
+moment où sa diapositive est réellement affichée. Signaler les transitions
+incertaines plutôt que d'inventer leur précision. Conserver les repères
+du Master pour permettre le retour ultérieur à l'audio original.

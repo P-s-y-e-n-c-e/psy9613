@@ -1,0 +1,12 @@
+Voici le fichier PSY9613-01_Transitions_raw.md avec les horodatages des moments de transitions de diapositive d'un cours d'université.
+
+Voici également l'extraction brute WhisperX de l'audio du cours : PSY9613-01_RAW_PRÉTRIANGULATION.json
+
+Voici enfin la liste des fichiers de support visuel employés durant cette session pour les transitions (à inspecter visuellement pour inférer la matrice temporelle avec ton analyse triangulatoire) :
+- cours1_Intro.pdf
+
+Sers-toi de l'information temporelle WhisperX pour affiner la précision du fichier PSY9613-01_Transitions_raw.md et génère un nouveau tableau corrigé.
+
+N'emploie pas de méthode heuristique paresseuse ; croise toute l'information minutieusement pour identifier les timestamps précis.
+
+Génère le tableau markdown amélioré, estimé et raffiné à la seconde près pour générer la version finale de PSY9613-01_Transitions.md dans une boite Markdown copiable.
