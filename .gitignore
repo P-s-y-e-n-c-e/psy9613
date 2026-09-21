@@ -1,8 +1,10 @@
-# Audio & Video files (large recordings)
-*.m4a
-*.mp4
-*.mp3
+# Audio & Video files (large raw recordings)
+PSY9613*.m4a
+PSY9613*.mp4
 *.wav
+
+# Allow official podcast audio
+!02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/*.m4a
 
 # OS / Temporary
 Thumbs.db
