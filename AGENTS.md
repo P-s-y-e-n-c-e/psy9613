@@ -183,3 +183,43 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
    - **Traque des angles morts :** Utiliser des sous-agents Pro pour confronter les propositions du Gem aux transcriptions GOLD et débusquer les omissions.
    - **Contre-attaque continue :** Renvoyer les angles morts dans le Gem via CDP pour forcer la réévaluation jusqu'à ce qu'il ne reste que des faux positifs ou des détails insignifiants (saturation asymptotique).
    - **Garde-fou final :** Passage à GPT-6 uniquement lorsque la banque a résisté à toutes les passes internes.
+
+---
+
+## 🔄 8. Protocole de Pilotage Dialectique Séquentiel (DeepThink ↔ GPT-6) & Synchronisation GitHub
+
+> [!IMPORTANT]
+> **Décharge Cognitive Absolue de Michel & Gravure Procédurale Permanente :**
+> Ces procédures ont été rigoureusement testées et validées sur le terrain. L'agent Antigravity DOIT les appliquer de manière autonome et continue sans que Michel n'ait jamais à les réexpliquer ou à porter la charge mentale de leur réitération.
+
+### 1. La Règle de Séquentialité Stricte (Jamais en Parallèle) :
+- **Pourquoi :** Le travail de l'un est la matière première de l'autre. Lancer les deux modèles en parallèle les fait diverger sur des tangentes incompatibles.
+- **La chaîne causale :**
+  $$\text{DeepThink (Proposition)} \longrightarrow \text{GPT-6 (Audit & Réfutation)} \longrightarrow \text{DeepThink (Contre-attaque & Défense)}$$
+- **Rôle d'Antigravity (Orchestrateur & Raisonnement Actif) :**
+  Antigravity n'est pas un automate aveugle mais un filtre épistémique doctoral. Il évalue la qualité du contenu, mesure le gain marginal ($\Delta$), traduit les critiques avec mordant académique, et ne s'arrête que lorsque le $\Delta \le 1\%$ (saturation asymptotique où il ne reste que des broutilles ou des faux positifs).
+
+### 2. Synchronisation Obligatoire sur GitHub AVANT d'Interroger GPT-6 :
+- **Pourquoi :** GPT-6 ne met pas à jour sa mémoire locale et vide sa cache pour éviter la pollution. Il n'accède qu'au serveur web public GitHub (`https://github.com/P-s-y-e-n-c-e/psy9613`). La moindre désynchronisation entre les fichiers locaux et GitHub fausse son jugement.
+- **Règle d'or :** TOUTE nouvelle sortie de DeepThink (sauvegardée dans `04_Examens_et_Syntheses/Drive_Audit_Gemini_DeepThink/Reponse_DeepThink_..._Raw.md`), tout verbatim ou toute grille psychométrique DOIT être committée et poussée (`git push origin main`) **avant** d'envoyer le moindre prompt à GPT-6.
+- **Sources complètes requises sur GitHub :**
+  * Extractions acoustiques brutes Whisper (`RAW_PRÉTRIANGULATION.json`) pour vérifier le mot à mot brut si nécessaire.
+  * Verbatims GOLD raffinés et structurés (`PSY9613-02_GOLD.md`, `Seance_01_GOLD_Verbatim_Classe.txt`).
+  * Textes intégraux des articles originaux (Bosco, Haugeland, Newell & Simon, McClelland, Sejnowski).
+  * Référentiel psychométrique étalon-or (`REFERENTIEL_PSYCHOMETRIQUE_ETALON_OR.md`).
+
+### 3. Métriques et Caractéristiques Opérationnelles des Modèles :
+- **Gemini DeepThink (Onglet Chrome 9223) :**
+  * **Temps de calcul moyen : 25 à 27 minutes** sur les prompts doctoraux complexes.
+  * **Règle de patience :** Ne jamais rafraîchir la page ni relancer prématurément. Attendre la fin du calcul.
+  * **Persistance :** Sauvegarder immédiatement la réponse textuelle brute dans un fichier Markdown local, puis committer/pousser sur Git.
+- **GPT-6 (Session OpenAI `UQAM - PSY9613 - Audit Station`) :**
+  * **Fenêtre de contexte :** 256k tokens.
+  * **Exécution atomique :** Une fois le prompt envoyé, GPT-6 raisonne de bout en bout sans possibilité d'être "nudgé" en vol. Le prompt doit donc être complet, auto-suffisant et inclure les liens GitHub directs.
+  * **Injection CDP :** Utiliser `Input.insertText` ou `execCommand('insertText')` sur `#prompt-textarea` pour activer `aria-disabled="false"` sur le bouton d'envoi.
+
+### 4. Règle Anti-Impulsivité & Arrêt (Stop Hook) :
+- Ne jamais présumer de ce que Michel veut.
+- Ne jamais écrire dans une session sans son mandat explicite.
+- Dès qu'un choix d'orientation ou une validation est requis, s'arrêter complètement et attendre ses instructions.
+
