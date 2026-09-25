@@ -246,4 +246,19 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
   * Ne jamais sauter prématurément à une séance ultérieure sous prétexte qu'un modèle a fini un bloc partiel.
   * La Séance 1 (Dave Saint-Amour : TDS, Held & Hein, TVSS, Aglioti vs Jackson & Shaw, Bosco 2023) doit être ratissée, auditée et saturée avec le même niveau d'exigence que la Séance 2 avant d'autoriser une passe transversale combinée (Séances 1 & 2).
 
+### 7. Vérification Obligatoire, Systématique et Auditable du Modèle Gemini (Garde-fou DeepThink) :
+- **Constat de vulnérabilité :** L'interface web de Google Gemini réinitialise silencieusement le modèle vers `3.1 Pro` lors des rafraîchissements de page, reconnexions ou expirations de session.
+- **Protocole de double vérification CDP (Avant & Après) :**
+  1. *Avant l'envoi du prompt :* Inspecter obligatoirement le sélecteur de modèle (`.model-picker-btn`, etc.) pour s'assurer que `Deep Think` est sélectionné et actif. Si ce n'est pas le cas, le réactiver avant toute injection.
+  2. *Après la génération (Inviolable) :* Ne JAMAIS accepter une réponse sur la seule base de la disparition du bouton Stop ou de la longueur du texte. Antigravity DOIT obligatoirement simuler le clic sur le bouton `Show more options` (`⋮`) au bas de la réponse et extraire la chaîne textuelle du modèle via CDP (`Model: 3.1 Deep Think`).
+- **Règle de rejet automatique :**
+  - Si le texte extrait affiche `Model: 3.1 Pro` ou toute autre variante non-DeepThink, **la réponse est immédiatement et automatiquement rejetée**.
+  - Interdiction absolue d'archiver, de committer sur Git ou de transmettre à une autre session une sortie non certifiée `3.1 Deep Think`.
+- **Preuve d'audit obligatoire dans les métadonnées de fichier :**
+  - Tout fichier Markdown consignant une réponse brute dans `Drive_Audit_Gemini_DeepThink/` doit obligatoirement inclure dans ses premières lignes la preuve d'audit :
+    `> **Preuve de Modèle Certifiée :** Model: 3.1 Deep Think | Horodatage : [HH:MM] | Vérifié par inspection CDP du menu d'options`.
+- **Responsabilité partagée Contenu web & Quartier Général :**
+  - La session Contenu web a la responsabilité d'exécution de cette vérification.
+  - La session Quartier Général a la responsabilité de surveillance : elle doit systématiquement exiger cette preuve avant de valider tout jalon.
+
 
