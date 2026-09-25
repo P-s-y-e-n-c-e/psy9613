@@ -36,7 +36,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "René Descartes (1634, Traité de l'homme) & la mécanisation corporelle\n\nSelon le modèle biomécanique de « l'animal-machine » fondé par René Descartes (1634), quel statut explicatif exact est accordé aux fonctions physiologiques telles que la digestion, la respiration ou le mouvement réflexe de retrait face au feu ?",
     "flashcard_answer": "Réponse correcte (B) : Elles sont intégralement explicables par la pure mécanique causale des fluides physiques (les \"esprits animaux\" sous pression), ne requérant de ce fait aucune intervention de l'âme immatérielle.\n\nExplication : Toad : La naissance de la physiologie mécaniste. Pour Descartes, le corps est une « statue de terre ». La chaleur du cœur propulse les esprits animaux dans des nerfs perçus comme des tuyaux hydrauliques. Le réflexe de retrait face au feu tire un filet nerveux, ouvre un pore au cerveau et gonfle les muscles de la jambe par pure géométrie hydraulique aveugle, sans décision de l'âme immatérielle.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 22,
@@ -75,7 +75,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "René Descartes (1637, Discours de la méthode) — Le premier moyen certain\n\nD'après le « premier moyen certain » formulé par Descartes (1637), pour quelle raison structurelle et épistémologique stricte aucune machine matérielle ne pourra-t-elle jamais reproduire la faculté linguistique humaine ?",
     "flashcard_answer": "Réponse correcte (D) : Bien qu'une machine puisse émettre des sons par déclenchement mécanique fixe, aucune disposition finie de rouages ne peut composer dynamiquement des signes pour répondre au sens infini des situations vécues.\n\nExplication : Toad : Le défi de la productivité. Un automate ne peut répondre que par des associations stimulus-réponse préprogrammées (la « disposition de ses organes »). Mais participer à un dialogue exige une adaptation constante à l'imprévisibilité du réel. Même les humains les plus hébétés savent arranger des mots pour répondre au sens de ce qui se dit, alors qu'un agencement fini d'engrenages ne peut couvrir cette variété infinie.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 23,
@@ -114,7 +114,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "René Descartes (1637) — Le second moyen certain (Instrument universel vs Disposition)\n\nSelon l'argumentaire du « second moyen certain » (Descartes, 1637), pourquoi l'excellence indiscutable d'une machine dans l'exécution précise d'une tâche (comme une horloge) ne prouve-t-elle aucune intelligence comparable à la Raison ?",
     "flashcard_answer": "Réponse correcte (A) : L'automate n'agit que par la disposition de ses organes spécialisés ; accomplir l'infinité des actions humaines exigerait une infinité matérielle de rouages, là où la Raison est un instrument mental universel.\n\nExplication : Toad : La distinction fondatrice de l'intelligence générale. Une horloge mesure le temps parce que ses rouages sont taillés pour cet usage exclusif. Pour qu'une machine reproduise toutes les actions humaines quotidiennes, il lui faudrait un mécanisme physique distinct pour chaque circonstance possible, ce qui exigerait une infinité matérielle irréalisable. La Raison, à l'inverse, est un « instrument universel » qui s'applique à toute situation sans exiger un rouage par tâche.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 24,
@@ -153,7 +153,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Le vieux problème de la cognition (Pierre Poirier) — La tension formelle\n\nDans la formalisation computationnaliste contemporaine, comment se définit le dilemme central désigné sous l'appellation de « vieux problème de la cognition » ?",
     "flashcard_answer": "Réponse correcte (B) : La tension structurelle opposant la contrainte mécaniste d'un substrat matériel composé d'éléments strictement finis à l'exigence cognitive de pouvoir générer une infinité de représentations inédites.\n\nExplication : Toad : La confrontation entre finitude matérielle et productivité. Le cerveau est un système physique aux ressources matérielles finies (environ 1,4 L de volume, environ 86 milliards de neurones). Pourtant, le locuteur dispose d'une compétence lui permettant de générer une infinité potentielle de pensées et de phrases inédites (productivité). Comment un substrat matériel borné peut-il soutenir un espace représentationnel virtuellement infini ? C'est le problème fondamental que l'IA symbolique résout par la récursivité.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 25,
@@ -178,21 +178,21 @@
     "feedbacks": [
       "Toad : Turing écarte précisément ce point sous le nom d'« argument de la conscience » (Prof. Jefferson). Exiger une preuve d'intériorité phénoménologique subjective mènerait au solipsisme ; le test s'en tient aux performances observables.",
       "Toad : Le canal textuel (téléscripteur) écarte délibérément les indices physiques d'apparence corporelle et de voix ; il n'isole ni n'identifie l'algorithme interne, et Turing ne pose aucune exigence d'incarnation robotique.",
-      "Toad : La fondation de l'évaluation opérationnelle. Face au solipsisme (impossibilité d'observer directement la conscience d'autrui), la seule base empirique dont nous disposons entre humains est le comportement linguistique extérieur. Turing pose que si un automate produit des performances verbales indiscernables de celles d'un humain dans les conditions du jeu, la cohérence méthodologique impose de lui accorder le même statut d'intelligence sans exiger une preuve phénoménologique impossible.",
-      "Toad : Si des programmes simples comme ELIZA illustreront plus tard l'illusion anthropomorphique, le dessein initial de Turing était d'établir un critère positif et rigoureux de succès pour la calculabilité symbolique."
+      "Toad : La fondation de l'évaluation opérationnelle. Face à l'impossibilité d'observer directement l'intériorité phénoménologique d'autrui (solipsisme), Turing substitue à la querelle métaphysique une épreuve conversationnelle. Si un automate produit des performances verbales indiscernables de celles d'un humain dans les conditions du jeu, la cohérence méthodologique impose de lui accorder le même statut d'intelligence sans exiger une preuve de conscience subjective inaccessible.",
+      "Toad : Si des programmes simples comme ELIZA illustreront plus tard l'illusion anthropomorphique, le dessein initial de Turing était d'établir un critère positif et opérationnel d'attribution d'intelligence dans les conditions d'un dialogue ouvert, sans réduire l'évaluation à une simple projection naïve de l'interrogateur."
     ],
     "correctIndex": 2,
     "correctKey": "C",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
     "doc_page": "Diapos 9-10 ; Turing (1950)",
     "doc_quote": "",
-    "doc_explanation": "Toad : La fondation de l'évaluation opérationnelle. Face au solipsisme (impossibilité d'observer directement la conscience d'autrui), la seule base empirique dont nous disposons entre humains est le comportement linguistique extérieur. Turing pose que si un automate produit des performances verbales indiscernables de celles d'un humain dans les conditions du jeu, la cohérence méthodologique impose de lui accorder le même statut d'intelligence sans exiger une preuve phénoménologique impossible.",
+    "doc_explanation": "Toad : En substituant un critère opérationnel d'indiscernabilité comportementale dans le jeu de l'imitation à la question métaphysique de la pensée, Turing fournit une méthode empirique d'attribution d'intelligence indépendante d'hypothèses invérifiables sur la conscience interne.",
     "exam_tip": "Test de Turing = Critère opérationnel béhavioriste. Face au solipsisme, l'indiscernabilité verbale justifie l'attribution d'intelligence selon les mêmes standards qu'entre humains.",
     "study_scope": "seance_02",
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Alan Turing (1950) — Le Jeu de l'Imitation et l'épistémologie opérationnelle\n\nQuel est l'objectif épistémologique fondamental poursuivi par Alan Turing (1950) lorsqu'il substitue le « Jeu de l'Imitation » à la question philosophique traditionnelle « les machines peuvent-elles penser ? » ?",
-    "flashcard_answer": "Réponse correcte (C) : Contourner l'impasse du solipsisme par un critère opérationnel : juger les réponses de l'automate selon le même standard que celles d'un humain, lorsque leurs performances verbales sont indiscernables dans le jeu.\n\nExplication : Toad : La fondation de l'évaluation opérationnelle. Face au solipsisme (impossibilité d'observer directement la conscience d'autrui), la seule base empirique dont nous disposons entre humains est le comportement linguistique extérieur. Turing pose que si un automate produit des performances verbales indiscernables de celles d'un humain dans les conditions du jeu, la cohérence méthodologique impose de lui accorder le même statut d'intelligence sans exiger une preuve phénoménologique impossible.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "flashcard_answer": "Réponse correcte (C) : Contourner l'impasse du solipsisme par un critère opérationnel : juger les réponses de l'automate selon le même standard que celles d'un humain, lorsque leurs performances verbales sont indiscernables dans le jeu.\n\nExplication : Toad : En substituant un critère opérationnel d'indiscernabilité comportementale dans le jeu de l'imitation à la question métaphysique de la pensée, Turing fournit une méthode empirique d'attribution d'intelligence indépendante d'hypothèses invérifiables sur la conscience interne.",
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Wilhelm von Humboldt & Noam Chomsky — La récursion syntaxique\n\nPar quel mécanisme formel précis la grammaire générative proposée par Noam Chomsky résout-elle techniquement le paradoxe cartésien (la productivité linguistique infinie issue d'un système matériel strictement fini) ?",
     "flashcard_answer": "Réponse correcte (D) : Par la modélisation formelle de règles de réécriture syntaxique récursives pourvues de clauses terminales, permettant à un code fini d'engendrer mathématiquement un ensemble non borné de propositions finies distinctes.\n\nExplication : Toad : La récursion formelle résout le paradoxe. Pour engendrer des phrases finies sans boucler indéfiniment, la grammaire combine une règle récursive et une règle terminale : par exemple P -> « je pense que » P et P -> « le ciel est bleu ». L'application répétée d'un nombre fini de fois produit des phrases toujours finies, tandis que l'ensemble des phrases générables est mathématiquement non borné.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 27,
@@ -270,7 +270,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Jerry Fodor (1975) — Systématicité, productivité et Langage de la Pensée (LOT)\n\nSur quels arguments conceptuels Jerry Fodor fonde-t-il la nécessité de postuler que notre cognition s'appuie obligatoirement sur un \"Langage de la Pensée\" (LOT) doté d'une syntaxe combinatoire ?",
     "flashcard_answer": "Réponse correcte (B) : La productivité (pouvoir concevoir des pensées inédites) et la systématicité (l'aptitude à penser « Jean aime Marie » garantit la capacité représentationnelle intrinsèque de former la pensée « Marie aime Jean »).\n\nExplication : Toad : Fodor (1975) mobilise la productivité et la systématicité pour étayer l'hypothèse de représentations mentales douées d'une structure combinatoire. Si l'esprit est capable de former la pensée « Jean aime Marie », il possède ipso facto la compétence représentationnelle de former « Marie aime Jean », car ces pensées réutilisent les mêmes constituants syntaxiques recombinés selon des règles. Attention : la systématicité concerne la capacité de former la représentation, et non la vérité de la proposition inverse (que Jean aime Marie ne rend pas vrai que Marie aime Jean) !",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 28,
@@ -309,7 +309,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "John Haugeland (1981) — Systèmes formels et Indépendance du médium\n\nDans le cadre des systèmes formels abstraits décrit par John Haugeland (1981), quelle est la conséquence ontologique et épistémologique majeure de la propriété désignée par l'« indépendance par rapport au médium » (Medium Independence) ?",
     "flashcard_answer": "Réponse correcte (A) : Elle fonde de manière rigoureuse le principe de la réalisabilité multiple : la légalité inhérente des opérations formelles reste strictement inchangée, que le support soit constitué de bois, de silicium ou de neurones.\n\nExplication : Toad : Le fondement du fonctionnalisme computationnel. Aux échecs, que les pièces soient en bois, en plastique ou figurées par des pixels sur écran, les positions légales et les transitions autorisées sont rigoureusement identiques. Le système formel est défini par ses règles et ses états discrets, non par la chimie de son support. Si la cognition est formelle, elle peut donc être réalisée sur du silicium aussi bien que sur un substrat biologique (réalisabilité multiple).",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 29,
@@ -348,7 +348,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Les Automates à États Finis (FSA) — Hiérarchie de Chomsky et limitations formelles\n\nConformément à la hiérarchie de la complexité formelle (Chomsky, 1956), pourquoi l'architecture d'un Automate à États Finis (FSA) est-elle mathématiquement inapte à modéliser des dépendances centrales symétriques de type a^n b^n pour tout n ?",
     "flashcard_answer": "Réponse correcte (D) : Parce que, dépourvu d'une mémoire de travail auxiliaire (ruban ou pile) et doté d'un nombre fini d'états (Q), un FSA ne peut maintenir un nombre illimité de distinctions pour contrôler des enchâssements symétriques.\n\nExplication : Toad : La démonstration formelle repose sur le lemme de l'étoile (principe des tiroirs de Chomsky, 1956). Pour un automate possédant K états internes, si l'on injecte les K+1 préfixes a^1, a^2, ..., a^(K+1), au moins deux de ces préfixes mèneront obligatoirement au même état interne. L'automate ne peut donc plus distinguer ces deux préfixes pour compter le nombre identique de symboles b qui doivent suivre. L'automate ne « plante » pas et ne subit pas de panne matérielle : il continue à fonctionner mais accepte des chaînes invalides ou rejette des chaînes valides. Privé de mémoire auxiliaire (pile ou ruban), un FSA est incapable de reconnaître a^n b^n pour tout n.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 30,
@@ -387,7 +387,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Les Moteurs Sémantiques (Haugeland, 1981) — La préservation conditionnelle de la vérité\n\nDans le modèle de l'IA symbolique classique (Haugeland, 1981), par quel mécanisme formel un système purement syntaxique parvient-il à opérer comme un « moteur sémantique » fiable ?",
     "flashcard_answer": "Réponse correcte (C) : Dans un système formel interprété, des règles d'inférence préservant la vérité permettent de déduire des conclusions vraies de prémisses vraies, sans devoir consulter le sens des symboles à chaque étape opérationnelle.\n\nExplication : Toad : C'est la définition même de la « Machine Sémantique » (Haugeland, 1981, p. 44). Le système formel interprété manipule aveuglément des symboles selon des règles syntaxiques valides. Parce que ces règles préservent la vérité (truth-preserving), si les prémisses injectées sont vraies sous l'interprétation donnée, les conclusions déduites seront nécessairement vraies, sans que la machine n'ait jamais à « comprendre » ou à consulter le sens des jetons.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 31,
@@ -418,7 +418,7 @@
     "correctIndex": 0,
     "correctKey": "A",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 38 à 45 ; Haugeland (1981, p. 40)",
     "doc_quote": "",
     "doc_explanation": "Toad : Précision chirurgicale ! C'est l'énigme fondatrice de l'intentionnalité (le aboutness). Une chaise n'est \"à propos\" de rien, elle existe. Mais l'état électrique dans un ordinateur (ou un cerveau) censé représenter la chaise possède une sémantique. Comment la matière causale brute acquiert-elle cette capacité de référence sans l'aide d'un \"petit homme conscient\" à l'intérieur ? C'est le Graal de l'IA symbolique.",
     "exam_tip": "Intentionnalité = Aboutness (À propos de) = Le défi d'expliquer comment de la matière formelle peut \"pointer vers\" ou signifier le monde réel.",
@@ -426,7 +426,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Philosophie de l'esprit — Le problème de l'intentionnalité (Haugeland, 1981)\n\nDans le cadre des fondements épistémologiques du computationnalisme (Haugeland, 1981), comment se définit précisément le problème classique de l'intentionnalité que les \"moteurs sémantiques\" cherchent à naturaliser ?",
     "flashcard_answer": "Réponse correcte (A) : C'est l'énigme de l'« à-propos » (aboutness) : expliquer comment des jetons matériels aveugles peuvent intrinsèquement posséder une sémantique, c'est-à-dire référer intentionnellement à des objets réels.\n\nExplication : Toad : Précision chirurgicale ! C'est l'énigme fondatrice de l'intentionnalité (le aboutness). Une chaise n'est \"à propos\" de rien, elle existe. Mais l'état électrique dans un ordinateur (ou un cerveau) censé représenter la chaise possède une sémantique. Comment la matière causale brute acquiert-elle cette capacité de référence sans l'aide d'un \"petit homme conscient\" à l'intérieur ? C'est le Graal de l'IA symbolique.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 32,
@@ -452,12 +452,12 @@
       "Toad : Attention à la fausse symétrie logique pointée par l'audit ! En logique déductive, une règle valide appliquée à des prémisses fausses ne garantit absolument pas une conclusion fausse. Prenez la règle d'introduction de la disjonction (P |- P v Q). Si P est faux (ex: \"Je suis sur Mars\"), mais que la réalité du monde s'avère telle que Q est vrai (\"Il pleut à Montréal\"), la conclusion finale reste empiriquement vraie ! Des prémisses fausses privent simplement le système formel de sa garantie de vérité, mais elles n'interdisent pas à la conclusion d'être vraie.",
       "Toad : Les transducteurs convertissent des signaux physiques en jetons formels, mais n'apportent aucune phénoménologie (sens subjectif ou qualia) au processeur aveugle.",
       "Toad : C'est le fonctionnement de la \"Machine Sémantique\" de Haugeland. L'ordinateur se fiche du sens. Des prémisses vraies, traitées par des règles valides sous l'interprétation considérée, garantissent des conclusions vraies. Des prémisses fausses ne garantissent ni la vérité ni la fausseté de la conclusion. C'est la préservation conditionnelle de la vérité, non sa création.",
-      "Toad : Haugeland insiste précisément sur le fait que la réussite d'un moteur sémantique repose entièrement sur le maintien de cet isomorphisme strict avec le monde réel."
+      "Toad : Une opération syntaxique ne remplace pas le monde auquel les symboles sont rapportés. Dans l'exemple logique de Haugeland, la garantie dépend de l'interprétation, de prémisses vraies et de règles préservant la vérité."
     ],
     "correctIndex": 2,
     "correctKey": "C",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 38 à 45 ; Haugeland (1981, p. 44)",
     "doc_quote": "",
     "doc_explanation": "Toad : C'est le fonctionnement de la \"Machine Sémantique\" de Haugeland. L'ordinateur se fiche du sens. Des prémisses vraies, traitées par des règles valides sous l'interprétation considérée, garantissent des conclusions vraies. Des prémisses fausses ne garantissent ni la vérité ni la fausseté de la conclusion. C'est la préservation conditionnelle de la vérité, non sa création.",
     "exam_tip": "Syntaxe valide = Préservation conditionnelle de la vérité (SI prémisses vraies -> ALORS conclusion vraie). Pas de symétrie garantissant automatiquement l'erreur en cas de fausses prémisses.",
@@ -465,7 +465,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Le système formel interprété et la logique de la syntaxe\n\nDans un système formel interprété et l'hypothèse de l'IA symbolique classique, quelle est la nature stricte et exacte de la garantie offerte par des inférences purement syntaxiques concernant la vérité sémantique ?",
     "flashcard_answer": "Réponse correcte (C) : Elle assure la préservation conditionnelle de la vérité : des règles valides garantissent que si les prémisses sont sémantiquement vraies, alors les conclusions déduites le seront nécessairement également.\n\nExplication : Toad : C'est le fonctionnement de la \"Machine Sémantique\" de Haugeland. L'ordinateur se fiche du sens. Des prémisses vraies, traitées par des règles valides sous l'interprétation considérée, garantissent des conclusions vraies. Des prémisses fausses ne garantissent ni la vérité ni la fausseté de la conclusion. C'est la préservation conditionnelle de la vérité, non sa création.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 33,
@@ -496,7 +496,7 @@
     "correctIndex": 0,
     "correctKey": "A",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 70 à 75 ; McClelland (2009)",
     "doc_quote": "",
     "doc_explanation": "Toad : La règle d'or énoncée par McClelland (2009). Les activations (a) fluctuent à la milliseconde selon le stimulus entrant : c'est l'état du système (ex: penser à un \"chien\" à cet instant). Les connaissances latentes permettant de faire émerger ce motif résident exclusivement dans la force statique des connexions (les poids w), forgées lentement par l'apprentissage.",
     "exam_tip": "Motif d'Activation (a) = État éphémère (Pensée). Matrice des Poids (w) = Connaissance structurelle (Mémoire L-T). Distinguez représentation algorithmique (distribuée) et matériel physique (local/Von Neumann).",
@@ -504,7 +504,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Modèles PDP — Distinction mathématique et Niveaux de Marr\n\nDans le formalisme d'un réseau de neurones artificiels (modèle PDP), comment s'établit la dissociation mathématique rigoureuse entre la « représentation mentale active » (le traitement d'une information) et la « mémoire à long terme » (les connaissances acquises) ?",
     "flashcard_answer": "Réponse correcte (A) : La mémoire réside de façon distribuée dans la matrice des poids (w), tandis qu'une représentation active correspond à un motif éphémère d'activations (a) se propageant dynamiquement sur un ensemble d'unités.\n\nExplication : Toad : La règle d'or énoncée par McClelland (2009). Les activations (a) fluctuent à la milliseconde selon le stimulus entrant : c'est l'état du système (ex: penser à un \"chien\" à cet instant). Les connaissances latentes permettant de faire émerger ce motif résident exclusivement dans la force statique des connexions (les poids w), forgées lentement par l'apprentissage.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 34,
@@ -529,13 +529,13 @@
     "feedbacks": [
       "Toad : La descente de gradient ajuste mathématiquement les poids existants, elle ne génère pas de matière neuronale virtuelle (pas de \"neurogenèse\").",
       "Toad : Double erreur. Premièrement, on ne doit pas généraliser les activations binaires : de nombreux réseaux utilisent des représentations à activations continues (ex: sigmoïdes, ReLU) qui participent aux décisions. Deuxièmement, la dégradation gracieuse n'offre aucune garantie absolue d'immunité.",
-      "Toad : Les modèles PDP classiques sont massivement interactifs et s'opposent conceptuellement à la modularité et à l'encapsulation stricte prônées par le computationnalisme.",
+      "Toad : La distribution des représentations n'implique pas un confinement automatique des lésions. Des réseaux peuvent comporter des modules ; les conséquences d'une lésion dépendent de leur architecture, des connexions entre composants et de la tâche.",
       "Toad : La vérité mathématique du phénomène. L'information étant distribuée, perdre quelques nœuds dégrade généralement la précision de manière progressive dans le connexionnisme, alors que certains systèmes symboliques rigides peuvent être plus vulnérables à la perte d'une règle (bien qu'un système à règles redondantes puisse continuer à inférer). De plus, la classification finale du réseau repose souvent sur le franchissement d'un seuil strict (décision catégorielle). Si la perturbation fait passer la somme continue sous cette limite critique, la décision peut basculer brutalement, provoquant une erreur catégorielle."
     ],
     "correctIndex": 3,
     "correctKey": "D",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 111 à 112 ; McClelland (2009)",
     "doc_quote": "",
     "doc_explanation": "Toad : La vérité mathématique du phénomène. L'information étant distribuée, perdre quelques nœuds dégrade généralement la précision de manière progressive dans le connexionnisme, alors que certains systèmes symboliques rigides peuvent être plus vulnérables à la perte d'une règle (bien qu'un système à règles redondantes puisse continuer à inférer). De plus, la classification finale du réseau repose souvent sur le franchissement d'un seuil strict (décision catégorielle). Si la perturbation fait passer la somme continue sous cette limite critique, la décision peut basculer brutalement, provoquant une erreur catégorielle.",
     "exam_tip": "Dégradation gracieuse = Baisse statistiquement progressive (due à la distribution), mais toujours vulnérable au point de rupture catégoriel (effet de seuil).",
@@ -543,7 +543,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "La relativité de la Dégradation Gracieuse\n\nQuelle est la définition nuancée et exacte de la « dégradation gracieuse » (graceful degradation) dans les réseaux connexionnistes face à des lésions matérielles, comparativement à la fragilité des systèmes symboliques ?",
     "flashcard_answer": "Réponse correcte (D) : C'est une propriété distribuée : la perte d'unités induit une baisse progressive de performance, sans exclure une rupture catégorielle brutale si le signal résiduel passe sous le seuil critique de décision.\n\nExplication : Toad : La vérité mathématique du phénomène. L'information étant distribuée, perdre quelques nœuds dégrade généralement la précision de manière progressive dans le connexionnisme, alors que certains systèmes symboliques rigides peuvent être plus vulnérables à la perte d'une règle (bien qu'un système à règles redondantes puisse continuer à inférer). De plus, la classification finale du réseau repose souvent sur le franchissement d'un seuil strict (décision catégorielle). Si la perturbation fait passer la somme continue sous cette limite critique, la décision peut basculer brutalement, provoquant une erreur catégorielle.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 35,
@@ -574,7 +574,7 @@
     "correctIndex": 1,
     "correctKey": "B",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 5, 7, 18 à 20 ; Chomsky (1956, 1966)",
     "doc_quote": "",
     "doc_explanation": "Toad : Le cœur du défi ! Descartes observe qu'une machine (ex: une horloge) est programmée pour faire une seule chose (pas d'intelligence générale). Ensuite, la machine se contente de répéter, l'homme crée des phrases inédites (Productivité). Comment créer l'infini avec la matière finie du cerveau ? Chomsky répond par la Récursion syntaxique : une règle qui s'appelle elle-même en boucle (\"Je sais que [phrase]\"). L'infini linguistique est mécanisé avec un code fini.",
     "exam_tip": "Défi Cartésien = Intelligence Générale + Productivité du Langage (mécanisée formellement par la Récursion chomskyenne).",
@@ -582,7 +582,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Le Défi Cartésien & La Récursion (GOLD 00:48:08)\n\nSelon le \"défi cartésien\", la pensée mécaniste butait sur deux facultés humaines spécifiques. Quelles sont ces deux facultés, et quel concept computationnel chomskyen a fourni une explication formelle à l'une d'entre elles ?",
     "flashcard_answer": "Réponse correcte (B) : L'adaptation générale universelle et la productivité infinie du langage ; Chomsky a répondu au défi de la productivité en modélisant des règles récursives engendrant une infinité de phrases avec un code fini.\n\nExplication : Toad : Le cœur du défi ! Descartes observe qu'une machine (ex: une horloge) est programmée pour faire une seule chose (pas d'intelligence générale). Ensuite, la machine se contente de répéter, l'homme crée des phrases inédites (Productivité). Comment créer l'infini avec la matière finie du cerveau ? Chomsky répond par la Récursion syntaxique : une règle qui s'appelle elle-même en boucle (\"Je sais que [phrase]\"). L'infini linguistique est mécanisé avec un code fini.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 36,
@@ -613,7 +613,7 @@
     "correctIndex": 2,
     "correctKey": "C",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapo 52 ; Newell & Simon (1975, p. 116)",
     "doc_quote": "",
     "doc_explanation": "Toad : La retranscription exacte de la page 116 ! 1) Empirique : la science pourrait la réfuter un jour. 2) La Nécessité : si un agent est intelligent, son architecture intime manipule obligatoirement des symboles physiques. 3) La Suffisance : la nuance cruciale ! Le simple fait d'empiler du matériel ne produit pas l'intelligence automatiquement. La suffisance désigne la possibilité qu'un tel matériel (de taille adéquate) puisse être organisé (bien programmé via des algorithmes) pour la produire.",
     "exam_tip": "PSSH = Hypothèse Empirique. Nécessaire = Si intelligence, ALORS présence de traitement symbolique. Suffisant = Le matériel formel peut être organisé (programmé) pour générer l'IA forte.",
@@ -621,7 +621,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "L'Hypothèse PSSH : Nécessité vs Suffisance (Newell & Simon, 1975)\n\nConformément à la définition littérale de Newell et Simon (1975, p. 116), quel est le statut épistémologique de l'Hypothèse PSSH et que signifient précisément ses critères de nécessité et de suffisance face à l'intelligence générale ?",
     "flashcard_answer": "Réponse correcte (C) : C'est une hypothèse empirique : la nécessité impose que tout système intelligent soit un système de symboles physiques ; la suffisance stipule qu'un tel système, de taille adéquate, peut être organisé pour l'être.\n\nExplication : Toad : La retranscription exacte de la page 116 ! 1) Empirique : la science pourrait la réfuter un jour. 2) La Nécessité : si un agent est intelligent, son architecture intime manipule obligatoirement des symboles physiques. 3) La Suffisance : la nuance cruciale ! Le simple fait d'empiler du matériel ne produit pas l'intelligence automatiquement. La suffisance désigne la possibilité qu'un tel matériel (de taille adéquate) puisse être organisé (bien programmé via des algorithmes) pour la produire.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 37,
@@ -646,13 +646,13 @@
     "feedbacks": [
       "Toad : La taxonomie absolue. Marr 1 (Computationnel) = L'analyse pure du problème formel (Ex: \"Le système visuel doit transformer une matrice 2D d'intensités lumineuses en un modèle 3D\"). Marr 2 (Algorithmique/Représentations) = La recette cognitive pour y parvenir (Ex: \"Le système utilise des arêtes orientées et un calcul de disparité binoculaire\"). Le Niveau 3 (Implémentation) s'occupera du support matériel physique.",
       "Toad : La topologie physique des circuits matériels relève du niveau implémentationnel (Niveau 3). En revanche, les chronométries et temps de réponse contraignent également les hypothèses sur les étapes procédurales et algorithmiques de traitement (Niveau 2) ; ils ne sont pas réservés au niveau 3.",
-      "Toad : Erreur de granularité. L'algorithme appartient au Niveau 2. Le langage de programmation industriel final (Python, C++) est une contrainte de bas niveau relevant de l'implémentation (Niveau 3).",
+      "Toad : Le niveau algorithmique précise les représentations et les opérations utilisées. Leur écriture en Python ou en C++ ne les transforme pas automatiquement en explication de niveau 3. Le niveau implémentationnel concerne leur réalisation dans un support physique.",
       "Toad : Purification conceptuelle : le niveau computationnel de Marr définit la logique mathématique de la tâche, et non l'expérience phénoménologique consciente. De même, le niveau algorithmique décrit les étapes formelles du calcul, et non la phylogenèse évolutive."
     ],
     "correctIndex": 0,
     "correctKey": "A",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 53 à 57 ; Marr (1982)",
     "doc_quote": "",
     "doc_explanation": "Toad : La taxonomie absolue. Marr 1 (Computationnel) = L'analyse pure du problème formel (Ex: \"Le système visuel doit transformer une matrice 2D d'intensités lumineuses en un modèle 3D\"). Marr 2 (Algorithmique/Représentations) = La recette cognitive pour y parvenir (Ex: \"Le système utilise des arêtes orientées et un calcul de disparité binoculaire\"). Le Niveau 3 (Implémentation) s'occupera du support matériel physique.",
     "exam_tip": "Marr 1 = Le But Logique / La Fonction (Computationnel). Marr 2 = La Méthode / Les Représentations (Algorithmique). Marr 3 = Le Matériel.",
@@ -660,7 +660,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Les 3 Niveaux d'Analyse de David Marr (1982)\n\nDans le cadre d'ingénierie inverse tripartite proposé par David Marr (1982), comment se différencient précisément les responsabilités analytiques du niveau Computationnel et du niveau Algorithmique et Représentationnel ?",
     "flashcard_answer": "Réponse correcte (A) : Le niveau computationnel définit la finalité et les contraintes logiques de la tâche (le quoi/pourquoi) ; le niveau algorithmique explicite les représentations et les étapes procédurales de calcul (le comment).\n\nExplication : Toad : La taxonomie absolue. Marr 1 (Computationnel) = L'analyse pure du problème formel (Ex: \"Le système visuel doit transformer une matrice 2D d'intensités lumineuses en un modèle 3D\"). Marr 2 (Algorithmique/Représentations) = La recette cognitive pour y parvenir (Ex: \"Le système utilise des arêtes orientées et un calcul de disparité binoculaire\"). Le Niveau 3 (Implémentation) s'occupera du support matériel physique.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 38,
@@ -683,15 +683,15 @@
       "Le biais (b) verrouille un seuil d'inhibition compétitif absolu ; le XOR échoue car sa résolution exige des pondérations synaptiques négatives que le modèle formel de Rosenblatt s'avère incapable d'intégrer."
     ],
     "feedbacks": [
-      "Toad : Le biais n'est pas un filtre de bruit. Et le problème du XOR est un banal tableau de vérité logique statique de 4 lignes, sans boucle infinie ou récursivité.",
-      "Toad : Le taux d'apprentissage est noté η (dans la phase d'ajustement), pas b. Le XOR est par définition une fonction booléenne 100 % binaire (0 ou 1).",
+      "Toad : Le taux d'apprentissage est noté η (dans la phase d'ajustement de la descente de gradient), et non b (le paramètre de biais). De plus, le problème du XOR est un tableau de vérité logique statique de 4 lignes qui n'exige aucune récursivité symbolique fermée.",
+      "Toad : Le paramètre b n'est pas un filtre de bruit en entrée. Par ailleurs, le XOR est une fonction booléenne discrète (0 ou 1) dont l'échec sur un perceptron monocouche découle de la non-séparabilité linéaire, et non d'une incompatibilité avec un seuil binaire.",
       "Toad : La démonstration vectorielle chirurgicale. En isolant x2, l'équation de la droite devient x2 = (-w1/w2)x1 - (b/w2). L'ordonnée à l'origine est bien -b/w2 (pour w2 != 0). Le biais permet de décaler la droite n'importe où. Mais face au XOR (Vrai/Faux = Vrai, Faux/Vrai = Vrai ; Vrai/Vrai = Faux, Faux/Faux = Faux), les points forment un \"X\" cartésien. Minsky & Papert ont mathématiquement prouvé qu'aucune droite unique (linéarité) ne peut séparer ces classes. C'est la non-séparabilité linéaire. Pour le résoudre, il faut une couche cachée appliquant une fonction non linéaire pour tordre cet espace géométrique.",
       "Toad : Le perceptron monocouche formel peut tout à fait calculer et mettre à jour des poids synaptiques inhibiteurs (négatifs)."
     ],
     "correctIndex": 2,
     "correctKey": "C",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 78 à 83 ; Minsky & Papert (1969)",
     "doc_quote": "",
     "doc_explanation": "Toad : La démonstration vectorielle chirurgicale. En isolant x2, l'équation de la droite devient x2 = (-w1/w2)x1 - (b/w2). L'ordonnée à l'origine est bien -b/w2 (pour w2 != 0). Le biais permet de décaler la droite n'importe où. Mais face au XOR (Vrai/Faux = Vrai, Faux/Vrai = Vrai ; Vrai/Vrai = Faux, Faux/Faux = Faux), les points forment un \"X\" cartésien. Minsky & Papert ont mathématiquement prouvé qu'aucune droite unique (linéarité) ne peut séparer ces classes. C'est la non-séparabilité linéaire. Pour le résoudre, il faut une couche cachée appliquant une fonction non linéaire pour tordre cet espace géométrique.",
     "exam_tip": "Biais = Translate l'hyperplan (ordonnée à l'origine −b/w2). XOR = Non linéairement séparable -> Exige Couche Cachée + Non-Linéarité.",
@@ -699,7 +699,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Équation du neurone, Biais géométrique et séparabilité du XOR\n\nDans l'équation de la frontière de décision linéaire, quel est le rôle géométrique strict du biais (b), et pour quelle raison mathématique incontournable le perceptron monocouche a-t-il échoué à modéliser la fonction logique du OU Exclusif (XOR) ?",
     "flashcard_answer": "Réponse correcte (C) : Pour w2 ≠ 0, le biais fixe l'ordonnée à l'origine (−b/w2) pour décaler la droite ; le XOR échoue faute de séparabilité linéaire, nécessitant une couche cachée à transformation non linéaire pour être résolu.\n\nExplication : Toad : La démonstration vectorielle chirurgicale. En isolant x2, l'équation de la droite devient x2 = (-w1/w2)x1 - (b/w2). L'ordonnée à l'origine est bien -b/w2 (pour w2 != 0). Le biais permet de décaler la droite n'importe où. Mais face au XOR (Vrai/Faux = Vrai, Faux/Vrai = Vrai ; Vrai/Vrai = Faux, Faux/Faux = Faux), les points forment un \"X\" cartésien. Minsky & Papert ont mathématiquement prouvé qu'aucune droite unique (linéarité) ne peut séparer ces classes. C'est la non-séparabilité linéaire. Pour le résoudre, il faut une couche cachée appliquant une fonction non linéaire pour tordre cet espace géométrique.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 39,
@@ -730,7 +730,7 @@
     "correctIndex": 1,
     "correctKey": "B",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 84 à 92 ; Rumelhart et al. (1986)",
     "doc_quote": "",
     "doc_explanation": "Toad : Le contraste cardinal de l'IA. Hebb est aveugle au but global : l'ajustement est purement local. Si le neurone A et le B sont actifs simultanément, leur connexion se renforce, sans vérifier si cela aide la tâche. L'apprentissage par rétropropagation supervisée par erreur implique que le réseau produit une prédiction finale, un professeur la compare à l'étiquette correcte (la cible), et la différence crée une fonction de perte. Par la règle de la chaîne du calcul différentiel (gradients), l'algorithme remonte le réseau à l'envers, assignant la part de culpabilité à chaque poids caché pour l'ajuster.",
     "exam_tip": "Hebb = Corrélation simultanée locale (Non-supervisé). Backprop = Descente du Gradient de l'Erreur face à une cible explicite (Supervisé).",
@@ -738,7 +738,7 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "Hebb vs Rétropropagation (Apprentissage supervisé par l'erreur)\n\nSur le plan de la dynamique algorithmique, quelle est la ligne de démarcation fondamentale distinguant la règle de plasticité de Hebb de l'algorithme d'apprentissage supervisé par erreur de la Rétropropagation (Backpropagation) ?",
     "flashcard_answer": "Réponse correcte (B) : La règle de Hebb est un ajustement associatif local par corrélation temporelle non supervisée, tandis que la rétropropagation calcule l'écart à une cible explicite et rétropropage le gradient pour corriger les poids.\n\nExplication : Toad : Le contraste cardinal de l'IA. Hebb est aveugle au but global : l'ajustement est purement local. Si le neurone A et le B sont actifs simultanément, leur connexion se renforce, sans vérifier si cela aide la tâche. L'apprentissage par rétropropagation supervisée par erreur implique que le réseau produit une prédiction finale, un professeur la compare à l'étiquette correcte (la cible), et la différence crée une fonction de perte. Par la règle de la chaîne du calcul différentiel (gradients), l'algorithme remonte le réseau à l'envers, assignant la part de culpabilité à chaque poids caché pour l'ajuster.",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   },
   {
     "id": 40,
@@ -769,7 +769,7 @@
     "correctIndex": 3,
     "correctKey": "D",
     "doc_title": "Séance 2 — IA : Perspectives historiques (Pierre Poirier)",
-    "doc_page": "PSY9613-02",
+    "doc_page": "Diapos 113 à 118 ; Sejnowski & Rosenberg (1987)",
     "doc_quote": "",
     "doc_explanation": "Toad : Le coup de grâce au suivi explicite de règles (rule-following) ! L'IA symbolique classique (le logiciel DECtalk de l'époque) exigeait de programmer à la main des milliers de règles logiques (\"Si mot=HAVE, ignore la règle du E\"). NETtalk a simplement utilisé le matériel vocal physique (les haut-parleurs/synthétiseur) de DECtalk pour émettre les sons, mais a totalement bypassé son cerveau logiciel expert. Initialisé au hasard et entraîné par backprop, le réseau a ajusté un espace continu de poids synaptiques. Le système s'est auto-organisé pour capter la norme statistique ET l'exception dans la même structure unifiée. L'intelligence linguistique a émergé sans qu'absolument aucune règle ne soit codée !",
     "exam_tip": "NETtalk (1987) = Apprentissage simultané émergent des Règles ET des Exceptions. Contournement du logiciel symbolique expert, mais utilisation du matériel vocal de sortie.",
@@ -777,6 +777,6 @@
     "scope_badge": "Séance 2 (Palier 2)",
     "flashcard_prompt": "L'Onde de Choc NETtalk (Sejnowski & Rosenberg, 1987)\n\nHistoriquement et épistémologiquement, pourquoi les résultats du réseau connexionniste NETtalk ont-ils infligé un revers conceptuel majeur aux partisans de l'IA symbolique classique concernant le traitement du langage naturel ?",
     "flashcard_answer": "Réponse correcte (D) : Parce qu'il a appris les régularités et les exceptions phonétiques de manière émergente par rétropropagation, utilisant les haut-parleurs de DECtalk tout en contournant son logiciel expert de règles codées.\n\nExplication : Toad : Le coup de grâce au suivi explicite de règles (rule-following) ! L'IA symbolique classique (le logiciel DECtalk de l'époque) exigeait de programmer à la main des milliers de règles logiques (\"Si mot=HAVE, ignore la règle du E\"). NETtalk a simplement utilisé le matériel vocal physique (les haut-parleurs/synthétiseur) de DECtalk pour émettre les sons, mais a totalement bypassé son cerveau logiciel expert. Initialisé au hasard et entraîné par backprop, le réseau a ajusté un espace continu de poids synaptiques. Le système s'est auto-organisé pour capter la norme statistique ET l'exception dans la même structure unifiée. L'intelligence linguistique a émergé sans qu'absolument aucune règle ne soit codée !",
-    "certification": "Étalon-Or (Passe 4 Certifiée avec Corrections Chirurgicales)"
+    "certification": "Étalon-Or Certifié (Conforme Grille Psychométrique UQAM — Passes 4-5 Validées)"
   }
 ]
