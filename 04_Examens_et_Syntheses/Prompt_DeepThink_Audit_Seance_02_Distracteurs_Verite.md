@@ -27,6 +27,12 @@ Dans cette mission, une « ERREUR » est DÉFINIE PAR DEUX CRITÈRES EXCLUSIFS :
 3. **CRITÈRE 3 : PARITÉ DES LONGUEURS (Zéro indice heuristique) :**
    - Vérifie que la bonne réponse n'est pas identifiable par sa longueur ou son degré de détail excessif par rapport aux distracteurs.
 
+4. **FORMAT DE LIVRABLE CIBLÉ (Anti-surcharge / Focus chirurgical) :**
+   - Ne réécris PAS l'intégralité du questionnaire si les items sont déjà solides.
+   - Pour les questions dont les 3 distracteurs sont déjà robustes, conformes à Poirier et discriminants : indique simplement `Statut : Validée.` avec une phrase de diagnostic clinique.
+   - Pour les questions comportant un distracteur trivial ou une contradiction textuelle : indique `Statut : Distracteur à durcir (Option X).`, pose le diagnostic du piège manquant, puis fournis la formulation exacte de la nouvelle option durcie (`Réécriture de l'Option X : ...`) et de sa rétroaction clinique.
+   - Ce format chirurgical garantit une analyse percutante sans dilution de contexte.
+
 ---
 
 ### 📋 LES 20 QUESTIONS À AUDITER (SÉANCE 2 — PIERRE POIRIER) :
