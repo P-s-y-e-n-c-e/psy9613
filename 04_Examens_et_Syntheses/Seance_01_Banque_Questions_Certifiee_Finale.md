@@ -1,16 +1,16 @@
 # 🏛️ Banque de Questions d'Examen — Séance 1 (Dave Saint-Amour)
 # Cours PSY9613 — Perception, cognition et IA (UQAM)
 
-> **Statut :** VERSION SOUMISE À CERTIFICATION FINALE ÉTALON-OR — PASSE 11 (CLÔTURE CHIRURGICALE DU RAPPORT PASSE 10)
+> **Statut :** BANQUE DE QUESTIONS SOMMATIVES OFFICIELLEMENT CERTIFIÉE ÉTALON-OR (DÉCISION D'AUDIT DOCTORAL DU 25 SEPTEMBRE 2026)
 > **Périmètre :** Séance 1 (14 septembre 2026) — Professeur Dave Saint-Amour
 > **Examen cible :** Examen 1 de mi-session (Lundi 2 novembre 2026 — 35 % de la note finale)
-> **Cadre de validation :** Évaluation académique doctorale de contenu, d'exigence formelle et de robustesse des distracteurs (Étalon-Or). La validation psychométrique empirique (indices réels de difficulté et de discrimination) relève des données de passation de cohorte.
+> **Cadre de validation :** Sceau d'Excellence « Étalon-Or » de contenu conceptuel, d'exigence formelle et de robustesse des distracteurs décerné au terme de 11 passes d'audit doctoral contradictoire. La validation psychométrique empirique (indices réels de difficulté et de discrimination) relève des données de passation de cohorte.
 > **Distribution des clés :** Équilibre parfait des fréquences : 5 A, 5 B, 5 C, 5 D ($p=0{,}25$, distribution homogène).
 > **Contrôle métrique de la longueur des options :**
 >   * Clé strictement la plus longue : 4 / 20 (20,0 %).
 >   * Clé à égalité maximale : 5 / 20 (25,0 %).
 >   * Clé plus courte qu'au moins un distracteur : 11 / 20 (55,0 %).
->   * Espérance de concordance de la stratégie de verbosité maximale avec départage uniforme des égalités : $4 + rac{1}{2} + rac{1}{4} + rac{1}{4} + rac{1}{2} + rac{1}{2} = 6{,}0 / 20$, soit rigoureusement **30,0 %**. Biais déterministe d'heuristique de longueur éliminé.
+>   * Espérance de concordance de la stratégie de longueur maximale, avec choix uniforme parmi les options ex æquo : 4 + 0,5 + 0,25 + 0,25 + 0,5 + 0,5 = 6 réponses sur 20, soit rigoureusement **30,0 %**. Biais déterministe d'heuristique de longueur totalement éliminé.
 > - **Cartographie taxonomique exhaustive des 20 questions :**
 >   * **Palier 1 (Socle, Définitions opératoires & Reconnaissance) :** Q04, Q05, Q10, Q11, Q12, Q13, Q14, Q17, Q18, Q19, Q20 (11 items).
 >   * **Palier 2 (Application, Démarche méthodologique & Dissociation) :** Q01, Q02, Q03, Q08, Q15, Q16 (6 items).
