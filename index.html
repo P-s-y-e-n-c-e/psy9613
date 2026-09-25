@@ -262,7 +262,9 @@
       flex: 1 1 46%;
       width: 100%;
       min-height: 180px;
-      overflow-y: auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     /* SÉPARATEUR INTERACTIF DÉPLAÇABLE */
@@ -868,7 +870,9 @@
     /* VIEWPORTS DE LECTURE */
     .reader-viewport {
       flex: 1 1 0;
+      min-height: 0;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       padding: 16px 20px;
       font-size: calc(0.92rem * var(--reader-font-scale, 1));
       line-height: 1.65;
