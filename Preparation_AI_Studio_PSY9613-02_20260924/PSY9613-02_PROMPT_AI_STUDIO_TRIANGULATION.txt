@@ -1,0 +1,25 @@
+Voici le fichier PSY9613-02_Transitions_raw.md contenant les horodatages des moments de transitions de diapositive pris en direct lors de la séance 2 du cours PSY9613 (lundi 21 septembre 2026).
+
+Voici également l'extraction brute WhisperX alignée mot à mot de l'audio complet :
+- PSY9613-02_RAW_PRÉTRIANGULATION.json
+
+Voici enfin le support visuel officiel projeté durant cette séance :
+- Introduction générale au cours PSY9613-2026.pdf (114 diapositives)
+
+Contexte et repères d'ancrage temporel :
+1. L'enregistrement S24D (placé près du professeur Pierre Poirier) a démarré à 13:30:00 EDT (T0 = 00:00:00 / 0.00 s).
+2. Le cours magistral a débuté à 14:00:00 EDT (offset 00:30:00 / 1800.00 s dans l'audio). Les 30 premières minutes contiennent l'installation et les échanges informels.
+3. Dans PSY9613-02_RAW_PRÉTRIANGULATION.json, les timestamps Whisper démarrent à 0.00 s = 13:30:00 EDT.
+4. La Diapo 1 est affichée dès 14:00:00 EDT (1800.00 s) jusqu'à la transition sur la Diapo 2 ("Aujourd'hui") à 14:03:58 EDT (2038.00 s).
+5. La pause de mi-séance a eu lieu de 15:31:33 à 15:51:12 EDT (offset 02:01:33 à 02:21:12 / 7293.00 s à 8472.00 s). À la reprise, le Pr Dave Saint-Amour prend la parole sur l'organisation des débats.
+6. En fin de cours (vers 16:41:47 EDT / 11507 s), le professeur saute rapidement de la diapo 84 à la diapo 96, puis 97 (middle letter /n/), et se stabilise sur la diapo 98 (analyse des couches cachées, Bullinaria 1997).
+7. Le diaporama se termine à 17:02:11 EDT (12731 s) pour laisser place aux questions en plénière.
+8. Arrêt officiel des enregistreurs à 17:06:16 EDT (12976.00 s).
+
+Instructions pour la triangulation dans Google AI Studio :
+1. Croise méticuleusement les repères textuels et temporels de PSY9613-02_RAW_PRÉTRIANGULATION.json avec les diapositives de Introduction générale au cours PSY9613-2026.pdf.
+2. Identifie les moments exacts de bascule de diapositive à la seconde près, en conservant la base temporelle de l'enregistrement S24D (T0=13:30:00 EDT, début cours=1800.00 s).
+3. Ne pas retrancher 1800s en silence : conserver l'alignement strict avec l'enregistrement S24D.
+4. Conserve le format standard du tableau à 4 colonnes :
+| **Timestamp (s)** | **Temps (HH:MM:SS)** | **Fichier PDF** | **Diapo** |
+5. Génère la version finale raffinée de PSY9613-02_Transitions.md dans un bloc Markdown complet et copiable.

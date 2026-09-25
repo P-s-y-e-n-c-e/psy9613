@@ -30,6 +30,18 @@ Explorer comment les approches de la psychologie de la perception et de la cogni
 | **Examen 2 (en classe)** | **35 %** | **Semaine 15 — 21 décembre 2026** (Choix multiples & court développement, non cumulatif). |
 | **Participation** | **10 %** | Présence, lectures actives, participation aux débats et aux activités en classe. |
 
+### ⚖️ Débats et présentations orales (Calendrier officiel)
+* [Horaire_présentations.xlsx](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/03_Debats_et_Presentations/Horaire_pr%C3%A9sentations.xlsx) — Calendrier officiel complet des débats et présidences (SharePoint des professeurs).
+* **Débat 1 — Présidence de séance par Michel (Lundi 28 septembre 2026, 14h00) :**
+  * **Dyade :** Alexandrea vs Louis B (Tirage au sort du POUR : Louis B / CONTRE : Alexandrea)
+  * **Thème du cours :** Principes du traitement de l'information (Théorie de l'info, hiérarchique vs parallèle, local vs distribué, cognition incarnée).
+  * **Rôle officiel de Michel :** **Président de séance (Modérateur)** — Gestion du chronomètre (5-10 min/débatteur), animation de la plénière et synthèses.
+  * **Fiche de cadrage officielle :** [2026-09-28_Debat_01_Louis_vs_Alexandrea_Presidence_Michel.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/03_Debats_et_Presentations/2026-09-28_Debat_01_Louis_vs_Alexandrea_Presidence_Michel.md)
+* **Débat de Michel — Présentateur en dyade (Semaine 14 — Lundi 14 décembre 2026) :**
+  * **Dyade :** Josquin & Michel
+  * **Thème :** *Applications pratiques* (ABC de l'IA et initiation au logiciel PsychoPy).
+
+
 ---
 
 ## 📚 Documents et lectures téléchargés depuis Moodle
@@ -40,8 +52,14 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * [psy9613_10_saintamour_dave_Poirier_Pierre.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/00_Plan_du_cours/psy9613_10_saintamour_dave_Poirier_Pierre.pdf) — Syllabus officiel et calendrier du cours.
 * [Entente_evaluation_F-1021.png](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/00_Plan_du_cours/Entente_evaluation_F-1021.png) — Formulaire officiel F-1021 d'entente d'évaluation approuvée.
 * [cours1_Intro.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/cours1_Intro.pdf) — Diapositives du Cours 1 (14 sept.) : Présentation et introduction *(7.7 Mo)*
-* [notes_seance_01_2026-09-14.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_01_2026-09-14.md) — Notes de cours complètes & chronologie en direct de la Séance 1.
-* [PSY9613-01_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-01_Transitions.md) — Fichier de transitions de diapositives calibré pour ENCORA et le Master Audio.
+* [Introduction générale au cours PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Introduction%20g%C3%A9n%C3%A9rale%20au%20cours%20PSY9613-2026.pdf) — Diapositives officielles du Cours 2 (21 sept.) : IA — Perspectives historiques *(114 diapos, 5.4 Mo)*
+* [notes_seance_01_2026-09-14.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_01_2026-09-14.md) — Notes de cours complètes & chronologie de la Séance 1.
+* [notes_seance_02_2026-09-21.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_02_2026-09-21.md) — Notes de cours complètes & chronologie en direct de la Séance 2.
+* [diaporama_cours_02.html](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/diaporama_cours_02.html) — Visionneuse interactive des 114 diapositives de la Séance 2.
+* [PSY9613-01_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-01_Transitions.md) — Transitions Séance 1 calibrées pour ENCORA.
+* [PSY9613-02_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions.md) — Transitions Séance 2 calibrées pour ENCORA (version initiale).
+* [PSY9613-02_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
+
 
 ### 📖 Semaine 1 (14 sept.) — Présentation et introduction
 * **Lecture suggérée (pas obligatoire cette semaine) :**
@@ -62,6 +80,13 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Newell and Simon (1975) - Computer science as empirical inquiry.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Lectures_optionnelles/Newell%20and%20Simon%20(1975)%20-%20Computer%20science%20as%20empirical%20inquiry.pdf) *(1.6 Mo)*
   * [Sejnowski (2023) - Large Language Models and the Reverse Turing Test.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Lectures_optionnelles/Sejnowski%20(2023)%20-%20Large%20Language%20Models%20and%20the%20Reverse%20Turing%20Test.pdf) *(3.3 Mo)*
 
+### 📖 Semaine 3 (28 sept.) — Principes du traitement de l'information
+* **Lecture obligatoire :**
+  * [Revisiting the global workspace (2021).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_obligatoires/Revisiting%20the%20global%20workspace%20(2021).pdf) *(Mashour et al., 9.0 Mo)*
+* **Lectures optionnelles :**
+  * [1982MarrDavidVisionBook.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/1982MarrDavidVisionBook.pdf) — David Marr (1982), *Vision: A Computational Investigation into the Human Representation and Processing of Visual Information* *(30.8 Mo)*
+  * [Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf) *(820 Ko)*
+
 ### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
 * **Lecture obligatoire :**
   * [McClelland, McNaughton and OReilly (1995) - Why there are complementary learning systems in the hippocampus and neocortex.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_09_Memoire_humaine/Lectures_obligatoires/McClelland,%20McNaughton%20and%20OReilly%20(1995)%20-%20Why%20there%20are%20complementary%20learning%20systems%20in%20the%20hippocampus%20and%20neocortex.pdf) *(4.8 Mo)*
@@ -73,6 +98,10 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 ### 📖 Semaine 11 (23 nov.) — Intelligence artificielle 2 (IA générative & LLMs)
 * **Lecture obligatoire :**
   * [Sejnowski (2023) - Large Language Models and the Reverse Turing Test.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_11_IA_2_IA_generative/Lectures_obligatoires/Sejnowski%20(2023)%20-%20Large%20Language%20Models%20and%20the%20Reverse%20Turing%20Test.pdf) *(3.3 Mo)*
+
+### 📖 Semaine 13 (7 déc.) — Interactions humain-machines
+* **Lecture obligatoire :**
+  * [steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_13_Interactions_humain_machines/Lectures_obligatoires/steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf) *(150 Ko)*
 
 *(Note : Pour les autres semaines, les professeurs ont pour l'instant mis des images indicatives « À venir » sur Moodle ; les documents réels seront ajoutés au fil de la session).*
 

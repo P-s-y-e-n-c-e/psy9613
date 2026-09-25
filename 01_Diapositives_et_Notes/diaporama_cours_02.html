@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSY9613 — Diaporama Cours 2 : IA — Perspectives historiques</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      background-color: var(--background, #0f172a);
+      color: var(--foreground, #f8fafc);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .slide-card {
+      background: var(--card, #1e293b);
+      border: 1px solid var(--border, #334155);
+    }
+  </style>
+</head>
+<body class="p-4 md:p-6 min-h-screen flex flex-col justify-between">
+  <!-- Top Bar -->
+  <header class="mb-4">
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--border,#334155)] pb-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">PSY9613 — Cours 2 (Verbatim 100%)</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-amber-950/60 text-amber-300 border border-amber-800/80 font-mono">114 Diapos</span>
+        </div>
+        <h1 class="text-xl font-bold text-[var(--foreground,#f8fafc)]">IA : Perspectives historiques (problématiques & conceptuelles)</h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="currentStatusBadge" class="text-xs px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 font-medium border border-slate-600">
+          🏁 Séance 2 clôturée (17:06:16 EDT) — Enregistrements terminés
+        </span>
+        <a href="file:///g:/My Drive/UQAM/Maitrise (2194)/PSY9613/01_Diapositives_et_Notes/Introduction générale au cours PSY9613-2026.pdf" target="_blank"
+           class="text-xs px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium transition flex items-center gap-1 shadow-sm">
+          <span>📄 Ouvrir PDF original</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation & Search Bar -->
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <button id="prevBtn" onclick="prevSlide()" class="px-3 py-1.5 rounded-lg bg-[var(--card,#1e293b)] hover:bg-slate-700 border border-[var(--border,#334155)] text-sm font-medium transition flex items-center gap-1">
+          ◀ Précédent
+        </button>
+        <span id="slideCounter" class="text-sm font-semibold px-2 font-mono text-amber-300">Diapo 1 / 114</span>
+        <button id="nextBtn" onclick="nextSlide()" class="px-3 py-1.5 rounded-lg bg-[var(--card,#1e293b)] hover:bg-slate-700 border border-[var(--border,#334155)] text-sm font-medium transition flex items-center gap-1">
+          Suivant ▶
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 flex-grow max-w-md">
+        <input type="text" id="searchInput" placeholder="Rechercher dans les 114 diapositives..." 
+               oninput="filterSlides()" 
+               class="w-full text-xs px-3 py-1.5 rounded-lg bg-[var(--card,#1e293b)] border border-[var(--border,#334155)] text-[var(--foreground,#f8fafc)] focus:outline-none focus:border-amber-500">
+        <select id="slideSelect" onchange="goToSlide(parseInt(this.value))" class="text-xs px-2 py-1.5 rounded-lg bg-[var(--card,#1e293b)] border border-[var(--border,#334155)] text-[var(--foreground,#f8fafc)] max-w-[160px]">
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slide Display Card -->
+  <main class="flex-grow flex flex-col justify-center my-2">
+    <div id="slideContent" class="slide-card rounded-2xl p-6 md:p-8 shadow-xl min-h-[420px] flex flex-col justify-between transition-all duration-150">
+    </div>
+  </main>
+
+  <footer class="mt-4 pt-3 border-t border-[var(--border,#334155)] flex flex-wrap items-center justify-between text-xs text-slate-400">
+    <div>Raccourcis : <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono">◀</kbd> et <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono">▶</kbd> | Accès direct via liste déroulante</div>
+    <div>Professeurs : Pierre Poirier & Dave Saint-Amour</div>
+  </footer>
+
+  <script>
+    const slides = [
+  {
+    "num": 1,
+    "title": "PSY9613 (Automne 2026) — Perception, cognition et intelligence artificielle",
+    "subtitle": "Intelligence artificielle: Perspectives historiques (problématiques et conceptuelles)",
+    "points": [
+      "Pierre Poirier",
+      "Département de philosophie, UQAM"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 2,
+    "title": "Aujourd’hui",
+    "subtitle": "",
+    "points": [
+      "• L’explication de la cognition (un vieux problème)",
+      "• La solution computationnelle / symbolique",
+      "• La solution connexionniste"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 3,
+    "title": "Aujourd’hui",
+    "subtitle": "",
+    "points": [
+      "• L’explication de la cognition (un vieux problème)",
+      "• La solution computationnelle / symbolique",
+      "• La solution connexionniste"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 4,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "J'avais expliqué assez particulièrement toutes ces choses dans le traité que j'avais",
+    "points": [
+      "eu ci-devant dessein de publier. Et ensuite j'y avais montré quelle doit être la",
+      "fabrique des nerfs et des muscles du corps humain, pour faire que les esprits",
+      "animaux, étant dedans, aient la force de mouvoir ses membres: ainsi, qu'on voit",
+      "que les têtes, un peu après être coupées, se remuent encore et mordent la terre,",
+      "nonobstant qu'elles ne soient plus animées: quels changements se doivent faire",
+      "dans cerveau pour causer la veille, et le sommeil et les songes; comment la",
+      "lumière, les sons, les odeurs, les goûts, la chaleur, et toutes les autres qualités des",
+      "objets extérieurs y peuvent imprimer diverses idées par l’entremise des sens; …",
+      "comment la faim, la soif, et les autres passions intérieures, y peuvent aussi envoyer",
+      "les leurs; ce qui doit y être pris pour le sens commun, où ces idées sont reçues;",
+      "pour la mémoire, qui les conserve; et pour la fantaisie, qui les peut diversement",
+      "changer et en composer de nouvelles, et par même moyen, distribuant les esprits",
+      "animaux dans les muscles, faire mouvoir les membres de ce corps en autant de",
+      "diverses façons, et autant à propos des objets qui se prés entent à ses sens, et des",
+      "passions intérieures qui sont en lui, que les nôtres se puissent mouvoir, sans que la",
+      "volonté les conduise. (pp. 163-164)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 5,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 6,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "Ce qui ne semblera nullement étrange à ceux qui, sachant combien de divers",
+    "points": [
+      "automates, ou machines mouvantes, l'industrie des hommes peut faire, sans y",
+      "employer que fort peu de pièces, à comparaison de la grande multitude des os, des",
+      "muscles, des nerfs, des artères, des veines, et de toutes les autres parties qui sont",
+      "dans le corps de chaque animal, considéreront ce corps comme une machine, qui,",
+      "ayant été faite des mains de Dieu est incomparablement mieux ordonnée et, a en",
+      "soi des mouvements plus admirables, qu'aucune de celles qui peuvent être",
+      "inventées par les hommes. Et je m'étais ici particulièrement arrêté à faire voir que,",
+      "s'il y avait de telles machines, qui eussent les organes et la figure extérieure d'un",
+      "singe, ou de quelque autre animal sans raison nous n'aurions aucun moyen pour",
+      "reconnaître qu'elles ne seraient pas en tout de même nature que ces animaux, au",
+      "lieu que, s'il y en avait qui eussent la ressemblance de nos corps et imitassent",
+      "autant nos actions que moralement il serait possible, nous aurions toujours deux",
+      "moyens très certains pour reconnaître qu’elles ne seraient point pour cela de vrais",
+      "hommes. (pp. 163-164)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 7,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "Dont le premier est que jamais elles ne pourraient user de paroles, ni d'autres",
+    "points": [
+      "signes en les composant, comme nous faisons pour déclarer aux autres nos",
+      "pensées. Car on peut bien concevoir qu'une machine soit tellement faite qu'elle",
+      "profère des paroles, et même qu'elle en profère quelques-unes à propos des",
+      "actions corporelles qui causeront quelque changement en ses organes: comme, si",
+      "on la touche en quelque endroit, qu'elle demande ce qu'on lui veut dire; si en un",
+      "autre, qu'elle crie qu'on lui fait mal, et choses semblables; mais non pas qu'elle les",
+      "arrange diversement, pour répondre au sens de tout ce qui se dira en sa présence,",
+      "ainsi que les hommes les plus hébétés peuvent faire. Et le second est que, bien",
+      "qu'elles fissent plusieurs choses aussi bien, ou peut-être mieux qu'aucun de nous,",
+      "elles manqueraient infailliblement en quelques autres, par lesquelles on",
+      "découvrirait qu'elles n'agiraient pas par connaissance, mais seulement par la",
+      "disposition de leurs organes. Car, au lieu que la raison est un instrument universel,",
+      "qui peut servir en toutes sortes de rencontres, ces organes ont besoin de quelque",
+      "particulière disposition pour chaque action particulière; d'où vient qu'il est",
+      "moralement impossible qu'il y en ait assez de divers en une machine pour la faire",
+      "agir en toutes les occurrences de la vie, de même façon que notre raison nous fait",
+      "agir. (pp. 164-165)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 8,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "La production d’une infinité de pensées ou de",
+    "points": [
+      "phrases (productivité)",
+      "• Comment un mécanisme peut nous faire agir en toutes les occurrences de la vie (intelligence générale) de même façon que notre raison (cognition) nous fait agir ?"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 9,
+    "title": "L’explication de la cognition (le même vieux problème)",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 10,
+    "title": "L’explication de la cognition (le même vieux problème)",
+    "subtitle": "Prof",
+    "points": [
+      "Étudiant-e"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 11,
+    "title": "L’explication de la cognition (le même vieux problème)",
+    "subtitle": "(…) le système doit posséder une infinité de",
+    "points": [
+      "représentations distinctes. L'argument ici est",
+      "précisément analogue à l'argument pour la",
+      "non-finitude des langues naturelles: de même",
+      "que, dans ce dernier cas, il n'y a pas de limite",
+      "supérieure à la complexité d'une phrase qui",
+      "peut être utilisée pour faire un énoncé, de",
+      "même dans le premier cas, il n'y a pas de",
+      "limite supérieure à la complexité de la",
+      "représentation qui peut être requise pour",
+      "spécifier les options comportementales",
+      "disponibles pour l'agent, ou la situation dans",
+      "laquelle il se trouve, ou les conséquences",
+      "d'agir d'une manière ou d'une autre. (Fodor,",
+      "1975, p. 31)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 12,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "Mécanisme",
+      "?"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 13,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "Mécanisme",
+      "?"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 14,
+    "title": "Un problème des études de la cognition",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "Mécanisme",
+      "?"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 15,
+    "title": "Aujourd’hui",
+    "subtitle": "",
+    "points": [
+      "• L’explication de la cognition (un vieux problème)",
+      "• La solution computationnelle / symbolique",
+      "• La solution connexionniste"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 16,
+    "title": "La solution computationnelle / symbolique",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 17,
+    "title": "La solution computationnelle / symbolique",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 18,
+    "title": "La solution computationnelle / symbolique",
+    "subtitle": "Mais la raison fondamentale de l’inadéquation",
+    "points": [
+      "des grammaires traditionnelles est plus",
+      "technique. Sans doute avait-on bien compris",
+      "que les processus linguistiques sont en un",
+      "certain sens « créateurs »; mais jusqu’à une",
+      "date très récente, on ne disposait tout",
+      "simplement pas de l’appareil technique propre",
+      "à formuler un système de processus récursifs.",
+      "En fait, ce n’est que dans les trente dernières",
+      "années, au cours d’études touchant les",
+      "fondements des mathématiques, que s’est",
+      "développé une compréhension réelle de la",
+      "façon dont une langue peut, selon l’expression",
+      "de Humboldt, « faire un usage infini de",
+      "moyens finis ». (1965/71 : 18-19)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 19,
+    "title": "La solution computationnelle / symbolique",
+    "subtitle": "Chomsky : Arbre syntaxique récursif & « Cartesian Linguistics »",
+    "points": [
+      "Couverture de l'ouvrage : Cartesian Linguistics: A Chapter in the History of Rationalist Thought (Noam Chomsky, 1966).",
+      "Règle formelle de réécriture syntagmatique : S → NP + VP",
+      "Phrase analysée : « Chatterer said Buster thought the tree was tall »",
+      "Structure arborescente récursive : emboîtement successif de propositions (S) au sein de syntagmes verbaux (VP), illustrant concrètement l'aptitude formelle à « faire un usage infini de moyens finis »."
+    ],
+    "notes": "Synchronisé à 14:41:46 EDT (Rec 1 : 00:41:46 | Rec 2 : 01:11:46)"
+  },
+  {
+    "num": 20,
+    "title": "La solution computationnelle / symbolique",
+    "subtitle": "Schéma de synthèse : Le pont computationnel récursif",
+    "points": [
+      "(Infinité de) représentation(s) [Pôle supérieur]",
+      "▲ | ▼",
+      "Computation (systèmes de processus récursifs) [Pont formel résolvant le paradoxe]",
+      "▲ | ▼",
+      "Mécanisme [Pôle physique inférieur]",
+      "Ouvrages fondateurs présentés : Jerry Fodor (The Language of Thought / Representations), Noam Chomsky (Rules and Representations), John Haugeland (Mind Design), Zenon Pylyshyn (Computation and Cognition)."
+    ],
+    "notes": "Synchronisé à 14:43:53 EDT (Rec 1 : 00:43:53 | Rec 2 : 01:13:53)"
+  },
+  {
+    "num": 21,
+    "title": "Computationnalisme",
+    "subtitle": "Définition verbatim de la thèse computationnelle",
+    "points": [
+      "« La thèse selon laquelle l’esprit (en entier) ou des systèmes cognitifs particuliers (ex.: le système visuel ou un système du langage) sont des systèmes computationnels. »",
+      "Section de référence : La solution computationnelle / symbolique"
+    ],
+    "notes": "Synchronisé à 14:45:31 EDT (Rec 1 : 00:45:31 | Rec 2 : 01:15:31)"
+  },
+  {
+    "num": 22,
+    "title": "Théorie des automates, langages et computation",
+    "subtitle": "Hopcroft, Motwani, Ullman & Référence MAT7050 (UQAM)",
+    "points": [
+      "Couverture du manuel mondial : Introduction to Automata Theory, Languages, and Computation (John E. Hopcroft, Rajeev Motwani, Jeffrey D. Ullman, Pearson).",
+      "Référence académique UQAM : COURS // MAT7050 — Indécidabilité, langages et automates (Cycles supérieurs, mathématiques).",
+      "Description officielle : Notions générales sur les fonctions récursives. Méthode générale de démonstration de l'indécidabilité des théories. Automates, machines séquentielles."
+    ],
+    "notes": "Synchronisé à 14:45:50 EDT (Rec 1 : 00:45:50 | Rec 2 : 01:15:50)"
+  },
+  {
+    "num": 23,
+    "title": "Théorie des automates & Machine de Turing",
+    "subtitle": "Infinitely long ticker tape & Hopcroft, Motwani, Ullman",
+    "points": [
+      "Visuel : Photo du même livre (Introduction to Automata Theory, Languages, and Computation par Hopcroft, Motwani & Ullman).",
+      "Schéma de la Machine de Turing : Infinitely long ticker tape memory (ruban mémoire infini).",
+      "Composants formels : Tête de lecture/écriture (Read/Write Head), état interne (State) et table d'instructions (Machine Table).",
+      "Portée conceptuelle : L'automate théorique fondamental qui formalise la récursion et le calcul universel."
+    ],
+    "notes": "Synchronisé à 14:46:34 EDT (Rec 1 : 00:46:34 | Rec 2 : 01:16:34)"
+  },
+  {
+    "num": 24,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Système formel",
+      "• Ensemble de pièces,",
+      "• Position de départ,",
+      "• Ensemble de règles de transition"
+    ],
+    "notes": "Synchronisé à 14:47:56 EDT (Rec 1 : 00:47:56 | Rec 2 : 01:17:56)"
+  },
+  {
+    "num": 25,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Ensemble fini de pièces:  = {O,O,O,O,O,X,X,X,X,X},",
+      "• Position de départ: q =",
+      "• Mais aussi: <1,2,3,4,5,6,7,8,9>",
+      "• Ensemble de règles de transition:",
+      "• Placer alternativement un X et un O dans une case vide, ou",
+      "• Si une position dans le vecteur contient un chiffre, alors on peut le remplacer alternativement par un X ou un O."
+    ],
+    "notes": "Synchronisé à 14:48:59 EDT (Rec 1 : 00:48:59 | Rec 2 : 01:18:59)"
+  },
+  {
+    "num": 26,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Ensemble fini de pièces:  = {O,O,O,O,O,X,X,X,X,X},",
+      "• Position de départ: q =",
+      "• Ensemble de règles de transition:",
+      "• Placer alternativement un X et un O dans une case vide, ou",
+      "• Si une position dans le vecteur contient un chiffre, alors on peut le remplacer alternativement par un X ou un O.",
+      "• Indépendance par rapport au médium"
+    ],
+    "notes": "Synchronisé à 14:52:27 EDT (Rec 1 : 00:52:27 | Rec 2 : 01:22:27)"
+  },
+  {
+    "num": 27,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Ensemble fini de pièces:  = {a,b},",
+      "• Position de départ: q = a",
+      "• Ensemble de règles de transition:",
+      "• Placer alternativement un a ou un b à la suite de la séquence actuelle a b"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 28,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Pièces:",
+      "• p, q, r, …",
+      "• ), (, ,,,,",
+      "• Position de départ",
+      "• (p  p)  p",
+      "• q  (p  q)",
+      "• (p  q)  (q  p)",
+      "• (q  r)  ((p  q)  (p  r))",
+      "• Règles de construction pièces complexes",
+      "• FR1. Une lettre seule est une pièce",
+      "• FR2. Si  est une pièce, alors  l’est aussi",
+      "• FR3. Si  et  sont des pièces, alors   ,   ,    et    le sont aussi",
+      "• Règles de transitions",
+      "• TR1. On peut substituer uniformément une pièce  par une autre ",
+      "• TR2. On peut écrire  si on déjà écrit  et   "
+    ],
+    "notes": "Synchronisé à 14:55:38 EDT (Rec 1 : 00:55:38 | Rec 2 : 01:25:38)"
+  },
+  {
+    "num": 29,
+    "title": "Langages et systèmes formels",
+    "subtitle": "",
+    "points": [
+      "• Pièces:",
+      "• p, q, r, …",
+      "• ), (, ,,,,",
+      "• Position de départ",
+      "• (p  p)  p",
+      "• q  (p  q)",
+      "• (p  q)  (q  p)",
+      "• (q  r)  ((p  q)  (p  r))",
+      "• Règles de construction pièces complexes",
+      "• FR1. Une lettre seule est une pièce",
+      "• FR2. Si  est une pièce, alors  l’est aussi",
+      "• FR3. Si  et  sont des pièces, alors   ,   ,    et    le sont aussi",
+      "• Règles de transitions",
+      "• TR1. On peut substituer uniformément une pièce  par une autre ",
+      "• TR2. On peut écrire  si on déjà écrit  et   "
+    ],
+    "notes": ""
+  },
+  {
+    "num": 30,
+    "title": "Systèmes formels automatiques (automates)",
+    "subtitle": "",
+    "points": [
+      "• Un SFA est un système formel capable de manipuler lui-même les pièces selon les règles définies pour le SF.",
+      "• En théorie de la computation, on nomme les SFA des « automates ».",
+      "• Pour ce faire, il s’agit d’inclure",
+      "• Parmi les pièces, des états du système formel",
+      "• Parmi les règles, une fonction de transition définie sur les états."
+    ],
+    "notes": "Synchronisé à 14:59:28 EDT (Rec 1 : 00:59:28 | Rec 2 : 01:29:28)"
+  },
+  {
+    "num": 31,
+    "title": "Systèmes formels automatiques (automates)",
+    "subtitle": "Exemple d’un SFA: automates à états finis (FSA)",
+    "points": [
+      "• Pièces:",
+      "• : Ensemble fini d’inputs",
+      "• Q: Ensemble fini d’états du système",
+      "• Position de départ: q  Q",
+      "• Position(s) finale(s) (pas nécessaire pour une SFA mais si pour un FSA): F  Q",
+      "• Une règle (fonction) de transition appliquant un état à un état et un symbole:  = : Q   → Q"
+    ],
+    "notes": "Synchronisé à 14:59:43 EDT (Rec 1 : 00:59:43 | Rec 2 : 01:29:43)"
+  },
+  {
+    "num": 32,
+    "title": "Systèmes formels automatiques (automates)",
+    "subtitle": "Exemple d’un SFA: les automates à états finis (portes automatiques)",
+    "points": [
+      "• Visuel : Photo / schéma de portes automatiques battantes avec capteurs de présence avant et arrière.",
+      "• Table de transition d'états :",
+      "– Si (état = fermé et input = (arrière, les deux, aucun)) → État = fermé",
+      "– Si (état = fermé et input = avant) → État = ouvert",
+      "– Si (état = ouvert et input = (avant, arrière, les deux)) → État = ouvert",
+      "– Si (état = ouvert et input = aucun) → État = fermé"
+    ],
+    "notes": "Synchronisé à 15:00:24 EDT (Rec 1 : 01:00:24 | Rec 2 : 01:30:24)"
+  },
+  {
+    "num": 33,
+    "title": "Systèmes formels automatiques (automates)",
+    "subtitle": "Exemple d’un SFA: les automates à états finis (Distributrice de Coca-Cola)",
+    "points": [
+      "• Visuel : Photo d'une machine distributrice de Coca-Cola (Coke Machine).",
+      "• Exemple classique en sciences cognitives et philosophie (Putnam / Block) :",
+      "– Machine à états finis recevant des inputs (pièces de monnaie), accumulant un état interne, et produisant un output (canette de Coca-Cola).",
+      "– Illustration qu'un automate réalise physiquement une fonction de transition déterministe."
+    ],
+    "notes": "Synchronisé à 15:02:17 EDT (Rec 1 : 01:02:17 | Rec 2 : 01:32:17)"
+  },
+  {
+    "num": 34,
+    "title": "Machines de Turing (?)",
+    "subtitle": "",
+    "points": [],
+    "notes": "Synchronisé à 15:03:37 EDT (Rec 1 : 01:03:37 | Rec 2 : 01:33:37)"
+  },
+  {
+    "num": 35,
+    "title": "Machines de Turing (?)",
+    "subtitle": "?",
+    "points": [],
+    "notes": "Synchronisé à 15:05:29 EDT (Rec 1 : 01:05:29 | Rec 2 : 01:35:29)"
+  },
+  {
+    "num": 36,
+    "title": "Un système formel: pièces",
+    "subtitle": "Pièces:",
+    "points": [],
+    "notes": "Synchronisé à 15:06:27 EDT (Rec 1 : 01:06:27 | Rec 2 : 01:36:27)"
+  },
+  {
+    "num": 37,
+    "title": "Un système formel: position de départ",
+    "subtitle": "",
+    "points": [],
+    "notes": "Synchronisé à 15:06:27 EDT puis retour à 15:08:03 EDT (Rec 1 : 01:08:03 | Rec 2 : 01:38:03)"
+  },
+  {
+    "num": 38,
+    "title": "Un système formel: transitions",
+    "subtitle": "",
+    "points": [],
+    "notes": "Synchronisé à 15:07:41 EDT (Rec 1 : 01:07:41 | Rec 2 : 01:37:41) — Transitions & Fonction d'interprétation"
+  },
+  {
+    "num": 39,
+    "title": "Un système formel: transitions",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 40,
+    "title": "Un système formel: transitions",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 41,
+    "title": "Un système formel: transitions",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 42,
+    "title": "Un système formel: transitions",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 43,
+    "title": "But",
+    "subtitle": "Joueur A",
+    "points": [
+      "Joueur B",
+      "Passe",
+      "Course",
+      "Domaine Co-domaine",
+      "Fonction d’interprétation (des pièces du système formel)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 44,
+    "title": "Fonction d’interprétation",
+    "subtitle": "",
+    "points": [],
+    "notes": "Synchronisé à 15:10:13 EDT (Rec 1 : 01:10:13 | Rec 2 : 01:40:13)"
+  },
+  {
+    "num": 45,
+    "title": "But",
+    "subtitle": "Joueur A",
+    "points": [
+      "Joueur B",
+      "Passe",
+      "Course",
+      "Symboles Référents",
+      "Fonction d’interprétation (des pièces du système formel)"
+    ],
+    "notes": "Synchronisé à 15:10:13 EDT (Rec 1 : 01:10:13 | Rec 2 : 01:40:13) — But, Joueurs, Symboles <-> Référents, Fonction d'interprétation (des pièces du système formel)"
+  },
+  {
+    "num": 46,
+    "title": "Système PM: système formel ou système formel",
+    "subtitle": "interprété?",
+    "points": [
+      "• Éléments (Pièces):",
+      "• p, q, r, …",
+      "• ), (, ,,,,",
+      "• Axiomes (Position de départ)",
+      "• (p  p)  p",
+      "• q  (p  q)",
+      "• (p  q)  (q  p)",
+      "• (q  r)  ((p  q)  (p  r))",
+      "• Règles de construction d’expressions bien formées (ebf) (Pièces complexes)",
+      "• FR1. Une lettre seule est une ebf (pièce)",
+      "• FR2. Si  est une ebf (pièce), alors  l’est aussi",
+      "• FR3. Si  et  sont des ebfs (pièces), alors   ,   ,    et    le sont aussi",
+      "• Règles d’inférences (Règles de transition)",
+      "• TR1. La règle de substitution uniforme: Le résultat d’une substitution uniforme d’une variable dans une thèse par une ebf est aussi une thèse",
+      "• TR2. La règle du Modus Ponens: Si  et    sont des thèses, alors  l’est aussi."
+    ],
+    "notes": "Synchronisé à 15:11:14 EDT (Rec 1 : 01:11:14 | Rec 2 : 01:41:14)"
+  },
+  {
+    "num": 47,
+    "title": "• Une MT est composée de deux",
+    "subtitle": "éléments:",
+    "points": [
+      "• Une tête",
+      "• Lecture, écriture, déplacement, suivre les instructions d’une table d’instructions",
+      "• Un ruban",
+      "• Espace pour emmagasiner des symboles La machine de Turing « mécanique »"
+    ],
+    "notes": "Synchronisé à 15:11:41 EDT (Rec 1 : 01:11:41 | Rec 2 : 01:41:41) — La machine de Turing « mécanique » (Tête & Ruban)"
+  },
+  {
+    "num": 48,
+    "title": "• La réponse de Turing",
+    "subtitle": "",
+    "points": [
+      "• Analyse du comportement des « human computers »",
+      "• Calculer c’est:",
+      "• Lire, Écrire, Effacer des symboles",
+      "• Suivre des instructions indiquant où lire le prochain symbole et quoi écrire.",
+      "• (1936, On Computable numbers, with an application to the entscheidungsproblem La machine de Turing « mécanique »"
+    ],
+    "notes": "Synchronisé à 15:15:30 EDT (Rec 1 : 01:15:30 | Rec 2 : 01:45:30) — Analyse des human computers (Lire, Écrire, Effacer)"
+  },
+  {
+    "num": 49,
+    "title": "• La réponse de Turing",
+    "subtitle": "",
+    "points": [
+      "• Analyse du comportement des « human computers »",
+      "• Calculer c’est:",
+      "• Lire, Écrire, Effacer des symboles",
+      "• Suivre des instructions indiquant où lire le prochain symbole et quoi écrire.",
+      "• (1936, On Computable numbers, with an application to the entscheidungsproblem La machine de Turing « mécanique »"
+    ],
+    "notes": "Synchronisé à 15:17:34 EDT (Rec 1 : 01:17:34 | Rec 2 : 01:47:34)"
+  },
+  {
+    "num": 50,
+    "title": "Les démonstrations de Turing (1936)",
+    "subtitle": "(1998, 1e edition)",
+    "points": [
+      "• Pour toute fonction calculable, il existe une machine de Turing capable de produire le résultat de la fonction étant donné ses arguments.",
+      "• Il existe une machine, la machine de Turing, dite « universelle » (MU), capable de simuler n’importe quelle autre machine de Turing. Ce faisant, cette machine est donc capable de produire le résultat de toute fonction étant donné ses arguments."
+    ],
+    "notes": "Synchronisé à 15:19:18 EDT (Rec 1 : 01:19:18 | Rec 2 : 01:49:18) — Thèse de Church-Turing & Machine Universelle (MU)"
+  },
+  {
+    "num": 51,
+    "title": "(1998, 1e edition)",
+    "subtitle": "L’explication mécaniste (pré-révolution)",
+    "points": [],
+    "notes": "Synchronisé à 15:21:54 EDT (Rec 1 : 01:21:54 | Rec 2 : 01:51:54)"
+  },
+  {
+    "num": 52,
+    "title": "Hypothèse du système symbolique physique",
+    "subtitle": "",
+    "points": [
+      "• Système symbolique physique (SSP)",
+      "• Un système symbolique physique est un système computationnel implémenté dans un mécanisme physique.",
+      "• Hypothèse du SSP (Newell et Simon 1976)",
+      "• Un SSP a les moyens nécessaires et suffisants pour un comportement général intelligent",
+      "• Moyens pour un comportement général intelligent → SSP",
+      "• SSP → moyens pour un comportement général intelligent"
+    ],
+    "notes": "Synchronisé à 15:23:36 EDT (Rec 1 : 01:23:36 | Rec 2 : 01:53:36) — Newell & Simon (1976)"
+  },
+  {
+    "num": 53,
+    "title": "L’analyse fonctionnelle: les «niveaux » de Marr",
+    "subtitle": "",
+    "points": [],
+    "notes": "Synchronisé à 15:25:13 EDT (Rec 1 : 01:25:13 | Rec 2 : 01:55:13) — David Marr (1982), livre VISION"
+  },
+  {
+    "num": 54,
+    "title": "Explications computationnelles",
+    "subtitle": "Explanandum:",
+    "points": [
+      "Capacité (décrite en termes d’une",
+      "fonction calculable):",
+      "La capacité de S à -er"
+    ],
+    "notes": "Synchronisé à 15:26:59 EDT (Rec 1 : 01:26:59 | Rec 2 : 01:56:59)\nNote de Michel : « ça fait foutument penser aux géons de Biederman, ça » (Lien direct : Marr 1982 -> Biederman 1987)"
+  },
+  {
+    "num": 55,
+    "title": "Explications computationnelles",
+    "subtitle": "Explanans:",
+    "points": [
+      "• Schéma fonctionnel:",
+      "  – Des sous-capacités",
+      "  – Une organisation fonctionnelle",
+      "• Un mécanisme physique:",
+      "  – Des composants physiques",
+      "  – Une organisation structurelle"
+    ],
+    "notes": "Synchronisé à 15:28:21 EDT (Rec 1 : 01:28:21 | Rec 2 : 01:58:21)"
+  },
+  {
+    "num": 56,
+    "title": "L’analyse fonctionnelle: les «niveaux » de Marr",
+    "subtitle": "",
+    "points": [
+      "• Niveau 1 : Théorie computationnelle (Le quoi et le pourquoi)",
+      "• Niveau 2 : Représentation et algorithme (Le comment formel)",
+      "• Niveau 3 : Implémentation physique / matérielle (La réalisation matérielle)"
+    ],
+    "notes": "Transition rapide / survolé par le professeur vers D58"
+  },
+  {
+    "num": 57,
+    "title": "Explications computationnelles",
+    "subtitle": "",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 58,
+    "title": "Aujourd’hui",
+    "subtitle": "",
+    "points": [
+      "• L’explication de la cognition (un vieux problème)",
+      "• La solution computationnelle / symbolique",
+      "• La solution connexionniste"
+    ],
+    "notes": "Synchronisé à 15:29:48 EDT (Rec 1 : 01:29:48 | Rec 2 : 01:59:48)\nPause de 15:31:33 à 15:51:12 EDT (19m39s).\n▶️ Reprise à 15:51:12 EDT : Dave Saint-Amour prend la parole sur l'organisation des débats oraux (pas dans les cours magistraux de Pierre Poirier, réservés aux séances de Dave dès la Semaine 3)."
+  },
+  {
+    "num": 59,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "Mécanisme",
+      "?"
+    ],
+    "notes": "Synchronisé à 16:00:38 EDT (Rec 1 : 02:00:38 | Rec 2 : 02:30:38) — Reprise de Pierre Poirier / Réexposition du problème fondamental pour introduire le connexionnisme"
+  },
+  {
+    "num": 60,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "Mécanisme",
+      "?"
+    ],
+    "notes": "Synchronisé à 16:02:16 EDT (Rec 1 : 02:02:16 | Rec 2 : 02:32:16) — Confrontation : infinité de représentations vs mécanisme biologique"
+  },
+  {
+    "num": 61,
+    "title": "L’explication de la cognition (un vieux problème)",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "neuronales",
+      "Mécanisme",
+      "?"
+    ],
+    "notes": "Synchronisé à 16:03:38 EDT (Rec 1 : 02:03:38 | Rec 2 : 02:33:38) — Pivot conceptuel : introduction des représentations neuronales"
+  },
+  {
+    "num": 62,
+    "title": "La solution connexionniste",
+    "subtitle": "(Infinité de) représentation(s)",
+    "points": [
+      "neuronales",
+      "Mécanisme",
+      "?"
+    ],
+    "notes": "Survolé rapidement vers D63"
+  },
+  {
+    "num": 63,
+    "title": "Représentations neuronales",
+    "subtitle": "McCulloch & Pitts (1943) — A logical calculus of the ideas immanent in nervous activity",
+    "points": [
+      "• Fac-similé de l'article fondateur (The Bulletin of Mathematical Biophysics, 1943)",
+      "• Warren S. McCulloch & Walter Pitts",
+      "• Modélisation logique du neurone tout-ou-rien (Threshold Logic Unit)"
+    ],
+    "notes": "Synchronisé à 16:05:22 EDT (Rec 1 : 02:05:22 | Rec 2 : 02:35:22) — Article séminal de McCulloch & Pitts (1943)"
+  },
+  {
+    "num": 64,
+    "title": "Représentations neuronales",
+    "subtitle": "Circuits logiques de McCulloch & Pitts (1943)",
+    "points": [
+      "• Implémentation neuronale des opérateurs logiques :",
+      "  – Conjonction ET (seuil θ = 2)",
+      "  – Disjonction OU (seuil θ = 1)",
+      "  – Négation NON (synapse inhibitrice)"
+    ],
+    "notes": "Survolé / transition rapide vers D65"
+  },
+  {
+    "num": 65,
+    "title": "La solution connexionniste",
+    "subtitle": "Le Perceptron (Frank Rosenblatt, 1958)",
+    "points": [
+      "• Frank Rosenblatt (1958) : The Perceptron",
+      "• Couche de détection sensorielle ➔ Unités d'association ➔ Unité de décision",
+      "• Poids synaptiques modifiables par apprentissage supervisé",
+      "• Première machine apprenante bio-inspirée pour la perception et la classification"
+    ],
+    "notes": "Synchronisé à 16:07:39 EDT (Rec 1 : 02:07:39 | Rec 2 : 02:37:39) — Le Perceptron de Frank Rosenblatt (1958)"
+  },
+  {
+    "num": 66,
+    "title": "Représentations neuronales",
+    "subtitle": "y = mx + b (Séparation linéaire)",
+    "points": [
+      "• Modélisation géométrique des inputs sensoriels dans un espace cartésien",
+      "• Droite affine de séparation linéaire : y = mx + b (ou w₁x₁ + w₂x₂ - θ = 0)",
+      "• Pente m (ratio des poids) et ordonnée à l'origine b (seuil / biais)",
+      "• Partitionnement de l'espace en deux demi-plans d'activation"
+    ],
+    "notes": "Synchronisé à 16:10:12 EDT (Rec 1 : 02:10:12 | Rec 2 : 02:40:12) — Frontière de décision linéaire (y = mx + b)"
+  },
+  {
+    "num": 67,
+    "title": "Représentations neuronales",
+    "subtitle": "Single Layer Perceptron (Perceptron monocouche)",
+    "points": [
+      "• Architecture du Perceptron à couche unique (Single Layer Perceptron)",
+      "• Vecteur d'entrées sensorielles pondérées par les poids synaptiques : net = Σ wᵢxᵢ",
+      "• Décision binaire par dépassement de seuil (Threshold Logic Unit)",
+      "• Séparation linéaire directe de l'espace d'activation (sans couche cachée)"
+    ],
+    "notes": "Synchronisé à 16:12:57 EDT (Rec 1 : 02:12:57 | Rec 2 : 02:42:57) — Le Perceptron monocouche et ses limites de séparabilité"
+  },
+  {
+    "num": 68,
+    "title": "Représentations neuronales",
+    "subtitle": "La fonction OU (OR) — Séparation linéaire",
+    "points": [
+      "• Représentation cartésienne des 4 états de la fonction OU (OR)",
+      "• (0,0) ➔ 0 (inhibition) vs (0,1), (1,0), (1,1) ➔ 1 (activation)",
+      "• Séparation linéaire par la frontière affine y = mx + b",
+      "• Démonstration de la résolubilité par le Single Layer Perceptron"
+    ],
+    "notes": "Synchronisé à 16:14:36 EDT (Rec 1 : 02:14:36 | Rec 2 : 02:44:36) — La fonction OU (OR) et la séparabilité linéaire"
+  },
+  {
+    "num": 69,
+    "title": "Représentations neuronales",
+    "subtitle": "Réseaux multicouches (PDP : Parallel Distributed Processing, 1986)",
+    "points": [
+      "• Image du livre culte PDP (Rumelhart & McClelland, 1986)",
+      "• Schéma d'un réseau multicouche (Multi-layer perceptron) : entrée ➔ couches cachées ➔ sortie",
+      "• Traitement distribué en parallèle (Parallel Distributed Processing)",
+      "• Dépassement de la limitation de séparabilité linéaire du monocouche"
+    ],
+    "notes": "Synchronisé à 16:16:01 EDT (Rec 1 : 02:16:01 | Rec 2 : 02:46:01)\nAparté de 15s (~16:16:16–16:16:31) : retour rapide sur le single layer (D67) pour comparaison, puis stabilisation sur le livre PDP."
+  },
+  {
+    "num": 70,
+    "title": "La modélisation connexionniste",
+    "subtitle": "Phénomènes cognitifs",
+    "points": [
+      "• Phénomènes cognitifs (ex.: la représentation par prototypes, l’apprentissage, etc.)",
+      "• Modèle mathématique (réseaux de neurones)",
+      "• Phénomènes neuronaux (ex.: déclenchement et intensité des potentiels d’action, renforcement ou affaiblissement des synapses, etc.)",
+      "• Analogie fonctionnelle-cognitive",
+      "• Analogie biologique"
+    ],
+    "notes": "Synchronisé à 16:19:21 EDT (Rec 1 : 02:19:21 | Rec 2 : 02:49:21) — Le pont entre analogie biologique et analogie cognitive"
+  },
+  {
+    "num": 71,
+    "title": "La modélisation connexionniste",
+    "subtitle": "Environnement externe & Couplage systémique",
+    "points": [
+      "• Schéma d'intégration de l'Environnement externe dans la boucle cognitive",
+      "• Entrées du réseau issues de la structure statistique de l'environnement",
+      "• Modèle mathématique articulant phénomènes cognitifs et phénomènes neuronaux",
+      "• Actions et comportements en sortie rétroagissant sur l'environnement externe"
+    ],
+    "notes": "Synchronisé à 16:22:19 EDT (Rec 1 : 02:22:19 | Rec 2 : 02:52:19) — L'environnement externe couplé au système connexionniste"
+  },
+  {
+    "num": 72,
+    "title": "L’analogie biologique:",
+    "subtitle": "Le neurone (Structure of a neuron)",
+    "points": [
+      "• Schéma anatomique du neurone biologique (Structure of a neuron)",
+      "• Dendrites : réception et conduction passive des potentiels postsynaptiques",
+      "• Soma : intégration spatio-temporelle ➔ Cône axonique (seuil d'activation)",
+      "• Axone myélinisé : propagation tout-ou-rien du potentiel d'action ➔ Boutons terminaux"
+    ],
+    "notes": "Synchronisé à 16:24:48 EDT (Rec 1 : 02:24:48 | Rec 2 : 02:54:48) — L'anatomie du neurone et sa transcription computationnelle"
+  },
+  {
+    "num": 73,
+    "title": "L’analogie biologique:",
+    "subtitle": "La synapse (The Synapse)",
+    "points": [
+      "• Schéma ultrastructural de la synapse chimique",
+      "• Bouton présynaptique, vésicules et libération de neurotransmetteurs",
+      "• Fente synaptique et récepteurs postsynaptiques (canaux ioniques)",
+      "• Excitation (PPSE) vs Inhibition (PPSI) ➔ Genèse biologique du poids synaptique w"
+    ],
+    "notes": "Synchronisé à 16:26:28 EDT (Rec 1 : 02:26:28 | Rec 2 : 02:56:28) — La synapse et l'efficacité de transmission synaptique"
+  },
+  {
+    "num": 74,
+    "title": "L’analogie biologique:",
+    "subtitle": "Les connexions (Connectivité & Architecture)",
+    "points": [
+      "• Schéma d'architecture des circuits et réseaux neuronaux",
+      "• Convergence : sommation spatiale de milliers d'afférences sur un même neurone",
+      "• Divergence : ramification axonale distribuant le signal vers de multiples cibles",
+      "• Fondement biologique de la matrice de poids W = (wⱼᵢ) en IA"
+    ],
+    "notes": "Synchronisé à 16:28:11 EDT (Rec 1 : 02:28:11 | Rec 2 : 02:58:11) — La connectivité en réseau et la matrice des poids"
+  },
+  {
+    "num": 75,
+    "title": "L’analogie biologique:",
+    "subtitle": "un modèle mathématique du neurone",
+    "points": [],
+    "notes": "Synchronisé à 16:29:05 EDT (Rec 1 : 02:29:05 | Rec 2 : 02:59:05) — Diapositive-titre introduisant la formulation mathématique"
+  },
+  {
+    "num": 76,
+    "title": "L’analogie biologique:",
+    "subtitle": "un modèle mathématique du neurone",
+    "points": [
+      "• Fonction d’intégration (prise d’information):",
+      "– netj=ajwji",
+      "• Fonction d’activation (prise de décision):",
+      "– yj=F(netj)",
+      "– yi=netj",
+      "– yj=1/1+e-netj"
+    ],
+    "notes": "Synchronisé à 16:29:20 EDT (Rec 1 : 02:29:20 | Rec 2 : 02:59:20) — Intégration scalaire et fonctions d'activation (linéaire et sigmoïde)"
+  },
+  {
+    "num": 77,
+    "title": "L’analogie biologique:",
+    "subtitle": "un modèle mathématique du neurone",
+    "points": [
+      "• Fonction d’intégration (prise d’information):",
+      "– netj=ajwji",
+      "• Fonction d’activation (prise de décision):",
+      "– yj=F(netj)",
+      "– yi=netj",
+      "– yj=1/1+e-netj"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 78,
+    "title": "Analogies biologiques:",
+    "subtitle": "la boite à outils de modélisation",
+    "points": [
+      "• Architecture du neurone",
+      "• Neurone point ou « en compartiment »",
+      "• Fonction d’intégration et de transfert (linéaire ou non, etc.)",
+      "• Seuil",
+      "• Taux d’apprentissage",
+      "• Momentum",
+      "• Etc., etc.",
+      "• Architecture du réseau",
+      "• Diffus, en bassin ou en couche",
+      "• Couches d’entrée, de sortie, cachée",
+      "• Nombre de couches cachées",
+      "• Connexion feed-forward, multi- directionnelles (feed-forward et feedback), récurrentes",
+      "• Excitation vs inhibition",
+      "• Modules ou non",
+      "• 1D ou 2D",
+      "• Pures ou hybrides",
+      "• Etc., etc."
+    ],
+    "notes": ""
+  },
+  {
+    "num": 79,
+    "title": "Analogies biologiques:",
+    "subtitle": "la boite à outils de modélisation",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 80,
+    "title": "Analogies biologiques:",
+    "subtitle": "la boite à outils de modélisation",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 81,
+    "title": "Analogies biologiques:",
+    "subtitle": "la boite à outils de modélisation",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 82,
+    "title": "Analogies biologiques:",
+    "subtitle": "neurosciences cognitives computationnelles",
+    "points": [
+      "• Schéma multi-échelles des niveaux d'analyse neuro-computationnelle",
+      "• Cerveau humain entier (teinte mauve/violette) à gauche (macro-level)",
+      "• Hiérarchie à droite : Micro-level (synapses) ➔ Meso-level (circuits) ➔ Macro-level (systèmes)",
+      "• Le meso-level comme niveau privilégié d'ancrage des réseaux connexionnistes"
+    ],
+    "notes": "Synchronisé à 16:35:44 EDT (Rec 1 : 02:35:44 | Rec 2 : 03:05:44) — Saut de D78 à D82 : Cerveau mauve et niveaux d'analyse"
+  },
+  {
+    "num": 83,
+    "title": "Analogies biologiques:",
+    "subtitle": "neurosciences cognitives computationnelles — LEABRA mechanisms",
+    "points": [
+      "• Modèle LEABRA (Local, Error-driven and Associative, Biologically Realistic Algorithm - O'Reilly & Munakata)",
+      "• Intégration de l'apprentissage hebbien (associatif / corrélationnel) et dirigé par l'erreur",
+      "• Inhibition compétitive kWTA (k-Winners-Take-All) pour des représentations creuses (sparse)",
+      "• Dynamique membranaire réaliste par conductance synaptique"
+    ],
+    "notes": "Synchronisé à 16:37:37 EDT (Rec 1 : 02:37:37 | Rec 2 : 03:07:37) — Modèle LEABRA. À 16:38:39 EDT : Question de Dave Saint-Amour en classe (transition vers l'apprentissage corrélationnel mise en attente / hold)."
+  },
+  {
+    "num": 84,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "deux formes d’apprentissages",
+    "points": [
+      "• Apprentissage corrélationnel",
+      "• Apprentissage associatif (non supervisé) de modèles corrélationnels",
+      "• Apprentissage pragmatique",
+      "• Apprentissage supervisé de tâches"
+    ],
+    "notes": "Synchronisé à 16:40:38 EDT (Rec 1 : 02:40:38 | Rec 2 : 03:10:38) — Deux formes d’apprentissages : corrélationnel vs pragmatique."
+  },
+  {
+    "num": 85,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage corrélationnel (non supervisé)",
+    "points": [
+      "• Apprentissage associatif (hebbien)",
+      "• Apprentissage non supervisé, auto-organisé (self-organizing)",
+      "• Apprentissage de modèles corrélationnels probabilistes",
+      "• Utile pour extraire la structure statistique de l’environnement",
+      "• Descriptif (représentation du monde)",
+      "• Biologiquement réaliste (LTP / LTD)",
+      "• Incapable de s’adapter aux exigences fonctionnelles",
+      "• Quoi faire, comment traiter l’information, quand tel et tel stimuli est présent"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 86,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage corrélationnel (non supervisé)",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 87,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage corrélationnel (non supervisé)",
+    "points": [
+      "O1 O2 O3 O4",
+      "V1 -0.25 0.25 0.25 -0.25",
+      "V2 -0.25 0.25 0.25 0.25",
+      "V3 0.25 -0.25 -0.25 0.25",
+      "V4 0.25 -0.25 -0.25 -0.25"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 88,
+    "title": "wji(t+1)=wji(t)+wji(t)",
+    "subtitle": "wji(t)=aiaj",
+    "points": [
+      "i.e., le changement synaptique",
+      "est fonction de la corrélation",
+      "entre l’activité du neurone",
+      "présynaptique ai et du neurone",
+      "postsynaptique aj",
+      "Analogie fonctionnelle:",
+      "apprentissage corrélationnel (non supervisé)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 89,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage pragmatique",
+    "points": [
+      "• Apprentissage pragmatique dirigé par l’erreur (error-driven)",
+      "• Apprentissage supervisé",
+      "• Apprentissage de tâches",
+      "• Utile pour savoir quoi faire",
+      "• Directif (pilote de l’action, pragmatique)",
+      "• Réalisme biologique plus difficile (mais impliquant probablement la dopamine)"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 90,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage pragmatique dirigé par l’erreur",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 91,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage pragmatique dirigé par l’erreur",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 92,
+    "title": "wji(t+1) = wji(t)+wji(t)",
+    "subtitle": "wji(t) = iaj",
+    "points": [
+      "I = ti-ai",
+      "Analogie fonctionnelle:",
+      "apprentissage pragmatique dirigé par l’erreur"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 93,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage pragmatique dirigé par l’erreur",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 94,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "apprentissage pragmatique dirigé par l’erreur",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 95,
+    "title": "Apprentissage",
+    "subtitle": "Analogie fonctionnelle:",
+    "points": [
+      "apprentissage pragmatique dirigé par l’erreur"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 96,
+    "title": "Analogie fonctionnelle: un modèle de l’apprentissage",
+    "subtitle": "(apprentissage de tâches, dirigé par l’erreur) — Path of weights",
+    "points": [
+      "• Schéma de l'espace des poids (weight space) visualisé en volume 3D (cube)",
+      "• Trajectoire d'apprentissage (path of weights) d'un état initial aléatoire vers la solution optimale",
+      "• Descente de gradient guidée par l'erreur (error-driven learning)",
+      "• Convergence des poids synaptiques minimisant l'erreur sur la tâche"
+    ],
+    "notes": "Synchronisé à 16:41:47 EDT (Rec 1 : 02:41:47 | Rec 2 : 03:11:47) — Poirier stabilise sur le modèle d'apprentissage (path of weight / cube 3D) en conclusion de la séance."
+  },
+  {
+    "num": 97,
+    "title": "Analogie fonctionnelle: un modèle de l’apprentissage",
+    "subtitle": "(apprentissage de tâches, dirigé par l’erreur) — Middle letter ➔ Phonème /n/",
+    "points": [
+      "• Modèle d'apprentissage de tâche (conversion texte ➔ phonèmes)",
+      "• Entrée : fenêtre textuelle avec la lettre centrale (middle letter)",
+      "• Sortie : phonème cible (output phoneme /n/)",
+      "• Animation dynamique de l'apprentissage par descente de gradient"
+    ],
+    "notes": "Synchronisé à 16:43:53 EDT (Rec 1 : 02:43:53 | Rec 2 : 03:13:53) — Modèle d'apprentissage : middle letter ➔ output phoneme /n/ et animation de tâche."
+  },
+  {
+    "num": 98,
+    "title": "Analogie fonctionnelle: un modèle de l’apprentissage",
+    "subtitle": "(apprentissage de tâches, dirigé par l’erreur) — John A. Bullinaria (1997)",
+    "points": [
+      "• À gauche : Livre / publication de John A. Bullinaria (1997, Analyzing Internal Representations)",
+      "• À droite : Graphique Analyzing the internal representations (analyse des couches cachées)",
+      "• Partitionnement hiérarchique (Hierarchical Cluster Analysis) des unités cachées",
+      "• Émergence spontanée de catégories sémantiques (séparation voyelles vs consonnes)"
+    ],
+    "notes": "Synchronisé à 16:58:48 EDT (Rec 1 : 02:58:48 | Rec 2 : 03:28:48) — John A. Bullinaria (1997) : livre à gauche et dendrogramme des couches cachées à droite."
+  },
+  {
+    "num": 99,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 100,
+    "title": "keyboard speaker",
+    "subtitle": "monitor",
+    "points": [
+      "Analogie fonctionnelle:",
+      "la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 101,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 102,
+    "title": "keyboard speaker",
+    "subtitle": "monitor",
+    "points": [
+      "synthetizer",
+      "Synthétiseur: <1,1,0>",
+      "Terminal: <1,0,1>",
+      "Téléviseur: <0,1,1>",
+      "Analogie fonctionnelle:",
+      "la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 103,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 104,
+    "title": "• Un état E d’un système S représente",
+    "subtitle": "un état M du monde  si, et seulement,",
+    "points": [
+      "si 1) il y a une corrélation",
+      "nomologique entre E et M, et 2) E a la",
+      "fonction de représenter M pour S.",
+      "(Dretske, 1988)",
+      "• Trois types de représentations 1. Conventionnelle 2. Indicielles (indices de Peirce) 3. Naturelles Analogie fonctionnelle: la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 105,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 106,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 107,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 108,
+    "title": "(1,0)",
+    "subtitle": "rocher",
+    "points": [
+      "mine",
+      "(0,1)",
+      "Espace de",
+      "réponse:",
+      "mine / rocher",
+      "Sémantique informationnelle:",
+      "Un état E d’un système S (ex.: un état d’activation de la couche cachée d’un réseau de neurones) représente",
+      "un état M du monde (ex.: la présence d’une mine) si, et seulement, si 1) il y a une corrélation nomologique",
+      "entre E et M, et 2) E a la fonction de représenter M pour S. (Dretske, 1988).",
+      "Analogie fonctionnelle:",
+      "la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 109,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 110,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 111,
+    "title": "• Propriétés des représentations",
+    "subtitle": "",
+    "points": [
+      "• Métrique sémantique",
+      "• Généralisation automatique",
+      "• Résistance au bruit",
+      "• Dégradation progressive Analogie fonctionnelle: la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 112,
+    "title": "• Propriétés des représentations",
+    "subtitle": "",
+    "points": [
+      "• Métrique sémantique",
+      "• Généralisation automatique",
+      "• Résistance au bruit",
+      "• Dégradation progressive Analogie fonctionnelle: la sémantique représentationnelle des réseaux"
+    ],
+    "notes": ""
+  },
+  {
+    "num": 113,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  },
+  {
+    "num": 114,
+    "title": "Analogie fonctionnelle:",
+    "subtitle": "la sémantique représentationnelle des réseaux",
+    "points": [],
+    "notes": ""
+  }
+];
+
+    let currentSlideIndex = 97;
+
+    function renderSlideSelect() {
+      const select = document.getElementById('slideSelect');
+      select.innerHTML = slides.map((s, idx) => {
+        const shortTitle = s.title.length > 28 ? s.title.substring(0, 25) + '...' : s.title;
+        return `<option value="${idx}">D${s.num} : ${shortTitle}</option>`;
+      }).join('');
+    }
+
+    function showSlide(index) {
+      if (index < 0 || index >= slides.length) return;
+      currentSlideIndex = index;
+      const s = slides[index];
+
+      document.getElementById('slideCounter').textContent = `Diapo ${s.num} / ${slides.length}`;
+      document.getElementById('slideSelect').value = index;
+
+      let pointsHtml = '';
+      if (s.points && s.points.length > 0) {
+        pointsHtml = s.points.map(p => {
+          const cleanP = p.replace(/^[•\-–*]\s*/, '');
+          return `<li class="flex items-start gap-2.5 text-sm md:text-base leading-relaxed text-slate-200">
+            <span class="text-amber-400 mt-1 flex-shrink-0">•</span>
+            <span>${cleanP}</span>
+          </li>`;
+        }).join('');
+      } else {
+        pointsHtml = '<li class="text-xs italic text-slate-400">[Diapositive visuelle / Schéma ou figure d\'illustration]</li>';
+      }
+
+      let notesSection = '';
+      if (s.notes) {
+        notesSection = `
+          <div class="mt-6 pt-4 border-t border-slate-700/70">
+            <div class="text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1">Notes & Réflexions en classe :</div>
+            <p class="text-xs text-slate-300 italic whitespace-pre-wrap">${s.notes}</p>
+          </div>
+        `;
+      }
+
+      document.getElementById('slideContent').innerHTML = `
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold font-mono bg-amber-500/10 text-amber-300 border border-amber-500/20">
+              DIAPOSITIVE ${s.num}
+            </span>
+            <span class="text-xs text-slate-400 font-mono">Total : ${slides.length}</span>
+          </div>
+          <h2 class="text-lg md:text-2xl font-bold text-white mb-2 leading-snug">${s.title}</h2>
+          ${s.subtitle ? `<h3 class="text-sm font-medium text-amber-200/80 mb-4 pb-2 border-b border-slate-700/50">${s.subtitle}</h3>` : ''}
+          <ul class="space-y-2.5 my-4">
+            ${pointsHtml}
+          </ul>
+        </div>
+        ${notesSection}
+      `;
+
+      document.getElementById('prevBtn').disabled = (index === 0);
+      document.getElementById('nextBtn').disabled = (index === slides.length - 1);
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) showSlide(currentSlideIndex - 1);
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < slides.length - 1) showSlide(currentSlideIndex + 1);
+    }
+
+    function goToSlide(idx) {
+      showSlide(idx);
+    }
+
+    function filterSlides() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      if (!q) return;
+      const matchIdx = slides.findIndex(s => 
+        s.title.toLowerCase().includes(q) || 
+        (s.subtitle && s.subtitle.toLowerCase().includes(q)) ||
+        s.points.some(p => p.toLowerCase().includes(q))
+      );
+      if (matchIdx !== -1) {
+        showSlide(matchIdx);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+      if (e.key === 'ArrowLeft') prevSlide();
+      if (e.key === 'ArrowRight') nextSlide();
+    });
+
+    window.syncSlide = function(slideNum, notes) {
+      const targetIdx = slides.findIndex(s => s.num === slideNum);
+      if (targetIdx !== -1) {
+        if (notes) slides[targetIdx].notes = (slides[targetIdx].notes ? slides[targetIdx].notes + "\n" : "") + notes;
+        showSlide(targetIdx);
+      }
+    };
+
+    renderSlideSelect();
+    showSlide(currentSlideIndex);
+  </script>
+</body>
+</html>

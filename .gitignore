@@ -1,12 +1,18 @@
-# Audio & Video files (large raw recordings)
+# Documents et fichiers de cours
+# Note: Les PDF officiels sont suivis dans Git pour permettre l'audit web complet par GPT-6
+*.docx
+*.pptx
+*.xlsx
+
+# Audio & Video files (enregistrements bruts volumineux)
 PSY9613*.m4a
 PSY9613*.mp4
 *.wav
 
-# Allow official podcast audio
-!02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/*.m4a
+# Autoriser les podcasts audio officiels
+!02_Lectures_et_Articles/**/Podcast/*.m4a
 
-# OS / Temporary
+# OS / Temporaires
 Thumbs.db
 .DS_Store
 *.tmp

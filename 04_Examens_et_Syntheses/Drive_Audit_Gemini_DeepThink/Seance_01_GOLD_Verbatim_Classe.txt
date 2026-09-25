@@ -1,0 +1,1516 @@
+# TRANSCRIPTION AUDIO INTÉGRALE — SÉANCE 1 (PSY9613)
+# Enseignants : Pr Pierre Poirier & Pr Dave Saint-Amour
+# Date : 14 septembre 2026 | Source : WhisperX large-v3 aligned (Master audio 02:54:44)
+
+[00:00:00] Ce qui est impossible à l'UQAM, c'est de changer la température d'une pièce et parfois changer de local.
+[00:00:08] Donc, on va commencer tranquillement par un tour de table.
+[00:00:14] Donc, je me présente, je suis Dave Saint-Amour, je reconnais quelques visages ici.
+[00:00:23] Je suis professeur ici au département de psychologie en neuropsychologie.
+[00:00:29] J'enseigne habituellement au bac le cours de psychologie de la perception, donc je reconnais certains visages.
+[00:00:37] J'enseigne au doctorat plus dans la neuropsychologie du développement, parce que je suis aussi chercheur ou je suis aussi un officier.
+[00:00:49] Et j'ai un background un petit peu plus de formation
+[00:00:55] sur la perception visuelle, en électrophysiologie visuelle.
+[00:01:02] Ah, bonjour!
+[00:01:03] Oui, là, le défi, c'est de trouver un endroit, une place.
+[00:01:06] Il reste une chaise ici.
+[00:01:08] Puis il reste un autre collègue qui va arriver dans quelques minutes.
+[00:01:11] C'est assurément.
+[00:01:11] Oui, oui, oui.
+[00:01:13] Ah, oui.
+[00:01:13] On a deux chaises.
+[00:01:14] Oui, il y a deux chaises.
+[00:01:15] Bon, pas plus.
+[00:01:16] Mais on peut coller la table au bout ici, non?
+[00:01:19] Oui, peut-être.
+[00:01:20] Oui, c'est vrai qu'on peut...
+[00:01:22] La table, si on la colle au bout, vous allez gagner.
+[00:01:24] Oui, c'est bon.
+[00:01:25] Voilà une chaise.
+[00:01:29] Donc, on va rajouter une chaise.
+[00:01:32] Là, c'est lourd.
+[00:01:33] On peut-tu pousser tout ça?
+[00:01:35] On peut repousser un peu ici, c'est ça?
+[00:01:36] Oui, on va y aller par deux.
+[00:01:40] Je pense que ça va fonctionner.
+[00:01:46] C'est une bonne idée.
+[00:01:47] Est-ce que tu joues dans un band ou tu aimes le verre noir?
+[00:01:53] J'aime le verre noir à l'occasion.
+[00:01:55] Je ne joue pas dans un band.
+[00:01:57] Zéro.
+[00:01:58] Zéro musique.
+[00:01:59] Compte sur moi pour poser des questions.
+[00:02:02] Avec plaisir.
+[00:02:04] Ok, donc, je continue.
+[00:02:09] Donc, j'ai un background de formation très électrophysiologie, perception visuelle, très psychologie neuro-expérimentale, en fait, neuro-physiologique.
+[00:02:23] Et depuis, j'ai élargi mes...
+[00:02:27] Mes champs de compétences et de recherches, c'est un peu mon background.
+[00:02:34] Donc j'ai une approche, en fait même au début de mon doctorat, j'enregistrais un seul neurone dans des modèles.
+[00:02:45] animaux avec des potentiels d'action.
+[00:02:48] Donc, on peut avoir pire comme réductionniste, mais matérialiste, réductionniste, j'ai commencé avec ça.
+[00:02:57] Et donc, vous allez voir, ma couleur, en fait, elle est très...
+[00:03:04] Elle est très, pour ceux qui m'ont eu comme prof, expérimentale.
+[00:03:11] Mais heureusement, en fait, on va avoir une autre coulère qui va peut-être complémenter certains aspects de ce cours-ci.
+[00:03:18] Et, puisqu'on est deux à venir le cours, et on va être deux tout le temps.
+[00:03:23] Des fois, il y a des cours en coaching, c'est une partie avec un prof, l'autre partie avec l'autre prof.
+[00:03:29] Ce qu'on va essayer de faire, Pierre va se présenter dans quelques secondes, c'est de donner les cours ensemble.
+[00:03:38] Il va y avoir un leader, mais il va y avoir aussi peut-être une discussion.
+[00:03:42] C'est un cours quand même aux études avancées, donc on va essayer pas juste de faire un cours magistral, il y a des notions qui...
+[00:03:51] qu'on veut présenter d'une façon un peu plus pédagogique et magistrale, mais on veut solliciter certaines discussions.
+[00:04:02] Donc, il va y avoir des moments pour ça.
+[00:04:05] Donc, moi, je vais m'arrêter là, puis de toute façon, au cours de la session...
+[00:04:08] Je vais te laisser la parole, Pierre.
+[00:04:12] Donc, c'est moi le Pierre en question, qui provient d'une autre perspective.
+[00:04:18] J'ai aussi fait une formation en psychologie d'ici d'ailleurs à l'UQAM.
+[00:04:23] J'ai même eu certains, ça ne paraît pas à cause de la couleur de mes cheveux, mais j'ai même eu certains profs que vous avez eus, vous aussi, quand j'étais au bac.
+[00:04:30] J'ai blanchi prénaturellement.
+[00:04:32] Mais sur le trafic du bac, j'ai commencé à faire des lectures qui s'intéressaient plus au fondement de la psychologie, au fondement des sciences cognitives, au fondement de l'intelligence artificielle.
+[00:04:43] Et je suis allé du côté, et j'en suis jamais revenu, de la philosophie.
+[00:04:46] Donc en philosophie de la psychologie d'abord, puis en philosophie des sciences cognitives.
+[00:04:52] Et j'ai fait...
+[00:04:53] C'est à l'époque où les bacs ne coûtaient pas trop cher à l'UQAM.
+[00:04:56] J'ai fait un deuxième bac, c'était 50 $ à ce temps-là.
+[00:05:02] J'ai fait un deuxième bac en philo, puis j'ai continué la formation jusqu'au doctorat en philo.
+[00:05:08] Mon doctorat portait sur la nature de l'explication en psychologie, en politique.
+[00:05:14] Je m'intéresse donc à un niveau peut-être plus général, d'une certaine façon.
+[00:05:17] Les philosophes, c'est un peu dans chacun des domaines, les philosophes des sciences,
+[00:05:21] philosophie des sciences cognitives, philosophie de la psychologie, c'est une sorte de philosophie, une branche de philosophie des sciences.
+[00:05:27] Les philosophes sont souvent, on les appelle des master, jack of all trades, master of none, c'est-à-dire qu'on est capable de toucher à tout, mais on n'est pas des maîtres de rien, et on a une espèce de point de vue plus général.
+[00:05:39] Et une de mes spécialisations, ça a été l'intelligence artificielle.
+[00:05:46] Je travaille sur les réseaux neurones,
+[00:05:48] Depuis les années 90, j'ai fait mon post-doc là-dessus en Californie dans le temps, puis ça a marché pendant un bout de temps, après ça, ça a disparu, les réseaux neurones, c'est revenu avec l'intelligence artificielle contemporaine, donc je vais m'occuper surtout des cours autour de l'intelligence artificielle, toujours en gardant un...
+[00:06:06] Un lien étroit avec la cognition, donc on ne va pas s'intéresser à l'intelligence artificielle, un petit peu ici et là, mais du point de vue de l'éthique par exemple, il y a beaucoup de questions éthiques en intelligence artificielle, pas non plus des questions pratico-pratiques, sauf encore là, on a choisi un cours pour faire ça, mais ça va m'intéresser au lien.
+[00:06:32] de l'esprit, de l'esprit de l'esprit, de l'esprit de l'esprit,
+[00:07:00] Oh come on, come on, come on, come on, oh come on, come on, come on, come on, come on, come on, come on
+[00:07:30] Réalisé par Neo035 Avec le soutien de SWIT Airsoft
+[00:07:59] Sous-titrage ST' 501
+[00:08:56] et euh... je pense que c'est... je pense que c'est ce que je crois que je crois que je crois que je crois que je crois que je crois que je crois que je crois
+[00:09:14] de l'esprit, de l'esprit de l'esprit, de l'esprit de l'esprit, de l'esprit de l'esprit.
+[00:09:50] Bonjour, moi c'est Wissam, je parle vraiment avec des techniques en géomécanique et c'est là que j'ai découvert un peu le monde de l'IA, qui est la conception de ça.
+[00:10:00] Après ça, je trouvais que moi-même, j'ai soucié beaucoup de ces cours, mais cet été, j'ai fait une formation à Mila, le centre de l'intelligence artificielle, et j'ai vraiment aimé comment on avait des cours sur l'IA, j'ai vraiment aimé comment il y a plein de cours qu'on avait vus en perception justement, qui étaient utilisés pour faire l'IA, et évidemment voir comme cette...
+[00:10:20] Comment l'humain et qu'il y a s'entendent ?
+[00:10:22] C'est pour ça que la maîtrise m'a intéressé.
+[00:10:24] Bonjour, c'est Maxence.
+[00:10:26] J'ai fait le bac en psycho à Neuville, et après ça j'ai été intéressé par la maîtrise, et je suis venu ici à l'infracteur.
+[00:10:33] Bonjour, moi c'est Charles, je suis franco-allemand, je ne vais pas venir vous parler, mais...
+[00:10:42] J'ai fait mes débuts d'études en France.
+[00:10:45] J'ai un intérêt aussi pour tout ce qui est recherche expérimentale, psycho-expérimentale, cognition, etc.
+[00:10:50] Je suis dans la maîtrise.
+[00:10:52] Je fais mon bac à l'université de l'Université de l'Université de l'Université de l'Université de l'Université de l'Université
+[00:11:11] Bonjour, c'est Émilie et je dois briser votre scène.
+[00:11:15] Je suis à ma troisième année de doctorat en psychologie du travail.
+[00:11:20] Honnêtement, je prends le cours pour mes purs intérêts personnels parce que mon partenaire vient de terminer son doctorat en informatique cognitive.
+[00:11:27] J'ai beaucoup attendu de ça et je veux comprendre un peu plus.
+[00:11:34] Bonjour, désolé, je suis en retard.
+[00:11:37] Moi, c'est Michel Mercier.
+[00:11:39] J'ai un parcours un peu bizarre.
+[00:11:40] J'ai commencé mon bac en 2014 en psychologie.
+[00:11:43] J'ai passé six ans là-dessus.
+[00:11:44] J'avais des années de laboratoire avec Steven Arnett, qui est un professeur en neuropsychologie.
+[00:11:53] Et puis, j'ai ensuite commencé un doctorat en 2020, que je suis en train de...
+[00:12:01] de transitionner vers cette maîtrise.
+[00:12:02] Donc, j'ai pas mal de bagages déjà, mais je suis presque certain que je vais apprendre plein de nouvelles choses intéressantes.
+[00:12:12] Salut, moi, c'est Justin de Cheyne.
+[00:12:14] J'ai fait un 2 ans de technique en génie logiciel.
+[00:12:17] J'ai été transféré aux vacances que j'ai finies il y a 2 ans à l'UQAM.
+[00:12:21] Puis, sur l'intelligence artificielle, ça m'a toujours intéressé, l'informatique, la cognition, puis j'ai eu un peu de transitionnés vers l'humanisme en psychos, puis là je me demande comment on peut faire briser l'intérêt un peu du tout, voir comment l'humain peut entrer en interaction avec l'intelligence artificielle, d'où ma présence avec les enfants.
+[00:12:35] Bonjour, c'est Léonie, je suis à ma deuxième année du doctorat en psychologie et spécialisation en neurosciences.
+[00:12:43] puis l'intelligence artificielle m'intéressait beaucoup, puis mon médecin doctoral va, entre autres, intégrer des thèmes avec l'intelligence artificielle, donc c'est pour pouvoir approfondir un petit peu plus mes connaissances.
+[00:12:55] Moi c'est François, je suis à la maîtrise aussi, puis j'ai fait trois vacances en FAPSCO ici.
+[00:13:02] Moi aussi, c'est Valérie, j'ai intégré mon bac en FAPSCO ici, puis je suis à la maîtrise en ingénierie.
+[00:13:10] Moi, c'est Marie-Florence.
+[00:13:13] J'ai terminé mon bac à l'UQAM l'année dernière.
+[00:13:16] Puis là, j'ai fait mon doctorat dans la section PDO.
+[00:13:22] Et ma recherche porte sur la santé psychologique des travailleurs.
+[00:13:27] suite à l'arrivée de l'intelligence artificielle dans le milieu de chaînes d'approvisionnement.
+[00:13:32] Merci.
+[00:13:34] Moi, c'est Dorentine, je suis à l'Université de Montréal pour un cours psychologique chez Montréal-UQAM.
+[00:13:38] En gros, j'ai pris ce cours-là parce que ma thèse a porté sur l'impact de l'IA générative sur la cognition des gènes au séminaire.
+[00:13:43] Donc, j'allais vous montrer un peu ce que j'ai fait.
+[00:13:50] Moi c'est Louis, j'ai fait mon bac en psychologie à McGill et je suis à la maîtrise en psychologie professionnelle.
+[00:13:58] Christian, moi j'étais en électronique il y a longtemps.
+[00:14:01] J'ai toujours été dans le domaine très technique et j'ai fait le bac en psycho-UQAM.
+[00:14:08] En attendant cette chère maîtrise, j'ai fait ce que j'aime beaucoup aussi, aller à l'université.
+[00:14:12] J'ai fait 8h à l'université à McGill.
+[00:14:17] Moi, c'est Alexandria.
+[00:14:21] Je suis autiste.
+[00:14:23] Je le dis parce que je ne vais pas modifier ma voix comme tous les autres.
+[00:14:27] Et parce que ça me rend anxieux, je ne regarde personne.
+[00:14:30] Je regarde les pierres, pas grand.
+[00:14:32] Je suis étudiante libre, troisième cycle.
+[00:14:34] Je ne sais pas pourquoi troisième cycle, en mon milieu.
+[00:14:38] Je suis fascinée par les sciences cognitives.
+[00:14:40] Je suis fascinée par la logique.
+[00:14:42] J'ai fait le cours d'été.
+[00:14:47] Je me cherche un domaine de recherche avec quelqu'un qui va me prendre en recherche.
+[00:14:51] Apparemment, j'ai un bon cerveau.
+[00:14:56] Je suis très très préoccupée par la cognition des sciences cognitives.
+[00:15:00] Je suis tannée que les gens parlent des gens autistes de l'extérieur.
+[00:15:05] Il y a un enjeu majeur dans la perception pour des personnes autistes et tout ce qui est intelligence artificielle, que ce soit des large language models, peu importe, et je le vois.
+[00:15:15] Il y a des gens qui travaillent avec les autistes qui ont dit dernièrement que ça allait combler la différence de niveau, que ça allait amoindrir le décalage.
+[00:15:26] Je vous le dis de l'intérieur, c'est des gens autistes.
+[00:15:31] Excusez-moi, je vais dire ceci, qui n'ont pas la capacité de poser les questions que j'ai, vont se faire avoir.
+[00:15:38] Parce qu'on est concret, de premier niveau, ça va être une catastrophe.
+[00:15:42] Et je vous le dis de l'intérieur du point de vue de l'assistance.
+[00:15:45] Donc je suis ici, intelligence artificielle, perception, les gens, je le sens.
+[00:15:50] incroyable.
+[00:15:50] Et on s'en rend pas compte parce qu'on en parle toujours de l'air sévère.
+[00:15:57] Ah ben oui, absolument.
+[00:15:59] Étant donné que tout ça, on voit les avantages d'un tour de table, j'avais vraiment l'intention de mettre la relation entre les capacités des systèmes d'intelligence artificielle génétique contemporaine, plus ancien aussi, avec des capacités
+[00:16:11] cognitif de base, attention, la mémoire, ce genre de choses-là.
+[00:16:15] Mais étant donné vos intérêts, je vais essayer d'ajouter des éléments, comme c'est des choses sur lesquelles je travaille aussi, mais donc des éléments qui sont plus proches de ce que vous avez appelé ou ce qu'on pourrait appeler le facteur humain ou les dimensions humaines.
+[00:16:27] de l'intelligence artificielle et de l'insecte et de l'intérêt de plusieurs personnes.
+[00:16:31] Ça va rester quand même autour de la cognition, parce que c'est en cours de cognition, mais quand il va y avoir des points d'affaires dans des dimensions plus humaines, générales, je vais faire avec plaisir des intérêts qualités manifestes.
+[00:16:46] Merci.
+[00:16:48] Effectivement, le...
+[00:16:50] En fait, on va vous demander aussi votre indulgence, parce qu'on va s'adapter, on part en avion, on va construire l'avion en plein vol, et il va y avoir des petits ajustements.
+[00:17:06] Moi aussi, l'idée en fait,
+[00:17:10] D'où cette image que j'ai mise là, c'est vraiment une sorte de la rencontre entre l'intelligence humaine et l'intelligence artificielle.
+[00:17:19] C'est un petit peu ce qu'on va faire, qu'on va essayer de faire dans le cours avec, quand on peut, des exemples un peu plus concrets qui touchent les facteurs humains, qui peuvent être des enjeux plus tangibles par rapport à cette maîtrise qui se veut être...
+[00:17:38] de répondre à des problématiques ou à des situations que les entreprises peuvent faire face ou que certaines technologies peuvent faire face pour que ce soit optimal avec la cognition, la perception des gens humains.
+[00:17:58] Donc, on va un petit peu...
+[00:18:02] C'est un grand, grand défi.
+[00:18:03] En fait, le titre, ce cours-là n'a pas été le titre, mais il existait déjà.
+[00:18:09] Marc-André Bédard, qui était un des fondateurs du programme, a dit « Bon, on va le mettre dans la section facteurs humains ».
+[00:18:16] et ingénierie.
+[00:18:19] On aurait pu l'appeler autrement, parce que c'est quand même un peu ambitieux de parler de perception, cognition et intelligence artificielle et la rencontre entre les deux, juste de parler d'un type d'intelligence artificielle générative, on pourrait en parler pendant plusieurs cours, mais on va essayer de parler d'un dans plusieurs aspects.
+[00:18:38] Donc ça va être souvent, ça va être peut-être un...
+[00:18:40] un survol, mais Pierre et moi, donc, je vais y arriver dans le temps court, mais il y a des lectures complémentaires, optionnelles, qu'on va vous donner, et à vous de piger ce qui vous intéresse le plus par rapport à votre parcours.
+[00:19:04] Ça va, donc, tour de table, on n'a pas beaucoup de questions.
+[00:19:08] On va présenter en fait le cours en tant que tel.
+[00:19:12] Ah oui, avant de présenter le cours, je vais ajouter ça ce matin.
+[00:19:15] Donc, Michel qui a parlé d'Étienne Arnald qui est le professeur ici.
+[00:19:23] Étienne est responsable depuis quelques années d'une série de...
+[00:19:27] une conférence au doctorat en sciences collectives et à l'Institut des sciences collectives qui porte de près ou de loin sur l'intelligence artificielle et la cognition.
+[00:19:39] Et donc il y a une série, c'est même annuelle,
+[00:19:45] Cette session ici, donc c'est le même Zoom que vous avez là.
+[00:19:49] C'est toujours le jeudi à 10h30.
+[00:19:52] Et là, ça c'est la... donc vous pouvez aller sur le site web du DIC puis vous allez avoir le détail, mais je vous ai mis ici le programme pour cette session ici.
+[00:20:03] et parfois il y a des thèmes qui vont s'approcher de loin ou de près de ce qui va être discuté dans le cours, bien qu'en général, moi il y a beaucoup de noms que je ne connais pas parce que ce n'est pas mon domaine là-dedans, mais en général, Étienne s'est invité des grands spécialistes pour des questions qui sont parfois...
+[00:20:28] spécifique.
+[00:20:30] Et donc, pour en avoir regardé quelques-unes, il y en a que je trouvais intéressantes.
+[00:20:38] Elles étaient toutes intéressantes, mais il y en a qui me parlaient plus que d'autres.
+[00:20:44] Mais bon, je vous invite quand même à consulter les résumés et voir ce qui peut faire du sens pour vous.
+[00:20:53] Donc, ça, j'ai ajouté ça.
+[00:20:54] Donc, ça, c'est notre plan de cours à nous.
+[00:20:58] Donc, Pierre, moi, on est responsable, comme je le disais tout à l'heure.
+[00:21:03] On devrait, en général, être les deux au cours en mode exception.
+[00:21:07] Il faut avoir des conflits de règles.
+[00:21:08] Il faut pouvoir se tourner jusqu'à aujourd'hui.
+[00:21:15] Il faut faire des choix.
+[00:21:18] L'assistante d'enseignement, mais en fait son rôle va être essentiellement Sophie, qui est une étudiante à moi au doctorat.
+[00:21:30] Elle ne pouvait pas être là aujourd'hui, mais vous allez la rencontrer éventuellement.
+[00:21:35] Elle va pouvoir, dans le contexte des examens, je vais y revenir un peu plus tard, et le dernier cours, je vais y revenir aussi un peu plus tard, où elle va peut-être être, on va faire...
+[00:21:46] des applications pratiques sur des méthodes psychophysiques si on veut vraiment mesurer un effet, une condition sur une barrière, sur un comportement, une perception, une cognition, sur l'attention.
+[00:21:59] Il y a des méthodes pour faire ça, puis on va illustrer ça, puis aussi des outils en intelligence artificielle et les défis aussi de l'intelligence artificielle que ce
+[00:22:14] de façon un peu plus concrète.
+[00:22:16] Donc, Sophie va intervenir à ce niveau-là, mais à d'autres niveaux.
+[00:22:21] Donc, je ne vais pas lire le plan de cours des sur-ongles.
+[00:22:27] J'assume que vous avez tout accès à votre portail au cours, vous êtes au deuxième ou troisième cycle.
+[00:22:36] En théorie, c'est deuxième cycle, mais c'est troisième cycle tout simplement parce qu'en psycho, on passe du bac au doctorat.
+[00:22:42] Donc, c'est un cours de psycho, donc les troisièmes cycles, mais c'est ouvert à tous les nouveaux scolaires.
+[00:22:49] Donc...
+[00:22:51] Donc, c'est vraiment la rencontre entre les sciences cognitives en général et l'intelligence artificielle, puis voir comment aujourd'hui on va avoir une perspective, aujourd'hui puis la semaine prochaine, un petit peu plus historique.
+[00:23:06] Comment nos connaissances sur le fonctionnement du cerveau ont influencé le développement de l'IA, et maintenant comment l'inverse peut se faire dans les deux sens.
+[00:23:23] Donc, il ne faut pas que je clique là-dessus.
+[00:23:25] On ne peut pas venir comme ça.
+[00:23:27] Je vais découvrir le PDF du plan de cours.
+[00:23:31] Un instant.
+[00:23:34] Donc on va voir certaines notions rapidement.
+[00:24:02] en perception, en cognition, puis essayer de, pour mieux les mettre en contexte avec lui-même.
+[00:24:11] Donc, je vous passe les objectifs, objectifs spécifiques puis globaux.
+[00:24:16] Je vais te suivre au cours.
+[00:24:19] Donc, à commencer par aujourd'hui, vous allez voir, ça va être du rappel pour plusieurs personnes.
+[00:24:28] Ce qui est peut-être un peu nouveau, que je ne discute pas du tout dans mon cours de perception, c'est le rôle de l'action.
+[00:24:35] Vous allez voir, le rôle de l'action va prendre beaucoup de place au courant de toute la session.
+[00:24:44] C'est ce qu'on va voir aujourd'hui essentiellement.
+[00:24:46] La semaine prochaine, donc on va en général alterner.
+[00:24:51] La semaine prochaine, Pierre va vous parler d'intelligence artificielle.
+[00:24:56] Il va mettre des mots peut-être qu'on est moins habitué en psycho, mais qui sont, vous allez reconnaître certains processus ou principes qu'on prend en psycho, mais qui peuvent maintenant s'appeler connexionnistes psychologiques.
+[00:25:11] ou la psychologie computationnelle.
+[00:25:17] Il y a des présentations orales ici.
+[00:25:21] Je vais y revenir dans le mode d'évaluation.
+[00:25:23] Je vais juste finir avec le concours.
+[00:25:25] Donc là, ça va être moi ici avec les principes généraux du traitement de l'information.
+[00:25:31] et ça on va le donner à nous.
+[00:25:33] Donc il y a des cours comme ça qu'on va donner à nous, plus la cognition qu'on appelle incarnée.
+[00:25:42] Si vous ne savez pas trop ce que c'est, Pierre, il faut vous mettre dans le contexte de ça.
+[00:25:48] À ce niveau-là.
+[00:25:49] Le 5 octobre, on perd un cours, on est des victimes du lundi.
+[00:25:57] À différents niveaux, un point de cours, mais c'est une passée, on n'en aura pas le 5 octobre.
+[00:26:03] Et ni le 12 octobre, parce que c'est l'action de grâce.
+[00:26:08] Donc, pour le 5 octobre, ce qu'on va vous proposer, c'est une petite capsule, je vais vous faire une petite capsule sur les processus attentionnels, parce que ça, ça va revenir longtemps, non seulement dans le cours, mais dans toute votre maîtrise quand on parle des facteurs humains, les notions de charge mentale, les fatigues attentionnelles,
+[00:26:27] et aussi en termes de processus pour faire des liens avec certains, avec l'égal aussi.
+[00:26:35] Donc je vais faire une petite capsule et quand je dis matière à l'examen, on va revenir sur la capsule dans le cours pour vous dire qu'est-ce qui est plus important que d'autres.
+[00:26:48] Mais je le mets quand même pour pas que vous ayez une surprise en disant ok, bien,
+[00:26:54] Je pensais qu'il ne fallait pas que je regarde la capsule.
+[00:26:57] On regarde la capsule.
+[00:26:58] On est pour plusieurs, puisqu'on est tous, on vient tous de plus haut de loin, de psycho, là.
+[00:27:06] Ça va être, ça va être à la fin.
+[00:27:08] Le cerveau prédictif, on ne s'est pas encore parlé là-dessus de Pierre-Éloi, c'est parce que c'est nouveau.
+[00:27:18] Moi je suis très content de donner un mot avec Pierre, parce que je connais Pierre de loin, moi je le connais de plus près, mais en fait de le donner à deux, je pourrais aussi, parce que...
+[00:27:27] Il y a des éléments plus perceptifs et c'est quelque chose que Pierre connaît bien aussi.
+[00:27:32] On va parler du raisonnement, les biais cognitifs, les modèles de prise de décision avec normalement un conférencier invité
+[00:27:41] L'apprentissage mémoire, ça va être Pierre qui va nous faire un petit rappel pour voir en psychologie, mais vraiment dans un autre contexte, un modèle un petit peu plus computationnel et plus proche de l'intelligence artificielle de ce qu'on peut voir habituellement dans les théories classiques en psychologie.
+[00:27:59] et formellement, il va y avoir deux cours encore, Pierre, sur l'intelligence artificielle en soi.
+[00:28:04] Donc, les modèles de neurones, les réseaux neurones, l'apprentissage machine, etc.
+[00:28:15] Il y a des, ça a été un peu évoqué, il y a des risques, des périls, des enjeux éthiques avec l'IA, que ce soit dans les inputs qu'on lui donne pour...
+[00:28:29] Pour générer ensuite ces outputs, des fois il y a des biais, il y a plein d'enjeux, donc ça va être discuté surtout par toi.
+[00:28:43] Il y a un nouveau prof en psychologie ici qui s'appelle Mario Passalacqua qui va venir nous parler de l'interaction humain-machine.
+[00:28:53] Donc, un petit peu plus sur l'interface expérience-utilisateur, qui est souvent un enjeu qui peut être évoqué dans certaines entreprises.
+[00:29:08] Et c'est ce que je disais ici, la baissée de l'IA, la baissée de la psychophysique à partir d'un logiciel gratuit.
+[00:29:15] en libre accès que si vous ne connaissez pas déjà, je vais vous faire connaître parce qu'après, peu importe où vous soyez, vous pouvez utiliser ça pour faire une petite tâche et tester
+[00:29:31] des conditions, que ce soit sur des écrans auditifs ou pour tester la performance humaine dans des contextes d'entreprise.
+[00:29:44] Puis un deuxième examen.
+[00:29:45] Donc, le premier examen, il est le 2 novembre, puis le dernier examen, la session finit tard parce qu'on a commencé tard, le 21 décembre.
+[00:29:57] Donc ça, c'est le contenu.
+[00:29:58] Donc là, habituellement, les questions sont peut-être plus sur une modalité d'évaluation.
+[00:30:06] Ce qu'on propose de faire, c'est qu'à partir de la troisième semaine, à partir de la troisième semaine, on va commencer le cours avec une mini-présentation orale.
+[00:30:20] sous forme de débats en diable.
+[00:30:23] Il y a deux personnes et on va vous proposer, et ça va venir avec le Moodle, on va mettre des questions pour chacune des semaines et vous pourrez mettre vos disponibilités parce que vous savez d'emblée que toutes les semaines vous ne pouvez pas être présents.
+[00:30:42] Et on va mettre des questions très larges sur un enjeu où la réponse peut être vraie ou fausse.
+[00:30:50] Dans le cours d'aujourd'hui, on va parler par exemple d'influence de la perception sur
+[00:31:00] d'attraction, notre réaction motrice.
+[00:31:05] Mais est-ce que nos actions peuvent influencer notre perception?
+[00:31:10] Ce sont des questions un petit peu moins intuitives, mettons, qui, dans certains contextes, peuvent être oui, mais pas non.
+[00:31:18] Donc, ça peut être ce genre de questions.
+[00:31:20] L'intelligence artificielle, il y en a mille, déjà, il y en a plein.
+[00:31:23] Oui, exactement, effectivement, ça c'est vrai que c'est une bonne question, parce que l'intelligence artificielle est vraiment intelligente.
+[00:31:34] Et donc ce qu'on propose de faire, c'est que...
+[00:31:39] Vous allez recevoir votre question une semaine au cours précédent.
+[00:31:48] Chaque présentation, c'est à peu près 5-10 minutes.
+[00:31:50] Ce qu'on veut, c'est qu'au préalable, vous regardez votre question, au préalable, vous préparez quelques arguments pour, quelques arguments contre, juste un petit plan de présentation.
+[00:32:02] Faut qu'on fasse les deux?
+[00:32:04] Faut qu'on fasse pour et contre?
+[00:32:07] Non, non, non, vous allez être assigné au hasard pour ou contre.
+[00:32:14] Donc vous allez mettre votre nom sur la date, la question va être là, à l'avance ou au moins une semaine avant le cours.
+[00:32:26] et selon que les noms sont là, on peut vous dire si vous êtes pauvre, si vous êtes... Ah, on choisit.
+[00:32:34] Non.
+[00:32:34] C'est le hasard.
+[00:32:35] C'est le hasard.
+[00:32:40] Puis c'est des questions, c'est pas des questions pièges.
+[00:32:43] L'idée c'est de prendre vraiment un enjeu, une controverse, puis vous allez facilement trouver deux, trois arguments pour, deux, trois arguments contre.
+[00:32:54] On n'est pas obligé de dire quoi ?
+[00:32:56] Vous n'êtes pas obligés de croire.
+[00:32:58] L'idée, en fait, c'est de nous présenter ça et ensuite on peut désigner une personne dans la classe pour essayer de modérer la discussion, l'échange.
+[00:33:11] Et il y a une discussion qui va se faire pour trouver un consensus.
+[00:33:14] Est-ce que...
+[00:33:15] parce que vraiment c'est oui et non ou en général c'est plus oui plus non selon les présentateurs d'abord.
+[00:33:24] Donc vous pouvez changer d'avis et dire moi je vous ai démonté, j'ai fait le travail, j'ai dit non mais dans le fond de mon cœur, donc on peut échanger comme ça pour essayer de donner une direction.
+[00:33:38] Il y a des...
+[00:33:40] Il y a des questions qui vont être senties en ce moment, donc on ne peut pas pas qu'elles soient ressenties aussi.
+[00:33:47] Je prends juste la question que j'ai posée par contre.
+[00:33:50] La réponse est oui mais ou non mais.
+[00:33:52] Oui, c'est ça.
+[00:33:52] Si les deux sont valides, vous allez être obligés de choisir un.
+[00:33:55] Après ça, dans la discussion, on va peut-être voir.
+[00:33:58] Exactement.
+[00:34:03] Donc, ça, ça compte pour 20% de la note finale.
+[00:34:06] Donc, il y a 5 points très faciles.
+[00:34:10] C'est que vous nous envoyez avant votre présentation votre plan en bullet points, les arguments que vous avez.
+[00:34:17] Juste pour être sûr que tout va bien.
+[00:34:20] Puis, l'autre 15 points, c'est...
+[00:34:23] Une petite présentation dans le cours.
+[00:34:27] Et on va passer, peut-être on ne sait pas trop parce que c'est la première fois qu'on fait ça, peut-être une bonne demi-heure, 5-10 minutes chacun avec un disque intérieur de discussion.
+[00:34:38] Des fois ça va être plus court, des fois ça va être plus long selon la nature, selon vos intérêts, puis si vous avez des choses à dire sur ce que vous pensez.
+[00:34:46] Merci.
+[00:34:49] Oui, je pensais que c'était mon curseur.
+[00:34:52] J'ai dit, je vais me ressaisir.
+[00:34:56] Et là, ah, ok.
+[00:34:58] D'accord.
+[00:34:58] C'est pas une hallucination.
+[00:35:03] C'est un mot, mais pas un mot.
+[00:35:07] Dans deux examens, donc, il y a, qui sont non-cumulatifs, donc un à peu près dans le milieu de la section,
+[00:35:17] portant sur la matière, on l'a vu en classe, principalement.
+[00:35:23] Les lectures, c'est pour vous aider à mieux comprendre certaines notions, à proposer certaines notions.
+[00:35:30] Si vous comprenez, c'est pour ça qu'on vous invite à poser des questions pendant le cours, si les notions qu'on présente,
+[00:35:40] C'est clair qu'on trouve que les lectures ont juste saisi le dossier à clarifier ce qu'on a vu en classe.
+[00:35:49] Donc sur les matières en classe des lectures, donc on n'a pas...
+[00:35:56] On essaie d'avoir une formule pédagogique qui favorise tous les styles d'apprentissage.
+[00:36:03] Donc, questions, choix de réponses, c'est classique, mais ce ne sera pas juste ça.
+[00:36:07] Il va y avoir des petites questions à court développement pour parfois...
+[00:36:15] En tout cas...
+[00:36:18] Personnellement, je ne sais pas si c'est ton cas, Pierre, mais en général, les professeurs, on n'essaie pas volontairement de vous piéger.
+[00:36:27] Des fois, il y a des choix de réponses qui peuvent vous apparaître ambiguës, qui ne sont pas pour nous, mais c'est parce qu'on ne l'a pas nécessairement réalisé, donc il va y avoir...
+[00:36:37] peut-être qu'il y a une question, en fait la majorité, on ne peut pas encore déterminer, les examens ne sont pas encore faits, à choix multiple, puis à quoi on déploie.
+[00:36:50] Et ce qu'on favorise aussi, c'est vraiment la participation, on a la chance d'être
+[00:36:58] Là, on est beaucoup pour cette pièce-ci.
+[00:37:00] On est peut-être 18 versus 120, 150 dans nos groupes au bac.
+[00:37:08] Et donc, on peut plus échanger.
+[00:37:11] Et ça va nécessairement s'imposer avec chaque début de cours, avec les petits débats.
+[00:37:17] N'hésitez pas à faire plus, à nous donner une information que...
+[00:37:23] Moi, ce que j'adore le plus, c'est quand les étudiants m'apprennent quelque chose.
+[00:37:29] Ce n'est pas juste sur la science et le plus.
+[00:37:32] Donc, on peut échanger parfois et n'hésitez pas à aller travailler sur l'activité que vous avez vue.
+[00:37:39] à dire au groupe, ou l'inverse, de participer à d'autres activités.
+[00:37:45] On va vous donner telle conférence, cette fois-ci, parce que c'est pertinent à ce qu'on a vu.
+[00:37:49] Donc, tout ça fait partie de la participation.
+[00:37:54] Ça aussi, c'est normalement une fois passée.
+[00:37:57] et Bébé-Mont s'est dit que quand on s'est appelé à parler pour le coup, on ferait ça pour l'un l'autre, c'est-à-dire, ouais, il n'y a pas qu'à me poser un petit peu, juste pour plaisir la glace des fois, comme si on disait, oh, c'est une belle affaire, et puis on peut s'ajouter comme information, et vice-versa, parce qu'on a des, on s'est l'occasion de les raccourcir.
+[00:38:15] qui sont parallèles, mais pas identiques.
+[00:38:20] Et on va pouvoir faire ça, mais on vous invite tout le monde ici à faire quelque chose, à contribuer les informatifs.
+[00:38:27] Donc vous pouvez aller dans le zone où vous êtes.
+[00:38:29] Exactement.
+[00:38:30] Oui ?
+[00:38:30] Et vous avez des groupes verts en Europe, si on s'établit régionalement ?
+[00:38:35] Normalement, non.
+[00:38:38] En fait, les examens ne sont pas encore faits.
+[00:38:40] C'est peut-être... Ça peut dépendre de ce qu'on choisit.
+[00:38:42] Oui.
+[00:38:42] De plus en avance.
+[00:38:43] D'habitude, plus...
+[00:38:51] Plus les questions sont complexes, moins les livres seraient disponibles.
+[00:38:58] Et si c'est plus des questions, si c'est simplement des questions journalistiques, ce n'est pas évident.
+[00:39:07] Je trouve que ce n'est pas très formateur.
+[00:39:10] C'est la fonction du service de départ.
+[00:39:14] Oui, le service de départ, c'est sûr que c'est un gros...
+[00:39:16] Il y a des bons types de questions, mais je ne connais pas le type.
+[00:39:19] Oui.
+[00:39:19] Les lectures qu'on vous donne sont souvent une étude expérimentale avec des détails sur le notion de vision.
+[00:39:37] en classe.
+[00:39:38] Et moi, ce n'est pas le genre de questions que vous me posez dans telle étude.
+[00:39:42] Est-ce que, c'était quoi les conditions spirituelles?
+[00:39:45] Non, non, je comprends.
+[00:39:46] C'est plus les conclusions.
+[00:39:47] Donc, il va y avoir plusieurs articles.
+[00:39:49] Donc, à livre ouvert, ça serait peut-être, ce n'est pas le genre de, ça serait difficile pendant trois heures de trouver... Non, ça suppose qu'on a travaillé, que ça devait résumer.
+[00:40:00] Exactement.
+[00:40:02] Oui, oui, je comprends, je comprends.
+[00:40:08] Mais d'abord, on va y en laisser.
+[00:40:18] Il n'y a pas de livre à acheter, tout va être numérisé ou en PDF sur le logo.
+[00:40:42] et ça c'est le petit tableau classique maintenant, c'est bien parce que tout est synthétisé, avant on avait trois pages de règlement, donc si vous regardez ça, vous avez différentes politiques pour le plagiat, pour l'accompagnement académique, etc. Donc,
+[00:41:04] Donc c'est une excellente question pour la formule des examens, on va revenir là-dessus, mais essentiellement il y en a deux.
+[00:41:10] Ça compte au total sur 70% de la note et 20% de travail, 10% de participation.
+[00:41:14] Est-ce qu'il y a des questions ?
+[00:41:25] Donc, il faut entraîner l'entente d'évaluation à l'UQAM.
+[00:41:46] Si vous venez d'ailleurs, l'évaluation de chaque cours doit faire l'objet de l'approbation des étudiants.
+[00:41:55] Donc, s'il n'y a pas d'autres questions, on assume que cette formule-là vous convient.
+[00:42:04] Et donc, ça c'est clairement ce qu'on nous demande de faire.
+[00:42:09] Donc, à moi et à Pierre, deux étudiants peuvent nous envoyer un courrier.
+[00:42:15] avec le titre qui est là, l'acceptation de l'entente, votre nom, votre code permanent.
+[00:42:21] Et je vais mettre une copie de l'entente de dévaluation qu'on fait parce qu'il y a une signature et le nom de l'étudiant sur mon code.
+[00:42:29] Donc là, juste pour ne pas qu'il y ait 50, il n'y aura pas 50, il va y en avoir 18 personnes qui nous écrivent.
+[00:42:35] Est-ce qu'il y a deux volontaires qui nous ont envoyé des courriels pour approuver l'entente?
+[00:42:41] Là, il faut rappeler les noms.
+[00:42:42] Juste là.
+[00:42:43] Juste là.
+[00:42:43] C'est des appels.
+[00:42:44] Juste là.
+[00:42:45] Juste qu'elle.
+[00:42:45] Voilà.
+[00:42:47] Ok, parfait.
+[00:42:48] Ok.
+[00:43:09] Donc, le Moodle, vous connaissez déjà.
+[00:43:12] Donc, essentiellement, à part la structure du cours d'aujourd'hui, ça va ressembler à ça.
+[00:43:17] Tous les cours vont avoir un dossier et une note de cours.
+[00:43:20] Je vais mettre le PDF, mettant le point qu'on présente.
+[00:43:24] J'ai mis le mien ce matin.
+[00:43:27] Un nouveau cours, je ne sais pas si je vais y mettre beaucoup d'avance, ça risque, des fois ça va être d'avance, des fois ça va être après le cours.
+[00:43:36] Il va y avoir un dossier obligatoire si c'est les lectures obligatoires et un dossier optionnel, les lectures optionnelles.
+[00:43:43] Pour cette semaine et la semaine prochaine, c'est nos deux premiers cours.
+[00:43:59] et donc on donne deux semaines pour se préparer pour attaquer le camp la semaine prochaine avec notre premier débat.
+[00:44:08] Alors on va vous envoyer la question.
+[00:44:16] C'est bon.
+[00:44:18] Est-ce que tu peux ouvrir l'optionnaire?
+[00:44:20] De ton cours du deuxième?
+[00:44:22] Oui.
+[00:44:22] Ça c'est une capture d'écran.
+[00:44:24] Ah, ok.
+[00:44:24] Non mais je peux te l'ouvrir.
+[00:44:26] Je peux te l'ouvrir, c'est sur le 3ème instant.
+[00:44:31] Sinon je peux juste l'inscrire.
+[00:44:33] Ok, vas-y.
+[00:44:33] Quand vous allez aller dans l'optionnaire, j'ai mis un certain nombre de textes.
+[00:44:37] Certains sont des articles, les articles sont là, certains sont des livres.
+[00:44:43] Je vais essayer de le faire au long de la session.
+[00:44:46] J'ai mis un fichier de texte qui s'appelle à lire.
+[00:44:50] C'est un gros texte à lire.
+[00:44:52] C'est juste mes petites explications que je vous donne sur les sujets différents.
+[00:44:55] Si vous êtes intéressé à telle chose, sur les critiques, sur les caractéristiques.
+[00:45:01] C'est juste un petit peu d'information sur les textes.
+[00:45:04] Ici ?
+[00:45:08] à chaque semaine pour les textes
+[00:45:30] Vous nous orientez.
+[00:45:58] 100% ?
+[00:45:58] Parfait.
+[00:46:03] Parce qu'on est nombreux.
+[00:46:07] Oui.
+[00:46:07] C'est comme les tables et les vaches.
+[00:46:11] Donc, on va...
+[00:46:13] On pourrait ouvrir la porte, déjà, ça irait.
+[00:46:17] Oui, bien, c'est... Oui, ici, il n'y a pas trop de monde qui parle, c'est vrai que ça peut...
+[00:46:23] On peut s'en cogiter.
+[00:46:26] Absolument.
+[00:46:28] Je vais faire ça.
+[00:46:30] Exactement.
+[00:46:33] Alors, on va commencer, puis on prendra une petite pause...
+[00:46:43] perception, cognition, intelligence, intelligence humaine, intelligence artificielle, moi je parle d'intelligence humaine.
+[00:46:55] Donc j'aimerais ça vous entendre, c'est quoi la différence entre les deux choses?
+[00:46:58] On n'y est plus.
+[00:47:10] et de traitement et d'intelligence d'utilisation des informations qui ont été perçues.
+[00:47:17] C'est une belle classe.
+[00:47:19] Oui, en quelques mots.
+[00:47:22] Une belle boîte.
+[00:47:23] Oui, oui, je suis d'accord.
+[00:47:24] Est-ce qu'il y en a qui veulent ajouter un peu de viande ?
+[00:47:31] C'est... Oui, ça je vois.
+[00:47:35] Déjà, juste pour revenir sur la suggestion de Jean-Claude, la suggestion peut-être traditionnelle,
+[00:47:45] Quand Dave tantôt parlait de l'action sur l'action, il y a beaucoup de théories contemporaines qui refusent la détection entre la perception et la cognition, surtout dans le genre de sens fort où est-ce qu'il y a d'abord la perception et ensuite la cognition.
+[00:47:59] Les gens vont dire que les deux sont complètement interrompus et qu'ils demandent en plus l'action, qui est souvent le troisième élément de la perception-conception-action sur les groupes.
+[00:48:08] et il y a peut-être une remise en question à notre propre psychologue là-dessus, mais il va y avoir une annonce qu'on va remettre en question, c'est-à-dire que l'étude va se faire avec nous.
+[00:48:19] On va voir, on parle de l'étude en psychologie, on va voir aussi dans le cadre de l'intelligence artificielle où est-ce que les modèles...
+[00:48:26] de l'âme qu'on développe.
+[00:48:27] C'est des modèles qui permettent la perception, qui permettent une sorte d'évaluation sur la perception, mais qui demandent absolument de faire une certaine exception qui n'encadre l'intelligence artificielle sur la perception.
+[00:48:37] Mais on pourrait être amené éventuellement à re-questionner cette distinction.
+[00:48:51] Nous allons reconnaître, parce que je dis d'ores et déjà, je dis de quelle action on parle ?
+[00:48:55] D'une action de la conscience, donc du cerveau, je prends le modèle de Friston, moi j'ai un côté matérialiste, pas réductionniste, je conteste, je dis qu'il faut partir de quelque chose et monter vers la complexité.
+[00:49:10] Et donc, il y a l'action consciente, et le cerveau sait ce qu'on va faire avant que, before we're aware,
+[00:49:18] Donc, de quelles actions parle-t-on ?
+[00:49:20] Et je défendrai jusqu'à tant que je perde la raison, jusqu'à tant que je sois dément, que ces trois éléments-là ne sont pas dans des boîtes, mais interagissent.
+[00:49:31] Et une fois qu'on connaît les réseaux, au moins les trois grands réseaux, networks du cerveau, c'est d'une subtilité et d'une rapidité en termes de nanosecondes,
+[00:49:45] Ensuite, il faut juste distinguer de quel monde c'est le cerveau qui travaille à notre insu, notre DMN, ou notre S2 qui rumine, ou c'est notre action dans le monde.
+[00:49:57] Voilà ma question.
+[00:49:58] J'ai dit.
+[00:49:59] Très bien.
+[00:50:02] En fait, cette séparation-là, elle est effectivement de plus en plus contestée, comme Pierre l'a, mais...
+[00:50:21] Je reprends des choses que Étienne Arnard nous aurait dit.
+[00:50:26] Quand Alain Turing a écrit son article en 1950, ce qui a débuté ce qu'on appelle aujourd'hui l'intelligence artificielle, enfin ce champ de recherche où on essaie de trouver une façon de
+[00:50:37] de reproduire ce que nous on fait avec notre cerveau en quelque sorte.
+[00:50:42] Le mot cognition n'était pas très populaire, mais possiblement que ce qu'Alain Turing aurait dit c'est cognition artificielle.
+[00:50:47] Parce qu'avec les années, on a fini par utiliser le mot intelligence plus pour parler de potentiel à cause des tests de QI, ces trucs-là.
+[00:50:53] Ça mélange tout le monde.
+[00:50:55] Les gens voient de l'IA, ils se disent « Ah ben, il doit être intelligent, il devrait être meilleur que nous.
+[00:50:59] » Alors qu'en réalité, on essaie simplement de reproduire ce que la cognition fait, ce que la cognition nous permet de faire.
+[00:51:05] Parler, entre autres, combler des phrases, etc.
+[00:51:08] Mais c'est un aspect de la cognition, le Turing Test.
+[00:51:13] Oui, oui, bien sûr.
+[00:51:16] Mais c'est très bien, c'est très bien.
+[00:51:18] On pourrait faire un débat, mais on n'en peut pas un tout de suite.
+[00:51:22] On va attendre deux semaines.
+[00:51:24] Non, on n'aura pas besoin.
+[00:51:28] À l'époque de Turing, il y avait le livre que je t'ai montré, McCulloch, Embodiment of Mind, qui était trop loin en avance pour son époque.
+[00:51:37] Alors, si je reprends un peu les éléments qui se comptaient bien, c'est vrai qu'encore aujourd'hui, conceptuellement, on peut les séparer.
+[00:51:53] Perception comme les premières étapes, cognition, processus, puis c'est un petit peu comme ça.
+[00:52:00] Je pense que j'ai mis des autres éléments, mais c'est vrai qu'il y a des...
+[00:52:05] Puis à la fin de...
+[00:52:07] Je vais en parler pendant les prochaines cours, mais... Donc il y a des gens qui n'ont pas la distinction entre perception et cognition, on va mettre ça ensemble, puis même en psychologie...
+[00:52:17] On a tendance à mélanger l'intelligence et la cognition.
+[00:52:33] Alors qu'il y a des petites distinctions, bien que tout ça est interconnecté, évidemment.
+[00:52:44] Donc la perception, c'est effectivement les étapes initiales.
+[00:52:48] Dans mon cours de perception, on parle de la sensation, on va partir, on va s'en tenir sur la perception, qui est un traitement d'information qui pourrait...
+[00:53:01] qui permettent d'interpréter les simulations sensorielles.
+[00:53:04] Évidemment, quand on est au niveau de la perception, d'où la confusion avec la cognition, c'est que nos connaissances et processus descendants, temps à temps, vont venir influencer la perception, alors que ce n'est pas le cas pour la perception.
+[00:53:20] La cognition, c'est comme une étape de plus.
+[00:53:23] Et là, on va être dans les processus.
+[00:53:26] Dans le processus perceptif, mais aussi de raisonnement, de prise de décision, de résolution de problème.
+[00:53:36] Et les sciences cognitives, en fait, c'est ça qui vont... ça va être ça leur objet, en fait, c'est de...
+[00:53:47] d'étudier la façon où les représentations, ou la représentation, où ces processus-là peuvent s'articuler ensemble.
+[00:53:57] Évidemment, elles ne s'articulent pas ensemble, et donc cette distinction perception-conception devient parfois... Et l'intelligence, là, on est dans un...
+[00:54:14] L'autre niveau, en fait, c'est de comprendre, mais souvent de choisir, dans des réductions de problèmes, par exemple, ou dans des situations où il faut résoudre un problème plutôt que l'autre, quelles stratégies on prend, mais on prend des processus qu'on va prioriser.
+[00:54:41] Et là, vous voyez toute la confusion.
+[00:54:44] La cognition, c'est peut-être une étape un petit peu plus grande ou pas.
+[00:54:50] Donc, tout ça qu'on peut se demander, c'est quoi la différence entre la cognition et l'intelligence, il n'y en a pas beaucoup.
+[00:54:59] Donc, si je reviens, je l'ai déjà dit, en fait, c'est l'ensemble des processus mentaux dans le traitement de l'information, c'est la cognition.
+[00:55:10] En fait, les sciences cognitives s'intéressent à ce qui se passe, au processus.
+[00:55:16] Alors que l'intelligence, et il y a des raisons historiques, on a toujours voulu mettre une étiquette quantitative ou évaluative sur l'intelligence.
+[00:55:27] L'intelligence, on peut dire que quelqu'un est plus ou moins intelligent, mais on ne va pas dire que quelqu'un est plus ou moins cognitif.
+[00:55:36] Donc c'est vraiment cette valeur, cette notion d'évaluation qui vient un petit peu, comme tu disais Michel, qui porte la confusion un petit peu de l'intelligence artificielle
+[00:55:48] On l'a appelé comme ça, mais peut-être c'est effectivement mieux de l'appeler la cognition artificielle, mais ce n'est pas une pierre.
+[00:55:56] Maintenant ou plus tard, il n'y a rien.
+[00:55:59] Oui, je pense qu'on l'écrit avec cette table-là pour l'instant.
+[00:56:02] C'est ça, on l'écrit avec la table.
+[00:56:03] C'est comme avec la vie, on l'écrit.
+[00:56:05] Oui, exactement.
+[00:56:09] Donc, il y a une notion d'efficacité de ces processus-là dans l'intelligence.
+[00:56:17] Et quand on définit ces termes-là, bien là, la question, la grande question, c'est que l'intelligence appartient seulement à l'humain.
+[00:56:30] C'est une des questions que Pierre soulevait tout à l'heure.
+[00:56:38] Donc là, on peut dire non.
+[00:56:44] Est-ce que ça appartient jusqu'au bout de temps?
+[00:56:50] En fait, j'ai bien hâte d'entendre ton mot.
+[00:56:56] Et c'est là que le mot intelligence artificielle peut-être perd ou gagne son sens.
+[00:57:08] Quand on parle d'intelligence d'une machine, est-ce qu'on parle du même type que l'intelligence qu'on va faire pour l'humain, que qualitativement on parle d'une chose?
+[00:57:20] C'est des questions en fait que je ne veux pas que je parle déjà maintenant, mais gardez ça en tête et je pense que pour la semaine prochaine, avec cette notion-là d'intelligence artificielle.
+[00:57:35] qui dérive de l'intelligence humaine.
+[00:57:37] Donc, il n'y a pas de distinction.
+[00:57:49] Donc, voilà.
+[00:57:51] Moi, je ne sais pas si tu es d'accord avec ça, Pierre, mais moi, je dirais que quand je regarde ça, c'est que la cognition, c'est un processus que l'intelligence est à vue.
+[00:58:01] l'usage optimal et à l'arrêt de la sortie de processus pour atteindre l'équilibre de la petite avec son âme.
+[00:58:18] Je peux vous poser une question?
+[00:58:29] C'est quoi l'usage optimal?
+[00:58:32] L'usage optimal, c'est un petit peu la notion de, effectivement, que, avec, c'est une bonne question, avec les outils qu'on a, c'est comme le monsieur dit, c'est fait.
+[00:58:43] Donc, ça va dépendre du contexte, c'est ça?
+[00:58:45] Ben oui, mais l'intelligence, c'est un peu, quand on définit l'intelligence, le monsieur dit qu'on est un psychologue, finalement, l'intelligence, c'est ce que l'on fait, c'est le fait.
+[00:58:55] Avec les outils qu'on a, si on a un test de QI,
+[00:59:01] Vous avez 150 versus quelqu'un qui a 127.
+[00:59:06] à probablement la personne dans le contexte du paradigme de l'intelligence a les capacités, les stratégies d'efficacité de ces processus qui sont relativement efficaces.
+[00:59:18] Mais on sait que la personne qui a un QI de 150 est moins fonctionnelle dans la vie de tous les jours.
+[00:59:23] Donc c'est pour ça que je ne suis pas d'usage optimal.
+[00:59:26] Non, non, absolument, ça dépend du test.
+[00:59:28] On utilise l'intelligence, personne...
+[00:59:30] C'est juste que cette définition-là est loin de but adaptatif avec son environnement.
+[00:59:44] Je pose juste la question.
+[00:59:45] Optimal, moi j'ai l'impression que c'est comme quand dans la créativité, quand tu crées quelque chose, il faut que ça soit utile dans l'environnement dans lequel tu le crées.
+[00:59:52] L'intelligence optimale, c'est vraiment optimal pour le contexte et l'utilisation dans lequel tu veux la faire.
+[01:00:00] La question qui se cache derrière ça, c'est quoi l'évaluation en fonction de quoi ?
+[01:00:10] Si on évalue en fonction du pragmatisme, c'est fonctionnel, si on évalue en fonction de...
+[01:00:23] On pourrait se poser la question, quand on regarde un test, qu'est-ce qu'on cherche à évaluer ?
+[01:00:31] Oui, c'est juste qu'on a encore une boîte noire, on ne sait pas tout à fait de quoi on parle.
+[01:00:39] du comportement.
+[01:00:41] Mais il y a toujours la question de la norme.
+[01:00:44] Elle peut changer dans l'exploitation du monde.
+[01:00:46] C'est ça.
+[01:00:47] On va parler de l'intelligence de rue.
+[01:00:49] Optimale.
+[01:00:50] Il peut y avoir une intelligence, il peut y avoir un usage optimal de son intelligence de rue.
+[01:00:53] Mais dans ce cas-là, on regarde les précédures de l'intelligence.
+[01:01:02] c'est à dire, c'est à dire, c'est à dire, c'est à dire, c'est à dire, c'est à dire, c'est à dire,
+[01:01:26] Il y a des tâches, je parle du QI, mais c'est toujours contextuel par rapport à l'outil qu'on utilise.
+[01:01:33] Effectivement, on ne sait pas trop ce qu'il y a entre les deux oreilles, mais l'usage optimal d'une stratégie optimale pour atteindre un but adaptatif, il y a plusieurs tâches en psychologie, les tours de l'ombre par exemple,
+[01:01:49] où on demande le nombre d'essais minimales pour placer des formes, des espèces de canaux.
+[01:02:01] Et ça fait partie d'une stratégie où l'usage optimal, la consigne, c'est le moins d'essais possibles pour allumer au but
+[01:02:23] Si on lit des textes qui datent d'il y a peut-être un peu plus de 50 ans, je pense, on va parler d'intelligence en disant, par exemple, acquérir une meilleure intelligence d'un sujet X.
+[01:02:33] puis plus tard on a commencé à parler d'intelligence générale puis là on a fini par faire un synonyme de ça, quand on parle d'intelligence on pense à générale mais l'intelligence a toujours été contextuelle dans le français, enfin pas juste le français.
+[01:02:54] intelligence
+[01:03:11] Donc, quand on essaie de faire cette distinction-là, perception, cognition, intelligence, action, il n'y a pas, parce que je suis parti du cours, mais dans l'équation, il y a clairement l'action.
+[01:03:28] Évidemment, on ne perçoit pas ou on ne raisonne pas pour le fun, pour s'amuser, c'est pour s'adapter avec son environnement, pour agir, pour réagir.
+[01:03:38] Et le modèle classique, en fait, était comme ça.
+[01:03:42] C'est le modèle classique intuitif qui vous apparaît correct.
+[01:03:49] Vous avez l'impression qu'on va percevoir, mieux détecter une situation
+[01:03:59] un stimulus visuel, savoir ensuite raisonner si c'est dangereux ou pas, si on doit fuir, puis agir ensuite.
+[01:04:07] Donc, cette relation hiérarchique.
+[01:04:11] Et beaucoup de modèles, jusqu'à assez récemment, dépendaient de ce modèle-là.
+[01:04:16] Ce qu'on va voir aujourd'hui, c'est, si je veux vous montrer les faux, ce modèle-là, qui en fait, il n'est pas faux, il reste vrai, mais il est dépassé.
+[01:04:24] Il est complètement insuffisant.
+[01:04:27] traditionnelle.
+[01:04:29] Si vous regardez des planches dans des traités médiévaux sur l'esprit, et on voit exactement cette séquence-là représentée dans le bandicule, par exemple.
+[01:04:40] Oui, oui, oui.
+[01:04:41] Oui, oui, oui.
+[01:04:41] Oui, oui, oui.
+[01:04:53] Donc, juste un petit aperçu historique sur, on va se rendre tranquillement sur l'action, mais on s'est d'abord interrogé, puis là je monte dans l'histoire, on parle du XIXe siècle, on pourrait partir de Platon, mais...
+[01:05:18] ou du moyen-âge, mais on va partir de la naissance de la psychologie, la racine de la psychologie comme on la connaît aujourd'hui, c'est pas né avec la psychothérapie, c'est né avec la psychologie expérimentale.
+[01:05:35] Toutes les cols, là j'en ai pété un peu avec qui, là je reconnais mes visages, qui a eu un peu de perception?
+[01:05:44] Ouais, c'est ça.
+[01:05:45] Donc je vais dire un peu les mêmes choses que j'ai déjà dites, mais on part avec...
+[01:05:54] L'école allemande, les trois figures représentatives, c'est Witt, Fechner et Wundt.
+[01:06:01] Mais au cœur de tout ce qu'ils ont fait, c'était vraiment la relation, ce qu'on voulait savoir, c'est la relation, on voulait mettre un doigt, oui, oui, oui, oui, oui.
+[01:06:13] formulation et quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification, quantification,
+[01:06:41] La notion de seuil s'éclaire tout le monde.
+[01:06:51] Vous allez voir pourquoi ça pose problème.
+[01:06:54] Donc Weber en fait c'est le premier, il s'intéressait surtout au seuil différentiel, il a fait beaucoup de travaux sur plein de choses, mais surtout sur le toucher et la perception somesthésique, là on met un poids de 100 grammes dans une main, combien de grammes peut ajouter dans l'autre main,
+[01:07:14] pour sentir c'est plus lourd, c'est plus léger, c'est pas trop mouillant, c'est pas trop en rêve.
+[01:07:20] Mais c'est vraiment le père de la psychologie équité mentale, la perception.
+[01:07:27] Mais c'est pas le plus connu.
+[01:07:28] Le plus connu dans ces points-là, c'est Fechner, qui était d'ailleurs un élève, peut-être un peu plus en dehors avec Weber, mais il a reçu des enseignements de Weber,
+[01:07:42] Weber était en fait médecin et enseignait la physiologie à l'université, je pense.
+[01:07:50] Et Fechner, c'était un élève qui était aussi en physique, en physiologie, qui avait essayé de trouver la médecine pour vraiment poursuivre la tradition et les travaux de Weber.
+[01:08:03] Et là, on a, j'ai une dépôt après, là,
+[01:08:09] une formulation, une loi qui est la loi Fechner-Weber entre la sensation et la perception.
+[01:08:21] Puis Bob, en fait, on l'associe souvent au premier labo de psychologie expérimentale, même s'il s'inspirait beaucoup, beaucoup des méthodes assez réductionnistes, voire très précises de Weber-Fechner,
+[01:08:34] qui a essayé d'aller un petit peu plus loin avec l'introspection, mais on l'a retrouvé en laboratoire.
+[01:08:45] Il a quand même donné l'élan pour aller un petit peu plus loin que les seuils psychophysiques de toucher et essayer de rendre la psychologie de l'éducation en partenariat.
+[01:08:57] Il ne faut pas nécessairement réussir à faire ça, ça va être pour James plutôt, mais il a quand même lancé les premiers éléments.
+[01:09:13] Donc la loi de Weber-Fechner, qui est en fait la loi de Fechner, je pense que je l'enseigne, la loi de Fechner au bac, mais quand on regarde les textbooks, c'est les deux, parce que Fechner n'a jamais voulu, c'est lui qui l'a proposé, mais il n'a jamais voulu entendre la...
+[01:09:37] une entière responsabilité parce qu'il jugeait que c'était inscrubé de son entente.
+[01:09:46] Donc, si on prend les temps des actions, je vous dis entre l'estimation de gauche, entre 10 et 20, c'est lequel qui a le plus de points, versus entre 110 et 120, c'est lequel qui est le plus stimulé, qui a le plus de points, mais ça nous prend beaucoup plus de temps de juger
+[01:10:05] la quantité dans la deuxième situation et dans l'extérieur.
+[01:10:12] Et c'est une des illustrations, il y en a plein, des situations dans la vie, l'intensité de l'une ou de l'autre, c'est notre sensation, notre perception, surtout dans le milieu en grosses actions, on confond sensation et perception beaucoup plus qu'en pensée.
+[01:10:32] Mais notre sensation poursuivre une loi logarithmique
+[01:10:36] donc une loi linéaire par rapport à cette situation-là.
+[01:10:46] Oui?
+[01:10:46] Juste parce que je ne comprends pas, la loi dit que le plus sensible à la détection du signal est le plus faible, ou pas du seul, qui a des quantités d'information plus élevées.
+[01:10:58] Exactement.
+[01:11:00] Donc la sensation c'est égal à une constante, la constante c'est vraiment...
+[01:11:05] C'est vraiment en fonction de l'âge, du contexte, si j'entends bien, si je vois bien.
+[01:11:14] C'est l'intensité, mais c'est le log de l'intensité.
+[01:11:17] Donc, si je mets ça, je vois plus.
+[01:11:21] Donc, si je double ici, je suis à 10 et je double à 20.
+[01:11:26] La différence est beaucoup plus grande que si je suis à 100.
+[01:11:33] 110 à 120.
+[01:11:33] Mais c'est quoi la conséquence qu'on tire?
+[01:11:35] Parce que ça nous semble évident quand on passe du kit au double à du kit à plus 10%.
+[01:11:42] Forcément, la perception est beaucoup plus facile.
+[01:11:45] Oui.
+[01:11:46] Mais en fait, ça nous apparaît évident cette fois-là maintenant.
+[01:11:49] Mais là, on n'est pas au 10e siècle.
+[01:11:51] Et spontanément, intuitivement, on pourrait penser
+[01:11:54] une autre situation, si j'augmente l'intensité d'une emploi, je passe de 53 à 100 watts de double, est-ce que ma perception, ce que je vais ressentir comme changement va être de double?
+[01:12:13] C'est ça la question fondamentale.
+[01:12:16] et à partir du moment où on démontre que non, c'est pas le cas.
+[01:12:22] Et que je le dis, c'est pas le cas.
+[01:12:23] Ok, c'est que ma perception n'est pas doublée, n'est pas proportionnelle.
+[01:12:27] Exactement.
+[01:12:28] Merci.
+[01:12:28] Oui, voilà.
+[01:12:30] Puis c'est adaptatif ça.
+[01:12:32] Parce que s'il fallait être proportionnel à tout changement de stimulation physique dans l'environnement,
+[01:12:37] Le cerveau aurait un petit peu... Donc, il y a des choses qui ne sont pas très graves, comme augmenter...
+[01:12:42] Quand on sort dehors, l'intensité lumineuse va être 10 000 fois plus élevée que l'intensité qu'il y a ici actuellement, à cause du soleil.
+[01:12:51] On ne va pas avoir une sensation 10 000 fois plus forte.
+[01:12:54] Donc, on a notre cerveau, notre cerveau est quand même bien fait.
+[01:12:58] Est-ce que c'est le même phénomène quand on a, si on est dans un environnement sonore à 50 décibels et tout à coup il y a une moto qui passe à 100, ou on est dans un environnement sonore à 80 décibels et la moto passe à 100 qui nous dérange beaucoup moins parce que...
+[01:13:13] Exactement, oui, tout à fait.
+[01:13:15] puis encore une fois, cette relation-là va être inverse, donc un log inverse.
+[01:13:23] Hélène?
+[01:13:24] Hélène?
+[01:13:25] Hélène?
+[01:13:26] Le log inverse de log, c'est Hélène?
+[01:13:27] Ah oui.
+[01:13:30] Non, mais ça c'est une log naturelle.
+[01:13:32] Ah oui?
+[01:13:32] Oui.
+[01:13:33] Donc c'est pas l'inverse.
+[01:13:34] C'est pas ça, ok.
+[01:13:37] Mais peu importe, c'est juste pour vous dire, par exemple, si...
+[01:13:41] Je fais la même expérience.
+[01:13:46] Si je prends une stimulation non pas lumineuse, mais douloureuse, ma courbe n'est pas linéaire, elle est comme ça.
+[01:13:56] Je tolère, je tolère.
+[01:13:57] Oui, là la sensation...
+[01:13:59] Oui, parce qu'il faut enlever son phrase.
+[01:14:04] C'est un surlogue?
+[01:14:07] L'inverse?
+[01:14:11] Oui, en tout cas, je vais le garder.
+[01:14:14] Oui, ça n'a pas d'importance.
+[01:14:19] Non, je suis curieux.
+[01:14:19] C'est vraiment juste pour vous dire que c'est bon.
+[01:14:25] Merci.
+[01:14:30] Je vais aller voir.
+[01:14:32] Ça m'intrigue.
+[01:14:34] Exact.
+[01:14:40] Et donc, ça, j'en ai parlé dans mon cours d'interception.
+[01:14:45] Et ce qui est peut-être le contexte, le problème, c'est que cette notion de
+[01:14:56] de toutes les lois qui ont été élaborées par l'école allemande, qui sont fondamentales même aujourd'hui dans notre compréhension, même dans l'intelligence artificielle, cette relation de vision artificielle des années 70-80, on avait des modèles de ça.
+[01:15:14] L'algorithme qu'on implante, c'est logarithmique, c'est pas linéaire.
+[01:15:20] Donc ça a quand même des applications encore aujourd'hui, c'est important.
+[01:15:24] Sauf que pendant longtemps, on assumait qu'il y avait un seuil fixe.
+[01:15:29] Donc à partir de 8 watts, là je vois quelque chose, mais en bas de 8 watts, je ne vois rien.
+[01:15:40] Donc un seuil fixe,
+[01:15:46] qui répond aux limites des capacités humaines.
+[01:15:51] Pendant presque un siècle, on était sur cette prémisse.
+[01:15:57] Or, on sait aujourd'hui depuis longtemps que la perception, si je te demande à partir de, est-ce que tu la vois deux fois plus intense ou non,
+[01:16:07] Ça dépend du seuil, de l'intensité physique, mais ça dépend aussi de ton plan interne.
+[01:16:11] Ça dépend aussi de tout ce que tu veux de disposition psychologique.
+[01:16:18] d'attente, de connaissance, des conditions dans les qualités pour décider si tu le vois ou si tu ne le vois pas.
+[01:16:26] Les radiologues qui ne voient plus la couleur, mais qui ont une échelle de gris.
+[01:16:29] Oui, exactement, parce qu'ils veulent être plus conservateurs.
+[01:16:34] En psychophysique, les décisions, les réponses qu'on donne...
+[01:16:40] Elles ne dépendent pas d'une intensité minimale physique.
+[01:16:46] Elles dépendent d'une décision statistique.
+[01:16:49] Elles dépendent beaucoup d'une chose.
+[01:16:51] Donc, il y a le signal, les watts de mon...
+[01:16:56] l'intensité mineuse, mais il y a aussi le bruit, et le bruit, ce n'est pas juste le bruit de l'ambiance, c'est le bruit interne, le bruit physiologique, le battement.
+[01:17:07] Donc, quand on mesure des seuils auditifs, le battement de cœur,
+[01:17:11] Peu interpellé, mais c'est le plus psychologique.
+[01:17:20] Est-ce que vous connaissez des recherches qui ont essayé de volontairement modifier ces sujets-là?
+[01:17:24] Absolument.
+[01:17:25] Pour favoriser certaines perceptions d'autres.
+[01:17:27] Oui, tout à fait, je vais y aller.
+[01:17:33] Donc, là on part du 19e siècle, puis on arrive dans les années 40-50.
+[01:17:38] où on a eu, en fait, on a une autre approche psychophysique qui est celle qu'on utilise toujours aujourd'hui, qui est maintenant le gold standard.
+[01:17:50] Si vous voulez mesurer un comportement ou une intensité
+[01:17:55] Par la psychophysique, vous allez utiliser un paradigme qui se base sur la théorie de la détection du signal, qui a été en fait formalisé suite à des ingénieurs qui se posaient dans le courant de la Deuxième Guerre mondiale sur une question fondamentale.
+[01:18:13] Donc, on venait de mettre au point des radars pour détecter des avions.
+[01:18:20] et le problème avec ça c'était pas tout à fait au point et puis même un nuage d'oiseau pouvait être perçu par un observateur comme un avion et donc la question c'est comment un opérateur va décider si le signal qu'il voit sur l'écran ça correspond vraiment à
+[01:18:42] à un avion ou pas.
+[01:18:44] Donc, c'est quelques années plus tard, l'article clé de la théorie de la détection du signal qui est reconnu en fait dans plusieurs études en psychophysique.
+[01:19:08] Donc, ceux qui ont fait le cours avec moi de la théorie du signal
+[01:19:11] La détection du signal, vous avez une idée, super, vous pouvez vous en souvenir un petit peu de ce que c'est.
+[01:19:16] Pour les autres, est-ce que ça vous parle de tout ce que vous...
+[01:19:19] Il y en a que ça ne dit absolument rien.
+[01:19:24] Bien.
+[01:19:24] Bien.
+[01:19:25] Bien, ça peut être très, très, très, très... Ça vous... Oui.
+[01:19:29] Mais le temps est relatif.
+[01:19:33] Donc, est-ce que si je vous montre ça, ça vous dit quelque chose maintenant?
+[01:19:40] Les quatre types de réponses en fonction du signal en haut, donc des hits, des misses, des fausses alarmes et des projections correctes.
+[01:19:55] Et c'est ça la magie de la théorie du signal.
+[01:19:58] C'est de capter ces quatre types de réponses-là.
+[01:20:01] En fait, on va avoir, c'est deux par deux, donc on va avoir un signal qui est présent ou qui est absent,
+[01:20:07] On va avoir une réponse qui peut être non ou oui.
+[01:20:10] Ou je le vois, ou je ne le vois pas.
+[01:20:12] Et si on présente le signal, je le vois, c'est un rythme.
+[01:20:15] Et si je ne présente pas de signal,
+[01:20:18] Puis, je le vois, c'est une pause à l'âme.
+[01:20:24] Et c'est ça, c'est pas compliqué.
+[01:20:27] C'est la petite twist dans une étude en psychophysique.
+[01:20:33] Je vais vous montrer quelques exemples.
+[01:20:35] Il suffit d'avoir un essai où il n'y a pas de signal, il y a juste du bruit.
+[01:20:40] Et là, vous mesurez si la personne voit quelque chose, pense voir quelque chose ou pas.
+[01:20:45] Et avec ça, on va être capable d'isoler sa capacité à discriminer la stimulation physique, quant à elle, de son critère subjectif de dire « oui, je vois, oui, je ne vois pas ».
+[01:21:02] Donc, on peut créer, en fait, et je ne peux pas trop rentrer dans la formalisation de ça, mais
+[01:21:10] On peut, avec une distribution normale du signal, donc, le bruit, la sonnette du téléphone pendant que vous êtes sous la douche.
+[01:21:31] Donc, vous avez le bruit aléatoire de l'eau qui tombe sur votre tête, mais dans la cuisine, vous pouvez avoir le bruit
+[01:21:40] le téléphone qui sonne, et ça c'est l'intensité de votre perception interne.
+[01:21:50] Quand vous êtes sûr, donc quand il y a absolument quelque chose, ou absolument pas de son, pas de téléphone, ou beaucoup de téléphones, en général, s'il y en a un, c'est rare, si vous portez vraiment tradition,
+[01:22:05] C'est une distribution normale de bruit aussi.
+[01:22:15] Si vous arrêtez de porter attention à l'eau, vous allez être plus ou moins affecté par le bruit.
+[01:22:22] Puis là, la distance entre les deux
+[01:22:27] et de la distribution.
+[01:22:28] Plus ils sont séparés, plus vous êtes capable d'entendre le signal versus le bruit.
+[01:22:34] Plus votre indice de discrimination est élevé.
+[01:22:40] Dans les articles de psychophysique, on parle beaucoup des capacités à distinguer le signal parmi le bruit.
+[01:22:48] Quand je dis le bruit, ça peut être externe ou interne.
+[01:22:52] Il y a des méthodes psychophysiques pour isoler chacun d'eux.
+[01:22:55] de ces types de bruits-là, mais on va pas en plus.
+[01:23:00] Ça, c'est le déclin.
+[01:23:01] Ça, c'est comme le seuil physique minimum pour le détecter.
+[01:23:06] Vous allez avoir le bêta.
+[01:23:09] Et le bêta, c'est ça, le cutac interne.
+[01:23:13] C'est que vous avez deux distributions signal-bruit, puis à un moment donné, il faut mettre une ligne.
+[01:23:19] Il faut mettre une ligne sur...
+[01:23:21] Ce que je décide qui est vraiment le signal ou pas.
+[01:23:26] Et selon que vous êtes plus à gauche, plus à gauche ou plus à droite, bien évidemment votre état va, votre proportion de fonds à l'âme et de bonnes réponses va changer.
+[01:23:41] Si je suis par exemple très conservateur, bien moi je vais être un petit peu plus palissier.
+[01:23:49] et je vais donner une bonne réponse seulement quand je suis convaincu des choses.
+[01:23:55] Si je fais ça, je vais avoir moins de fausses alarmes.
+[01:23:58] Je serai conservateur.
+[01:24:00] Si mon critère est un petit peu vers la gauche, je vais accepter, si je ne suis pas sûr, je vais quand même dire, je n'ai pas de chance d'être quelque chose, mais je vais avoir une proportion de 35, c'est difficile.
+[01:24:11] C'est ce ratio où c'est différent, ça dépend comment on le calcule, qui nous permet de pondérer, si vous voulez, la performance en fonction du critère subjectif.
+[01:24:24] Donc on va prendre une petite expérience.
+[01:24:26] Et le C ici, c'est la distance.
+[01:24:29] Donc le C ici est à zéro, c'est-à-dire qu'il est exactement à la jonction des deux distributions.
+[01:24:37] C'est ce qu'on appelle, vous allez peut-être le voir des fois dans des études, l'observateur idéal.
+[01:24:41] Il n'est pas du tout brisé.
+[01:24:43] Ça, ça se peut pas dans la vie.
+[01:24:44] Donc le C, c'est la distance...
+[01:24:47] théorique avec le critère positif ou positif.
+[01:24:59] Ça, c'est le principe de base.
+[01:25:01] Ça a été une révision pour certains.
+[01:25:05] On va le mettre en application.
+[01:25:07] Comment on fait par une tâche psychophysique
+[01:25:10] pour avoir ces deux dimensions-là, pas juste le seuil, pas juste la disponibilité, mais aussi l'ampleur de la subjectivité.
+[01:25:22] Alors, donc j'ai fait, on peut faire ça avec n'importe quoi, tout ce que ça prend c'est une condition, il y a juste du bruit pour avoir le pourcentage de concept.
+[01:25:35] Donc la tâche que vous devez faire, c'est qu'il y a des petits points qui sont ici, ils vont bouger,
+[01:25:41] dans plusieurs directions, mais un mouvement global qui va vous donner l'impression que ça va par la gauche ou que ça va par la droite.
+[01:25:50] Donc, plutôt que la tâche, plutôt que ce soit vous, non, c'est gauche ou droite.
+[01:25:55] Et à chaque fois, vous devez me dire si c'est gauche ou droite.
+[01:25:59] Donc, on commence.
+[01:26:00] Ça dure deux secondes, mais attention.
+[01:26:02] Vous êtes prêts?
+[01:26:03] On commence.
+[01:26:04] Voilà.
+[01:26:07] Donc, si c'est gauche ou droite, on commence, on continue un autre essai.
+[01:26:34] de l'esprit, de l'esprit, de l'esprit, de l'esprit, de l'esprit
+[01:26:59] Le dernier ici.
+[01:27:02] Attends encore.
+[01:27:04] Je vous donne une autre chance.
+[01:27:08] À gauche.
+[01:27:09] À gauche.
+[01:27:12] Donc, dans celui-là, celui qui avait juste du bruit, c'était lui.
+[01:27:16] Ah.
+[01:27:18] Donc, là, c'était 55.
+[01:27:19] Juste du bruit.
+[01:27:21] Tous les points étaient dans des élections aléatoires.
+[01:27:24] Il n'y avait pas deux points qui étaient dans les élections.
+[01:27:27] et de l'intelligence artificielle et de l'intelligence artificielle.
+[01:27:54] Donc, en faisant cette tâche-là, si j'avais fait une tâche de psychophysique à la fechner traditionnelle, j'aurais varié le pourcentage, j'aurais calculé le pourcentage de bonnes réponses dans chacune des conditions.
+[01:28:07] Puis là, j'aurais trouvé ça, il y a un peu de chèque, c'est un peu ce qu'il y a, toutefois, mais ce n'est pas important.
+[01:28:12] Mais puisque j'ai cette condition-là, où il n'y avait que du bruit, pas de signal, il y en a quelques-uns qui ont fait des fausses alarmistes.
+[01:28:19] Donc, dans un participant typique,
+[01:28:22] On pourrait avoir, c'est purement hypothétique, 45% sur 50 de bonnes réponses, puis 10 sur 50 de fausses alarmes.
+[01:28:37] Donc à partir de, là j'ai mis 4 scénarios et 4 types de réponses, parce que c'est complémentaire.
+[01:28:44] Évidemment, si j'ai...
+[01:28:48] 45 de bonne éponge et 5 misques.
+[01:28:51] Si j'ai 10 consolables, j'ai 40 misques.
+[01:28:55] Moi, j'ai une question.
+[01:28:57] Oui.
+[01:28:57] 1, 2, 3, 4, 5.
+[01:28:57] Si la cinquième était avant la quatrième?
+[01:29:00] Ah, j'ai fait ça purement naïvement.
+[01:29:03] Non, non, mais... Oui.
+[01:29:04] Parce que le priming...
+[01:29:07] Le taux de réponse, je suis sûr qu'on verrait plus facilement la gauche.
+[01:29:11] Vous avez raison.
+[01:29:12] C'est pour ça que quand on fait une expérience comme ça dans le laboratoire, si vous venez faire ça avec nous, vous allez avoir au moins 50 essais dans chacun des conditions présentées aléatoirement.
+[01:29:25] pour éviter ces épreuves.
+[01:29:32] Donc là on a notre 45 ou 90% puis notre 20%.
+[01:29:37] Donc on revient à...
+[01:29:44] On va générer nos yeux courts.
+[01:29:47] On avait tout à l'heure.
+[01:29:48] Ça, c'est les petites formules pour calculer le D, le C et le B. Donc, la discrimination pour ce objectif, le D.
+[01:29:59] Le bêta, c'est le bêta subjectif.
+[01:30:02] Le C, c'est la distance du bêta avec le point de différence.
+[01:30:05] Donc, ce qui... Et c'est pas important de savoir comment calculer ça.
+[01:30:13] Je fais juste pour l'illustrer.
+[01:30:15] C'est pas le graphique le plus important, c'est l'autre qui vient à ce que tu vois qu'est-ce que tu sais tout à l'heure.
+[01:30:25] Mais essentiellement, on voit la distance des deux distributions.
+[01:30:31] Le déprime, c'est essentiellement les bonnes réponses moins les fausses alarmes.
+[01:30:37] On fait juste le normalisé, on fait un score Z pour l'assurance de la distribution normale.
+[01:30:43] Et là, c'est plus facile à compter.
+[01:30:45] C'est pour ça qu'on se retrouve avec des chiffres comme ça.
+[01:30:48] Mais essentiellement, si vous faites
+[01:30:50] 90% moins 20% sur 90%, c'est certainement la même chose.
+[01:30:57] Puis le bêta, ce qu'on va faire, c'est que là vous avez une courbe ici, une densité de probabilité, puis vous allez prendre les coordonnées de un, moi je les ai divisées par les coordonnées de l'autre.
+[01:31:10] puis la hauteur relative des deux distributions vous donne en fait la distance par rapport aussi.
+[01:31:16] Donc, ici, ça donne 6 fois 63, là, plus vous êtes proche du 0, moins 10.
+[01:31:23] Donc, ce qui est intéressant ici, c'est que vous pouvez faire une expérimentation, puis à chaque fois que vous avez une bonne réponse, vous dites aux participants que vous gagnez 1$.
+[01:31:38] et donc ça c'est une manipulation qui va faire que vous pouvez changer le seuil parce que là vous êtes plus pronts à avoir des quêtes et vous allez changer, vous pouvez vraiment faire varier en fait
+[01:31:54] ou une autre manipulation peut être, comment on dit ça, de faire plaisir à l'expérimentateur, un biais, déségalité, oui, déségalité, oui, sociale de l'expérimentateur, puis là donc,
+[01:32:11] On encourage beaucoup, beaucoup, donc on peut changer ce sujet.
+[01:32:14] Donc, évidemment, on voit que c'est une décision qui va être prise avec le contexte, avec les barrières psychologiques qu'on peut manipuler ou qui sont déjà faites.
+[01:32:24] Donc, ça, c'est la même... Donc, ce qui est intéressant de noter, si on fait cette expérimentation-là, le déprime va rester pareil.
+[01:32:34] Donc, la capacité du système à discriminer les deux sombres,
+[01:32:39] physiquement, elle est là.
+[01:32:40] Ce qui change, c'est le critère d'ici.
+[01:32:44] Donc, c'est deux dimensions presque orthogonales.
+[01:32:47] C'est pas complètement étendant, là, ici, c'est des gens qui montrent ça, mais c'est essentiellement quand, si vous décidez d'être plus libéral, d'appuyer tout le temps, bien, les deux dimensions
+[01:33:01] Bonnes réponses et fausses alarmes vont augmenter.
+[01:33:04] Si vous appuyez moins longtemps, ça va être proportionnel.
+[01:33:06] C'est pour ça que le déprime ne change pas.
+[01:33:10] Il peut changer, parce qu'il n'y a pas de différence.
+[01:33:12] Il va changer, c'est vrai.
+[01:33:19] constante d'une personne, ça peut dépendre beaucoup du contexte.
+[01:33:22] Oui, oui, oui, absolument.
+[01:33:23] En fait, ça pourrait être une personne placée dans différents contextes.
+[01:33:28] Franchement, je suis un peu scénarien le soir.
+[01:33:33] Je suis plus nerveux que le jour est plus littéral.
+[01:33:36] Exactement, exactement.
+[01:33:42] Donc, la réponse...
+[01:33:44] d'un participant n'est pas garante d'un seuil fixe, comme on l'a longtemps pensé.
+[01:33:53] Et ça, ça nous permet un petit peu mieux comprendre les capacités humaines, parce qu'on a toujours ces critères-là internes qui vont jouer dans des contextes, dans différents contextes.
+[01:34:08] Quand on parle de différents contextes, libéral, conservateur, avec des récompenses ou dans une entreprise, par exemple, où il y a plus de pression, soit endogène ou exogène, ou un contexte dans une tour de contrôle d'avion où on peut manipuler, en fait,
+[01:34:33] Idéalement, ce qu'on veut, c'est d'avoir un état qui est proche de ce qu'on veut.
+[01:34:47] Ça va pour ça?
+[01:34:49] Donc ça, je voulais vous en parler maintenant parce qu'on va en reparler le dernier coup.
+[01:34:53] Quand on va parler de sac ou paille, on pourra s'amuser à construire
+[01:35:00] Je ne sais pas trop comment on va faire ça, on va peut-être faire un petit sondage, une question de recherche qu'on pourrait avoir sur la performance humaine dans une situation X.
+[01:35:12] Puis, là, c'est très expérimental, donc ça ne va pas changer la vie.
+[01:35:20] Vous avez dit les radiographies avec le...
+[01:35:24] Les rayons X.
+[01:35:24] Les rayons X.
+[01:35:25] La perception de la couleur.
+[01:35:26] Détecter une tumeur d'un cancer, une tumeur dans le fissage du cancer du sein, la théorie du signal a été drôlement utile, il l'est toujours en fait,
+[01:35:40] De moins en moins, parce que là, maintenant, on a des intelligences artificielles qui deviennent de plus en plus performantes, mais on veut un radiologiste qui ait un critère pas trop libéral, pas trop conservateur, parce que dans un cas, s'il l'est faux, il ne va rien détecter, ou il va, par exemple, pousser la personne.
+[01:36:01] Donc, ça, c'est un jeu, en fait, qui joue à la situation humaine, mais qui est la sensibilité, la sélectivité de...
+[01:36:09] d'une situation ou d'un test.
+[01:36:11] La COVID, c'était la première chose qu'on voulait.
+[01:36:14] On a testé plein de habitudes qu'on mettait dans le nez.
+[01:36:20] Il y en avait plein de sortes au début parce qu'il y en avait qui avaient plus de faux positifs
+[01:36:25] Donc, plus de cours négatifs, mais lequel on veut.
+[01:36:27] On ne se part pas au monde de, OK, vous avez la COVID, mais beaucoup n'ont pas.
+[01:36:31] Où on veut.
+[01:36:31] Donc, c'est exactement la priorité.
+[01:36:34] Pour l'intelligence artificielle, disais-tu que c'est une dimension d'intelligence, c'est une dimension de perception, d'apprentissage sexuel, qu'on se rapproche d'une sorte d'observatoire idéal?
+[01:36:52] Oui, je pense qu'on peut avoir les mêmes biais.
+[01:37:00] Je pense qu'on peut avoir des biais dans des situations, ça dépend du contexte, on peut le...
+[01:37:09] On peut se rapprocher de l'observateur idéal.
+[01:37:14] Là, moi, je pense, ça dépend.
+[01:37:16] Y a-t-il d'autres questions?
+[01:37:18] Je parlais de la détection des... Ah non, c'est vrai, c'était pas clair dans la question.
+[01:37:22] La détection des tumeurs.
+[01:37:24] Ah, pour les tumeurs?
+[01:37:25] Ah oui, oui.
+[01:37:25] Est-ce que c'est une situation où c'est presque... Ah oui, absolument.
+[01:37:30] Oui, oui.
+[01:37:30] On peut paramétrer.
+[01:37:31] Oui, oui, tout à fait.
+[01:37:32] Donc, on a l'observateur idéal.
+[01:37:34] C'est vache.
+[01:37:35] On peut...
+[01:37:37] Il y a des observateurs humains qui peuvent s'approcher de ça en fait, mais absolument, dans ce contexte-là, ils touchent très près à ce qu'on appelle l'intelligence physique, on verra ça la semaine prochaine, mais donc dans ce contexte-là, ils touchent très près à ce qu'on appelle l'intelligence physique, on verra ça la semaine prochaine, mais donc dans ce contexte-là, ils touchent très près à ce qu'on appelle l'intelligence physique, on verra ça la semaine prochaine, mais donc dans ce contexte-là, ils touchent très près à ce qu'on appelle l'intelligence physique, on verra ça la semaine prochaine, mais donc dans ce contexte-là, ils touchent très près à ce qu'on appelle l'intelligence physique, on verra ça la semaine prochaine, mais donc dans ce contexte-là, ils
+[01:38:05] a mené à une diminution actuelle de l'anthropopathie en fonction des sangles.
+[01:38:12] Ah oui, c'est autre chose.
+[01:38:13] Vous êtes tous d'accord parce qu'il y a des communautés.
+[01:38:20] Les communautés d'entrée et d'entrée.
+[01:38:22] Oui.
+[01:38:23] Ça montre.
+[01:38:23] L'agitude.
+[01:38:24] Oui, il faut l'utiliser.
+[01:38:25] L'hypocampe.
+[01:38:27] Ça montre les conséquences négatives.
+[01:38:29] Absolument.
+[01:38:30] On a 10 ans.
+[01:38:34] de l'esprit, l'hypocampe, l'hypocampe, l'hypocampe, l'hypocampe
+[01:38:59] et de l'exposition.
+[01:39:15] Je ne sais pas, je n'ai pas retrouvé l'étude, mais j'avais lu quelque part, on prenait une pause après une heure et demie, parce que c'était comme des capacités rationnelles qu'on pouvait enlever.
+[01:39:26] Mais c'est avant ça, je pense que c'est 40 minutes.
+[01:39:28] Exactement.
+[01:39:28] Même 5 minutes ou 40 minutes, c'est mieux qu'un quart d'heure à l'heure.
+[01:39:33] La nouvelle mode, c'est de prendre deux pauses de 10 minutes plutôt qu'une pause de 20 minutes après une heure et demie.
+[01:39:40] C'est dangereux, ça, par exemple.
+[01:39:41] Deux pauses de 10 minutes?
+[01:39:42] Oui, je pense.
+[01:39:43] Pourquoi c'est dangereux?
+[01:39:44] Parce que ça a fini et que c'est plus juste deux pauses à dix minutes.
+[01:39:47] C'est ça.
+[01:39:47] Ah, c'est deux pauses à dix minutes aussi.
+[01:40:00] Ben là, c'est ça.
+[01:40:02] Ou 13, 14, 15, puis là on se ramasse.
+[01:40:04] Mais là, il est temps d'avoir une pause.
+[01:40:06] Donc, on se retrouve à quatre heures.
+[01:40:07] Yes.
+[01:40:07] Ok.
+[01:40:07] J'ai laissé une calotte.
+[01:40:08] Ouais.
+[01:40:08] J'ai laissé une calotte, mais je me déborde à l'intérieur, j'ai tellement faim.
+[01:40:11] La prochaine fois.
+[01:40:12] C'est difficile.
+[01:40:13] Ouais.
+[01:40:13] et d'apprentissage, psychologie, psychologie psychologique, psychologie psychologique.
+[01:40:43] Est-ce que ça donne une question ?
+[01:40:48] Est-ce qu'on peut...
+[01:41:38] Oui, c'est ce que j'ai dit.
+[01:41:39] Ok.
+[01:41:40] Ok ?
+[01:41:41] Je vais pas le changer.
+[01:41:42] Ok, bye bye.
+[01:41:42] C'est quoi ça ?
+[01:41:49] C'est quoi ça ?
+[01:41:51] C'est quoi ça ?
+[01:42:08] et de l'éthique et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique, et de l'éthique,
+[01:42:37] Oui, Serge et Roger
+[01:43:06] de l'esprit, de l'esprit, de l'esprit, de l'esprit,
+[01:43:22] et de l'intelligence artificielle et de l'intelligence artificielle.
+[01:43:48] Sous-titrage Société Radio-Canada
+[01:43:57] de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit,
+[01:44:29] et de l'intelligence.
+[01:44:56] de l'esprit, l'esprit de l'esprit,
+[01:45:20] C'est là qu'il y a le monde.
+[01:45:22] C'est là qu'il y a le monde.
+[01:45:50] Action Action Action
+[01:46:19] Sous-titrage Société Radio-Canada
+[01:46:41] C'est tout ?
+[01:46:51] Oui.
+[01:47:11] Qu'est-ce qu'il y a?
+[01:47:22] Allô, bonjour.
+[01:47:25] Un très bon soir.
+[01:47:30] What's up?
+[01:47:31] Il y a un café moyen.
+[01:47:34] Ouais, moyen de deux, s'il vous plaît.
+[01:47:38] C'est tout?
+[01:47:39] Oui.
+[01:47:40] Si, si, c'est comme ça.
+[01:47:42] D'accord.
+[01:47:55] Merci.
+[01:48:19] Sous-titrage ST' 501
+[01:48:28] Fondation de l'Université d'Ottawa
+[01:48:54] et puis, euh, euh, comment est-ce qu'on a fait ça ?
+[01:49:00] Comment est-ce qu'on a fait ça ?
+[01:49:01] Comment est-ce qu'on a fait ça ?
+[01:49:04] Comment est-ce qu'on a fait ça ?
+[01:49:48] de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit,
+[01:50:14] de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit
+[01:50:42] de l'esprit, de l'esprit, de l'esprit, de l'esprit.
+[01:51:05] Sous-titrage ST' 501
+[01:51:19] Réalisé par Neo035 Merci à mes Tipeurs et souscripteurs
+[01:51:49] et de l'expertise de l'intelligence.
+[01:52:10] Réalisé par Neo035
+[01:52:40] de l'esprit, de l'esprit, de l'esprit, de l'esprit, de l'esprit, de l'esprit,
+[01:53:06] Fondation de l'Université d'Ottawa
+[01:53:27] de l'esprit, de l'esprit, de l'esprit, de l'esprit,
+[01:53:46] de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit, l'esprit de l'esprit
+[01:54:16] Oui, juste un petit...
+[01:54:41] et de l'expression de l'expression du signal.
+[01:54:58] J'ai un problème cardiaque.
+[01:55:00] J'avais un problème cardiaque.
+[01:55:01] J'avais un problème cardiaque.
+[01:55:02] J'avais un problème cardiaque.
+[01:55:04] J'avais un problème cardiaque.
+[01:55:06] J'avais un problème cardiaque.
+[01:55:08] J'avais un problème cardiaque.
+[01:55:23] Non, non, non, non, non, non, non, non, non, non, non, non, non, non, non, non,
+[01:55:47] Oui, j'ai fait un autre épisode.
+[01:55:49] Ce qui va avoir trop de bruit.
+[01:55:51] Mais là, ça me rend comme si je devais être croyée.
+[01:55:54] C'est avec Sacha Wafi quand même.
+[01:55:55] Oui, c'est ça.
+[01:55:56] Oui, c'est ça.
+[01:56:03] Ah, oui!
+[01:56:03] C'est un exemple.
+[01:56:05] C'est un exemple.
+[01:56:05] C'est un exemple.
+[01:56:06] C'est un exemple.
+[01:56:29] Mais c'est vraiment chiant.
+[01:56:31] Oui, j'étais en train de répondre à la question.
+[01:56:35] Mais, en fait, c'est ça qu'on m'a dit, parce que c'est un truc qui pourrait être fantastique.
+[01:56:39] Au hasard, j'allais dans un arbre, j'étais en train de dire que j'étais en train de dire que j'étais en train de dire que j'étais en train de dire que j'étais en train de dire que j'étais en train
+[01:56:57] Parce que là, comment ça fonctionne?
+[01:56:59] Le bruit, par définition, c'est des directions voisines.
+[01:57:04] Donc là, si tu mets 5% qui, à chaque point, ont une probabilité de 1 sur 360, ça serait étonnant qu'il y en ait 4 points qui avancent dans cette direction.
+[01:57:20] Donc, quand tu décides que, admettons, de cinq points, que tu peux décider, OK, je vais vous faire un, les quatre points qui vont plus loin dans une direction, les autres vont... Donc, même si ça se fait, là, tu devrais être capable de le voir.
+[01:57:32] Mais...
+[01:57:41] par rapport à 4 points de pointe.
+[01:57:43] C'est vraiment confiant, c'est énorme.
+[01:57:45] C'est vraiment confiant.
+[01:58:01] Vous pouvez appeler un avis par Facebook, vous pouvez aussi appeler les assurances pour qu'ils me rappellent.
+[01:58:24] Oui.
+[01:58:24] Oui.
+[01:58:24] Oui.
+[01:58:24] Oui.
+[01:58:24] Oui.
+[01:58:42] Généralement, pour le niveau 8, en même temps, si tu gardes, mettons, pour toujours 20% de cohérent, si tu en as 10, si tu en as 10, 20%, si tu en as 10, tu vas quand même avoir 2% de cohérent, c'est-à-dire que c'est proportionnel, mais tu n'arriveras pas tout à fait au même niveau.
+[01:59:02] C'est ce que je faisais, c'est ce que je faisais.
+[01:59:04] C'est la technologie de la technologie.
+[01:59:08] C'est la technologie de la technologie.
+[01:59:27] Il n'y a pas beaucoup de points spécifiques de voir si c'est une sphère, une sphère spéciale.
+[01:59:31] Oui, on ne peut pas aller juste... Oui, absolument, absolument.
+[01:59:44] C'est probablement que cette situation-là, en partie, à un moment donné, ça ne l'est plus pour rien.
+[01:59:50] Quand c'est plus clair, à quatre points, ça passe pour l'autre.
+[01:59:53] Oui.
+[01:59:53] Oui.
+[01:59:53] Oui.
+[01:59:54] Oui.
+[01:59:54] Oui.
+[01:59:54] Oui.
+[02:00:13] J'ai pris ce livre, il est bon, j'en ai fait ma vie, j'ai fait mon parcours, j'ai fait mon parcours, j'ai fait mon parcours, j'ai fait mon parcours,
+[02:00:44] et de l'intelligence artificielle.
+[02:01:11] Donc, la deuxième partie, ça devrait aller un petit peu plus longuement.
+[02:01:16] Je vais insister un petit peu sur la psychophysique parce que je sais que c'est des notions qu'on peut revoir.
+[02:01:21] Je vais rester plus macro-historique pour mettre la table sur...
+[02:01:26] C'est vraiment le premier cours, donc il y a des aspects que je vais passer très vite parce que ça va revenir dans les cours suivants.
+[02:01:35] Mais pour en finir avec l'aspect historique, puis pour en finir au 19e et 25e siècle, parce qu'il y a plein de...
+[02:01:45] de temps que je ne vais pas couvrir, mais on ne peut pas passer à côté de William James, qui lui propose, en fait, qui était très au courant, en fait, des travaux de la psychophysique classique, mais qui avait quand même un gros bémol avec certains concepts en particulier de fait clair, qui était assez réductionniste.
+[02:02:10] Il s'en tenait vraiment à la sensation, à la perception, à la perception au seuil finalement à partir de la réponse.
+[02:02:20] Mais la réponse est beaucoup plus, était insignifiante en fait pour la psychologie en tant que telle.
+[02:02:29] Et c'est ça la grande contribution de James.
+[02:02:33] Évidemment, on le connaît tous parce qu'on a des citations à gauche, à droite, parce qu'il s'en est ici, il s'en est là.
+[02:02:39] Dans un texte, dans le dossier optionnel, il y a un petit essai de quelques pages.
+[02:02:47] Moi, je n'ai jamais lu les principes de psychologie de William James, toi non plus.
+[02:02:54] Je connais juste les citations à gauche, à droite.
+[02:02:58] Mais apparemment, ce n'est pas pour rien qu'on cite souvent.
+[02:03:02] C'est vraiment tout est là-dedans.
+[02:03:05] Il a fait une synthèse de son époque.
+[02:03:08] passé, et il était même pionnier pour beaucoup de choses qui allaient se passer après.
+[02:03:17] Le fonctionnalisme, c'est au cœur des sciences cognitives, puis l'intelligence artificielle, de plein de façons, ça va être décliné de plein de façons par Pierre.
+[02:03:26] Donc lui, pour la psychologie, il voulait aller plus loin, donc nous comme psychologues,
+[02:03:35] ou comme chercheur ou étudiant en psychologie, ce qui nous intéresse, c'est quoi la fonction des processus.
+[02:03:43] Et c'est pour ça qu'il va un petit peu se mettre en réaction avec l'école allemande psychophysique et structuraliste qui est vraiment sur...
+[02:04:02] décomposer un processus ou l'esprit à partir d'éléments, on le met ensemble et ça fait un processus, ce n'est pas suffisant pour James.
+[02:04:16] Donc, il faut s'intéresser en fait à la fonction et surtout sur comment
+[02:04:25] Ces processus-là s'articulent et interagissent l'un avec l'autre pour, ultimement, encore une fois, ils reviennent à s'adapter et à répondre à notre environnement.
+[02:04:37] Donc, il y a cette citation-là pour faire la distinction entre sensation et perception.
+[02:04:42] Plus la perception, la cognition, c'est plus que la sensation, c'est probablement que le principal vient du dedans, comme c'est traduit ici en français.
+[02:04:55] Puis dans l'article en lecture optionnelle, il y a aussi une citation qui est au-delà un petit peu de ça, mais lorsqu'on est exposé à une stimulation ambiguë, on voit l'objet le plus probable,
+[02:05:09] C'est une notion, la prédiction, qui avait déjà été cernée par James et d'autres avant, mais qui va ensuite être formalisée par d'autres pour ce qu'on appelle le cerveau prédictif ou lésien, qu'on peut discuter dans quelques minutes.
+[02:05:33] Une simulation ambiguë, on voit l'objet le plus probable, c'est un exemple classique que vous avez certainement déjà vu.
+[02:05:42] Dans mon cours de perception, on a quelque chose qui est ambigu ici, on le met en contexte, ou un contexte prédictif, et c'est plus facile de voir un thèse ici et un B ici.
+[02:05:56] C'est une citation très très simple du principe, mais qui est un principe en fait qui va être, qui avait été, avant James, évoqué par Helmholtz, que j'en parle, je parle un petit peu dans mon cours de perception,
+[02:06:11] dans différents contextes, surtout pour la théorie, la perception de la couleur, tout ça, mais je n'avais pas, il y a pas une grande contribution en, c'est un médecin ingénieur, physiologiste, il fait beaucoup de choses là, puis il a une notion qu'il lui appelait les inférences inconscientes,
+[02:06:28] C'est pas trop faux, première fois qu'on en a pensé ce que ça veut dire.
+[02:06:33] Mais quand on lit Helmholtz, c'est vraiment l'aspect de prédiction qui était déjà dans ces travaux-là au début du 19e siècle.
+[02:06:45] Et ça va avoir été repris aussi par un grand psychologue anglais,
+[02:06:50] qui est Richard Gregory qui a fait beaucoup de choses, qui parle de formulation d'hypothèses sur les entrées sensorielles.
+[02:06:58] Tout ça, on peut dire que ça entre dans le fonctionnalisme et qui culmine peut-être avec Friston.
+[02:07:08] On pourrait appeler, je ne sais pas si on peut appeler ça de même, le fonctionnalisme computationnel.
+[02:07:13] parce que lui, vraiment, il vient mettre des chiffres sur ce modèle-là et on va en parler un petit peu plus dans le cours.
+[02:07:30] J'ai une toute petite question.
+[02:07:32] N'y a-t-il pas quelqu'un qui a gagné un prix Nobel parce qu'il a travaillé sur la perception de la couleur chez les personnes non voyantes, que les rouges
+[02:07:41] physique, la température corporelle augmentée.
+[02:07:45] Ça ne dit rien?
+[02:07:46] Moi, ça ne dit rien.
+[02:07:49] J'ai entendu parler de ça il y a longtemps.
+[02:07:50] Je n'arrive pas à trouver la puce.
+[02:08:02] Donc, c'est juste un snapshot.
+[02:08:03] On va revenir là-dessus.
+[02:08:05] Je pense que tu vas revenir là-dessus un petit peu sur les approches computationnelles et le computationalisme qui peut être très large en philosophie.
+[02:08:18] C'est un modèle assez spécifique, mais ça coupe beaucoup d'approches, c'est ça.
+[02:08:25] Dont celle-là.
+[02:08:26] Oui, dont celle-là.
+[02:08:31] Donc, Pierre va venir en parler un petit peu plus large, c'est une prochaine, puis je vais vous appeler pour avoir un contexte précis.
+[02:08:44] Donc, les illusions, en fait, ça c'est une diapo de mon cours de perception du Bach directement.
+[02:08:51] C'est, ça peut...
+[02:08:54] refléter, en fait, les illusions visuelles ou de style ou autres.
+[02:08:58] Les visuelles, c'est ce qu'on connaît le plus, mais ça reflète nos représentations internes, en fait.
+[02:09:03] Puis dans le modèle du cerveau prédictif, ça reflète souvent des erreurs de prédiction.
+[02:09:10] On les voit ici, là.
+[02:09:11] Ça prend un certain moment pour que notre cerveau se corrige, qu'on perçoit correctement l'image.
+[02:09:19] On va voir d'autres exemples.
+[02:09:22] Ah oui, il y avait ça aussi.
+[02:09:23] C'est un classique, il y en a plein sur Internet, mais c'est quand même beau, donc vous l'avez.
+[02:09:29] Donc voilà.
+[02:09:32] C'est peut-être sur Internet, donc c'est peut-être un...
+[02:09:34] de l'intelligence artificielle, l'intelligence artificielle, l'intelligence artificielle, l'intelligence artificielle,
+[02:09:58] la reconnaissance et l'action.
+[02:10:01] J'aime toujours présenter ça sur un autre diapo de mon cours de perception.
+[02:10:07] Donc en éthologie, Nico Timbergen est fondateur bien connu avec l'empreinte des cametons, etc.
+[02:10:20] Puis ça c'était des travaux en fait sur...
+[02:10:24] des oisillons qui apprennent, en fait, c'est dans leur compte génétique, très, très tôt à discriminer des formes de prédateurs qui, quand même, en termes de formes visuelles, puis là, je ne suis pas très bon en oiseaux, mais entre ça et ça, je veux dire, je ne sais pas combien de mètres
+[02:10:51] dans le ciel, c'est pas évident à discriminer pour des oisillons d'à peine quelques jours, mais il arrive très bien à le faire et c'est des reconnaissances visuelles qui sont très porteuses de sens très fort pour avoir un comportement, une action d'aplatie pour éviter la prédation.
+[02:11:19] Oui, de survie, absolument, absolument.
+[02:11:21] C'est vraiment très fort.
+[02:11:24] C'est vraiment la détection du déplacement, parce que j'avais vu que si tu prends un de ceux qui représente un oiseau qui n'est pas prédateur, comme ça,
+[02:11:35] C'est la forme et avec.
+[02:11:36] C'est la direction du mouvement, oui.
+[02:11:37] Tout à fait.
+[02:11:51] Donc, dans ce contexte-là, on pourrait dire que l'action est déterminée 100% par perception.
+[02:11:58] Évidemment, on a des gens comme James J. Gibson qui, ça c'est pas par rapport à cette diapo-là, mais il faut dire attention, l'action n'est pas nécessairement une conséquence construite de processus perceptif visuel.
+[02:12:20] et lui, en fait, son approche, donc on en parle moins aujourd'hui.
+[02:12:26] Les concepts, en fait, se retrouvent dans plusieurs champs, mais la théorie formelle de Gibson, qu'on appelait la psychologie écologique, on l'enseigne, moi je ne l'enseigne pas en perception, dans les textbooks, elle est très présente, mais il y a des notions fondamentales pour le cours, je voulais juste attirer votre attention.
+[02:12:49] Donc, il va parler en fait de la perception de l'action pour Gibson, c'est un tout, c'est indissociable.
+[02:12:59] Et donc, il va s'opposer, comme je le disais, à la conception traditionnelle, à ce dans lequel les objets existent d'un côté, puis nous, on va en extraire une signification par l'esprit avec le modèle classique.
+[02:13:14] Puis moi, je fais partie...
+[02:13:17] de ce courant-là.
+[02:13:19] En psychologie, c'est très, très fort.
+[02:13:22] On a une construction étape par étape pour se rendre à l'action.
+[02:13:29] Et si on prend une chaise, par exemple, pour Gibson, c'est instantané que la perception d'un objet ayant cette forme-là, ce n'est pas une chaise qui est perçue comme un assemblage de
+[02:13:44] de bois, de surface, de traits d'orientation, c'est plutôt la représentation qu'on a, c'est quelque chose pour ça.
+[02:13:55] Donc, c'est intrinsèque en fait à l'objet, donc la propriété relationnelle de l'objet, elle est directement liée aux capacités de l'action.
+[02:14:12] C'est différent pour les animaux et l'objet, mais il y a toute une série dans son livre, une série d'exemples qui montrent que c'est une
+[02:14:22] composantes-là, actions-passions qui sont liées.
+[02:14:28] Et le concept qui est au cœur de ça, c'est difficile d'appeler ça en français, mais c'est l'appodence.
+[02:14:33] Je ne sais pas comment on dit ça en français, mais on dit toujours appodence.
+[02:14:40] Pour Gibson, c'est l'ensemble des possibilités d'action offertes à un organisme par un objet, une situation-ci.
+[02:14:47] environnemental.
+[02:14:49] Ça, c'est par exemple le flux optique, j'en parle un peu dans mon cours de prescription.
+[02:14:56] C'est un pattern visuel qui est très caractéristique
+[02:15:02] Si vous êtes en voiture ou vous regardez droit devant vous, dans votre champ visuel, ça ne bouge pas beaucoup, c'est assez stable.
+[02:15:10] Mais en périphérie, il y a beaucoup de détails qui défilent.
+[02:15:14] Donc, vous avez des vecteurs de vitesse en fonction du champ visuel.
+[02:15:19] Ça, c'est très, très qualifié.
+[02:15:20] Dans le cerveau, vous avez des neurones qui sont spécialisés pour décoder ce type de mouvement-là.
+[02:15:27] Mais ce qui...
+[02:15:29] Pour Gibson, c'est plus ou moins intéressant toute cette affaire-là, c'est que directement cette information visuelle-là est directement liée à votre déplacement, à votre action de garantie ou de public dans l'espace.
+[02:15:47] Donc ça informe instantanément l'organisme sur cette direction.
+[02:15:54] Ce genre de situation-là est vraiment d'être très, très pratique.
+[02:16:01] Affordance.
+[02:16:01] Oui.
+[02:16:01] Elle fonctionne en français aussi.
+[02:16:03] Même chose.
+[02:16:03] Affordance.
+[02:16:04] C'est ça.
+[02:16:05] Ils l'ont vu.
+[02:16:06] Pendant des décennies, on ne trouvait pas le mot, donc ils l'ont vu.
+[02:16:09] Ils l'ont vu, finalement.
+[02:16:10] C'est ça.
+[02:16:11] Pour la petite histoire, le mot, il ne s'appelait pas en anglais, c'était en anglais.
+[02:16:16] Ah oui ?
+[02:16:17] Je vais traduire éternellement, je vais dire éternellement.
+[02:16:21] Je vais proposer l'éternellement.
+[02:16:23] Ah oui, oui, c'est intéressant.
+[02:16:27] C'est lui qui a traduit l'éternellement.
+[02:16:29] Ah oui.
+[02:16:29] On est tous prêts à dire ça.
+[02:16:30] Oui, c'est ça, exactement.
+[02:16:32] Et on l'a accepté.
+[02:16:33] Ah bien, c'est intéressant, merci.
+[02:16:38] Donc, je parlais de la chaise tout à l'heure, mais j'ai oublié de donner un autre exemple aussi.
+[02:16:42] Une poignée de porte, on va pas le percevoir.
+[02:16:47] forme visuelle, sa rondeur, on va l'apercevoir d'abord et avant tout comme une logique, on peut s'y aider.
+[02:16:55] Donc, ça fait partie de toute cette notion-là.
+[02:16:57] Donc, les deux principes de perception, puis vous pouvez ajouter cognition dans les lieux, si vous voulez, et l'action, c'est vraiment pas des critères séparés, mais c'est un tout en interaction.
+[02:17:12] Et ça va être la même chose, là je parle
+[02:17:16] de s'asseoir.
+[02:17:17] Ça va être la même chose, évidemment, avec le mouvement de la tête et le mouvement des yeux, principalement.
+[02:17:22] On bouge toujours les yeux tout le temps, tout le temps, la tête aussi.
+[02:17:26] Et ça fait partie de cette action.
+[02:17:31] Il y a deux raisons pour lesquelles je parle de ça.
+[02:17:35] C'est juste pour démontrer que le modèle de la perception
+[02:17:40] L'action n'est pas juste indépendante en bas, mais il y a aussi des implications.
+[02:17:45] L'importance, maintenant qu'on peut dire en principe, a été utilisée ensuite dans le domaine de l'expérience utilisateur pour adapter certaines interfaces physiques ou informatiques avec ce concept-là.
+[02:18:05] Donc, on a des personnes très connues pour ça, c'est Donald Norman qui a écrit quelques livres sur ce sujet-là et c'est la même chose.
+[02:18:19] Donc, on peut faire dans le design, on peut designer des objets qui vont chercher davantage la tendance que les autres.
+[02:18:27] Et ça, ça va faciliter l'expérience utilisateur dans la mesure où
+[02:18:33] Automatiquement, en fait, de façon intuitive, on va savoir comment ça marche.
+[02:18:43] Ça va.
+[02:18:45] Toujours dans la diable perception-action, une autre chose qui est vraiment difficile de dissocier ces deux dimensions-là, c'est le bénéfice très connu de la perception-action.
+[02:19:03] Il y a mille exemples.
+[02:19:04] J'ai pris ce que j'avais dans mes diapos.
+[02:19:12] Ici, c'est des chatons qu'on élève, qui grandissent dans un environnement très très beau avec des lignes verticales pendant quelques semaines.
+[02:19:27] Et il y en a un qui peut marcher et l'autre, il se fait prévaler dans un...
+[02:19:33] Lui, c'est tout inclus dans la voiture.
+[02:19:36] Alors que lui, il tourne, mais il doit nécessairement marcher.
+[02:19:40] On fait ça pendant quelques semaines.
+[02:19:42] Et le chaton qui a été élevé d'une façon active, qui peut marcher, est capable de discriminer, ça c'est quelques mois plus tard,
+[02:19:53] la profondeur, éviter les obstacles.
+[02:19:56] Il y a une perception visuelle beaucoup plus développée et optimale que l'autre.
+[02:20:02] Je l'ai illustré ici par la falaise visuelle qui est un test en psychologie qu'on utilise avec les jeunes enfants.
+[02:20:16] Donc, c'est ça depuis les années 60.
+[02:20:18] Un autre exemple,
+[02:20:22] Je ne sais pas si j'en parle dans mon cours de perception, mais qui est Paul Bach-y-Rita, qui est un chercheur américain qui, dans les années 60, a développé la première prothèse pour permettre à des personnes non-voyantes de percevoir leur environnement.
+[02:20:40] Donc, c'est un peu archaïque, on n'est pas dans les technologies d'aujourd'hui.
+[02:20:45] Vous avez une chaise ici, ça c'est le premier prototype, et vous avez une matrice d'espèces de
+[02:20:53] de petits points métalliques qui peuvent stimuler le bras d'eau, une caméra qui est connectée à ça.
+[02:21:00] Et ça marchait plus ou moins bien.
+[02:21:04] Et quelques années plus tard, il y a le même dispositif, mais portable.
+[02:21:09] C'est exactement une matrice dans le dos.
+[02:21:12] Et les performances sont d'une fois significativement meilleures
+[02:21:21] si la personne, en fait, ouvre elle-même la caméra.
+[02:21:25] Plutôt que facilement reçoit les stimulations, si elle se déplace et c'est elle qui ouvre la tête, elle ne perçoit pas des stimulations tactiles, elle va avoir l'impression d'une représentation visuelle.
+[02:21:41] C'est un autre exemple, en fait, de perception active.
+[02:21:46] Prendre des notes, plutôt que juste écouter facilement.
+[02:21:50] salant d'apportissage facile, etc. Oui, exactement.
+[02:21:59] Oui, c'était dans ces années.
+[02:22:05] Plus contemporain, oui.
+[02:22:07] C'est des personnes aveugles, donc on met des lunettes avec une petite caméra,
+[02:22:18] et si un objet se transcrit en stimulation tactile.
+[02:22:25] C'est impressionnant.
+[02:22:27] En fait, c'était un article dans Nature.
+[02:22:30] C'était révolutionnaire à l'époque.
+[02:22:33] Et aujourd'hui, c'est...
+[02:22:36] C'est gros comme ça.
+[02:22:38] Et sur la langue, hein?
+[02:22:39] Oui, exactement.
+[02:22:40] On est très, très sensibles activement.
+[02:22:47] Il y a des vidéos sur YouTube, il y a une vidéo d'une personne qui était un gymnaste qui a perdu la vie et qui a toujours à réapprendre à voir, etc.
+[02:23:03] et à un moment donné où est-ce que la première fois il voit quelque chose par un avant-bruit, plutôt que d'être certain, et puis là tu vois tout de même la vie, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça, c'est ça,
+[02:23:29] Est-ce que ça existe comme thérapie de rééducation?
+[02:23:33] Est-ce que c'est une substitution?
+[02:23:35] C'est une substitution.
+[02:23:39] C'est une substitution sensorielle.
+[02:23:41] Et la personne en question, elle réussit éventuellement à augmenter une faille.
+[02:23:46] Ah oui?
+[02:23:47] Ah oui?
+[02:23:48] Wow!
+[02:23:48] C'est beaucoup plus miniaturisé que ce qu'il y a de ça, mais vous voyez assez bien.
+[02:24:01] C'est beau.
+[02:24:02] C'est aussi, bien là, quelque chose qui nous touche plus, parce qu'on est tous voyants, mais juste le fait d'aller en voiture, quand c'est vous qui êtes actifs, vous conduisez, vous vous déplacez,
+[02:24:15] Vous mémorisez facilement cet espace multidimensionnel et même les informations que la personne passe à côté de vous.
+[02:24:27] C'est un exemple très facile.
+[02:24:29] La perception de la vitesse, on a souvent moins peur comme conducteur, comme passager.
+[02:24:33] Oui, absolument.
+[02:24:36] Tout ce qui rentre en plus de ça, c'est le contrôle aussi.
+[02:24:40] On a moins...
+[02:24:41] humain, le transport, rapport au conducteur, on sait qu'on va trouver, l'autre il sait quand ça tourne, etc.
+[02:24:51] Donc, ce diable perception-action-là est vraiment indissociable.
+[02:24:55] Gibson était le premier à le dire, avec une théorie peut-être pas toujours... pas toujours unanime, mais le concept d'affordance et le concept aussi d'être actif dans la perception, c'est une grande différence.
+[02:25:20] On parlait tantôt de l'apprentissage actif.
+[02:25:25] Qu'est-ce qu'on a dit là-haut, c'est vous, par rapport à, je dis vous parce que c'est le premier cours, mais il faut déjà dire tu, c'est le prochain, par rapport aux radiologistes qui perdent un peu leurs skills, ça c'est la fameuse étude, qui n'a pas entendu parler de l'étude de Michael Granger?
+[02:25:47] Tout le monde a entendu parler?
+[02:25:48] Non.
+[02:25:49] Non, parfait.
+[02:25:50] parce qu'elle n'est pas encore publiée, je pense officiellement.
+[02:25:52] C'est un espèce de rapport qui a fait beaucoup de bruit l'année passée, je pense, dans les médias et qui... on a tous des intuitions que l'utilisation d'intelligence artificielle des chats, des chatbots, vont nous rendre un peu paresseux, peuvent affecter nos fonctions cognitives, mais c'est...
+[02:26:18] C'était la première fois où il y avait une démonstration empirique de ce phénomène-là.
+[02:26:25] Et ce qu'ils ont fait, en fait, c'est...
+[02:26:26] Ils ont demandé...
+[02:26:29] Il y avait trois groupes là-dedans, si je me souviens bien, de jeunes étudiants, où ils devaient faire une dissertation, un travail de session assez substantiel, de plusieurs pages.
+[02:26:39] Il y avait un groupe qui pouvait utiliser...
+[02:26:42] Google ou Internet pour faire des recherches bibliographiques.
+[02:26:45] L'autre groupe, vous pouvez l'utiliser, Chatty P.T.
+[02:26:48] L'autre groupe avait produit des guides informatiques.
+[02:26:51] Et ce qu'ils ont fait, donc ça dure sur quelques semaines, là.
+[02:26:57] et ce qu'on fait en fait avec l'EEG, donc en ajustant l'activité électrique du cerveau, certaines oscillations qui sont importantes dans l'attention, dans des tâches cognitives,
+[02:27:13] et ils ont montré que ce qu'eux appellent l'engagement cérébral, les métriques pour ça qui sont rentrés dans nos têtes, étaient beaucoup plus faibles d'en deviner lequel des groupes, dans les groupes qui avaient utilisé Tchaikovsky pendant ces semaines ou mois d'exercice-là, dans les zones impliquées dans le raisonnement et la concentration.
+[02:27:37] Pierre, l'utilisation...
+[02:27:39] électronique puis quoi ?
+[02:27:42] Il y avait une différence que je ne me souviens plus, c'est... Vas-y.
+[02:27:45] T'as quoi la question ?
+[02:27:47] Juste Internet normal et pas Internet.
+[02:27:50] Plus t'avais des outils externes, moins t'avais des outils artificiels et pas.
+[02:27:55] Mais par contre, c'est intéressant, c'est que pour ceux qui faisaient Google, il y avait plus d'appréhension dans le domaine visuel, plus sur tous les groupes.
+[02:28:02] Parce que, tu sais, comme tu l'as dans tes tables sur Google, tu cherches, tu fais des petites filtres, tu vas là-bas.
+[02:28:07] Fait que il y avait quand même
+[02:28:08] et la créativité dans le cerveau.
+[02:28:10] Et moi, j'avais trouvé ça intéressant, c'est qu'à la fin des trois sessions normales, à la quatrième, ils demandaient aux gens qui avaient juste été sur leur cerveau utiliser l'IA et qui avaient utilisé juste l'IA pour utiliser leur cerveau.
+[02:28:20] Et ceux qui avaient utilisé l'IA pendant longtemps et qui avaient juste utilisé leur cerveau, l'activation était quand même très bonne.
+[02:28:27] Et ils montrent que maintenant, intégrer l'IA après avoir fait trois sessions du sang,
+[02:28:31] Mais il y a eu plus d'activation cérébrale de ce qu'ils ont fait que le groupe cerveau de tous les deux.
+[02:28:39] Comme quoi l'intégration après un certain emportage, c'était pas si pire, mais qui avait quand même un effet à long terme de lien parce que ceux auxquels on leur a retiré après trois saisons étaient quand même plus importants.
+[02:28:53] Oui, c'est ça.
+[02:28:54] C'est le bon vieux qui est démontré.
+[02:28:59] Il y a des gens qui disent à ce genre d'enquête-là que non seulement l'intelligence artificielle va prendre le genre d'éventuellement, mais elle va nous rendre suffisamment stupides pour facilement prendre une chose.
+[02:29:14] Ben oui.
+[02:29:15] Ben oui.
+[02:29:18] Je peux me faire la vocation ?
+[02:29:20] psychophysique, psychophysique, psychophysique, psychophysique, psychophysique, psychophysique, psychophysique, psychophysique,
+[02:29:49] C'est toujours le travail collectif que tu fais avec l'information.
+[02:29:52] Si tu laisses tout le travail collectif à la machine, tu ne peux plus utiliser.
+[02:29:57] Si tu fais du travail collectif, tu fais plus du côté des gens qui sont à ta machine.
+[02:30:03] Absolument.
+[02:30:05] De toute façon, c'est comme ça.
+[02:30:07] Même dans les politiques officielles maintenant de l'UQAM, je pense que c'est une considérée, c'est une considérée pour les assistantes.
+[02:30:15] et là même, je pense à Pierre-Luc.
+[02:30:19] Oui, Pierre-Luc, oui.
+[02:30:20] Dans le labo, Ryan.
+[02:30:21] Oui, sur la créativité qui pouvait être bonifiée avec les commerçants.
+[02:30:32] Pierre-Luc a fait plusieurs recherches.
+[02:30:34] Oui, c'est ça.
+[02:30:34] J'ai participé à une expérimentation que c'est ça justement, les participants, ils utilisaient soit JetJPT à une phase de génération d'idées ou une phase d'exploration.
+[02:30:43] C'est ça, c'est ça.
+[02:30:44] Donc, dans certaines utilisations, il peut y avoir des bénéfices.
+[02:30:51] Donc, on ne sait pas trop si c'est une bonne utilisation ou pas.
+[02:30:56] Il y a de quoi que j'ai envie de...
+[02:30:57] Je ne sais pas que tu en penses, mais tu sais, les personnes qui ont étudié Google pour rechercher, ils étaient déjà qualifiés.
+[02:31:04] de l'intelligence artificielle et de l'intelligence artificielle.
+[02:31:33] Comment est-ce que c'est les capacités où le cerveau est utilisé?
+[02:31:37] Et qu'est-ce qu'il peut utiliser?
+[02:31:43] C'est comme ça, c'est toujours, use it or lose it, mais tu sais, il y a aussi la notion, moi ce qui me fascine, c'est la notion de, je sais pas si c'est le mot transposition, mais c'est le transfert.
+[02:31:59] d'une partie de ton cerveau que tu n'utilises pas, mais l'autre partie que tu utilises maintenant.
+[02:32:03] Qu'est-ce qui est bon là-dedans?
+[02:32:05] Il y a des anthropologues primitifs qui existent, des anthropologues primitifs qui peuvent montrer qu'à chaque fois qu'il y a une nouvelle technologie qui est terminée, puis ils commencent avec des vieilles technologies, comme l'écriture, ils ne pensent pas à l'écriture comme une technologie, c'est quelque chose qui est inventé.
+[02:32:18] et puis qui nécessite une manipulation de l'environnement.
+[02:32:22] À chaque fois qu'il y a une nouvelle technologie qui est inventée, il y a toujours une modification de la façon dont le cerveau fait son travail, le cerveau lettré, c'est-à-dire qui a appris à écrire et à lire, qui comporte différemment le cerveau non lettré et etc. comme ça pour les autres technologies.
+[02:32:37] Là, on est au début du sommaire, mais il reste ça.
+[02:32:47] Pour des choses comme Google, tous les genres commencent à avoir une familiarité.
+[02:32:55] J'ai une question sur le processus dessous.
+[02:33:00] On se sert des LLM pour faire quoi ?
+[02:33:03] dans ce contexte-là.
+[02:33:04] Parce que Google, je peux lui demander de me sortir des articles, puis après je vais aller voir c'est qui les auteurs, donc je peux faire ma recherche pour valider qui sont les auteurs, ils ont 5 ans de recherche, 30 ans de recherche, dans quelles universités, donc je peux déjà valider mes sources.
+[02:33:22] Quand on se sert des LLM, qu'est-ce qu'on lui demande ?
+[02:33:26] Écrivez-moi un essai sur S1, S2, dans...
+[02:33:32] à l'histoire pour leur demander les sources.
+[02:33:34] De modifier une argumentation.
+[02:33:36] L'étudiant peut avoir une idée, mais il ne sait pas comment en faire.
+[02:33:41] Il peut se proposer quelque chose.
+[02:33:43] C'est ça, c'est ça.
+[02:33:44] Oui, c'est ça.
+[02:33:46] On va en parler dans la session, mais il y a plusieurs façons d'utiliser.
+[02:33:51] Oui, mais je veux savoir.
+[02:33:51] Par exemple, tu présentes ton texte, tu dis, ben, dis-moi tous les aspects que j'ai fait là-dedans, et il va les
+[02:33:56] des entiers, etc. Et si après, tu utilises ça non pas pour dire, corrige-moi d'abord, tu fais ton travail, tu prends des choses sur des choses que tu n'aimes pas.
+[02:34:07] C'est différent de l'usage.
+[02:34:09] Ça, ça va être dans le cours de la pratique.
+[02:34:17] Je voulais juste mentionner que c'est le fun parce qu'on est en train de...
+[02:34:20] Oui, oui, oui, oui.
+[02:34:22] Il y en a beaucoup et il y en a qu'on n'a pas trouvé encore.
+[02:34:28] Oui, oui, oui.
+[02:34:29] Il y a certaines des affordances qui sont des affordances qui sont négatives.
+[02:34:32] Ça nous apporte des choses.
+[02:34:40] Ok, je vais passer juste pour illustrer en fait l'association ou la dissociation entre perception-action, donc c'est cette illusion-là qui est bien connue là, grâce à Titchener.
+[02:34:57] Le cercle central à gauche devait être plus grand que le cercle central à droite, n'est-ce pas?
+[02:35:03] C'est le contexte qui m'intuit ça.
+[02:35:05] J'ai fait l'entre-théorie pour expliquer ça.
+[02:35:09] C'est pas juste chez les humains, ça existe chez les chats et chez les chiens.
+[02:35:13] Et il y a une étude pas mal pionnière qui, depuis les années 90-2000, de...
+[02:35:25] de regarder si c'est seulement la perception qui prédit l'action, mais plutôt comment ça fonctionne dans l'autre sens.
+[02:35:34] C'est assez récent, dans les dernières décennies.
+[02:35:37] et Merle Goodale en Ontario qui a participé de différentes façons et ça c'est une expérience classique que j'aime bien.
+[02:35:44] Vous pouvez utiliser cette illusion-là mais vous pouvez l'utiliser d'autres aussi.
+[02:35:48] Donc vous avez, en fait on peut manipuler en fait la taille
+[02:35:54] ici, donc les deux cercles sont égaux, ici ils sont physiquement différents et on peut mettre plusieurs conditions là-dedans, puis on demande
+[02:36:07] perceptivement, lequel des deux cercles est plus gros, donc visuellement, soit verbalement ou en pointant, on se trompe toujours, on est toujours occupé par l'illusion, mais si on demande, avec les mêmes conditions, de plan, de saisir le cercle qui est fait physiquement ou sur l'écran, notre action motrice, elle ne se fait pas trop vite par l'illusion.
+[02:36:37] Donc, si vraiment la perception prédisait notre action, on devrait avoir une différence de création.
+[02:36:48] Donc, j'ai eu une démonstration de cette création-là, et ça a été reproduit avec l'illusion Ponzo, tu sais, les deux traits horizontaux
+[02:37:04] Il y en a un qui apparaît plus large, je pense qu'il y a des règles de ce qu'on va faire.
+[02:37:10] Est-ce que c'est clair?
+[02:37:12] Oui?
+[02:37:12] Je vais mettre une photo en vidéo.
+[02:37:15] La même chose, on va voir si c'est possible.
+[02:37:20] La prédiction, perception, cognition, action, n'est pas possible dans cette étude-là.
+[02:37:27] Ça a donné lieu après plein d'études de la psychophysique.
+[02:37:34] et dans le cerveau, ce qu'il faut essayer de faire, parce que moi comme neuropsychologue, j'aime beaucoup les structures cérébrales, on n'a pas besoin de faire, on est une psychologue, on est une psychiste, on essaie d'avoir des modèles, et dans le cerveau, vous avez différents modèles,
+[02:38:03] du poids visuel, et il y en a une qui s'occupe sur l'action dans l'espace, ce qu'on appelle le weird art, qui est plus dorsal dans le système visuel, qui est plus mental, et le fait que ce ne soit pas tout à fait les mêmes structures, on peut avoir cette autre dissociation qui permet même un petit pas.
+[02:38:26] Quand on peut le faire, on va le faire.
+[02:38:29] Encore, il y a quand même un ressortissant de logique.
+[02:38:34] Mais ça amène d'autres défis, parce que puisqu'ils interagissent, qu'ils se déclarent, qu'ils se parlent ensemble, qu'il n'y a plus une représentation, peut-être, ou plusieurs représentations qui soient interprétées.
+[02:38:49] Juste pour vous dire que ça fait beaucoup de bruit, ces travaux-là, mais vous verrez,
+[02:38:56] Ça dépend des paramètres qu'on utilise.
+[02:38:58] On peut avoir l'appréhension avec la bonne distance et la force.
+[02:39:03] C'est pas nécessairement pareil.
+[02:39:04] On peut être compris un peu par la perception de l'action.
+[02:39:10] C'est ça.
+[02:39:11] La grande question, c'est un peu contraire.
+[02:39:16] C'est, est-ce que l'action ou la cognition motrice peut moduler la perception?
+[02:39:23] Donc vous avez une idée que oui, parce que c'est démontré que la déficacité n'est pas suffisante.
+[02:39:32] Et l'une des études, bon moi mon background est en vision, donc j'aime beaucoup les études dans ce domaine-là.
+[02:39:44] Mais ça c'est un design, c'est un paradigme qui a été repris par d'autres, mais ça vaut la peine que je vous l'explique.
+[02:39:54] C'est pas compliqué, c'est juste comme ça.
+[02:39:58] Donc on demande à la personne, ici, le point de fixation, vous regardez le point, et là vous allez avoir un stimulus qui va apparaître à gauche ou à droite.
+[02:40:10] et là les lettres qui sont là c'est Red, Green, Blue, fait que chaque position potentielle d'apparition du stimulus à venir peut être à ses emplois.
+[02:40:23] Donc ça, on fixe ici.
+[02:40:25] Ensuite, il y a un petit triangle qui vous dit si ça va apparaître à droite ou à gauche.
+[02:40:30] Et la couleur du triangle vous dit où ça va apparaître.
+[02:40:34] Donc ici, c'est un triangle bleu.
+[02:40:36] Donc on sait que la cible va apparaître ici.
+[02:40:40] Donc, le participant, on lui dit qu'il va falloir qu'il fasse une saccade à l'endroit désigné, mais de retenir sa saccade, de ne pas la faire tout de suite.
+[02:40:55] Donc, de retenir sa saccade pendant une seconde.
+[02:40:58] Mais pendant qu'il retient sa saccade,
+[02:41:01] ici, donc c'est la édificité, 60 millisecondes, c'est qu'on va présenter le stimulus en question.
+[02:41:10] C'est ambigu, c'est des E, des 5, des 2, donc celui à discriminer ici, c'est le 2.
+[02:41:17] Et ensuite, il va faire sa saccade, puis voilà.
+[02:41:24] Et donc, ce que l'étude a démontré, c'est que
+[02:41:29] avant même les 60 millisecondes, on n'a pas le temps, ça prend au moins 200 millisecondes, 45 ans, pour avoir l'objet capable.
+[02:41:36] Donc les yeux sont toujours fixes, on présente le stimulus et la discrimination visuelle va être meilleure pendant...
+[02:41:49] cette période-là, c'est-à-dire quand on a l'intention de faire une action vers la cible, même si on n'a pas fait cette action-là.
+[02:41:59] Vous avouez que la construction visuospatiale et la préparation motrice y sont liées?
+[02:42:04] Oui, absolument.
+[02:42:05] Donc, ça peut être une question d'attention, effectivement, ici, parce qu'en général, dans la vie de tous les jours,
+[02:42:11] Quand on bouge les yeux, on veut fixer un objet qui nous intéresse, il faut que l'on dise son attention juste là.
+[02:42:19] Là, on lui dit, porte attention à cette position-là.
+[02:42:23] Il le fait, mais avant même qu'il le regarde, c'est déploiement attentionnel.
+[02:42:29] Ou moteur, parce que j'ai d'autres expériences qui m'ont enseigné de contrôler ça, de faire en double tâche.
+[02:42:36] d'attirer l'attention ailleurs qu'il y a juste une conception motrice.
+[02:42:43] Ça peut faciliter l'attention motrice.
+[02:42:44] Ça, c'est une autre étude.
+[02:42:45] En fait, si on fait cette tâche-là et qu'on mesure l'activité du cerveau, on va avoir une activation dans le circuit attentionnel, donc pariétal, frontale.
+[02:42:59] et ici avec une technique de stimulation transcrânienne électrique, donc une technique qui consiste à désactiver une région cérébrale
+[02:43:10] On stimule une région qu'on appelle le fronton eye field, qui est comme impliqué, c'est comme dans une région qui est impliquée dans les... qui relie les réseaux attentionnels, les réseaux moteurs d'une saccade, le cortex visuel.
+[02:43:27] On a tout cet effet de facilitation, d'intention motrice sur la perception.
+[02:43:34] Donc c'est une région qui...
+[02:43:35] physique dans ce processus-là.
+[02:43:37] C'est une espèce d'art de processus perceptif du processus.
+[02:43:48] Donc ça c'est un exemple.
+[02:43:52] Un autre exemple, c'est plusieurs études, contrairement à ce que je viens de vous montrer, on ne connaît vraiment pas le mécanisme de ça, mais Denis profite, en Virginie, il a travaillé pendant des années là-dessus, sur...
+[02:44:10] la performance motrice puis la perception de la taille des objets.
+[02:44:15] Et ici, c'est un article qui montre que au baseball, le meilleur qu'on est, donc votre performance à taper les balles quand vous êtes au bâton, si après cette performance-là, avec un bon joueur, on lui présente des différentes tailles de stimuli qui s'apparentent à la taille d'une
+[02:44:39] d'une balle de baseball, un petit peu plus grande, un petit peu plus petite.
+[02:44:42] Il va avoir tendance à surestimer, en fait, c'était quoi la balle?
+[02:44:46] Il va avoir tendance à la surestimer.
+[02:44:50] Et c'est une anecdote, mais il est un bon frappeur, il a tendance à dire qu'il voit la balle beaucoup plus franche.
+[02:44:59] Et ici, on a la même chose au golf.
+[02:45:02] Donc, si vous êtes bon au vol, donc vous avez besoin de moins de coups pour faire des coups, vous allez avoir tendance à percevoir la tête.
+[02:45:19] Oui, j'avais une question.
+[02:45:20] Juste pour être sûr que... Est-ce que c'était quelque chose qui se... Excusez-moi.
+[02:45:26] C'est un apprentissage qui est considéré...
+[02:45:30] à long terme, ou est-ce que c'était vraiment après la gagne?
+[02:45:34] C'était après la gagne.
+[02:45:36] Donc c'est après la stériorise, après la gagne.
+[02:45:39] Mais ils n'ont pas fait d'études pour voir si ça persistait?
+[02:45:44] Non, à mon avis, ça ne persiste pas.
+[02:45:47] Mais en général, ce qu'il faut peut-être dire d'ici, c'est que ça persiste.
+[02:45:53] Mais je ne sais pas, ils l'ont peut-être fait.
+[02:45:56] Puis ici, c'est difficile de savoir.
+[02:45:58] C'est une corrélation, mais est-ce que tu vois la balle plus grosse, donc c'est plus facile de la frapper ?
+[02:46:06] ou parce que tu l'as frappé après, parce que tu es bon, tu es biaisé.
+[02:46:17] C'est juste pour vous dire qu'il y avait d'autres études, ils ont fait plein d'études avec des joueurs de tennis.
+[02:46:23] Dans l'article que vous avez proposé, il en parlait que les meilleurs dans le domaine, peu importe le sport, mettons même au filet, ils trouvaient que le filet était plus petit, plus bas.
+[02:46:32] C'est des bons tennis.
+[02:46:33] Oui, c'est ça.
+[02:46:34] Exactement.
+[02:46:35] Donc, une relation complexe.
+[02:46:38] Une relation complexe, mais c'est juste pour vous dire que ce n'est pas indépendant.
+[02:46:43] Donc, ils perçoivent l'obstacle comme étant moins grand.
+[02:46:45] Oui.
+[02:46:46] C'est quand même plus gros, le filet est plus bas.
+[02:46:49] Mais il y a une autre étude montée, par exemple, évaluée la difficulté de monter une pente.
+[02:46:59] évaluer l'angle de la pente.
+[02:47:01] Évidemment, si on change les conditions et que c'est plus difficile, vous allez avoir la tendance à se sur-intituler.
+[02:47:16] Non, ce n'est pas la même chose ici, c'est l'inverse.
+[02:47:19] En fait, ici, plus on est bon, plus on est d'ici.
+[02:47:24] Non, excuse, c'est le contraire, c'est justement.
+[02:47:26] Plus on est bon ici, c'est le moins de coups que ça prend pour mettre ta balle dans le...
+[02:47:33] C'est juste une performance moyenne au bar.
+[02:47:37] Il y a peut-être une dimension sociale aussi.
+[02:47:41] Oui, c'est clair.
+[02:47:43] Quand je jouais au tennis, j'avais un instructeur, un entraîneur,
+[02:47:46] et il me disait alors c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'était ça, ça, puis c'
+[02:48:15] et de la perception.
+[02:48:17] Après, il y a des études beaucoup plus expérimentales, sérieuses quand même, je ne vais pas rentrer dans les détails, mais là, tout est contrôlé, on présente sur l'écran la taille
+[02:48:28] une petite barre et si vous avez l'intention de la pointer ou de la planterie vous allez avoir un biais sur sa perception donc ça peut être juste dans l'intention ou dans l'exécution on a manipulé les deux ici
+[02:48:46] Dans l'article de revue qui est suggestion à lire, c'est une revue sur toutes ces études-là, il y en a mille autres, et il y a clairement un couplage entre l'action, l'intention même,
+[02:49:05] de l'action et la perception subséquente, pas juste de la taille, de la valve, ou du tour de golf, ou de la longueur, ici ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être sur l'orientation, ça peut être
+[02:49:23] qui est Bosco, ses principales travaux là-dessus sur l'influence et l'action sur la perception.
+[02:49:35] Donc, ça peut vous aider un petit peu à mieux comprendre comment la perception, l'action partage, probablement des représentations communes.
+[02:49:47] Est-ce que c'est une représentation ou c'est plusieurs ?
+[02:49:50] qui se parlent ensemble, qui sont ouvertes, tout ce qu'on dit là-dessus, plutôt que ces pensières-là.
+[02:50:00] Donc ça, c'est le décompte pour le cours d'aujourd'hui.
+[02:50:07] C'est que la conception classique est dépassée.
+[02:50:11] Il faut vraiment penser à une relation bidirectionnelle
+[02:50:18] et ça, si on a ce framework-là, ce cadre théorique-là, ça va ouvrir en fait des modèles comme la cognition incarnée, comme un modèle prédictif, plein de choses.
+[02:50:33] Ça va faire appel davantage à des modèles directionnels.
+[02:50:38] Peux-tu m'informer là-dessus?
+[02:50:42] Maintenant que j'entends souvent
+[02:50:44] et j'ai pas lu exactement précisément là-dessus, on dit que ce qui descend vers la perception, jusqu'au top-down, comme ça, c'est qu'il y a dix fois plus d'influences, de neurones qui descendent que de neurones qui montent, ça montrerait qu'il y a beaucoup plus d'informatisme, d'influence centrale vers la téléphimie qu'à l'inverse.
+[02:51:06] Absolument, en fait, j'en parlais un petit peu, parce que c'est la première fois qu'on donne le cours, et que mes diapos des autres cours sont encore complètement finis,
+[02:51:13] Quand je vais parler de l'information, je parle d'une diapo, mais dans les connexions feed-forward versus feedback, effectivement, il y a beaucoup plus de feedback.
+[02:51:28] Et ça va dans ce sens-là.
+[02:51:32] Oui, exactement.
+[02:51:34] J'avais même des modèles, je n'avais pas pensé d'en parler, mais...
+[02:51:41] Peut-être que j'en parlais, si j'ai mis la place dans le cours.
+[02:51:47] Un modèle, donc le système visuel, c'est celui qui est le plus connu, celui que je connais le plus, mais c'est celui qui est le plus connu dans le plan d'information.
+[02:51:57] Et on est dans un modèle classique, c'est codage vétinien, c'est envoyer l'air optique, un noyau, un relais dans le thalamus, un cortex visuel ouvert, c'est envoyé dans différentes voies.
+[02:52:10] dans le cortex.
+[02:52:12] Et il y a un modèle qui est vieux, qui est arrivé à point 10, mais on n'en parle pas beaucoup, mais qui s'appelle la hiérarchie visuelle inversée.
+[02:52:25] On part de la région frontale, et là, ça va aller complètement dans le modèle, je ne vais pas vous en parler, c'est que ce qui vient en premier, ce n'est pas l'information étienne qui s'envoie sur nous,
+[02:52:39] C'est ce que vous vous attendez à.
+[02:52:41] Et là, vous jouez...
+[02:52:43] Il y a un modèle... Mon équipe, je dirais, est bien, mais... Et, au fond, c'est vraiment dans le sens où il y a plus de feedback.
+[02:52:52] Donc...
+[02:53:06] et de l'enseignement.
+[02:53:12] et de l'intelligence artificielle, l'intelligence artificielle, l'intelligence artificielle, l'intelligence artificielle, l'intelligence
+[02:53:36] et de la compréhension des émotions, la compréhension des émotions, la compréhension des émotions
+[02:53:59] Je vais essayer de voir s'il y a un autre local qui est plus adéquat.
+[02:54:07] Si c'est le cas, je vais envoyer un message à tout le monde via Moodle.
+[02:54:12] Sinon, on se revoit.
+[02:54:14] Merci.
+[02:54:14] Merci.
+[02:54:15] Merci.
+[02:54:24] Sous-titrage ST' 501

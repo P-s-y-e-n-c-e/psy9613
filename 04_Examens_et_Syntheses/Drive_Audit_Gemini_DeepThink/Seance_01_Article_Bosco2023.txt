@@ -1,0 +1,1714 @@
+
+
+=== PAGE 1 ===
+
+TYPE Review
+PUBLISHED 02 May 2023
+DOI 10.3389/fnsys.2023.1145643
+OPEN ACCESS
+EDITED BY
+Preston E. Garraghty,
+Indiana University Bloomington, United States
+REVIEWED BY
+Yu Liu,
+University of Minnesota Medical School,
+United States
+Guido Marco Cicchini,
+National Research Council (CNR), Italy
+*CORRESPONDENCE
+Annalisa Bosco
+annalisa.bosco2@unibo.it
+RECEIVED 16 January 2023
+ACCEPTED 10 April 2023
+PUBLISHED 02 May 2023
+CITATION
+Bosco A, Sanz Diez P, Filippini M and Fattori P
+(2023) The inﬂuence of action on perception
+spans diﬀerent eﬀectors.
+Front. Syst. Neurosci. 17:1145643.
+doi: 10.3389/fnsys.2023.1145643
+COPYRIGHT
+© 2023 Bosco, Sanz Diez, Filippini and Fattori.
+This is an open-access article distributed under
+the terms of the Creative Commons Attribution
+License (CC BY). The use, distribution or
+reproduction in other forums is permitted,
+provided the original author(s) and the
+copyright owner(s) are credited and that the
+original publication in this journal is cited, in
+accordance with accepted academic practice.
+No use, distribution or reproduction is
+permitted which does not comply with these
+terms.
+The inﬂuence of action on
+perception spans diﬀerent
+eﬀectors
+Annalisa Bosco1,2*, Pablo Sanz Diez3,4, Matteo Filippini1 and
+Patrizia Fattori1,2
+1Department of Biomedical and Neuromotor Sciences, University of Bologna, Bologna, Italy, 2Alma
+Mater Research Institute for Human-Centered Artiﬁcial Intelligence (Alma Human AI), University of
+Bologna, Bologna, Italy, 3Carl Zeiss Vision International GmbH, Aalen, Germany, 4Institute for
+Ophthalmic Research, Eberhard Karls University Tüebingen, Tüebingen, Germany
+Perception and action are fundamental processes that characterize our life and our
+possibility to modify the world around us. Several pieces of evidence have shown
+an intimate and reciprocal interaction between perception and action, leading us
+to believe that these processes rely on a common set of representations. The
+present review focuses on one particular aspect of this interaction: the inﬂuence
+of action on perception from a motor eﬀector perspective during two phases,
+action planning and the phase following execution of the action. The movements
+performed by eyes, hands, and legs have a diﬀerent impact on object and space
+perception; studies that use diﬀerent approaches and paradigms have formed an
+interesting general picture that demonstrates the existence of an action eﬀect on
+perception, before as well as after its execution. Although the mechanisms of this
+eﬀect are still being debated, diﬀerent studies have demonstrated that most of the
+time this eﬀect pragmatically shapes and primes perception of relevant features
+of the object or environment which calls for action; at other times it improves our
+perception through motor experience and learning. Finally, a future perspective is
+provided, in which we suggest that these mechanisms can be exploited to increase
+trust in artiﬁcial intelligence systems that are able to interact with humans.
+KEYWORDS
+object properties, reaching, grasping, eye movements, walking
+Introduction
+At the basis of a successful behavior there is the interplay between perception and
+action. Typically, perception informs the action mechanism regarding the features of the
+environment and this mechanism is responsible for changes in the environment. If, on
+the one hand, it is doubtless that perception inﬂuences the action, the inﬂuence of action
+on perception cannot be taken for granted to the same extent. Starting from such a
+consideration, this review aims to examine the inﬂuence of action on visual perception of
+diﬀerent properties of objects (i.e., size, orientation, and location) focusing on the actions
+performed by diﬀerent motor eﬀectors such as the eye, the hand, and the leg. Since two
+phases can be distinguished when looking at the inﬂuence of action on perception, namely
+planning and execution, in the following sections we provide a separate overview of some of
+the studies that explore the eﬀect of action planning on the perception of the object/stimulus,
+and of those that examine action execution and its eﬀect on perception.
+Frontiers in Systems Neuroscience
+01
+frontiersin.org
+
+
+=== PAGE 2 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+The eﬀect of action planning on
+perception
+As perceivers, we receive, on a daily basis, a wide variety
+of information concerning the features of the surrounding
+environment. As active players, we constantly explore this
+environment based on the sensory processing of those stimuli
+related to our goals/intentions and subsequent actions. For
+example, everyday tasks such as grasping a cup or the handle of a
+frying pan are highly precise actions that we perform automatically;
+however, these involve a complex sensorimotor approach, many
+aspects of which are still unknown.
+An
+action,
+an
+intended
+and
+targeted
+movement,
+is
+distinguished by several sequential sections that organize its
+processing and work in close coordination with perception
+(Hommel et al., 2016). Within this processing (assessment of
+environmental information, location in three-dimensional space,
+and selection, integration, and initiation of the action), action
+planning represents a fundamental component (Hommel et al.,
+2016; Mattar and Lengyel, 2022).
+Action planning is speciﬁed as a process which considers
+the execution of actions based on the environment and expected
+outcomes (Sutton and Barto, 1998; Mattar and Lengyel, 2022).
+Action planning could be referred to as the period between
+the decision phase and the initial impulse phase. During the
+action planning phase, the player generates an action goal (based
+on the temporal and spatial properties of the environment)
+which is then transferred to the motor system to achieve that
+speciﬁc purpose. That is, ﬁrst the information is organized and
+subsequently integrated into a plan. This particularity provides
+plasticity and favors the adaptation to possible changes to the input
+information and goals (Mattar and Lengyel, 2022). For example,
+when grasping an object, it can be observed how the hand adjusts
+to the intrinsic properties of that object (Jeannerod, 1981), which
+hints at the relevance of action planning in the interaction between
+the environment and the ﬁnal goal. In fact, input information
+is processed in parallel by pathways acting in a shared action-
+perception framework (Prinz, 1990; Hommel et al., 2001), within
+which planning itself has been observed to inﬂuence (Hommel
+et al., 2001, 2016; Witt, 2018).
+Notwithstanding the considerable scientiﬁc literature on how
+planning contributes to cognitive processes, the current ﬁndings
+merely give us a glimpse of the long road ahead. Here, in the
+following sections, we outline the most important behavioral
+studies regarding the impact of action planning on perception.
+The eye domain
+Our visual system captures primordial information which
+guides our actions. Once the visual environment and objects
+of interest are deﬁned, the visuo-spatial information is then
+transferred in order to plan, execute, and control those goal-
+directed actions (Hayhoe, 2017). The impact of vision on motor
+actions has always been a topic of great scientiﬁc interest (Prablanc
+et al., 1979; Desmurget et al., 1998; Land, 2006, 2009). Several
+decades ago, groundbreaking studies were already describing how
+vision improves goal-directed movement accuracy (Woodworth,
+1899; Bernstein, 1967). Since then, subsequent studies have sought
+to investigate how vision inﬂuences planning, execution, and
+control of movements.
+Visual information greatly contributes to the action planning
+phase. During planning, the presence of visual feedback regarding
+the limb is paramount. For example, motor actions are more
+accurate when visual feedback is provided during action planning,
+regardless of whether the limb is visible or not during the action
+(Prablanc et al., 1979; Conti and Beaubaton, 1980; Pelisson et al.,
+1986; Velay and Beaubaton, 1986; Elliott et al., 1991, 2014; Rossetti
+et al., 1994; Desmurget et al., 1995, 1997; Coello and Grealy, 1997;
+Bagesteiro et al., 2006; Bourdin et al., 2006; Sarlegna and Sainburg,
+2009).
+Indeed, vision plays a key role in action planning since
+movements are apparently planned as vectors based on the extrinsic
+coordinates of the visual environment (Morasso, 1981; Flanagan
+and Rao, 1995; Wolpert et al., 1995; Sarlegna and Sainburg,
+2009). Once visual information has been extracted, planning
+should consider those properties that will shape further actions.
+An example may be that of driving a car and approaching an
+intersection. Our visual system extracts information regarding
+the location and movement of other cars, pedestrians, and traﬃc
+signals at the intersection. Based on the extrinsic coordinates of
+the visual environment, during action planning we determine
+the appropriate vectors for our movements, such as accelerating,
+braking, or turning, that allow us to navigate the intersection safely
+and eﬃciently.
+In a common framework, two stages within action planning
+have been suggested: the primary stage, in which vision is
+fundamental to determine the visuo-spatial attributes (target,
+limbs, and environment), and the secondary stage, in which the
+primary input is transformed into motor commands to generate
+the action (Sarlegna and Sainburg, 2009). Therefore, in a normal
+context, during action planning, vision provides the relevant
+information which facilitates the success of an action.
+Acquiring visuo-spatial information would not be possible
+without eye movements. If a target falls in the peripheral visual
+ﬁeld, eye movements assist in conveying the exact location of the
+target. Suppose we want to reach for an object. Considering the
+retinal spatial resolution, when a target of interest to be reached is
+identiﬁed, the region of highest retinal resolution should be focused
+on that target (Liversedge and Findlay, 2000; Land, 2006). To this
+end, before the reaching action begins, the eyes perform a saccadic
+movement toward the object and then ﬁxate it constantly until it
+is reached by the hand. Within this brief scenario, the relevance of
+eye movements, which continuously support the coupling of vision
+and action, can be appreciated (Land, 2006, 2009; Hayhoe, 2017; de
+Brouwer et al., 2021).
+Research into the interaction between the visual and motor
+systems has shown how the eyes constantly support and guide
+our actions in multiple dynamic tasks (Angel et al., 1970; Biguer
+et al., 1982; Pelisson et al., 1986; Land, 1992; Land et al., 1999;
+Neggers and Bekkering, 1999, 2000, 2001, 2002; Johansson et al.,
+2001; Patla and Vickers, 2003). For example, Land et al. (1999)
+demonstrated that eye movements are directed to those objects
+Frontiers in Systems Neuroscience
+02
+frontiersin.org
+
+
+=== PAGE 3 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+involved in our daily actions. In Neggers and Bekkering (1999,
+2000, 2001, 2002) studies, a mechanism of gaze anchoring during
+hand actions was elegantly demonstrated. They observed that
+during reaching movements observers did not make saccadic
+movements toward another target until the hand had arrived at the
+target of interest. Similar ﬁndings were reported by Johansson et al.
+(2001). They instructed participants to reach and grasp a bar which
+they subsequently had to move while avoiding obstacles and ﬁnally
+attach to a switch. They reported that gaze ﬁxation was focused on
+those points that were critical to the action. That is, eye movements
+continuously guided the action to grasp, navigate, and attach the
+object (Johansson et al., 2001). In other studies, it was shown
+that ﬁxation patterns diﬀer when an object is grasped or viewed
+passively (Vishwanath and Kowler, 2003; Brouwer et al., 2009).
+Both studies showed that during visualization, ﬁxation patterns
+were focused on the object’s center of gravity, whereas during
+grasping, ﬁxation was aﬀected by the contact zone of the index
+and thumb digits. Interestingly, Brouwer et al. (2009) observed
+that saccadic reaction times were slower in the grasping task as
+compared to the visualization task. This outcome reﬂects that the
+onset of eye movement was dependent on action planning, i.e.,
+in those conditions in which the eye and hand participated in the
+same process.
+The eye reaction time latencies relative to the action have
+already been reported in several studies (Bekkering et al., 1994,
+1995; Lünenburger et al., 2000; Pelz et al., 2001; Hayhoe et al., 2003).
+Bekkering et al. (1994) measured eye and hand motor response
+latencies using single- and dual-task methodologies. Like Brouwer
+et al. (2009), and as can be appreciated in Figure 1, saccade reaction
+time latencies were highest in the dual approach, i.e., when both the
+eye and hand simultaneously moved toward the visual target. Hand
+latencies were similar in both the single and dual tasks (Bekkering
+et al., 1994). Conversely, in another study, lower saccadic reaction
+time latencies were reported when the eye and hand moved
+simultaneously toward a common target (Lünenburger et al., 2000).
+Perhaps the type of planned action (pointing, reaching, grasping,
+etc.) is decisive within this interference eﬀect. Longer processing
+times may be required according to the type of action planned, and,
+thus, eye reaction times could be aﬀected diﬀerently (Brouwer et al.,
+2009). These ﬁndings demonstrate that these motor systems (eye-
+limb) are not independent from each other, and that they share
+synergistic processes when targeted to the same goal.
+Recent studies have revealed how eye movements support
+selection and action planning toward a goal.
+Particularly,
+exploration of the eye-limb relationship in naturalistic tasks has
+revealed how eye movements provide continuous information
+from the visual environment, generating a context of intrinsic
+properties and spatial coordinates during action planning to
+eﬀectively guide future movements (Zelinsky et al., 1997; Land
+et al., 1999; Pelz et al., 2001; Brouwer et al., 2009). In tasks involving
+jar-opening or hand-washing it has been observed that reaching
+actions are preceded by anticipatory ﬁxations toward the target of
+interest (Pelz et al., 2001; Hayhoe et al., 2003). These ﬁxations occur
+during action planning and help the observer to obtain decisive
+spatial information to assist in the future action (Hayhoe et al.,
+2003). Other activities, such as walking or driving over diﬃcult
+and tortuous surfaces, have shown how visuo-spatial information
+derived from eye movements is primordial during action planning
+FIGURE 1
+Averaged latencies of eye and hand responses, measured in
+milliseconds, under both experimental conditions: single- and
+dual-task. Modiﬁed from Bekkering et al. (1994).
+(Land and Lee, 1994; Patla and Vickers, 2003; Land, 2006). For
+example, while walking, gaze ﬁxation anticipates action by 0.8–1.1 s
+on average (Patla and Vickers, 2003; Land, 2006). This suggests that
+during planning, the visual system acts as an anticipatory system,
+in a feedforward manner, for the execution of the action.
+Although previous studies focused on the role of the eyes as
+support in the planning of actions performed by other motor
+eﬀectors, multiple studies have extensively examined the impact
+of eye motor planning on visual perception within the oculomotor
+system. These investigations have shown that spatial perception is
+enhanced at the location where the eye movement is intended to
+go, shortly before its execution (Hoﬀman and Subramaniam, 1995;
+Deubel and Schneider, 1996; Neggers et al., 2007). For example,
+research has shown that saccade target selection is inﬂuenced by
+object recognition (Deubel and Schneider, 1996), and that visual
+attention can inﬂuence the planning and execution of saccadic eye
+movements (Hoﬀman and Subramaniam, 1995). Additionally, a
+coupling between visuospatial attention and eye movements has
+been observed (Neggers et al., 2007), with attention often following
+the gaze. This coupling can be disrupted when transcranial
+magnetic stimulation is applied to the frontal eye ﬁelds, suggesting a
+causal relationship between attention and eye movements (Neggers
+et al., 2007). These outcomes may imply that the process of
+eye motor planning can have a signiﬁcant impact on perception.
+Although the exact mechanisms underpinning this impact are not
+yet fully known, it is believed that the coordinated activity of
+multiple brain regions and systems, including the saccadic system,
+vestibular system, and attentional processes, is at play.
+The hand domain
+Over the past few decades, the scientiﬁc literature has
+provided compelling evidence as to how perception is biased by
+the planning of arm movements, such as reaching and grasping
+Frontiers in Systems Neuroscience
+03
+frontiersin.org
+
+
+=== PAGE 4 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+(Musseler and Hommel, 1997; Prinz, 1997; Craighero et al., 1999;
+Wohlschläger, 2000; Hommel et al., 2001; Knoblich and Flach,
+2001; Wühr and Müsseler, 2001; Hamilton et al., 2004; Kunde
+and Wuhr, 2004; Fagioli et al., 2007; Wykowska et al., 2009, 2011;
+Kirsch et al., 2012; Kirsch and Kunde, 2013; Kirsch, 2015). From
+the perceiver’s point of view, it is intriguing to consider the fact
+that when planning a reaching or grasping movement toward an
+object, the perception of the object is somehow inﬂuenced. For
+example, when reaching for a cup of coﬀee, the perceiver’s visual
+system considers the cup’s location and orientation relative to the
+perceiver’s body. The perceived properties of the cup may also be
+inﬂuenced by the planned action, as the perceiver’s motor system
+may need to make adjustments based on these properties in order
+to successfully grasp the cup. This suggests that the motor system
+is not only involved in executing actions, but also in shaping
+perception based on the perceiver’s intended actions. In fact,
+multiple perceptual aspects, such as orientation, size, luminance,
+location, motion, among many others, have been reported as target
+features that are directly inﬂuenced by action planning (Musseler
+and Hommel, 1997; Craighero et al., 1999; Wohlschläger, 2000;
+Zwickel et al., 2007; Lindemann and Bekkering, 2009; Kirsch et al.,
+2012). For example, studies by Kirsch have shown how planning
+itself interferes with distance perception and, therefore, with target
+spatial location (Kirsch et al., 2012; Kirsch and Kunde, 2013; Kirsch,
+2015).
+This action(planning)-perception interaction is dependent on
+whether the goal is related or not to the action. When there
+is a direct relationship between goal and action, perception is
+facilitated by the planning of the action, whereas when the two are
+independent, action planning interferes with perception (Hommel
+et al., 2016).
+Several benchmark studies carried out in the 1990s and
+2000s demonstrated various scenarios exhibiting facilitation and
+interference. Based on a set of ﬁve experiments, Musseler and
+Hommel (1997) reported the impact of action planning on the
+direction perception of a visual stimulus. Direction perception
+(right or left) was inﬂuenced by action planning concurrence (right
+or left button press). Speciﬁcally, identifying the direction of a
+right-pointing stimulus was more costly after planning a right
+button press (Musseler and Hommel, 1997). Given the common
+code (Hommel et al., 2001), action planning toward a concrete
+direction led to an interference scenario, i.e., the share-code
+weighting favored action over perception (Musseler and Hommel,
+1997; Hommel et al., 2016).
+Subsequent studies corroborated the interaction between
+perception and action planning processes. In Wohlschläger (2000)
+study, observers had to report the perceived motion direction of
+projected discs while turning a knob in a designated direction.
+Hand motion direction biased subjects’ motion perception. Under
+a similar experimental approach to that of Craighero et al.
+(1999), Lindemann and Bekkering (2009) instructed volunteers to
+reach, grasp, and subsequently rotate an x-shaped manipulandum
+following the visual go signal’s onset. Here, a tilted bar (-45◦
+or +45◦) served as the visual go signal. Volunteers detected the
+onset of the go signal faster in the congruent conditions, in
+which the go signal, and action planning presented the same
+direction (Lindemann and Bekkering, 2009). These ﬁndings imply
+that perception was facilitated in the direction in which the
+action had been previously planned. In contrast, like Musseler and
+Hommel (1997), Zwickel et al. (2007) reported action (planning)-
+perception coupling but in an interference scenario. In their
+study, reaction times were longer when movement deviations
+agreed with the action planning direction (Zwickel et al., 2007).
+Interference situations have also been reported by other authors
+(Schubö et al., 2001; Hamilton et al., 2004; Zwickel et al.,
+2010), indicating that the action (planning)-perception coupling is
+dependent on whether the perceived target is linked or not to the
+planned action.
+Recent research has proven the relevance of the type of
+action planning in how perception is biased (Bekkering and
+Neggers, 2002; Fagioli et al., 2007; Symes et al., 2008; Wykowska
+et al., 2009, 2011; Gutteling et al., 2011). Bekkering and Neggers
+(2002) instructed observers to point at or grasp an object with
+a speciﬁc orientation and color. The authors found that while
+color errors were identical in both approaches, the number of
+orientation errors was lower in the grasping scenario (Bekkering
+and Neggers, 2002). Gutteling et al. (2011) asked participants to
+perform a grasping or pointing movement simultaneously with
+an orientation or luminance discrimination task (see Figure 2).
+Orientation sensitivity increased when planning a grasping action,
+as opposed to a pointing action. Size, location, and luminance
+have also been described as being perceptually dependent attributes
+of the type of action planning (Fagioli et al., 2007; Wykowska
+et al., 2009, 2011; Kirsch et al., 2012; Wykowska and Schubö,
+2012; Kirsch and Kunde, 2013). Fagioli et al. (2007) revealed that
+planning a grasping action improved the ability to detect deviations
+in object size, while planning a reaching action facilitated the
+detection of location deviations. Studies by Wykowska et al. (2009)
+and Wykowska and Schubö (2012) corroborated the ﬁnding that
+planning to grasp improves size perception, while planning to reach
+enhances luminance perception.
+All the above-mentioned scientiﬁc evidence seems to support
+the common coupling of action(planning)-perception. Planning an
+action primes those perceptual dimensions that can enhance one’s
+own action (Hommel et al., 2001; Wykowska et al., 2009).
+The majority of studies cited have shown that the motor system
+dynamically modulates the incoming perceptual information.
+However, these modulations have been observed when the
+perceptual
+information
+is
+intermixed
+with
+attentional
+and
+decisional mechanisms because they are strictly related to the
+motor response (i.e., Gutteling et al., 2011). Relevant literature
+was dedicated to understanding the temporal tuning of incoming
+perceptual information at very early cortical stages. To do this,
+diﬀerent studies measured the contrast sensitivity of a brief visual
+stimulus that was not correlated with the action to be performed,
+and that was presented at diﬀerent times during motor planning
+and execution. These studies used contrast sensitivity because it
+represents and reﬂects the activity of the primary visual cortex,
+since it has been demonstrated that the change of contrast visibility
+requires a modulation at this early cortical level (Boynton et al.,
+1999). Furthermore, it has recently been demonstrated that both
+sensory and motor processes are regulated by a rhythmic process
+that reﬂects the oscillations of neuronal excitability (Buzsáki
+and Draguhn, 2004; Thut et al., 2012). Combining all these
+Frontiers in Systems Neuroscience
+04
+frontiersin.org
+
+
+=== PAGE 5 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 2
+Eﬀect of grasping and pointing planning on orientation and luminance detection. (A) Experimental approach. Experiments 1 and 2 used a similar
+stimulus display, which included a ﬁxation spot and two bars. Participants were instructed to execute an action after a go-cue signaled by the
+appearance of the ﬁrst bar. The second bar was either rotated slightly (Experiment 1) or diﬀered in luminance (Experiment 2) from the ﬁrst bar. (B) In
+Experiment 1, participants showed better orientation discrimination when planning a grasping action rather than when planning a pointing action. (C)
+Experiment 2 did not reveal any consistent change in luminance discrimination between grasping and pointing planning. Modiﬁed from Gutteling
+et al. (2011).
+pieces of evidence, Tomassini et al. (2015) evaluated whether
+the rhythmic oscillations of visual contrast sensitivity were also
+present when synchronizing the perceptual information with the
+onset of a reaching and grasping movement. They found that the
+oscillations in contrast sensitivity emerged around 500 ms before
+movement onset, during action planning, even if perception was
+not related to the motor task (see Figure 3). These ﬁndings were
+extended in an electroencephalographic (EEG) study, in which
+the same group demonstrated that motor planning is combined
+with perceptual neural oscillations (Tomassini et al., 2017). The
+perceptual “action-locked” oscillations were also observed when
+the movements were performed with the eyes (Benedetto and
+Morrone, 2017; Benedetto et al., 2020). In this study, the results
+showed that saccadic preparation and visual contrast sensitivity
+oscillations are coupled, suggesting a functional alignment of the
+saccade onset with the visual suppression (Benedetto and Morrone,
+2017).
+The leg domain
+The above-discussed research focuses on peripersonal space.
+However, it has been observed that the impact of action planning
+on perception can extend to the leg eﬀector domain, resulting
+in facilitation eﬀects on the perception of extrapersonal space.
+Several studies have shown that, when viewing objects in our
+extrapersonal space, we scale the perceived distance according to
+our intended motor action. For example, if we plan to walk a
+certain distance, we perceive the distance based on the amount
+of walking eﬀort needed to traverse it, while, if we intend to
+throw a ball, the perceived distance is based on the amount of
+throwing eﬀort required (Witt et al., 2004; Proﬃtt, 2006; Witt
+and Proﬃtt, 2008). The way we perceive our environment seems
+to be inﬂuenced by the speciﬁc actions we anticipate taking,
+with perception being adjusted based on an optimal cost-beneﬁt
+principle (Proﬃtt, 2006). Recently, Fini et al. (2014, 2015a,b)
+Frontiers in Systems Neuroscience
+05
+frontiersin.org
+
+
+=== PAGE 6 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 3
+Rhythmic oscillations of contrast sensitivity synchronized with hand movements. (A) Experimental setup of the motor and visual tasks. (B) Example of
+trial sequence. Visual noise and ﬁxation point were presented from the beginning of the trial to the end. At a random time from the start of the trial, a
+Gabor stimulus was displayed to the lower right or to the lower left of ﬁxation. (C) Time course of the orientation discrimination responses for each
+participant aligned with the onset of the hand movement. Modiﬁed from Tomassini et al. (2015).
+used a virtual paradigm to investigate the inﬂuence of anticipated
+actions on spatial perception. Participants were asked to judge
+the location of an object positioned at progressively increasing or
+decreasing distances from a reference frame. They noticed that
+participants perceived the target object to be closer to their own
+body when they intended to move toward it compared to when
+they had no intention of moving. This eﬀect was not observed
+when the target object was compared to another static object
+(Fini et al., 2015a). Additionally, studies have demonstrated that
+when leg actions such as walking or running are primed, the
+portion of extrapersonal space judged as near in other-based
+coordinates is signiﬁcantly expanded (Fini et al., 2017), together
+with an extension of peripersonal space during full-body actions
+such as walking compared to standing (Noel et al., 2015). These
+ﬁndings suggest that visual perception of the physical environment
+beyond our body is heavily inﬂuenced by our actions, intentions,
+and physical abilities. Apparently, the main way of exploring the
+extended environment seems to be through locomotion, as it is
+the only way to cover distances and access information from more
+distant locations in the extrapersonal space compared to near
+extrapersonal locations, where information can be extracted from
+diﬀerent sources (di Marco et al., 2019).
+The eﬀect of action execution on
+perception
+Human ability to perform actions impacts the visual perception
+of objects/targets. This represents the framework within which the
+inﬂuence of action execution on perception is typically explained.
+Frontiers in Systems Neuroscience
+06
+frontiersin.org
+
+
+=== PAGE 7 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 4
+Size perception modiﬁcation induced by saccadic adaptation. (A) Top row, Shortening adaptation condition. The ﬁxation point was presented at the
+start of the trial. After 1 s, a bar appeared, but participants had to continue to focus on the ﬁxation target. After a randomized time, an acoustic signal
+indicated the possibility of executing a saccade toward the bar. Then the bar was decreased in size by 30% of its length at the right border as soon as
+the saccade was detected. Bottom row, Lengthening adaptation phase. This condition was identical to the shortening adaptation condition, with the
+only diﬀerence being that the bar was increased in size by 30% during saccade execution. (B) Mean deviation of grip aperture from baseline in
+shortening adaptation (white column) and lengthening (black column) adaptation. The data were averaged across subjects and sizes. Error bars
+indicate SE. *p < 0.05, signiﬁcant deviations from baseline (modiﬁed from Bosco et al., 2015).
+The action-speciﬁc eﬀects indicate all the eﬀects generated from
+the ability to act on spatial perception (Proﬃtt, 2006, 2008). The
+ﬁrst study suggesting that spatial perception was inﬂuenced by the
+ability to perform an action was carried out by Bhalla and Proﬃtt
+(1999). They showed that the perception of hill slant was inﬂuenced
+by the physiological potential. In fact, if the energetic costs required
+to climb them increased, the hills were estimated to be steeper.
+Following this work, several researchers have focused and expanded
+this concept beyond the physiological potential; however, these
+studies focus on other aspects of action. For example, softball
+players who were good at hitting the ball estimated it as being bigger
+compared to others (Witt and Proﬃtt, 2005; Gray, 2013). Similarly,
+archers who had a better shot than others estimated the target as
+bigger (Lee et al., 2012). Parkour athletes judged walls as lower
+compared to non-parkour athletes (Taylor et al., 2011), and good
+tennis players judged the net as being lower (Witt and Sugovic,
+2010).
+Another study examining a diﬀerent branch of action-speciﬁc
+eﬀects analyzed the aﬀordance of the object, in other words, the
+possibility to act on or with an object (Gibson, 1979). Typically,
+the measurement of aﬀordance perception is carried out by
+assessing the point at which an action is perceived as barely
+possible. For example, some studies have explored the width of a
+doorway that is perceived as being just possible to pass through,
+or the height of a step at which the aﬀordance of stepping up
+is perceived (Warren, 1984; Mark, 1987; Warren and Whang,
+1987). Other examples are studies in which people with broader
+shoulders perceived doorways to be smaller compared to people
+with narrower shoulders (Stefanucci and Geuss, 2009), or studies
+in which a target is presented beyond the distance of the arm’s
+reach: the target is perceived as being closer when the participants
+use a reach-extending tool to reach the target and more distant
+when they reach without the tool (Witt et al., 2005; Witt and
+Proﬃtt, 2008; Witt, 2011; Davoli et al., 2012; Osiurak et al., 2012;
+Morgado et al., 2013). Given all these remarkable data, the next
+section focuses on the action-speciﬁc eﬀects on perception as a
+function of the speciﬁc eﬀector used, expanding the panorama to
+other investigation modes.
+The eye domain
+In the eye realm, the eﬀect of saccade execution on
+perception has been investigated through saccadic adaptation
+and perisaccadic mislocalization mechanisms. Saccadic adaptation
+allows researchers to study how saccade amplitudes change
+according to changes in the post-saccadic target shift. This change
+can be either parallel or orthogonal to the main direction of
+the saccade. In other words, it is well established that saccade
+amplitudes adapt when a small target is horizontally shifted
+during saccade execution to another position in relation to
+Frontiers in Systems Neuroscience
+07
+frontiersin.org
+
+
+=== PAGE 8 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 5
+Size perception modiﬁcation not induced by saccadic adaptation. (A) Top row, Shortening adaptation condition. The ﬁxation point was presented at
+the start of the trial. After 1 s, a bar appeared, but participants had to continue to focus on the ﬁxation target. After a randomized time, an acoustic
+signal indicated the possibility of executing a saccade toward the bar. Then the bar was symmetrically decreased in size by 30% of its length as soon
+as the saccade was detected. Bottom row, Lengthening adaptation. This was identical to the shortening adaptation, with the only diﬀerence being
+that the bar was symmetrically increased in size by 30% during the execution of the saccade. (B) Mean deviation of size perception (grip aperture)
+from baseline for the shortening (white column) and the lengthening (black column) adaptation trials. The data were averaged across participants
+and sizes. Details as in Figure 4 (modiﬁed from Bosco et al., 2020). *p < 0.05, signiﬁcance level.
+the initial one (McLaughlin, 1967; Miller et al., 1981; Deubel,
+1987; Watanabe et al., 2003; Hopp and Fuchs, 2004; Kojima
+et al., 2005; Ethier et al., 2008; Rahmouni and Madelain, 2019).
+Further studies investigated the possibility of the saccadic system
+sharing common coordinates with other domains. In fact, several
+researchers have demonstrated that the modiﬁcation of motor
+variables induced by saccade adaptation leads to a concomitant
+modiﬁcation of the perceived location of the target when the
+localization is executed by a pointing movement or by a perceptual
+report (Bahcall and Kowler, 1999; Awater et al., 2005; Bruno
+and Morrone, 2007; Collins et al., 2007; Zimmermann and
+Lappe, 2010; Garaas and Pomplun, 2011; Gremmler et al.,
+2014).
+A particular application of the saccadic adaptation paradigm
+was developed using spatially extended targets that, during the
+saccade, systematically changed their horizontal size (Bosco et al.,
+2015), and in reading studies (McConkie et al., 1989; Lavergne
+et al., 2010). In particular, the manipulation used in Bosco et al.
+(2015) inﬂuenced the target visual perception. The modiﬁcation
+of size perception occurred according to the direction of saccadic
+amplitude adaptation: if the saccade was adapted to a smaller
+amplitude, target size was perceived as being smaller; if the
+saccade adapted to a larger amplitude, target size was perceived
+as being larger (Bosco et al., 2015). The scheme of the adaptation
+phase paradigm and the consequent size perception modiﬁcation
+measured by grip aperture of the hand is shown in Figure 4.
+However, recent studies have shown that change in perception
+of visual features is present also without saccadic adaptation
+(Herwig and Schneider, 2014; Herwig et al., 2015, 2018; Valsecchi
+and Gegenfurtner, 2016; Paeye et al., 2018; Köller et al., 2020;
+Valsecchi et al., 2020). This phenomenon occurs with the
+following features: the perception of spatial frequency (Herwig and
+Schneider, 2014; Herwig et al., 2018), shape (Herwig et al., 2015;
+Paeye et al., 2018; Köller et al., 2020), and size (Valsecchi and
+Gegenfurtner, 2016; Bosco et al., 2020; Valsecchi et al., 2020). For
+example, Bosco et al. (2020) used a manipulation consisting in the
+systematic shortening and lengthening of a vertical bar during a
+horizontal saccade aimed to do not modify the saccade amplitude;
+by these conditions, they observed a signiﬁcant diﬀerence in
+perceived size after the saccade execution (see Figure 5A for the
+scheme of saccadic adaptation paradigm in Bosco et al., 2020).
+This ﬁnding suggested that the modiﬁcation of size perception
+does not rely on the modiﬁed saccadic amplitude induced by
+saccadic adaptation mechanisms (see Figure 5B, Bosco et al.,
+2020). In the study by Valsecchi et al. (2020), it was shown that
+saccadic adaptation and size recalibration share the same temporal
+development. However, size recalibration of the visual stimuli was
+also present in the opposite hemiﬁeld, but saccadic adaptation did
+not suggest that distinct mechanisms were involved. Although the
+modiﬁcation of saccadic parameter induced by saccadic adaptation
+is not the causal mechanism for the modiﬁcation of stimulus
+property perception, the shift of the target image from the periphery
+Frontiers in Systems Neuroscience
+08
+frontiersin.org
+
+
+=== PAGE 9 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+to the fovea, typically performed by a saccade, remains the potential
+cause of the observed object perception modiﬁcation.
+A considerable body of literature has shown that the visual
+stimuli brieﬂy presented just before the onset of a saccade, or during
+it, are mislocalized and perceived as being closer to the saccade
+target (Matin and Pearce, 1965; Honda, 1989; Schlag and Schlag-
+Rey, 1995; Ross et al., 1997). In other terms, this mislocalization
+consists in a shift of apparent position in the direction of the
+saccade (Honda, 1989, 1995; Schlag and Schlag-Rey, 1995; Cai
+et al., 1997; Lappe et al., 2000) and a compression of positions
+onto the target location of the saccade (Bischof and Kramer, 1968;
+Ross et al., 1997; Lappe et al., 2000). The shift is attributed to
+a mismatch between the actual eye position during the saccades
+and the predicted position originating from an internal corollary
+discharge (Duhamel et al., 1992; Nakamura and Colby, 2002;
+Kusunoki and Goldberg, 2003; Morrone et al., 2005).
+Interestingly, the compression eﬀect is primarily observed
+parallel to the saccade direction (Ross et al., 1997), and also in
+the orthogonal direction (Kaiser and Lappe, 2004; Zimmermann
+et al., 2014, 2015), suggesting that a linear translation of the internal
+coordinate system is a reductive explanation. Additionally, non-
+spatial features such as the shape and colors of perisaccadic stimuli
+have also been investigated to evaluate the eﬀect of perisaccadic
+compression. Speciﬁcally, the discrimination of shape (Matsumiya
+and Uchikawa, 2001) and colors (Lappe et al., 2006; Wittenberg
+et al., 2008) of visual stimuli is preserved, but they are not
+perceived in separate positions. Although the mechanism of this
+eﬀect is still an open question, the general view describes the
+perisaccadic mislocalization as being related to mechanisms aimed
+at maintaining visual stability (Matin and Pearce, 1965; Honda,
+1989; Schlag and Schlag-Rey, 1995; Ross et al., 1997; Lappe et al.,
+2000; Pola, 2004; Binda and Morrone, 2018).
+The hand domain
+The execution of diﬀerent types of hand movements can
+generate perceptual modiﬁcations of object properties relevant for
+that type of action, such as the perception of size and weight. In
+2017, Bosco et al. (2017) investigated the direct eﬀect of reaching
+and grasping execution on the size perception of a visual target.
+They found that the change in size perception was larger after a
+grasping action than after a reaching action and all participants
+perceived objects to be smaller after the grasping compared to
+the reaching. These results were consistent in both manual and
+verbal reports, as is shown in Figure 6 (Bosco et al., 2017).
+Sanz Diez et al. (2022) evaluated size perception after a grasping
+movement performed toward a visual target that changed in size
+during the execution of the movement. Although the perceptual
+phase before and after grasping execution applied to the same
+target that, in these two moments of the task, was identical in
+size, they found that, after the grasping action, reports regarding
+perceptual size showed signiﬁcant diﬀerences that depended on
+the type of size change that occurred during movement execution.
+In fact, as shown in Figure 7, observers reported a smaller
+size perception when the visual target was lengthened during
+the grasping execution and no perception modiﬁcation when
+FIGURE 6
+Size perception modiﬁcation after reaching and grasping actions. (A)
+Mean deviation of perceptual responses by grip aperture for
+reaching (white column) and grasping (black column). (B) Mean
+deviation of verbal perceptual reports for reaching (white column)
+and grasping (black column). All data are averaged across
+participants and sizes. Error bars are standard errors of the mean. *p
+< 0.05, signiﬁcance level (modiﬁed from Bosco et al., 2017).
+the visual target was shortened during the grasping execution
+(Sanz Diez et al., 2022). In both of the studies described above,
+the perceptual modiﬁcation occurred according to the type of
+movement (i.e., reaching or grasping) and to the unpredictable
+changes of target size during the movement itself, suggesting that
+this modiﬁcation can be considered to be a descriptive parameter
+of the previous motor action (Bosco et al., 2017; Sanz Diez et al.,
+2022).
+An advantage of the eﬀect of action execution on perception
+is represented by changes to the motor system obtained with
+skill learning. The formation and retrieval of sensorimotor
+memories acquired from previous hand-object interactions are
+fundamental for dexterous object manipulation learning (Westling
+and Johansson, 1984; Johansson and Westling, 1988). This allows
+the modulation of digit forces in a fashion that is anticipatory, i.e.,
+before the lifting of the object (Gordon et al., 1993; Burstedt et al.,
+1999; Salimi et al., 2000). In a task requiring participants to lift
+an object while minimizing the roll caused by asymmetric mass
+Frontiers in Systems Neuroscience
+09
+frontiersin.org
+
+
+=== PAGE 10 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 7
+Size perception modiﬁcation after size-perturbed grasping execution. (A) Experimental task sequence. (B) Mean Deviation values of grip aperture
+from the baseline averaged across size perturbation condition. Details as in Figure 5 (modiﬁed from Sanz Diez et al., 2022). *p < 0.05, signiﬁcance
+level.
+distribution of an external torque, the implicit learning after action
+execution led to minimization of object roll by a re-arrangement
+of digit positions (Lukos et al., 2007, 2008) and a modulation of the
+force distribution exerted by the ﬁngers (Salimi et al., 2000; Fu et al.,
+2010).
+Within this perspective, it is also useful to describe the size-
+weight illusion (SWI), for the ﬁrst time described by Charpentier
+(Charpentier, 1891). In fact, the SWI is visible when a subject
+lifts two objects of diﬀerent size, but of equal weight, and
+reports the smaller object as being heavier. The SWI illusion is
+robust (Murray et al., 1999; Flanagan and Beltzner, 2000; Kawai,
+2002a,b, 2003a,b; Grandy and Westwood, 2006; Dijker, 2008;
+Flanagan et al., 2008; Chouinard et al., 2009), and the eﬀect is
+still present when the lifter knows that both objects are of the
+same weight (Flanagan and Beltzner, 2000). The SWI illusion has
+been thoroughly studied to understand the mechanism of signal
+integration for weight perception, and it is an example of how the
+sensorimotor system works in a Bayesian manner. According to
+this view, the nervous system combines prior knowledge regarding
+object properties learned by previous experience (“the prior”) with
+current sensory information (“the likelihood”), to appropriately
+estimate object property (“the posterior”) for action and perception
+functions (van Beers et al., 2002; Körding and Wolpert, 2006). In
+most cases, the combination of prior and likelihood generates
+correct perception and behavior, but perception can be misleading.
+In the case of SWI, for example, the prior is perceived higher than
+the likelihood, generating a perception that does not correspond
+with the actual physical properties of the object. However, the
+repetition of the lifting action recalibrates the perception of weight,
+and the force distribution is adjusted according to the real weight
+of the objects. Although there is still no consensus as to the process
+that gives rise to the SWI, an objective aspect is that the execution
+of the manipulation action on the objects has a pragmatic eﬀect on
+weight and size perception.
+The leg domain
+Walking interaction leads to a perception-action recalibration,
+and it is typically investigated by the measurement of perceived
+size or perceived distance. This is because, according to the
+size-distance invariance hypothesis (Sedgwick, 1986), size and
+distance perception are strictly coupled. Brenner and van Damme
+(1999) found that perceived object size, shape, and distance are
+Frontiers in Systems Neuroscience
+10
+frontiersin.org
+
+
+=== PAGE 11 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+FIGURE 8
+Summary of object/space perception modulation by action planning and action execution evoked by movement of diﬀerent eﬀectors.
+largely independent. Although object size, shape, and distance
+estimations were similarly aﬀected by changes in object distance
+perception, modiﬁcations in perceived shape caused by motion
+parallax did not aﬀect perceived size or distance. This indicates their
+independence. Although the direct relationship between size and
+distance perception has been debated in this study, the judgements
+of distance and size have been shown to be tightly linked in
+other studies (Gogel et al., 1985; Hutchison and Loomis, 2006).
+Results showing an improvement in judgments of distances after
+the walking interaction were found by Waller & Richardson (Waller
+and Richardson, 2008). The same authors showed that distance
+judgments in a virtual environment were unaﬀected by interactions
+in which participants viewed only a simulation of visual walking
+(i.e., optic ﬂow only). This suggested that a body-based movement
+is necessary. Furthermore, perceptual reports of distance increased
+in accuracy after participants performed a blind-walking task
+consisting in the receipt of visual or verbal feedback (Richardson
+and Waller, 2005; Mohler et al., 2006). The results showed the
+suﬃciency of body-based interaction. Kelly et al. (2013) found
+that perceptual reports of object size improved after a walking
+interaction, because an increase in perceived distance was observed.
+The ﬁnding that perceptual reports regarding size improved after
+the interaction indicates that walking leads to a rescaling of space
+perception and not only to a simple recalibration of walked distance
+(Siegel et al., 2017). In open-loop blind walking tasks, calibration
+and recalibration of locomotion has been observed. In these tasks,
+an observer views a target on the ground and, after closing his/her
+eyes, he/she has to walk toward the target without seeing. In normal
+conditions, blind walking performance is quite accurate and reﬂects
+the perception of the target location (Rieser et al., 1990; Loomis and
+Philbeck, 2008). After manipulation of the rate of environmental
+optic ﬂow in relation to the biomechanical rate of normal walking,
+observers undershot the target when the environmental ﬂow was
+faster, and overshot the target when environmental ﬂow was slower
+compared to the perception of normal walking speed (Rieser et al.,
+1995). Additionally, studies investigating the visual perception
+of egocentric distances showed that perceptual judgments (e.g.,
+verbal reports) showed a systematic underestimation of egocentric
+distances (Foley, 1977; Li and Giudice, 2013), while blindfolded
+walking toward a remembered target location was executed more
+accurately (Loomis et al., 1992; Li and Giudice, 2013). Although the
+former suggests that a systematic compression of physical distance
+is visually perceived, visually directed walking is not aﬀected by this
+perceptual distortion.
+Conclusions and future perspectives
+A multitude of works have been presented showing the eﬀect
+of actions performed with the eyes, the hands, and the legs on
+visual perception of objects and space using diﬀerent approaches
+and paradigms. The action inﬂuence is present before and after
+execution of the movement, suggesting that visual perception,
+when it is integrated with the action, is “ready to act” (before
+execution) and is transformed by action execution (see Figure 8
+for a summary). In both cases, the perceptual responses, collected
+in diﬀerent ways, are parameters that describe the subsequent
+or previous motor responses. This suggests a mechanism which
+exchanges information between the motor and perceptual system
+when we are in a speciﬁc visuomotor contingency. At a behavioral
+level, we can take advantage of these aspects because they can
+be used as action intention predictors when they occur during
+action planning and, interestingly, as a postdictive component that
+speciﬁes the previous motor experience when they occur after
+action execution. In this latter case, the postdictive perceptual
+component also updates the information that is necessary for a
+potential subsequent action. The use of the action-based perceptual
+information can be helpful in all those artiﬁcial intelligent (AI)
+systems that are used with motor assistive devices. In fact, the
+use of perceptual information during action planning can be
+implemented with other parameters (e.g., neural signals) to extract
+action intentions that exploit the residual motor abilities of diﬀerent
+eﬀectors that are necessary to give perceptual responses by pressing
+a button, for example, or extending only certain ﬁngers and not
+others. The use of perceptual information after action execution can
+be implemented in AI systems that are able to communicate with
+Frontiers in Systems Neuroscience
+11
+frontiersin.org
+
+
+=== PAGE 12 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+humans, with the objective of creating a mutual learning exchange.
+In fact, the modiﬁcation of perception following the execution of
+a particular movement may be used as a feedback signal, in order
+to correct a subsequent motor response and compensate for the
+error due to previous AI action decisions. This allows the system
+to improve the outcome of the action and, consequently, increases
+the user’s trust in the AI system.
+Author contributions
+AB: conceptualization, visualization, writing original draft,
+and writing—review and editing. SDP: visualization and writing
+original draft. MF: writing—review and editing. PF: writing—
+review and editing and funding acquisition. All authors contributed
+to the article and approved the submitted version.
+Funding
+(1) MAIA project has received funding from the European
+Union’s Horizon 2020 Research and Innovation Programme
+under grant agreement No 951910; (2) Ministero dell’Istruzione—
+Ministero
+dell’Universita’
+e
+della
+Ricerca
+(PRIN2017—Prot.
+2017KZNZLN). This work has received funding from the European
+Union’s Horizon 2020 Research and Innovation Programme under
+the Marie-Skodowska-Curie grant agreement No. 734227-Platypus.
+Conﬂict of interest
+SDP is employed by Carl Zeiss Vision International GmbH.
+The remaining authors declare that the research was conducted
+in the absence of any commercial or ﬁnancial relationships that
+could be constructed as a potential conﬂict of interest.
+Publisher’s note
+All claims expressed in this article are solely those of the
+authors and do not necessarily represent those of their aﬃliated
+organizations, or those of the publisher, the editors and the
+reviewers. Any product that may be evaluated in this article, or
+claim that may be made by its manufacturer, is not guaranteed or
+endorsed by the publisher.
+References
+Angel, R. W., Alston, W., and Garland, H. (1970). Functional relations
+between the manual and oculomotor control systems. Exp. Neurol. 27, 248–257.
+doi: 10.1016/0014-4886(70)90218-9
+Awater, H., Burr, D., Lappe, M., Morrone, M. C., and Goldberg, M. E. (2005). Eﬀect
+of saccadic adaptation on localization of visual targets. J. Neurophysiol. 93, 3605–14.
+doi: 10.1152/jn.01013.2003
+Bagesteiro, L. B., Sarlegna, F. R., and Sainburg, R. L. (2006). Diﬀerential inﬂuence of
+vision and proprioception on control of movement distance. Exp. Brain Res. 171, 358.
+doi: 10.1007/s00221-005-0272-y
+Bahcall, D. O., and Kowler, E. (1999). Illusory shifts in visual direction
+accompany adaptation of saccadic eye movements. Nature 400, 864–6. doi: 10.1038/
+23693
+Bekkering, H., Adam, J. J., van den Aarssen, A., Kingma, H., and Whiting, H. T.
+A. (1995). Interference between saccadic eye and goal-directed hand movements. Exp.
+Brain. Res. 106, 475–484. doi: 10.1007/BF00231070
+Bekkering, H., Adam, Jos, J., Kingma, H., Huson, A., and Whiting, H. T. A. (1994).
+Reaction time latencies of eye and hand movements in single- and dual-task conditions.
+Exp. Brain. Res. 97, 12. doi: 10.1007/BF00241541
+Bekkering, H., and Neggers, S. F. (2002). Visual search is modulated by action
+intentions. Psychol. Sci. 13, 370–374. doi: 10.1111/j.0956-7976.2002.00466.x
+Benedetto, A., and Morrone, M. C. (2017). Saccadic suppression is embedded
+within extended oscillatory modulation of sensitivity. J. Neurosci. 37, 3661.
+doi: 10.1523/JNEUROSCI.2390-16.2016
+Benedetto, A., Morrone, M. C., and Tomassini, A. (2020). The common rhythm of
+action and perception. J. Cogn. Neurosci. 32, 187–200. doi: 10.1162/jocn_a_01436
+Bernstein, N. (1967). The Co-Ordination and Regulation of Movements. Oxford:
+Pergamon Press.
+Bhalla, M., and Proﬃtt, D. R. (1999). Visual–motor recalibration in geographical
+slant
+perception.
+J.
+Exp.
+Psychol.
+Hum.
+Percept.
+Perform.
+25,
+1076–1096.
+doi: 10.1037/0096-1523.25.4.1076
+Biguer, B., Jeannerod, M., and Prablanc, C. (1982). The coordination of eye, head,
+and arm movements during reaching at a single visual target. Exp. Brain. Res. 46,
+301–304. doi: 10.1007/BF00237188
+Binda, P., and Morrone, M. C. (2018). Vision during saccadic eye movements.
+Annu. Rev. Vis. Sci. 4, 193–213. doi: 10.1146/annurev-vision-091517-034317
+Bischof, N., and Kramer, E. (1968). Untersuchungen und berlegungen zur
+Richtungswahrnehmung bei willkrlichen sakkadischen Augenbewegungen. Psychol.
+Forsch. 32, 185–218. doi: 10.1007/BF00418660
+Bosco, A., Daniele, F., and Fattori, P. (2017). Reaching and grasping actions and
+their context shape the perception of object size. J. Vis. 17, 10. doi: 10.1167/17.12.10
+Bosco, A., Lappe, M., and Fattori, P. (2015). Adaptation of saccades and perceived
+size after trans-saccadic changes of object size. J. Neurosci. 35, 14448–14456.
+doi: 10.1523/JNEUROSCI.0129-15.2015
+Bosco, A., Rifai, K., Wahl, S., Fattori, P., and Lappe, M. (2020). Trans-saccadic
+adaptation of perceived size independent of saccadic adaptation. J. Vis. 20, 19.
+doi: 10.1167/jov.20.7.19
+Bourdin, C., Bringoux, L., Gauthier, G. M., and Vercher, J. L. (2006). Vision of
+the hand prior to movement onset allows full motor adaptation to a multi-force
+environment. Brain. Res. Bull. 71, 101–110. doi: 10.1016/j.brainresbull.2006.08.007
+Boynton, G. M., Demb, J. B., Glover, G. H., and Heeger, D. J. (1999).
+Neuronal
+basis
+of
+contrast
+discrimination.
+Vision
+Res.
+39,
+257–269.
+doi: 10.1016/S0042-6989(98)00113-8
+Brenner, E., and van Damme, W. J. M. (1999). Perceived distance, shape and size.
+Vision Res. 39, 975–986. doi: 10.1016/S0042-6989(98)00162-X
+Brouwer, A.-M., Franz, V. H., and Gegenfurtner, K. R. (2009). Diﬀerences in
+ﬁxations between grasping and viewing objects. J. Vis. 9, 1–24. doi: 10.1167/9.1.18
+Bruno, A., and Morrone, M. C. (2007). Inﬂuence of saccadic adaptation on
+spatial localization: comparison of verbal and pointing reports. J. Vis. 7, 1–13.
+doi: 10.1167/7.5.16
+Burstedt, M. K. O., Flanagan, J. R., and Johansson, R. S. (1999). Control of
+grasp stability in humans under diﬀerent frictional conditions during multidigit
+manipulation. J. Neurophysiol. 82, 2393–2405. doi: 10.1152/jn.1999.82.5.2393
+Buzsáki, G., and Draguhn, A. (2004). Neuronal oscillations in cortical networks.
+Science 304, 1926–1929. doi: 10.1126/science.1099745
+Cai, R. H., Pouget, A., Schlag-Rey, M., and Schlag, J. (1997). Perceived
+geometrical relationships aﬀected by eye-movement signals. Nature 386, 601–604.
+doi: 10.1038/386601a0
+Charpentier, A. (1891). Analyse experimentale de quelques elements de la sensation
+de poids. Arch. Physiol. Norm. Pathol. 3, 122–135.
+Chouinard, P., Large, M., Chang, E., and Goodale, M. (2009). Dissociable
+neural mechanisms for determining the perceived heaviness of objects and
+the predicted weight of objects during lifting: An fMRI investigation of the
+size–weight illusion. Neuroimage 44, 200–212. doi: 10.1016/j.neuroimage.2008.
+08.023
+Coello, Y., and Grealy, M. A. (1997). Eﬀect of size and frame of visual ﬁeld on the
+accuracy of an aiming movement. Perception 26, 287–300. doi: 10.1068/p260287
+Frontiers in Systems Neuroscience
+12
+frontiersin.org
+
+
+=== PAGE 13 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+Collins, T., Doré-Mazars, K., and Lappe, M. (2007). Motor space structures
+perceptual space: evidence from human saccadic adaptation. Brain Res. 1172, 32–39.
+doi: 10.1016/j.brainres.2007.07.040
+Conti, P., and Beaubaton, D. (1980). Role of structured visual ﬁeld and visual
+reaﬀerence in accuracy of pointing movements. Percept. Mot. Skills 50, 239–244.
+doi: 10.2466/pms.1980.50.1.239
+Craighero, L., Fadiga, L., Rizzolatti, G., and Umiltà, C. (1999). Action for perception
+a motor—visual attentional eﬀect. J. Exp. Psychol. Hum. Percept. Perform. 25,
+1673–1692. doi: 10.1037/0096-1523.25.6.1673
+Davoli, C. C., Brockmole, J. R., and Witt, J. K. (2012). Compressing perceived
+distance with remote tool-use: Real, imagined, and remembered. J. Exp. Psychol. Hum.
+Percept. Perform. 38, 80–89. doi: 10.1037/a0024981
+de Brouwer, A. J., Flanagan, J. R., and Spering, M. (2021). Functional
+use of eye movements for an acting system. Trends Cogn. Sci. 25, 252–263.
+doi: 10.1016/j.tics.2020.12.006
+Desmurget, M., Pélisson, D., Rossetti, Y., and Prablanc, C. (1998). “From eye to
+hand: planning goal-directed movements,” in Neuroscience and Biobehavioral Reviews,
+p. 761–788. doi: 10.1016/S0149-7634(98)00004-9
+Desmurget, M., Rossetti, Y., Jordan, M., Meckler, C., and Prablanc, C. (1997).
+Viewing the hand prior to movement improves accuracy of pointing performed toward
+the unseen contralateral hand. Exp. Brain. Res. 115, 180–186. doi: 10.1007/PL00005680
+Desmurget, M., Rossetti, Y., Prablanc, C., Jeannerod, M., and Stelmach, G. E. (1995).
+Representation of hand position prior to movement and motor variability. Can. J.
+Physiol. Pharmacol. 73, 262–272. doi: 10.1139/y95-037
+Deubel, H. (1987). “Adaptivity of gain and direction in oblique saccades.,”
+in Eye movements from physiology to cognition. (London: Elsevier), p. 181–190.
+doi: 10.1016/B978-0-444-70113-8.50030-8
+Deubel, H., and Schneider, W. X. (1996). Saccade target selection and object
+recognition: evidence for a common attentional mechanism. Vision. Res. 36,
+1827–1837. doi: 10.1016/0042-6989(95)00294-4
+di Marco, S., Tosoni, A., Altomare, E. C., Ferretti, G., Perrucci, M. G.,
+and Committeri, G. (2019). Walking-related locomotion is facilitated by the
+perception of distant targets in the extrapersonal space. Sci. Rep. 9, 9884.
+doi: 10.1038/s41598-019-46384-5
+Dijker, A. J. M. (2008). Why Barbie feels heavier than Ken: the inﬂuence of size-
+based expectancies and social cues on the illusory perception of weight. Cognition 106,
+1109–1125. doi: 10.1016/j.cognition.2007.05.009
+Duhamel, J.-R., Colby, C. L., and Goldberg, M. E. (1992). The updating of the
+representation of visual space in parietal cortex by intended eye movements. Science
+255, 90–92. doi: 10.1126/science.1553535
+Elliott, D., Dutoy, C., Andrew, M., Burkitt, J. J., Grierson, L. E. M., Lyons,
+J. L., et al. (2014). The inﬂuence of visual feedback and prior knowledge
+about
+feedback
+on
+vertical
+aiming
+strategies.
+J.
+Mot.
+Behav.
+46,
+433–443.
+doi: 10.1080/00222895.2014.933767
+Elliott, D., Garson, R. G., Goodman, D., and Chua, R. (1991). Discrete
+vs. continuous visual control of manual aiming. Hum. Mov. Sci. 10, 393–418.
+doi: 10.1016/0167-9457(91)90013-N
+Ethier,
+V.,
+Zee,
+D.
+S.,
+and
+Shadmehr,
+R.
+(2008).
+Changes
+in
+control
+of
+saccades
+during
+gain
+adaptation.
+J.
+Neurosci.
+28,
+13929
+LP–13937.
+doi: 10.1523/JNEUROSCI.3470-08.2008
+Fagioli, S., Hommel, B., and Schubotz, R. I. (2007). Intentional control of attention:
+action planning primes action-related stimulus dimensions. Psychol. Res. 71, 22–29.
+doi: 10.1007/s00426-005-0033-3
+Fini, C., Bardi, L., Troje, N. F., Committeri, G., and Brass, M. (2017). Priming
+biological motion changes extrapersonal space categorization. Acta. Psychol. 172,
+77–83. doi: 10.1016/j.actpsy.2016.11.006
+Fini, C., Brass, M., and Committeri, G. (2015a). Social scaling of extrapersonal
+space: target objects are judged as closer when the reference frame is a
+human agent with available movement potentialities. Cognition 134, 50–56.
+doi: 10.1016/j.cognition.2014.08.014
+Fini, C., Committeri, G., Müller, B. C. N., Deschrijver, E., and Brass, M. (2015b).
+How watching pinocchio movies changes our subjective experience of extrapersonal
+space. PLoS One 10, e0120306. doi: 10.1371/journal.pone.0120306
+Fini, C., Costantini, M., and Committeri, G. (2014). Sharing space: the
+presence of other bodies extends the space judged as near. PLoS One 9, e114719.
+doi: 10.1371/journal.pone.0114719
+Flanagan, J. R., and Beltzner, M. A. (2000). Independence of perceptual and
+sensorimotor predictions in the size–weight illusion. Nat. Neurosci. 3, 737–741.
+doi: 10.1038/76701
+Flanagan, J. R., Bittner, J. P., and Johansson, R. S. (2008). Experience can change
+distinct size-weight priors engaged in lifting objects and judging their weights. Curr.
+Biol. 18, 1742–1747. doi: 10.1016/j.cub.2008.09.042
+Flanagan, J. R., and Rao, A. K. (1995). Trajectory adaptation to a non-linear
+visuomotor transformation: evidence of motion planning in visually perceived space. J.
+Neurophysiol. 74, 2174–2178. doi: 10.1152/jn.1995.74.5.2174
+Foley, J. M. (1977). Eﬀect of distance information and range on two indices of
+visually perceived distance. Perception 6, 449–460. doi: 10.1068/p060449
+Fu, Q., Zhang, W., and Santello, M. (2010). Anticipatory planning and control
+of grasp positions and forces for dexterous two-digit manipulation. J. Neurosci. 30,
+9117–9126. doi: 10.1523/JNEUROSCI.4159-09.2010
+Garaas, T. W., and Pomplun, M. (2011). Distorted object perception following
+whole-ﬁeld adaptation of saccadic eye movements. J. Vis. 11, 2. doi: 10.1167/11.1.2
+Gibson, J. (1979). The Ecological Approach to Visual Perception. New York, NY:
+Houghton Miﬄin.
+Gogel, W. C., Loomis, J. M., Newman, N. J., and Sharkey, T. J. (1985). Agreement
+between indirect measures of perceived distance. Percept. Psychophys. 37, 17–27.
+doi: 10.3758/BF03207134
+Gordon, A. M., Westling, G., Cole, K. J., and Johansson, R. S. (1993).
+Memory representations underlying motor commands used during manipulation of
+common and novel objects. J. Neurophysiol. 69, 1789–1796. doi: 10.1152/jn.1993.69.
+6.1789
+Grandy, M. S., and Westwood, D. A. (2006). Opposite perceptual and
+sensorimotor responses to a size-weight illusion. J. Neurophysiol. 95, 3887–3892.
+doi: 10.1152/jn.00851.2005
+Gray, R. (2013). Being selective at the plate: processing dependence between
+perceptual variables relates to hitting goals and performance. J. Exp. Psychol. Hum.
+Percept. Perform. 39, 1124–1142. doi: 10.1037/a0030729
+Gremmler,
+S.,
+Bosco,
+A.,
+Fattori,
+P.,
+and
+Lappe,
+M.
+(2014).
+Saccadic
+adaptation shapes visual space in macaques. J. Neurophysiol. 111, 1846–1851.
+doi: 10.1152/jn.00709.2013
+Gutteling, T. P., Kenemans, J. L., and Neggers, S. F. W. (2011). Grasping
+preparation
+enhances
+orientation
+change
+detection.
+PLoS
+One
+6,
+11.
+doi: 10.1371/journal.pone.0017675
+Hamilton,
+A.,
+Wolpert,
+D.,
+and
+Frith,
+U.
+(2004).
+Your
+own
+action
+inﬂuences how you perceive another person’s action. Curr. Biol. 14, 493–498.
+doi: 10.1016/j.cub.2004.03.007
+Hayhoe, M. M. (2017). Vision and action. Ann. Rev. Vis. Sci. 3, 389–413.
+doi: 10.1146/annurev-vision-102016-061437
+Hayhoe, M. M., Shrivastava, A., Mruczek, R., and Pelz, J. B. (2003). Visual memory
+and motor planning in a natural task. J. Vis. 3, 6. doi: 10.1167/3.1.6
+Herwig, A., and Schneider, W. X. (2014). Predicting object features across saccades:
+evidence from object recognition and visual search. J. Exp. Psychol. Gen. 143,
+1903–1922. doi: 10.1037/a0036781
+Herwig, A., Weiß, K., and Schneider, W. X. (2015). When circles become triangular:
+how transsaccadic predictions shape the perception of shape. Ann. N Y Acad. Sci. 1339,
+97–105. doi: 10.1111/nyas.12672
+Herwig, A., Weiß, K., and Schneider, W. X. (2018). Feature prediction across eye
+movements is location speciﬁc and based on retinotopic coordinates. J. Vis. 18, 13.
+doi: 10.1167/18.8.13
+Hoﬀman, J. E., and Subramaniam, B. (1995). The role of visual attention in saccadic
+eye movements. Percept. Psychophys. 57, 787–795. doi: 10.3758/BF03206794
+Hommel, B., Brown, S., and Nattkemper, D. (2016). Human Action Control. Cham:
+Springer. doi: 10.1007/978-3-319-09244-7
+Hommel, B., Müsseler, J., Aschersleben, G., and Prinz, W. (2001). The theory of
+event coding (TEC): a framework for perception and action planning. Behav. Brain Sci.
+24, 849–878. doi: 10.1017/S0140525X01000103
+Honda, H. (1989). Perceptual localization of visual stimuli ﬂashed during saccades.
+Percept. Psychophys. 45, 162–174. doi: 10.3758/BF03208051
+Honda, H. (1995). Visual mislocalization produced by a rapid image displacement
+on the retina: examination by means of dichoptic presentation of a target and its
+background scene. Vision. Res. 35, 3021–3028. doi: 10.1016/0042-6989(95)00108-C
+Hopp, J. J., and Fuchs, A. F. (2004). The characteristics and neuronal
+substrate
+of
+saccadic
+eye
+movement
+plasticity.
+Prog.
+Neurobiol.
+72,
+27–53.
+doi: 10.1016/j.pneurobio.2003.12.002
+Hutchison, J. J., and Loomis, J. M. (2006). Does energy expenditure aﬀect
+the perception of egocentric distance? a failure to replicate experiment 1 of
+proﬃtt, stefanucci, banton, and epstein (2003). Span. J. Psychol. 9, 332–339.
+doi: 10.1017/S1138741600006235
+Jeannerod, M. (1981). Intersegmental coordination during reaching at natural visual
+objects. Atten. Perform. 11, 153–169.
+Johansson,
+R.
+S.,
+and
+Westling,
+G.
+(1988).
+Programmed
+and
+triggered
+actions to rapid load changes during precision grip. Exp. Brain Res. 2, 71.
+doi: 10.1007/BF00247523
+Johansson, R. S., Westling, G., Bäckström, A., and Flanagan, J. R. (2001).
+Eye–hand coordination in object manipulation. J.
+Neurosci. 21, 6917–6932.
+doi: 10.1523/JNEUROSCI.21-17-06917.2001
+Kaiser, M., and Lappe, M. (2004). Perisaccadic mislocalization orthogonal to
+saccade direction. Neuron 41, 293–300. doi: 10.1016/S0896-6273(03)00849-3
+Frontiers in Systems Neuroscience
+13
+frontiersin.org
+
+
+=== PAGE 14 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+Kawai,
+S.
+(2002a).
+Heaviness
+perception:
+I.
+constant
+involvement
+of
+haptically perceived size in weight discrimination. Exp. Brain Res. 147, 16–22.
+doi: 10.1007/s00221-002-1209-3
+Kawai, S. (2002b). Heaviness perception: II. contributions of object weight, haptic
+size, and density to the accurate perception of heaviness or lightness. Exp. Brain. Res.
+147, 23–28. doi: 10.1007/s00221-002-1210-x
+Kawai, S. (2003a). Heaviness perception: III. Weight/aperture in the discernment of
+heaviness in cubes haptically perceived by thumb-index ﬁnger grasp. Exp. Brain Res.
+153, 289–296. doi: 10.1007/s00221-003-1621-3
+Kawai, S. (2003b). Heaviness perception: IV. Weight x aperture−1 as a
+heaviness model in ﬁnger-grasp perception. Exp.
+Brain Res. 153, 297–301.
+doi: 10.1007/s00221-003-1622-2
+Kelly, J. W., Donaldson, L. S., Sjolund, L. A., and Freiberg, J. B. (2013). More
+than just perception–action recalibration: walking through a virtual environment
+causes rescaling of perceived space. Atten. Percept. Psychophys. 75, 1473–1485.
+doi: 10.3758/s13414-013-0503-4
+Kirsch, W. (2015). Impact of action planning on spatial perception: attention
+matters. Acta. Psychol. (Amst) 156, 22–31. doi: 10.1016/j.actpsy.2015.01.002
+Kirsch, W., Herbort, O., Butz, M., v., and Kunde, W. (2012). Inﬂuence of motor
+planning on distance perception within the peripersonal space. PLoS One 7, e34880.
+doi: 10.1371/journal.pone.0034880
+Kirsch, W., and Kunde, W. (2013). Visual near space is scaled to parameters
+of current action plans. J. Exp. Psychol. Hum. Percept. Perform. 39, 1313–1325.
+doi: 10.1037/a0031074
+Knoblich, G., and Flach, R. (2001). Predicting the eﬀects of actions: interactions of
+perception and action. Psychol. Sci. 12, 467–472. doi: 10.1111/1467-9280.00387
+Kojima, Y., Iwamoto, Y., and Yoshida, K. (2005). Eﬀect of saccadic amplitude
+adaptation on subsequent adaptation of saccades in diﬀerent directions. Neurosci. Res.
+53, 404–412. doi: 10.1016/j.neures.2005.08.012
+Köller, C. P., Poth, C. H., and Herwig, A. (2020). Object discrepancy
+modulates feature prediction across eye movements. Psychol. Res. 84, 231–244.
+doi: 10.1007/s00426-018-0988-5
+Körding, K. P., and Wolpert, D. M. (2006). Bayesian decision theory in
+sensorimotor control. Trends Cogn. Sci. 10, 319–326. doi: 10.1016/j.tics.2006.05.003
+Kunde, W., and Wuhr, P. (2004). Actions blind to conceptually overlapping stimuli.
+Psychologic. Res. Psychologische Forschung 4, 68. doi: 10.1007/s00426-003-0156-3
+Kusunoki, M., and Goldberg, M. E. (2003). The time course of perisaccadic
+receptive ﬁeld shifts in the lateral intraparietal area of the monkey. J. Neurophysiol.
+89, 1519–1527. doi: 10.1152/jn.00519.2002
+Land, M., Mennie, N., and Rusted, J. (1999). The roles of vision and eye movements
+in the control of activities of daily living. Perception 28, 1311–1328. doi: 10.1068/p2935
+Land, M. F. (1992). Predictable eye-head coordination during driving. Nature 359,
+318–320. doi: 10.1038/359318a0
+Land, M. F. (2006). Eye movements and the control of actions in everyday life. Prog
+Retin Eye Res 25, 296–324. doi: 10.1016/j.preteyeres.2006.01.002
+Land, M. F. (2009). Vision, eye movements, and natural behavior. Vis. Neurosci. 26,
+51–62. doi: 10.1017/S0952523808080899
+Land, M. F., and Lee, D. N. (1994). Where we look when we steer. Nature 369,
+742–744. doi: 10.1038/369742a0
+Lappe,
+M.,
+Awater,
+H.,
+and
+Krekelberg,
+B.
+(2000).
+Postsaccadic
+visual
+references generate presaccadic compression of space. Nature 403, 892–895.
+doi: 10.1038/35002588
+Lappe, M., Kuhlmann, S., Oerke, B., and Kaiser, M. (2006). The fate of object
+features during perisaccadic mislocalization. J. Vis. 6, 11. doi: 10.1167/6.11.11
+Lavergne, L., Vergilino-Perez, D., Collins, T., and Dore’-Mazars, K. (2010).
+Adaptation of within-object saccades can be induced by changing stimulus size. Exp.
+Brain Res. 203, 773–780. doi: 10.1007/s00221-010-2282-7
+Lee, Y., Lee, S., Carello, C., and Turvey, M. T. (2012). An archer’s perceived form
+scales the “hitableness” of archery targets. J. Exp. Psychol. Hum. Percept. Perform. 38,
+1125–1131. doi: 10.1037/a0029036
+Li, H., and Giudice, N. (2013). “The eﬀects of 2D and 3D maps on learning
+virtual multi-level indoor environments,” in Proceedings of the 1st ACM SIGSPATIAL
+International Workshop on Map Interaction (Orlando: ACM, Orlando, p. 7–12.
+Lindemann, O., and Bekkering, H. (2009). Object manipulation and motion
+perception: Evidence of an inﬂuence of action planning on visual processing. J. Exp.
+Psychol. Hum. Percept. Perform. 35, 1062–1071. doi: 10.1037/a0015023
+Liversedge, S. P., and Findlay, J. M. (2000). Saccadic eye movements and cognition.
+Trends Cogn. Sci. 4, 6–14. doi: 10.1016/S1364-6613(99)01418-7
+Loomis, J. M., da Silva, J. A., Fujita, N., and Fukusima, S. S. (1992). Visual space
+perception and visually directed action. J. Exp. Psychol. Hum. Percept. Perform. 18,
+906–921. doi: 10.1037/0096-1523.18.4.906
+Loomis, J. M., and Philbeck, J. W. (2008). “Measuring perception with spatial
+updating and action.,” in. Embodiment, ego-space, and action (Mahwah, NJ: Erlbaum.),
+eds R. L. Klatzky, M. Behrmann, and B. MacWhinney, p. 1–43.
+Lukos, J., Ansuini, C., and Santello, M. (2007). Choice of contact points during
+multidigit grasping: eﬀect of predictability of object center of mass location. J. Neurosci.
+27, 3894–3903. doi: 10.1523/JNEUROSCI.4693-06.2007
+Lukos, J. R., Ansuini, C., and Santello, M. (2008). Anticipatory control of grasping:
+independence of sensorimotor memories for kinematics and kinetics. J. Neurosci. 28,
+12765–12774. doi: 10.1523/JNEUROSCI.4335-08.2008
+Lünenburger, L., Kutz, D. F., and Hoﬀmann, K.-P. (2000). Inﬂuence of
+arm movements on saccades in humans. Euro. J. Neurosci. 12, 4107–4116.
+doi: 10.1046/j.1460-9568.2000.00298.x
+Mark, L. S. (1987). Eyeheight-scaled information about aﬀordances: a study of
+sitting and stair climbing. J. Exp. Psychol. Hum. Percept. Perform. 13, 361–370.
+doi: 10.1037/0096-1523.13.3.361
+Matin, L., and Pearce, D. G. (1965). Visual perception of direction for
+stimuli ﬂashed during voluntary saccadic eye movements. Science 148, 1485–1488.
+doi: 10.1126/science.148.3676.1485
+Matsumiya, K., and Uchikawa, K. (2001). Apparent size of an object remains
+uncompressed during presaccadic compression of visual space. Vision Res. 41,
+3039–3050. doi: 10.1016/S0042-6989(01)00174-2
+Mattar, M. G., and Lengyel, M. (2022). Planning in the brain. Neuron. 110, 914–934.
+doi: 10.1016/j.neuron.2021.12.018
+McConkie, G., PW, K., Reddix, M., Zola, D., and Jacobs, A. (1989). Eye movement
+control during reading: II. frequency of reﬁxating a word. Percept. Psychophys. 46,
+245–253. doi: 10.3758/BF03208086
+McLaughlin, S. C. (1967). Parametric adjustment in saccadic eye movements.
+Percept. Psychophys. 2, 359–362. doi: 10.3758/BF03210071
+Miller, J., Anstis, T., and Templeton, W. (1981). Saccadic plasticity: parametric
+adaptive control by retinal feedback. J. Exp. Psychol. Hum. Percept. Perform. 7, 356–66.
+doi: 10.1037/0096-1523.7.2.356
+Mohler, B. J., Creem-Regehr, S. H., and Thompson, W. B. (2006). “The inﬂuence
+of feedback on egocentric distance judgments in real and virtual environments,” in
+ACM SIGGRAPH Symposium on Applied Perception in Graphics and Visualization
+(Washington, DC: ACM), p. 9–14. doi: 10.1145/1140491.1140493
+Morasso, P. (1981). Spatial control of arm movements. Exp. Brain Res. 2, 42.
+doi: 10.1007/BF00236911
+Morgado, N., Gentaz, É., Guinet, É., Osiurak, F., and Palluel-Germain, R. (2013).
+Within reach but not so reachable: Obstacles matter in visual perception of distances.
+Psychon. Bull. Rev. 20, 462–467. doi: 10.3758/s13423-012-0358-z
+Morrone, M. C., Ross, J., and Burr, D. (2005). Saccadic eye movements cause
+compression of time as well as space. Nat. Neurosci. 8, 950–954. doi: 10.1038/nn1488
+Murray, D. J., Ellis, R. R., Bandomir, C. A., and Ross, H. E. (1999).
+Charpentier 1891 on the size—weight illusion. Percept. Psychophys. 61, 1681–1685.
+doi: 10.3758/BF03213127
+Musseler, J., and Hommel, B. (1997). Blindness to response-compatible stimuli. J.
+Exp. Psychol. Hum. Percept. Perform. 23, 861–872. doi: 10.1037/0096-1523.23.3.861
+Nakamura, K., and Colby, C. L. (2002). Updating of the visual representation in
+monkey striate and extrastriate cortex during saccades. Proceed. Nat. Acad. Sci. 99,
+4026–4031. doi: 10.1073/pnas.052379899
+Neggers, S., Huijbers, W., Vrijlandt, C., Vlaskamp, B., Schutter, D., and
+Kenemans, J. (2007). TMS pulses on the frontal eye ﬁelds break coupling
+between visuospatial attention and eye movements. J. Neurophysiol. 98, 2765–2778.
+doi: 10.1152/jn.00357.2007
+Neggers, S. F., and Bekkering, H. (2000). Ocular gaze is anchored to
+the target of an ongoing pointing movement. J. Neurophysiol. 83, 639–651.
+doi: 10.1152/jn.2000.83.2.639
+Neggers, S. F. W., and Bekkering, H. (1999). Integration of visual and
+somatosensory target information in goal-directed eye and arm movements. Exp.
+Brain. Res. 125, 97–107. doi: 10.1007/s002210050663
+Neggers, S. F. W., and Bekkering, H. (2001). Gaze anchoring to a pointing target is
+present during the entire pointing movement and is driven by a non-visual signal. J.
+Neurophysiol. 86, 961–970. doi: 10.1152/jn.2001.86.2.961
+Neggers,
+S.
+F.
+W.,
+and
+Bekkering,
+H.
+(2002).
+Coordinated
+control
+of
+eye and hand movements in dynamic reaching. Hum. Mov. Sci. 21, 37–64.
+doi: 10.1016/S0167-9457(02)00120-3
+Noel, J.-P., Grivaz, P., Marmaroli, P., Lissek, H., Blanke, O., and Serino, A.
+(2015). Full body action remapping of peripersonal space: the case of walking.
+Neuropsychologia 70, 375–384. doi: 10.1016/j.neuropsychologia.2014.08.030
+Osiurak, F., Morgado, N., and Palluel-Germain, R. (2012). Tool use and perceived
+distance: when unreachable becomes spontaneously reachable. Exp. Brain Res. 218,
+331–339. doi: 10.1007/s00221-012-3036-5
+Frontiers in Systems Neuroscience
+14
+frontiersin.org
+
+
+=== PAGE 15 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+Paeye, C., Collins, T., Cavanagh, P., and Herwig, A. (2018). Calibration of peripheral
+perception of shape with and without saccadic eye movements. Atten. Percept.
+Psychophys. 80, 723–737. doi: 10.3758/s13414-017-1478-3
+Patla, A., and Vickers, J. (2003). How far ahead do we look when required to step on
+speciﬁc locations in the travel path during locomotion? Exp. Brain Res. 148, 133–138.
+doi: 10.1007/s00221-002-1246-y
+Pelisson, D., Prablanc, C., Goodale, M., and Jeannerod, M. (1986). Visual control of
+reaching movements without vision of the limb. Exp. Brain Res. 62, 303–311.
+Pelz, J., Hayhoe, M., and Loeber, R. (2001). The coordination of eye, head, and
+hand movements in a natural task. Exp. Brain Res. 139, 266–277. doi: 10.1007/s0022101
+00745
+Pola, J. (2004). Models of the mechanism underlying perceived location
+of a perisaccadic ﬂash. Vision Res. 44, 2799–2813. doi: 10.1016/j.visres.2004.
+06.008
+Prablanc, C., Echallier, J. F., Komilis, E., and Jeannerod, M. (1979). Optimal
+response of eye and hand motor systems in pointing at a visual target. Biol. Cybern.
+35, 113–124. doi: 10.1007/BF00337436
+Prinz, W. (1990). “A Common Coding Approach to Perception and Action,”
+in Relationships Between Perception and Action: Current Approaches, eds. O.
+Neumann and W. Prinz (Berlin, Heidelberg: Springer Berlin Heidelberg), p. 167–201.
+doi: 10.1007/978-3-642-75348-0_7
+Prinz, W. (1997). Perception and action planning. Euro. J. Cogn. Psychol. 9, 129–154.
+doi: 10.1080/713752551
+Proﬃtt, D. (2008). “An action-speciﬁc approach to spatial perception,” in R.
+L. Klatzky, B. MacWhinney and M. Behrmann (Eds.) (New York: Psychology
+Press.), 179–202.
+Proﬃtt, D. R. (2006). Distance perception. Curr. Dir. Psychol. Sci. 15, 131–135.
+doi: 10.1111/j.0963-7214.2006.00422.x
+Rahmouni,
+S.,
+and
+Madelain,
+L.
+(2019).
+Inter-individual
+variability
+and
+consistency of saccade adaptation in oblique saccades: amplitude increase and
+decrease in the horizontal or vertical saccade component. Vision Res. 160, 82–98.
+doi: 10.1016/j.visres.2019.05.001
+Richardson, A. R., and Waller, D. (2005). The eﬀect of feedback training on
+distance estimation in virtual environments. Appl. Cogn. Psychol. 19, 1089–1108.
+doi: 10.1002/acp.1140
+Rieser, J. J., Ashmead, D. H., Talor, C. R., and Youngquist, G. A. (1990). Visual
+perception and the guidance of locomotion without vision to previously seen targets.
+Perception 19, 675–689. doi: 10.1068/p190675
+Rieser, J. J., Pick, H. L., Ashmead, D. H., and Garing, A. E. (1995). Calibration
+of human locomotion and models of perceptual-motor organization. J. Exp. Psychol.
+Hum. Percept. Perform. 21, 480–497. doi: 10.1037/0096-1523.21.3.480
+Ross, J., Morrone, M. C., and Burr, D. C. (1997). Compression of visual space before
+saccades. Nature 386, 598–601. doi: 10.1038/386598a0
+Rossetti, Y., Stelmach, G., Desmurget, M., Prablanc, C., and Jeannerod, M. (1994).
+The eﬀect of viewing the static hand prior to movement onset on pointing kinematics
+and variability. Exp. Brain. Res. 101, 323–330. doi: 10.1007/BF00228753
+Salimi, I., Hollender, I., Frazier, W., and Gordon, A. M. (2000). Speciﬁcity
+of internal representations underlying grasping. J. Neurophysiol. 84, 2390–2397.
+doi: 10.1152/jn.2000.84.5.2390
+Sanz Diez, P., Bosco, A., Fattori, P., and Wahl, S. (2022). Horizontal target size
+perturbations during grasping movements are described by subsequent size perception
+and saccade amplitude. PLoS One 17, e0264560. doi: 10.1371/journal.pone.0264560
+Sarlegna, F. R., and Sainburg, R. L. (2009). The Roles of Vision and Proprioception in
+the Planning of Reaching Movements, p. 317–335. doi: 10.1007/978-0-387-77064-2_16
+Schlag, J., and Schlag-Rey, M. (1995). Illusory localization of stimuli ﬂashed in the
+dark before saccades. Vision. Res. 35, 2347–2357. doi: 10.1016/0042-6989(95)00021-Q
+Schubö, A., Aschersleben, G., and Prinz, W. (2001). Interactions between perception
+and action in a reaction task with overlapping S-R assignments. Psychol. Res. 65,
+145–157. doi: 10.1007/s004260100061
+Sedgwick, H. (1986). “Space perception.,” in Handbook of perception and human
+performance: Vol I. Sensory processes and perception, eds Thomas (New York, NY:
+Wiley.), p. 21–57.
+Siegel, Z. D., Kelly, J. W., and Cherep, L. A. (2017). Rescaling of perceived space
+transfers across virtual environments. J. Exp. Psychol. Hum. Percept. Perform. 43,
+1805–1814. doi: 10.1037/xhp0000401
+Stefanucci, J. K., and Geuss, M. N. (2009). Big people, little world: the body
+inﬂuences size perception. Perception 38, 1782–1795. doi: 10.1068/p6437
+Sutton, R., and Barto, A. (1998). Reinforcement Learning: An Introduction. London:
+The MIT Press. doi: 10.1109/TNN.1998.712192
+Symes,
+E.,
+Tucker,
+M.,
+Ellis,
+R.,
+Vainio,
+L.,
+and
+Ottoboni,
+G.
+(2008).
+Grasp
+preparation
+improves
+change
+detection
+for
+congruent
+objects.
+J.
+Exp.
+Psychol.
+Hum.
+Percept.
+Perform.
+34,
+854–871.
+doi:
+10.1037/0096-1523.
+34.4.854
+Taylor, J. E. T., Witt, J. K., and Sugovic, M. (2011). When walls are no longer barriers:
+perception of wall height in parkour. Perception 40, 757–760. doi: 10.1068/p6855
+Thut, G., Miniussi, C., and Gross, J. (2012). The functional importance of rhythmic
+activity in the brain. Current Biology 22, R658–R663. doi: 10.1016/j.cub.2012.06.061
+Tomassini, A., Ambrogioni, L., Medendorp, W. P., and Maris, E. (2017). Theta
+oscillations locked to intended actions rhythmically modulate perception. Elife 6,
+e25618. doi: 10.7554/eLife.25618.014
+Tomassini, A., Spinelli, D., Jacono, M., Sandini, G., and Morrone, M. C. (2015).
+Rhythmic oscillations of visual contrast sensitivity synchronized with action. J.
+Neurosci. 35, 7019. doi: 10.1523/JNEUROSCI.4568-14.2015
+Valsecchi, M., Cassanello, C., Herwig, A., Rolfs, M., and Gegenfurtner, K. R. (2020).
+A comparison of the temporal and spatial properties of trans-saccadic perceptual
+recalibration and saccadic adaptation. J. Vis. 20, 2. doi: 10.1167/jov.20.4.2
+Valsecchi, M., and Gegenfurtner, K. R. (2016). Dynamic re-calibration of perceived
+size in fovea and periphery through predictable size changes. Curr. Biol. 26, 59–63.
+doi: 10.1016/j.cub.2015.10.067
+van Beers, R. J., Baraduc, P., and Wolpert, D. M. (2002). Role of uncertainty
+in sensorimotor control. Philos. Trans. R Soc. Lond. B Biol. Sci. 357, 1137–1145.
+doi: 10.1098/rstb.2002.1101
+Velay, J., and Beaubaton, D. (1986). Inﬂuence of visual context on pointing
+movement accuracy. Cahiers de Psychologie Cognitive 6, 447–456.
+Vishwanath, D., and Kowler, E. (2003). Localization of shapes: eye movements and
+perception compared. Vision. Res. 43, 1637–1653. doi: 10.1016/S0042-6989(03)00168-8
+Waller, D., and Richardson, A. R. (2008). Correcting distance estimates by
+interacting with immersive virtual environments: Eﬀects of task and available
+sensory information. J. Exp. Psychol. Appl. 14, 61–72. doi: 10.1037/1076-898X.
+14.1.61
+Warren, W. H. (1984). Perceiving aﬀordances: visual guidance of stair climbing. J.
+Exp. Psychol. Hum. Percept. Perform. 10, 683–703. doi: 10.1037/0096-1523.10.5.683
+Warren, W. H., and Whang, S. (1987). Visual guidance of walking through
+apertures: body-scaled information for aﬀordances. J. Exp. Psychol. Hum. Percept.
+Perform. 13, 371–383. doi: 10.1037/0096-1523.13.3.371
+Watanabe, S., Ogino, S., Nakamura, T., and Koizuka, I. (2003). Saccadic adaptation
+in the horizontal and vertical directions in normal subjects. Auris Nasus Larynx 30,
+41–45. doi: 10.1016/S0385-8146(02)00119-0
+Westling, G., and Johansson, R. S. (1984). Factors inﬂuencing the force control
+during precision grip. Exp. Brain Res. 53, 6. doi: 10.1007/BF00238156
+Witt, J. (2018). “Perception and Action,” in Stevens’ Handbook of Experimental
+Psychology and Cognitive Neuroscience (New York, NY: Wiley), p. 489–523.
+doi: 10.1002/9781119170174.epcn211
+Witt, J. K. (2011). Tool use inﬂuences perceived shape and perceived parallelism,
+which serve as indirect measures of perceived distance. J. Exp. Psychol. Hum. Percept.
+Perform. 37, 1148–1156. doi: 10.1037/a0021933
+Witt, J. K., and Proﬃtt, D. R. (2005). See the ball, hit the ball: apparent
+ball
+size
+is
+correlated
+with
+batting
+average.
+Psychol.
+Sci.
+16,
+937–938.
+doi: 10.1111/j.1467-9280.2005.01640.x
+Witt, J. K., and Proﬃtt, D. R. (2008). Action-speciﬁc inﬂuences on distance
+perception: a role for motor simulation. J. Exp. Psychol. Hum. Percept. Perform. 34,
+1479–1492. doi: 10.1037/a0010781
+Witt, J. K., Proﬃtt, D. R., and Epstein, W. (2004). Perceiving distance: a role of eﬀort
+and intent. Perception 33, 577–590. doi: 10.1068/p5090
+Witt, J. K., Proﬃtt, D. R., and Epstein, W. (2005). Tool use aﬀects perceived distance,
+but only when you intend to use it. J. Exp. Psychol. Hum. Percept. Perform. 31, 880–888.
+doi: 10.1037/0096-1523.31.5.880
+Witt, J. K., and Sugovic, M. (2010). Performance and ease inﬂuence perceived speed.
+Perception 39, 1341–1353. doi: 10.1068/p6699
+Wittenberg, M., Bremmer, F., and Wachtler, T. (2008). Perceptual evidence for
+saccadic updating of color stimuli. J. Vis. 8, 9. doi: 10.1167/8.14.9
+Wohlschläger, A. (2000). Visual motion priming by invisible actions. Vision. Res. 40,
+925–930. doi: 10.1016/S0042-6989(99)00239-4
+Wolpert, D. M., Ghahramani, Z., and Jordan, Michael, I. (1995). Are arm trajectories
+planned in kinematic or dynamic coordinates? an adaptation study. Exp. Brain. Res. 5,
+103. doi: 10.1007/BF00241505
+Woodworth, R. S. (1899). Accuracy of voluntary movement. Psychologic. Rev.
+Monograp. Suppl. 3, i−114. doi: 10.1037/h0092992
+Wühr, P., and Müsseler, J. (2001). Time course of the blindness to response-
+compatible stimuli. J. Exp. Psychol. Hum. Percept. Perform. 27, 1260–1270.
+doi: 10.1037/0096-1523.27.5.1260
+Wykowska, A., Hommel, B., and Schubo, A. (2011). Action-induced eﬀects
+on
+perception
+depend
+neither
+on
+element-level
+nor
+on
+set-level
+similarity
+between stimulus and response sets. Atten. Percept. Psychophys. 73, 1034–1041.
+doi: 10.3758/s13414-011-0122-x
+Frontiers in Systems Neuroscience
+15
+frontiersin.org
+
+
+=== PAGE 16 ===
+
+Bosco et al.
+10.3389/fnsys.2023.1145643
+Wykowska, A., and Schubö, A. (2012). Action intentions modulate allocation
+of
+visual
+attention:
+electrophysiological
+evidence.
+Front.
+Psychol.
+3,
+12.
+doi: 10.3389/fpsyg.2012.00379
+Wykowska, A., Schubö, A., and Hommel, B. (2009). How you move is what you see:
+action planning biases selection in visual search. J. Exp. Psychol. Hum. Percept. Perform.
+35, 1755–1769. doi: 10.1037/a0016798
+Zelinsky, G. J., Rao, R. P. N., Hayhoe, M. M., and Ballard, D. H. (1997). Eye
+movements reveal the spatiotemporal dynamics of visual search. Psychol. Sci. 8,
+448–453. doi: 10.1111/j.1467-9280.1997.tb00459.x
+Zimmermann, E., and Lappe, M. (2010). Motor signals in visual localization. J. Vis.
+10, 1–11. doi: 10.1167/10.6.2
+Zimmermann,
+E.,
+Morrone,
+M.
+C.,
+and
+Burr,
+D.
+(2015).
+Visual
+mislocalization
+during
+saccade
+sequences.
+Exp.
+Brain.
+Res.
+233,
+577–585.
+doi: 10.1007/s00221-014-4138-z
+Zimmermann, E., Morrone, M. C., and Burr, D. C. (2014). The visual component to
+saccadic compression. J. Vis. 14, 13. doi: 10.1167/14.12.13
+Zwickel, J., Grosjean, M., and Prinz, W. (2007). Seeing while moving: measuring
+the online inﬂuence of action on perception. Q. J. Experiment. Psychol. 60, 1063–1071.
+doi: 10.1080/17470210701288722
+Zwickel, J., Grosjean, M., and Prinz, W. (2010). On interference eﬀects in
+concurrent perception and action. Psychologic. Res. Psychologische Forschung 74,
+152–171. doi: 10.1007/s00426-009-0226-2
+Frontiers in Systems Neuroscience
+16
+frontiersin.org
