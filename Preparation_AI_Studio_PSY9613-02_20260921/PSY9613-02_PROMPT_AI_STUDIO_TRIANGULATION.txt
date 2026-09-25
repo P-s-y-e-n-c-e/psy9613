@@ -1,0 +1,23 @@
+Voici le fichier PSY9613-02_Transitions_raw.md contenant les horodatages des moments de transitions de diapositive pris en direct lors de la séance 2 du cours PSY9613 (21 septembre 2026).
+
+Voici également le fichier audio complet du cours enregistré à proximité du professeur :
+- PSY9613 - 21 septembre [S24D].m4a
+
+Voici enfin le support visuel officiel projeté durant cette séance :
+- Introduction générale au cours PSY9613-2026.pdf (114 diapositives)
+
+Contexte et repères d'ancrage temporel :
+1. L'enregistrement S24D a été lancé à 13:30:00 EDT (T0 = 00:00:00 / 0.00 s).
+2. Le cours magistral a débuté à 14:00:00 EDT (offset 00:30:00 / 1800.00 s). Les 30 premières minutes contiennent l'installation et les échanges informels pré-cours.
+3. La Diapo 1 est affichée de 14:00:00 jusqu'à la transition sur la Diapo 2 ("Aujourd'hui") à 14:03:58 EDT (offset 00:33:58 / 2038.00 s).
+4. La pause de mi-séance a eu lieu de 15:31:33 à 15:51:12 EDT (offset 02:01:33 à 02:21:12 / 7293.00 s à 8472.00 s). À la reprise, le Pr Dave Saint-Amour prend la parole sur l'organisation des débats.
+5. En fin de cours (vers 16:41:47 EDT / offset 03:11:47 / 11507 s), le professeur saute rapidement de la diapo 84 à la diapo 96, puis 97 (conversion middle letter -> phonème /n/ avec son), et se stabilise sur la diapo 98 (analyse des couches cachées, Bullinaria 1997).
+6. Le diaporama se termine à 17:02:11 EDT (offset 03:32:11 / 12731 s) pour laisser place aux questions en plénière.
+7. Arrêt officiel des enregistreurs à 17:06:16 EDT (offset 03:36:16 / 12976.00 s).
+
+Instructions :
+1. Écoute l'audio complet et croise chaque indice oral (citations mot à mot de Descartes, Turing, Fodor, Chomsky, Hopcroft, David Marr, Rosenblatt, PDP, Bullinaria) avec la diapositive correspondante dans le PDF.
+2. Affine chaque horodatage à la seconde près selon l'audio source S24D.
+3. Conserve rigoureusement le format standard à 4 colonnes d'ENCORA :
+| **Timestamp (s)** | **Temps (HH:MM:SS)** | **Fichier PDF** | **Diapo** |
+4. Génère la version finale de PSY9613-02_Transitions.md dans un bloc Markdown complet et directement copiable.

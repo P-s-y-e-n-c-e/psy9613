@@ -1,0 +1,25 @@
+PSY9613 — Séance 2 du 21 septembre 2026
+
+Dans Google AI Studio (aucune charge sur le processeur du vieux laptop) :
+1. Joindre l'enregistrement audio : PSY9613 - 21 septembre [S24D].m4a (Recommandé : placé près du professeur).
+2. Joindre le support visuel : Introduction générale au cours PSY9613-2026.pdf (114 diapositives).
+3. Joindre le fichier brut : PSY9613-02_Transitions_raw.md.
+4. Copier le contenu de PSY9613-02_PROMPT_AI_STUDIO_TRIANGULATION.txt dans le prompt.
+
+Repères d'ancrage temporel :
+- Audio S24D (Maître / Près du professeur) :
+  * Démarrage (T0) : 13:30:00 EDT (Heure de Montréal).
+  * Début réel du cours magistral : 14:00:00 EDT (offset 00:30:00 / 1800.00 s).
+  * Diapo 1 projetée de 14:00:00 à 14:03:58 (offset 1800 s à 2038 s).
+  * Pause de mi-séance : 15:31:33 à 15:51:12 EDT (offset 02:01:33 à 02:21:12 / 7293 s à 8472 s).
+  * Reprise à 15:51:12 avec Dave Saint-Amour sur l'organisation des débats en dyades.
+  * Défilement rapide de fin de cours : diapos 84 -> 96 -> 97 (middle letter /n/) -> 98 (Bullinaria).
+  * Fin du diaporama et plénière questions : 17:02:11 EDT (offset 03:32:11 / 12731 s).
+  * Arrêt officiel des enregistreurs : 17:06:16 EDT (offset 03:36:16 / 12976 s).
+
+- Audio S24 (Secondaire / Table de Michel) :
+  * Démarrage (T0) : 14:00:00 EDT (offset 0.00 s au début du cours).
+  * Pour convertir : Timestamp_S24D = Timestamp_S24 + 1800.00 s.
+
+Consigne d'inférence pour le modèle multimodal :
+Le modèle écoute l'audio complet et croise chaque changement de sujet, citation littérale (Descartes, Turing, Chomsky, Fodor, Marr, Rosenblatt, Bullinaria) avec la diapositive affichée pour valider les timestamps à la seconde près.
