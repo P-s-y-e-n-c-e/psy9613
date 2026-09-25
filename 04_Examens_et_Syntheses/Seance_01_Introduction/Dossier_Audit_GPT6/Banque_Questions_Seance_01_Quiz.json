@@ -6,7 +6,7 @@
     "anchor_id": "anchor_q1",
     "tag": "Poirier & Saint-Amour — Cognition vs Intelligence",
     "points": "1 point",
-    "context": "Toadette : « Bienvenue au séminaire doctoral et de maîtrise, chers collègues ! Dès les premières minutes, les professeurs Poirier et Saint-Amour ont posé les fondations épistémologiques du cours en délimitant rigoureusement le champ d'étude de l'esprit. Attention, ne vous fiez pas au sens commun ! »",
+    "context": "« Bienvenue au séminaire doctoral et de maîtrise, chers collègues ! Dès les premières minutes, les professeurs Poirier et Saint-Amour ont posé les fondations épistémologiques du cours en délimitant rigoureusement le champ d'étude de l'esprit. Attention, ne vous fiez pas au sens commun ! »",
     "question": "Dans le cadre épistémologique développé par les professeurs Pierre Poirier et Dave Saint-Amour pour formaliser l'étude de l'esprit, comment se définit rigoureusement la frontière conceptuelle entre « cognition » et « intelligence » ?",
     "options": [
       "La cognition désigne les capacités de raisonnement formel de haut niveau (planification, métacognition), tandis que l'intelligence qualifie l'efficacité des boucles sensorimotrices réflexes.",
@@ -16,10 +16,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Aïe ! Tu as inversé la hiérarchie classique. Les réflexes sensorimoteurs ne constituent pas l'intelligence ; au contraire, dans la tradition des sciences cognitives, l'intelligence renvoie à la flexibilité et à l'adaptation face à des contextes nouveaux, tandis que la cognition décrit la machinerie sous-jacente sans distinction de niveau.",
-      "Toad : Excellent réflexe ! C'est exactement la distinction posée aux Diapos 7 et 8 : la cognition s'intéresse à « ce qui se passe » (la mécanique descriptive du traitement de l'information, qu'elle soit brillante ou erronée), tandis que l'intelligence introduit une norme de valeur et d'optimalité face à la nouveauté.",
-      "Toad : Attention au piège ! Tu confonds ici la distinction épistémologique fondamentale avec la dichotomie psychométrique entre pensée convergente et divergente (Guilford). Ce n'est pas le cadre posé par Poirier et Saint-Amour.",
-      "Toad : Non, méfiance ! Les professeurs ont insisté dès l'introduction sur le fait que la cognition comme l'intelligence peuvent s'incarner aussi bien dans des substrats biologiques que dans des architectures artificielles. Restreindre la cognition à la biologie est une erreur majeure."
+      "Aïe ! Tu as inversé la hiérarchie classique. Les réflexes sensorimoteurs ne constituent pas l'intelligence ; au contraire, dans la tradition des sciences cognitives, l'intelligence renvoie à la flexibilité et à l'adaptation face à des contextes nouveaux, tandis que la cognition décrit la machinerie sous-jacente sans distinction de niveau.",
+      "Excellent réflexe ! C'est exactement la distinction posée aux Diapos 7 et 8 : la cognition s'intéresse à « ce qui se passe » (la mécanique descriptive du traitement de l'information, qu'elle soit brillante ou erronée), tandis que l'intelligence introduit une norme de valeur et d'optimalité face à la nouveauté.",
+      "Attention au piège ! Tu confonds ici la distinction épistémologique fondamentale avec la dichotomie psychométrique entre pensée convergente et divergente (Guilford). Ce n'est pas le cadre posé par Poirier et Saint-Amour.",
+      "Non, méfiance ! Les professeurs ont insisté dès l'introduction sur le fait que la cognition comme l'intelligence peuvent s'incarner aussi bien dans des substrats biologiques que dans des architectures artificielles. Restreindre la cognition à la biologie est une erreur majeure."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 7 & 8",
@@ -37,7 +37,7 @@
     "anchor_id": "anchor_q2",
     "tag": "Modèle Classique vs Boucle Sensorimotrice",
     "points": "1 point",
-    "context": "Toadette : « Place à la critique architecturale des sciences cognitives ! Regardez bien le modèle traditionnel du « sandwich classique » (Perception -> Cognition -> Action). Pourquoi les théoriciens de l'action incarnée le rejettent-ils catégoriquement ? »",
+    "context": "« Place à la critique architecturale des sciences cognitives ! Regardez bien le modèle traditionnel du « sandwich classique » (Perception -> Cognition -> Action). Pourquoi les théoriciens de l'action incarnée le rejettent-ils catégoriquement ? »",
     "question": "Pourquoi le modèle traditionnel « Perception -> Cognition -> Action » (qualifié de « sandwich classique » ou modèle von Neumann) est-il jugé théoriquement insuffisant pour fonder les sciences cognitives contemporaines ?",
     "options": [
       "Parce qu'il présuppose que les représentations centrales de la cognition sont analogiques et continues, interdisant toute formalisation computationnelle discrète.",
@@ -47,10 +47,10 @@
     ],
     "correctIndex": 2,
     "feedbacks": [
-      "Toad : Erreur théorique ! Le modèle classique est au contraire profondément computationnel et symbolique discret (inspiré de Turing et von Neumann). Ce n'est absolument pas pour un présupposé analogique qu'il est critiqué.",
-      "Toad : Belle tentative de jargon technique, mais c'est faux ! La critique ne porte pas sur un bilan de bande passante ou une violation thermodynamique, mais sur l'absence de circularité fonctionnelle entre le pôle sensoriel et le pôle moteur.",
-      "Toad : Dans le mille ! Le modèle classique sépare artificiellement perception et action en un système linéaire ouvert. Or, toutes les expériences de la séance (Held & Hein, Milner & Goodale, Proffitt, Bosco) prouvent que l'action réécrit la perception en boucle fermée !",
-      "Toad : Attention à l'anachronisme ! Fechner a fondé la psychophysique classique sur une mesure passive de seuils sensoriels sans jamais postuler de rétroaction tactile obligatoire pour la vision."
+      "Erreur théorique ! Le modèle classique est au contraire profondément computationnel et symbolique discret (inspiré de Turing et von Neumann). Ce n'est absolument pas pour un présupposé analogique qu'il est critiqué.",
+      "Belle tentative de jargon technique, mais c'est faux ! La critique ne porte pas sur un bilan de bande passante ou une violation thermodynamique, mais sur l'absence de circularité fonctionnelle entre le pôle sensoriel et le pôle moteur.",
+      "Dans le mille ! Le modèle classique sépare artificiellement perception et action en un système linéaire ouvert. Or, toutes les expériences de la séance (Held & Hein, Milner & Goodale, Proffitt, Bosco) prouvent que l'action réécrit la perception en boucle fermée !",
+      "Attention à l'anachronisme ! Fechner a fondé la psychophysique classique sur une mesure passive de seuils sensoriels sans jamais postuler de rétroaction tactile obligatoire pour la vision."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 9 & 41",
@@ -68,7 +68,7 @@
     "anchor_id": "anchor_q3",
     "tag": "Psychophysique — Loi de Weber-Fechner",
     "points": "1 point",
-    "context": "Toadette : « Sortez vos équations et vos règles à calcul ! On plonge dans la naissance de la psychophysique au XIXe siècle avec Ernst Weber et Gustav Fechner. Que dit réellement la relation logarithmique S = k * log(I) ? »",
+    "context": "« Sortez vos équations et vos règles à calcul ! On plonge dans la naissance de la psychophysique au XIXe siècle avec Ernst Weber et Gustav Fechner. Que dit réellement la relation logarithmique S = k * log(I) ? »",
     "question": "Soit la loi de Weber-Fechner S = k * log(I). Quelle prédiction psychophysique formelle découle directement de cette relation logarithmique liant la sensation (S) à l'énergie physique (I) ?",
     "options": [
       "Le seuil différentiel absolu (delta I) demeure rigoureusement constant quelle que soit la valeur de base du stimulus (I), garantissant une sensibilité linéaire du système sensoriel.",
@@ -78,10 +78,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Attention, c'est le piège numéro un ! Si delta I était constant, la loi serait linéaire. Or Weber a montré que delta I / I = constante : plus le stimulus de départ est fort, plus delta I doit être grand !",
-      "Toad : Brillant calcul ! C'est la propriété mathématique fondamentale du logarithme : pour que S grimpe de façon arithmétique (+1, +2, +3), I doit être multiplié par une constante géométrique. C'est pourquoi passer de 10 à 20 points se voit immédiatement, alors que passer de 110 à 120 est imperceptible !",
-      "Toad : Piège de haut vol ! Tu décris ici la Loi de Puissance de Stevens (S = k * I^n), formulée dans les années 1950 pour contester Fechner, mais ce n'est pas la loi de Weber-Fechner !",
-      "Toad : Absolument pas ! Le système sensoriel ne cesse pas de fonctionner au-delà de la JND, il continue de discriminer selon la même fraction constante."
+      "Attention, c'est le piège numéro un ! Si delta I était constant, la loi serait linéaire. Or Weber a montré que delta I / I = constante : plus le stimulus de départ est fort, plus delta I doit être grand !",
+      "Brillant calcul ! C'est la propriété mathématique fondamentale du logarithme : pour que S grimpe de façon arithmétique (+1, +2, +3), I doit être multiplié par une constante géométrique. C'est pourquoi passer de 10 à 20 points se voit immédiatement, alors que passer de 110 à 120 est imperceptible !",
+      "Piège de haut vol ! Tu décris ici la Loi de Puissance de Stevens (S = k * I^n), formulée dans les années 1950 pour contester Fechner, mais ce n'est pas la loi de Weber-Fechner !",
+      "Absolument pas ! Le système sensoriel ne cesse pas de fonctionner au-delà de la JND, il continue de discriminer selon la même fraction constante."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 10 & 11",
@@ -99,7 +99,7 @@
     "anchor_id": "anchor_q4",
     "tag": "Crise du Seuil Fixe — Bruit Neuronal Spontané",
     "points": "1 point",
-    "context": "Toadette : « Attention, tournant historique ! Pourquoi a-t-il fallu jeter à la poubelle le concept classique de « seuil absolu fixe » sur lequel toute la psychophysique du XIXe siècle reposait ? »",
+    "context": "« Attention, tournant historique ! Pourquoi a-t-il fallu jeter à la poubelle le concept classique de « seuil absolu fixe » sur lequel toute la psychophysique du XIXe siècle reposait ? »",
     "question": "Quel constat physiologique empirique a conduit à l'abandon du postulat classique de « seuil absolu fixe » au profit des modèles probabilistes de la Théorie de la Détection du Signal (TDS) ?",
     "options": [
       "L'existence démontrée d'une période réfractaire absolue dans les axones des récepteurs sensoriels qui bloque la transmission des potentiels d'action au-delà d'une certaine fréquence.",
@@ -109,10 +109,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Ne confonds pas les phénomènes ! La période réfractaire existe bien, mais elle explique la saturation aux hautes fréquences de stimulation, pas l'impossibilité d'un seuil absolu au repos.",
-      "Toad : Magistral ! C'est le cœur de la Diapositive 12 (« Le problème... ») : les neurones crépitent en permanence même dans le noir complet et le silence absolu. Ce bruit de fond stochastique fait qu'un signal faible ne franchit pas une porte magique, mais doit être extrait statistiquement d'une distribution de bruit !",
-      "Toad : Fausse piste physiologique ! Les variations circadiennes existent pour certaines fonctions, mais elles n'ont aucun rapport avec la faillite conceptuelle du seuil fixe en laboratoire psychophysique.",
-      "Toad : Données fantaisistes ! L'adaptation sensorielle réduit la décharge, mais n'annule pas la réponse corticale en 50 ms et n'explique pas les fausses alarmes en l'absence de stimulus."
+      "Ne confonds pas les phénomènes ! La période réfractaire existe bien, mais elle explique la saturation aux hautes fréquences de stimulation, pas l'impossibilité d'un seuil absolu au repos.",
+      "Magistral ! C'est le cœur de la Diapositive 12 (« Le problème... ») : les neurones crépitent en permanence même dans le noir complet et le silence absolu. Ce bruit de fond stochastique fait qu'un signal faible ne franchit pas une porte magique, mais doit être extrait statistiquement d'une distribution de bruit !",
+      "Fausse piste physiologique ! Les variations circadiennes existent pour certaines fonctions, mais elles n'ont aucun rapport avec la faillite conceptuelle du seuil fixe en laboratoire psychophysique.",
+      "Données fantaisistes ! L'adaptation sensorielle réduit la décharge, mais n'annule pas la réponse corticale en 50 ms et n'explique pas les fausses alarmes en l'absence de stimulus."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 12",
@@ -130,7 +130,7 @@
     "anchor_id": "anchor_q5",
     "tag": "TDS — Découplage Sensibilité (d') et Biais (c)",
     "points": "1 point",
-    "context": "Toadette : « Voici l'un des piliers incontournables des examens du Pr Saint-Amour ! Un candidat affiche 96 % de détections réussies. Est-il un génie sensoriel ? Décortiquons la réponse ! »",
+    "context": "« Voici l'un des piliers incontournables des examens du Pr Saint-Amour ! Un candidat affiche 96 % de détections réussies. Est-il un génie sensoriel ? Décortiquons la réponse ! »",
     "question": "Un observateur participant à une tâche de détection visuelle obtient un taux de détections correctes exceptionnellement élevé (Hits = 0,96). Pourquoi ce résultat brut est-il totalement insuffisant pour conclure que cet observateur possède une excellente sensibilité discriminative sensorielle (d') ?",
     "options": [
       "Parce que le calcul du d' exige que la variance de la distribution du bruit soit significativement supérieure à celle du signal, ce qui n'est vérifiable que par des mesures EEG simultanées.",
@@ -140,10 +140,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Dans le modèle standard de la TDS enseigné par Dave Saint-Amour, on pose par hypothèse que la variance du bruit et celle du signal+bruit sont égales (modèle à variance égale, sigma = 1). Aucun enregistrement EEG n'est requis.",
-      "Toad : Chapeau bas ! C'est le piège fondamental déjoué par la TDS : un taux de Hits isolé ne veut RIEN dire. Si le sujet dit « OUI » 96 % du temps avec un signal, mais aussi 95 % du temps quand il n'y a que du bruit (Fausses Alarmes), son d' est de z(0.96) - z(0.95) = 1.75 - 1.64 = 0.11, soit une sensibilité quasi nulle !",
-      "Toad : Non, au contraire ! Si les fausses alarmes valent zéro, z(0) tend vers moins l'infini et le d' devient indéfini sans correction mathématique. La TDS a absolument besoin des deux taux (Hits et FA) pour séparer sensibilité et critère.",
-      "Toad : Pure invention statistique ! Un taux de 0,90 ou 0,96 se convertit parfaitement en score z (environ +1,75 pour 0,96) dans une loi normale centrée réduite."
+      "Faux ! Dans le modèle standard de la TDS enseigné par Dave Saint-Amour, on pose par hypothèse que la variance du bruit et celle du signal+bruit sont égales (modèle à variance égale, sigma = 1). Aucun enregistrement EEG n'est requis.",
+      "Chapeau bas ! C'est le piège fondamental déjoué par la TDS : un taux de Hits isolé ne veut RIEN dire. Si le sujet dit « OUI » 96 % du temps avec un signal, mais aussi 95 % du temps quand il n'y a que du bruit (Fausses Alarmes), son d' est de z(0.96) - z(0.95) = 1.75 - 1.64 = 0.11, soit une sensibilité quasi nulle !",
+      "Non, au contraire ! Si les fausses alarmes valent zéro, z(0) tend vers moins l'infini et le d' devient indéfini sans correction mathématique. La TDS a absolument besoin des deux taux (Hits et FA) pour séparer sensibilité et critère.",
+      "Pure invention statistique ! Un taux de 0,90 ou 0,96 se convertit parfaitement en score z (environ +1,75 pour 0,96) dans une loi normale centrée réduite."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 13 à 16",
@@ -161,7 +161,7 @@
     "anchor_id": "anchor_q6",
     "tag": "TDS — Conventions de Signe du Critère c",
     "points": "1 point",
-    "context": "Toadette : « Gare au signe moins ! La formule mathématique du critère de décision c = -0.5 * [z(Hits) + z(FA)] est une source majeure de pertes de points aux examens. Maîtrisez-vous la convention exacte ? »",
+    "context": "« Gare au signe moins ! La formule mathématique du critère de décision c = -0.5 * [z(Hits) + z(FA)] est une source majeure de pertes de points aux examens. Maîtrisez-vous la convention exacte ? »",
     "question": "Selon la modélisation mathématique standard de la TDS (Macmillan & Creelman) enseignée par Dave Saint-Amour, comment s'interprètent la valeur et le signe du critère décisionnel c = -0,5 * [z(Hits) + z(FA)] ?",
     "options": [
       "Un critère c = 0 indique que l'observateur ne détecte aucun stimulus ; un critère c > 0 reflète une stratégie libérale favorisant les Hits ; un critère c < 0 reflète une stratégie conservatrice.",
@@ -171,10 +171,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Aïe, tu as inversé les signes ! À cause du signe « moins » devant la parenthèse, lorsque les scores z sont élevés (stratégie libérale), c devient NÉGATIF. C'est l'erreur classique que Dave Saint-Amour adore piéger !",
-      "Toad : Impeccable ! Retiens cette géométrie mentale : l'axe va de gauche à droite. Si le seuil recule vers la gauche (valeurs négatives de c), l'observateur dit « OUI » très facilement (libéral). S'il avance vers la droite (c > 0), il devient méfiant et conservateur.",
-      "Toad : Absolument pas ! La distance entre les moyennes est mesurée par la sensibilité d' (d-prime). Le critère c représente la position du seuil de coupure par rapport au point neutre.",
-      "Toad : Faux ! Le critère c est une coordonnée algébrique sur l'axe des abscisses centrée sur le point d'intersection neutre, et non une distance euclidienne absolue. Il peut tout à fait être négatif, nul ou positif."
+      "Aïe, tu as inversé les signes ! À cause du signe « moins » devant la parenthèse, lorsque les scores z sont élevés (stratégie libérale), c devient NÉGATIF. C'est l'erreur classique que Dave Saint-Amour adore piéger !",
+      "Impeccable ! Retiens cette géométrie mentale : l'axe va de gauche à droite. Si le seuil recule vers la gauche (valeurs négatives de c), l'observateur dit « OUI » très facilement (libéral). S'il avance vers la droite (c > 0), il devient méfiant et conservateur.",
+      "Absolument pas ! La distance entre les moyennes est mesurée par la sensibilité d' (d-prime). Le critère c représente la position du seuil de coupure par rapport au point neutre.",
+      "Faux ! Le critère c est une coordonnée algébrique sur l'axe des abscisses centrée sur le point d'intersection neutre, et non une distance euclidienne absolue. Il peut tout à fait être négatif, nul ou positif."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 14",
@@ -192,7 +192,7 @@
     "anchor_id": "anchor_q7",
     "tag": "TDS — Calcul Appliqué (d' = 2.12)",
     "points": "1 point",
-    "context": "Toadette : « On passe à l'application numérique directe ! Les professeurs adorent tester votre capacité à manipuler les tables de la loi normale centrée réduite z. Préparez vos méninges ! »",
+    "context": "« On passe à l'application numérique directe ! Les professeurs adorent tester votre capacité à manipuler les tables de la loi normale centrée réduite z. Préparez vos méninges ! »",
     "question": "Un observateur présente une sensibilité constante d' = 2,12. En condition neutre, ses taux sont Hits = 0,86 (z = +1,08) et FA = 0,15 (z = -1,04), d'où c = -0,5 * [1,08 + (-1,04)] = -0,02. Si on modifie les consignes pour l'inciter à adopter une stratégie strictement libérale, quelle modification conjointe des taux observera-t-on obligatoirement ?",
     "options": [
       "Le taux de Hits augmente (ex: 0,95, z = +1,64) mais le taux de FA diminue (ex: 0,05, z = -1,64), ce qui fait grimper le d' à 3,28.",
@@ -202,10 +202,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Erreur fondamentale de TDS ! Tu as fait augmenter la sensibilité d' (qui passe à 3,28) ! Or l'énoncé spécifie que la sensibilité sensorielle est CONSTANTE. Changer de consigne ne rend pas les yeux de l'observateur biologiquement plus performants !",
-      "Toad : Parfaitement maîtrisé ! Quand un observateur devient libéral, son critère glisse vers la gauche : il gagne plus de Hits (+0,95), mais paie le prix fort en récoltant beaucoup plus de Fausses Alarmes (0,32). Le d' reste à 1.64 - (-0.47) = 2.11, et c devient bien négatif (-0.58).",
-      "Toad : Faux ! Si Hits et FA diminuent tous les deux, le sujet répond moins souvent « OUI », ce qui caractérise une stratégie CONSERVATRICE (c > 0), et non libérale !",
-      "Toad : Non, un sujet qui devient libéral ne garde pas son taux de Hits figé : il dit « OUI » plus souvent, donc ses Hits augmentent nécessairement en même temps que ses Fausses Alarmes."
+      "Erreur fondamentale de TDS ! Tu as fait augmenter la sensibilité d' (qui passe à 3,28) ! Or l'énoncé spécifie que la sensibilité sensorielle est CONSTANTE. Changer de consigne ne rend pas les yeux de l'observateur biologiquement plus performants !",
+      "Parfaitement maîtrisé ! Quand un observateur devient libéral, son critère glisse vers la gauche : il gagne plus de Hits (+0,95), mais paie le prix fort en récoltant beaucoup plus de Fausses Alarmes (0,32). Le d' reste à 1.64 - (-0.47) = 2.11, et c devient bien négatif (-0.58).",
+      "Faux ! Si Hits et FA diminuent tous les deux, le sujet répond moins souvent « OUI », ce qui caractérise une stratégie CONSERVATRICE (c > 0), et non libérale !",
+      "Non, un sujet qui devient libéral ne garde pas son taux de Hits figé : il dit « OUI » plus souvent, donc ses Hits augmentent nécessairement en même temps que ses Fausses Alarmes."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 14 à 16",
@@ -223,7 +223,7 @@
     "anchor_id": "anchor_q8",
     "tag": "Paradigme RDM (Random Dot Motion) & Psychophysique",
     "points": "1 point",
-    "context": "Toadette : « Entrez dans le laboratoire de neurosciences visuelles ! La tâche des points en mouvement cohérent (RDM, Newsome, Britten, Shadlen) est le gold standard mondial de la décision perceptive. Comment l'analyse-t-on psychophysiquement ? »",
+    "context": "« Entrez dans le laboratoire de neurosciences visuelles ! La tâche des points en mouvement cohérent (RDM, Newsome, Britten, Shadlen) est le gold standard mondial de la décision perceptive. Comment l'analyse-t-on psychophysiquement ? »",
     "question": "Dans le paradigme classique des points en mouvement aléatoire (Random Dot Motion - RDM, Diapo 17) utilisé par Dave Saint-Amour pour illustrer la TDS, que manipule précisément l'expérimentateur et comment modélise-t-on le seuil de discrimination du participant ?",
     "options": [
       "L'expérimentateur manipule la fréquence spatiale des points ; le seuil correspond à la luminance minimale requise pour activer les cônes fovéaux.",
@@ -233,10 +233,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! La tâche RDM ne manipule pas la fréquence spatiale ni la luminance fovéale, mais la cinématique globale et la cohérence directionnelle de la population de points.",
-      "Toad : Parfaitement exact ! En RDM, on règle le niveau de cohérence : à 0 %, les points bougent de façon stochastique désordonnée. Plus on monte le pourcentage (3 %, 6 %, 12 %, 25 %), plus le signal émerge du bruit. L'ajustement d'une courbe sigmoïde permet d'extraire le seuil de cohérence à 75 % ou 82 % de précision.",
-      "Toad : Confusion technique ! Le taux de rafraîchissement de l'écran n'est pas la variable indépendante d'intérêt psychophysique du RDM.",
-      "Toad : Élucubration complète ! Les points sont typiquement des pastilles blanches achromatiques sur fond noir pour isoler le traitement du mouvement (aire MT/V5) sans introduire de signaux de couleur."
+      "Faux ! La tâche RDM ne manipule pas la fréquence spatiale ni la luminance fovéale, mais la cinématique globale et la cohérence directionnelle de la population de points.",
+      "Parfaitement exact ! En RDM, on règle le niveau de cohérence : à 0 %, les points bougent de façon stochastique désordonnée. Plus on monte le pourcentage (3 %, 6 %, 12 %, 25 %), plus le signal émerge du bruit. L'ajustement d'une courbe sigmoïde permet d'extraire le seuil de cohérence à 75 % ou 82 % de précision.",
+      "Confusion technique ! Le taux de rafraîchissement de l'écran n'est pas la variable indépendante d'intérêt psychophysique du RDM.",
+      "Élucubration complète ! Les points sont typiquement des pastilles blanches achromatiques sur fond noir pour isoler le traitement du mouvement (aire MT/V5) sans introduire de signaux de couleur."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 17",
@@ -254,7 +254,7 @@
     "anchor_id": "anchor_q9",
     "tag": "William James (1890) & Fonctionnalisme",
     "points": "1 point",
-    "context": "Toadette : « Remontons aux origines de la psychologie américaine avec William James (1890) ! Pourquoi Pierre Poirier insiste-t-il sur sa vision révolutionnaire de la pensée ? »",
+    "context": "« Remontons aux origines de la psychologie américaine avec William James (1890) ! Pourquoi Pierre Poirier insiste-t-il sur sa vision révolutionnaire de la pensée ? »",
     "question": "Dans ses Principles of Psychology (1890), cités par Pierre Poirier (Diapo 18), quelle thèse fondatrice William James avance-t-il concernant la finalité évolutive de la pensée et de la perception ?",
     "options": [
       "La pensée humaine est un miroir passif et désintéressé destiné à contempler les vérités mathématiques universelles indépendamment de toute action corporelle.",
@@ -264,10 +264,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Non, c'est l'opposé exact de l'esprit jamesien ! James combat farouchement la vision de l'esprit comme un spectateur désincarné ou un miroir pur.",
-      "Toad : Brillantissime ! Cette citation célèbre de William James (« My thinking is first and last and always for the sake of my doing ») est le drapeau historique de la cognition incarnée et du pragmatisme : penser, c'est agir !",
-      "Toad : Anachronisme complet ! La machine de Turing date de 1936 et correspond au computationalisme fonctionnaliste d'Hilary Putnam, que la perspective sensorimotrice critique justement.",
-      "Toad : Hors sujet total ! James est un physiologiste rigoureux qui s'oppose au spiritualisme naïf."
+      "Non, c'est l'opposé exact de l'esprit jamesien ! James combat farouchement la vision de l'esprit comme un spectateur désincarné ou un miroir pur.",
+      "Brillantissime ! Cette citation célèbre de William James (« My thinking is first and last and always for the sake of my doing ») est le drapeau historique de la cognition incarnée et du pragmatisme : penser, c'est agir !",
+      "Anachronisme complet ! La machine de Turing date de 1936 et correspond au computationalisme fonctionnaliste d'Hilary Putnam, que la perspective sensorimotrice critique justement.",
+      "Hors sujet total ! James est un physiologiste rigoureux qui s'oppose au spiritualisme naïf."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 18",
@@ -285,7 +285,7 @@
     "anchor_id": "anchor_q10",
     "tag": "Pénétration Contextuelle — Figure '13' vs 'B'",
     "points": "1 point",
-    "context": "Toadette : « Ouvrez grand vos yeux ! Sur la diapositive 19, une même forme graphique ambiguë est perçue soit comme la lettre 'B', soit comme le nombre '13'. Qu'est-ce que cela prouve formellement ? »",
+    "context": "« Ouvrez grand vos yeux ! Sur la diapositive 19, une même forme graphique ambiguë est perçue soit comme la lettre 'B', soit comme le nombre '13'. Qu'est-ce que cela prouve formellement ? »",
     "question": "Que démontre formellement l'expérience classique de la figure ambiguë « 13 / B » (Bruner & Minturn, 1955, Diapo 19) présentée en cours par les professeurs ?",
     "options": [
       "Elle prouve que les récepteurs rétiniens modifient leur transduction photochimique en fonction de la langue maternelle de l'observateur.",
@@ -295,10 +295,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! La rétine reçoit rigoureusement les mêmes photons dans les deux contextes. La modification s'opère dans les aires corticales sous l'influence des représentations contextuelles descendantes.",
-      "Toad : Bravo ! C'est l'illustration princeps de la faillite du modèle purement ascendant (bottom-up). Le stimulus physique est identique au pixel près, mais le réseau infère « B » s'il est entouré de lettres et « 13 » s'il est entouré de chiffres. Le cerveau impose son hypothèse contextuelle descendante !",
-      "Toad : Contresens total sur V1 ! Les cellules simples de Hubel et Wiesel extraient parfaitement les barres verticales et courbes, mais c'est l'intégration sémantique supérieure qui attribue l'identité catégorielle.",
-      "Toad : Neuromythe absolu ! Les chiffres et les lettres mobilisent tous deux la voie ventrale occipito-temporale gauche (Visual Word Form Area et Number Form Area)."
+      "Faux ! La rétine reçoit rigoureusement les mêmes photons dans les deux contextes. La modification s'opère dans les aires corticales sous l'influence des représentations contextuelles descendantes.",
+      "Bravo ! C'est l'illustration princeps de la faillite du modèle purement ascendant (bottom-up). Le stimulus physique est identique au pixel près, mais le réseau infère « B » s'il est entouré de lettres et « 13 » s'il est entouré de chiffres. Le cerveau impose son hypothèse contextuelle descendante !",
+      "Contresens total sur V1 ! Les cellules simples de Hubel et Wiesel extraient parfaitement les barres verticales et courbes, mais c'est l'intégration sémantique supérieure qui attribue l'identité catégorielle.",
+      "Neuromythe absolu ! Les chiffres et les lettres mobilisent tous deux la voie ventrale occipito-temporale gauche (Visual Word Form Area et Number Form Area)."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 19",
@@ -316,7 +316,7 @@
     "anchor_id": "anchor_q11",
     "tag": "Helmholtz vs Gregory — Inférences Inconscientes",
     "points": "1 point",
-    "context": "Toadette : « Deux géants de la théorie de la vision entrent dans l'arène : Hermann von Helmholtz et Richard Gregory ! Comment s'articule leur filiation intellectuelle ? »",
+    "context": "« Deux géants de la théorie de la vision entrent dans l'arène : Hermann von Helmholtz et Richard Gregory ! Comment s'articule leur filiation intellectuelle ? »",
     "question": "Comment s'articulent historiquement les apports de Hermann von Helmholtz et de Richard Gregory dans l'émergence de la conception prédictive de la vision (Diapo 20) ?",
     "options": [
       "Helmholtz a formalisé la notion d'« inférences inconscientes » face à la sous-détermination rétinienne, que Gregory a prolongée en conceptualisant les perceptions comme des « hypothèses » testées en temps réel sur le flux sensoriel.",
@@ -326,10 +326,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Victoire ! C'est la filiation exacte exposée en classe : pour Helmholtz (1867), l'image 2D sur la rétine est sous-déterminée (problème inverse), le cerveau doit donc réaliser des inférences inconscientes basées sur l'expérience passée. Richard Gregory (1980) formule cela de manière moderne : « Les perceptions sont des hypothèses » !",
-      "Toad : Faux ! C'est James J. Gibson (et non Helmholtz) qui défendait la vision directe sans représentations !",
-      "Toad : Attention aux mots ! Helmholtz a expressément qualifié ces inférences d'« INCONSCIENTES » (*unbewusster Schluss*), et non conscientes !",
-      "Toad : Égarement complet ! Gregory est le maître incontesté de l'étude cognitive des illusions d'optique qu'il explique précisément par des erreurs de test d'hypothèses cérébrales, et non par de vulgaires défauts du cristallin."
+      "Victoire ! C'est la filiation exacte exposée en classe : pour Helmholtz (1867), l'image 2D sur la rétine est sous-déterminée (problème inverse), le cerveau doit donc réaliser des inférences inconscientes basées sur l'expérience passée. Richard Gregory (1980) formule cela de manière moderne : « Les perceptions sont des hypothèses » !",
+      "Faux ! C'est James J. Gibson (et non Helmholtz) qui défendait la vision directe sans représentations !",
+      "Attention aux mots ! Helmholtz a expressément qualifié ces inférences d'« INCONSCIENTES » (*unbewusster Schluss*), et non conscientes !",
+      "Égarement complet ! Gregory est le maître incontesté de l'étude cognitive des illusions d'optique qu'il explique précisément par des erreurs de test d'hypothèses cérébrales, et non par de vulgaires défauts du cristallin."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 20",
@@ -347,7 +347,7 @@
     "anchor_id": "anchor_q12",
     "tag": "Karl Friston — Cerveau Prédictif & Énergie Libre",
     "points": "1 point",
-    "context": "Toadette : « Accrochez vos ceintures théoriques ! Karl Friston et le principe de l'énergie libre font leur entrée (Diapo 21). Comment le cerveau prédictif résout-il ses erreurs ? »",
+    "context": "« Accrochez vos ceintures théoriques ! Karl Friston et le principe de l'énergie libre font leur entrée (Diapo 21). Comment le cerveau prédictif résout-il ses erreurs ? »",
     "question": "Dans le cadre contemporain du Cerveau Prédictif (Predictive Processing) formalisé notamment par Karl Friston (Diapo 21), comment le système nerveux minimise-t-il l'erreur de prédiction sensorielle ?",
     "options": [
       "En interrompant temporairement toute activité métabolique neuronale dès qu'une anomalie sensorielle est détectée.",
@@ -357,10 +357,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Le cerveau ne coupe jamais son métabolisme ; minimiser l'énergie libre est un impératif computationnel continu pour rester en vie.",
-      "Toad : Splendide maîtrise conceptuelle ! C'est la pierre angulaire du modèle de Friston : pour réduire l'erreur de prédiction, le cerveau a deux leviers : 1) changer d'avis (inférence perceptive passive en adaptant le modèle interne), ou 2) bouger le corps (inférence active, en modifiant l'environnement par l'action pour qu'il colle aux attentes) !",
-      "Toad : Contresens absolu ! Dans le codage prédictif (Rao & Ballard, Friston), le signal brut n'est JAMAIS transmis vers le haut : seules les ERREURS résiduelles de prédiction non expliquées montent dans la hiérarchie corticale !",
-      "Toad : Farfelu ! La mémoire et les modèles a priori constituent la ressource indispensable sans laquelle aucune prédiction ne serait possible."
+      "Faux ! Le cerveau ne coupe jamais son métabolisme ; minimiser l'énergie libre est un impératif computationnel continu pour rester en vie.",
+      "Splendide maîtrise conceptuelle ! C'est la pierre angulaire du modèle de Friston : pour réduire l'erreur de prédiction, le cerveau a deux leviers : 1) changer d'avis (inférence perceptive passive en adaptant le modèle interne), ou 2) bouger le corps (inférence active, en modifiant l'environnement par l'action pour qu'il colle aux attentes) !",
+      "Contresens absolu ! Dans le codage prédictif (Rao & Ballard, Friston), le signal brut n'est JAMAIS transmis vers le haut : seules les ERREURS résiduelles de prédiction non expliquées montent dans la hiérarchie corticale !",
+      "Farfelu ! La mémoire et les modèles a priori constituent la ressource indispensable sans laquelle aucune prédiction ne serait possible."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 21",
@@ -378,7 +378,7 @@
     "anchor_id": "anchor_q13",
     "tag": "Anamorphoses Urbaines & Inférence Active",
     "points": "1 point",
-    "context": "Toadette : « Vous marchez dans une rue de Montréal ou de Paris et vous voyez une fresque géante déformée peinte sur les pavés (Diapos 22 et 23). Pourquoi cette illusion s'effondre-t-elle dès que vous marchez ? »",
+    "context": "« Vous marchez dans une rue de Montréal ou de Paris et vous voyez une fresque géante déformée peinte sur les pavés (Diapos 22 et 23). Pourquoi cette illusion s'effondre-t-elle dès que vous marchez ? »",
     "question": "Que démontre l'analyse des illusions d'anamorphose urbaine (ex: trompe-l'œil 3D peints au sol, Diapos 22 & 23) concernant le rôle du mouvement corporel dans la perception visuelle de l'espace ?",
     "options": [
       "L'illusion 3D parfaite n'existe que d'un point de vue statique monoculaire géométriquement contraint ; dès que l'observateur se déplace, les boucles de rétroaction sensorimotrices et le flux optique dynamique brisent immédiatement l'ambiguïté en révélant la véritable surface plane du sol, démontrant que l'action motrice dissipe les ambiguïtés optiques passives.",
@@ -388,10 +388,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Exactement ! C'est l'argument massue de la perception active : tant que vous êtes immobile d'un point fixe (comme un tableau ou une photo de laboratoire), le cerveau peut être dupé par une projection plane. Mais dès que vous faites un pas (action), le flux parallactique résout instantanément la sous-détermination !",
-      "Toad : Complètement faux ! Si vous vous décalez de deux mètres sur le côté, l'illusion s'effondre totalement et vous ne voyez qu'une tache étirée informe.",
-      "Toad : Non, l'oreille interne et le système visuel collaborent harmonieusement ; le mouvement ne sature rien, il fournit l'information kinésiologique requise pour trancher le vrai du faux !",
-      "Toad : Faux sur toute la ligne ! Les anamorphoses prouvent au contraire la fragilité de la vision passive et la nécessité du couplage sensorimoteur dynamique pour calibrer la profondeur."
+      "Exactement ! C'est l'argument massue de la perception active : tant que vous êtes immobile d'un point fixe (comme un tableau ou une photo de laboratoire), le cerveau peut être dupé par une projection plane. Mais dès que vous faites un pas (action), le flux parallactique résout instantanément la sous-détermination !",
+      "Complètement faux ! Si vous vous décalez de deux mètres sur le côté, l'illusion s'effondre totalement et vous ne voyez qu'une tache étirée informe.",
+      "Non, l'oreille interne et le système visuel collaborent harmonieusement ; le mouvement ne sature rien, il fournit l'information kinésiologique requise pour trancher le vrai du faux !",
+      "Faux sur toute la ligne ! Les anamorphoses prouvent au contraire la fragilité de la vision passive et la nécessité du couplage sensorimoteur dynamique pour calibrer la profondeur."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 22 & 23",
@@ -409,7 +409,7 @@
     "anchor_id": "anchor_q14",
     "tag": "Éthologie & Niko Tinbergen (1961)",
     "points": "1 point",
-    "context": "Toadette : « Faisons un détour par l'éthologie animale avec Niko Tinbergen (Diapo 24). Pourquoi l'expérience du poussin de goéland argenté est-elle cruciale pour comprendre le système visuel ? »",
+    "context": "« Faisons un détour par l'éthologie animale avec Niko Tinbergen (Diapo 24). Pourquoi l'expérience du poussin de goéland argenté est-elle cruciale pour comprendre le système visuel ? »",
     "question": "Dans l'expérience classique d'éthologie de Niko Tinbergen (1961) présentée à la Diapo 24, quelle observation fondamentale révèle la nature pragmatique du système visuel du poussin de goéland argenté ?",
     "options": [
       "Le poussin reconnaît le visage individualisé de sa mère grâce à un système neuronal complexe analogue à l'aire fusiforme des visages (FFA).",
@@ -419,10 +419,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Erreur anthropomorphique majeure ! Le poussin ne reconnaît pas individuellement le visage de sa mère, il réagit à un stimulus-signal ultra-simple.",
-      "Toad : Bravo ! C'est l'essence du stimulus-signal (*releaser*) de Tinbergen : le système perceptif n'est pas un appareil photo photoréaliste. Il est un filtre sélectif taillé par l'évolution pour coupler un indice physique saillant (tache rouge contrastée) à une réponse motrice de survie (picorer pour être nourri) !",
-      "Toad : Faux ! C'est précisément la couleur rouge et le contraste de la tache qui déclenchent le picorage réflexe.",
-      "Toad : Faux ! Le poussin picore un carton grossier dépourvu de toute plume, prouvant que la texture globale est ignorée au profit de l'indice visuel pertinent."
+      "Erreur anthropomorphique majeure ! Le poussin ne reconnaît pas individuellement le visage de sa mère, il réagit à un stimulus-signal ultra-simple.",
+      "Bravo ! C'est l'essence du stimulus-signal (*releaser*) de Tinbergen : le système perceptif n'est pas un appareil photo photoréaliste. Il est un filtre sélectif taillé par l'évolution pour coupler un indice physique saillant (tache rouge contrastée) à une réponse motrice de survie (picorer pour être nourri) !",
+      "Faux ! C'est précisément la couleur rouge et le contraste de la tache qui déclenchent le picorage réflexe.",
+      "Faux ! Le poussin picore un carton grossier dépourvu de toute plume, prouvant que la texture globale est ignorée au profit de l'indice visuel pertinent."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 24",
@@ -440,7 +440,7 @@
     "anchor_id": "anchor_q15",
     "tag": "James J. Gibson (1979) — Approche Écologique",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans la révolution gibsonienne ! James J. Gibson (1979) a dynamité la théorie cognitive standard. Sur quel refus radical son approche écologique repose-t-elle ? »",
+    "context": "« Entrons dans la révolution gibsonienne ! James J. Gibson (1979) a dynamité la théorie cognitive standard. Sur quel refus radical son approche écologique repose-t-elle ? »",
     "question": "Quelle rupture théorique majeure James J. Gibson (The Ecological Approach to Visual Perception, 1979, Diapos 25 & 26) impose-t-il face au modèle computationnel classique de la vision ?",
     "options": [
       "Il soutient que la vision exige une puissance de calcul matriciel encore plus gigantesque que ce que prévoyaient les ingénieurs de von Neumann.",
@@ -450,10 +450,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Gibson refuse précisément la métaphore de l'ordinateur et le calcul matriciel !",
-      "Toad : Magistral ! Retiens la formule choc de Gibson : « Ne demandez pas ce qui est dans votre tête, mais dans quoi votre tête est entrée ! » Pour lui, l'image rétinienne n'est pas pauvre ou sous-déterminée : le flux optique en mouvement contient des invariants spatio-temporels qui spécifient directement le monde sans besoin de calculs ou de représentations cognitives !",
-      "Toad : Pur délire pseudo-scientifique sans aucun lien avec Gibson.",
-      "Toad : Contresens total ! Le traitement par symboles propositionnels abstraits est la thèse du computationalisme GOFAI (Fodor, Pylyshyn), l'ennemi juré de l'écologie gibsonienne."
+      "Faux ! Gibson refuse précisément la métaphore de l'ordinateur et le calcul matriciel !",
+      "Magistral ! Retiens la formule choc de Gibson : « Ne demandez pas ce qui est dans votre tête, mais dans quoi votre tête est entrée ! » Pour lui, l'image rétinienne n'est pas pauvre ou sous-déterminée : le flux optique en mouvement contient des invariants spatio-temporels qui spécifient directement le monde sans besoin de calculs ou de représentations cognitives !",
+      "Pur délire pseudo-scientifique sans aucun lien avec Gibson.",
+      "Contresens total ! Le traitement par symboles propositionnels abstraits est la thèse du computationalisme GOFAI (Fodor, Pylyshyn), l'ennemi juré de l'écologie gibsonienne."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 25 & 26",
@@ -471,7 +471,7 @@
     "anchor_id": "anchor_q16",
     "tag": "Concept d'Affordance — Gibson (1977, 1979)",
     "points": "1 point",
-    "context": "Toadette : « Attention concept star ! Le mot 'affordance' est partout, mais les étudiants en psychologie et en ergonomie s'y prennent souvent les pieds. Comment Gibson le définit-il rigoureusement ? »",
+    "context": "« Attention concept star ! Le mot 'affordance' est partout, mais les étudiants en psychologie et en ergonomie s'y prennent souvent les pieds. Comment Gibson le définit-il rigoureusement ? »",
     "question": "Comment James J. Gibson (1977, 1979, Diapo 26) définit-il ontologiquement le concept d'« affordance » ?",
     "options": [
       "Comme une étiquette mentale attribuée consciemment à un objet après un raisonnement logique déductif sur son utilité sociale.",
@@ -481,10 +481,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Non ! Une affordance n'est ni mentale, ni verbale, ni issue d'une déduction logique consciente. C'est une opportunité d'action directement perçue !",
-      "Toad : Définition impeccable ! Une affordance n'est ni purement physique (dans l'objet seul), ni purement mentale (dans la tête du sujet). C'est une propriété RELATIONNELLE : une marche de 40 cm 'afforde' l'escalade pour un adulte en bonne santé, mais n'afforde qu'un mur infranchissable pour un nourrisson de 8 mois !",
-      "Toad : Tu confonds avec le mot anglais 'affordability' (accessibilité financière) ! C'est un contresens lexical grotesque en psychologie cognitive !",
-      "Toad : Faux ! L'affordance s'ajuste dynamiquement aux dimensions corporelles et biomécaniques réelles de l'individu à un instant T."
+      "Non ! Une affordance n'est ni mentale, ni verbale, ni issue d'une déduction logique consciente. C'est une opportunité d'action directement perçue !",
+      "Définition impeccable ! Une affordance n'est ni purement physique (dans l'objet seul), ni purement mentale (dans la tête du sujet). C'est une propriété RELATIONNELLE : une marche de 40 cm 'afforde' l'escalade pour un adulte en bonne santé, mais n'afforde qu'un mur infranchissable pour un nourrisson de 8 mois !",
+      "Tu confonds avec le mot anglais 'affordability' (accessibilité financière) ! C'est un contresens lexical grotesque en psychologie cognitive !",
+      "Faux ! L'affordance s'ajuste dynamiquement aux dimensions corporelles et biomécaniques réelles de l'individu à un instant T."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 26",
@@ -502,7 +502,7 @@
     "anchor_id": "anchor_q17",
     "tag": "Gibson vs Norman (1988) — Affordance Réelle vs Perçue",
     "points": "1 point",
-    "context": "Toadette : « Duel au sommet entre l'écologie sensorimotrice et le design cognitif ! Gibson (1977) versus Don Norman (The Design of Everyday Things, 1988). Où réside leur divergence fondamentale ? »",
+    "context": "« Duel au sommet entre l'écologie sensorimotrice et le design cognitif ! Gibson (1977) versus Don Norman (The Design of Everyday Things, 1988). Où réside leur divergence fondamentale ? »",
     "question": "Quelle est la divergence conceptuelle essentielle entre la définition originelle de l'affordance par James J. Gibson (1977) et sa réinterprétation par Donald Norman (1988) dans le champ du design et des interfaces (Diapo 27) ?",
     "options": [
       "Pour Gibson, l'affordance est une réalité physique écologique indépendante de sa perception (elle existe même si elle n'est pas détectée) ; pour Norman, l'ergonome s'intéresse à « l'affordance perçue » (perceived affordance) et aux indices visuels (signifiants) qui indiquent à l'utilisateur ce qu'il peut faire, intégrant des conventions culturelles et des modèles mentaux.",
@@ -512,10 +512,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Maîtrise parfaite ! C'est la distinction théorique royale : pour Gibson, une falaise afforde la chute même si l'animal ne la voit pas (réalité écologique physique). Norman a adapté le concept aux artefacts humains : si une poignée de porte donne l'impression qu'il faut pousser alors qu'il faut tirer (les fameuses « Norman Doors »), l'affordance perçue entre en conflit avec l'action réelle !",
-      "Toad : Anachronisme total ! Gibson est mort en 1979 bien avant l'avènement des interfaces numériques grand public ; il étudiait la locomotion et la vision naturelle.",
-      "Toad : Affirmation absurde sans aucune consistance scientifique.",
-      "Toad : C'est une caricature comique des 'portes de Norman' ! Norman s'est servi de la conception des poignées pour illustrer le problème d'affordance perçue, mais n'a pas énoncé de loi physique sur le sens d'ouverture."
+      "Maîtrise parfaite ! C'est la distinction théorique royale : pour Gibson, une falaise afforde la chute même si l'animal ne la voit pas (réalité écologique physique). Norman a adapté le concept aux artefacts humains : si une poignée de porte donne l'impression qu'il faut pousser alors qu'il faut tirer (les fameuses « Norman Doors »), l'affordance perçue entre en conflit avec l'action réelle !",
+      "Anachronisme total ! Gibson est mort en 1979 bien avant l'avènement des interfaces numériques grand public ; il étudiait la locomotion et la vision naturelle.",
+      "Affirmation absurde sans aucune consistance scientifique.",
+      "C'est une caricature comique des 'portes de Norman' ! Norman s'est servi de la conception des poignées pour illustrer le problème d'affordance perçue, mais n'a pas énoncé de loi physique sur le sens d'ouverture."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 27",
@@ -533,7 +533,7 @@
     "anchor_id": "anchor_q18",
     "tag": "Held & Hein (1963) — Chaton Actif vs Passif",
     "points": "1 point",
-    "context": "Toadette : « Nous voici devant l'expérience la plus célèbre de toute l'histoire de la perception visuelle : le manège pour chatons de Richard Held et Alan Hein (1963, Diapo 28). Pourquoi cette étude a-t-elle changé le monde ? »",
+    "context": "« Nous voici devant l'expérience la plus célèbre de toute l'histoire de la perception visuelle : le manège pour chatons de Richard Held et Alan Hein (1963, Diapo 28). Pourquoi cette étude a-t-elle changé le monde ? »",
     "question": "Dans l'expérience princeps de Richard Held et Alan Hein (1963, Diapo 28) sur le développement visuel des chatons élevés dans l'obscurité, quel résultat critique a prouvé que la stimulation visuelle passive est impuissante à calibrer la vision ?",
     "options": [
       "Le chaton passif transporté dans la nacelle a développé une acuité visuelle 20/20 supérieure à celle du chaton actif en raison de l'absence de fatigue musculaire.",
@@ -543,10 +543,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est l'inverse complet : le chaton passif s'est retrouvé fonctionnellement aveugle pour guider ses gestes !",
-      "Toad : Triomphe total ! C'est l'expérience reine de la séance : le chaton actif marchait et voyait le monde bouger en conséquence de ses pas (contingence sensorimotrice). Le chaton passif voyait exactement la même scène défiler dans son panier sans bouger ses pattes. Résultat : le chaton passif était incapable d'éviter un obstacle ou de tendre les pattes vers le sol ! La vision s'apprend par l'action !",
-      "Toad : Contresens absolu ! Si les deux avaient été identiques, l'expérience n'aurait rien démontré et ne figurerait pas dans tous les manuels de neurosciences !",
-      "Toad : Affirmation farfelue et dénuée de sens physiologique."
+      "Faux ! C'est l'inverse complet : le chaton passif s'est retrouvé fonctionnellement aveugle pour guider ses gestes !",
+      "Triomphe total ! C'est l'expérience reine de la séance : le chaton actif marchait et voyait le monde bouger en conséquence de ses pas (contingence sensorimotrice). Le chaton passif voyait exactement la même scène défiler dans son panier sans bouger ses pattes. Résultat : le chaton passif était incapable d'éviter un obstacle ou de tendre les pattes vers le sol ! La vision s'apprend par l'action !",
+      "Contresens absolu ! Si les deux avaient été identiques, l'expérience n'aurait rien démontré et ne figurerait pas dans tous les manuels de neurosciences !",
+      "Affirmation farfelue et dénuée de sens physiologique."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 28",
@@ -564,7 +564,7 @@
     "anchor_id": "anchor_q19",
     "tag": "Paul Bach-y-Rita (1969) — TVSS & Plasticité",
     "points": "1 point",
-    "context": "Toadette : « Incroyable voyage au cœur de la neuroplasticité ! Le système TVSS de Paul Bach-y-Rita (1969, Diapo 29) permettait à des personnes aveugles précoces de 'voir' avec leur dos ou leur langue. À quelle condition stricte ? »",
+    "context": "« Incroyable voyage au cœur de la neuroplasticité ! Le système TVSS de Paul Bach-y-Rita (1969, Diapo 29) permettait à des personnes aveugles précoces de 'voir' avec leur dos ou leur langue. À quelle condition stricte ? »",
     "question": "Dans le dispositif de substitution sensorielle tactile-visuelle (TVSS) développé par Paul Bach-y-Rita (1969, Diapo 29), à quelle condition impérative les participants non-voyants cessent-ils d'éprouver de simples picotements tactiles sur la peau pour faire l'expérience d'objets situés à distance dans l'espace tridimensionnel ?",
     "options": [
       "Il faut impérativement leur administrer des microdoses d'agonistes dopaminergiques avant chaque séance d'entraînement tactile.",
@@ -574,10 +574,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Aucune substance pharmacologique n'intervient dans cette expérience de plasticité sensorimotrice naturelle.",
-      "Toad : Génialissime ! Tant que l'expérimentateur bougeait la caméra à la place du sujet, celui-ci disait seulement : « Ça me gratte ou ça me pique dans le dos ». Dès qu'on donnait la poignée de la caméra au sujet aveugle, en bougeant la caméra, son cerveau corrélait l'action motrice avec le balayage tactile, et soudain l'illusion de picotement disparaissait au profit de la perception d'un objet externe situé devant lui dans la pièce !",
-      "Toad : Farfelu ! Ce sont des stimulateurs mécaniques ou vibrotactiles à température ambiante.",
-      "Toad : L'immobilité passive est la recette exacte pour ÉCHOUER : sans commande motrice volontaire, aucune extériorisation spatiale ne se produit !"
+      "Faux ! Aucune substance pharmacologique n'intervient dans cette expérience de plasticité sensorimotrice naturelle.",
+      "Génialissime ! Tant que l'expérimentateur bougeait la caméra à la place du sujet, celui-ci disait seulement : « Ça me gratte ou ça me pique dans le dos ». Dès qu'on donnait la poignée de la caméra au sujet aveugle, en bougeant la caméra, son cerveau corrélait l'action motrice avec le balayage tactile, et soudain l'illusion de picotement disparaissait au profit de la perception d'un objet externe situé devant lui dans la pièce !",
+      "Farfelu ! Ce sont des stimulateurs mécaniques ou vibrotactiles à température ambiante.",
+      "L'immobilité passive est la recette exacte pour ÉCHOUER : sans commande motrice volontaire, aucune extériorisation spatiale ne se produit !"
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 29",
@@ -595,7 +595,7 @@
     "anchor_id": "anchor_q20",
     "tag": "Navigation Spatiale — Conducteur vs Passager",
     "points": "1 point",
-    "context": "Toadette : « Vous l'avez tous vécu en voiture ! Pourquoi le conducteur retient-il parfaitement le trajet alors que le passager assis à côté est souvent incapable de retrouver son chemin ? (Diapo 30). »",
+    "context": "« Vous l'avez tous vécu en voiture ! Pourquoi le conducteur retient-il parfaitement le trajet alors que le passager assis à côté est souvent incapable de retrouver son chemin ? (Diapo 30). »",
     "question": "Sur le plan des neurosciences cognitives, quelle explication sensorimotrice rend compte de l'analogie du « Conducteur vs Passager » (Diapo 30) présentée pour illustrer l'encodage des cartes cognitives spatiales ?",
     "options": [
       "Le siège du conducteur est surélevé de 5 centimètres, ce qui offre un champ visuel panoramique inaccessible au passager.",
@@ -605,10 +605,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication mécanique risible ! L'écart de position des yeux est négligeable et n'explique aucunement la différence mnésique.",
-      "Toad : Remarquable analyse ! Conduire, c'est formuler des intentions motrices et des prédictions permanentes. Les structures motrices et pariétales envoient des copies d'efférence qui dynamisent l'hippocampe et le cortex rétrosplénial. Être passager, c'est subir le flux sensoriel de manière passive sans engagement moteur décisionnel !",
-      "Toad : Pure fantaisie médicale !",
-      "Toad : Réductionnisme comique ! Ce n'est pas le pied seul, mais toute la chaîne intentionnelle, prospective et décisionnelle de pilotage de l'action qui consolide la mémoire spatiale."
+      "Explication mécanique risible ! L'écart de position des yeux est négligeable et n'explique aucunement la différence mnésique.",
+      "Remarquable analyse ! Conduire, c'est formuler des intentions motrices et des prédictions permanentes. Les structures motrices et pariétales envoient des copies d'efférence qui dynamisent l'hippocampe et le cortex rétrosplénial. Être passager, c'est subir le flux sensoriel de manière passive sans engagement moteur décisionnel !",
+      "Pure fantaisie médicale !",
+      "Réductionnisme comique ! Ce n'est pas le pied seul, mais toute la chaîne intentionnelle, prospective et décisionnelle de pilotage de l'action qui consolide la mémoire spatiale."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 30",
@@ -626,7 +626,7 @@
     "anchor_id": "anchor_q21",
     "tag": "Kosmyna et al. (MIT 2025) — LLM & Dette Cognitive",
     "points": "1 point",
-    "context": "Toadette : « Voici l'article brûlant de l'actualité scientifique intégré par le professeur ! L'étude du MIT Media Lab de Nataliya Kosmyna et al. (2025) sur l'usage de ChatGPT en situation d'apprentissage complexe. Que montrent les tracés EEG ? »",
+    "context": "« Voici l'article brûlant de l'actualité scientifique intégré par le professeur ! L'étude du MIT Media Lab de Nataliya Kosmyna et al. (2025) sur l'usage de ChatGPT en situation d'apprentissage complexe. Que montrent les tracés EEG ? »",
     "question": "Dans l'étude pionnière de Nataliya Kosmyna et al. (MIT Media Lab, 2025, Diapo 31) examinant la connectivité EEG d'étudiants lors de la rédaction assistée par ChatGPT, quel biomarqueur neurophysiologique critique a été mis en évidence chez les utilisateurs passifs de l'IA ?",
     "options": [
       "Une réduction dramatique de la synchronisation inter-hémisphérique et de la puissance des bandes Alpha et Thêta dans le cortex préfrontal, révélant une baisse drastique de l'effort cognitif intrinsèque, de l'attention soutenue et de l'encodage mnésique à long terme (phénomène de « dette cognitive » ou cognitive debt).",
@@ -636,10 +636,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Triomphe total sur cette question d'actualité pointue ! L'étude montre que lorsqu'un étudiant sous-traite la réflexion au LLM en copiant-collant passivement, son cortex préfrontal se met en 'veilleuse' neurofonctionnelle (chute d'Alpha et Thêta). La production semble rapide, mais l'apprentissage réel est nul : c'est la dette cognitive !",
-      "Toad : Faux ! Aucune crise épileptique n'a été observée, les tracés EEG mesurent des bandes spectrales cognitives normales.",
-      "Toad : Impossible ! La matière grise corticale ne grossit pas de 400 % en quelques heures de session informatique !",
-      "Toad : Fausse piste ! L'étude s'est concentrée sur l'EEG en direct pendant la tâche d'écriture et de résolution de problème, pas sur la polysomnographie du sommeil."
+      "Triomphe total sur cette question d'actualité pointue ! L'étude montre que lorsqu'un étudiant sous-traite la réflexion au LLM en copiant-collant passivement, son cortex préfrontal se met en 'veilleuse' neurofonctionnelle (chute d'Alpha et Thêta). La production semble rapide, mais l'apprentissage réel est nul : c'est la dette cognitive !",
+      "Faux ! Aucune crise épileptique n'a été observée, les tracés EEG mesurent des bandes spectrales cognitives normales.",
+      "Impossible ! La matière grise corticale ne grossit pas de 400 % en quelques heures de session informatique !",
+      "Fausse piste ! L'étude s'est concentrée sur l'EEG en direct pendant la tâche d'écriture et de résolution de problème, pas sur la polysomnographie du sommeil."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 31",
@@ -657,7 +657,7 @@
     "anchor_id": "anchor_q22",
     "tag": "Aglioti et al. (1995) — Illusion de Titchener & MGA",
     "points": "1 point",
-    "context": "Toadette : « Préparez-vous à plonger dans l'illusion d'Ebbinghaus-Titchener 3D ! L'expérience d'Aglioti, DeSouza et Goodale (1995, Diapos 32 & 33) est l'un des plus grands classiques des examens de neurosciences visuelles. »",
+    "context": "« Préparez-vous à plonger dans l'illusion d'Ebbinghaus-Titchener 3D ! L'expérience d'Aglioti, DeSouza et Goodale (1995, Diapos 32 & 33) est l'un des plus grands classiques des examens de neurosciences visuelles. »",
     "question": "Dans l'expérience séminale d'Aglioti, DeSouza et Goodale (1995, Diapos 32 & 33) utilisant des disques 3D dans l'illusion d'Ebbinghaus (Titchener), quelle dissociation comportementale remarquable a été démontrée chez les participants sains ?",
     "options": [
       "Les participants étaient incapables d'attraper les disques avec leurs doigts tout en décrivant avec une exactitude millimétrique leur taille physique réelle.",
@@ -667,10 +667,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : C'est l'inverse absolu ! Ce scénario correspondrait à une ataxie optique avec vision intacte, alors qu'ici les sujets perçoivent l'illusion mais saisissent l'objet sans se tromper !",
-      "Toad : Démonstration parfaite ! C'est la dissociation princeps : votre œil conscient (voie ventrale) est trompé par les cercles inducteurs et déclare que le disque est plus gros. Mais votre main (voie dorsale) ne se laisse pas berner : le Maximum Grip Aperture (MGA) s'ouvre à la dimension exacte au millimètre près ! La main calcule la métrique réelle pour agir !",
-      "Toad : Faux ! La pince manuelle ne se laisse pas tromper par l'illusion, elle résiste au contexte trompeur.",
-      "Toad : Faux ! L'illusion de Titchener opère tout aussi bien en vision monoculaire."
+      "C'est l'inverse absolu ! Ce scénario correspondrait à une ataxie optique avec vision intacte, alors qu'ici les sujets perçoivent l'illusion mais saisissent l'objet sans se tromper !",
+      "Démonstration parfaite ! C'est la dissociation princeps : votre œil conscient (voie ventrale) est trompé par les cercles inducteurs et déclare que le disque est plus gros. Mais votre main (voie dorsale) ne se laisse pas berner : le Maximum Grip Aperture (MGA) s'ouvre à la dimension exacte au millimètre près ! La main calcule la métrique réelle pour agir !",
+      "Faux ! La pince manuelle ne se laisse pas tromper par l'illusion, elle résiste au contexte trompeur.",
+      "Faux ! L'illusion de Titchener opère tout aussi bien en vision monoculaire."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapos 32 & 33",
@@ -688,7 +688,7 @@
     "anchor_id": "anchor_q23",
     "tag": "Milner & Goodale (1992, 1995) — Deux Voies Visuelles",
     "points": "1 point",
-    "context": "Toadette : « Attention tournant théorique majeur ! David Milner et Melvyn Goodale ont réécrit le modèle des voies visuelles corticales. Ne confondez pas leur modèle avec celui d'Ungerleider et Mishkin ! »",
+    "context": "« Attention tournant théorique majeur ! David Milner et Melvyn Goodale ont réécrit le modèle des voies visuelles corticales. Ne confondez pas leur modèle avec celui d'Ungerleider et Mishkin ! »",
     "question": "Quelle distinction fonctionnelle fondamentale David Milner et Melvyn Goodale (1992, 1995, Diapo 34) introduisent-ils pour requalifier la voie ventrale et la voie dorsale, rompant avec le modèle classique du « Quoi vs Où » d'Ungerleider et Mishkin (1982) ?",
     "options": [
       "Ils affirment que la voie dorsale traite la couleur et la voie ventrale traite le mouvement sonore.",
@@ -698,10 +698,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! La couleur dépend de la voie ventrale (V4), pas de la voie dorsale !",
-      "Toad : Magnifique précision doctrinale ! C'est LE changement de paradigme imposé par Milner et Goodale : ce n'est pas le TYPE d'information (quoi vs où) qui segmente le cortex, mais la FINALITÉ TÉLÉOLOGIQUE du traitement ! Voie Ventrale = Vision-for-Perception (consciente, allocentrique, sémantique). Voie Dorsale = Vision-for-Action (automatique, égocentrique, métrique en temps réel) !",
-      "Toad : Inversion complète des propriétés ! C'est la voie dorsale qui calcule en coordonnées égocentriques rapides en temps réel, et la voie ventrale qui utilise des repères allocentriques stables !",
-      "Toad : Complètement erroné ! La voie dorsale pariétale est hautement développée chez l'être humain pour le guidage fin des outils et des doigts."
+      "Faux ! La couleur dépend de la voie ventrale (V4), pas de la voie dorsale !",
+      "Magnifique précision doctrinale ! C'est LE changement de paradigme imposé par Milner et Goodale : ce n'est pas le TYPE d'information (quoi vs où) qui segmente le cortex, mais la FINALITÉ TÉLÉOLOGIQUE du traitement ! Voie Ventrale = Vision-for-Perception (consciente, allocentrique, sémantique). Voie Dorsale = Vision-for-Action (automatique, égocentrique, métrique en temps réel) !",
+      "Inversion complète des propriétés ! C'est la voie dorsale qui calcule en coordonnées égocentriques rapides en temps réel, et la voie ventrale qui utilise des repères allocentriques stables !",
+      "Complètement erroné ! La voie dorsale pariétale est hautement développée chez l'être humain pour le guidage fin des outils et des doigts."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 34",
@@ -719,7 +719,7 @@
     "anchor_id": "anchor_q24",
     "tag": "Jackson & Shaw (2000) — Grip-Force vs Grip-Aperture",
     "points": "1 point",
-    "context": "Toadette : « Attention question d'expertise doctorale ! Si la voie dorsale est si étanche aux illusions, pourquoi Jackson et Shaw (2000, Diapo 35) viennent-ils jeter un pavé dans la mare en mesurant la force de serrage ? »",
+    "context": "« Attention question d'expertise doctorale ! Si la voie dorsale est si étanche aux illusions, pourquoi Jackson et Shaw (2000, Diapo 35) viennent-ils jeter un pavé dans la mare en mesurant la force de serrage ? »",
     "question": "Quelle nuance critique l'étude de Jackson et Shaw (2000, Diapo 35) apporte-t-elle à la théorie d'une indépendance absolue des deux voies visuelles lors de la saisie manuelle dans l'illusion d'Ebbinghaus ?",
     "options": [
       "Elle prouve que les deux voies fusionnent anatomiquement dans le bulbe rachidien dès l'âge de 6 mois.",
@@ -729,10 +729,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Les deux voies corticales se situent dans les lobes télencéphaliques (occipital, pariétal, temporal) et ne fusionnent pas dans le bulbe rachidien !",
-      "Toad : Quel brio ! C'est la subtilité maximale du cours : l'étanchéité stricte des deux voies est un mythe simplifié. Votre main s'ouvre bien à la bonne taille (Aperture préservée), mais au moment de serrer l'objet (Grip Force), le cerveau anticipe son poids en fonction de sa taille APPARENTE (fournie par la voie ventrale) ! Il y a donc un dialogue constant (crosstalk) entre perception et action !",
-      "Toad : Affirmation dénuée de tout fondement neuroanatomique.",
-      "Toad : Faux ! L'expérience a été réalisée chez des volontaires sains sans anesthésie."
+      "Faux ! Les deux voies corticales se situent dans les lobes télencéphaliques (occipital, pariétal, temporal) et ne fusionnent pas dans le bulbe rachidien !",
+      "Quel brio ! C'est la subtilité maximale du cours : l'étanchéité stricte des deux voies est un mythe simplifié. Votre main s'ouvre bien à la bonne taille (Aperture préservée), mais au moment de serrer l'objet (Grip Force), le cerveau anticipe son poids en fonction de sa taille APPARENTE (fournie par la voie ventrale) ! Il y a donc un dialogue constant (crosstalk) entre perception et action !",
+      "Affirmation dénuée de tout fondement neuroanatomique.",
+      "Faux ! L'expérience a été réalisée chez des volontaires sains sans anesthésie."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 35",
@@ -750,7 +750,7 @@
     "anchor_id": "anchor_q25",
     "tag": "Deubel & Schneider (1996) — Attention Présaccadique",
     "points": "1 point",
-    "context": "Toadette : « Fixez le point central, une saccade se prépare ! L'expérience cardinale de Heiner Deubel et Werner Schneider (1996, Diapo 36) explore la théorie prémotrice de l'attention. Qu'ont-ils découvert ? »",
+    "context": "« Fixez le point central, une saccade se prépare ! L'expérience cardinale de Heiner Deubel et Werner Schneider (1996, Diapo 36) explore la théorie prémotrice de l'attention. Qu'ont-ils découvert ? »",
     "question": "Dans l'étude rigoureuse de Heiner Deubel et Werner Schneider (1996, Diapo 36) sur la préparation saccadique, que se produit-il sur le plan de l'attention visuelle juste avant le déclenchement d'un mouvement oculaire rapide ?",
     "options": [
       "L'attention visuelle se diffuse uniformément sur les 360 degrés de l'espace péripersonnel sans privilégier aucune cible.",
@@ -760,10 +760,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! L'attention ne se disperse pas, elle se focalise de façon chirurgicale sur un point précis !",
-      "Toad : Brillantissime ! C'est la validation éclatante de la théorie prémotrice de Rizzolatti : préparer une saccade motrice, c'est DÉJÀ déplacer son attention perceptive sur la cible. Vous ne pouvez pas préparer un saut du regard vers la droite tout en concentrant votre discrimination fine sur la gauche : le système attentionnel est physiquement asservi au programme moteur !",
-      "Toad : Inversion des faits expérimentaux ! La discrimination est maximale sur la cible saccadique et s'effondre ailleurs.",
-      "Toad : Absurde ! Les FEF (Frontal Eye Fields) et le colliculus supérieur sont les moteurs centraux de la préparation saccadique."
+      "Faux ! L'attention ne se disperse pas, elle se focalise de façon chirurgicale sur un point précis !",
+      "Brillantissime ! C'est la validation éclatante de la théorie prémotrice de Rizzolatti : préparer une saccade motrice, c'est DÉJÀ déplacer son attention perceptive sur la cible. Vous ne pouvez pas préparer un saut du regard vers la droite tout en concentrant votre discrimination fine sur la gauche : le système attentionnel est physiquement asservi au programme moteur !",
+      "Inversion des faits expérimentaux ! La discrimination est maximale sur la cible saccadique et s'effondre ailleurs.",
+      "Absurde ! Les FEF (Frontal Eye Fields) et le colliculus supérieur sont les moteurs centraux de la préparation saccadique."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 36",
@@ -781,7 +781,7 @@
     "anchor_id": "anchor_q26",
     "tag": "Dennis Proffitt — Action-Specific Perception",
     "points": "1 point",
-    "context": "Toadette : « Prenez un sac à dos de 15 kg et regardez une colline ! La théorie de la perception spécifique à l'action de Dennis Proffitt (Diapo 37) fait couler beaucoup d'encre. Quelle est sa thèse centrale ? »",
+    "context": "« Prenez un sac à dos de 15 kg et regardez une colline ! La théorie de la perception spécifique à l'action de Dennis Proffitt (Diapo 37) fait couler beaucoup d'encre. Quelle est sa thèse centrale ? »",
     "question": "Selon les travaux expérimentaux de Dennis R. Proffitt et al. (Diapo 37) sur la « Perception Spécifique à l'Action » (Action-Specific Perception), comment l'état physiologique et le potentiel d'action corporelle modifient-ils l'expérience visuelle de l'environnement ?",
     "options": [
       "Ils n'ont strictement aucun impact sur la perception, car la géométrie spatiale est calculée exclusivement par des modules rétiniens hermétiques.",
@@ -791,10 +791,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est la position modulariste rigide de Fodor et Pylyshyn, réfutée par les données empiriques de Proffitt présentées en cours.",
-      "Toad : Explication magistrale ! Pour Proffitt, le cerveau ne calcule pas l'espace en mètres abstraits, mais en unités de coût biologique et d'effort moteur ! Si vous êtes fatigué, blessé ou chargé d'un sac lourd, le monde vous apparaît visuellement plus exigeant (pente plus forte, distance plus longue). La métrique visuelle est une métrique bioénergétique !",
-      "Toad : Valeur toxicologique mortelle et fantaisiste ! Les variations étudiées par Proffitt sont des états physiologiques quotidiens d'effort et de forme physique.",
-      "Toad : Pure invention sans lien avec la psychophysique de la perception spatiale."
+      "Faux ! C'est la position modulariste rigide de Fodor et Pylyshyn, réfutée par les données empiriques de Proffitt présentées en cours.",
+      "Explication magistrale ! Pour Proffitt, le cerveau ne calcule pas l'espace en mètres abstraits, mais en unités de coût biologique et d'effort moteur ! Si vous êtes fatigué, blessé ou chargé d'un sac lourd, le monde vous apparaît visuellement plus exigeant (pente plus forte, distance plus longue). La métrique visuelle est une métrique bioénergétique !",
+      "Valeur toxicologique mortelle et fantaisiste ! Les variations étudiées par Proffitt sont des états physiologiques quotidiens d'effort et de forme physique.",
+      "Pure invention sans lien avec la psychophysique de la perception spatiale."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 37",
@@ -812,7 +812,7 @@
     "anchor_id": "anchor_q27",
     "tag": "Proffitt vs Harnad — Action vs Catégorisation",
     "points": "1 point",
-    "context": "Toadette : « Débat de haute volée épistémologique ! Confrontons Dennis Proffitt (Action-Specific Perception) et Stevan Harnad (Categorical Perception & Symbol Grounding). Où se situe leur ligne de partage ? »",
+    "context": "« Débat de haute volée épistémologique ! Confrontons Dennis Proffitt (Action-Specific Perception) et Stevan Harnad (Categorical Perception & Symbol Grounding). Où se situe leur ligne de partage ? »",
     "question": "Comment se formule la distinction conceptuelle subtile entre la thèse de l'Action-Specific Perception de Proffitt et celle de la Perception Catégorielle théorisée par Stevan Harnad (UQAM) ?",
     "options": [
       "Pour Proffitt, l'action corporelle continue et le coût bioénergétique déforment la métrique spatiale métrique elle-même (distance, pente, taille apparente), tandis que pour Harnad, les contraintes d'apprentissage et de tri adaptatif restructurent la perception en créant des frontières discrètes qui compriment les différences intra-catégories et amplifient les différences inter-catégories.",
@@ -822,10 +822,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Splendide distinction de niveau doctoral ! C'est exactement cela : Proffitt parle d'une modulation métrique continue de l'expérience sensorielle par l'effort moteur (la pente est plus raide). Harnad, lui, théorise comment le besoin d'agir discrétise le réel en catégories (phonèmes, objets) en déformant la similarité (on voit des classes distinctes plutôt qu'un continuum flou). Deux façons complémentaires d'ancrer la cognition dans l'action !",
-      "Toad : Cloisonnement imaginaire ridicule !",
-      "Toad : Inversion conceptuelle : Harnad est le champion de l'ancrage des symboles (*symbol grounding problem* dans les catégories sensorielles), pas d'un système amodal désincarné.",
-      "Toad : Faux ! Ce sont deux corpus théoriques distincts avec des paradigmes expérimentaux bien différenciés."
+      "Splendide distinction de niveau doctoral ! C'est exactement cela : Proffitt parle d'une modulation métrique continue de l'expérience sensorielle par l'effort moteur (la pente est plus raide). Harnad, lui, théorise comment le besoin d'agir discrétise le réel en catégories (phonèmes, objets) en déformant la similarité (on voit des classes distinctes plutôt qu'un continuum flou). Deux façons complémentaires d'ancrer la cognition dans l'action !",
+      "Cloisonnement imaginaire ridicule !",
+      "Inversion conceptuelle : Harnad est le champion de l'ancrage des symboles (*symbol grounding problem* dans les catégories sensorielles), pas d'un système amodal désincarné.",
+      "Faux ! Ce sont deux corpus théoriques distincts avec des paradigmes expérimentaux bien différenciés."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 37 & Notes de cours",
@@ -843,7 +843,7 @@
     "anchor_id": "anchor_q28",
     "tag": "Bosco, Daniele & Fattori (2017) — Reaching vs Grasping",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans les travaux d'Annalisa Bosco et du laboratoire de Patrizia Fattori à Bologne ! Dans leur étude de 2017 citée en cours (Diapo 38), comment la simple intention motrice modifie-t-elle la perception d'un objet ? »",
+    "context": "« Entrons dans les travaux d'Annalisa Bosco et du laboratoire de Patrizia Fattori à Bologne ! Dans leur étude de 2017 citée en cours (Diapo 38), comment la simple intention motrice modifie-t-elle la perception d'un objet ? »",
     "question": "Dans l'étude de Bosco, Daniele et Fattori (2017, Diapo 38) examinant l'effet prémoteur de la planification d'action sur la perception visuelle de la taille, quel résultat capital a été observé AVANT même le début du geste ?",
     "options": [
       "La planification motrice n'altère la perception que si le geste dure plus de 10 secondes consécutives.",
@@ -853,10 +853,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! L'effet prémoteur est mesuré en amont, pendant la phase de planification (quelques centaines de millisecondes) avant tout mouvement !",
-      "Toad : Démonstration éclatante ! Dès que vous planifiez de SAISIR l'objet (grasping), vos doigts ont besoin de connaître sa largeur exacte pour calibrer le MGA : votre acuité visuelle pour la taille devient instantanément plus fine ! Si vous planifiez juste de le TOUCHER (reaching), la taille importe peu et votre acuité reste basale. Le cerveau alloue ses ressources perceptives en fonction de ce que le programme moteur va accomplir !",
-      "Toad : Fantaisiste ! La vision des couleurs n'est absolument pas affectée par la planification motrice.",
-      "Toad : Inversion des résultats expérimentaux de Bosco et al. (2017)."
+      "Faux ! L'effet prémoteur est mesuré en amont, pendant la phase de planification (quelques centaines de millisecondes) avant tout mouvement !",
+      "Démonstration éclatante ! Dès que vous planifiez de SAISIR l'objet (grasping), vos doigts ont besoin de connaître sa largeur exacte pour calibrer le MGA : votre acuité visuelle pour la taille devient instantanément plus fine ! Si vous planifiez juste de le TOUCHER (reaching), la taille importe peu et votre acuité reste basale. Le cerveau alloue ses ressources perceptives en fonction de ce que le programme moteur va accomplir !",
+      "Fantaisiste ! La vision des couleurs n'est absolument pas affectée par la planification motrice.",
+      "Inversion des résultats expérimentaux de Bosco et al. (2017)."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 38",
@@ -874,7 +874,7 @@
     "anchor_id": "anchor_q29",
     "tag": "Hommel et al. (2001) — Théorie du Codage des Événements (TEC)",
     "points": "1 point",
-    "context": "Toadette : « Voici le cadre théorique roi de la lecture obligatoire de Bosco et al. (2023) : la Théorie du Codage des Événements (TEC, Hommel et al., 2001). Pourquoi est-elle indispensable pour l'examen ? »",
+    "context": "« Voici le cadre théorique roi de la lecture obligatoire de Bosco et al. (2023) : la Théorie du Codage des Événements (TEC, Hommel et al., 2001). Pourquoi est-elle indispensable pour l'examen ? »",
     "question": "Quel est le postulat central de la Théorie du Codage des Événements (Theory of Event Coding - TEC, Hommel et al., 2001) mobilisée par Bosco et al. (2023) pour expliquer l'influence de l'action sur la perception à travers différents effecteurs ?",
     "options": [
       "Les commandes motrices sont stockées dans la moelle épinière sous forme de code binaire ASCII totalement séparé des représentations sensorielles corticales.",
@@ -884,10 +884,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! La TEC stipule au contraire que perception et action partagent un espace représentationnel commun !",
-      "Toad : C'est la clé de voûte de toute la lecture obligatoire ! La TEC d'Hommel brise la séparation perception/action : les deux sont codées dans la même monnaie neuronale (les 'event files'). Si vous préparez une action motrice produisant un effet 'grand et à droite', vous activez les mêmes descripteurs que si vous voyez un objet 'grand et à droite'. Cette monnaie commune explique pourquoi agir module directement ce que l'on perçoit !",
-      "Toad : Non, la TEC est une théorie computationnelle et cognitive sensorimotrice, pas un modèle de psychologie narrative littéraire.",
-      "Toad : Pure aberration neuroanatomique ! Les aires pariétales et frontales intègrent précisément les signaux multi-effecteurs."
+      "Faux ! La TEC stipule au contraire que perception et action partagent un espace représentationnel commun !",
+      "C'est la clé de voûte de toute la lecture obligatoire ! La TEC d'Hommel brise la séparation perception/action : les deux sont codées dans la même monnaie neuronale (les 'event files'). Si vous préparez une action motrice produisant un effet 'grand et à droite', vous activez les mêmes descripteurs que si vous voyez un objet 'grand et à droite'. Cette monnaie commune explique pourquoi agir module directement ce que l'on perçoit !",
+      "Non, la TEC est une théorie computationnelle et cognitive sensorimotrice, pas un modèle de psychologie narrative littéraire.",
+      "Pure aberration neuroanatomique ! Les aires pariétales et frontales intègrent précisément les signaux multi-effecteurs."
     ],
     "doc_title": "Bosco et al. (2023) — Frontiers in Systems Neuroscience",
     "doc_page": "Section 1 & 4 (Introduction & Discussion)",
@@ -905,7 +905,7 @@
     "anchor_id": "anchor_q30",
     "tag": "Bosco et al. (2023) — Ancrage Oculomoteur & Eye-Hand",
     "points": "1 point",
-    "context": "Toadette : « Où regardez-vous quand vous attrapez votre tasse de café ? La section 2 de Bosco et al. (2023) passe au crible la coordination œil-main et l'ancrage du regard (*gaze anchoring*). Qu'en concluent-ils ? »",
+    "context": "« Où regardez-vous quand vous attrapez votre tasse de café ? La section 2 de Bosco et al. (2023) passe au crible la coordination œil-main et l'ancrage du regard (*gaze anchoring*). Qu'en concluent-ils ? »",
     "question": "Dans leur revue systématique (Section 2, Domaine oculomoteur), comment Bosco et al. (2023) caractérisent-ils le rôle fonctionnel du regard dans la coordination œil-main lors de la saisie d'objets ?",
     "options": [
       "Le regard précède systématiquement la main et reste fermement verrouillé sur la cible de préhension jusqu'à ce que les doigts établissent le contact physique (« ancrage du regard » ou gaze anchoring), afin de fournir en continu des mises à jour visuelles à haute résolution indispensables au guidage proprioceptif de l'effecteur manuel.",
@@ -915,10 +915,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Précision chirurgicale ! C'est le phénomène universel du 'gaze anchoring' documenté par Neggers & Bekkering (2000) et détaillé par Bosco : vos yeux atterrissent sur l'objet AVANT votre main, et le regard reste magnétisé sur la cible. Il est même quasiment impossible d'initier une nouvelle saccade volontaire avant que les doigts n'aient touché la cible !",
-      "Toad : Farfelu et dangereux pour la manipulation d'objets !",
-      "Toad : Faux ! Le regard arrive toujours EN PREMIER (environ 100 à 200 ms avant la main), il ne traîne pas après !",
-      "Toad : Faux ! La coordination œil-main est l'un des circuits cérébraux les plus denses et interconnectés chez le primate (circuits fronto-pariétaux PRR, AIP, LIP, FEF)."
+      "Précision chirurgicale ! C'est le phénomène universel du 'gaze anchoring' documenté par Neggers & Bekkering (2000) et détaillé par Bosco : vos yeux atterrissent sur l'objet AVANT votre main, et le regard reste magnétisé sur la cible. Il est même quasiment impossible d'initier une nouvelle saccade volontaire avant que les doigts n'aient touché la cible !",
+      "Farfelu et dangereux pour la manipulation d'objets !",
+      "Faux ! Le regard arrive toujours EN PREMIER (environ 100 à 200 ms avant la main), il ne traîne pas après !",
+      "Faux ! La coordination œil-main est l'un des circuits cérébraux les plus denses et interconnectés chez le primate (circuits fronto-pariétaux PRR, AIP, LIP, FEF)."
     ],
     "doc_title": "Bosco et al. (2023) — Frontiers in Systems Neuroscience",
     "doc_page": "Section 2 (Oculomotor domain)",
@@ -936,7 +936,7 @@
     "anchor_id": "anchor_q31",
     "tag": "Bosco et al. (2020) — Découplage de la Recalibration de Taille",
     "points": "1 point",
-    "context": "Toadette : « Voici l'expérience princeps de l'équipe de Bosco publiée en 2020 et synthétisée dans leur article de 2023 ! Ils ont utilisé une pince virtuelle à retour de force pour perturber la taille tactile ressentie. Qu'ont-ils découvert ? »",
+    "context": "« Voici l'expérience princeps de l'équipe de Bosco publiée en 2020 et synthétisée dans leur article de 2023 ! Ils ont utilisé une pince virtuelle à retour de force pour perturber la taille tactile ressentie. Qu'ont-ils découvert ? »",
     "question": "Dans l'expérience novatrice de Bosco et al. (2020) analysée dans la revue de 2023, où un décalage sensorimoteur haptique artificiel est introduit (l'objet est ressenti tactilement plus grand ou plus petit que sa taille visuelle), que révèle le test de transfert perceptif ?",
     "options": [
       "Le participant devient totalement amnésique et incapable de reconnaître la forme de l'objet.",
@@ -946,10 +946,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Non ! Aucun trouble mnésique n'est induit par une simple recalibration sensorimotrice virtuelle.",
-      "Toad : Excellent ! C'est la découverte majeure de Bosco et al. (2020) : si on vous fait interagir avec un objet dont la résistance haptique contredit la taille visuelle, votre cerveau ne se contente pas d'ajuster son geste moteur ; il RECALIBRE votre estimation visuelle consciente de la taille de l'objet ! L'action motrice 'recuit' le système perceptif visuel !",
-      "Toad : Faux ! C'est l'erreur du dogme classique de la « capture visuelle absolue ». Bosco montre précisément que le retour haptique actif force la vision à se recalibrer.",
-      "Toad : Faux ! Les transferts inter-manuels et inter-effecteurs suivent des règles précises de représentations pariétales partagées."
+      "Non ! Aucun trouble mnésique n'est induit par une simple recalibration sensorimotrice virtuelle.",
+      "Excellent ! C'est la découverte majeure de Bosco et al. (2020) : si on vous fait interagir avec un objet dont la résistance haptique contredit la taille visuelle, votre cerveau ne se contente pas d'ajuster son geste moteur ; il RECALIBRE votre estimation visuelle consciente de la taille de l'objet ! L'action motrice 'recuit' le système perceptif visuel !",
+      "Faux ! C'est l'erreur du dogme classique de la « capture visuelle absolue ». Bosco montre précisément que le retour haptique actif force la vision à se recalibrer.",
+      "Faux ! Les transferts inter-manuels et inter-effecteurs suivent des règles précises de représentations pariétales partagées."
     ],
     "doc_title": "Bosco et al. (2023) — Frontiers in Systems Neuroscience",
     "doc_page": "Section 3 (Manual domain) & Figure 1",
@@ -967,7 +967,7 @@
     "anchor_id": "anchor_q32",
     "tag": "Bosco et al. (2023) — Amorçage Dimensionnel Sélectif",
     "points": "1 point",
-    "context": "Toadette : « Toujours dans la section manuelle de Bosco et al. (2023) ! Que se passe-t-il lorsqu'un participant prépare une action motrice spécifique (ex: saisir par la largeur versus pointer la position) sur la détection perceptive de dimensions visuelles ? »",
+    "context": "« Toujours dans la section manuelle de Bosco et al. (2023) ! Que se passe-t-il lorsqu'un participant prépare une action motrice spécifique (ex: saisir par la largeur versus pointer la position) sur la détection perceptive de dimensions visuelles ? »",
     "question": "Selon la synthèse de Bosco et al. (2023, Section 3, Domaine manuel), comment s'exprime l'amorçage prémoteur sélectif sur les différentes dimensions géométriques d'un objet visuel ?",
     "options": [
       "La préparation d'une action manuelle n'accélère la détection que des dimensions physiques directement congruentes avec le contrôle de l'effecteur (ex: préparer une pince manuelle amorce sélectivement la détection de la taille et de l'orientation axiale de l'objet, mais non sa couleur ou sa luminance), confirmant que l'action filtre les traits sensoriels pertinents.",
@@ -977,10 +977,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Magistral ! C'est le principe de l'attention sélective guidée par l'action (Action-Induced Attention) : si vous préparez une pince pouce-index, votre cortex visuel augmente le gain de sensibilité pour la TAILLE et la FORME de l'objet, mais se moque de savoir s'il est vert ou bleu ! L'action agit comme un gabarit attentionnel sélectif !",
-      "Toad : Faux ! La couleur et la luminance ne sont pas des paramètres pertinents pour la calibration de l'ouverture de la main et ne bénéficient pas de cet amorçage sélectif.",
-      "Toad : Faux ! L'amorçage congruent ACCÉLÈRE et rend plus précise la détection (gain de temps de réaction et de discrimination).",
-      "Toad : Affirmation contredite par les données expérimentales bilatérales."
+      "Magistral ! C'est le principe de l'attention sélective guidée par l'action (Action-Induced Attention) : si vous préparez une pince pouce-index, votre cortex visuel augmente le gain de sensibilité pour la TAILLE et la FORME de l'objet, mais se moque de savoir s'il est vert ou bleu ! L'action agit comme un gabarit attentionnel sélectif !",
+      "Faux ! La couleur et la luminance ne sont pas des paramètres pertinents pour la calibration de l'ouverture de la main et ne bénéficient pas de cet amorçage sélectif.",
+      "Faux ! L'amorçage congruent ACCÉLÈRE et rend plus précise la détection (gain de temps de réaction et de discrimination).",
+      "Affirmation contredite par les données expérimentales bilatérales."
     ],
     "doc_title": "Bosco et al. (2023) — Frontiers in Systems Neuroscience",
     "doc_page": "Section 3 (Manual domain)",
@@ -998,7 +998,7 @@
     "anchor_id": "anchor_q33",
     "tag": "Charpentier (1891) — Illusion Taille-Poids (SWI)",
     "points": "1 point",
-    "context": "Toadette : « Une boîte de conserve géante et une petite boîte de conserve de masse identique (Diapo 39 & Bosco et al. 2023) ! L'illusion taille-poids d'Augustin Charpentier (1891) est fascinante. Que révèle-t-elle quand on soulève les deux boîtes à plusieurs reprises ? »",
+    "context": "« Une boîte de conserve géante et une petite boîte de conserve de masse identique (Diapo 39 & Bosco et al. 2023) ! L'illusion taille-poids d'Augustin Charpentier (1891) est fascinante. Que révèle-t-elle quand on soulève les deux boîtes à plusieurs reprises ? »",
     "question": "Dans l'illusion taille-poids (Size-Weight Illusion - SWI, Charpentier, 1891, Diapo 39 & Bosco et al., 2023), où deux objets de volumes très différents mais de masse rigoureusement identique sont soulevés, quelle dissociation spectaculaire entre action motrice et perception cognitive observe-t-on au fil des essais répétés ?",
     "options": [
       "Dès le deuxième essai, le participant cesse complètement de ressentir l'illusion perceptive et déclare que les deux boîtes pèsent exactement le même poids.",
@@ -1008,10 +1008,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Erreur universelle ! Tout le monde pense que l'illusion va disparaître une fois qu'on a soulevé les boîtes, mais NON ! Même après 50 essais et même en sachant pertinemment qu'elles font 500 grammes chacune, le cerveau conscient ressent TOUJOURS la petite comme étant plus lourde !",
-      "Toad : Triomphe total sur cette énigme classique ! C'est la beauté de l'illusion de Charpentier : le système moteur s'adapte en 2 ou 3 essais (les capteurs de force montrent que les muscles appliquent exactement la même force sur les deux boîtes). Mais le système perceptif conscient (voie ventrale / attente bayésienne de densité) refuse de lâcher son a priori : comme on s'attendait à ce que la grande boîte soit plus lourde, le contraste prédictif la fait paraître plus légère ! L'illusion cognitive résiste à l'adaptation motrice !",
-      "Toad : Faux ! C'est le PETIT objet qui paraît toujours plus lourd, jamais le grand !",
-      "Toad : Faux ! L'illusion fonctionne avec n'importe quelle couleur ou matériau, pourvu que les volumes diffèrent à masse égale."
+      "Erreur universelle ! Tout le monde pense que l'illusion va disparaître une fois qu'on a soulevé les boîtes, mais NON ! Même après 50 essais et même en sachant pertinemment qu'elles font 500 grammes chacune, le cerveau conscient ressent TOUJOURS la petite comme étant plus lourde !",
+      "Triomphe total sur cette énigme classique ! C'est la beauté de l'illusion de Charpentier : le système moteur s'adapte en 2 ou 3 essais (les capteurs de force montrent que les muscles appliquent exactement la même force sur les deux boîtes). Mais le système perceptif conscient (voie ventrale / attente bayésienne de densité) refuse de lâcher son a priori : comme on s'attendait à ce que la grande boîte soit plus lourde, le contraste prédictif la fait paraître plus légère ! L'illusion cognitive résiste à l'adaptation motrice !",
+      "Faux ! C'est le PETIT objet qui paraît toujours plus lourd, jamais le grand !",
+      "Faux ! L'illusion fonctionne avec n'importe quelle couleur ou matériau, pourvu que les volumes diffèrent à masse égale."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 39 & Bosco et al. (2023)",
@@ -1029,7 +1029,7 @@
     "anchor_id": "anchor_q34",
     "tag": "Bosco et al. (2023) — Domaine Locomoteur & Tapis Roulant",
     "points": "1 point",
-    "context": "Toadette : « Quittons les yeux et les mains pour aller vers les jambes ! Dans la Section 4 de Bosco et al. (2023), les auteurs explorent le domaine locomoteur. Que se passe-t-il après avoir marché sur un tapis roulant sans avancer ? »",
+    "context": "« Quittons les yeux et les mains pour aller vers les jambes ! Dans la Section 4 de Bosco et al. (2023), les auteurs explorent le domaine locomoteur. Que se passe-t-il après avoir marché sur un tapis roulant sans avancer ? »",
     "question": "Dans les expériences classiques de recalibration locomotrice de Rieser et al. (1995) analysées par Bosco et al. (2023, Section 4), que constate-t-on lorsqu'un participant, après avoir marché sur un tapis roulant motorisé tout en recevant un flux optique artificiellement dissocié, doit marcher les yeux bandés vers une cible préalablement vue (blind walking) ?",
     "options": [
       "Le participant subit une post-illusion biomécanique majeure : si la vitesse de défilement visuel pendant l'entraînement sur tapis était plus lente que sa vitesse de marche réelle, son estimation sensorimotrice de distance s'est recalibrée, le conduisant à dépasser systématiquement la cible (overshoot) ou à s'arrêter trop tôt (undershoot) lors de la marche à l'aveugle, prouvant que la métrique de l'espace locomoteur est calibrée par l'appariement dynamique entre flux optique et pas moteurs.",
@@ -1039,10 +1039,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Explication splendide ! C'est la preuve définitive que l'influence de l'action sur la perception ne s'arrête pas aux yeux et aux mains, mais englobe tout le corps en locomotion ! Sur le tapis roulant, vos pas moteurs s'associent à un flux visuel différent. Lorsque vous devez ensuite marcher vers la cible les yeux bandés, votre corps applique la nouvelle règle de calibrage : vous dépassez la cible ou restez court !",
-      "Toad : Faux ! L'erreur de dépassement (overshoot/undershoot) est systématique et reproductible.",
-      "Toad : Affirmation grotesque ! L'effet dure quelques minutes et s'estompe dès que les yeux sont rouverts.",
-      "Toad : Aucun rapport physiologique avec les paupières !"
+      "Explication splendide ! C'est la preuve définitive que l'influence de l'action sur la perception ne s'arrête pas aux yeux et aux mains, mais englobe tout le corps en locomotion ! Sur le tapis roulant, vos pas moteurs s'associent à un flux visuel différent. Lorsque vous devez ensuite marcher vers la cible les yeux bandés, votre corps applique la nouvelle règle de calibrage : vous dépassez la cible ou restez court !",
+      "Faux ! L'erreur de dépassement (overshoot/undershoot) est systématique et reproductible.",
+      "Affirmation grotesque ! L'effet dure quelques minutes et s'estompe dès que les yeux sont rouverts.",
+      "Aucun rapport physiologique avec les paupières !"
     ],
     "doc_title": "Bosco et al. (2023) — Frontiers in Systems Neuroscience",
     "doc_page": "Section 4 (Locomotor domain)",
@@ -1060,7 +1060,7 @@
     "anchor_id": "anchor_q35",
     "tag": "Reverse Hierarchy Theory (Hochstein & Ahissar, 2002)",
     "points": "1 point",
-    "context": "Toadette : « Dernière question de ce grand entraînement sommatif ! La diapositive 41 referme le cours 1 avec la Théorie de la Hiérarchie Visuelle Inversée (Reverse Hierarchy Theory - RHT, Hochstein & Ahissar, 2002). Comment voyons-nous vraiment le monde ? »",
+    "context": "« Dernière question de ce grand entraînement sommatif ! La diapositive 41 referme le cours 1 avec la Théorie de la Hiérarchie Visuelle Inversée (Reverse Hierarchy Theory - RHT, Hochstein & Ahissar, 2002). Comment voyons-nous vraiment le monde ? »",
     "question": "En clôture de la Séance 1 (Diapo 41), le professeur présente la Théorie de la Hiérarchie Visuelle Inversée (Reverse Hierarchy Theory - RHT, Hochstein & Ahissar, 2002). Selon ce modèle neurofonctionnel, comment s'organise la chronologie du traitement visuel conscient ?",
     "options": [
       "La première perception visuelle consciente s'élabore obligatoirement au niveau des aires primaires V1 et V2 pour inspecter les hautes fréquences spatiales locales, avant de progresser vers les aires associatives.",
@@ -1070,10 +1070,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est le dogme séquentiel ascendant classique que la RHT renverse complètement !",
-      "Toad : Apothéose conceptuelle ! C'est la conclusion magistrale du cours 1 : nous ne commençons PAS par voir consciemment des petits pixels ou des traits orientés en V1. Nous prenons d'abord conscience du SENS GLOBAL de la scène au sommet de la hiérarchie en quelques dizaines de millisecondes ('Vision at a glance'). Ce n'est que si notre tâche motrice ou notre curiosité l'exige qu'un flux attentionnel rétrograde redescend interroger les cartes fines de V1 pour faire un zoom détaillé ('Vision with scrutiny') !",
-      "Toad : Faux ! Les flux rétrogrades descendants opèrent à chaque instant de l'état de veille pour guider l'attention visuelle.",
-      "Toad : Non-sens anatomique sans aucun rapport avec les travaux de Shaul Hochstein et Merav Ahissar."
+      "Faux ! C'est le dogme séquentiel ascendant classique que la RHT renverse complètement !",
+      "Apothéose conceptuelle ! C'est la conclusion magistrale du cours 1 : nous ne commençons PAS par voir consciemment des petits pixels ou des traits orientés en V1. Nous prenons d'abord conscience du SENS GLOBAL de la scène au sommet de la hiérarchie en quelques dizaines de millisecondes ('Vision at a glance'). Ce n'est que si notre tâche motrice ou notre curiosité l'exige qu'un flux attentionnel rétrograde redescend interroger les cartes fines de V1 pour faire un zoom détaillé ('Vision with scrutiny') !",
+      "Faux ! Les flux rétrogrades descendants opèrent à chaque instant de l'état de veille pour guider l'attention visuelle.",
+      "Non-sens anatomique sans aucun rapport avec les travaux de Shaul Hochstein et Merav Ahissar."
     ],
     "doc_title": "Séance 1 — Présentation et introduction (PSY9613)",
     "doc_page": "Diapo 41",

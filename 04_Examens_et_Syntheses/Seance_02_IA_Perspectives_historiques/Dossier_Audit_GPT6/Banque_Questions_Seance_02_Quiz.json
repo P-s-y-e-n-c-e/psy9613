@@ -6,7 +6,7 @@
     "anchor_id": "anchor_q1",
     "tag": "Descartes (1634) — Traité de l'homme & Automates",
     "points": "1 point",
-    "context": "Toadette : « Bienvenue dans l'histoire des idées, chers collègues ! En 1634, René Descartes s'inspire des automates hydrauliques des jardins royaux pour concevoir le corps humain. Mais quelles fonctions pensait-il pouvoir mécaniser sans recourir à l'âme ? »",
+    "context": "« Bienvenue dans l'histoire des idées, chers collègues ! En 1634, René Descartes s'inspire des automates hydrauliques des jardins royaux pour concevoir le corps humain. Mais quelles fonctions pensait-il pouvoir mécaniser sans recourir à l'âme ? »",
     "question": "Dans le Traité de l'homme (écrit en 1634, publié posthume), sur quel modèle physique René Descartes s'appuie-t-il pour concevoir le fonctionnement physiologique et comportemental du corps humain, et quelles fonctions juge-t-il entièrement explicables par la mécanique matérielle ?",
     "options": [
       "Il s'appuie sur la théorie électromagnétique de Maxwell pour expliquer comment les influx nerveux circulent à la vitesse de la lumière pour engendrer des pensées mathématiques.",
@@ -16,10 +16,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Anachronisme de plus de deux siècles ! Les équations de Maxwell datent des années 1860. Descartes ignorait tout de l'électricité et raisonnait en physicien mécaniste du XVIIe siècle à base de fluides et de pressions.",
-      "Toad : Exactement ! C'est la grande force de Descartes exposée aux Diapos 3 et 4 : les automates hydrauliques des jardins de Saint-Germain-en-Laye lui ont servi de métaphore technologique. Pour lui, tout ce qui est réflexe, homéostatique et sensorimoteur automatique relève de la pure mécanique des esprits animaux circulant dans les nerfs creux !",
-      "Toad : Non, tu confonds ici avec les thèses de l'occasionnalisme de Malebranche. Descartes est un mécaniste radical pour toute la physiologie corporelle animale et humaine.",
-      "Toad : Contresens anatomique complet ! Descartes a mécanisé l'ensemble du système viscéral, circulatoire, musculaire et nerveux réflexe."
+      "Anachronisme de plus de deux siècles ! Les équations de Maxwell datent des années 1860. Descartes ignorait tout de l'électricité et raisonnait en physicien mécaniste du XVIIe siècle à base de fluides et de pressions.",
+      "Exactement ! C'est la grande force de Descartes exposée aux Diapos 3 et 4 : les automates hydrauliques des jardins de Saint-Germain-en-Laye lui ont servi de métaphore technologique. Pour lui, tout ce qui est réflexe, homéostatique et sensorimoteur automatique relève de la pure mécanique des esprits animaux circulant dans les nerfs creux !",
+      "Non, tu confonds ici avec les thèses de l'occasionnalisme de Malebranche. Descartes est un mécaniste radical pour toute la physiologie corporelle animale et humaine.",
+      "Contresens anatomique complet ! Descartes a mécanisé l'ensemble du système viscéral, circulatoire, musculaire et nerveux réflexe."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 3 & 4 (PDF p. 4–6)",
@@ -37,7 +37,7 @@
     "anchor_id": "anchor_q2",
     "tag": "Descartes (1637) — Premier Moyen Certain (Langage)",
     "points": "1 point",
-    "context": "Toadette : « Attention question pivot sur le Discours de la méthode (1637) ! Descartes affirme qu'il existe deux moyens infaillibles de distinguer un homme véritable d'un automate parfait. Quel est le tout premier ? »",
+    "context": "« Attention question pivot sur le Discours de la méthode (1637) ! Descartes affirme qu'il existe deux moyens infaillibles de distinguer un homme véritable d'un automate parfait. Quel est le tout premier ? »",
     "question": "Dans le Discours de la méthode (1637, Diapo 5), quel est le « premier moyen certain » formulé par René Descartes pour prouver qu'une machine matérielle, même d'une ressemblance physique parfaite, ne sera jamais un être humain ?",
     "options": [
       "L'incapacité matérielle de la machine à produire des vibrations sonores perceptibles par l'oreille humaine.",
@@ -47,10 +47,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Descartes précise explicitement qu'un automate peut émettre des sons ou crier si on touche un ressort. Ce n'est pas le son physique qui est inaccessible à la machine, mais la sémantique et la productivité combinatoire du langage !",
-      "Toad : Brillantissime ! Citation textuelle exacte des Diapos 5 et 7 : « Jamais elles ne pourraient user de paroles, ni d'autres signes en les composant, comme nous faisons pour déclarer aux autres nos pensées. » Une machine peut avoir un répertoire de phrases préenregistrées déclenchées par des chocs, mais elle ne peut pas réagencer les mots pour répondre au sens infini des contextes !",
-      "Toad : Piège théologique ! Descartes ne fonde pas son test sur un arrêt mystique de la machine, mais sur une analyse sémiotique et linguistique rationnelle.",
-      "Toad : Absurde ! La vitesse locomotrice n'a aucun rapport avec la démarcation cartésienne entre le corps et l'esprit."
+      "Faux ! Descartes précise explicitement qu'un automate peut émettre des sons ou crier si on touche un ressort. Ce n'est pas le son physique qui est inaccessible à la machine, mais la sémantique et la productivité combinatoire du langage !",
+      "Brillantissime ! Citation textuelle exacte des Diapos 5 et 7 : « Jamais elles ne pourraient user de paroles, ni d'autres signes en les composant, comme nous faisons pour déclarer aux autres nos pensées. » Une machine peut avoir un répertoire de phrases préenregistrées déclenchées par des chocs, mais elle ne peut pas réagencer les mots pour répondre au sens infini des contextes !",
+      "Piège théologique ! Descartes ne fonde pas son test sur un arrêt mystique de la machine, mais sur une analyse sémiotique et linguistique rationnelle.",
+      "Absurde ! La vitesse locomotrice n'a aucun rapport avec la démarcation cartésienne entre le corps et l'esprit."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 5 (PDF p. 7)",
@@ -68,7 +68,7 @@
     "anchor_id": "anchor_q3",
     "tag": "Descartes (1637) — Second Moyen (Raison Universelle)",
     "points": "1 point",
-    "context": "Toadette : « Passons au second critère de Descartes ! Pourquoi, même si une machine réussissait à accomplir certaines tâches mieux que nous, cela ne prouverait-il toujours pas qu'elle possède une raison ? »",
+    "context": "« Passons au second critère de Descartes ! Pourquoi, même si une machine réussissait à accomplir certaines tâches mieux que nous, cela ne prouverait-il toujours pas qu'elle possède une raison ? »",
     "question": "En quoi consiste le « second moyen certain » cartésien (Diapos 5 & 7) opposant la nature de la raison humaine au fonctionnement des organes d'une machine matérielle ?",
     "options": [
       "Les machines tombent toujours en panne après 100 heures d'utilisation continue en raison de la friction mécanique des engrenages.",
@@ -78,10 +78,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication technique triviale ! Descartes ne s'intéresse pas à l'usure mécanique, mais à une impossibilité de principe géométrique et cognitive.",
-      "Toad : Triomphe conceptuel ! C'est le cœur de l'argument cartésien : pour qu'une machine matérielle s'adapte à TOUTES les occurrences de la vie, il faudrait qu'elle contienne autant d'organes spécialisés qu'il y a de situations possibles, ce qui excéderait toute taille physique concevable. La raison, elle, est un opérateur universel non contraint par des pièces dédiées !",
-      "Toad : Faux ! Descartes admettait parfaitement qu'un automate puisse avoir des yeux de verre et des capteurs de pression pour déclencher des mouvements réflexes.",
-      "Toad : Contresens absolu ! La raison est pour Descartes la faculté logique par excellence (le bon sens partagé universellement)."
+      "Explication technique triviale ! Descartes ne s'intéresse pas à l'usure mécanique, mais à une impossibilité de principe géométrique et cognitive.",
+      "Triomphe conceptuel ! C'est le cœur de l'argument cartésien : pour qu'une machine matérielle s'adapte à TOUTES les occurrences de la vie, il faudrait qu'elle contienne autant d'organes spécialisés qu'il y a de situations possibles, ce qui excéderait toute taille physique concevable. La raison, elle, est un opérateur universel non contraint par des pièces dédiées !",
+      "Faux ! Descartes admettait parfaitement qu'un automate puisse avoir des yeux de verre et des capteurs de pression pour déclencher des mouvements réflexes.",
+      "Contresens absolu ! La raison est pour Descartes la faculté logique par excellence (le bon sens partagé universellement)."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 5 & 7 (PDF p. 7–8)",
@@ -99,7 +99,7 @@
     "anchor_id": "anchor_q4",
     "tag": "Paradoxe Moderne — Mécanisme Fini vs Infinité",
     "points": "1 point",
-    "context": "Toadette : « Regardez le schéma central des diapositives 12 à 14 ! Pierre Poirier y condense le grand paradoxe fondateur des sciences cognitives modernes. Comment ce dilemme est-il modélisé ? »",
+    "context": "« Regardez le schéma central des diapositives 12 à 14 ! Pierre Poirier y condense le grand paradoxe fondateur des sciences cognitives modernes. Comment ce dilemme est-il modélisé ? »",
     "question": "Comment le professeur Pierre Poirier formule-t-il le « vieux problème de la cognition » (Diapos 12 à 14) sous forme d'une tension paradoxale entre deux contraintes incontournables ?",
     "options": [
       "La tension entre le coût énergétique du cerveau en glucose et la température maximale supportable par la boîte crânienne.",
@@ -109,10 +109,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication métabolique hors sujet ! La question porte sur les fondements computationnels et conceptuels de la cognition, pas sur la thermorégulation du crâne.",
-      "Toad : Dans le mille ! C'est le nœud gordien du cours : comment un système physique constitué d'un nombre FINI d'éléments matériels (neurones, portes logiques) peut-il héberger et engendrer une INFINITÉ de pensées et de propositions linguistiques distinctes ? Toute l'histoire de l'IA (symbolique et connexionniste) est une tentative de résoudre ce paradoxe !",
-      "Toad : Hors de propos ! La physique quantique ne fait pas partie du cadre d'analyse de Pierre Poirier pour le paradoxe cartésien.",
-      "Toad : Confusion totale de disciplines ! Le cours se situe en sciences cognitives computationnelles, pas en psychanalyse métapsychologique."
+      "Explication métabolique hors sujet ! La question porte sur les fondements computationnels et conceptuels de la cognition, pas sur la thermorégulation du crâne.",
+      "Dans le mille ! C'est le nœud gordien du cours : comment un système physique constitué d'un nombre FINI d'éléments matériels (neurones, portes logiques) peut-il héberger et engendrer une INFINITÉ de pensées et de propositions linguistiques distinctes ? Toute l'histoire de l'IA (symbolique et connexionniste) est une tentative de résoudre ce paradoxe !",
+      "Hors de propos ! La physique quantique ne fait pas partie du cadre d'analyse de Pierre Poirier pour le paradoxe cartésien.",
+      "Confusion totale de disciplines ! Le cours se situe en sciences cognitives computationnelles, pas en psychanalyse métapsychologique."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 12 à 14 (PDF p. 12–14)",
@@ -130,7 +130,7 @@
     "anchor_id": "anchor_q5",
     "tag": "Alan Turing (1950) — The Imitation Game",
     "points": "1 point",
-    "context": "Toadette : « Place à Alan Turing et son article mythique de 1950 dans la revue Mind ! Pourquoi Turing a-t-il proposé le Jeu de l'Imitation, et comment Pierre Poirier l'actualise-t-il en classe ? »",
+    "context": "« Place à Alan Turing et son article mythique de 1950 dans la revue Mind ! Pourquoi Turing a-t-il proposé le Jeu de l'Imitation, et comment Pierre Poirier l'actualise-t-il en classe ? »",
     "question": "Quelle est la signification épistémologique profonde du « Test de Turing » (The Imitation Game, 1950, Diapos 9–10) telle que présentée en cours par Pierre Poirier face aux doutes contemporains liés à l'IA ?",
     "options": [
       "C'est un test purement mathématique servant à calculer la vitesse d'horloge maximale d'un microprocesseur en gigahertz.",
@@ -140,10 +140,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Turing n'évalue pas la fréquence matérielle en GHz, mais le comportement symbolique et communicatif externe du système.",
-      "Toad : Remarquable restitution du cours ! Comme l'explique Pierre Poirier (00:56:06), le test de Turing met nos intuitions à l'épreuve : si un correcteur lit une copie d'examen brillante sans savoir qu'elle est générée par un LLM, sur quelle base rationnelle pourrait-il affirmer que l'étudiant 'pense' mais que la machine 'ne pense pas' ?",
-      "Toad : Complètement loufoque et sans lien avec Turing.",
-      "Toad : Pure invention médicale sans aucun rapport avec la philosophie de l'intelligence artificielle."
+      "Faux ! Turing n'évalue pas la fréquence matérielle en GHz, mais le comportement symbolique et communicatif externe du système.",
+      "Remarquable restitution du cours ! Comme l'explique Pierre Poirier (00:56:06), le test de Turing met nos intuitions à l'épreuve : si un correcteur lit une copie d'examen brillante sans savoir qu'elle est générée par un LLM, sur quelle base rationnelle pourrait-il affirmer que l'étudiant 'pense' mais que la machine 'ne pense pas' ?",
+      "Complètement loufoque et sans lien avec Turing.",
+      "Pure invention médicale sans aucun rapport avec la philosophie de l'intelligence artificielle."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 9 & 10 (PDF p. 9–10)",
@@ -161,7 +161,7 @@
     "anchor_id": "anchor_q6",
     "tag": "Jerry Fodor (1975) — Language of Thought",
     "points": "1 point",
-    "context": "Toadette : « Jerry Fodor et son célèbre 'Language of Thought' (1975, Diapo 11) entrent en scène ! Comment Fodor justifie-t-il l'existence d'un système représentationnel interne ? »",
+    "context": "« Jerry Fodor et son célèbre 'Language of Thought' (1975, Diapo 11) entrent en scène ! Comment Fodor justifie-t-il l'existence d'un système représentationnel interne ? »",
     "question": "Dans The Language of Thought (1975, cité à la Diapo 11), sur quel constat empirique Jerry Fodor fonde-t-il la nécessité pour la psychologie cognitive de postuler un système de représentations internes distinctes ?",
     "options": [
       "Sur le fait que les nourrissons naissent en parlant couramment l'anglais ou le français sans apprentissage.",
@@ -171,10 +171,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Fodor défend l'innéisme des concepts fondamentaux, mais n'a jamais prétendu que les bébés parlent anglais à la naissance !",
-      "Toad : Parfaitement exact ! C'est la thèse centrale de Fodor : la pensée humaine présente deux propriétés remarquables, la productivité (infinité de pensées) et la systématicité (si on peut penser 'Jean aime Marie', on peut automatiquement penser 'Marie aime Jean'). Cela n'est possible que si la pensée opère comme un langage formel doté d'une syntaxe combinatoire discrète !",
-      "Toad : Pure fantaisie pseudo-scientifique !",
-      "Toad : Contresens historique ! Fodor est l'un des démolisseurs majeurs du béhaviorisme skinnérien ; son œuvre entière vise à réhabiliter les états mentaux représentationnels internes."
+      "Faux ! Fodor défend l'innéisme des concepts fondamentaux, mais n'a jamais prétendu que les bébés parlent anglais à la naissance !",
+      "Parfaitement exact ! C'est la thèse centrale de Fodor : la pensée humaine présente deux propriétés remarquables, la productivité (infinité de pensées) et la systématicité (si on peut penser 'Jean aime Marie', on peut automatiquement penser 'Marie aime Jean'). Cela n'est possible que si la pensée opère comme un langage formel doté d'une syntaxe combinatoire discrète !",
+      "Pure fantaisie pseudo-scientifique !",
+      "Contresens historique ! Fodor est l'un des démolisseurs majeurs du béhaviorisme skinnérien ; son œuvre entière vise à réhabiliter les états mentaux représentationnels internes."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 11 (PDF p. 11)",
@@ -192,7 +192,7 @@
     "anchor_id": "anchor_q7",
     "tag": "Noam Chomsky (1966) — Finitude & Récursion",
     "points": "1 point",
-    "context": "Toadette : « Coup de génie linguistique ! Dans Cartesian Linguistics (1966, Diapos 18–19), Noam Chomsky résout le paradoxe cartésien grâce à une idée empruntée à Wilhelm von Humboldt. Quelle est cette idée clé ? »",
+    "context": "« Coup de génie linguistique ! Dans Cartesian Linguistics (1966, Diapos 18–19), Noam Chomsky résout le paradoxe cartésien grâce à une idée empruntée à Wilhelm von Humboldt. Quelle est cette idée clé ? »",
     "question": "Quelle thèse formulée par Wilhelm von Humboldt est reprise par Noam Chomsky (1966, Diapo 18) pour dénouer le paradoxe cartésien de la finitude matérielle face à l'infinité de l'esprit ?",
     "options": [
       "« L'homme est condamné à ne répéter éternellement que les dix mêmes phrases apprises dans l'enfance. »",
@@ -202,10 +202,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est exactement le contraire : Chomsky insiste sur la créativité linguistique (nous produisons constamment des phrases que nous n'avons jamais entendues auparavant).",
-      "Toad : Magistral ! Retiens cette citation fondamentale de Humboldt citée par Chomsky et Pierre Poirier : « La langue fait un usage infini de moyens finis ». C'est la clé de voûte de toute la linguistique générative et de la science cognitive computationnelle !",
-      "Toad : Ridicule et dénué de tout sens linguistique.",
-      "Toad : Égarement complet vers un déterminisme climatique désuet et sans rapport avec Chomsky."
+      "Faux ! C'est exactement le contraire : Chomsky insiste sur la créativité linguistique (nous produisons constamment des phrases que nous n'avons jamais entendues auparavant).",
+      "Magistral ! Retiens cette citation fondamentale de Humboldt citée par Chomsky et Pierre Poirier : « La langue fait un usage infini de moyens finis ». C'est la clé de voûte de toute la linguistique générative et de la science cognitive computationnelle !",
+      "Ridicule et dénué de tout sens linguistique.",
+      "Égarement complet vers un déterminisme climatique désuet et sans rapport avec Chomsky."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 18 (PDF p. 18)",
@@ -223,7 +223,7 @@
     "anchor_id": "anchor_q8",
     "tag": "Arbres Syntaxiques & Récursion Propositionnelle",
     "points": "1 point",
-    "context": "Toadette : « Regardez bien l'arbre syntaxique de la diapositive 19 : « Chatterer said Buster thought the tree was tall ». Comment cette structure illustre-t-elle formellement la récursion ? »",
+    "context": "« Regardez bien l'arbre syntaxique de la diapositive 19 : « Chatterer said Buster thought the tree was tall ». Comment cette structure illustre-t-elle formellement la récursion ? »",
     "question": "Comment l'exemple de l'arbre syntaxique récursif (Diapo 19) démontre-t-il concrètement la résolution du problème cartésien par le computationnalisme ?",
     "options": [
       "En montrant qu'une règle syntaxique de formation de phrase ($P \to \text{Sujet} + \text{Verbe} + P$) peut s'appeler elle-même en réinjectant une phrase complète ($P$) comme complément d'une proposition principale, permettant d'étendre la complexité et la longueur d'une pensée à l'infini avec une seule et même règle finie.",
@@ -233,10 +233,10 @@
     ],
     "correctIndex": 0,
     "feedbacks": [
-      "Toad : Explication mathématique et linguistique parfaite ! Dans l'arbre de la Diapo 19, la règle de réécriture propositionnelle inclut le symbole 'Phrase' à l'intérieur de sa propre expansion. On peut ainsi dire : 'Jean pense que [Pierre sait que [Marie affirme que [le chien aboie...]]]'. Une seule règle récursive finie engendre une infinité de pensées emboîtées !",
-      "Toad : Farfelu au plus haut point !",
-      "Toad : Complètement absurde ! Nous produisons et comprenons tous les jours des phrases de plus de 10 mots sans aucune violation physique.",
-      "Toad : Inversion complète : Chomsky a démontré que la récursion est la propriété distinctive universelle du langage humain naturel (Faculté du langage au sens strict, Hauser, Chomsky & Fitch 2002)."
+      "Explication mathématique et linguistique parfaite ! Dans l'arbre de la Diapo 19, la règle de réécriture propositionnelle inclut le symbole 'Phrase' à l'intérieur de sa propre expansion. On peut ainsi dire : 'Jean pense que [Pierre sait que [Marie affirme que [le chien aboie...]]]'. Une seule règle récursive finie engendre une infinité de pensées emboîtées !",
+      "Farfelu au plus haut point !",
+      "Complètement absurde ! Nous produisons et comprenons tous les jours des phrases de plus de 10 mots sans aucune violation physique.",
+      "Inversion complète : Chomsky a démontré que la récursion est la propriété distinctive universelle du langage humain naturel (Faculté du langage au sens strict, Hauser, Chomsky & Fitch 2002)."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 19 & 20 (PDF p. 19–20)",
@@ -254,7 +254,7 @@
     "anchor_id": "anchor_q9",
     "tag": "Haugeland (1981) — Définition Système Formel",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans la mécanique des jeux formels avec John Haugeland (1981) ! Aux diapositives 24 et 25, Pierre Poirier décompose tout système formel en trois composantes canoniques. Quelles sont-elles ? »",
+    "context": "« Entrons dans la mécanique des jeux formels avec John Haugeland (1981) ! Aux diapositives 24 et 25, Pierre Poirier décompose tout système formel en trois composantes canoniques. Quelles sont-elles ? »",
     "question": "Selon la définition standard formulée par John Haugeland (1981) et exposée par Pierre Poirier (Diapos 24 à 28), quels sont les trois éléments nécessaires et suffisants qui constituent formellement un « jeu formel » ou « système formel » ?",
     "options": [
       "Un processeur Intel, une carte graphique Nvidia et un écran d'affichage haute résolution.",
@@ -264,10 +264,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est du matériel informatique contemporain particulier. Un système formel est un concept mathématique abstrait qui existait bien avant l'électricité !",
-      "Toad : Définition impeccable ! C'est la sainte trinité du système formel exposée à la Diapo 24 : 1) Les pièces (tokens discrets), 2) La position de départ (état initial valide), 3) Les règles de transition (ce qui est permis de faire pour transformer l'état). Que ce soit le Morpion, les Échecs ou la logique formelle, tout système formel s'y réduit !",
-      "Toad : Poétique mais absurde en sciences cognitives !",
-      "Toad : Non ! C'est le substrat biologique d'un être vivant, pas la structure logique d'un système formel."
+      "Faux ! C'est du matériel informatique contemporain particulier. Un système formel est un concept mathématique abstrait qui existait bien avant l'électricité !",
+      "Définition impeccable ! C'est la sainte trinité du système formel exposée à la Diapo 24 : 1) Les pièces (tokens discrets), 2) La position de départ (état initial valide), 3) Les règles de transition (ce qui est permis de faire pour transformer l'état). Que ce soit le Morpion, les Échecs ou la logique formelle, tout système formel s'y réduit !",
+      "Poétique mais absurde en sciences cognitives !",
+      "Non ! C'est le substrat biologique d'un être vivant, pas la structure logique d'un système formel."
     ],
     "doc_title": "Haugeland (1981) & Cours PSY9613",
     "doc_page": "Diapo 24 (PDF p. 24) ; Haugeland p. 2-5",
@@ -285,7 +285,7 @@
     "anchor_id": "anchor_q10",
     "tag": "Indépendance du Médium & Réalisabilité Multiple",
     "points": "1 point",
-    "context": "Toadette : « Voici l'un des concepts les plus puissants des sciences cognitives : l'indépendance par rapport au médium (Medium Independence, Diapo 26). Quelles en sont les conséquences philosophiques ? »",
+    "context": "« Voici l'un des concepts les plus puissants des sciences cognitives : l'indépendance par rapport au médium (Medium Independence, Diapo 26). Quelles en sont les conséquences philosophiques ? »",
     "question": "En quoi consiste la propriété d'« indépendance par rapport au médium » (Medium Independence, Diapo 26) propre aux systèmes formels, et quelle implication majeure en découle pour la nature de l'esprit ?",
     "options": [
       "Elle affirme que les jeux formels ne peuvent être compris que par des personnes dotées de pouvoirs extrasensoriels de médiumnité.",
@@ -295,10 +295,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Confusion lexicale comique ! Le mot 'médium' désigne ici le substrat physique matériel (bois, métal, silicium), et non un voyant spirite !",
-      "Toad : Magistral ! C'est la fondation même du computationnalisme fonctionnaliste (Putnam, Fodor, Haugeland) : l'esprit n'est pas le cerveau biologique en tant que viande, mais le programme formel qu'il exécute. De même qu'une partie d'échecs reste la même sur un échiquier en marbre ou sur un écran d'ordinateur, la cognition est indépendante de son substrat physique !",
-      "Toad : Pure fantaisie sans rapport avec l'informatique ou la psychologie.",
-      "Toad : Faux ! Précisément, changer le plastique en bois ne change pas d'un iota les règles et la dynamique du jeu d'échecs : c'est l'essence même de l'indépendance du médium !"
+      "Confusion lexicale comique ! Le mot 'médium' désigne ici le substrat physique matériel (bois, métal, silicium), et non un voyant spirite !",
+      "Magistral ! C'est la fondation même du computationnalisme fonctionnaliste (Putnam, Fodor, Haugeland) : l'esprit n'est pas le cerveau biologique en tant que viande, mais le programme formel qu'il exécute. De même qu'une partie d'échecs reste la même sur un échiquier en marbre ou sur un écran d'ordinateur, la cognition est indépendante de son substrat physique !",
+      "Pure fantaisie sans rapport avec l'informatique ou la psychologie.",
+      "Faux ! Précisément, changer le plastique en bois ne change pas d'un iota les règles et la dynamique du jeu d'échecs : c'est l'essence même de l'indépendance du médium !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 26 (PDF p. 26)",
@@ -316,7 +316,7 @@
     "anchor_id": "anchor_q11",
     "tag": "SFA & Automates à États Finis (FSA)",
     "points": "1 point",
-    "context": "Toadette : « Place aux automates ! À la diapositive 31, Pierre Poirier introduit la définition mathématique d'un automate à états finis (Finite State Automaton - FSA). Quel est son quintuplet formel ? »",
+    "context": "« Place aux automates ! À la diapositive 31, Pierre Poirier introduit la définition mathématique d'un automate à états finis (Finite State Automaton - FSA). Quel est son quintuplet formel ? »",
     "question": "Dans la théorie formelle des automates exposée en classe (Diapos 30 et 31), comment se définit rigoureusement un automate à états finis déterministe (FSA) sous la forme d'un quintuplet mathématique ?",
     "options": [
       "Par cinq équations différentielles non-linéaires résolues par transformée de Fourier rapide.",
@@ -326,10 +326,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Les automates à états finis opèrent sur des états discrets et une logique séquentielle déterministe, pas sur des équations différentielles continues.",
-      "Toad : Exactitude mathématique parfaite ! C'est la définition officielle enseignée à l'UQAM (notamment dans le cours MAT7050 cité par le professeur, Diapo 22) : $\\langle \\Sigma, Q, q_0, F, \\delta \rangle$. Le système lit un symbole d'entrée dans $\\Sigma$, regarde son état courant dans $Q$, et applique la fonction $\\delta$ pour basculer dans son nouvel état !",
-      "Toad : Description d'une machine à vapeur du XIXe siècle, pas d'un modèle mathématique d'automate.",
-      "Toad : Hors sujet total avec la neuroanatomie du langage."
+      "Faux ! Les automates à états finis opèrent sur des états discrets et une logique séquentielle déterministe, pas sur des équations différentielles continues.",
+      "Exactitude mathématique parfaite ! C'est la définition officielle enseignée à l'UQAM (notamment dans le cours MAT7050 cité par le professeur, Diapo 22) : $\\langle \\Sigma, Q, q_0, F, \\delta \rangle$. Le système lit un symbole d'entrée dans $\\Sigma$, regarde son état courant dans $Q$, et applique la fonction $\\delta$ pour basculer dans son nouvel état !",
+      "Description d'une machine à vapeur du XIXe siècle, pas d'un modèle mathématique d'automate.",
+      "Hors sujet total avec la neuroanatomie du langage."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 31 (PDF p. 31)",
@@ -347,7 +347,7 @@
     "anchor_id": "anchor_q12",
     "tag": "Exemples FSA & Limite Structurelle (a^n b^n)",
     "points": "1 point",
-    "context": "Toadette : « Des portes de supermarché à la distributrice de canettes ! Le professeur utilise ces exemples familiers aux diapositives 32 et 33. Mais pourquoi ces automates finis échouent-ils à modéliser la pensée humaine ? »",
+    "context": "« Des portes de supermarché à la distributrice de canettes ! Le professeur utilise ces exemples familiers aux diapositives 32 et 33. Mais pourquoi ces automates finis échouent-ils à modéliser la pensée humaine ? »",
     "question": "Pourquoi les automates à états finis (FSA), illustrés par la porte automatique (Diapo 32) et la distributrice de Coca-Cola (Diapo 33), sont-ils jugés structurellement insuffisants pour modéliser la cognition humaine et le langage (Diapos 34–35) ?",
     "options": [
       "Parce qu'ils consomment trop d'électricité pour être transportés dans une poche de pantalon.",
@@ -357,10 +357,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication technique risible sans rapport avec la théorie de la calculabilité !",
-      "Toad : Analyse doctorale brillante ! C'est la limite théorique majeure démontrée par Chomsky dans la hiérarchie des langages : un automate à états finis n'a pas de mémoire externe (pas de ruban ni de pile). S'il doit vérifier qu'une phrase contient exactement autant de 'si' que de 'alors' ($a^n b^n$), il finit obligatoirement par saturer dès que $n$ dépasse son nombre d'états internes ! Il faut une Machine de Turing avec mémoire illimitée pour y parvenir !",
-      "Toad : Élucubration comique !",
-      "Toad : Piège de design sans aucune consistance formelle."
+      "Explication technique risible sans rapport avec la théorie de la calculabilité !",
+      "Analyse doctorale brillante ! C'est la limite théorique majeure démontrée par Chomsky dans la hiérarchie des langages : un automate à états finis n'a pas de mémoire externe (pas de ruban ni de pile). S'il doit vérifier qu'une phrase contient exactement autant de 'si' que de 'alors' ($a^n b^n$), il finit obligatoirement par saturer dès que $n$ dépasse son nombre d'états internes ! Il faut une Machine de Turing avec mémoire illimitée pour y parvenir !",
+      "Élucubration comique !",
+      "Piège de design sans aucune consistance formelle."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 32 à 35 (PDF p. 32–35)",
@@ -378,7 +378,7 @@
     "anchor_id": "anchor_q13",
     "tag": "Haugeland (1981) — Semantic Engines",
     "points": "1 point",
-    "context": "Toadette : « Voici la formule la plus célèbre de toute la philosophie de l'intelligence artificielle ! Dans Semantic Engines (1981), John Haugeland énonce une maxime reprise mot à mot par Pierre Poirier. La connaissez-vous ? »",
+    "context": "« Voici la formule la plus célèbre de toute la philosophie de l'intelligence artificielle ! Dans Semantic Engines (1981), John Haugeland énonce une maxime reprise mot à mot par Pierre Poirier. La connaissez-vous ? »",
     "question": "Quelle est la maxime fondamentale de John Haugeland (1981, citée en classe à 01:26:30) définissant le principe de fonctionnement d'un « moteur sémantique » (Semantic Engine) ?",
     "options": [
       "« Méprisez la syntaxe, car seul le sens spirituel des mots importe aux dieux. »",
@@ -388,10 +388,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est l'exact opposé du projet computationnaliste qui est purement matérialiste et formel.",
-      "Toad : Célèbre entre toutes ! C'est la formule d'or de John Haugeland (1981) répétée par Pierre Poirier : 'Take care of the syntax, and the semantics will take care of itself'. Une machine ne comprend pas ce qu'elle fait (elle est aveugle au sens), mais si ses règles syntaxiques sont bien conçues, le résultat final est garanti d'être vrai dans le monde réel !",
-      "Toad : Cynisme gratuit sans valeur académique.",
-      "Toad : Calcul arbitraire dénué de tout sens linguistique."
+      "Faux ! C'est l'exact opposé du projet computationnaliste qui est purement matérialiste et formel.",
+      "Célèbre entre toutes ! C'est la formule d'or de John Haugeland (1981) répétée par Pierre Poirier : 'Take care of the syntax, and the semantics will take care of itself'. Une machine ne comprend pas ce qu'elle fait (elle est aveugle au sens), mais si ses règles syntaxiques sont bien conçues, le résultat final est garanti d'être vrai dans le monde réel !",
+      "Cynisme gratuit sans valeur académique.",
+      "Calcul arbitraire dénué de tout sens linguistique."
     ],
     "doc_title": "Haugeland (1981) — Semantic Engines",
     "doc_page": "Haugeland (1981), p. 2 ; Notes de cours (01:26:30)",
@@ -409,7 +409,7 @@
     "anchor_id": "anchor_q14",
     "tag": "Fonction d'Interprétation — Domaine & Co-domaine",
     "points": "1 point",
-    "context": "Toadette : « Regardez les diapositives 38 à 45 ! Comment les symboles purement mécaniques d'une machine entrent-ils en relation avec la réalité ? C'est le rôle de la fonction d'interprétation. »",
+    "context": "« Regardez les diapositives 38 à 45 ! Comment les symboles purement mécaniques d'une machine entrent-ils en relation avec la réalité ? C'est le rôle de la fonction d'interprétation. »",
     "question": "Sur le plan mathématique et épistémologique, comment se définit la « fonction d'interprétation » (Diapos 38 à 45) au sein d'un système formel cognitif ?",
     "options": [
       "Comme un traducteur vocal qui convertit instantanément le latin en chinois sans passer par l'anglais.",
@@ -419,10 +419,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Ce n'est pas un dictionnaire de traduction automatique d'une langue humaine à une autre.",
-      "Toad : Définition formelle rigoureuse ! La fonction d'interprétation fait le pont entre le monde clos de la syntaxe mécanique ($X, O, p, q$) et le monde réel (les joueurs, la météo, la vérité). Si le symbole A est relié à l'objet réel O1, et que la règle transforme A en B, alors l'interprétation de B doit correspondre à l'état réel O2 !",
-      "Toad : Pure fantaisie thermodynamique sans rapport avec la sémantique.",
-      "Toad : Hors sujet technique !"
+      "Faux ! Ce n'est pas un dictionnaire de traduction automatique d'une langue humaine à une autre.",
+      "Définition formelle rigoureuse ! La fonction d'interprétation fait le pont entre le monde clos de la syntaxe mécanique ($X, O, p, q$) et le monde réel (les joueurs, la météo, la vérité). Si le symbole A est relié à l'objet réel O1, et que la règle transforme A en B, alors l'interprétation de B doit correspondre à l'état réel O2 !",
+      "Pure fantaisie thermodynamique sans rapport avec la sémantique.",
+      "Hors sujet technique !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 38 & 44–45 (PDF p. 38, 44–45)",
@@ -440,7 +440,7 @@
     "anchor_id": "anchor_q15",
     "tag": "Analogie du Terrain de Soccer (Diapo 43)",
     "points": "1 point",
-    "context": "Toadette : « Enfilez vos crampons ! À la diapositive 43, Pierre Poirier prend un exemple particulièrement parlant : un terrain de soccer. Comment cet exemple illustre-t-il la relation syntaxe-sémantique ? »",
+    "context": "« Enfilez vos crampons ! À la diapositive 43, Pierre Poirier prend un exemple particulièrement parlant : un terrain de soccer. Comment cet exemple illustre-t-il la relation syntaxe-sémantique ? »",
     "question": "Dans l'analogie du terrain de soccer (Diapo 43, horodatée à 15:08:49 EDT) développée par Pierre Poirier, que représentent respectivement les symboles formels manipulés sur le schéma tactique et les actions sur le gazon réel ?",
     "options": [
       "Le schéma tactique représente le prix des billets au guichet et le gazon représente la pelouse synthétique vendue en quincaillerie.",
@@ -450,10 +450,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Commercial et hors sujet !",
-      "Toad : Parfaitement capté ! C'est l'essence même de l'analogie de Pierre Poirier : sur le tableau noir du vestiaire (système formel), l'entraîneur déplace des ronds avec des lettres et tire des flèches selon des règles géométriques précises. Sur la pelouse (co-domaine), les joueurs courent et se passent le cuir. Le plan formel abstrait préserve le résultat de l'action physique réelle !",
-      "Toad : Faux ! Il ne s'agit pas de robotique sportive, mais de modélisation théorique de la fonction d'interprétation.",
-      "Toad : Pure absurdité physique."
+      "Commercial et hors sujet !",
+      "Parfaitement capté ! C'est l'essence même de l'analogie de Pierre Poirier : sur le tableau noir du vestiaire (système formel), l'entraîneur déplace des ronds avec des lettres et tire des flèches selon des règles géométriques précises. Sur la pelouse (co-domaine), les joueurs courent et se passent le cuir. Le plan formel abstrait préserve le résultat de l'action physique réelle !",
+      "Faux ! Il ne s'agit pas de robotique sportive, mais de modélisation théorique de la fonction d'interprétation.",
+      "Pure absurdité physique."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 43 (PDF p. 43)",
@@ -471,7 +471,7 @@
     "anchor_id": "anchor_q16",
     "tag": "Syntaxe vs Vérité — Le Problème de la Sémantique",
     "points": "1 point",
-    "context": "Toadette : « Attention piège philosophique majeur ! Aux diapositives 28 et 38, Pierre Poirier met en garde les étudiants : la vérité est-elle une propriété syntaxique ou sémantique ? »",
+    "context": "« Attention piège philosophique majeur ! Aux diapositives 28 et 38, Pierre Poirier met en garde les étudiants : la vérité est-elle une propriété syntaxique ou sémantique ? »",
     "question": "Dans son exposé sur la logique propositionnelle et les systèmes formels (Diapos 28 et 38, vers 01:24:35 EDT), quelle mise en garde conceptuelle Pierre Poirier formule-t-il concernant la notion de « vérité » ?",
     "options": [
       "La vérité est une propriété purement syntaxique calculable uniquement par le nombre de lettres d'une équation.",
@@ -481,10 +481,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Erreur épistémologique classique ! La syntaxe ne connaît que des formes, des règles d'agencement et des pions (bien formé vs mal formé). La vérité concerne le rapport entre le discours et le monde réel !",
-      "Toad : Remarquable rigueur philosophique ! C'est ce que le professeur martèle à 01:24:35 : 'Officiellement, quand on s'intéresse juste au système formel, c'est purement syntaxique. Un système logique veut préserver le vrai, et le vrai est une propriété sémantique.' Une machine peut manipuler parfaitement la syntaxe d'une proposition sans avoir la moindre idée si elle est vraie dans la réalité !",
-      "Toad : Relativisme naïf rejeté par l'épistémologie scientifique du cours.",
-      "Toad : Faux ! C'est le principe fondamental de l'informatique : 'Garbage in, garbage out' (Si les axiomes d'entrée sont faux, les déductions logiques seront matériellement fausses)."
+      "Erreur épistémologique classique ! La syntaxe ne connaît que des formes, des règles d'agencement et des pions (bien formé vs mal formé). La vérité concerne le rapport entre le discours et le monde réel !",
+      "Remarquable rigueur philosophique ! C'est ce que le professeur martèle à 01:24:35 : 'Officiellement, quand on s'intéresse juste au système formel, c'est purement syntaxique. Un système logique veut préserver le vrai, et le vrai est une propriété sémantique.' Une machine peut manipuler parfaitement la syntaxe d'une proposition sans avoir la moindre idée si elle est vraie dans la réalité !",
+      "Relativisme naïf rejeté par l'épistémologie scientifique du cours.",
+      "Faux ! C'est le principe fondamental de l'informatique : 'Garbage in, garbage out' (Si les axiomes d'entrée sont faux, les déductions logiques seront matériellement fausses)."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 28 (PDF p. 28) ; Notes de cours (01:24:35)",
@@ -502,7 +502,7 @@
     "anchor_id": "anchor_q17",
     "tag": "Newell & Simon (1975) — PSSH",
     "points": "1 point",
-    "context": "Toadette : « Voici l'article récompensé par le Prix Turing 1975 : Allen Newell et Herbert Simon ! Leur célèbre 'Physical Symbol System Hypothesis' (PSSH) est le manifeste du paradigme symbolique classique. Que postule-t-elle exactement ? »",
+    "context": "« Voici l'article récompensé par le Prix Turing 1975 : Allen Newell et Herbert Simon ! Leur célèbre 'Physical Symbol System Hypothesis' (PSSH) est le manifeste du paradigme symbolique classique. Que postule-t-elle exactement ? »",
     "question": "Quelle est la formulation exacte et la double exigence logique de l'Hypothèse des Systèmes Physiques de Symboles (PSSH) énoncée par Allen Newell et Herbert Simon (1975, Diapo 46) ?",
     "options": [
       "Un système physique de symboles est uniquement capable de faire des additions arithmétiques simples sur des nombres entiers.",
@@ -512,10 +512,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Réductionnisme grossier ! Newell et Simon visaient l'intelligence générale (résolution de problèmes, raisonnement, langage, échecs), pas de simples calculettes.",
-      "Toad : Définition historique exacte ! Retiens les deux mots magiques : NÉCESSAIRE et SUFFISANT. 1) Nécessaire : Vous ne trouverez jamais d'intelligence (humaine ou extraterrestre) qui ne soit pas un système de symboles. 2) Suffisant : Pas besoin d'âme magique, de biologie ou d'esprit immatériel ; construisez un système physique de symboles de taille adéquate, et l'intelligence générale émergera obligatoirement !",
-      "Toad : Hors sujet historique et linguistique !",
-      "Toad : Inversion complète de la PSSH ! Newell et Simon réfutent précisément le privilège biologique du carbone au profit de la manipulabilité physique des symboles."
+      "Réductionnisme grossier ! Newell et Simon visaient l'intelligence générale (résolution de problèmes, raisonnement, langage, échecs), pas de simples calculettes.",
+      "Définition historique exacte ! Retiens les deux mots magiques : NÉCESSAIRE et SUFFISANT. 1) Nécessaire : Vous ne trouverez jamais d'intelligence (humaine ou extraterrestre) qui ne soit pas un système de symboles. 2) Suffisant : Pas besoin d'âme magique, de biologie ou d'esprit immatériel ; construisez un système physique de symboles de taille adéquate, et l'intelligence générale émergera obligatoirement !",
+      "Hors sujet historique et linguistique !",
+      "Inversion complète de la PSSH ! Newell et Simon réfutent précisément le privilège biologique du carbone au profit de la manipulabilité physique des symboles."
     ],
     "doc_title": "Newell & Simon (1975) — Turing Award Lecture",
     "doc_page": "Newell & Simon (1975), p. 116 ; Diapo 46",
@@ -533,7 +533,7 @@
     "anchor_id": "anchor_q18",
     "tag": "David Marr (1982) — Niveau 1 (Computationnel)",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans la cathédrale théorique de David Marr (1982, Diapos 46 à 50) ! Le niveau computationnel (Niveau 1) est souvent mal compris par les étudiants. Que cherche-t-il à élucider ? »",
+    "context": "« Entrons dans la cathédrale théorique de David Marr (1982, Diapos 46 à 50) ! Le niveau computationnel (Niveau 1) est souvent mal compris par les étudiants. Que cherche-t-il à élucider ? »",
     "question": "Dans le cadre tripartite d'analyse de David Marr (1982, Vision, Diapos 47–48), quelle question fondamentale le premier niveau (« Niveau computationnel » ou « Théorie computationnelle ») prend-il en charge ?",
     "options": [
       "Quel microprocesseur en silicium doit être acheté pour exécuter le code Python en moins de deux secondes ?",
@@ -543,10 +543,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Le microprocesseur et le code relèvent respectivement des niveaux 3 (implémentationnel) et 2 (algorithmique).",
-      "Toad : Maîtrise absolue de Marr ! Le niveau computationnel ne se demande pas 'comment c'est codé dans les neurones', mais 'QUEL est le problème que le système essaie de résoudre et POURQUOI ?' (What & Why). Pour la vision par exemple, Marr pose que le but est de reconstruire la géométrie 3D des objets à partir d'images 2D rétiniennes.",
-      "Toad : C'est le niveau 3 (physique/biologique), pas le niveau computationnel abstrait !",
-      "Toad : C'est le niveau 2 (algorithmique/langage), pas la théorie computationnelle."
+      "Faux ! Le microprocesseur et le code relèvent respectivement des niveaux 3 (implémentationnel) et 2 (algorithmique).",
+      "Maîtrise absolue de Marr ! Le niveau computationnel ne se demande pas 'comment c'est codé dans les neurones', mais 'QUEL est le problème que le système essaie de résoudre et POURQUOI ?' (What & Why). Pour la vision par exemple, Marr pose que le but est de reconstruire la géométrie 3D des objets à partir d'images 2D rétiniennes.",
+      "C'est le niveau 3 (physique/biologique), pas le niveau computationnel abstrait !",
+      "C'est le niveau 2 (algorithmique/langage), pas la théorie computationnelle."
     ],
     "doc_title": "David Marr (1982) — Vision",
     "doc_page": "Diapos 47 & 48 (PDF p. 47–48) ; Marr (1982), chap. 1",
@@ -564,7 +564,7 @@
     "anchor_id": "anchor_q19",
     "tag": "David Marr (1982) — Niveaux 2 et 3 (Algorithme vs Hardware)",
     "points": "1 point",
-    "context": "Toadette : « Poursuivons avec les niveaux 2 et 3 de David Marr ! Comment s'articulent rigoureusement le niveau algorithmique et le niveau physique ? »",
+    "context": "« Poursuivons avec les niveaux 2 et 3 de David Marr ! Comment s'articulent rigoureusement le niveau algorithmique et le niveau physique ? »",
     "question": "Quelle distinction fonctionnelle formelle David Marr (1982, Diapos 49–50) établit-il entre le « Niveau algorithmique / représentationnel » (Niveau 2) et le « Niveau d'implémentation physique » (Niveau 3) ?",
     "options": [
       "Le niveau 2 décrit les émotions de l'observateur et le niveau 3 décrit ses croyances religieuses.",
@@ -574,10 +574,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Aucune dimension émotionnelle ou théologique n'entre dans les niveaux d'explication de Marr.",
-      "Toad : Précision chirurgicale ! Niveau 2 = L'algorithme et les structures de données (ex: calcul du gradient de luminance, modèle 2.5D). Niveau 3 = Le hardware (les colonnes d'orientation de V1, les potentiels d'action, ou les circuits VLSI en silicium). Un même algorithme (Niveau 2) peut tourner sur des supports physiques totalement différents (Niveau 3) !",
-      "Toad : Pure invention !",
-      "Toad : Faux ! Cette tripartition demeure le cadre conceptuel le plus cité et le plus influent des neurosciences computationnelles contemporaines."
+      "Faux ! Aucune dimension émotionnelle ou théologique n'entre dans les niveaux d'explication de Marr.",
+      "Précision chirurgicale ! Niveau 2 = L'algorithme et les structures de données (ex: calcul du gradient de luminance, modèle 2.5D). Niveau 3 = Le hardware (les colonnes d'orientation de V1, les potentiels d'action, ou les circuits VLSI en silicium). Un même algorithme (Niveau 2) peut tourner sur des supports physiques totalement différents (Niveau 3) !",
+      "Pure invention !",
+      "Faux ! Cette tripartition demeure le cadre conceptuel le plus cité et le plus influent des neurosciences computationnelles contemporaines."
     ],
     "doc_title": "David Marr (1982) — Vision",
     "doc_page": "Diapos 49 & 50 (PDF p. 49–50)",
@@ -595,7 +595,7 @@
     "anchor_id": "anchor_q20",
     "tag": "Pierre Poirier — Explanandum vs Explanans",
     "points": "1 point",
-    "context": "Toadette : « Attention distinction doctrinale majeure de Pierre Poirier ! Aux diapositives 54 et 55, le professeur structure l'explication computationnelle en séparant deux concepts philosophiques : Explanandum et Explanans. Ne les confondez pas ! »",
+    "context": "« Attention distinction doctrinale majeure de Pierre Poirier ! Aux diapositives 54 et 55, le professeur structure l'explication computationnelle en séparant deux concepts philosophiques : Explanandum et Explanans. Ne les confondez pas ! »",
     "question": "Dans le modèle épistémologique de l'explication computationnelle développé par Pierre Poirier (Diapos 54 et 55), comment se définissent et s'articulent rigoureusement l'« Explanandum » et l'« Explanans » ?",
     "options": [
       "L'explanandum est le prix financier d'un laboratoire de recherche et l'explanans est la subvention gouvernementale obtenue pour payer le matériel.",
@@ -605,10 +605,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Ce ne sont pas des concepts de gestion budgétaire, mais les deux termes universels de la philosophie des sciences (Hempel, Cummins, Poirier) !",
-      "Toad : Splendide rigueur épistémologique ! C'est exactement le propos des Diapos 54 et 55 : l'Explanandum est la capacité-cible (la vision, le langage, la mémoire) modélisée comme une fonction mathématique $y = f(x)$. L'Explanans est la machinerie causale qui explique COMMENT le système réussit cette fonction : l'architecture des sous-modules fonctionnels et le substrat physique matériel qui l'exécute !",
-      "Toad : Confusion anatomique !",
-      "Toad : Hors sujet historique !"
+      "Faux ! Ce ne sont pas des concepts de gestion budgétaire, mais les deux termes universels de la philosophie des sciences (Hempel, Cummins, Poirier) !",
+      "Splendide rigueur épistémologique ! C'est exactement le propos des Diapos 54 et 55 : l'Explanandum est la capacité-cible (la vision, le langage, la mémoire) modélisée comme une fonction mathématique $y = f(x)$. L'Explanans est la machinerie causale qui explique COMMENT le système réussit cette fonction : l'architecture des sous-modules fonctionnels et le substrat physique matériel qui l'exécute !",
+      "Confusion anatomique !",
+      "Hors sujet historique !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 54 & 55 (PDF p. 54–55)",
@@ -626,7 +626,7 @@
     "anchor_id": "anchor_q21",
     "tag": "Marvin Minsky (1966) — Le Mythe du Projet d'Été",
     "points": "1 point",
-    "context": "Toadette : « Une anecdote savoureuse racontée en classe ! À la diapositive 51, Pierre Poirier relate un fait réel survenu au MIT en 1966 sous la direction de Marvin Minsky. Que s'est-il passé ? »",
+    "context": "« Une anecdote savoureuse racontée en classe ! À la diapositive 51, Pierre Poirier relate un fait réel survenu au MIT en 1966 sous la direction de Marvin Minsky. Que s'est-il passé ? »",
     "question": "Quelle leçon épistémologique majeure Pierre Poirier tire-t-il de l'anecdote historique de Marvin Minsky au MIT en 1966 (Diapo 51), qui avait confié à un étudiant de premier cycle (Gerald Sussman) le mandat de régler la vision artificielle pendant son stage d'été ?",
     "options": [
       "Que les étudiants de premier cycle du MIT sont incapables de programmer en langage assembleur.",
@@ -636,10 +636,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Non ! Sussman est devenu un informaticien légendaire (co-créateur du langage Scheme). L'échec ne venait pas de ses compétences, mais de la folie du mandat !",
-      "Toad : Célèbre anecdote d'histoire des sciences racontée par Poirier ! Les fondateurs de l'IA (Minsky, McCarthy, Newell) pensaient que le raisonnement logique abstrait était le sommet difficile de l'esprit, et que voir ou attraper un objet n'était qu'une simple interface triviale qu'un stagiaire réglerait en 2 mois d'été. C'est le Paradoxe de Moravec : ce qui est facile pour nous (voir, marcher) est immensément difficile pour l'IA, et ce qui est difficile pour nous (calculer, jouer aux échecs) est trivial pour une machine !",
-      "Toad : Faux ! Le problème n'était pas le poids physique de la caméra, mais l'inadéquation radicale des algorithmes de traitement d'images.",
-      "Toad : Complètement erroné ! Minsky est resté directeur du laboratoire d'IA du MIT pendant des décennies."
+      "Non ! Sussman est devenu un informaticien légendaire (co-créateur du langage Scheme). L'échec ne venait pas de ses compétences, mais de la folie du mandat !",
+      "Célèbre anecdote d'histoire des sciences racontée par Poirier ! Les fondateurs de l'IA (Minsky, McCarthy, Newell) pensaient que le raisonnement logique abstrait était le sommet difficile de l'esprit, et que voir ou attraper un objet n'était qu'une simple interface triviale qu'un stagiaire réglerait en 2 mois d'été. C'est le Paradoxe de Moravec : ce qui est facile pour nous (voir, marcher) est immensément difficile pour l'IA, et ce qui est difficile pour nous (calculer, jouer aux échecs) est trivial pour une machine !",
+      "Faux ! Le problème n'était pas le poids physique de la caméra, mais l'inadéquation radicale des algorithmes de traitement d'images.",
+      "Complètement erroné ! Minsky est resté directeur du laboratoire d'IA du MIT pendant des décennies."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 51 (PDF p. 51)",
@@ -657,7 +657,7 @@
     "anchor_id": "anchor_q22",
     "tag": "McCulloch & Pitts (1943) — Logical Calculus",
     "points": "1 point",
-    "context": "Toadette : « Remontons à la naissance absolue des réseaux de neurones artificiels ! En 1943, Warren McCulloch et Walter Pitts publient un article révolutionnaire (Diapo 63). Quel était leur modèle du neurone biologique ? »",
+    "context": "« Remontons à la naissance absolue des réseaux de neurones artificiels ! En 1943, Warren McCulloch et Walter Pitts publient un article révolutionnaire (Diapo 63). Quel était leur modèle du neurone biologique ? »",
     "question": "Quel postulat théorique fondamental Warren McCulloch et Walter Pitts posent-ils en 1943 dans leur article séminal « A Logical Calculus of the Ideas Immanent in Nervous Activity » (Diapo 63) ?",
     "options": [
       "Le neurone biologique est une pompe à protons à écoulement continu régulée par les marées océaniques.",
@@ -667,10 +667,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Fantaisiste et sans aucun rapport avec l'électrophysiologie.",
-      "Toad : Point de départ de toute l'IA connexionniste ! En 1943, McCulloch (neurophysiologiste) et Pitts (logicien surdoué) prouvent que la décharge du potentiel d'action ('tout ou rien') est isomorphe au calcul propositionnel des Principia Mathematica de Russell et Whitehead ! Le cerveau est un calculateur logique matériel !",
-      "Toad : Faux ! La transmission synaptique est électrochimique locale, pas olfactive.",
-      "Toad : Contresens historique ! L'article prouve précisément que le tissu cérébral calcule les lois de la logique formelle."
+      "Fantaisiste et sans aucun rapport avec l'électrophysiologie.",
+      "Point de départ de toute l'IA connexionniste ! En 1943, McCulloch (neurophysiologiste) et Pitts (logicien surdoué) prouvent que la décharge du potentiel d'action ('tout ou rien') est isomorphe au calcul propositionnel des Principia Mathematica de Russell et Whitehead ! Le cerveau est un calculateur logique matériel !",
+      "Faux ! La transmission synaptique est électrochimique locale, pas olfactive.",
+      "Contresens historique ! L'article prouve précisément que le tissu cérébral calcule les lois de la logique formelle."
     ],
     "doc_title": "McCulloch & Pitts (1943) — Bulletin of Mathematical Biophysics",
     "doc_page": "Diapo 63 (PDF p. 63) ; McCulloch & Pitts (1943)",
@@ -688,7 +688,7 @@
     "anchor_id": "anchor_q23",
     "tag": "Frank Rosenblatt (1958) — Le Perceptron Mark I",
     "points": "1 point",
-    "context": "Toadette : « Voici l'ancêtre direct de toute l'intelligence artificielle contemporaine ! En 1958, Frank Rosenblatt crée le Perceptron (Diapo 65). Quelle rupture majeure introduit-il par rapport aux systèmes de McCulloch et Pitts ? »",
+    "context": "« Voici l'ancêtre direct de toute l'intelligence artificielle contemporaine ! En 1958, Frank Rosenblatt crée le Perceptron (Diapo 65). Quelle rupture majeure introduit-il par rapport aux systèmes de McCulloch et Pitts ? »",
     "question": "Quelle innovation conceptuelle et technique décisive Frank Rosenblatt introduit-il en 1958 avec le Perceptron (Diapo 65), qui en fait le véritable point de départ de l'apprentissage automatique moderne ?",
     "options": [
       "Il supprime totalement l'électricité pour faire fonctionner la machine exclusivement avec des engrenages d'horloge suisse.",
@@ -698,10 +698,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Le Perceptron Mark I était une machine électromécanique géante avec des potentiomètres motorisés, pas une horloge à ressorts !",
-      "Toad : Magistral ! C'est la distinction essentielle mise en lumière par Pierre Poirier (Diapo 65 et 02:33:03) : McCulloch et Pitts concevaient des circuits logiques câblés à la main. Rosenblatt, lui, invente la MACHINE QUI APPREND ! Les poids ne sont pas fixés par un ingénieur : ils s'ajustent d'eux-mêmes à chaque erreur commise pour converger vers la bonne classification ! Poirier souligne d'ailleurs que Rosenblatt regrettait d'avoir choisi le mot 'perceptron', car les gens ont cru à tort que la machine ne servait qu'à la perception sensorielle, alors qu'il s'agit d'un classificateur binaire universel !",
-      "Toad : Pure fable journalistique de l'époque !",
-      "Toad : Faux ! L'apprentissage automatique exige impérativement un flux de données d'entraînement."
+      "Faux ! Le Perceptron Mark I était une machine électromécanique géante avec des potentiomètres motorisés, pas une horloge à ressorts !",
+      "Magistral ! C'est la distinction essentielle mise en lumière par Pierre Poirier (Diapo 65 et 02:33:03) : McCulloch et Pitts concevaient des circuits logiques câblés à la main. Rosenblatt, lui, invente la MACHINE QUI APPREND ! Les poids ne sont pas fixés par un ingénieur : ils s'ajustent d'eux-mêmes à chaque erreur commise pour converger vers la bonne classification ! Poirier souligne d'ailleurs que Rosenblatt regrettait d'avoir choisi le mot 'perceptron', car les gens ont cru à tort que la machine ne servait qu'à la perception sensorielle, alors qu'il s'agit d'un classificateur binaire universel !",
+      "Pure fable journalistique de l'époque !",
+      "Faux ! L'apprentissage automatique exige impérativement un flux de données d'entraînement."
     ],
     "doc_title": "Frank Rosenblatt (1958) — Psychological Review",
     "doc_page": "Diapo 65 (PDF p. 65) ; Rosenblatt (1958)",
@@ -719,7 +719,7 @@
     "anchor_id": "anchor_q24",
     "tag": "Modélisation Perceptron — Droite Affine y = mx + b",
     "points": "1 point",
-    "context": "Toadette : « Sortez votre géométrie cartésienne ! Aux diapositives 66 et 67, Pierre Poirier modélise le Perceptron monocouche à l'aide de l'équation classique du secondaire : y = mx + b. Pourquoi cette droite est-elle si importante ? »",
+    "context": "« Sortez votre géométrie cartésienne ! Aux diapositives 66 et 67, Pierre Poirier modélise le Perceptron monocouche à l'aide de l'équation classique du secondaire : y = mx + b. Pourquoi cette droite est-elle si importante ? »",
     "question": "Sur le plan géométrique et mathématique, comment fonctionne la frontière de décision d'un Perceptron monocouche à deux entrées (x1, x2) telle que formalisée par Pierre Poirier (Diapos 66 et 67) ?",
     "options": [
       "Le Perceptron calcule une onde sinusoïdale oscillante qui enveloppe les points comme une nébuleuse gazeuse sans frontière définie.",
@@ -729,10 +729,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Le Perceptron monocouche ne génère aucune fonction périodique sinusoïdale.",
-      "Toad : Splendide démonstration géométrique ! C'est exactement l'explication lumineuse de Pierre Poirier aux Diapos 66-67 : l'équation de coupure $\\sum w_i x_i + b = 0$ n'est rien d'autre que l'équation d'une droite dans le plan 2D ($y = mx + b$) ou d'un hyperplan en dimension $N$. Le Perceptron est un classificateur linéaire qui tranche l'espace géométrique d'un coup de sabre rectiligne !",
-      "Toad : Faux ! Un cercle exige une frontière quadratique non linéaire ($x_1^2 + x_2^2 = r^2$), ce qu'un Perceptron monocouche sans couche cachée ne peut pas tracer !",
-      "Toad : Contresens total ! Le Perceptron est une architecture mathématique et vectorielle continue, pas un analyseur de texte symbolique."
+      "Faux ! Le Perceptron monocouche ne génère aucune fonction périodique sinusoïdale.",
+      "Splendide démonstration géométrique ! C'est exactement l'explication lumineuse de Pierre Poirier aux Diapos 66-67 : l'équation de coupure $\\sum w_i x_i + b = 0$ n'est rien d'autre que l'équation d'une droite dans le plan 2D ($y = mx + b$) ou d'un hyperplan en dimension $N$. Le Perceptron est un classificateur linéaire qui tranche l'espace géométrique d'un coup de sabre rectiligne !",
+      "Faux ! Un cercle exige une frontière quadratique non linéaire ($x_1^2 + x_2^2 = r^2$), ce qu'un Perceptron monocouche sans couche cachée ne peut pas tracer !",
+      "Contresens total ! Le Perceptron est une architecture mathématique et vectorielle continue, pas un analyseur de texte symbolique."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 66 & 67 (PDF p. 66–67)",
@@ -750,7 +750,7 @@
     "anchor_id": "anchor_q25",
     "tag": "Séparabilité Linéaire — AND/OR vs XOR",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans la géométrie des fonctions booléennes ! À la diapositive 68, le professeur trace les tables de vérité de ET, OU et OU Exclusif. Pourquoi le XOR pose-t-il un défi insurmontable au Perceptron monocouche ? »",
+    "context": "« Entrons dans la géométrie des fonctions booléennes ! À la diapositive 68, le professeur trace les tables de vérité de ET, OU et OU Exclusif. Pourquoi le XOR pose-t-il un défi insurmontable au Perceptron monocouche ? »",
     "question": "Pourquoi la fonction booléenne OU Exclusif (XOR) est-elle structurellement impossible à apprendre pour un Perceptron monocouche (Single Layer Perceptron), alors que les fonctions ET (AND) et OU (OR) sont apprises sans difficulté (Diapo 68) ?",
     "options": [
       "Parce que le XOR nécessite une tension électrique supérieure à 10 000 volts pour activer les transistors.",
@@ -760,10 +760,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication absurde ! Le problème n'est pas électrique ou énergétique, mais purement mathématique et géométrique.",
-      "Toad : Démonstration imparable ! C'est le théorème de Minsky et Papert (1969) expliqué à la Diapo 68 : tracez un carré unitaire avec les 4 sommets (0,0), (0,1), (1,0) et (1,1). Pour le OU, trois sommets valent 1 et un seul vaut 0 (une droite sépare facilement le coin (0,0)). Pour le XOR, les deux 1 sont en diagonale et les deux 0 sur l'autre diagonale : impossible de les couper d'un seul trait de crayon droit ! Pierre Poirier a utilisé cette analogie frappante en classe : 'On ne peut pas être à la fois à Québec et à Montréal, c'est soit l'un soit l'autre !' C'est l'essence de la disjonction exclusive qui défie la ligne droite.",
-      "Toad : Délire conspirationniste !",
-      "Toad : Faux ! Les ordinateurs numériques calculent le XOR depuis les années 1940 à l'aide de combinaisons de portes logiques."
+      "Explication absurde ! Le problème n'est pas électrique ou énergétique, mais purement mathématique et géométrique.",
+      "Démonstration imparable ! C'est le théorème de Minsky et Papert (1969) expliqué à la Diapo 68 : tracez un carré unitaire avec les 4 sommets (0,0), (0,1), (1,0) et (1,1). Pour le OU, trois sommets valent 1 et un seul vaut 0 (une droite sépare facilement le coin (0,0)). Pour le XOR, les deux 1 sont en diagonale et les deux 0 sur l'autre diagonale : impossible de les couper d'un seul trait de crayon droit ! Pierre Poirier a utilisé cette analogie frappante en classe : 'On ne peut pas être à la fois à Québec et à Montréal, c'est soit l'un soit l'autre !' C'est l'essence de la disjonction exclusive qui défie la ligne droite.",
+      "Délire conspirationniste !",
+      "Faux ! Les ordinateurs numériques calculent le XOR depuis les années 1940 à l'aide de combinaisons de portes logiques."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 68 (PDF p. 68)",
@@ -781,7 +781,7 @@
     "anchor_id": "anchor_q26",
     "tag": "Minsky & Papert (1969) — Le Premier Hiver de l'IA",
     "points": "1 point",
-    "context": "Toadette : « Coup de tonnerre dans l'histoire des sciences ! En 1969, Marvin Minsky et Seymour Papert publient leur livre dévastateur Perceptrons. Quelles en furent les conséquences sur la recherche en IA ? »",
+    "context": "« Coup de tonnerre dans l'histoire des sciences ! En 1969, Marvin Minsky et Seymour Papert publient leur livre dévastateur Perceptrons. Quelles en furent les conséquences sur la recherche en IA ? »",
     "question": "Quel impact historique majeur la publication de la monographie Perceptrons par Marvin Minsky et Seymour Papert en 1969 (citée en classe à 01:59:50 et 02:45:00) a-t-elle eu sur le développement des neurosciences computationnelles et de l'IA ?",
     "options": [
       "Le livre a convaincu le président des États-Unis de remplacer l'ensemble de l'armée par des robots connexionnistes dès 1970.",
@@ -791,10 +791,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! C'est l'inverse complet : les budgets de l'IA neuronale ont été totalement coupés !",
-      "Toad : Tragédie et tournant majeur de l'histoire de l'IA racontés par Pierre Poirier ! Minsky (pourtant pionnier de l'IA) et Papert ont asséné un coup quasi fatal aux réseaux de neurones. Les agences de financement ont conclu que les réseaux de neurones étaient une impasse théorique incapable de calculer un simple XOR. Les chercheurs connexionnistes ont été marginalisés pendant 15 ans jusqu'en 1986 !",
-      "Toad : Faux ! Le livre est devenu un classique incontournable de la littérature scientifique.",
-      "Toad : Absurde !"
+      "Faux ! C'est l'inverse complet : les budgets de l'IA neuronale ont été totalement coupés !",
+      "Tragédie et tournant majeur de l'histoire de l'IA racontés par Pierre Poirier ! Minsky (pourtant pionnier de l'IA) et Papert ont asséné un coup quasi fatal aux réseaux de neurones. Les agences de financement ont conclu que les réseaux de neurones étaient une impasse théorique incapable de calculer un simple XOR. Les chercheurs connexionnistes ont été marginalisés pendant 15 ans jusqu'en 1986 !",
+      "Faux ! Le livre est devenu un classique incontournable de la littérature scientifique.",
+      "Absurde !"
     ],
     "doc_title": "Minsky & Papert (1969) — Perceptrons",
     "doc_page": "Minsky & Papert (1969) ; Diapo 68 ; Notes de cours",
@@ -812,7 +812,7 @@
     "anchor_id": "anchor_q27",
     "tag": "Groupe PDP (1986) — Résolution du XOR par Couche Cachée",
     "points": "1 point",
-    "context": "Toadette : « La résurrection connexionniste de 1986 ! David Rumelhart, James McClelland et le groupe PDP publient leur manifeste en deux volumes (Diapos 69–70). Comment les réseaux multicouches viennent-ils à bout du XOR ? »",
+    "context": "« La résurrection connexionniste de 1986 ! David Rumelhart, James McClelland et le groupe PDP publient leur manifeste en deux volumes (Diapos 69–70). Comment les réseaux multicouches viennent-ils à bout du XOR ? »",
     "question": "Sur le plan computationnel et géométrique, comment l'adjonction d'une couche cachée (Hidden Layer) dans un réseau multicouches (Multi-Layer Perceptron - MLP, Rumelhart & McClelland, 1986, Diapo 69) permet-elle de résoudre victorieusement le problème du XOR ?",
     "options": [
       "En diminuant la vitesse de rotation des électrons dans les fils de cuivre du processeur.",
@@ -822,10 +822,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication quantique grotesque !",
-      "Toad : C'est le trait de génie mathématique du connexionnisme moderne ! Les unités cachées créent une nouvelle représentation intermédiaire : elles transforment l'espace. Dans l'espace des unités cachées, les points (0,1) et (1,0) ne sont plus en diagonale coincés avec les zéros, mais sont projetés à un endroit où un simple séparateur linéaire peut les isoler ! La couche cachée brise le verrou de Minsky !",
-      "Toad : Absurde ! Le réseau traite l'intégralité des entrées.",
-      "Toad : Faux ! Le réseau généralise et résout l'ensemble des 4 combinaisons de la table de vérité du XOR."
+      "Explication quantique grotesque !",
+      "C'est le trait de génie mathématique du connexionnisme moderne ! Les unités cachées créent une nouvelle représentation intermédiaire : elles transforment l'espace. Dans l'espace des unités cachées, les points (0,1) et (1,0) ne sont plus en diagonale coincés avec les zéros, mais sont projetés à un endroit où un simple séparateur linéaire peut les isoler ! La couche cachée brise le verrou de Minsky !",
+      "Absurde ! Le réseau traite l'intégralité des entrées.",
+      "Faux ! Le réseau généralise et résout l'ensemble des 4 combinaisons de la table de vérité du XOR."
     ],
     "doc_title": "Rumelhart & McClelland (1986) — Parallel Distributed Processing",
     "doc_page": "Diapos 69 & 70 (PDF p. 69–70)",
@@ -843,7 +843,7 @@
     "anchor_id": "anchor_q28",
     "tag": "Rétropropagation du Gradient — Exigence Différentiabilité",
     "points": "1 point",
-    "context": "Toadette : « L'algorithme qui a changé la face du monde moderne : la rétropropagation du gradient (Rumelhart, Hinton & Williams, 1986) ! Pourquoi exige-t-il des fonctions d'activation continues et différentiables ? »",
+    "context": "« L'algorithme qui a changé la face du monde moderne : la rétropropagation du gradient (Rumelhart, Hinton & Williams, 1986) ! Pourquoi exige-t-il des fonctions d'activation continues et différentiables ? »",
     "question": "Dans l'algorithme d'apprentissage par Rétropropagation du Gradient (Backpropagation, Diapos 69, 76 et horodaté à 03:00:00 EDT), pourquoi a-t-il été rigoureusement obligatoire d'abandonner les fonctions seuil binaires de McCulloch-Pitts au profit de fonctions continues (ex: sigmoïde) ?",
     "options": [
       "Parce que les fonctions seuils provoquaient des surchauffes thermiques dans les condensateurs des ordinateurs en 1986.",
@@ -853,10 +853,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Explication technique farfelue sans fondement mathématique !",
-      "Toad : Cœur absolu des mathématiques de l'apprentissage profond ! Écoute bien ce que Pierre Poirier explique à 03:00:00 : la rétropropagation utilise la dérivée (la pente). Si vous utilisez un seuil tout-ou-rien en marche d'escalier, la pente est plate partout (dérivée = 0) et infinie au saut : vous ne savez pas dans quelle direction bouger les poids ! En passant à une belle courbe sigmoïde lisse, la dérivée n'est jamais nulle : l'erreur peut 'couler' en sens inverse jusqu'aux couches cachées !",
-      "Toad : Ridicule ! La sigmoïde est une formule mathématique publique universelle.",
-      "Toad : Faux ! L'apprentissage par descente de gradient requiert des centaines ou milliers d'itérations d'ajustement graduel."
+      "Explication technique farfelue sans fondement mathématique !",
+      "Cœur absolu des mathématiques de l'apprentissage profond ! Écoute bien ce que Pierre Poirier explique à 03:00:00 : la rétropropagation utilise la dérivée (la pente). Si vous utilisez un seuil tout-ou-rien en marche d'escalier, la pente est plate partout (dérivée = 0) et infinie au saut : vous ne savez pas dans quelle direction bouger les poids ! En passant à une belle courbe sigmoïde lisse, la dérivée n'est jamais nulle : l'erreur peut 'couler' en sens inverse jusqu'aux couches cachées !",
+      "Ridicule ! La sigmoïde est une formule mathématique publique universelle.",
+      "Faux ! L'apprentissage par descente de gradient requiert des centaines ou milliers d'itérations d'ajustement graduel."
     ],
     "doc_title": "Rumelhart, Hinton & Williams (1986) — Nature",
     "doc_page": "Diapo 76 (PDF p. 76) ; Notes de cours (03:00:00)",
@@ -874,7 +874,7 @@
     "anchor_id": "anchor_q29",
     "tag": "Neurone Formel — Intégration & Activation",
     "points": "1 point",
-    "context": "Toadette : « Entrons dans l'anatomie computationnelle du neurone artificiel ! Aux diapositives 72 à 76, le professeur dresse le tableau synoptique des correspondances entre biologie et formalisation mathématique. Qui correspond à quoi ? »",
+    "context": "« Entrons dans l'anatomie computationnelle du neurone artificiel ! Aux diapositives 72 à 76, le professeur dresse le tableau synoptique des correspondances entre biologie et formalisation mathématique. Qui correspond à quoi ? »",
     "question": "Dans la formalisation mathématique standard du neurone artificiel présentée par Pierre Poirier (Diapos 72 à 76), quelle est la correspondance fonctionnelle rigoureuse entre les structures anatomiques du neurone biologique et les équations du réseau ?",
     "options": [
       "Les dendrites calculent la division euclidienne, les axones absorbent la nourriture et les synapses stockent des images en couleurs.",
@@ -884,10 +884,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Description biologiquement insensée !",
-      "Toad : Architecture modèle parfaitement assimilée ! C'est la boîte à outils de base (Diapos 75-76) : 1) Entrées sur les dendrites ($a_i$), 2) Modulation synaptique ($w_{ji}$), 3) Intégration au soma ($\text{net}_j = \\sum a_i w_{ji} + \theta$), 4) Déclenchement axonal ($y_j = F(\text{net}_j)$). Le neurone artificiel est un intégrateur pondéré suivi d'une fonction de transfert non linéaire !",
-      "Toad : Farfelu !",
-      "Toad : Faux ! C'est justement la plasticité de l'efficacité synaptique (la modulation du poids $w$) qui est le support de tout l'apprentissage !"
+      "Description biologiquement insensée !",
+      "Architecture modèle parfaitement assimilée ! C'est la boîte à outils de base (Diapos 75-76) : 1) Entrées sur les dendrites ($a_i$), 2) Modulation synaptique ($w_{ji}$), 3) Intégration au soma ($\text{net}_j = \\sum a_i w_{ji} + \theta$), 4) Déclenchement axonal ($y_j = F(\text{net}_j)$). Le neurone artificiel est un intégrateur pondéré suivi d'une fonction de transfert non linéaire !",
+      "Farfelu !",
+      "Faux ! C'est justement la plasticité de l'efficacité synaptique (la modulation du poids $w$) qui est le support de tout l'apprentissage !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapos 72 à 76 (PDF p. 72–76)",
@@ -905,7 +905,7 @@
     "anchor_id": "anchor_q30",
     "tag": "Fonctions d'Activation — Sigmoïde & Dérivée Continue",
     "points": "1 point",
-    "context": "Toadette : « Zoomons sur la fonction d'activation ! Pourquoi la courbe en S de la fonction sigmoïde $F(x) = 1 / (1 + e^{-x})$ est-elle devenue la superstar des réseaux de neurones des années 1980 ? »",
+    "context": "« Zoomons sur la fonction d'activation ! Pourquoi la courbe en S de la fonction sigmoïde $F(x) = 1 / (1 + e^{-x})$ est-elle devenue la superstar des réseaux de neurones des années 1980 ? »",
     "question": "Quelles propriétés mathématiques fondamentales confèrent à la fonction sigmoïde logistique (Diapo 76) sa supériorité absolue sur la fonction de seuil tout-ou-rien dans les architectures connexionnistes multicouches ?",
     "options": [
       "Elle est périodique et prend des valeurs infinies tous les 90 degrés.",
@@ -915,10 +915,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Confusion avec la tangente trigonométrique ! La sigmoïde est bornée entre 0 et 1 et ne va jamais à l'infini.",
-      "Toad : Pure poésie mathématique ! La formule de sa dérivée $F'(x) = F(x)(1 - F(x))$ est le rêve de tout informaticien : une fois qu'on a calculé l'activation $y$ en sortie du neurone, la dérivée se calcule par une simple multiplication $y(1 - y)$ ! C'est ce qui a rendu la rétropropagation praticable sur les ordinateurs des années 1980 !",
-      "Toad : Fantaisiste !",
-      "Toad : Faux ! L'erreur existe toujours et sert précisément de moteur à l'apprentissage."
+      "Confusion avec la tangente trigonométrique ! La sigmoïde est bornée entre 0 et 1 et ne va jamais à l'infini.",
+      "Pure poésie mathématique ! La formule de sa dérivée $F'(x) = F(x)(1 - F(x))$ est le rêve de tout informaticien : une fois qu'on a calculé l'activation $y$ en sortie du neurone, la dérivée se calcule par une simple multiplication $y(1 - y)$ ! C'est ce qui a rendu la rétropropagation praticable sur les ordinateurs des années 1980 !",
+      "Fantaisiste !",
+      "Faux ! L'erreur existe toujours et sert précisément de moteur à l'apprentissage."
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 76 (PDF p. 76)",
@@ -936,7 +936,7 @@
     "anchor_id": "anchor_q31",
     "tag": "Neurosciences Cognitives Computationnelles & LEABRA",
     "points": "1 point",
-    "context": "Toadette : « Montons vers les neurosciences cognitives computationnelles ! Aux diapositives 82 et 83, Pierre Poirier présente l'architecture LEABRA développée par Randall O'Reilly. Quelle est sa spécificité ? »",
+    "context": "« Montons vers les neurosciences cognitives computationnelles ! Aux diapositives 82 et 83, Pierre Poirier présente l'architecture LEABRA développée par Randall O'Reilly. Quelle est sa spécificité ? »",
     "question": "Quelle synthèse théorique originale l'architecture computationnelle LEABRA (O'Reilly & Munakata, Diapo 83, citée à 03:07:37 EDT) réalise-t-elle au sein de la boîte à outils connexionniste ?",
     "options": [
       "Elle remplace les synapses chimiques par des fibres optiques chirurgicalement implantées dans le cervelet.",
@@ -946,10 +946,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Science-fiction farfelue sans aucun rapport avec LEABRA !",
-      "Toad : Remarquable précision doctorale ! LEABRA signifie précisément 'Local, Error-driven and Associative, Biologically Realistic Algorithm'. Randall O'Reilly et Yuko Munakata ont résolu le grand dilemme : le cerveau utilise à la fois la plasticité Hebbienne locale non supervisée ET l'ajustement guidé par les erreurs de prédiction ! LEABRA réconcilie ces deux dynamiques dans des réseaux de colonnes corticales avec inhibition par interneurones ! Pierre Poirier a détaillé l'ancrage anatomique : le corrélationnel opère dans l'hippocampe et le cortex postérieur pour la mémoire sémantique, tandis que le guidage par l'erreur opère dans les ganglions de la base et le cervelet pour le contrôle moteur et la prédiction !",
-      "Toad : Aberration médicale !",
-      "Toad : Grotesque !"
+      "Science-fiction farfelue sans aucun rapport avec LEABRA !",
+      "Remarquable précision doctorale ! LEABRA signifie précisément 'Local, Error-driven and Associative, Biologically Realistic Algorithm'. Randall O'Reilly et Yuko Munakata ont résolu le grand dilemme : le cerveau utilise à la fois la plasticité Hebbienne locale non supervisée ET l'ajustement guidé par les erreurs de prédiction ! LEABRA réconcilie ces deux dynamiques dans des réseaux de colonnes corticales avec inhibition par interneurones ! Pierre Poirier a détaillé l'ancrage anatomique : le corrélationnel opère dans l'hippocampe et le cortex postérieur pour la mémoire sémantique, tandis que le guidage par l'erreur opère dans les ganglions de la base et le cervelet pour le contrôle moteur et la prédiction !",
+      "Aberration médicale !",
+      "Grotesque !"
     ],
     "doc_title": "O'Reilly & Munakata (2000) — Computational Cognitive Neuroscience",
     "doc_page": "Diapos 82 & 83 (PDF p. 82–83)",
@@ -967,7 +967,7 @@
     "anchor_id": "anchor_q32",
     "tag": "Pierre Poirier — Apprentissage Corrélationnel (Hebb)",
     "points": "1 point",
-    "context": "Toadette : « ATTENTION QUESTION CAPITALE ! C'est la distinction doctrinale maîtresse de Pierre Poirier dans ce cours (Diapo 84). Quelles sont les caractéristiques rigoureuses de l'Apprentissage Corrélationnel ? »",
+    "context": "« ATTENTION QUESTION CAPITALE ! C'est la distinction doctrinale maîtresse de Pierre Poirier dans ce cours (Diapo 84). Quelles sont les caractéristiques rigoureuses de l'Apprentissage Corrélationnel ? »",
     "question": "Dans la typologie des formes d'apprentissage formalisée par Pierre Poirier (Diapo 84, horodatée à 03:10:38 EDT), comment se définit rigoureusement l'« Apprentissage Corrélationnel » ?",
     "options": [
       "Comme un apprentissage où l'enseignant punit l'étudiant à coups de règle en bois dès qu'une erreur de calcul survient.",
@@ -977,10 +977,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Faux ! Aucune dimension punitive dans cette notion mathématique et synaptique.",
-      "Toad : Formulation doctrinale parfaite ! C'est le pilier 1 de Pierre Poirier : l'apprentissage corrélationnel modélise ce qui est ENSEMBLE dans le monde. Pas de maître d'école, pas de note, pas d'erreur calculée : si le neurone A et le neurone B sont actifs en même temps, leur synapse se renforce ($\\Delta w = \\eta a_i a_j$). C'est l'essence de l'auto-organisation statistique (auto-encodeurs, cartes de Kohonen) !",
-      "Toad : Hors sujet total !",
-      "Toad : Tu confonds avec l'apprentissage supervisé ! L'apprentissage corrélationnel n'a justement AUCUN annotateur externe !"
+      "Faux ! Aucune dimension punitive dans cette notion mathématique et synaptique.",
+      "Formulation doctrinale parfaite ! C'est le pilier 1 de Pierre Poirier : l'apprentissage corrélationnel modélise ce qui est ENSEMBLE dans le monde. Pas de maître d'école, pas de note, pas d'erreur calculée : si le neurone A et le neurone B sont actifs en même temps, leur synapse se renforce ($\\Delta w = \\eta a_i a_j$). C'est l'essence de l'auto-organisation statistique (auto-encodeurs, cartes de Kohonen) !",
+      "Hors sujet total !",
+      "Tu confonds avec l'apprentissage supervisé ! L'apprentissage corrélationnel n'a justement AUCUN annotateur externe !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 84 (PDF p. 84) ; Notes de cours (03:10:38)",
@@ -998,7 +998,7 @@
     "anchor_id": "anchor_q33",
     "tag": "Pierre Poirier — Apprentissage Pragmatique (Erreur)",
     "points": "1 point",
-    "context": "Toadette : « Voici l'autre pôle de la distinction de Pierre Poirier ! L'Apprentissage Pragmatique (Diapo 84). En quoi s'oppose-t-il frontalement à l'apprentissage corrélationnel ? »",
+    "context": "« Voici l'autre pôle de la distinction de Pierre Poirier ! L'Apprentissage Pragmatique (Diapo 84). En quoi s'oppose-t-il frontalement à l'apprentissage corrélationnel ? »",
     "question": "Comment Pierre Poirier (Diapo 84) caractérise-t-il l'« Apprentissage Pragmatique » en sciences cognitives computationnelles, et quelle est sa différence épistémologique fondamentale avec l'apprentissage corrélationnel ?",
     "options": [
       "L'apprentissage pragmatique consiste à apprendre par cœur des poèmes en vers libres sans jamais comprendre leur signification.",
@@ -1008,10 +1008,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Non ! C'est une vision scolaire désuète qui n'a rien à voir avec le pragmatisme computationnel.",
-      "Toad : Définition magistrale ! Retiens cette opposition tranchée de Pierre Poirier : le corrélationnel extrait des régularités statistiques brutes (sans but). Le pragmatique, lui, est obsédé par l'ACTION et le SUCCÈS D'UNE TÂCHE ! On injecte un signal d'erreur ($t - y$) et le réseau modifie ses connexions pour que l'organisme devienne compétent face à l'exigence environnementale !",
-      "Toad : Faux ! C'est précisément l'ERREUR qui est le moteur indispensable de l'apprentissage pragmatique.",
-      "Toad : Absurde !"
+      "Non ! C'est une vision scolaire désuète qui n'a rien à voir avec le pragmatisme computationnel.",
+      "Définition magistrale ! Retiens cette opposition tranchée de Pierre Poirier : le corrélationnel extrait des régularités statistiques brutes (sans but). Le pragmatique, lui, est obsédé par l'ACTION et le SUCCÈS D'UNE TÂCHE ! On injecte un signal d'erreur ($t - y$) et le réseau modifie ses connexions pour que l'organisme devienne compétent face à l'exigence environnementale !",
+      "Faux ! C'est précisément l'ERREUR qui est le moteur indispensable de l'apprentissage pragmatique.",
+      "Absurde !"
     ],
     "doc_title": "Séance 2 — IA : Perspectives historiques (PSY9613)",
     "doc_page": "Diapo 84 (PDF p. 84) ; Notes de cours (03:10:38)",
@@ -1029,7 +1029,7 @@
     "anchor_id": "anchor_q34",
     "tag": "NETtalk (1987) — Découverte de Structures Internes",
     "points": "1 point",
-    "context": "Toadette : « Voici l'un des joyaux du cours ! À la fin de la séance (Diapos 96 à 98), Pierre Poirier analyse en détail le modèle NETtalk de Terry Sejnowski (1987). Pourquoi cette expérience a-t-elle stupéfié les linguistes et les informaticiens ? »",
+    "context": "« Voici l'un des joyaux du cours ! À la fin de la séance (Diapos 96 à 98), Pierre Poirier analyse en détail le modèle NETtalk de Terry Sejnowski (1987). Pourquoi cette expérience a-t-elle stupéfié les linguistes et les informaticiens ? »",
     "question": "Dans le modèle connexionniste NETtalk de Sejnowski et Rosenberg (1987, Diapos 96 à 98), qui apprend à prononcer un texte écrit en anglais (conversion lettres -> phonèmes pilotant un synthétiseur DECtalk), quelle découverte capitale a été révélée par l'analyse en grappes (dendrogramme) des 120 unités de la couche cachée ?",
     "options": [
       "Le réseau s'est mis à chanter spontanément des opéras italiens du XIXe siècle en court-circuitant le synthétiseur vocal.",
@@ -1039,10 +1039,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Pure fable comique !",
-      "Toad : Triomphe absolu du connexionnisme ! Regarde bien la Diapo 98 ('Analyzing internal representations') expliquée avec passion par Pierre Poirier (03:28:48) : on n'a JAMAIS dit au réseau ce qu'était une voyelle ou une consonne ! Pourtant, en s'entraînant simplement à minimiser l'erreur de prononciation, le réseau a DÉCOUVERT la structure phonologique profonde de la langue anglaise dans ses couches cachées ! C'est la preuve éclatante que les réseaux connexionnistes ne sont pas des tables de par cœur mais des extracteurs d'abstractions sémantiques ! À l'écoute des enregistrements historiques, le réseau commence par un babillage d'enfant ('a', 'n', 'maman') avant de maîtriser les mots. Plus fascinant encore (Bullinaria 1997 / Diapo 97) : les sons ambigus comme le phonème /w/ (wagon vs Wittgenstein) se placent exactement sur la frontière entre les clusters de consonnes et de voyelles !",
-      "Toad : Faux ! L'analyse en grappes de Sejnowski prouve précisément l'organisation hautement structurée et hiérarchique de l'espace des activations cachées.",
-      "Toad : Faux ! L'expérience a fonctionné avec un succès remarquable et est devenue un modèle légendaire."
+      "Pure fable comique !",
+      "Triomphe absolu du connexionnisme ! Regarde bien la Diapo 98 ('Analyzing internal representations') expliquée avec passion par Pierre Poirier (03:28:48) : on n'a JAMAIS dit au réseau ce qu'était une voyelle ou une consonne ! Pourtant, en s'entraînant simplement à minimiser l'erreur de prononciation, le réseau a DÉCOUVERT la structure phonologique profonde de la langue anglaise dans ses couches cachées ! C'est la preuve éclatante que les réseaux connexionnistes ne sont pas des tables de par cœur mais des extracteurs d'abstractions sémantiques ! À l'écoute des enregistrements historiques, le réseau commence par un babillage d'enfant ('a', 'n', 'maman') avant de maîtriser les mots. Plus fascinant encore (Bullinaria 1997 / Diapo 97) : les sons ambigus comme le phonème /w/ (wagon vs Wittgenstein) se placent exactement sur la frontière entre les clusters de consonnes et de voyelles !",
+      "Faux ! L'analyse en grappes de Sejnowski prouve précisément l'organisation hautement structurée et hiérarchique de l'espace des activations cachées.",
+      "Faux ! L'expérience a fonctionné avec un succès remarquable et est devenue un modèle légendaire."
     ],
     "doc_title": "Sejnowski & Rosenberg (1987) — Complex Systems",
     "doc_page": "Diapos 96 à 98 (PDF p. 96–98)",
@@ -1060,7 +1060,7 @@
     "anchor_id": "anchor_q35",
     "tag": "Terry Sejnowski (2023) — Reverse Turing Test",
     "points": "1 point",
-    "context": "Toadette : « Dernière question de ce grand marathon de la Séance 2 ! En clôture, Pierre Poirier fait le pont avec l'article obligatoire de Terry Sejnowski (2023) sur les grands modèles de langue (LLM). Qu'est-ce que le 'Test de Turing Inversé' ? »",
+    "context": "« Dernière question de ce grand marathon de la Séance 2 ! En clôture, Pierre Poirier fait le pont avec l'article obligatoire de Terry Sejnowski (2023) sur les grands modèles de langue (LLM). Qu'est-ce que le 'Test de Turing Inversé' ? »",
     "question": "Dans son article de 2023 discuté en classe par Pierre Poirier (« Large Language Models and the Reverse Turing Test »), quelle thèse épistémologique novatrice Terry Sejnowski développe-t-il concernant la nature de notre interaction avec les modèles de fondation comme GPT-4 ?",
     "options": [
       "Les LLM sont des âmes réincarnées de philosophes de l'Antiquité grecque piégées dans des serveurs informatiques réfrigérés.",
@@ -1070,10 +1070,10 @@
     ],
     "correctIndex": 1,
     "feedbacks": [
-      "Toad : Délire ésotérique sans rapport avec l'informatique !",
-      "Toad : Conclusion magistrale de la Séance 2 ! Sejnowski (l'un des pères du connexionnisme avec NETtalk) boucle la boucle historique : les LLM actuels ne sont pas des machines cartésiennes rigides. Ce sont des miroirs de notre propre intelligence ! Dans le Reverse Turing Test, c'est la machine qui teste l'humain : posez-lui une question de niveau maîtrise bien cadrée, et elle déploiera des trésors d'érudition ; posez-lui une question absurde, et elle vous renverra une hallucination miroir !",
-      "Toad : Faux ! Les LLM sont purement probabilistes et connexionnistes, basés sur la prédiction de jetons (next-token prediction) par descente de gradient, à l'opposé du logicisme frégéen.",
-      "Toad : Grotesque !"
+      "Délire ésotérique sans rapport avec l'informatique !",
+      "Conclusion magistrale de la Séance 2 ! Sejnowski (l'un des pères du connexionnisme avec NETtalk) boucle la boucle historique : les LLM actuels ne sont pas des machines cartésiennes rigides. Ce sont des miroirs de notre propre intelligence ! Dans le Reverse Turing Test, c'est la machine qui teste l'humain : posez-lui une question de niveau maîtrise bien cadrée, et elle déploiera des trésors d'érudition ; posez-lui une question absurde, et elle vous renverra une hallucination miroir !",
+      "Faux ! Les LLM sont purement probabilistes et connexionnistes, basés sur la prédiction de jetons (next-token prediction) par descente de gradient, à l'opposé du logicisme frégéen.",
+      "Grotesque !"
     ],
     "doc_title": "Terry Sejnowski (2023) — Neural Computation",
     "doc_page": "Sections 6 & 7 ; Notes de cours de Pierre Poirier",
