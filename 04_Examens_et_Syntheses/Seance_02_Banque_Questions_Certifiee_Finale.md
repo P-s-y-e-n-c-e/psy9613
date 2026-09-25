@@ -719,7 +719,7 @@ D) Parce qu'il a appris les régularités et les exceptions phonétiques de mani
 
 **Conseil d'examen de Toad (Exam Tip) :** NETtalk (1987) = Apprentissage simultané émergent des Règles ET des Exceptions. Contournement du logiciel symbolique expert, mais utilisation du matériel vocal de sortie.
 
-**Sources directes :** Diapos 113 à 118 ; Sejnowski & Rosenberg (1987, p. 152) ; GOLD 02:25:00.
+**Sources directes :** GOLD 03:14:34–03:20:06 ; Sejnowski (2023), §7, pp. 322–323, PDF pp. 14–15 ; Sejnowski & Rosenberg (1987), p. 152 pour le rôle de DECtalk.
 
 ---
 
