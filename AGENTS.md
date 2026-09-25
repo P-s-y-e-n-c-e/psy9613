@@ -223,3 +223,21 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
 - Ne jamais écrire dans une session sans son mandat explicite.
 - Dès qu'un choix d'orientation ou une validation est requis, s'arrêter complètement et attendre ses instructions.
 
+### 5. Procédure Automatique de Sauvegarde des Sorties GPT (Texte brut & Fichiers ZIP) :
+- **Extraction directe du texte via CDP :** Dès que GPT-6 termine une réponse, Antigravity extrait le flux textuel complet du DOM et le sauvegarde immédiatement dans `04_Examens_et_Syntheses/` en Markdown encodé UTF-8.
+- **Rapatriement automatique des archives ZIP (Python Sandbox) :**
+  * Si GPT-6 génère un artefact téléchargeable (lien ZIP généré par Python), Chrome le télécharge par défaut dans `C:\Users\Michel\Downloads\`.
+  * Antigravity dispose des accès complets au système de fichiers Windows pour :
+    1. Détecter l'archive ZIP téléchargée dans `Downloads`.
+    2. L'extraire proprement (`Expand-Archive`).
+    3. Déplacer automatiquement les fichiers cibles dans l'arborescence Google Drive appropriée (`g:\My Drive\UQAM\Maitrise (2194)\PSY9613\...`).
+  * Aucun téléchargement ni glisser-déposer manuel n'est exigé de Michel.
+
+### 6. Règle de Parallélisme Inter-Cours (PSY9613 vs PSY7010) & Non-Mélange :
+- **Confinement strict des contextes :** Les sessions d'audit, onglets de débogage (port 9223) et workspaces de PSY9613 et PSY7010 sont hermétiquement isolés. Antigravity filtre impérativement par identifiant de cible (`targetId`) et URL de cours pour ne jamais interférer avec l'autre matière.
+- **Parallélisme inter-cours autorisé :** Pendant que les modèles (DeepThink / GPT-6) exécutent des boucles de calcul longues sur PSY9613, Michel peut travailler en parallèle sur PSY7010.
+- **Règle de saturation par séance (Non-Évasion de la Séance 1) :**
+  * Ne jamais sauter prématurément à une séance ultérieure sous prétexte qu'un modèle a fini un bloc partiel.
+  * La Séance 1 (Dave Saint-Amour : TDS, Held & Hein, TVSS, Aglioti vs Jackson & Shaw, Bosco 2023) doit être ratissée, auditée et saturée avec le même niveau d'exigence que la Séance 2 avant d'autoriser une passe transversale combinée (Séances 1 & 2).
+
+
