@@ -129,6 +129,12 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * Intégration technique exclusive des banques de questions validées transmises par la session Contenu.
      * Tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub.
 
+4. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
+   - **HQ ne doit JAMAIS court-circuiter Contenu :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques ou de manipuler les fichiers de questions. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais ne se substitue JAMAIS à la session Contenu.
+   - **Vérification obligatoire de l'état du navigateur (Anti-Collision) :** Avant toute tentative d'interaction avec un modèle via CDP, chaque session DOIT impérativement inspecter l'état réel de l'onglet (`gemini_gem_client.js status` / détection du bouton Stop) pour s'assurer qu'aucun calcul n'est déjà en cours et éviter toute collision ou interruption accidentelle.
+   - **Concertation préalable :** Si une session estime qu'une action opérationnelle urgente est requise, elle DOIT envoyer un message à l'autre session (`agentapi send-message`) pour vérifier son statut avant d'agir.
+
+
 
 
 ---
