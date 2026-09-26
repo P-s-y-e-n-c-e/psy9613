@@ -100,11 +100,11 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 ---
 
-## 🖥️ 5. Architecture Quadrangulaire du Workspace (HQ, Contenu, Maintenance, Traduction)
+## 🖥️ 5. Architecture Pentadique du Workspace (HQ, Contenu, Maintenance, Traduction, Mobile)
 
-Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir une rigueur absolue pour les examens (70 % de la note), les opérations sont réparties entre quatre sessions dédiées :
+Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir une rigueur absolue pour les examens (70 % de la note), les opérations sont réparties entre cinq sessions dédiées :
 
-1. **Session « Quartier Général » (HQ / Session Principale) :**
+1. **Session « Quartier Général » (HQ / Session Principale — `7dc85196-1fd5-481e-8cd9-2a0e92d258e2`) :**
    - **Mission exclusive :** Tour de contrôle académique, stratégie globale de réussite du cours.
    - **Responsabilités :**
      * Supervision du calendrier officiel (Examen 1 le 2 nov., Examen 2 le 21 déc., Débat personnel le 14 déc.).
@@ -112,7 +112,7 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * Cadrage impitoyable de la session Contenu web pour exiger un ratissage exhaustif et proscrire la paresse des modèles Flash.
    - **Périmètre préservé :** Aucun code, aucune écriture lourde de questions.
 
-2. **Session « Contenu web — Questions & Examens » (Session Pédagogique) :**
+2. **Session « Contenu web — Questions & Examens » (Session Pédagogique — `76989406-e739-4d56-85aa-9280b2a78eb4`) :**
    - **Mission exclusive :** Conception intellectuelle, banque de questions et synthèses de séances.
    - **Responsabilités :**
      * Ratissage systématique de chaque séance (Séance 1, Séance 2, etc.) sans laisser aucun angle mort.
@@ -121,15 +121,15 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * Transmission des banques validées à la session Maintenance.
    - **Périmètre préservé :** Aucun développement logiciel HTML/CSS/JS.
 
-3. **Session « Maintenance du site web » (Session Technique Dédiée) :**
+3. **Session « Maintenance du site web » (Session Technique Dédiée — `30eff855-2022-4c41-a03d-1dc843aed0d0`) :**
    - **Mission exclusive :** Ingénierie logicielle, intégration front-end et robustesse de l'application web `index.html`.
    - **Responsabilités :**
      * Maintenance du code HTML, CSS et JavaScript vanilla.
-     * Parité ergonomique stricte avec PSY7010 (barre d'outils unifiée, pilules, pagination Google, flou progressif, mode sombre).
+     * Parité ergonomique stricte avec PSY7010 (barre d'outils unifiée, pilules, pagination Google, flou progressif, mode sombre, lecteur multi-podcasts).
      * Intégration technique exclusive des banques de questions validées transmises par la session Contenu.
      * Tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub.
 
-4. **Session « Traduction académique » (Session Dédiée Anglais → Français) :**
+4. **Session « Traduction académique » (Session Dédiée Anglais → Français — `5fb475cb-85e7-45bf-8b7e-e1643b727dce`) :**
    - **Mission exclusive :** Traduction intégrale et rigoureuse de l'anglais vers le français de l'ensemble des lectures obligatoires, optionnelles et suggérées fournies sur Moodle.
    - **Responsabilités :**
      * Traduction fidèle au mot à mot, sans paraphrase réductrice, alignée sur la terminologie des professeurs (transcriptions GOLD).
@@ -140,7 +140,16 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * STRICTEMENT confinée à la traduction académique anglais → français des textes du cours.
      * N'est assignée ni à la présidence ou modération des débats, ni à l'ingénierie logicielle du site, ni à la stratégie globale du Quartier Général.
 
-5. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
+5. **Session « GitHub — Audit & Ergonomie Mobile » (Session Dédiée Ergonomie & Mobile — `5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`) :**
+   - **Mission exclusive :** Audit ergonomique continu, accessibilité tactile et fluidité responsive sur smartphones (priorité Samsung Galaxy S24) et tablettes.
+   - **Responsabilités :**
+     * Audit des surfaces d'appui et cibles tactiles (Loi de Fitts min 44×44 px / 48×48 dp) sur l'ensemble des modes (Étude, Flashcards, Podcasts).
+     * Vérification de la typographie adaptative sans zoom involontaire (polices ≥ 16 px sur les contrôles) et contraste WCAG AA/AAA.
+     * Surveillance du mode compact (`isCompactUI()`, `body.is-mobile-compact`, barre des modes mobiles, sélecteur compact de questions).
+     * Tests de fluidité du déversement des sources documentaires et de la surbrillance haute visibilité (cyan/magenta).
+     * Remontée méthodique des anomalies ergonomiques à la session Maintenance via `agentapi send-message`.
+
+6. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
    - **HQ ne doit JAMAIS court-circuiter Contenu ni dévier Traduction :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques, ou d'assigner des tâches hors-périmètre (ex: préparation de débat) à la session de traduction. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais respecte scrupuleusement le périmètre exclusif de chaque agent.
    - **Vérification obligatoire de l'état du navigateur (Anti-Collision) :** Avant toute tentative d'interaction avec un modèle via CDP, chaque session DOIT impérativement inspecter l'état réel de l'onglet (`gemini_gem_client.js status` / détection du bouton Stop) pour s'assurer qu'aucun calcul n'est déjà en cours et éviter toute collision ou interruption accidentelle.
    - **Concertation préalable :** Si une session estime qu'une action opérationnelle urgente est requise, elle DOIT envoyer un message à l'autre session (`agentapi send-message`) pour vérifier son statut avant d'agir.
