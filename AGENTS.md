@@ -125,7 +125,7 @@ Ce fichier définit les directives absolues et les compétences automatisées po
    - **Périmètre préservé :** Aucun code front-end, aucune conception brute de questions.
 
 3. **PODCAST - Salle de production** :
-   - **Mission exclusive :** Conception, structuration pédagogique et spécifications de production des capsules audio de révision (NotebookLM multi-épisodes).
+   - **Mission exclusive :** Conception, structuration pédagogique et spécifications de production des capsules audio de révision (Gemini Notebook multi-épisodes).
 
 4. **GITHUB - Maintenance du site** (`30eff855-2022-4c41-a03d-1dc843aed0d0`) :
    - **Mission exclusive :** Ingénierie logicielle pure : code front-end (HTML/CSS/JS vanilla de `index.html`), lecteur multi-podcasts, parité ergonomique avec PSY7010, tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub Pages.
@@ -171,7 +171,7 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 2. **Périmètre Exclusif des Sessions et Onglets Autorisés :**
    L'agent est autorisé à communiquer et interagir **exclusivement** avec :
    - **Le Gem d'audit :** L'onglet Gemini dédié Auditeur doctoral PSY9613 (https://gemini.google.com/gem/b8a01bc19e29 ou équivalent).
-   - **Le carnet de cours :** L'onglet Gemini Notebook / NotebookLM PSY9613 (https://notebook.google.com/notebook/bda39481-344d-444e-bf68-4cb6a704bcfd).
+   - **Le carnet de cours :** L'onglet Gemini Notebook PSY9613 (https://notebook.google.com/notebook/bda39481-344d-444e-bf68-4cb6a704bcfd).
    - **Moodle UQAM :** La page du cours PSY9613 (https://ena01.uqam.ca/course/view.php?id=78751) via la session dédiée Moodle.
    - **GPT-6 (Audit croisé externe) :** L'onglet / session dédiée d'audit lorsque Michel demande explicitement de la solliciter.
    - **Tout autre onglet ou domaine est STRICTEMENT HORS-LIMITES.**
@@ -279,5 +279,37 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 - **Responsabilité partagée Contenu web & Quartier Général :**
   - La session Contenu web a la responsabilité d'exécution de cette vérification.
   - La session Quartier Général a la responsabilité de surveillance : elle doit systématiquement exiger cette preuve avant de valider tout jalon.
+
+---
+
+## 🎙️ 9. Protocole Empirique de Calibration Audio (Gemini Notebook - Deep Dive)
+
+> [!IMPORTANT]
+> **Dénomination Officielle et Règle d'Or de Production :**
+> - L'outil s'appelle exclusivement **Gemini Notebook** (interdiction formelle de l'ancien terme).
+> - Format obligatoire : **Toujours Deep Dive** (`audio_format="deep_dive"`). Ne JAMAIS utiliser `short` (qui plafonne artificiellement à ~6:15–6:40 quel que soit le contenu).
+> - Zone cible officielle : **10 à 12 minutes** (et **JAMAIS 13 minutes**).
+
+### 1. Pourquoi les LLMs échouent quand on essaie de trop les contraindre :
+- Les modèles de langage ne savent pas compter les minutes en amont.
+- **Le piège de la sur-contrainte :** Rédiger des prompts fleuves avec des règles phonétiques, des contraintes d'accent artificielles ou des listes d'interdictions paralyse les modèles hôtes, bride leur liberté naturelle et engendre des sorties médiocres, trop courtes ou tronquées.
+- La langue ne s'impose pas par des exhortations dans le prompt : elle est gérée proprement via le paramètre natif de l'API (`language="fr"` dans `studio_create`).
+
+### 2. Les Deux Leviers Empiriques de Contrôle de la Durée :
+Pour moduler précisément la durée d'un Deep Dive entre 10 et 12 minutes :
+1. **La masse documentaire source active :**
+   - Ne pas brancher un PDF brut de 30 pages (qui fait exploser le format à 20-25 minutes).
+   - Injecter une synthèse conceptuelle dédiée, dense, structurée et ciblée d'environ **400 à 450 mots**.
+   - C'est ce volume d'idées brutes qui détermine le "combustible" de discussion des deux hôtes.
+2. **La directive concise et ciblée :**
+   - Une consigne courte (2 à 3 lignes) indiquant uniquement ce qui compte : le sujet central (ex: GNWT de Mashour 2021), la tension contradictoire (ex: Louis [POUR] vs Alexandrea [CONTRE]) et le cadre vivant (ex: présidence de séance par Michel, gestion des 5-10 min, vote de la classe).
+   - Zéro contrainte de style ou de ton artificielle : leur faire confiance pour déployer le dialogue académique.
+
+### 3. Cycle d'Ajustement Empirique :
+- Après génération, mesurer la durée exacte via `ffprobe`.
+- Si la durée dépasse la cible (> 12 min) : élaguer légèrement la synthèse source ou resserrer le champ thématique.
+- Si la durée est inférieure (< 10 min) : enrichir la synthèse source de 50 à 100 mots sur un concept clé à approfondir.
+- **Résultat étalon obtenu en Séance 3 :** **11 min 22 s** (682,6 s) avec une synthèse source de 430 mots et une consigne de 3 lignes.
+
 
 

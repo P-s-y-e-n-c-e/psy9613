@@ -6,19 +6,19 @@
 * **Thématique de la semaine :** *Principes du traitement de l'information : De la modularité sensorielle à la conscience globale*
 * **Événement d'ouverture majeur :** Débat 1 en dyade (**Louis B [POUR]** vs **Alexandrea Kelly [CONTRE]**)
 * **Rôle officiel de Michel :** **Président de séance (Modérateur)**
-* **Corpus source d'ancrage injecté dans NotebookLM :**
+* **Corpus source d'ancrage injecté dans Gemini Notebook :**
   1. `[S03-Obligatoire] Mashour et al. (2021) - Revisiting the Global Neuronal Workspace` (*Neuron*, 2021)
   2. `[S03-Débat] Directives de Pierre Poirier en classe sur le Débat 1` (Verbatim authentique de classe du 21 septembre)
   3. `[S03-Débat] Cadrage de Présidence et Modération par Michel (Louis vs Alexandrea)` (Structure temporelle, 5–10 min, table ronde, vote de la classe)
-* **Vocation pédagogique :** **Grand Deep Dive Pré-Cours (~23 min)** entremêlant les fondements théoriques de l'article obligatoire (Mashour et al., 2021) et la dynamique vivante de la classe pour le premier débat.
+* **Vocation pédagogique :** **Deep Dive Pré-Cours officiel (11 min 22 s)** articulant avec rigueur les fondements théoriques de l'article obligatoire (Mashour et al., 2021) et la dynamique vivante de la classe pour le premier débat.
 
 ---
 
 ## 🎧 Métadonnées de la Capsule
-* **Titre officiel :** « L'Espace de Travail Global du cerveau & Cadrage du Débat 1 »
-* **Fichier cible :** `PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a`
-* **Format & Durée :** Grand Deep Dive • 23:27 • 45.3 Mo
-* **Statut :** Téléchargé et archivé sur le Google Drive (`02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/`)
+* **Titre officiel :** « Comment la matière s'allume en conscience »
+* **Fichier officiel :** `PSY9613_S03_Episode_03_Comment_la_matiere_s_allume_en_conscience.m4a`
+* **Format & Durée :** Deep Dive • 11:22 • 21.9 Mo
+* **Statut :** Enregistré via Gemini Notebook, téléchargé, calibré et archivé sur le Google Drive (`02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/`)
 * **Langue :** Français canadien (Québec / UQAM), registre académique collégial.
 
 ---
