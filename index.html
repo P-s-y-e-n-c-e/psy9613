@@ -3075,39 +3075,39 @@
         <section class="reader-pane" id="readerPane">
       <!-- 1. BARRE DE SÉLECTION DES DOCUMENTS (STYLE PILLS PSY7010) -->
       <div class="reader-header-bar">
-        <button class="reader-tab active" id="tab_doc_seance_01" onclick="switchTab('doc_seance_01')">
-          🔷 Séance 1 (D. Saint-Amour)
+        <button class="reader-tab active" id="tab_doc_seance_01" onclick="switchTab('doc_seance_01')" title="Séance 1 : Cours magistral du Pr Dave Saint-Amour">
+          📝 Séance 1 (D. Saint-Amour)
         </button>
-        <button class="reader-tab" id="tab_doc_bosco" onclick="switchTab('doc_bosco')">
-          📖 Bosco (2023) [Action-Perception]
+        <button class="reader-tab" id="tab_doc_bosco" onclick="switchTab('doc_bosco')" title="Lecture obligatoire : Bosco et al. (2023) - The influence of action on perception">
+          🔴 Bosco et al. (2023) [Obligatoire]
         </button>
-        <button class="reader-tab" id="tab_doc_seance_02" onclick="switchTab('doc_seance_02')">
-          🔶 Séance 2 (P. Poirier)
+        <button class="reader-tab" id="tab_doc_seance_02" onclick="switchTab('doc_seance_02')" title="Séance 2 : Cours magistral du Pr Pierre Poirier">
+          📝 Séance 2 (P. Poirier)
         </button>
-        <button class="reader-tab" id="tab_doc_haugeland" onclick="switchTab('doc_haugeland')">
-          🔴 Haugeland (1981) [Moteurs Sémantiques]
+        <button class="reader-tab" id="tab_doc_haugeland" onclick="switchTab('doc_haugeland')" title="Lecture obligatoire : Haugeland (1981) - Les Moteurs Sémantiques">
+          🔴 Haugeland (1981) [Obligatoire]
         </button>
-        <button class="reader-tab" id="tab_doc_newell" onclick="switchTab('doc_newell')">
+        <button class="reader-tab" id="tab_doc_newell" onclick="switchTab('doc_newell')" title="Lecture complémentaire : Newell &amp; Simon (1975) - Computer Science as Empirical Inquiry (PSSH)">
           🟢 Newell &amp; Simon (PSSH)
         </button>
-        <button class="reader-tab" id="tab_doc_mcclelland" onclick="switchTab('doc_mcclelland')">
+        <button class="reader-tab" id="tab_doc_mcclelland" onclick="switchTab('doc_mcclelland')" title="Lecture complémentaire : McClelland (2009) - PDP &amp; Connexionnisme">
           🟢 McClelland (PDP)
         </button>
-        <button class="reader-tab" id="tab_doc_sejnowski" onclick="switchTab('doc_sejnowski')">
+        <button class="reader-tab" id="tab_doc_sejnowski" onclick="switchTab('doc_sejnowski')" title="Lecture complémentaire : Sejnowski (2023) - LLMs and the Reverse Turing Test">
           🟢 Sejnowski (LLMs)
         </button>
-        <button class="reader-tab" id="tab_doc_dreyfus" onclick="switchTab('doc_dreyfus')">
+        <button class="reader-tab" id="tab_doc_dreyfus" onclick="switchTab('doc_dreyfus')" title="Lecture complémentaire : Dreyfus (1972) - Ce que les ordinateurs ne peuvent pas faire">
           🟢 Dreyfus &amp; Critique
         </button>
-        <button class="reader-tab" id="tab_doc_context" onclick="switchTab('doc_context')">
-          🔵 Contexte UQAM
+        <button class="reader-tab" id="tab_doc_context" onclick="switchTab('doc_context')" title="Contexte pédagogique : Continuité entre Dave Saint-Amour et Pierre Poirier">
+          🏛️ Contexte UQAM
         </button>
       </div>
 
       <!-- 2. BARRE D'OUTILS ET DE RECHERCHE (STYLE PSY7010 - STRICTEMENT SUR LA MÊME LIGNE) -->
       <div class="reader-search-bar">
         <input type="text" id="readerSearchInput" class="search-input" placeholder="🔍 Rechercher un mot ou un concept dans ce document..." onkeyup="handleSearch(event)">
-        <span class="search-count" id="searchCount">0 résultat</span>
+        <span class="search-count" id="searchCount" style="display: none;">0 résultat</span>
         <button class="search-btn" onclick="prevSearchResult()" title="Occurrence précédente">▲</button>
         <button class="search-btn" onclick="nextSearchResult()" title="Occurrence suivante">▼</button>
         
@@ -6323,6 +6323,337 @@ l'adaptation au raccourcissement amène à percevoir la cible comme plus petite,
 </div>
 </div>
 
+<div class="reader-viewport" id="viewport_doc_bosco_en" style="display: none;">
+<h2 class="doc-art-title">Annalisa Bosco, Pablo Sanz Diez, Matteo Filippini &amp; Patrizia Fattori (2023) — The influence of action on perception spans different effectors</h2>
+<ul class="doc-list">
+  <li><strong>Original publication:</strong> <em>Frontiers in Systems Neuroscience</em>, 2023, Vol. 17, Article 1145643, doi: 10.3389/fnsys.2023.1145643.</li>
+  <li><strong>Pedagogical status:</strong> Mandatory foundational reading for Session 1 (Prof. Dave Saint-Amour) — Perception-action, motor effectors, and shared representations.</li>
+  <li><strong>Official academic source:</strong> Full original English text with interactive anchors for the Master in Applied Psychological Sciences (UQAM).</li>
+</ul>
+<hr class="doc-divider">
+
+<div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+  <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
+    📋 Conceptual Executive Summary &amp; Key Takeaways — Bosco et al. (2023) — Action &amp; Perception
+  </div>
+  <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
+    <strong>Central thesis:</strong> Perception and action are not independent sequential modules, but rely on a common set of shared representations. Motor action exerts a bidirectional pragmatic impact on visual perceptual processing, both upstream during planning (the "ready-to-act" state) and downstream following execution (adaptive postdictive component).
+  </p>
+  <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
+    <li><strong>3 Effectors &times; 2 Phases Matrix:</strong> Systematic analysis of eye (oculomotor), hand (grasping/reaching), and leg (locomotion) movements during planning and post-execution phases.</li>
+    <li><strong>Gaze Anchoring &amp; Latencies (Eye - Planning):</strong> During manual reaching, gaze is locked onto the target until the hand arrives; in dual eye-hand tasks, saccadic latency increases significantly.</li>
+    <li><strong>Theory of Event Coding &amp; Dimensional Tuning (Hand - Planning):</strong> Planning a grasp selectively enhances sensitivity to orientation and size; planning a reach sensitizes to spatial location and luminance. Neural oscillations in contrast sensitivity ~500 ms prior to movement in V1.</li>
+    <li><strong>Bosco (2020) Fundamental Decoupling (Eye - Execution):</strong> Trans-saccadic change in vertical bar size during a horizontal saccade alters perceived size without any motor saccadic amplitude adaptation (central predictive origin).</li>
+    <li><strong>Pre-motor and Post-motor Effects (Hand - Execution):</strong> Grasping significantly reduces perceived object size compared to simple reaching; Bayesian size-weight illusion (prior vs. likelihood).</li>
+    <li><strong>Locomotion &amp; Space (Legs):</strong> Metric rescaling of distance according to bioenergetic cost; absolute necessity of active physical bodily interaction (passive optical flow is insufficient).</li>
+    <li><strong>AI Applications:</strong> Decoding action intentions from residual perceptual markers (prostheses, BCI) and leveraging perceptual re-evaluation as an error feedback signal to optimize closed-loop decisions and strengthen human-AI trust.</li>
+  </ul>
+</div>
+
+
+<div class="doc-page-marker" id="page_bosco_1_en"><span class="page-badge">📄 Page 1 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Introduction</span></div>
+<h3 class="doc-sec-title">Introduction</h3>
+<p class="doc-para">At the basis of our successful adaptive behavior is the dynamic interaction between perception and action. According to the classical view, perception informs the mechanisms of action about environmental properties, and these motor mechanisms in turn are responsible for modifications made to that environment. While it is undeniable that perception influences action, the inverse influence — namely <strong>the influence of action on perception</strong> — cannot be taken for granted with the same immediate evidence.</p>
+<p class="doc-para">Starting from this consideration, the present review aims to investigate the impact of action on the visual perception of various object properties (including size, orientation, and spatial location), focusing on actions deployed by different motor effectors such as <strong>the eye</strong>, <strong>the hand</strong>, and <strong>the leg</strong>. Since two temporal stages can be formally dissociated when studying the influence of action on perceptual processing — namely <strong>planning</strong> and <strong>execution</strong> —, in the following sections we provide a structured overview: first of studies exploring the effect of action planning on stimulus/object perception, and then of those examining motor execution and its direct consequences on perception.</p>
+
+
+<div class="doc-page-marker" id="page_bosco_2_en"><span class="page-badge">📄 Page 2 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Action Planning &amp; Oculomotor Effector</span></div>
+<h3 class="doc-sec-title">1. The effect of action planning on perception</h3>
+<p class="doc-para">As perceptual observers, we daily receive a wide range of information regarding the features of our immediate environment. As engaged actors, we actively explore that environment based on sensory processing of stimuli directly related to our goals, intentions, and subsequent motor actions. For example, everyday tasks such as picking up a cup or grasping the handle of a frying pan represent remarkably precise actions we perform almost automatically; yet, they mobilize a sensorimotor approach of great complexity, many mechanisms of which remain elusive.</p>
+<p class="doc-para">An action — defined as an intentional, targeted movement — is characterized by a succession of functional sequences structuring its processing in close coordination with perception (Hommel et al., 2016). Within this processing chain (encompassing environmental cue evaluation, 3D localization, and action selection, integration, and initiation), <strong>action planning</strong> constitutes an absolutely fundamental component (Hommel et al., 2016; Mattar and Lengyel, 2022).</p>
+<span id="anchor_q18_en" class="doc-anchor-target"></span>
+<p class="doc-para">Motor planning is formally defined as the process determining the execution of actions based on environmental constraints and expected outcomes (Sutton and Barto, 1998; Mattar and Lengyel, 2022). Chronometrically, action planning corresponds to the temporal interval between the decision phase and the initial motor impulse phase. During this planning phase, the agent generates an action goal (based on spatial and temporal properties of the environment), which is subsequently transmitted to the motor system to achieve that specific end. That is, sensory information is first organized, then integrated into a structured motor plan. This feature confers high plasticity to the system and promotes rapid adaptation to potential changes in input signals or final goals (Mattar and Lengyel, 2022). For example, during object grasping, early adjustment of hand shaping to the object's intrinsic properties is observed well before contact (Jeannerod, 1981), highlighting the paramount importance of motor planning at the interface between the physical environment and the sought goal. In reality, visual input information is processed in parallel by neural pathways operating within a shared action-perception framework (Prinz, 1990; Hommel et al., 2001); furthermore, motor planning itself actively modulates and biases this network (Hommel et al., 2001, 2016; Witt, 2018).</p>
+<h4 class="doc-subsec-title">1.1 The eye domain (Oculomotor effector)</h4>
+<p class="doc-para">Our visual system captures essential information destined to guide our acts. Once the visual environment is explored and objects of interest identified, visuospatial information is channeled to motor structures to plan, execute, and control goal-directed actions (Hayhoe, 2017). The impact of vision on motor control has always drawn major scientific interest (Prablanc et al., 1979; Desmurget et al., 1998; Land, 2006, 2009). Decades ago, pioneering works described how vision optimizes the precision of targeted movements (Woodworth, 1899; Bernstein, 1967). Since then, numerous studies have investigated how vision influences planning, execution, and continuous regulation of movement.</p>
+<p class="doc-para">Visual information contributes decisively to the action planning phase. During this preparatory stage, the presence of visual feedback regarding the motor limb is of prime importance. Motor actions have been shown to be substantially more precise when visual feedback is available during motor planning, whether the limb remains visible or not during actual movement execution (Prablanc et al., 1979; Conti and Beaubaton, 1980; Pélisson et al., 1986; Velay and Beaubaton, 1986; Elliott et al., 1991, 2014; Rossetti et al., 1994; Desmurget et al., 1995, 1997; Coello and Grealy, 1997; Bagesteiro et al., 2006; Bourdin et al., 2006; Sarlegna and Sainburg, 2009).</p>
+<p class="doc-para">Indeed, vision plays a key role in motor planning insofar as movements appear to be programmed as vectors defined in extrinsic coordinates of the visual environment (Morasso, 1981; Flanagan and Rao, 1995; Wolpert et al., 1995; Sarlegna and Sainburg, 2009). Once visual information is extracted, planning must integrate physical properties shaping upcoming actions. In a consensual theoretical framework, two successive stages have been proposed within action planning: the primary stage, where vision determines visuospatial attributes (target, limbs, environment), and the secondary stage, where this input is converted into motor commands (Sarlegna and Sainburg, 2009).</p>
+
+
+<div class="doc-page-marker" id="page_bosco_3_en"><span class="page-badge">📄 Page 3 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Gaze Anchoring &amp; Latencies</span></div>
+<p class="doc-para">Research investigating the interaction between visual and motor systems has revealed how eyes guide and support our actions in real time across multiple dynamic tasks (Angel et al., 1970; Biguer et al., 1982; Pélisson et al., 1986; Land, 1992; Land et al., 1999; Neggers and Bekkering, 1999, 2000, 2001, 2002; Johansson et al., 2001; Patla and Vickers, 2003). In a series of remarkable studies, Neggers and Bekkering (1999, 2000, 2001, 2002) elegantly demonstrated a mechanism termed <strong>gaze anchoring</strong> during manual actions. They observed that during reaching movements, subjects are unable to initiate a new saccade toward another visual target until the hand has arrived at the current target.</p>
+<p class="doc-para">Other studies established that ocular fixation patterns differ radically depending on whether an object is actively grasped or simply observed passively (Vishwanath and Kowler, 2003; Brouwer et al., 2009). During passive viewing, fixations spontaneously converge toward the object's center of gravity, whereas in a grasping task, gaze selectively focuses on future finger contact points (index and thumb). Furthermore, Brouwer et al. (2009) observed that saccadic reaction times were significantly slower in the grasping condition compared to passive viewing.</p>
+<p class="doc-para">Lengthening of ocular response latencies related to manual action has been documented by several groups (Bekkering et al., 1994, 1995; Lünenburger et al., 2000; Pelz et al., 2001; Hayhoe et al., 2003). Bekkering et al. (1994) measured motor latencies of eye and hand comparing single-task and dual-task conditions. As shown in <strong>Figure 1</strong>, saccadic latencies were significantly higher in the dual-task condition (simultaneous eye-hand movement), while manual latencies remained strictly stable (Bekkering et al., 1994).</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 1 : Mean eye and hand response latencies in single-task vs. dual-task conditions.</strong>
+  Measured in milliseconds under both experimental conditions. In dual-task, ocular latency increases significantly due to central interference linked to joint motor planning, whereas hand latency remains unchanged (Bekkering et al., 1994).
+</div>
+<p class="doc-para">In ecological tasks (walking, driving, unscrewing a jar), visuospatial information from the eyes is paramount from planning: <strong>gaze fixation precedes physical action by 0.8 to 1.1 seconds on average</strong> (Patla and Vickers, 2003; Land, 2006), acting in a prospective (feedforward) manner.</p>
+<span id="anchor_q17_en" class="doc-anchor-target"></span>
+<p class="doc-para">Furthermore, multiple studies have examined the impact of ocular planning on the oculomotor system itself: <strong>spatial perception is selectively enhanced at the precise location where the eye movement is planned to land, a fraction of a second before physical execution</strong> (Hoffman and Subramaniam, 1995; Deubel and Schneider, 1996; Neggers et al., 2007). This attention-saccade coupling can be disrupted by transcranial magnetic stimulation (TMS) of the frontal eye fields (FEF), establishing a direct causal link (Neggers et al., 2007).</p>
+
+
+<div class="doc-page-marker" id="page_bosco_4_en"><span class="page-badge">📄 Page 4 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Hand Planning &amp; TEC</span></div>
+<h4 class="doc-subsec-title">1.2 The hand domain (Manual effector: Reaching and Grasping)</h4>
+<p class="doc-para">Scientific literature has provided irrefutable evidence that <strong>visual perception is directly biased by motor planning of upper limb movements</strong>, such as reaching and grasping (Müsseler and Hommel, 1997; Prinz, 1997; Craighero et al., 1999; Wohlschläger, 2000; Hommel et al., 2001; Fagioli et al., 2007; Wykowska et al., 2009, 2011; Kirsch et al., 2012, 2015). The motor system does not merely execute physical movements: it actively shapes perception according to the agent's action intentions.</p>
+<p class="doc-para">This dynamic interaction strictly depends on congruence between goal and action:
+when a direct relationship exists between visual goal and motor action, processing is <strong>facilitated</strong>; when the two are independent but competing, motor planning <strong>interferes</strong> with perception (Hommel et al., 2016). In Müsseler and Hommel (1997), identifying the direction of a right-pointing stimulus is costlier after planning a right button press: according to the <strong>Theory of Event Coding (TEC)</strong>, shared-code weighting prioritizes action at the expense of perception (Hommel et al., 2001).</p>
+<p class="doc-para">Moreover, the type of action planned induces selective dimensional tuning:
+<strong>Bekkering and Neggers (2002)</strong> and <strong>Gutteling et al. (2011)</strong> demonstrated that planning a <strong>grasp</strong> selectively enhances sensitivity to object <strong>orientation</strong> and <strong>size</strong>, with no effect on color or luminance; conversely, planning a <strong>reach</strong> (or pointing) selectively facilitates detection of <strong>spatial location</strong> and <strong>luminance</strong> (Fagioli et al., 2007; Wykowska et al., 2009; Wykowska and Schubö, 2012).</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 2 : Effect of grasping vs. pointing planning on orientation and luminance detection.</strong>
+  Orientation discrimination is markedly superior during grasp planning compared to pointing, whereas luminance discrimination exhibits no consistent change (Gutteling et al., 2011).
+</div>
+
+
+<div class="doc-page-marker" id="page_bosco_5_en"><span class="page-badge">📄 Page 5 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Cortical Oscillations</span></div>
+<p class="doc-para">To probe early temporal tuning of perceptual information, several studies measured contrast sensitivity in primary visual cortex (V1) (Boynton et al., 1999). Combining these approaches with discoveries on neural rhythms (Buzsáki and Draguhn, 2004; Thut et al., 2012), Tomassini et al. (2015) discovered that <strong>rhythmic oscillations in visual contrast sensitivity emerge approximately 500 ms prior to movement onset, during motor planning, even when visual stimuli are entirely unrelated to the motor task</strong>.</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 3 : Rhythmic oscillations in contrast sensitivity time-locked to hand movements.</strong>
+  Time course of discrimination responses aligned to manual movement initiation, showing early emergence of neural oscillations 500 ms before movement (Tomassini et al., 2015).
+</div>
+<p class="doc-para">These action-locked perceptual oscillations have been confirmed by EEG (Tomassini et al., 2017) and found in the oculomotor system during saccadic preparation (Benedetto and Morrone, 2017; Benedetto et al., 2020).</p>
+
+
+<div class="doc-page-marker" id="page_bosco_6_en"><span class="page-badge">📄 Page 6 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Locomotor Effector &amp; Action-Specific Effects</span></div>
+<h4 class="doc-subsec-title">1.3 The leg and whole-body domain (Locomotor effector and Extrapersonal space)</h4>
+<p class="doc-para">The impact of planning extends into extrapersonal space: we rescale perceived distance according to projected motor action and required bioenergetic cost (walking vs. throwing a ball, Witt et al., 2004; Proffitt, 2006; Witt and Proffitt, 2008). In virtual reality, participants perceive a target object as significantly closer when intending to walk toward it (Fini et al., 2014, 2015a,b), and peripersonal space dynamically expands during active walking (Noel et al., 2015; di Marco et al., 2019).</p>
+<h3 class="doc-sec-title">2. The effect of action execution on perception</h3>
+<span id="anchor_q16_en" class="doc-anchor-target"></span>
+<p class="doc-para"><strong>Action-specific effects</strong> designate the modulation of spatial perception by one's effective motor ability to act (Proffitt, 2006, 2008). The seminal study by Bhalla and Proffitt (1999) established that estimated hill slant is indexed to physiological potential (fatigue, heavy backpack). Similarly, skilled softball batters perceive the ball as larger (Witt and Proffitt, 2005; Gray, 2013), elite archers perceive targets as bigger (Lee et al., 2012), and experienced tennis players judge the net as lower (Witt and Sugovic, 2010).</p>
+<p class="doc-para">In affordance research (Gibson, 1979; Warren, 1984), passable doorway width is calibrated to body size (Stefanucci and Geuss, 2009), and reaching tools compress the perceived distance of remote objects (Witt et al., 2005; Davoli et al., 2012).</p>
+
+
+<div class="doc-page-marker" id="page_bosco_7_en"><span class="page-badge">📄 Page 7 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Saccadic Adaptation &amp; Size</span></div>
+<h4 class="doc-subsec-title">2.1 The eye domain (Oculomotor effector: Saccade execution)</h4>
+<p class="doc-para">Saccadic adaptation modifies saccade amplitude following trans-saccadic target displacement (McLaughlin, 1967; Deubel, 1987). This motor modification transfers to the manual system, altering perceived location during pointing (Bahcall and Kowler, 1999; Collins et al., 2007; Zimmermann and Lappe, 2010).</p>
+<p class="doc-para">In Bosco et al. (2015), systematic modification of horizontal bar size during saccades directly altered size judgment:
+backward adaptation caused the target to be perceived as smaller, whereas forward adaptation caused it to be perceived as larger (measured by manual grasp aperture, Figure 4).</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 4 : Perceived size changes induced by saccadic adaptation.</strong>
+  Decreasing or increasing horizontal bar size during saccade flight leads to recalibration of motor saccadic amplitude and a proportional modification of perceived size measured by fingertip aperture (Bosco et al., 2015).
+</div>
+
+
+<div class="doc-page-marker" id="page_bosco_8_en"><span class="page-badge">📄 Page 8 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Decoupling of Bosco (2020)</span></div>
+<p class="doc-para">However, a fundamental discovery by Bosco et al. (2020) demonstrated a <strong>crucial dissociation: perceptual modification can occur in the complete absence of saccadic amplitude adaptation</strong>. By symmetrically shortening or lengthening a <strong>vertical bar</strong> during execution of a <strong>horizontal saccade</strong>, saccade motor amplitude underwent no modification (Figure 5A). Yet, observers manifested a significant change in perceived size (Figure 5B).</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 5 : Size perception changes not induced by saccadic adaptation.</strong>
+  Pronounced and statistically significant alteration in vertical bar size judgment during horizontal saccades, proving that visual size recalibration does not depend on peripheral motor circuits mediating saccadic amplitude adaptation (Bosco et al., 2020).
+</div>
+<p class="doc-para">Although peripheral motor adaptation is not causal, the rapid shift of the target image from periphery to fovea caused by saccades remains the primary driver of this perceptual recalibration (Valsecchi et al., 2020).</p>
+
+
+<div class="doc-page-marker" id="page_bosco_9_en"><span class="page-badge">📄 Page 9 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Peri-saccadic Compression &amp; Grasping</span></div>
+<p class="doc-para">Visual stimuli presented immediately before or during saccades undergo systematic mislocalization and <strong>massive spatial compression toward the saccade target</strong> (Matin and Pearce, 1965; Ross et al., 1997; Lappe et al., 2000). This phenomenon stems from the discrepancy between physical eye position and predicted position derived from <strong>internal corollary discharge</strong> (efference copy, Duhamel et al., 1992; Morrone et al., 2005). Remarkably, shape and color discrimination remain intact, compression serving to preserve trans-saccadic visual stability (Binda and Morrone, 2018).</p>
+<h4 class="doc-subsec-title">2.2 The hand domain (Manual effector: Reaching and Grasping execution)</h4>
+<span id="anchor_q02_en" class="doc-anchor-target"></span>
+<p class="doc-para">In 2017, Bosco et al. examined the direct impact of reaching vs. grasping execution on target size judgment: <strong>perceived size alteration was significantly more pronounced after grasping than after reaching, objects being systematically perceived as smaller after being grasped</strong> (Bosco et al., 2017; see Figure 6).</p>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 6 : Perceived size alteration after reaching vs. grasping actions.</strong>
+  Mean deviation of perceptual manual (grasp aperture) and verbal responses for reaching (white) and grasping (black), demonstrating robust size reduction induced by grasping (Bosco et al., 2017).
+</div>
+<p class="doc-para">Sanz Diez et al. (2022) confirmed that unpredictable dynamic target size perturbations during grasping selectively alter perceived size: target elongation during grasp closure induces subsequent reduction in perceived size, demonstrating that post-action perception constitutes a retrospective descriptive readout of accomplished motor action.</p>
+
+
+<div class="doc-page-marker" id="page_bosco_10_en"><span class="page-badge">📄 Page 10 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Perturbations &amp; Size-Weight Illusion</span></div>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 7 : Perceived size changes after dynamically perturbed grasping.</strong>
+  A target elongated during grasping movement consecutively induces significantly reduced size perception (Sanz Diez et al., 2022).
+</div>
+<p class="doc-para">Sensorimotor skill learning allows anticipatory fingertip force adjustments prior to lifting (Westling and Johansson, 1984; Gordon et al., 1993; Lukos et al., 2007; Fu et al., 2010). In this framework, <strong>Charpentier's (1891) Size-Weight Illusion (SWI)</strong> — where the smaller object is perceived as heavier at equal mass — is explained by a Bayesian model where prior belief (larger = heavier) dominates sensory likelihood (van Beers et al., 2002; Körding and Wolpert, 2006; Flanagan and Beltzner, 2000). Motor reiteration recalibrates fingertip forces applied to the object.</p>
+
+
+<div class="doc-page-marker" id="page_bosco_11_en"><span class="page-badge">📄 Page 11 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Locomotion &amp; Spatial Invariance</span></div>
+<h4 class="doc-subsec-title">2.3 The leg and whole-body domain (Locomotor effector: Walking and Space)</h4>
+<p class="doc-para">According to the size-distance invariance hypothesis (Sedgwick, 1986; Gogel et al., 1985), active interaction via walking jointly recalibrates perceived size and distance. Waller and Richardson (2008) proved that <strong>active physical bodily movement is strictly indispensable</strong>: passive visual simulation (pure optical flow) does not improve spatial estimation. Walking induces a genuine global rescaling of visual space (Siegel et al., 2017).</p>
+<p class="doc-para">In open-loop blind walking tasks, dissociating optical flow from biomechanical cadence causes distance underestimation (accelerated flow) or overshoot (decelerated flow) (Rieser et al., 1995). Despite systematic distance underestimation in verbal reports, locomotion toward a memorized target executes with remarkable metric fidelity (Loomis et al., 1992; Li and Giudice, 2013).</p>
+<span id="anchor_q20_en" class="doc-anchor-target"></span>
+<div class="doc-figure-box" style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 12px 16px; border-radius: 8px; margin: 12px 0;">
+  <strong>Figure 8 : Synoptic overview of object and space perception modulation by motor planning and execution across effectors.</strong>
+  Integrative diagram summarizing predictive ("ready to act" in planning) and postdictive (adaptive recalibration after execution) influences for eye, hand, and leg (Bosco et al., 2023).
+</div>
+
+
+<div class="doc-page-marker" id="page_bosco_12_en"><span class="page-badge">📄 Page 12 (Original English)</span> <span class="page-meta">Bosco et al. (2023) — Conclusions &amp; AI Applications</span></div>
+<h3 class="doc-sec-title">3. Conclusions and future perspectives</h3>
+<p class="doc-para">The influence of action on perception manifests forcefully both upstream (before) and downstream (after) motor execution: perception is <strong>"ready to act"</strong> during planning, and <strong>adaptively recalibrated postdictively</strong> following movement to update subsequent commands. This continuous bidirectional dialogue testifies to shared representations between perception and action.</p>
+<h4 class="doc-subsec-title">Technological Applications and Artificial Intelligence (AI)</h4>
+<p class="doc-para">These mechanisms open two major technological avenues for AI and motor assistance devices (neuroprostheses, brain-computer interfaces BCI, exoskeletons):</p>
+<ul class="doc-list">
+  <li><strong>During planning:</strong> Integrating early perceptual signals to decode motor intentions upstream from patients' residual capacities;</li>
+  <li><strong>Following execution:</strong> Leveraging perceptual re-evaluation as a biological feedback signal to correct motor commands in a closed loop and compensate for AI action errors, maximizing human-machine mutual trust.</li>
+</ul>
+<h3 class="doc-sec-title">References</h3>
+<ul style="padding-left: 20px; color: var(--text-muted);"><li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">References</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Angel, R. W., Alston, W., and Garland, H. (1970). Functional relations between the manual and oculomotor control systems. Exp. Neurol. 27, 248–257. doi: 10.1016/0014-4886(70)90218-9</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Awater, H., Burr, D., Lappe, M., Morrone, M. C., and Goldberg, M. E. (2005). Eﬀect of saccadic adaptation on localization of visual targets. J. Neurophysiol. 93, 3605–14. doi: 10.1152/jn.01013.2003</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bagesteiro, L. B., Sarlegna, F. R., and Sainburg, R. L. (2006). Diﬀerential inﬂuence of vision and proprioception on control of movement distance. Exp. Brain Res. 171, 358. doi: 10.1007/s00221-005-0272-y</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bahcall, D. O., and Kowler, E. (1999). Illusory shifts in visual direction accompany adaptation of saccadic eye movements. Nature 400, 864–6. doi: 10.1038/ 23693</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bekkering, H., Adam, J. J., van den Aarssen, A., Kingma, H., and Whiting, H. T. A. (1995). Interference between saccadic eye and goal-directed hand movements. Exp. Brain. Res. 106, 475–484. doi: 10.1007/BF00231070</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bekkering, H., Adam, Jos, J., Kingma, H., Huson, A., and Whiting, H. T. A. (1994). Reaction time latencies of eye and hand movements in single- and dual-task conditions. Exp. Brain. Res. 97, 12. doi: 10.1007/BF00241541</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bekkering, H., and Neggers, S. F. (2002). Visual search is modulated by action intentions. Psychol. Sci. 13, 370–374. doi: 10.1111/j.0956-7976.2002.00466.x</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Benedetto, A., and Morrone, M. C. (2017). Saccadic suppression is embedded within extended oscillatory modulation of sensitivity. J. Neurosci. 37, 3661. doi: 10.1523/JNEUROSCI.2390-16.2016</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Benedetto, A., Morrone, M. C., and Tomassini, A. (2020). The common rhythm of action and perception. J. Cogn. Neurosci. 32, 187–200. doi: 10.1162/jocn_a_01436</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bernstein, N. (1967). The Co-Ordination and Regulation of Movements. Oxford: Pergamon Press.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bhalla, M., and Proﬃtt, D. R. (1999). Visual–motor recalibration in geographical slant perception. J. Exp. Psychol. Hum. Percept. Perform. 25, 1076–1096. doi: 10.1037/0096-1523.25.4.1076</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Biguer, B., Jeannerod, M., and Prablanc, C. (1982). The coordination of eye, head, and arm movements during reaching at a single visual target. Exp. Brain. Res. 46, 301–304. doi: 10.1007/BF00237188</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Binda, P., and Morrone, M. C. (2018). Vision during saccadic eye movements. Annu. Rev. Vis. Sci. 4, 193–213. doi: 10.1146/annurev-vision-091517-034317</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bischof, N., and Kramer, E. (1968). Untersuchungen und berlegungen zur Richtungswahrnehmung bei willkrlichen sakkadischen Augenbewegungen. Psychol. Forsch. 32, 185–218. doi: 10.1007/BF00418660</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bosco, A., Daniele, F., and Fattori, P. (2017). Reaching and grasping actions and their context shape the perception of object size. J. Vis. 17, 10. doi: 10.1167/17.12.10</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bosco, A., Lappe, M., and Fattori, P. (2015). Adaptation of saccades and perceived size after trans-saccadic changes of object size. J. Neurosci. 35, 14448–14456. doi: 10.1523/JNEUROSCI.0129-15.2015</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bosco, A., Rifai, K., Wahl, S., Fattori, P., and Lappe, M. (2020). Trans-saccadic adaptation of perceived size independent of saccadic adaptation. J. Vis. 20, 19. doi: 10.1167/jov.20.7.19</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bourdin, C., Bringoux, L., Gauthier, G. M., and Vercher, J. L. (2006). Vision of the hand prior to movement onset allows full motor adaptation to a multi-force environment. Brain. Res. Bull. 71, 101–110. doi: 10.1016/j.brainresbull.2006.08.007</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Boynton, G. M., Demb, J. B., Glover, G. H., and Heeger, D. J. (1999). Neuronal basis of contrast discrimination. Vision Res. 39, 257–269. doi: 10.1016/S0042-6989(98)00113-8</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Brenner, E., and van Damme, W. J. M. (1999). Perceived distance, shape and size. Vision Res. 39, 975–986. doi: 10.1016/S0042-6989(98)00162-X</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Brouwer, A.-M., Franz, V. H., and Gegenfurtner, K. R. (2009). Diﬀerences in ﬁxations between grasping and viewing objects. J. Vis. 9, 1–24. doi: 10.1167/9.1.18</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Bruno, A., and Morrone, M. C. (2007). Inﬂuence of saccadic adaptation on spatial localization: comparison of verbal and pointing reports. J. Vis. 7, 1–13. doi: 10.1167/7.5.16</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Burstedt, M. K. O., Flanagan, J. R., and Johansson, R. S. (1999). Control of grasp stability in humans under diﬀerent frictional conditions during multidigit manipulation. J. Neurophysiol. 82, 2393–2405. doi: 10.1152/jn.1999.82.5.2393</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Buzsáki, G., and Draguhn, A. (2004). Neuronal oscillations in cortical networks. Science 304, 1926–1929. doi: 10.1126/science.1099745</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Cai, R. H., Pouget, A., Schlag-Rey, M., and Schlag, J. (1997). Perceived geometrical relationships aﬀected by eye-movement signals. Nature 386, 601–604. doi: 10.1038/386601a0</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Charpentier, A. (1891). Analyse experimentale de quelques elements de la sensation de poids. Arch. Physiol. Norm. Pathol. 3, 122–135.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Chouinard, P., Large, M., Chang, E., and Goodale, M. (2009). Dissociable neural mechanisms for determining the perceived heaviness of objects and the predicted weight of objects during lifting: An fMRI investigation of the size–weight illusion. Neuroimage 44, 200–212. doi: 10.1016/j.neuroimage.2008. 08.023</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Coello, Y., and Grealy, M. A. (1997). Eﬀect of size and frame of visual ﬁeld on the accuracy of an aiming movement. Perception 26, 287–300. doi: 10.1068/p260287 12</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Collins, T., Doré-Mazars, K., and Lappe, M. (2007). Motor space structures perceptual space: evidence from human saccadic adaptation. Brain Res. 1172, 32–39. doi: 10.1016/j.brainres.2007.07.040</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Conti, P., and Beaubaton, D. (1980). Role of structured visual ﬁeld and visual reaﬀerence in accuracy of pointing movements. Percept. Mot. Skills 50, 239–244. doi: 10.2466/pms.1980.50.1.239</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Craighero, L., Fadiga, L., Rizzolatti, G., and Umiltà, C. (1999). Action for perception a motor—visual attentional eﬀect. J. Exp. Psychol. Hum. Percept. Perform. 25, 1673–1692. doi: 10.1037/0096-1523.25.6.1673</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Davoli, C. C., Brockmole, J. R., and Witt, J. K. (2012). Compressing perceived distance with remote tool-use: Real, imagined, and remembered. J. Exp. Psychol. Hum. Percept. Perform. 38, 80–89. doi: 10.1037/a0024981 de Brouwer, A. J., Flanagan, J. R., and Spering, M. (2021). Functional use of eye movements for an acting system. Trends Cogn. Sci. 25, 252–263. doi: 10.1016/j.tics.2020.12.006</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Desmurget, M., Pélisson, D., Rossetti, Y., and Prablanc, C. (1998). “From eye to hand: planning goal-directed movements,” in Neuroscience and Biobehavioral Reviews, p. 761–788. doi: 10.1016/S0149-7634(98)00004-9</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Desmurget, M., Rossetti, Y., Jordan, M., Meckler, C., and Prablanc, C. (1997). Viewing the hand prior to movement improves accuracy of pointing performed toward the unseen contralateral hand. Exp. Brain. Res. 115, 180–186. doi: 10.1007/PL00005680</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Desmurget, M., Rossetti, Y., Prablanc, C., Jeannerod, M., and Stelmach, G. E. (1995). Representation of hand position prior to movement and motor variability. Can. J. Physiol. Pharmacol. 73, 262–272. doi: 10.1139/y95-037</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Deubel, H. (1987). “Adaptivity of gain and direction in oblique saccades.,” in Eye movements from physiology to cognition. (London: Elsevier), p. 181–190. doi: 10.1016/B978-0-444-70113-8.50030-8</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Deubel, H., and Schneider, W. X. (1996). Saccade target selection and object recognition: evidence for a common attentional mechanism. Vision. Res. 36, 1827–1837. doi: 10.1016/0042-6989(95)00294-4 di Marco, S., Tosoni, A., Altomare, E. C., Ferretti, G., Perrucci, M. G., and Committeri, G. (2019). Walking-related locomotion is facilitated by the perception of distant targets in the extrapersonal space. Sci. Rep. 9, 9884. doi: 10.1038/s41598-019-46384-5</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Dijker, A. J. M. (2008). Why Barbie feels heavier than Ken: the inﬂuence of size- based expectancies and social cues on the illusory perception of weight. Cognition 106, 1109–1125. doi: 10.1016/j.cognition.2007.05.009</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Duhamel, J.-R., Colby, C. L., and Goldberg, M. E. (1992). The updating of the representation of visual space in parietal cortex by intended eye movements. Science 255, 90–92. doi: 10.1126/science.1553535</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Elliott, D., Dutoy, C., Andrew, M., Burkitt, J. J., Grierson, L. E. M., Lyons, J. L., et al. (2014). The inﬂuence of visual feedback and prior knowledge about feedback on vertical aiming strategies. J. Mot. Behav. 46, 433–443. doi: 10.1080/00222895.2014.933767</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Elliott, D., Garson, R. G., Goodman, D., and Chua, R. (1991). Discrete vs. continuous visual control of manual aiming. Hum. Mov. Sci. 10, 393–418. doi: 10.1016/0167-9457(91)90013-N Ethier, V., Zee, D. S., and Shadmehr, R. (2008). Changes in control of saccades during gain adaptation. J. Neurosci. 28, 13929 LP–13937. doi: 10.1523/JNEUROSCI.3470-08.2008</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fagioli, S., Hommel, B., and Schubotz, R. I. (2007). Intentional control of attention: action planning primes action-related stimulus dimensions. Psychol. Res. 71, 22–29. doi: 10.1007/s00426-005-0033-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fini, C., Bardi, L., Troje, N. F., Committeri, G., and Brass, M. (2017). Priming biological motion changes extrapersonal space categorization. Acta. Psychol. 172, 77–83. doi: 10.1016/j.actpsy.2016.11.006</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fini, C., Brass, M., and Committeri, G. (2015a). Social scaling of extrapersonal space: target objects are judged as closer when the reference frame is a human agent with available movement potentialities. Cognition 134, 50–56. doi: 10.1016/j.cognition.2014.08.014</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fini, C., Committeri, G., Müller, B. C. N., Deschrijver, E., and Brass, M. (2015b). How watching pinocchio movies changes our subjective experience of extrapersonal space. PLoS One 10, e0120306. doi: 10.1371/journal.pone.0120306</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fini, C., Costantini, M., and Committeri, G. (2014). Sharing space: the presence of other bodies extends the space judged as near. PLoS One 9, e114719. doi: 10.1371/journal.pone.0114719</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Flanagan, J. R., and Beltzner, M. A. (2000). Independence of perceptual and sensorimotor predictions in the size–weight illusion. Nat. Neurosci. 3, 737–741. doi: 10.1038/76701</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Flanagan, J. R., Bittner, J. P., and Johansson, R. S. (2008). Experience can change distinct size-weight priors engaged in lifting objects and judging their weights. Curr. Biol. 18, 1742–1747. doi: 10.1016/j.cub.2008.09.042</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Flanagan, J. R., and Rao, A. K. (1995). Trajectory adaptation to a non-linear visuomotor transformation: evidence of motion planning in visually perceived space. J. Neurophysiol. 74, 2174–2178. doi: 10.1152/jn.1995.74.5.2174</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Foley, J. M. (1977). Eﬀect of distance information and range on two indices of visually perceived distance. Perception 6, 449–460. doi: 10.1068/p060449</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Fu, Q., Zhang, W., and Santello, M. (2010). Anticipatory planning and control of grasp positions and forces for dexterous two-digit manipulation. J. Neurosci. 30, 9117–9126. doi: 10.1523/JNEUROSCI.4159-09.2010</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Garaas, T. W., and Pomplun, M. (2011). Distorted object perception following whole-ﬁeld adaptation of saccadic eye movements. J. Vis. 11, 2. doi: 10.1167/11.1.2</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Gibson, J. (1979). The Ecological Approach to Visual Perception. New York, NY: Houghton Miﬄin.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Gogel, W. C., Loomis, J. M., Newman, N. J., and Sharkey, T. J. (1985). Agreement between indirect measures of perceived distance. Percept. Psychophys. 37, 17–27. doi: 10.3758/BF03207134</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Gordon, A. M., Westling, G., Cole, K. J., and Johansson, R. S. (1993). Memory representations underlying motor commands used during manipulation of common and novel objects. J. Neurophysiol. 69, 1789–1796. doi: 10.1152/jn.1993.69. 6.1789</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Grandy, M. S., and Westwood, D. A. (2006). Opposite perceptual and sensorimotor responses to a size-weight illusion. J. Neurophysiol. 95, 3887–3892. doi: 10.1152/jn.00851.2005</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Gray, R. (2013). Being selective at the plate: processing dependence between perceptual variables relates to hitting goals and performance. J. Exp. Psychol. Hum. Percept. Perform. 39, 1124–1142. doi: 10.1037/a0030729 Gremmler, S., Bosco, A., Fattori, P., and Lappe, M. (2014). Saccadic adaptation shapes visual space in macaques. J. Neurophysiol. 111, 1846–1851. doi: 10.1152/jn.00709.2013</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Gutteling, T. P., Kenemans, J. L., and Neggers, S. F. W. (2011). Grasping preparation enhances orientation change detection. PLoS One 6, 11. doi: 10.1371/journal.pone.0017675 Hamilton, A., Wolpert, D., and Frith, U. (2004). Your own action inﬂuences how you perceive another person’s action. Curr. Biol. 14, 493–498. doi: 10.1016/j.cub.2004.03.007</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hayhoe, M. M. (2017). Vision and action. Ann. Rev. Vis. Sci. 3, 389–413. doi: 10.1146/annurev-vision-102016-061437</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hayhoe, M. M., Shrivastava, A., Mruczek, R., and Pelz, J. B. (2003). Visual memory and motor planning in a natural task. J. Vis. 3, 6. doi: 10.1167/3.1.6</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Herwig, A., and Schneider, W. X. (2014). Predicting object features across saccades: evidence from object recognition and visual search. J. Exp. Psychol. Gen. 143, 1903–1922. doi: 10.1037/a0036781</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Herwig, A., Weiß, K., and Schneider, W. X. (2015). When circles become triangular: how transsaccadic predictions shape the perception of shape. Ann. N Y Acad. Sci. 1339, 97–105. doi: 10.1111/nyas.12672</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Herwig, A., Weiß, K., and Schneider, W. X. (2018). Feature prediction across eye movements is location speciﬁc and based on retinotopic coordinates. J. Vis. 18, 13. doi: 10.1167/18.8.13 Hoﬀman, J. E., and Subramaniam, B. (1995). The role of visual attention in saccadic eye movements. Percept. Psychophys. 57, 787–795. doi: 10.3758/BF03206794</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hommel, B., Brown, S., and Nattkemper, D. (2016). Human Action Control. Cham: Springer. doi: 10.1007/978-3-319-09244-7</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hommel, B., Müsseler, J., Aschersleben, G., and Prinz, W. (2001). The theory of event coding (TEC): a framework for perception and action planning. Behav. Brain Sci. 24, 849–878. doi: 10.1017/S0140525X01000103</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Honda, H. (1989). Perceptual localization of visual stimuli ﬂashed during saccades. Percept. Psychophys. 45, 162–174. doi: 10.3758/BF03208051</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Honda, H. (1995). Visual mislocalization produced by a rapid image displacement on the retina: examination by means of dichoptic presentation of a target and its background scene. Vision. Res. 35, 3021–3028. doi: 10.1016/0042-6989(95)00108-C</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hopp, J. J., and Fuchs, A. F. (2004). The characteristics and neuronal substrate of saccadic eye movement plasticity. Prog. Neurobiol. 72, 27–53. doi: 10.1016/j.pneurobio.2003.12.002</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Hutchison, J. J., and Loomis, J. M. (2006). Does energy expenditure aﬀect the perception of egocentric distance? a failure to replicate experiment 1 of proﬃtt, stefanucci, banton, and epstein (2003). Span. J. Psychol. 9, 332–339. doi: 10.1017/S1138741600006235</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Jeannerod, M. (1981). Intersegmental coordination during reaching at natural visual objects. Atten. Perform. 11, 153–169. Johansson, R. S., and Westling, G. (1988). Programmed and triggered actions to rapid load changes during precision grip. Exp. Brain Res. 2, 71. doi: 10.1007/BF00247523</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Johansson, R. S., Westling, G., Bäckström, A., and Flanagan, J. R. (2001). Eye–hand coordination in object manipulation. J. Neurosci. 21, 6917–6932. doi: 10.1523/JNEUROSCI.21-17-06917.2001</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kaiser, M., and Lappe, M. (2004). Perisaccadic mislocalization orthogonal to saccade direction. Neuron 41, 293–300. doi: 10.1016/S0896-6273(03)00849-3 13 Kawai, S. (2002a). Heaviness perception: I. constant involvement of haptically perceived size in weight discrimination. Exp. Brain Res. 147, 16–22. doi: 10.1007/s00221-002-1209-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kawai, S. (2002b). Heaviness perception: II. contributions of object weight, haptic size, and density to the accurate perception of heaviness or lightness. Exp. Brain. Res. 147, 23–28. doi: 10.1007/s00221-002-1210-x</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kawai, S. (2003a). Heaviness perception: III. Weight/aperture in the discernment of heaviness in cubes haptically perceived by thumb-index ﬁnger grasp. Exp. Brain Res. 153, 289–296. doi: 10.1007/s00221-003-1621-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kawai, S. (2003b). Heaviness perception: IV. Weight x aperture−1 as a heaviness model in ﬁnger-grasp perception. Exp. Brain Res. 153, 297–301. doi: 10.1007/s00221-003-1622-2</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kelly, J. W., Donaldson, L. S., Sjolund, L. A., and Freiberg, J. B. (2013). More than just perception–action recalibration: walking through a virtual environment causes rescaling of perceived space. Atten. Percept. Psychophys. 75, 1473–1485. doi: 10.3758/s13414-013-0503-4</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kirsch, W. (2015). Impact of action planning on spatial perception: attention matters. Acta. Psychol. (Amst) 156, 22–31. doi: 10.1016/j.actpsy.2015.01.002</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kirsch, W., Herbort, O., Butz, M., v., and Kunde, W. (2012). Inﬂuence of motor planning on distance perception within the peripersonal space. PLoS One 7, e34880. doi: 10.1371/journal.pone.0034880</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kirsch, W., and Kunde, W. (2013). Visual near space is scaled to parameters of current action plans. J. Exp. Psychol. Hum. Percept. Perform. 39, 1313–1325. doi: 10.1037/a0031074</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Knoblich, G., and Flach, R. (2001). Predicting the eﬀects of actions: interactions of perception and action. Psychol. Sci. 12, 467–472. doi: 10.1111/1467-9280.00387</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kojima, Y., Iwamoto, Y., and Yoshida, K. (2005). Eﬀect of saccadic amplitude adaptation on subsequent adaptation of saccades in diﬀerent directions. Neurosci. Res. 53, 404–412. doi: 10.1016/j.neures.2005.08.012</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Köller, C. P., Poth, C. H., and Herwig, A. (2020). Object discrepancy modulates feature prediction across eye movements. Psychol. Res. 84, 231–244. doi: 10.1007/s00426-018-0988-5</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Körding, K. P., and Wolpert, D. M. (2006). Bayesian decision theory in sensorimotor control. Trends Cogn. Sci. 10, 319–326. doi: 10.1016/j.tics.2006.05.003</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kunde, W., and Wuhr, P. (2004). Actions blind to conceptually overlapping stimuli. Psychologic. Res. Psychologische Forschung 4, 68. doi: 10.1007/s00426-003-0156-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kusunoki, M., and Goldberg, M. E. (2003). The time course of perisaccadic receptive ﬁeld shifts in the lateral intraparietal area of the monkey. J. Neurophysiol. 89, 1519–1527. doi: 10.1152/jn.00519.2002</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Land, M., Mennie, N., and Rusted, J. (1999). The roles of vision and eye movements in the control of activities of daily living. Perception 28, 1311–1328. doi: 10.1068/p2935</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Land, M. F. (1992). Predictable eye-head coordination during driving. Nature 359, 318–320. doi: 10.1038/359318a0</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Land, M. F. (2006). Eye movements and the control of actions in everyday life. Prog Retin Eye Res 25, 296–324. doi: 10.1016/j.preteyeres.2006.01.002</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Land, M. F. (2009). Vision, eye movements, and natural behavior. Vis. Neurosci. 26, 51–62. doi: 10.1017/S0952523808080899</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Land, M. F., and Lee, D. N. (1994). Where we look when we steer. Nature 369, 742–744. doi: 10.1038/369742a0 Lappe, M., Awater, H., and Krekelberg, B. (2000). Postsaccadic visual references generate presaccadic compression of space. Nature 403, 892–895. doi: 10.1038/35002588</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lappe, M., Kuhlmann, S., Oerke, B., and Kaiser, M. (2006). The fate of object features during perisaccadic mislocalization. J. Vis. 6, 11. doi: 10.1167/6.11.11</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lavergne, L., Vergilino-Perez, D., Collins, T., and Dore’-Mazars, K. (2010). Adaptation of within-object saccades can be induced by changing stimulus size. Exp. Brain Res. 203, 773–780. doi: 10.1007/s00221-010-2282-7</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lee, Y., Lee, S., Carello, C., and Turvey, M. T. (2012). An archer’s perceived form scales the “hitableness” of archery targets. J. Exp. Psychol. Hum. Percept. Perform. 38, 1125–1131. doi: 10.1037/a0029036</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Li, H., and Giudice, N. (2013). “The eﬀects of 2D and 3D maps on learning virtual multi-level indoor environments,” in Proceedings of the 1st ACM SIGSPATIAL International Workshop on Map Interaction (Orlando: ACM, Orlando, p. 7–12.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lindemann, O., and Bekkering, H. (2009). Object manipulation and motion perception: Evidence of an inﬂuence of action planning on visual processing. J. Exp. Psychol. Hum. Percept. Perform. 35, 1062–1071. doi: 10.1037/a0015023</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Liversedge, S. P., and Findlay, J. M. (2000). Saccadic eye movements and cognition. Trends Cogn. Sci. 4, 6–14. doi: 10.1016/S1364-6613(99)01418-7</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Loomis, J. M., da Silva, J. A., Fujita, N., and Fukusima, S. S. (1992). Visual space perception and visually directed action. J. Exp. Psychol. Hum. Percept. Perform. 18, 906–921. doi: 10.1037/0096-1523.18.4.906</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Loomis, J. M., and Philbeck, J. W. (2008). “Measuring perception with spatial updating and action.,” in. Embodiment, ego-space, and action (Mahwah, NJ: Erlbaum.), eds R. L. Klatzky, M. Behrmann, and B. MacWhinney, p. 1–43.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lukos, J., Ansuini, C., and Santello, M. (2007). Choice of contact points during multidigit grasping: eﬀect of predictability of object center of mass location. J. Neurosci. 27, 3894–3903. doi: 10.1523/JNEUROSCI.4693-06.2007</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lukos, J. R., Ansuini, C., and Santello, M. (2008). Anticipatory control of grasping: independence of sensorimotor memories for kinematics and kinetics. J. Neurosci. 28, 12765–12774. doi: 10.1523/JNEUROSCI.4335-08.2008</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Lünenburger, L., Kutz, D. F., and Hoﬀmann, K.-P. (2000). Inﬂuence of arm movements on saccades in humans. Euro. J. Neurosci. 12, 4107–4116. doi: 10.1046/j.1460-9568.2000.00298.x</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Mark, L. S. (1987). Eyeheight-scaled information about aﬀordances: a study of sitting and stair climbing. J. Exp. Psychol. Hum. Percept. Perform. 13, 361–370. doi: 10.1037/0096-1523.13.3.361</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Matin, L., and Pearce, D. G. (1965). Visual perception of direction for stimuli ﬂashed during voluntary saccadic eye movements. Science 148, 1485–1488. doi: 10.1126/science.148.3676.1485</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Matsumiya, K., and Uchikawa, K. (2001). Apparent size of an object remains uncompressed during presaccadic compression of visual space. Vision Res. 41, 3039–3050. doi: 10.1016/S0042-6989(01)00174-2</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Mattar, M. G., and Lengyel, M. (2022). Planning in the brain. Neuron. 110, 914–934. doi: 10.1016/j.neuron.2021.12.018</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">McConkie, G., PW, K., Reddix, M., Zola, D., and Jacobs, A. (1989). Eye movement control during reading: II. frequency of reﬁxating a word. Percept. Psychophys. 46, 245–253. doi: 10.3758/BF03208086</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">McLaughlin, S. C. (1967). Parametric adjustment in saccadic eye movements. Percept. Psychophys. 2, 359–362. doi: 10.3758/BF03210071</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Miller, J., Anstis, T., and Templeton, W. (1981). Saccadic plasticity: parametric adaptive control by retinal feedback. J. Exp. Psychol. Hum. Percept. Perform. 7, 356–66. doi: 10.1037/0096-1523.7.2.356</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Mohler, B. J., Creem-Regehr, S. H., and Thompson, W. B. (2006). “The inﬂuence of feedback on egocentric distance judgments in real and virtual environments,” in ACM SIGGRAPH Symposium on Applied Perception in Graphics and Visualization (Washington, DC: ACM), p. 9–14. doi: 10.1145/1140491.1140493</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Morasso, P. (1981). Spatial control of arm movements. Exp. Brain Res. 2, 42. doi: 10.1007/BF00236911</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Morgado, N., Gentaz, É., Guinet, É., Osiurak, F., and Palluel-Germain, R. (2013). Within reach but not so reachable: Obstacles matter in visual perception of distances. Psychon. Bull. Rev. 20, 462–467. doi: 10.3758/s13423-012-0358-z</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Morrone, M. C., Ross, J., and Burr, D. (2005). Saccadic eye movements cause compression of time as well as space. Nat. Neurosci. 8, 950–954. doi: 10.1038/nn1488</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Murray, D. J., Ellis, R. R., Bandomir, C. A., and Ross, H. E. (1999). Charpentier 1891 on the size—weight illusion. Percept. Psychophys. 61, 1681–1685. doi: 10.3758/BF03213127</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Musseler, J., and Hommel, B. (1997). Blindness to response-compatible stimuli. J. Exp. Psychol. Hum. Percept. Perform. 23, 861–872. doi: 10.1037/0096-1523.23.3.861</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Nakamura, K., and Colby, C. L. (2002). Updating of the visual representation in monkey striate and extrastriate cortex during saccades. Proceed. Nat. Acad. Sci. 99, 4026–4031. doi: 10.1073/pnas.052379899</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Neggers, S., Huijbers, W., Vrijlandt, C., Vlaskamp, B., Schutter, D., and</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Kenemans, J. (2007). TMS pulses on the frontal eye ﬁelds break coupling between visuospatial attention and eye movements. J. Neurophysiol. 98, 2765–2778. doi: 10.1152/jn.00357.2007</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Neggers, S. F., and Bekkering, H. (2000). Ocular gaze is anchored to the target of an ongoing pointing movement. J. Neurophysiol. 83, 639–651. doi: 10.1152/jn.2000.83.2.639</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Neggers, S. F. W., and Bekkering, H. (1999). Integration of visual and somatosensory target information in goal-directed eye and arm movements. Exp. Brain. Res. 125, 97–107. doi: 10.1007/s002210050663</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Neggers, S. F. W., and Bekkering, H. (2001). Gaze anchoring to a pointing target is present during the entire pointing movement and is driven by a non-visual signal. J. Neurophysiol. 86, 961–970. doi: 10.1152/jn.2001.86.2.961 Neggers, S. F. W., and Bekkering, H. (2002). Coordinated control of eye and hand movements in dynamic reaching. Hum. Mov. Sci. 21, 37–64. doi: 10.1016/S0167-9457(02)00120-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Noel, J.-P., Grivaz, P., Marmaroli, P., Lissek, H., Blanke, O., and Serino, A. (2015). Full body action remapping of peripersonal space: the case of walking. Neuropsychologia 70, 375–384. doi: 10.1016/j.neuropsychologia.2014.08.030</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Osiurak, F., Morgado, N., and Palluel-Germain, R. (2012). Tool use and perceived distance: when unreachable becomes spontaneously reachable. Exp. Brain Res. 218, 331–339. doi: 10.1007/s00221-012-3036-5 14</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Paeye, C., Collins, T., Cavanagh, P., and Herwig, A. (2018). Calibration of peripheral perception of shape with and without saccadic eye movements. Atten. Percept. Psychophys. 80, 723–737. doi: 10.3758/s13414-017-1478-3</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Patla, A., and Vickers, J. (2003). How far ahead do we look when required to step on speciﬁc locations in the travel path during locomotion? Exp. Brain Res. 148, 133–138. doi: 10.1007/s00221-002-1246-y</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Pelisson, D., Prablanc, C., Goodale, M., and Jeannerod, M. (1986). Visual control of reaching movements without vision of the limb. Exp. Brain Res. 62, 303–311.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Pelz, J., Hayhoe, M., and Loeber, R. (2001). The coordination of eye, head, and hand movements in a natural task. Exp. Brain Res. 139, 266–277. doi: 10.1007/s0022101 00745</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Pola, J. (2004). Models of the mechanism underlying perceived location of a perisaccadic ﬂash. Vision Res. 44, 2799–2813. doi: 10.1016/j.visres.2004. 06.008</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Prablanc, C., Echallier, J. F., Komilis, E., and Jeannerod, M. (1979). Optimal response of eye and hand motor systems in pointing at a visual target. Biol. Cybern. 35, 113–124. doi: 10.1007/BF00337436</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Prinz, W. (1990). “A Common Coding Approach to Perception and Action,” in Relationships Between Perception and Action: Current Approaches, eds. O. Neumann and W. Prinz (Berlin, Heidelberg: Springer Berlin Heidelberg), p. 167–201. doi: 10.1007/978-3-642-75348-0_7</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Prinz, W. (1997). Perception and action planning. Euro. J. Cogn. Psychol. 9, 129–154. doi: 10.1080/713752551 Proﬃtt, D. (2008). “An action-speciﬁc approach to spatial perception,” in R. L. Klatzky, B. MacWhinney and M. Behrmann (Eds.) (New York: Psychology Press.), 179–202. Proﬃtt, D. R. (2006). Distance perception. Curr. Dir. Psychol. Sci. 15, 131–135. doi: 10.1111/j.0963-7214.2006.00422.x Rahmouni, S., and Madelain, L. (2019). Inter-individual variability and consistency of saccade adaptation in oblique saccades: amplitude increase and decrease in the horizontal or vertical saccade component. Vision Res. 160, 82–98. doi: 10.1016/j.visres.2019.05.001</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Richardson, A. R., and Waller, D. (2005). The eﬀect of feedback training on distance estimation in virtual environments. Appl. Cogn. Psychol. 19, 1089–1108. doi: 10.1002/acp.1140</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Rieser, J. J., Ashmead, D. H., Talor, C. R., and Youngquist, G. A. (1990). Visual perception and the guidance of locomotion without vision to previously seen targets. Perception 19, 675–689. doi: 10.1068/p190675</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Rieser, J. J., Pick, H. L., Ashmead, D. H., and Garing, A. E. (1995). Calibration of human locomotion and models of perceptual-motor organization. J. Exp. Psychol. Hum. Percept. Perform. 21, 480–497. doi: 10.1037/0096-1523.21.3.480</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Ross, J., Morrone, M. C., and Burr, D. C. (1997). Compression of visual space before saccades. Nature 386, 598–601. doi: 10.1038/386598a0</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Rossetti, Y., Stelmach, G., Desmurget, M., Prablanc, C., and Jeannerod, M. (1994). The eﬀect of viewing the static hand prior to movement onset on pointing kinematics and variability. Exp. Brain. Res. 101, 323–330. doi: 10.1007/BF00228753</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Salimi, I., Hollender, I., Frazier, W., and Gordon, A. M. (2000). Speciﬁcity of internal representations underlying grasping. J. Neurophysiol. 84, 2390–2397. doi: 10.1152/jn.2000.84.5.2390</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Sanz Diez, P., Bosco, A., Fattori, P., and Wahl, S. (2022). Horizontal target size perturbations during grasping movements are described by subsequent size perception and saccade amplitude. PLoS One 17, e0264560. doi: 10.1371/journal.pone.0264560</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Sarlegna, F. R., and Sainburg, R. L. (2009). The Roles of Vision and Proprioception in the Planning of Reaching Movements, p. 317–335. doi: 10.1007/978-0-387-77064-2_16</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Schlag, J., and Schlag-Rey, M. (1995). Illusory localization of stimuli ﬂashed in the dark before saccades. Vision. Res. 35, 2347–2357. doi: 10.1016/0042-6989(95)00021-Q</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Schubö, A., Aschersleben, G., and Prinz, W. (2001). Interactions between perception and action in a reaction task with overlapping S-R assignments. Psychol. Res. 65, 145–157. doi: 10.1007/s004260100061</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Sedgwick, H. (1986). “Space perception.,” in Handbook of perception and human performance: Vol I. Sensory processes and perception, eds Thomas (New York, NY: Wiley.), p. 21–57.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Siegel, Z. D., Kelly, J. W., and Cherep, L. A. (2017). Rescaling of perceived space transfers across virtual environments. J. Exp. Psychol. Hum. Percept. Perform. 43, 1805–1814. doi: 10.1037/xhp0000401</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Stefanucci, J. K., and Geuss, M. N. (2009). Big people, little world: the body inﬂuences size perception. Perception 38, 1782–1795. doi: 10.1068/p6437</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Sutton, R., and Barto, A. (1998). Reinforcement Learning: An Introduction. London: The MIT Press. doi: 10.1109/TNN.1998.712192 Symes, E., Tucker, M., Ellis, R., Vainio, L., and Ottoboni, G. (2008). Grasp preparation improves change detection for congruent objects. J. Exp. Psychol. Hum. Percept. Perform. 34, 854–871. doi: 10.1037/0096-1523. 34.4.854</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Taylor, J. E. T., Witt, J. K., and Sugovic, M. (2011). When walls are no longer barriers: perception of wall height in parkour. Perception 40, 757–760. doi: 10.1068/p6855</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Thut, G., Miniussi, C., and Gross, J. (2012). The functional importance of rhythmic activity in the brain. Current Biology 22, R658–R663. doi: 10.1016/j.cub.2012.06.061</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Tomassini, A., Ambrogioni, L., Medendorp, W. P., and Maris, E. (2017). Theta oscillations locked to intended actions rhythmically modulate perception. Elife 6, e25618. doi: 10.7554/eLife.25618.014</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Tomassini, A., Spinelli, D., Jacono, M., Sandini, G., and Morrone, M. C. (2015). Rhythmic oscillations of visual contrast sensitivity synchronized with action. J. Neurosci. 35, 7019. doi: 10.1523/JNEUROSCI.4568-14.2015</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Valsecchi, M., Cassanello, C., Herwig, A., Rolfs, M., and Gegenfurtner, K. R. (2020). A comparison of the temporal and spatial properties of trans-saccadic perceptual recalibration and saccadic adaptation. J. Vis. 20, 2. doi: 10.1167/jov.20.4.2</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Valsecchi, M., and Gegenfurtner, K. R. (2016). Dynamic re-calibration of perceived size in fovea and periphery through predictable size changes. Curr. Biol. 26, 59–63. doi: 10.1016/j.cub.2015.10.067 van Beers, R. J., Baraduc, P., and Wolpert, D. M. (2002). Role of uncertainty in sensorimotor control. Philos. Trans. R Soc. Lond. B Biol. Sci. 357, 1137–1145. doi: 10.1098/rstb.2002.1101</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Velay, J., and Beaubaton, D. (1986). Inﬂuence of visual context on pointing movement accuracy. Cahiers de Psychologie Cognitive 6, 447–456.</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Vishwanath, D., and Kowler, E. (2003). Localization of shapes: eye movements and perception compared. Vision. Res. 43, 1637–1653. doi: 10.1016/S0042-6989(03)00168-8</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Waller, D., and Richardson, A. R. (2008). Correcting distance estimates by interacting with immersive virtual environments: Eﬀects of task and available sensory information. J. Exp. Psychol. Appl. 14, 61–72. doi: 10.1037/1076-898X. 14.1.61</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Warren, W. H. (1984). Perceiving aﬀordances: visual guidance of stair climbing. J. Exp. Psychol. Hum. Percept. Perform. 10, 683–703. doi: 10.1037/0096-1523.10.5.683</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Warren, W. H., and Whang, S. (1987). Visual guidance of walking through apertures: body-scaled information for aﬀordances. J. Exp. Psychol. Hum. Percept. Perform. 13, 371–383. doi: 10.1037/0096-1523.13.3.371</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Watanabe, S., Ogino, S., Nakamura, T., and Koizuka, I. (2003). Saccadic adaptation in the horizontal and vertical directions in normal subjects. Auris Nasus Larynx 30, 41–45. doi: 10.1016/S0385-8146(02)00119-0</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Westling, G., and Johansson, R. S. (1984). Factors inﬂuencing the force control during precision grip. Exp. Brain Res. 53, 6. doi: 10.1007/BF00238156</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. (2018). “Perception and Action,” in Stevens’ Handbook of Experimental Psychology and Cognitive Neuroscience (New York, NY: Wiley), p. 489–523. doi: 10.1002/9781119170174.epcn211</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K. (2011). Tool use inﬂuences perceived shape and perceived parallelism, which serve as indirect measures of perceived distance. J. Exp. Psychol. Hum. Percept. Perform. 37, 1148–1156. doi: 10.1037/a0021933</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K., and Proﬃtt, D. R. (2005). See the ball, hit the ball: apparent ball size is correlated with batting average. Psychol. Sci. 16, 937–938. doi: 10.1111/j.1467-9280.2005.01640.x</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K., and Proﬃtt, D. R. (2008). Action-speciﬁc inﬂuences on distance perception: a role for motor simulation. J. Exp. Psychol. Hum. Percept. Perform. 34, 1479–1492. doi: 10.1037/a0010781</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K., Proﬃtt, D. R., and Epstein, W. (2004). Perceiving distance: a role of eﬀort and intent. Perception 33, 577–590. doi: 10.1068/p5090</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K., Proﬃtt, D. R., and Epstein, W. (2005). Tool use aﬀects perceived distance, but only when you intend to use it. J. Exp. Psychol. Hum. Percept. Perform. 31, 880–888. doi: 10.1037/0096-1523.31.5.880</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Witt, J. K., and Sugovic, M. (2010). Performance and ease inﬂuence perceived speed. Perception 39, 1341–1353. doi: 10.1068/p6699</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wittenberg, M., Bremmer, F., and Wachtler, T. (2008). Perceptual evidence for saccadic updating of color stimuli. J. Vis. 8, 9. doi: 10.1167/8.14.9</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wohlschläger, A. (2000). Visual motion priming by invisible actions. Vision. Res. 40, 925–930. doi: 10.1016/S0042-6989(99)00239-4</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wolpert, D. M., Ghahramani, Z., and Jordan, Michael, I. (1995). Are arm trajectories planned in kinematic or dynamic coordinates? an adaptation study. Exp. Brain. Res. 5, 103. doi: 10.1007/BF00241505</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Woodworth, R. S. (1899). Accuracy of voluntary movement. Psychologic. Rev. Monograp. Suppl. 3, i−114. doi: 10.1037/h0092992</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wühr, P., and Müsseler, J. (2001). Time course of the blindness to response- compatible stimuli. J. Exp. Psychol. Hum. Percept. Perform. 27, 1260–1270. doi: 10.1037/0096-1523.27.5.1260</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wykowska, A., Hommel, B., and Schubo, A. (2011). Action-induced eﬀects on perception depend neither on element-level nor on set-level similarity between stimulus and response sets. Atten. Percept. Psychophys. 73, 1034–1041. doi: 10.3758/s13414-011-0122-x 15</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wykowska, A., and Schubö, A. (2012). Action intentions modulate allocation of visual attention: electrophysiological evidence. Front. Psychol. 3, 12. doi: 10.3389/fpsyg.2012.00379</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Wykowska, A., Schubö, A., and Hommel, B. (2009). How you move is what you see: action planning biases selection in visual search. J. Exp. Psychol. Hum. Percept. Perform. 35, 1755–1769. doi: 10.1037/a0016798</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Zelinsky, G. J., Rao, R. P. N., Hayhoe, M. M., and Ballard, D. H. (1997). Eye movements reveal the spatiotemporal dynamics of visual search. Psychol. Sci. 8, 448–453. doi: 10.1111/j.1467-9280.1997.tb00459.x</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Zimmermann, E., and Lappe, M. (2010). Motor signals in visual localization. J. Vis. 10, 1–11. doi: 10.1167/10.6.2 Zimmermann, E., Morrone, M. C., and Burr, D. (2015). Visual mislocalization during saccade sequences. Exp. Brain. Res. 233, 577–585. doi: 10.1007/s00221-014-4138-z</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Zimmermann, E., Morrone, M. C., and Burr, D. C. (2014). The visual component to saccadic compression. J. Vis. 14, 13. doi: 10.1167/14.12.13</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Zwickel, J., Grosjean, M., and Prinz, W. (2007). Seeing while moving: measuring the online inﬂuence of action on perception. Q. J. Experiment. Psychol. 60, 1063–1071. doi: 10.1080/17470210701288722</li>
+<li style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.45;">Zwickel, J., Grosjean, M., and Prinz, W. (2010). On interference eﬀects in concurrent perception and action. Psychologic. Res. Psychologische Forschung 74, 152–171. doi: 10.1007/s00426-009-0226-2 16</li></ul>
+</div>
+
 <div class="reader-viewport" style="display: none;" id="viewport_doc_seance_02_fr">
 <h2 class="doc-art-title">Séance 2 — IA : Perspectives Historiques & Fondements (Pr Pierre Poirier)</h2>
 <ul class="doc-list">
@@ -7513,7 +7844,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 1,
     "session": 1,
     "category": "visuomoteur_action",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q01",
     "tag": "Illusions : distinguer ouverture de pince et force",
     "points": "1 point",
@@ -7556,7 +7887,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 2,
     "session": 1,
     "category": "visuomoteur_action",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q02",
     "tag": "Intention motrice : effet avant l’exécution",
     "points": "1 point",
@@ -7599,7 +7930,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 3,
     "session": 1,
     "category": "visuomoteur_action",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q03",
     "tag": "Attente du signal et déplacement du critère",
     "points": "1 point",
@@ -7642,7 +7973,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 4,
     "session": 1,
     "category": "psychophysique_tds",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q04",
     "tag": "Pourquoi un stimulus identique peut donner des réponses différentes",
     "points": "1 point",
@@ -7685,7 +8016,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 5,
     "session": 1,
     "category": "psychophysique_tds",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q05",
     "tag": "Pourquoi examiner les fausses alarmes",
     "points": "1 point",
@@ -7728,7 +8059,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 6,
     "session": 1,
     "category": "psychophysique_tds",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q06",
     "tag": "Récompense : répondre plus souvent sans mieux discriminer",
     "points": "1 point",
@@ -7771,7 +8102,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 7,
     "session": 1,
     "category": "psychophysique_tds",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q07",
     "tag": "Radiologie : déplacer le compromis entre erreurs",
     "points": "1 point",
@@ -7814,7 +8145,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 8,
     "session": 1,
     "category": "psychophysique_tds",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q08",
     "tag": "Points mobiles : discrimination améliorée ou simple biais ?",
     "points": "1 point",
@@ -7857,7 +8188,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 9,
     "session": 1,
     "category": "codage_predictif_bayesian",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q09",
     "tag": "Contexte et interprétation d’un caractère ambigu",
     "points": "1 point",
@@ -7900,7 +8231,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 10,
     "session": 1,
     "category": "cognition_incarnee_affordances",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q10",
     "tag": "Held et Hein : contingence active et exposition visuelle",
     "points": "1 point",
@@ -7943,7 +8274,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 11,
     "session": 1,
     "category": "plasticite_qualia_neuro",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q11",
     "tag": "Substitution tactile : fonction spatiale et expérience distale",
     "points": "1 point",
@@ -7986,7 +8317,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 12,
     "session": 1,
     "category": "cognition_incarnee_affordances",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q12",
     "tag": "Affordance : possibilité d’action et indice communicatif",
     "points": "1 point",
@@ -8029,7 +8360,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 13,
     "session": 1,
     "category": "ia_cognition_eeg",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q13",
     "tag": "Assistance par IA : délégation et engagement",
     "points": "1 point",
@@ -8072,7 +8403,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 14,
     "session": 1,
     "category": "dissociation_neurovisuelle",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q14",
     "tag": "Deux voies : reconnaître un objet et guider le geste",
     "points": "1 point",
@@ -8115,7 +8446,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 15,
     "session": 1,
     "category": "dissociation_neurovisuelle",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q15",
     "tag": "Dissociation : interpréter des profils sans diagnostic automatique",
     "points": "1 point",
@@ -8158,7 +8489,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 16,
     "session": 1,
     "category": "cognition_incarnee_affordances",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q16",
     "tag": "Performance sportive et taille perçue : quel sens causal ?",
     "points": "1 point",
@@ -8201,7 +8532,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 17,
     "session": 1,
     "category": "dissociation_neurovisuelle",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q17",
     "tag": "Préparer une saccade avant de déplacer les yeux",
     "points": "1 point",
@@ -8244,7 +8575,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 18,
     "session": 1,
     "category": "cognition_incarnee_affordances",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q18",
     "tag": "Représentations communes ou représentations en interaction ?",
     "points": "1 point",
@@ -8287,7 +8618,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 19,
     "session": 1,
     "category": "perception_categorielle",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q19",
     "tag": "Cognition et intelligence : décrire ou évaluer ?",
     "points": "1 point",
@@ -8330,7 +8661,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     "id": 20,
     "session": 1,
     "category": "plasticite_qualia_neuro",
-    "doc_id": "seance_01",
+    "doc_id": "doc_seance_01",
     "anchor_id": "q20",
     "tag": "Bilan : une relation perception–action bidirectionnelle",
     "points": "1 point",
@@ -10101,7 +10432,10 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       const input = document.getElementById('readerSearchInput');
       if (input) input.value = '';
       const count = document.getElementById('searchCount');
-      if (count) count.textContent = '0 résultat';
+      if (count) {
+        count.textContent = '';
+        count.style.display = 'none';
+      }
       searchResults = [];
       currentSearchIdx = 0;
     }
@@ -10111,20 +10445,27 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       const term = inputEl ? inputEl.value.trim() : '';
       const countEl = document.getElementById('searchCount');
       if (!term || term.length < 2) {
-        if (countEl) countEl.textContent = '0 résultat';
+        if (countEl) {
+          countEl.textContent = '';
+          countEl.style.display = 'none';
+        }
         searchResults = [];
         currentSearchIdx = 0;
         return;
       }
       if (!sourceTextVisible) toggleSourceTextVisibility(true);
-      const targetVpId = 'viewport_' + activeDocId + '_' + docLanguage;
-      const vp = document.getElementById(targetVpId) || document.getElementById('viewport_' + activeDocId + '_fr');
-      if (!vp) return;
+      let targetVp = document.getElementById('viewport_' + activeDocId + '_' + docLanguage);
+      if (!targetVp && docLanguage === 'en') {
+        targetVp = document.getElementById('viewport_' + activeDocId + '_fr');
+      } else if (!targetVp && docLanguage === 'fr') {
+        targetVp = document.getElementById('viewport_' + activeDocId + '_en');
+      }
+      if (!targetVp) return;
 
       const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
       const regex = new RegExp(escaped, 'i');
 
-      const allCandidates = vp.querySelectorAll('.doc-para, .doc-subheading, .doc-heading, .doc-art-h2, .doc-art-h3, p, h1, h2, h3, h4, li, blockquote');
+      const allCandidates = targetVp.querySelectorAll('.doc-para, .doc-subheading, .doc-heading, .doc-art-h2, .doc-art-h3, p, h1, h2, h3, h4, li, blockquote');
       searchResults = [];
       const seen = new Set();
       allCandidates.forEach(block => {
@@ -10138,6 +10479,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       });
 
       if (countEl) {
+        countEl.style.display = 'inline-block';
         countEl.textContent = searchResults.length + ' résultat' + (searchResults.length > 1 ? 's' : '');
       }
       if (searchResults.length > 0) {
@@ -10301,9 +10643,6 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     function toggleDocLanguage() {
-      const isCourseTab = (activeDocId === 'doc_seance_01' || activeDocId === 'doc_seance_02' || activeDocId === 'doc_context');
-      if (isCourseTab) return; // Cours officiel en français, aucune bascule
-
       docLanguage = (docLanguage === 'fr') ? 'en' : 'fr';
       updateLanguageUI();
       switchTab(activeDocId, false);
@@ -10332,33 +10671,25 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (!btn) return;
       if (icon) icon.textContent = '🌐';
 
-      const isCourseTab = (activeDocId === 'doc_seance_01' || activeDocId === 'doc_seance_02' || activeDocId === 'doc_context');
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+      btn.style.cursor = 'pointer';
 
-      if (isCourseTab) {
-        btn.disabled = true;
-        btn.style.opacity = '0.45';
-        btn.style.pointerEvents = 'none';
-        btn.style.cursor = 'not-allowed';
-        btn.title = 'Cours officiel en français';
-        if (label) label.textContent = 'Français (Cours)';
+      if (docLanguage === 'fr') {
+        if (label) label.textContent = 'Anglais (Original)';
+        btn.title = "Afficher l'article ou le cours original en anglais";
       } else {
-        btn.disabled = false;
-        btn.style.opacity = '1';
-        btn.style.pointerEvents = 'auto';
-        btn.style.cursor = 'pointer';
-
-        if (docLanguage === 'fr') {
-          if (label) label.textContent = 'Anglais (Original)';
-          btn.title = "Afficher l'article original en anglais";
-        } else {
-          if (label) label.textContent = 'Français (Traduction)';
-          btn.title = "Afficher la traduction française annotée";
-        }
+        if (label) label.textContent = 'Français (Traduction)';
+        btn.title = "Afficher la traduction française annotée";
       }
     }
 
     function switchTab(docId, autoUnmask = true) {
+      if (!docId) return;
+      if (!docId.startsWith('doc_')) docId = 'doc_' + docId;
       activeDocId = docId;
+
       document.querySelectorAll('.reader-tab').forEach(b => b.classList.remove('active'));
       const tabBtn = document.getElementById('tab_' + docId);
       if (tabBtn) tabBtn.classList.add('active');
@@ -10367,13 +10698,13 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         toggleSourceTextVisibility(true);
       }
 
-      // Cours dispensés en français à l'UQAM : texte officiel français
-      const isCourseTab = (docId === 'doc_seance_01' || docId === 'doc_seance_02' || docId === 'doc_context' || docId === 'doc_bosco');
-      const effectiveLang = isCourseTab ? 'fr' : docLanguage;
-
       document.querySelectorAll('.reader-viewport').forEach(vp => vp.style.display = 'none');
-      const targetVpId = 'viewport_' + docId + '_' + effectiveLang;
-      const targetVp = document.getElementById(targetVpId) || document.getElementById('viewport_' + docId + '_fr');
+      let targetVp = document.getElementById('viewport_' + docId + '_' + docLanguage);
+      if (!targetVp && docLanguage === 'en') {
+        targetVp = document.getElementById('viewport_' + docId + '_fr');
+      } else if (!targetVp && docLanguage === 'fr') {
+        targetVp = document.getElementById('viewport_' + docId + '_en');
+      }
       if (targetVp) targetVp.style.display = 'block';
 
       updateLanguageUI();
@@ -10398,8 +10729,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
       const icon = document.getElementById('toggleTextIcon');
       const label = document.getElementById('toggleTextLabel');
-      if (icon) icon.textContent = sourceTextVisible ? '🔒' : '🔓';
-      if (label) label.textContent = sourceTextVisible ? 'Masquer le texte' : 'Révéler le texte';
+      if (icon) icon.textContent = sourceTextVisible ? '🔒' : '👁️';
+      if (label) label.textContent = sourceTextVisible ? 'Masquer le texte' : 'Afficher le texte';
     }
 
     function adjustReaderFontSize(delta) {
@@ -10419,85 +10750,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       });
     }
 
-    // =========================================================================
-    // 15. RECHERCHE DANS LES TEXTES (TECH-001)
-    // =========================================================================
-    let searchIsTruncated = false;
-
-    function handleSearchInput(val) {
-      const activeVp = document.querySelector('.reader-viewport[style*="display: block"]') || 
-                       document.getElementById('viewport_' + activeDocId + '_' + docLanguage);
-      if (!activeVp) return;
-
-      if (!val || val.length < 2) {
-        clearSearchHighlights(activeVp);
-        searchMatches = [];
-        currentMatchIndex = 0;
-        searchIsTruncated = false;
-        const badge = document.getElementById('searchMatchCount');
-        if (badge) badge.style.display = 'none';
-        return;
-      }
-
-      const res = highlightLiteral(activeVp, val, 500);
-      searchMatches = Array.from(activeVp.querySelectorAll('mark[data-psy9613-search="1"]'));
-      searchIsTruncated = !!(res && res.truncated);
-      currentMatchIndex = 0;
-      const badge = document.getElementById('searchMatchCount');
-      if (badge) {
-        badge.style.display = 'inline-block';
-        if (searchMatches.length > 0) {
-          updateMatchHighlight();
-        } else {
-          badge.textContent = '0/0';
-        }
-      }
-    }
-
-    function handleSearchKeydown(e) {
-      if (e.key === 'Enter' || e.key === 'F3') {
-        e.preventDefault();
-        navigateSearch(e.shiftKey ? -1 : 1);
-      }
-    }
-
-    function navigateSearch(dir) {
-      if (searchMatches.length === 0) return;
-      currentMatchIndex = (currentMatchIndex + dir + searchMatches.length) % searchMatches.length;
-      updateMatchHighlight();
-    }
-
-    function updateMatchHighlight() {
-      if (searchMatches.length === 0) return;
-      searchMatches.forEach((m, idx) => {
-        if (idx === currentMatchIndex) {
-          m.classList.add('current-match');
-          m.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          m.classList.remove('current-match');
-        }
-      });
-      const badge = document.getElementById('searchMatchCount');
-      if (badge) {
-        const prefix = searchIsTruncated ? '500+ tr. ' : '';
-        badge.textContent = `${prefix}(${currentMatchIndex + 1}/${searchMatches.length})`;
-      }
-    }
-
-    function clearSearch() {
-      const input = document.getElementById('docSearchInput');
-      if (input) input.value = '';
-      const activeVp = document.querySelector('.reader-viewport[style*="display: block"]') || 
-                       document.getElementById('viewport_' + activeDocId + '_' + docLanguage);
-      if (activeVp) clearSearchHighlights(activeVp);
-      searchMatches = [];
-      currentMatchIndex = 0;
-      searchIsTruncated = false;
-      const badge = document.getElementById('searchMatchCount');
-      if (badge) badge.style.display = 'none';
-    }
-
-    // =========================================================================
+// =========================================================================
     // 16. MODULE FLASHCARDS
     // =========================================================================
     function initFlashcards() {
