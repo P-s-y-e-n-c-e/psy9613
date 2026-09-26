@@ -3332,19 +3332,19 @@
                 <span class="podcast-ep-title">👁️ Cerveau prédictif &amp; Clark</span>
                 <span class="podcast-ep-duration">22 min</span>
               </button>
-              <button type="button" class="podcast-ep-btn active" id="epBtnDeepDiveS02" onclick="switchPodcastEpisode('deep_dive_s02')" role="tab" aria-selected="true" title="Épisode 2 : Bilan magistral Séance 2 avec le Pr Pierre Poirier (Verbatim GOLD)">
+              <button type="button" class="podcast-ep-btn active" id="epBtnDeepDiveS02" onclick="switchPodcastEpisode('deep_dive_s02')" role="tab" aria-selected="true" title="Épisode 2 : Bilan magistral Séance 2 (Verbatim GOLD)">
                 <span class="podcast-ep-num">Ép. 2</span>
-                <span class="podcast-ep-title">🏛️ De Descartes à NETtalk • Pr Poirier</span>
+                <span class="podcast-ep-title">🏛️ De Descartes à NETtalk</span>
                 <span class="podcast-ep-duration">17 min</span>
               </button>
-              <button type="button" class="podcast-ep-btn" id="epBtnPreS03" onclick="switchPodcastEpisode('pre_s03')" role="tab" aria-selected="false" title="Épisode 3 : Pré-cours Séance 3 (Mashour 2021 GNWT & Débat 1 Louis vs Alexandrea présidé par Michel)">
+              <button type="button" class="podcast-ep-btn" id="epBtnPreS03" onclick="switchPodcastEpisode('pre_s03')" role="tab" aria-selected="false" title="Épisode 3 : Pré-cours Séance 3 (En calibrage 10-12 min)">
                 <span class="podcast-ep-num">Ép. 3</span>
                 <span class="podcast-ep-title">⚖️ Espace Global &amp; Débat 1</span>
-                <span class="podcast-ep-duration">23 min</span>
+                <span class="podcast-ep-duration">⏳ Bientôt</span>
               </button>
             </div>
 
-            <h4 class="podcast-banner-title" id="podcastBannerTitle">« L'IA au défi de Descartes : La grande traversée avec Pierre Poirier »</h4>
+            <h4 class="podcast-banner-title" id="podcastBannerTitle">« De Descartes à NETtalk : La grande traversée »</h4>
             <p class="podcast-banner-desc" id="podcastBannerDesc">
               Bilan magistral étalon-or basé sur le Verbatim GOLD et les temps réels en classe : de la rupture cartésienne à la machine de Turing, la récursivité de Chomsky, les moteurs sémantiques de Haugeland (analogie du soccer), la surface d'erreur 3D et la démonstration sonore historique de NETtalk (1987).
             </p>
@@ -11948,7 +11948,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         id: 'deep_dive_s02',
         btnId: 'epBtnDeepDiveS02',
         tag: '🎙️ Grand Bilan Post-cours • Séance 2 (Étalon-Or)',
-        title: "« L'IA au défi de Descartes : La grande traversée avec Pierre Poirier »",
+        title: "« De Descartes à NETtalk : La grande traversée »",
         desc: "Bilan magistral étalon-or basé sur le Verbatim GOLD et les temps réels en classe : de la rupture cartésienne à la machine de Turing, la récursivité de Chomsky, les moteurs sémantiques de Haugeland (analogie du soccer), la surface d'erreur 3D et la démonstration sonore historique de NETtalk (1987).",
         durationTag: 'Audio 17 min',
         durationDisplay: '16:46',
@@ -11962,17 +11962,14 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       pre_s03: {
         id: 'pre_s03',
         btnId: 'epBtnPreS03',
-        tag: '🎙️ Grand Podcast Pré-cours • Séance 3 (Lundi 28 sept.)',
+        tag: '🎙️ Podcast Pré-cours • Séance 3 (Lundi 28 sept.)',
         title: "« L'Espace de Travail Global du cerveau & Cadrage du Débat 1 »",
-        desc: "Grand podcast approfondi (23 min 27) préparant la Séance 3 : les mécanismes de l'Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al.), l'embrasement conscient vs modularité, et le cadrage méthodologique du Débat 1 (Louis B vs Alexandrea Kelly) modéré par Michel.",
-        durationTag: 'Audio 23 min',
-        durationDisplay: '23:27',
-        src: '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a',
-        sources: [
-          '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a',
-          'PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a'
-        ],
-        downloadName: 'PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a'
+        desc: "Podcast de synthèse préparant la Séance 3 : les mécanismes de l'Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al.), l'embrasement conscient vs modularité, et le cadrage méthodologique du Débat 1. Format condensé officiel (10 à 12 min maximum) en cours de recalibrage.",
+        durationTag: 'En calibrage (10-12 min)',
+        durationDisplay: '⏳ Bientôt',
+        src: '',
+        sources: [],
+        downloadName: ''
       }
     };
 
@@ -12014,8 +12011,18 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         durationEl.title = "Temps restant : " + ep.durationDisplay;
       }
       if (downloadBtn) {
-        downloadBtn.href = ep.src;
-        downloadBtn.setAttribute('download', ep.downloadName || ep.src.split('/').pop());
+        if (!ep.src) {
+          downloadBtn.style.opacity = '0.4';
+          downloadBtn.style.pointerEvents = 'none';
+          downloadBtn.title = "Fichier audio en cours de calibrage (10-12 min)";
+          downloadBtn.removeAttribute('href');
+        } else {
+          downloadBtn.style.opacity = '1';
+          downloadBtn.style.pointerEvents = 'auto';
+          downloadBtn.href = ep.src;
+          downloadBtn.setAttribute('download', ep.downloadName || ep.src.split('/').pop());
+          downloadBtn.title = "Télécharger le fichier audio M4A";
+        }
       }
 
       // Mise à jour du lecteur audio
@@ -12027,8 +12034,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         while (audio.firstChild) {
           audio.removeChild(audio.firstChild);
         }
-        audio.src = ep.src;
-        if (ep.sources && Array.isArray(ep.sources)) {
+        audio.src = ep.src || '';
+        if (ep.sources && Array.isArray(ep.sources) && ep.sources.length > 0) {
           ep.sources.forEach(sUrl => {
             const s = document.createElement('source');
             s.src = sUrl;
@@ -12036,7 +12043,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
             audio.appendChild(s);
           });
         }
-        audio.load();
+        if (ep.src) audio.load();
 
         const progress = document.getElementById('audioSeekSlider');
         const curTime = document.getElementById('audioCurrentTime');
@@ -12083,6 +12090,11 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     function togglePlayPodcast() {
+      const ep = PODCAST_EPISODES[currentPodcastEp];
+      if (!ep || !ep.src) {
+        alert("Cet épisode est actuellement en cours d'enregistrement et de calibrage (format officiel condensé de 10 à 12 minutes). Il sera disponible sous peu !");
+        return;
+      }
       const audio = getAudioEl();
       if (!audio) return;
       const playBtnText = document.getElementById('audioPlayPauseText');
