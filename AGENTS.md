@@ -140,7 +140,7 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * STRICTEMENT confinée à la traduction académique anglais → français des textes du cours.
      * N'est assignée ni à la présidence ou modération des débats, ni à l'ingénierie logicielle du site, ni à la stratégie globale du Quartier Général.
 
-5. **Session « GitHub — Audit & Ergonomie Mobile » (Session Dédiée Ergonomie & Mobile — `5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`) :**
+5. **Session « GITHUB - Compatibilité mobile » (Session Dédiée Ergonomie & Mobile — `5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`) :**
    - **Mission exclusive :** Audit ergonomique continu, accessibilité tactile et fluidité responsive sur smartphones (priorité Samsung Galaxy S24) et tablettes.
    - **Responsabilités :**
      * Audit des surfaces d'appui et cibles tactiles (Loi de Fitts min 44×44 px / 48×48 dp) sur l'ensemble des modes (Étude, Flashcards, Podcasts).
