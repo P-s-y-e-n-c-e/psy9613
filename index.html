@@ -813,6 +813,66 @@
     }
     .tab-calendar { border-top: 3px solid #a855f7 !important; }
 
+    /* Différenciation visuelle du calendrier (cours passés vs cours actif) */
+    .timeline-entry.timeline-past {
+      background: var(--bg-card-alt);
+      border-color: rgba(148, 163, 184, 0.3);
+      opacity: 0.82;
+      box-shadow: none;
+      filter: grayscale(0.12);
+      transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    }
+    .timeline-entry.timeline-past:hover {
+      opacity: 1;
+      filter: grayscale(0);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    body.dark-mode .timeline-entry.timeline-past {
+      background: rgba(15, 23, 42, 0.55);
+      border-color: rgba(51, 65, 85, 0.45);
+      opacity: 0.72;
+    }
+    body.dark-mode .timeline-entry.timeline-past:hover {
+      opacity: 1;
+      background: var(--bg-card);
+      border-color: var(--border-color);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    .timeline-entry.timeline-current {
+      background: var(--bg-card);
+      border-color: #f59e0b;
+      box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2), 0 4px 14px rgba(245, 158, 11, 0.08);
+      position: relative;
+    }
+    body.dark-mode .timeline-entry.timeline-current {
+      background: rgba(30, 41, 59, 0.85);
+      border-color: #d97706;
+      box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.3), 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+    .badge-past {
+      background: rgba(100, 116, 139, 0.12) !important;
+      color: #64748b !important;
+      border: 1px solid rgba(100, 116, 139, 0.25) !important;
+    }
+    body.dark-mode .badge-past {
+      background: rgba(148, 163, 184, 0.12) !important;
+      color: #94a3b8 !important;
+      border-color: rgba(148, 163, 184, 0.25) !important;
+    }
+    .badge-current {
+      background: rgba(245, 158, 11, 0.16) !important;
+      color: #b45309 !important;
+      border: 1px solid rgba(245, 158, 11, 0.4) !important;
+      font-weight: 700 !important;
+    }
+    body.dark-mode .badge-current {
+      background: rgba(245, 158, 11, 0.22) !important;
+      color: #fcd34d !important;
+      border-color: rgba(245, 158, 11, 0.5) !important;
+    }
+
     .q-context-box {
       font-size: 0.92rem;
       color: var(--text-muted);
@@ -5189,8 +5249,8 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
   <!-- TIMELINE CHRONOLOGIQUE DES 15 SEMAINES -->
   <div class="timeline-wrap">
 
-    <!-- SEMAINE 1 -->
-    <div class="timeline-entry" style="border-left: 4px solid var(--primary);">
+    <!-- SEMAINE 1 (COMPLÉTÉE) -->
+    <div class="timeline-entry timeline-past" style="border-left: 4px solid var(--primary);">
       <div class="timeline-date-box">
         <span class="timeline-day">14</span>
         <span class="timeline-month">Sept.</span>
@@ -5199,11 +5259,14 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
         <h4>Semaine 1 — Présentation du cours &amp; Introduction (Pr Dave Saint-Amour)</h4>
         <p>Perception vs cognition vs intelligence, modèle classique de l'entrée et de la sortie, naissance de la psychologie expérimentale, l'action comme élément constitutif (Held &amp; Hein 1963, TVSS de Bach-y-Rita, théorie de la détection du signal TDS, dissociation des voies ventrale et dorsale, Bosco et al. 2023).</p>
       </div>
-      <span class="q-badge" style="background: rgba(37, 99, 235, 0.12); color: var(--primary); font-size: 0.74rem; align-self: center;">Socle perceptif</span>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: flex-end; align-self: center;">
+        <span class="q-badge badge-past" style="font-size: 0.74rem;" title="Séance passée">✓ Complétée</span>
+        <span class="q-badge" style="background: rgba(37, 99, 235, 0.12); color: var(--primary); font-size: 0.72rem;">Socle perceptif</span>
+      </div>
     </div>
 
-    <!-- SEMAINE 2 -->
-    <div class="timeline-entry" style="border-left: 4px solid #f59e0b;">
+    <!-- SEMAINE 2 (COMPLÉTÉE) -->
+    <div class="timeline-entry timeline-past" style="border-left: 4px solid #f59e0b;">
       <div class="timeline-date-box">
         <span class="timeline-day">21</span>
         <span class="timeline-month">Sept.</span>
@@ -5212,11 +5275,14 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
         <h4>Semaine 2 — Intelligence artificielle : Perspectives historiques (Pr Pierre Poirier)</h4>
         <p>Rupture cartésienne, machine de Turing, système formel et hypothèse du système de symboles physiques (PSSH de Newell &amp; Simon 1976), moteurs sémantiques de Haugeland (1981, analogie du soccer), riposte connexionniste (McClelland 2009), rétropropagation, surface d'erreur 3D et démonstration sonore historique de NETtalk (1987).</p>
       </div>
-      <span class="q-badge" style="background: rgba(245, 158, 11, 0.12); color: #d97706; font-size: 0.74rem; align-self: center;">Fondements IA</span>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: flex-end; align-self: center;">
+        <span class="q-badge badge-past" style="font-size: 0.74rem;" title="Séance passée">✓ Complétée</span>
+        <span class="q-badge" style="background: rgba(245, 158, 11, 0.12); color: #d97706; font-size: 0.72rem;">Fondements IA</span>
+      </div>
     </div>
 
-    <!-- SEMAINE 3 -->
-    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+    <!-- SEMAINE 3 (ACTIVE / PROCHAINE SÉANCE) -->
+    <div class="timeline-entry timeline-current" style="border-left: 4px solid #d97706;">
       <div class="timeline-date-box">
         <span class="timeline-day">28</span>
         <span class="timeline-month">Sept.</span>
@@ -5228,7 +5294,10 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
           <strong>⚖️ Débat 1 en dyade (Ouverture à 14h00) :</strong> <em>« Principes du traitement de l'information : modularité sensorielle spécialisée vs embrasement conscient de l'Espace de Travail Global »</em> (5 à 10 min par débatteur, débat animé par la présidence de séance, discussion en table ronde et vote de la classe).
         </div>
       </div>
-      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 1</span>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: flex-end; align-self: center;">
+        <span class="q-badge badge-current" style="font-size: 0.74rem;" title="Séance active du trimestre">📍 Prochaine séance</span>
+        <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.72rem;">Débat 1</span>
+      </div>
     </div>
 
     <!-- SEMAINE 4 -->
