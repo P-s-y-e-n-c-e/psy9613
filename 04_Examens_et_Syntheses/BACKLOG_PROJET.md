@@ -53,25 +53,22 @@
 
 ---
 
-## ⚡ 3. Sprint 1.2 en Cours (Moteur de Recherche & Sécurisation Architecture)
+- [x] **Sprint 1.2 Déployé (commit `4299891`) :**
+  - **Quarantaine `doc_seance_01_en` :** Cartouche d'avertissement explicite et attribut `data-quarantine="true"` pour interdire toute réactivation intempestive.
+  - **Réinitialisation automatique :** Forçage de `docLanguage = 'fr'` dans `switchTab()` dès la sélection d'une note de cours native (`FRENCH_ONLY_DOCS`).
+  - **Moteur de recherche non destructif haute visibilité (`TreeWalker`) :**
+    - Résolution définitive du bogue de recherche (défilement sans surlignage).
+    - **Palette orthogonale anti-confusion (Directive Michel) :** Interdiction stricte du jaune (déjà utilisé par les citations académiques `.source-anchor-target` en `#fef08a`).
+    - Toutes les occurrences ciblées en **Cyan Électrique** (`#bae6fd` en clair, `rgba(6,182,212,0.38)` en sombre).
+    - Occurrence active en **Magenta Vibrant / Fuchsia (`#d946ef`)** avec halo pulsant (`@keyframes searchPulse`) et défilement centré directement sur le mot.
+    - Compteur dynamique `X/Total` en temps réel.
 
-### Tâche 1.2.1 : Mise en Quarantaine formelle de `viewport_doc_seance_01_en`
-- **Constat :** L'agent de traduction avait produit une retraduction artificielle vers l'anglais des notes de cours francophones de Dave Saint-Amour.
-- **Action :** Balisage explicite dans le code avec bannière d'avertissement `<!-- QUARANTAINE ACADÉMIQUE -->` et attribut `data-quarantine="true"` pour empêcher formellement tout futur agent de réintégrer ce viewport dans la navigation.
-- **Réinitialisation automatique d'état :** Dans `switchTab(docId)`, forcer `docLanguage = 'fr'` lors de la sélection d'un document `FRENCH_ONLY_DOCS` afin que l'état linguistique ne reste pas bloqué sur `'en'`.
+---
 
-### Tâche 1.2.2 : Refonte complète de la Recherche Textuelle & Surbrillance Visuelle
-- **Constat d'échec sur le terrain :** Durant les quiz (notamment en PSY7010), la recherche scrollait vers un paragraphe sans jamais mettre en surbrillance le mot cherché, rendant le repérage impossible dans un bloc dense et causant des pertes de temps et de points.
-- **Action & Spécification :**
-  - Liaison avec le moteur DOM non destructif `highlightLiteral()` et `clearSearchHighlights()`.
-  - Encapsulation précise de chaque occurrence trouvée dans `<mark class="search-highlight">`.
-  - Mise en évidence éclatante de l'occurrence active via `search-highlight-active` avec pulse animé (`@keyframes searchPulse`).
-  - Défilement précis centré sur le mot exact.
-  - Compteur dynamique `X/Total` dans la barre de recherche.
-  - Parité esthétique haute visibilité en Mode Clair (jaune ambré / orange fluo) et Mode Sombre (doré contrasté / orange vibrant avec lueur halo).
+## ⚡ 3. Sprints à Venir & Améliorations Systémiques
 
-### Tâche 1.2.3 : Portabilité de la correction vers PSY7010
-- Documenter et préparer le patch miroir pour la station PSY7010 afin de corriger définitivement le même écueil vécu en séance d'évaluation.
+### Tâche 1.2.3 : Portabilité de la correction de recherche vers PSY7010
+- Documenter et préparer le patch miroir pour la station PSY7010 afin de corriger définitivement le même écueil vécu en séance d'évaluation (lignes 13010-13030 de `PSY7010/index.html`).
 
 ---
 
