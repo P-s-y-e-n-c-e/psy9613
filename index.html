@@ -2682,16 +2682,40 @@
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
       }
     }
-    /* Surbrillance de recherche */
+    /* Surbrillance de recherche générale (Cyan ciel lumineux / orthogonal au jaune des citations) */
     mark.search-highlight {
-      background: #fef08a;
-      color: #713f12;
-      border-radius: 3px;
-      padding: 0 2px;
+      background: #bae6fd !important;
+      color: #0369a1 !important;
+      font-weight: 700 !important;
+      padding: 1px 4px !important;
+      border-radius: 3px !important;
+      border-bottom: 2px solid #0284c7 !important;
     }
     body.dark-mode mark.search-highlight {
-      background: rgba(245, 158, 11, 0.35);
-      color: #fde68a;
+      background: rgba(6, 182, 212, 0.38) !important;
+      color: #7dd3fc !important;
+      border-bottom: 2px solid #38bdf8 !important;
+    }
+    /* Occurrence active sélectionnée (Magenta / Fuchsia éclatant - tranche sur fond blanc ET sur fond jaune de citation) */
+    mark.search-highlight.search-highlight-active {
+      background: #d946ef !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      padding: 2px 6px !important;
+      border-radius: 4px !important;
+      box-shadow: 0 0 0 3px #f472b6, 0 0 16px rgba(217, 70, 239, 0.85) !important;
+      outline: 2px solid #c026d3 !important;
+      animation: searchPulse 1.2s infinite alternate ease-in-out !important;
+    }
+    body.dark-mode mark.search-highlight.search-highlight-active {
+      background: #ec4899 !important;
+      color: #ffffff !important;
+      box-shadow: 0 0 0 3px #f472b6, 0 0 20px rgba(236, 72, 153, 0.9) !important;
+      outline: 2px solid #db2777 !important;
+    }
+    @keyframes searchPulse {
+      0% { transform: scale(1); filter: brightness(1); }
+      100% { transform: scale(1.08); filter: brightness(1.2); }
     }
 
 
@@ -5421,7 +5445,15 @@ This study station bridges the empirical foundations of Session 1 with the compu
 
 </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_seance_01_en">
+<!-- =========================================================================
+     ⚠️ QUARANTAINE ACADÉMIQUE / SÉCURITÉ ARCHITECTURE (DIRECTIVE MICHEL MERCIER) :
+     Ce viewport 'viewport_doc_seance_01_en' est une retraduction vers l'anglais
+     des notes de cours magistrales de Dave Saint-Amour (dispensées nativement en français).
+     Cette version anglaise NE DOIT JAMAIS être affichée ni réactivée dans l'interface.
+     Le bouton de langue pour Séance 1, Séance 2 et Contexte UQAM est strictement 
+     verrouillé à 'Français (Original)'. NE PAS RÉINTÉGRER CE VIEWPORT DANS LA NAVIGATION.
+     ========================================================================= -->
+<div class="reader-viewport" style="display: none !important;" id="viewport_doc_seance_01_en" data-quarantine="true">
 <h2 class="doc-art-title">Session 1 — Presentation &amp; Introduction (Prof. Dave Saint-Amour)</h2>
 <ul class="doc-list">
   <li><strong>Course :</strong> PSY9613 — Perception, cognition et intelligence artificielle (UQAM).</li>
@@ -10259,54 +10291,21 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
     
     // =========================================================================
-    // RECHERCHE DANS LE LECTEUR (PARITÉ STRICTE PSY7010)
+    // RECHERCHE DANS LE LECTEUR (PARITÉ STRICTE PSY7010 & SURBRILLANCE TREEWALKER)
     // =========================================================================
     let searchResults = [];
     let currentSearchIdx = 0;
 
     function handleSearch(e) {
-      if (e.key === 'Enter') nextSearchResult();
-      else executeSearch();
-    }
-
-    function prevSearchResult() {
-      if (!searchResults || searchResults.length === 0) return;
-      currentSearchIdx = (currentSearchIdx - 1 + searchResults.length) % searchResults.length;
-      searchResults[currentSearchIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    function nextSearchResult() {
-      if (!searchResults || searchResults.length === 0) return;
-      currentSearchIdx = (currentSearchIdx + 1) % searchResults.length;
-      searchResults[currentSearchIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    function clearSearch() {
-      const input = document.getElementById('readerSearchInput');
-      if (input) input.value = '';
-      const count = document.getElementById('searchCount');
-      if (count) {
-        count.textContent = '';
-        count.style.display = 'none';
+      if (e.key === 'Enter') {
+        if (e.shiftKey) prevSearchResult();
+        else nextSearchResult();
+      } else {
+        executeSearch();
       }
-      searchResults = [];
-      currentSearchIdx = 0;
     }
 
-    function executeSearch() {
-      const inputEl = document.getElementById('readerSearchInput');
-      const term = inputEl ? inputEl.value.trim() : '';
-      const countEl = document.getElementById('searchCount');
-      if (!term || term.length < 2) {
-        if (countEl) {
-          countEl.textContent = '';
-          countEl.style.display = 'none';
-        }
-        searchResults = [];
-        currentSearchIdx = 0;
-        return;
-      }
-      if (!sourceTextVisible) toggleSourceTextVisibility(true);
+    function getActiveReaderViewport() {
       let targetVp;
       if (FRENCH_ONLY_DOCS.includes(activeDocId)) {
         targetVp = document.getElementById('viewport_' + activeDocId + '_fr');
@@ -10318,32 +10317,103 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
           targetVp = document.getElementById('viewport_' + activeDocId + '_en');
         }
       }
-      if (!targetVp) return;
+      return targetVp;
+    }
 
-      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
-      const regex = new RegExp(escaped, 'i');
+    function updateActiveSearchHighlight() {
+      const countEl = document.getElementById('searchCount');
+      if (!searchResults || searchResults.length === 0) {
+        if (countEl) {
+          countEl.style.display = 'inline-block';
+          countEl.textContent = '0 résultat';
+        }
+        return;
+      }
 
-      const allCandidates = targetVp.querySelectorAll('.doc-para, .doc-subheading, .doc-heading, .doc-art-h2, .doc-art-h3, p, h1, h2, h3, h4, li, blockquote');
-      searchResults = [];
-      const seen = new Set();
-      allCandidates.forEach(block => {
-        if (block.tagName === 'P' && block.closest('blockquote')) return;
-        if (regex.test(block.textContent)) {
-          if (!seen.has(block)) {
-            seen.add(block);
-            searchResults.push(block);
-          }
+      searchResults.forEach((mark, idx) => {
+        if (idx === currentSearchIdx) {
+          mark.classList.add('search-highlight-active');
+        } else {
+          mark.classList.remove('search-highlight-active');
         }
       });
 
+      const activeMark = searchResults[currentSearchIdx];
+      if (activeMark) {
+        activeMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
       if (countEl) {
         countEl.style.display = 'inline-block';
-        countEl.textContent = searchResults.length + ' résultat' + (searchResults.length > 1 ? 's' : '');
+        countEl.textContent = `${currentSearchIdx + 1}/${searchResults.length}`;
       }
-      if (searchResults.length > 0) {
+    }
+
+    function prevSearchResult() {
+      if (!searchResults || searchResults.length === 0) return;
+      currentSearchIdx = (currentSearchIdx - 1 + searchResults.length) % searchResults.length;
+      updateActiveSearchHighlight();
+    }
+
+    function nextSearchResult() {
+      if (!searchResults || searchResults.length === 0) return;
+      currentSearchIdx = (currentSearchIdx + 1) % searchResults.length;
+      updateActiveSearchHighlight();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('readerSearchInput');
+      if (input) input.value = '';
+      const count = document.getElementById('searchCount');
+      if (count) {
+        count.textContent = '';
+        count.style.display = 'none';
+      }
+      document.querySelectorAll('.reader-viewport').forEach(vp => clearSearchHighlights(vp));
+      searchResults = [];
+      currentSearchIdx = 0;
+    }
+
+    function executeSearch() {
+      const inputEl = document.getElementById('readerSearchInput');
+      const term = inputEl ? inputEl.value.trim() : '';
+      const countEl = document.getElementById('searchCount');
+      const targetVp = getActiveReaderViewport();
+
+      // Nettoyer systématiquement toutes les anciennes surbrillances
+      if (targetVp) {
+        clearSearchHighlights(targetVp);
+      } else {
+        document.querySelectorAll('.reader-viewport').forEach(vp => clearSearchHighlights(vp));
+      }
+
+      if (!term || term.length < 2) {
+        if (countEl) {
+          countEl.textContent = '';
+          countEl.style.display = 'none';
+        }
+        searchResults = [];
         currentSearchIdx = 0;
-        searchResults[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
       }
+
+      if (!sourceTextVisible) toggleSourceTextVisibility(true);
+      if (!targetVp) return;
+
+      highlightLiteral(targetVp, term);
+      searchResults = Array.from(targetVp.querySelectorAll('mark.search-highlight'));
+
+      if (searchResults.length === 0) {
+        if (countEl) {
+          countEl.style.display = 'inline-block';
+          countEl.textContent = '0 résultat';
+        }
+        currentSearchIdx = 0;
+        return;
+      }
+
+      currentSearchIdx = 0;
+      updateActiveSearchHighlight();
     }
 
 
@@ -10561,6 +10631,10 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (!docId) return;
       if (!docId.startsWith('doc_')) docId = 'doc_' + docId;
       activeDocId = docId;
+
+      if (FRENCH_ONLY_DOCS.includes(docId)) {
+        docLanguage = 'fr';
+      }
 
       document.querySelectorAll('.reader-tab').forEach(b => b.classList.remove('active'));
       const tabBtn = document.getElementById('tab_' + docId);
