@@ -7638,53 +7638,17 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         <input type="text" id="feedbackAuthorInput" placeholder="Ex: Michel ou prenom.nom@courrier.uqam.ca" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-main); font-size: 0.88rem; font-family: inherit; box-sizing: border-box;">
       </div>
 
+      <!-- Note d'acheminement transparent -->
+      <div style="font-size: 0.80rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.45; background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 8px 12px; border-radius: 0 6px 6px 0;">
+        📨 <strong>Acheminement direct :</strong> Vos observations seront transmises directement à Michel Mercier (<code style="font-size: 0.78rem;">mercier.michel.4@courrier.uqam.ca</code>) pour analyse critique et vérification avec les verbatims officiels du cours.
+      </div>
+
       <!-- Actions -->
       <div style="display: flex; gap: 10px; justify-content: flex-end;">
         <button type="button" class="secondary-btn" onclick="closeFeedbackModal()" style="padding: 8px 16px;">Annuler</button>
-        <button type="button" class="primary-btn" onclick="submitFeedbackForm()" style="padding: 8px 20px; font-weight: 700;">
+        <button type="button" class="primary-btn" id="feedbackSubmitBtn" onclick="submitFeedbackForm()" style="padding: 8px 20px; font-weight: 700;">
           <span>📤</span> <span>Transmettre le feedback</span>
         </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-       MODAL 5 : BOÎTE DE RÉCEPTION DES RETOURS ÉTUDIANTS (INBOX)
-       ========================================================================= -->
-  <div class="modal-overlay" id="feedbackInboxModal" style="display: none;">
-    <div class="modal-card" style="max-width: 680px; max-height: 85vh; display: flex; flex-direction: column;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-shrink: 0;">
-        <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
-          <span>📥</span> <span>Boîte de réception des retours étudiants</span>
-        </h3>
-        <button type="button" class="modal-close-btn" onclick="closeFeedbackInboxModal()" style="background:none; border:none; font-size:1.4rem; cursor:pointer; color:var(--text-muted);">✕</button>
-      </div>
-
-      <p style="color: var(--text-muted); font-size: 0.86rem; line-height: 1.45; margin: 0 0 14px 0; flex-shrink: 0;">
-        Consultez et analysez les retours soumis par les étudiants. Conforme à la règle de non-modification automatique : toute révision doit faire l'objet d'un examen critique humain avant intégration.
-      </p>
-
-      <!-- Barre d'outils de la boîte de réception -->
-      <div style="display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; flex-shrink: 0;">
-        <button type="button" class="secondary-btn" onclick="copyFeedbacksMarkdown()" style="font-size: 0.80rem; padding: 6px 12px;">
-          <span>📋</span> <span>Copier en Markdown</span>
-        </button>
-        <button type="button" class="secondary-btn" onclick="exportFeedbacksJSON()" style="font-size: 0.80rem; padding: 6px 12px;">
-          <span>💾</span> <span>Exporter (JSON)</span>
-        </button>
-        <button type="button" class="secondary-btn" onclick="clearAllFeedbacks()" style="font-size: 0.80rem; padding: 6px 12px; color: #ef4444; border-color: rgba(239,68,68,0.3);">
-          <span>🗑️</span> <span>Tout effacer</span>
-        </button>
-      </div>
-
-      <!-- Liste des feedbacks (avec défilement) -->
-      <div id="feedbackListContainer" style="overflow-y: auto; flex-grow: 1; padding-right: 4px; display: flex; flex-direction: column; gap: 10px;">
-        <!-- Rempli dynamiquement en JS -->
-      </div>
-
-      <!-- Pied de boîte -->
-      <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-color); display: flex; justify-content: flex-end; flex-shrink: 0;">
-        <button type="button" class="secondary-btn" onclick="closeFeedbackInboxModal()" style="padding: 8px 18px;">Fermer</button>
       </div>
     </div>
   </div>
@@ -9614,7 +9578,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     function isAnyModalOpen() {
-      const modalIds = ['podcastModal', 'optionsModal', 'resetModal', 'feedbackModal', 'feedbackInboxModal'];
+      const modalIds = ['podcastModal', 'optionsModal', 'resetModal', 'feedbackModal'];
       return modalIds.some(id => {
         const el = document.getElementById(id);
         return el && el.style.display !== 'none';
@@ -11057,7 +11021,6 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
             closeOptionsModal();
             closeResetModal();
             closeFeedbackModal();
-            closeFeedbackInboxModal();
           }
           return;
         }
@@ -11137,9 +11100,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     // =========================================================================
-    // 21. SYSTÈME DE RETOUR & BOÎTE DE RÉCEPTION ÉTUDIANTE (FEEDBACK & INBOX)
+    // 21. SYSTÈME DE RETOUR ÉTUDIANT (ACHEMINEMENT DIRECT COURRIEL UQAM)
     // =========================================================================
-    const FEEDBACK_STORAGE_KEY = 'psy9613_feedbacks';
     let currentFeedbackContext = null;
 
     function openFeedbackModal(sourceType) {
@@ -11188,7 +11150,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       }
     }
 
-    function submitFeedbackForm() {
+    async function submitFeedbackForm() {
       const commentEl = document.getElementById('feedbackCommentText');
       const comment = commentEl ? commentEl.value.trim() : '';
       if (!comment) {
@@ -11204,180 +11166,66 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       const authorInput = document.getElementById('feedbackAuthorInput');
       const author = authorInput ? authorInput.value.trim() : '';
 
+      const submitBtn = document.getElementById('feedbackSubmitBtn');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '<span>📤</span> <span>Transmettre le feedback</span>';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>⏳</span> <span>Transmission en cours...</span>';
+      }
+
       const ctx = currentFeedbackContext || {};
-      const newFeedback = {
-        id: 'fb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5),
-        createdAt: new Date().toISOString(),
-        dateFormatted: new Date().toLocaleString('fr-CA', { dateStyle: 'short', timeStyle: 'short' }),
-        sourceType: ctx.sourceType || 'question',
-        itemId: ctx.id || null,
-        session: ctx.session || null,
-        doc_title: ctx.doc_title || '',
-        questionTitle: ctx.question || '',
-        typeKey: feedbackType,
-        typeLabel: feedbackTypeLabel,
-        comment: comment,
-        author: author || 'Anonyme'
+      const endpoint = 'https://formsubmit.co/ajax/mercier.michel.4@courrier.uqam.ca';
+      const payload = {
+        _subject: `[PSY9613] Signalement étudiant - ${ctx.sourceType === 'flashcard' ? 'Flashcard' : 'Question'} #${ctx.id} (Séance ${ctx.session || '?'})`,
+        _template: 'table',
+        _captcha: 'false',
+        'Type de signalement': feedbackTypeLabel,
+        'Élément': `${ctx.sourceType === 'flashcard' ? 'Flashcard' : 'Question'} #${ctx.id}`,
+        'Séance': ctx.session ? `Séance ${ctx.session}` : 'Générale',
+        'Texte source': ctx.doc_title || 'Non spécifié',
+        'Intitulé': ctx.question || '',
+        'Observation étudiante': comment,
+        'Auteur / Courriel': author || 'Anonyme / Non spécifié',
+        'Date (Montréal)': new Date().toLocaleString('fr-CA', { timeZone: 'America/Toronto' })
       };
 
       try {
-        const existing = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]');
-        existing.unshift(newFeedback);
-        localStorage.setItem(FEEDBACK_STORAGE_KEY, JSON.stringify(existing));
-      } catch (err) {
-        console.warn('Erreur enregistrement feedback localStorage:', err);
-      }
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
 
-      updateFeedbackInboxBadge();
-      closeFeedbackModal();
-      showNotificationToast('✅ Votre retour a été enregistré avec succès ! Merci.');
-    }
-
-    function updateFeedbackInboxBadge() {
-      const badge = document.getElementById('feedbackInboxCountBadge');
-      if (!badge) return;
-      try {
-        const list = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]');
-        if (Array.isArray(list) && list.length > 0) {
-          badge.textContent = list.length;
-          badge.style.display = 'inline-block';
+        if (response.ok) {
+          closeFeedbackModal();
+          showNotificationToast('✅ Observation transmise directement à Michel Mercier ! Merci.');
         } else {
-          badge.textContent = '0';
-          badge.style.display = 'none';
+          throw new Error('Erreur HTTP ' + response.status);
         }
-      } catch (e) {
-        badge.style.display = 'none';
+      } catch (err) {
+        console.warn('Transmission AJAX échouée, bascule vers le client de messagerie (mailto):', err);
+        const subject = encodeURIComponent(`[PSY9613] Signalement étudiant - ${ctx.sourceType === 'flashcard' ? 'Flashcard' : 'Question'} #${ctx.id}`);
+        const body = encodeURIComponent(
+          `Bonjour Michel,\n\n` +
+          `Voici une observation concernant la ${ctx.sourceType === 'flashcard' ? 'flashcard' : 'question'} #${ctx.id} (Séance ${ctx.session || '?'}, ${ctx.doc_title || ''}) :\n\n` +
+          `- Type : ${feedbackTypeLabel}\n` +
+          `- Intitulé : ${ctx.question || ''}\n` +
+          `- Observation : ${comment}\n` +
+          `- De : ${author || 'Anonyme'}\n`
+        );
+        window.location.href = `mailto:mercier.michel.4@courrier.uqam.ca?subject=${subject}&body=${body}`;
+        closeFeedbackModal();
+        showNotificationToast('✉️ Préparation du courriel vers Michel Mercier...');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
       }
-    }
-
-    function openFeedbackInboxModal() {
-      lastActiveTrigger = document.activeElement;
-      const modal = document.getElementById('feedbackInboxModal');
-      if (!modal) return;
-
-      renderFeedbackList();
-      modal.style.display = 'flex';
-    }
-
-    function closeFeedbackInboxModal() {
-      const modal = document.getElementById('feedbackInboxModal');
-      if (modal) modal.style.display = 'none';
-      if (lastActiveTrigger && typeof lastActiveTrigger.focus === 'function') {
-        lastActiveTrigger.focus();
-      }
-    }
-
-    function renderFeedbackList() {
-      const container = document.getElementById('feedbackListContainer');
-      if (!container) return;
-
-      let list = [];
-      try {
-        list = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]');
-      } catch (e) {
-        list = [];
-      }
-
-      if (!Array.isArray(list) || list.length === 0) {
-        container.innerHTML = `
-          <div style="text-align: center; padding: 40px 20px; color: var(--text-muted); background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: 12px;">
-            <div style="font-size: 2.2rem; margin-bottom: 8px;">📭</div>
-            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Aucun retour consigné pour le moment</div>
-            <div style="font-size: 0.85rem;">Les signalements et propositions soumis via les boutons « Feedback » apparaîtront ici pour révision.</div>
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = list.map((item, idx) => `
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 14px 16px; position: relative;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; flex-wrap: wrap; gap: 6px;">
-            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <span style="font-weight: 800; font-size: 0.82rem; background: var(--primary-light); color: var(--primary); padding: 2px 8px; border-radius: 6px;">
-                ${item.sourceType === 'flashcard' ? '🃏 Flashcard' : '❓ Question'} #${item.itemId} (S${item.session || '?'})
-              </span>
-              <span style="font-size: 0.80rem; font-weight: 600; color: var(--text-muted);">${item.typeLabel}</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 0.76rem; color: var(--text-muted);">${item.dateFormatted || ''}</span>
-              <button type="button" onclick="deleteFeedbackItem('${item.id}')" title="Supprimer ce retour" style="background: none; border: none; cursor: pointer; color: #ef4444; font-size: 0.85rem; padding: 0 4px;">✕</button>
-            </div>
-          </div>
-          <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 8px; font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-            « ${item.questionTitle ? item.questionTitle.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''} »
-          </div>
-          <div style="font-size: 0.90rem; color: var(--text-main); line-height: 1.45; background: var(--bg-card-alt); border-radius: 6px; padding: 8px 12px; margin-bottom: 6px; white-space: pre-wrap;">${item.comment ? item.comment.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''}</div>
-          <div style="font-size: 0.76rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-            <span>Auteur : <strong>${item.author ? item.author.replace(/</g, '&lt;').replace(/>/g, '&gt;') : 'Anonyme'}</strong></span>
-            <span>${item.doc_title || ''}</span>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    function deleteFeedbackItem(id) {
-      try {
-        let list = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]');
-        list = list.filter(item => item.id !== id);
-        localStorage.setItem(FEEDBACK_STORAGE_KEY, JSON.stringify(list));
-      } catch (e) {
-        console.warn('Erreur suppression feedback:', e);
-      }
-      renderFeedbackList();
-      updateFeedbackInboxBadge();
-      showNotificationToast('Retour supprimé.');
-    }
-
-    function clearAllFeedbacks() {
-      if (!confirm("Voulez-vous vraiment effacer tous les retours consignés dans la boîte locale ?")) return;
-      localStorage.removeItem(FEEDBACK_STORAGE_KEY);
-      renderFeedbackList();
-      updateFeedbackInboxBadge();
-      showNotificationToast('Tous les retours ont été effacés.');
-    }
-
-    function copyFeedbacksMarkdown() {
-      let list = [];
-      try {
-        list = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]');
-      } catch (e) {
-        list = [];
-      }
-      if (!list.length) {
-        alert("Aucun retour à copier pour le moment.");
-        return;
-      }
-
-      let md = `# 📥 Retours et Feedbacks Étudiants — PSY9613\n\n`;
-      md += `*Exporté le ${new Date().toLocaleString('fr-CA')} (${list.length} entrée(s))*\n\n`;
-      list.forEach((item, idx) => {
-        md += `### ${idx + 1}. [${item.sourceType === 'flashcard' ? 'Flashcard' : 'Question'} #${item.itemId}] ${item.typeLabel}\n`;
-        md += `- **Date :** ${item.dateFormatted} | **Auteur :** ${item.author}\n`;
-        md += `- **Séance / Source :** Séance ${item.session || '?'} (${item.doc_title || 'Corpus'})\n`;
-        md += `- **Question :** *« ${item.questionTitle} »*\n`;
-        md += `- **Observation étudiante :**\n> ${item.comment.replace(/\n/g, '\n> ')}\n\n`;
-      });
-
-      navigator.clipboard.writeText(md).then(() => {
-        showNotificationToast('📋 Rapport Markdown copié dans le presse-papier !');
-      }).catch(err => {
-        console.error('Erreur copie presse-papier:', err);
-        alert("Impossible d'accéder au presse-papier automatiquement. Veuillez exporter en JSON.");
-      });
-    }
-
-    function exportFeedbacksJSON() {
-      let data = localStorage.getItem(FEEDBACK_STORAGE_KEY) || '[]';
-      const blob = new Blob([data], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `psy9613_feedbacks_${new Date().toISOString().slice(0, 10)}.json`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-      showNotificationToast('💾 Export JSON téléchargé !');
     }
 
     let toastTimeoutId = null;
@@ -11410,7 +11258,6 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       filterCategory('all');
       initKeyboardShortcuts();
       updateFlashcardStats();
-      updateFeedbackInboxBadge();
     });
 
   
