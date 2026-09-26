@@ -11,6 +11,8 @@ PSY9613*.mp4
 
 # Autoriser les podcasts audio officiels
 !02_Lectures_et_Articles/**/Podcast/*.m4a
+!02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/*.m4a
+!02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/*.m4a
 
 # OS / Temporaires
 Thumbs.db

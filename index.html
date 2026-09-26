@@ -1608,6 +1608,66 @@
       line-height: 1.35;
     }
     body.dark-mode .podcast-banner-desc { color: #94a3b8; }
+
+    /* SÉLECTEUR MULTI-ÉPISODES CONVIVIAL (PARITÉ PSY7010) */
+    .podcast-episode-switcher {
+      display: flex;
+      gap: 8px;
+      margin: 8px 0 10px 0;
+      flex-wrap: wrap;
+    }
+    .podcast-ep-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid rgba(217, 119, 6, 0.3);
+      background: rgba(254, 243, 199, 0.6);
+      color: #92400e;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .podcast-ep-btn:hover {
+      background: rgba(253, 230, 138, 0.9);
+      border-color: #d97706;
+      transform: translateY(-1px);
+    }
+    .podcast-ep-btn.active {
+      background: #d97706;
+      color: #ffffff;
+      border-color: #b45309;
+      box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
+    }
+    body.dark-mode .podcast-ep-btn {
+      background: rgba(30, 41, 59, 0.8);
+      border-color: rgba(245, 158, 11, 0.3);
+      color: #fcd34d;
+    }
+    body.dark-mode .podcast-ep-btn:hover {
+      background: rgba(51, 65, 85, 0.9);
+      border-color: #f59e0b;
+    }
+    body.dark-mode .podcast-ep-btn.active {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #fbbf24;
+    }
+    .podcast-ep-num {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.85;
+    }
+    .podcast-ep-duration {
+      font-size: 0.68rem;
+      opacity: 0.75;
+      margin-left: 2px;
+    }
+
     .podcast-banner-right { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
     .podcast-play-btn {
       display: inline-flex;
@@ -3032,30 +3092,49 @@
 
         <!-- SECTION PODCAST GEMINI NOTEBOOK (PARITÉ PSY7010) -->
         <div class="podcast-section-divider" id="optionalResourcesSection">
-          <span>RESSOURCE AUDIO DU COURS • GEMINI NOTEBOOK</span>
+          <span>RESSOURCES AUDIO DU COURS • GEMINI NOTEBOOK</span>
         </div>
 
         <div class="podcast-banner" id="podcastBanner">
-          <div class="podcast-avatar-circle" id="podcastAvatarCircle" onclick="togglePlayPodcast()" title="Lancer / Mettre en pause l'audio">
+          <div class="podcast-avatar-circle" id="podcastAvatarCircle" onclick="togglePlayPodcast()" style="cursor: pointer;" title="Lancer / Mettre en pause l'audio">
             <span id="podcastPlayIcon">▶️</span>
           </div>
 
           <div class="podcast-banner-center">
             <div class="podcast-banner-tag-row">
-              <span class="podcast-tag-badge">🎙️ Podcast de Révision • Séance 2 (Pr Pierre Poirier)</span>
-              <span class="podcast-duration-tag" id="podcastDurationBadge">Audio M4A • 22:42</span>
+              <span class="podcast-tag-badge" id="podcastTagBadge">🎙️ Grand Bilan Post-cours • Séance 2 (Étalon-Or)</span>
+              <span class="podcast-duration-tag" id="podcastDurationBadge">Audio 13 min</span>
             </div>
-            <h4 class="podcast-banner-title">« La perception est une hallucination contrôlée »</h4>
-            <p class="podcast-banner-desc">
-              Discussion audio préparatoire générée avec Gemini Notebook d'après le corpus officiel de la séance 2 : Haugeland (moteurs sémantiques), Newell &amp; Simon (PSSH), McClelland (modélisation), Sejnowski (LLMs) et Dreyfus (critique incarnée).
+
+            <!-- SÉLECTEUR MULTI-ÉPISODES CONVIVIAL -->
+            <div class="podcast-episode-switcher" role="tablist" aria-label="Sélection de l'épisode du podcast">
+              <button type="button" class="podcast-ep-btn" id="epBtnPreS02" onclick="switchPodcastEpisode('pre_s02')" role="tab" aria-selected="false" title="Épisode 1 : Pré-cours Séance 2 (Clark, Seth, modélisation bayésienne)">
+                <span class="podcast-ep-num">Ép. 1</span>
+                <span class="podcast-ep-title">👁️ Cerveau prédictif &amp; Clark</span>
+                <span class="podcast-ep-duration">22 min</span>
+              </button>
+              <button type="button" class="podcast-ep-btn active" id="epBtnDeepDiveS02" onclick="switchPodcastEpisode('deep_dive_s02')" role="tab" aria-selected="true" title="Épisode 2 : Bilan magistral Séance 2 avec le Pr Pierre Poirier (Verbatim GOLD)">
+                <span class="podcast-ep-num">Ép. 2</span>
+                <span class="podcast-ep-title">🏛️ De Descartes à NETtalk • Pr Poirier</span>
+                <span class="podcast-ep-duration">13 min</span>
+              </button>
+              <button type="button" class="podcast-ep-btn" id="epBtnPreS03" onclick="switchPodcastEpisode('pre_s03')" role="tab" aria-selected="false" title="Épisode 3 : Pré-cours Séance 3 (Mashour 2021 GNWT & Débat 1 Louis vs Alexandrea présidé par Michel)">
+                <span class="podcast-ep-num">Ép. 3</span>
+                <span class="podcast-ep-title">⚖️ Espace Global &amp; Débat 1</span>
+                <span class="podcast-ep-duration">4 min</span>
+              </button>
+            </div>
+
+            <h4 class="podcast-banner-title" id="podcastBannerTitle">« L'IA au défi de Descartes : La grande traversée avec Pierre Poirier »</h4>
+            <p class="podcast-banner-desc" id="podcastBannerDesc">
+              Bilan magistral étalon-or basé sur le Verbatim GOLD et les temps réels en classe : de la rupture cartésienne à la machine de Turing, la récursivité de Chomsky, les moteurs sémantiques de Haugeland (analogie du soccer), la surface d'erreur 3D et la démonstration sonore historique de NETtalk (1987).
             </p>
 
             <!-- LECTEUR AUDIO STREAMING INTÉGRÉ -->
             <div class="podcast-player-wrap">
               <audio id="localPodcastAudio" preload="metadata" ontimeupdate="updateAudioProgress()" onended="onAudioEnded()">
-                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/mp4">
-                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contrôlée.m4a" type="audio/mp4">
-                <source src="La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" type="audio/mp4">
+                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" type="audio/mp4">
+                <source src="PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" type="audio/mp4">
               </audio>
 
               <div class="custom-audio-controls">
@@ -3073,7 +3152,7 @@
                 <div class="audio-timeline-wrap">
                   <span class="audio-time-label" id="audioCurrentTime">00:00</span>
                   <input type="range" class="audio-seek-slider" id="audioSeekSlider" value="0" min="0" max="100" step="0.1" oninput="seekAudio(this.value)">
-                  <span class="audio-time-label" id="audioDuration" title="Temps restant">22:42</span>
+                  <span class="audio-time-label" id="audioDuration" title="Temps restant">13:25</span>
                 </div>
 
                 <div class="audio-speed-wrap">
@@ -3086,7 +3165,7 @@
           </div>
 
           <div class="podcast-banner-right">
-            <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a" download="La_perception_est_une_hallucination_contrôlée.m4a" class="podcast-play-btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); margin-bottom: 4px;" title="Télécharger le fichier audio M4A">
+            <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" download="PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" id="podcastDownloadBtn" class="podcast-play-btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); margin-bottom: 4px;" title="Télécharger le fichier audio M4A">
               ⬇️ Télécharger (.m4a)
             </a>
             <button class="podcast-edit-link-btn" onclick="openPodcastModal()" title="Consulter les directives du prompt">
@@ -11374,12 +11453,153 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       filterCategory('all');
       initKeyboardShortcuts();
       updateFlashcardStats();
+      try {
+        const savedEp = localStorage.getItem('psy9613_active_podcast_ep');
+        if (savedEp && PODCAST_EPISODES[savedEp]) {
+          switchPodcastEpisode(savedEp, false);
+        }
+      } catch (e) {}
     });
 
   
     // =========================================================================
     // GESTION DU LECTEUR AUDIO DU PODCAST (PARITÉ PSY7010)
     // =========================================================================
+    const PODCAST_EPISODES = {
+      pre_s02: {
+        id: 'pre_s02',
+        btnId: 'epBtnPreS02',
+        tag: '🎙️ Podcast Pilote • Pré-cours Séance 2',
+        title: '« La perception est une hallucination contrôlée »',
+        desc: "Discussion préparatoire générée d'après le corpus théorique initial (Andy Clark, Anil Seth, Dreyfus) : perception bayésienne, modèles prédictifs et fondements de la modélisation cognitive.",
+        durationTag: 'Audio 22 min',
+        durationDisplay: '22:42',
+        src: '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contrôlée.m4a',
+        sources: [
+          '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a',
+          '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contrôlée.m4a',
+          'La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a'
+        ],
+        downloadName: 'La_perception_est_une_hallucination_contrôlée.m4a'
+      },
+      deep_dive_s02: {
+        id: 'deep_dive_s02',
+        btnId: 'epBtnDeepDiveS02',
+        tag: '🎙️ Grand Bilan Post-cours • Séance 2 (Étalon-Or)',
+        title: "« L'IA au défi de Descartes : La grande traversée avec Pierre Poirier »",
+        desc: "Bilan magistral étalon-or basé sur le Verbatim GOLD et les temps réels en classe : de la rupture cartésienne à la machine de Turing, la récursivité de Chomsky, les moteurs sémantiques de Haugeland (analogie du soccer), la surface d'erreur 3D et la démonstration sonore historique de NETtalk (1987).",
+        durationTag: 'Audio 13 min',
+        durationDisplay: '13:25',
+        src: '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a',
+        sources: [
+          '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a',
+          'PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a'
+        ],
+        downloadName: 'PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a'
+      },
+      pre_s03: {
+        id: 'pre_s03',
+        btnId: 'epBtnPreS03',
+        tag: '🎙️ Capsule Pré-cours • Séance 3 (Lundi 28 sept.)',
+        title: "« L'Espace de Travail Global du cerveau & Cadrage du Débat 1 »",
+        desc: "Capsule concise (4 min 30) préparant la Séance 3 : les mécanismes de l'Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al.), l'embrasement conscient vs modularité, et le cadrage du Débat 1 (Louis B vs Alexandrea Kelly) modéré par Michel.",
+        durationTag: 'Audio 4 min',
+        durationDisplay: '04:31',
+        src: '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a',
+        sources: [
+          '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a',
+          'PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a'
+        ],
+        downloadName: 'PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a'
+      }
+    };
+
+    let currentPodcastEp = 'deep_dive_s02';
+
+    function switchPodcastEpisode(epKey, autoPlay = false) {
+      const ep = PODCAST_EPISODES[epKey];
+      if (!ep) return;
+      currentPodcastEp = epKey;
+      try {
+        localStorage.setItem('psy9613_active_podcast_ep', epKey);
+      } catch (e) {}
+
+      // Mise à jour des boutons d'onglets
+      document.querySelectorAll('.podcast-ep-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      const activeBtn = document.getElementById(ep.btnId);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.setAttribute('aria-selected', 'true');
+      }
+
+      // Mise à jour des textes
+      const tagEl = document.getElementById('podcastTagBadge');
+      const titleEl = document.getElementById('podcastBannerTitle');
+      const descEl = document.getElementById('podcastBannerDesc');
+      const durationBadge = document.getElementById('podcastDurationBadge');
+      const durationEl = document.getElementById('audioDuration');
+      const downloadBtn = document.getElementById('podcastDownloadBtn');
+
+      if (tagEl) tagEl.textContent = ep.tag;
+      if (titleEl) titleEl.textContent = ep.title;
+      if (descEl) descEl.textContent = ep.desc;
+      if (durationBadge) durationBadge.textContent = ep.durationTag;
+      if (durationEl) {
+        durationEl.textContent = ep.durationDisplay;
+        durationEl.title = "Temps restant : " + ep.durationDisplay;
+      }
+      if (downloadBtn) {
+        downloadBtn.href = ep.src;
+        downloadBtn.setAttribute('download', ep.downloadName || ep.src.split('/').pop());
+      }
+
+      // Mise à jour du lecteur audio
+      const audio = getAudioEl();
+      if (audio) {
+        const wasPlaying = !audio.paused && audio.currentTime > 0;
+        audio.pause();
+
+        while (audio.firstChild) {
+          audio.removeChild(audio.firstChild);
+        }
+        audio.src = ep.src;
+        if (ep.sources && Array.isArray(ep.sources)) {
+          ep.sources.forEach(sUrl => {
+            const s = document.createElement('source');
+            s.src = sUrl;
+            s.type = 'audio/mp4';
+            audio.appendChild(s);
+          });
+        }
+        audio.load();
+
+        const progress = document.getElementById('audioSeekSlider');
+        const curTime = document.getElementById('audioCurrentTime');
+        const playBtnText = document.getElementById('audioPlayPauseText');
+        const playBtnIcon = document.getElementById('audioPlayPauseIcon');
+        const avatarIcon = document.getElementById('podcastPlayIcon');
+
+        if (progress) progress.value = 0;
+        if (curTime) curTime.textContent = '00:00';
+        if (playBtnText) playBtnText.textContent = 'Écouter';
+        if (playBtnIcon) playBtnIcon.textContent = '▶️';
+        if (avatarIcon) avatarIcon.textContent = '▶️';
+        document.getElementById('podcastBanner')?.classList.remove('playing');
+
+        if (autoPlay || wasPlaying) {
+          audio.play().then(() => {
+            if (playBtnText) playBtnText.textContent = 'Pause';
+            if (playBtnIcon) playBtnIcon.textContent = '⏸️';
+            if (avatarIcon) avatarIcon.textContent = '⏸️';
+            document.getElementById('podcastBanner')?.classList.add('playing');
+          }).catch(e => console.warn("Lecture bloquée:", e));
+        }
+      }
+    }
+
     const audioSpeeds = [1.0, 1.25, 1.5, 1.75, 2.0];
     let currentSpeedIdx = 0;
     let lastAudioVolume = 1.0;
