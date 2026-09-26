@@ -179,81 +179,6 @@
       transition: transform 0.2s ease;
     }
 
-    /* BADGE EN CONSTRUCTION AVEC TOOLTIP INTERACTIF (CONFORME PSY7010) */
-    .construction-badge-wrap {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      vertical-align: middle;
-      margin-left: 8px;
-      cursor: help;
-      outline: none;
-    }
-    .construction-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 2px 8px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      border-radius: 9999px;
-      background: rgba(245, 158, 11, 0.12);
-      color: #b45309;
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    body.dark-mode .construction-badge {
-      background: rgba(245, 158, 11, 0.18);
-      color: #fbbf24;
-      border-color: rgba(245, 158, 11, 0.4);
-    }
-    .construction-badge-wrap:hover .construction-badge,
-    .construction-badge-wrap:focus .construction-badge {
-      background: rgba(245, 158, 11, 0.22);
-      border-color: #f59e0b;
-    }
-    .construction-tooltip {
-      position: absolute;
-      top: calc(100% + 6px);
-      left: 0;
-      z-index: 1000;
-      width: 290px;
-      padding: 10px 12px;
-      border-radius: 8px;
-      background: var(--bg-card);
-      color: var(--text-main);
-      font-size: 0.78rem;
-      font-weight: 500;
-      line-height: 1.45;
-      text-transform: none;
-      letter-spacing: normal;
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-4px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-      pointer-events: none;
-    }
-    .construction-badge-wrap:hover .construction-tooltip,
-    .construction-badge-wrap:focus .construction-tooltip,
-    .construction-badge-wrap:focus-within .construction-tooltip {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-    @media (max-width: 640px) {
-      .construction-badge {
-        font-size: 0.68rem;
-        padding: 1px 6px;
-      }
-      .construction-tooltip {
-        left: -40px;
-        width: 250px;
-      }
-    }
 
     .header-nav {
       display: flex;
@@ -3082,10 +3007,6 @@
             <img src="toad.png" alt="Toad - PSY9613" class="header-mascot-icon" style="height: 32px; width: 32px; border-radius: 50%; object-fit: contain; flex-shrink: 0;">
           </a>
           <span>PSY9613 - Station d'Étude</span>
-          <span class="construction-badge-wrap" tabindex="0" role="note" aria-label="Plateforme d'étude en cours de perfectionnement et de construction continue. Des ajustements ou coquilles peuvent subsister, merci de vérifier avec les textes de cours officiels. Vos remarques et commentaires sont les bienvenus !">
-            <span class="construction-badge">🚧 En construction</span>
-            <span class="construction-tooltip" role="tooltip">Plateforme d'étude en cours de perfectionnement et de construction continue. Des ajustements ou coquilles peuvent subsister, merci de vérifier avec les textes de cours officiels. Vos remarques et commentaires sont les bienvenus !</span>
-          </span>
         </h1>
         <div class="quiz-sub-date">Examen 1 (Mi-session, 35 %) — Séances 1 &amp; 2 : Perception, Cognition &amp; Fondements de l'IA (Pr Dave Saint-Amour &amp; Pr Pierre Poirier)</div>
       </div>
@@ -8272,7 +8193,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         <label for="feedbackAuthorInput" style="display: block; font-weight: 600; font-size: 0.82rem; margin-bottom: 4px; color: var(--text-muted);">
           Votre prénom ou courriel UQAM (optionnel) :
         </label>
-        <input type="text" id="feedbackAuthorInput" placeholder="Ex: Michel ou prenom.nom@courrier.uqam.ca" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-main); font-size: 0.88rem; font-family: inherit; box-sizing: border-box;">
+        <input type="text" id="feedbackAuthorInput" placeholder="" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-main); font-size: 0.88rem; font-family: inherit; box-sizing: border-box;">
       </div>
 
       <!-- Note d'acheminement transparent -->
