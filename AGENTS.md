@@ -126,6 +126,7 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 3. **PODCAST - Salle de production** :
    - **Mission exclusive :** Conception, structuration pédagogique et spécifications de production des capsules audio de révision (Gemini Notebook multi-épisodes).
+   - **Périmètre strictement confiné :** Aucun développement logiciel front-end (interdiction formelle de modifier `index.html`), aucun commit ni push Git. La session produit et calibre exclusivement les fichiers audio (`.m4a`) et leurs guides Markdown associés, puis transmet impérativement ses livrables et spécifications d'intégration à `GITHUB - Contenu du site web` (qui valide et transfère ensuite à `GITHUB - Maintenance du site`).
 
 4. **GITHUB - Maintenance du site** (`30eff855-2022-4c41-a03d-1dc843aed0d0`) :
    - **Mission exclusive :** Ingénierie logicielle pure : code front-end (HTML/CSS/JS vanilla de `index.html`), lecteur multi-podcasts, parité ergonomique avec PSY7010, tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub Pages.

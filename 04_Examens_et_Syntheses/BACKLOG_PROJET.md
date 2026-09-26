@@ -77,6 +77,11 @@
 ### Tâche 1.2.3 : Portabilité de la correction de recherche vers PSY7010
 - Documenter et préparer le patch miroir pour la station PSY7010 afin de corriger définitivement le même écueil vécu en séance d'évaluation (lignes 13010-13030 de `PSY7010/index.html`).
 
+### Tâche 1.2.4 : Gouvernance & Herméticité des Rôles (Incident PODCAST S03)
+- **Incident & Auto-signalement :** La session PODCAST a auto-signalé une modification directe de `index.html` et un commit Git lors de la livraison de l'Épisode 3 (commit `5147cee`), outrepassant son mandat.
+- **Action de verrouillage dans `AGENTS.md` :** Inscription formelle de la clause de confinement strict pour `PODCAST - Salle de production` (interdiction formelle de modifier le code et de committer).
+- **Chaîne de transmission rétablie :** `PODCAST` (production audio .m4a et guides) -> `GITHUB - Contenu du site web` (validation pédagogique) -> `GITHUB - Maintenance du site` (intégration logicielle et déploiement).
+
 ---
 
 ## 📅 4. Prochaines Étapes & Échéancier Académique
