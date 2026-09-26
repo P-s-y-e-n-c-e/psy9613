@@ -1,6 +1,6 @@
 # 📋 Backlog & Feuille de Route Officielle — PSY9613 (Station d'Étude & Examens)
 
-**Dernière mise à jour :** 26 Septembre 2026  
+**Dernière mise à jour :** 26 Septembre 2026 (01h50 EDT)  
 **Responsable de la gouvernance :** Session Quartier Général (HQ)  
 **Acteurs opérationnels :** 
 - Session Contenu Web (`76989406-e739-4d56-85aa-9280b2a78eb4`)
@@ -18,15 +18,16 @@
 | **Correction du bogue de défilement (Strong tags)** | ✅ En production | Maintenance | Audit CDP live |
 | **Système de Feedback Étudiant (FormSubmit privé)** | ✅ En production | Maintenance | Michel Mercier |
 | **Corpus de 5 articles intégraux traduits en FR** | ✅ En production | Traduction | Équipe |
-| **Hygiène du basculeur de langue (Notes FR grisées)** | 🟡 En cours (Sprint 1.1) | Maintenance | HQ |
-| **Easter Egg inter-cours (Toadette ↔ PSY7010)** | 🟡 En cours (Sprint 1.1) | Maintenance (9613/7010) | HQ |
+| **Sprint 1.1 : Verrouillage sélecteur de langue & Easter Egg** | ✅ En production (`77cbdd0`) | Maintenance | HQ / Michel |
+| **Sprint 1.2 : Quarantaine S1 EN & Réinitialisation Langue** | 🟡 En cours | Maintenance | HQ / Michel |
+| **Sprint 1.2 : Moteur de Recherche & Surbrillance Visuelle** | 🟡 En cours | Maintenance | HQ / Michel |
 | **Séance 3 : Présidence du Débat 1 (Louis vs Alexandrea)** | 🔵 Planifié (Séance 3) | HQ / Michel | Dave Saint-Amour |
 | **Banque d'examen Séance 3 (Traitement de l'info)** | 🔵 Planifié | Contenu | Audit adversarial |
 | **Préparation Examen 1 (Séances 1 à 6 — 2 nov. 2026)** | 🔵 Planifié | HQ / Contenu | Michel Mercier |
 
 ---
 
-## 🚀 2. Livrables Complétés & Validés (Production v1.0)
+## 🚀 2. Livrables Complétés & Validés (Production v1.0 & v1.1)
 
 ### A. Psychométrie & Banque d'Examen (40 Items en Ligne)
 - [x] **Dépollution calculatoire intégrale :** Éradication de tout calcul mathématique, formule de Weibull ou score Z. Les 40 items évaluent 100 % de mécanismes conceptuels qualitatifs, protocoles et dissociations (TDS, Held & Hein, TVSS, Aglioti vs Jackson & Shaw, Bosco 2023, PSSH, Connexionnisme).
@@ -34,10 +35,13 @@
 - [x] **Alignement strict vérité-classe (GOLD) :** Ancrage direct sur les verbatims oraux de Dave Saint-Amour (S1) et Pierre Poirier (S2).
 
 ### B. Front-End & Expérience Utilisateur (`index.html`)
-- [x] **Restauration du défilement :** Élimination des balises `**` Markdown orphelines aux lignes 4187 & 4194 qui perturbaient l'algorithme d'adoption HTML5 et bloquaient le scrolling des 18 viewports.
-- [x] **Barre d'outils unifiée :** Recherche textuelle en direct avec surbrillance, zoom typographique réinitialisable, masquage des sources pour auto-évaluation à l'aveugle.
+- [x] **Restauration du défilement :** Élimination des balises `**` Markdown orphelines aux lignes 4187 & 4194 qui perturbaient l'algorithme d'adoption HTML5 et bloquaient le scrolling des 18 viewports (commit `2dcd303`).
+- [x] **Barre d'outils unifiée :** Zoom typographique réinitialisable, masquage des sources pour auto-évaluation à l'aveugle.
 - [x] **Pagination Google :** Navigation fluide 1-40 avec codes couleur de réponse, mémorisation `localStorage`, mode Flashcards avec auto-évaluation Spaced Repetition.
-- [x] **Canal de feedback étudiant sécurisé :** Formulaire d'envoi par relais HTTPS (`formsubmit.co`) directement vers `mercier.michel.4@courrier.uqam.ca` avec repli `mailto:`. Suppression totale de la modale publique locale.
+- [x] **Canal de feedback étudiant sécurisé :** Formulaire d'envoi par relais HTTPS (`formsubmit.co`) directement vers `mercier.michel.4@courrier.uqam.ca` avec repli `mailto:`. Suppression totale de la modale publique locale (commit `0aa8e3f`).
+- [x] **Sprint 1.1 Déployé (commit `77cbdd0`) :**
+  - Verrouillage du bouton de langue sur `🌐 Français (Original)` pour `doc_seance_01`, `doc_seance_02` et `doc_context`.
+  - Easter Egg Toadette cliquable avec animation de tilt au survol pointant vers PSY7010 (`../psy7010/`).
 
 ### C. Corpus Scientifique & Traductions
 - [x] **5 articles fondamentaux traduits mot à mot en français avec ancres interactives :**
@@ -49,25 +53,25 @@
 
 ---
 
-## ⚡ 3. Sprint Actuel en Cours (Version 1.1)
+## ⚡ 3. Sprint 1.2 en Cours (Moteur de Recherche & Sécurisation Architecture)
 
-### Tâche 1.1.1 : Verrouillage du sélecteur de langue pour les notes de cours FR
-- **Constat :** Les onglets *Séance 1 (Dave Saint-Amour)*, *Séance 2 (Pierre Poirier)* et *Contexte UQAM* sont des notes de cours natives rédigées directement en français. Afficher une bascule vers l'anglais sur ces documents est incohérent et risque d'afficher un viewport vide ou corrompu.
-- **Spécification :**
-  - Dans `switchTab(docId)` et `updateLanguageUI()` : si l'onglet actif est `doc_seance_01`, `doc_seance_02` ou `doc_context`, désactiver le bouton `docLangToggleBtn` (`disabled = true; opacity: 0.4; pointer-events: none; cursor: not-allowed;`).
-  - Forcer le libellé à `🌐 Français (Original)`.
-  - Réactiver le bouton avec libellé dynamique (`🌐 Français / Anglais`) dès qu'un article traduit (Bosco, Newell, McClelland, Sejnowski, Haugeland) est sélectionné.
-- **Assigné à :** Maintenance (`30eff855-2022-4c41-a03d-1dc843aed0d0`).
+### Tâche 1.2.1 : Mise en Quarantaine formelle de `viewport_doc_seance_01_en`
+- **Constat :** L'agent de traduction avait produit une retraduction artificielle vers l'anglais des notes de cours francophones de Dave Saint-Amour.
+- **Action :** Balisage explicite dans le code avec bannière d'avertissement `<!-- QUARANTAINE ACADÉMIQUE -->` et attribut `data-quarantine="true"` pour empêcher formellement tout futur agent de réintégrer ce viewport dans la navigation.
+- **Réinitialisation automatique d'état :** Dans `switchTab(docId)`, forcer `docLanguage = 'fr'` lors de la sélection d'un document `FRENCH_ONLY_DOCS` afin que l'état linguistique ne reste pas bloqué sur `'en'`.
 
-### Tâche 1.1.2 : Easter Egg inter-cours (Mascotte Toadette)
-- **Spécification :**
-  - Dans l'en-tête de `index.html` (PSY9613), encapsuler l'icône de Toadette (`toadette.png`) dans un lien hypertexte pointant vers PSY7010 (`../psy7010/`) avec infobulle `title="Basculer vers la station d'étude PSY7010"`.
-  - Appliquer l'effet d'animation au survol : `transform: scale(1.2) rotate(-10deg); transition: transform 0.2s ease; cursor: pointer;`.
-  - Coordonner avec la session de maintenance de PSY7010 (`620d8c7a-e3d2-4df7-9db0-1af3f8b76824`) pour intégrer le lien retour réciproque vers PSY9613 (`../psy9613/`).
-- **Assigné à :** Maintenance PSY9613 & Maintenance PSY7010.
+### Tâche 1.2.2 : Refonte complète de la Recherche Textuelle & Surbrillance Visuelle
+- **Constat d'échec sur le terrain :** Durant les quiz (notamment en PSY7010), la recherche scrollait vers un paragraphe sans jamais mettre en surbrillance le mot cherché, rendant le repérage impossible dans un bloc dense et causant des pertes de temps et de points.
+- **Action & Spécification :**
+  - Liaison avec le moteur DOM non destructif `highlightLiteral()` et `clearSearchHighlights()`.
+  - Encapsulation précise de chaque occurrence trouvée dans `<mark class="search-highlight">`.
+  - Mise en évidence éclatante de l'occurrence active via `search-highlight-active` avec pulse animé (`@keyframes searchPulse`).
+  - Défilement précis centré sur le mot exact.
+  - Compteur dynamique `X/Total` dans la barre de recherche.
+  - Parité esthétique haute visibilité en Mode Clair (jaune ambré / orange fluo) et Mode Sombre (doré contrasté / orange vibrant avec lueur halo).
 
-### Tâche 1.1.3 : Maintien du badge de sécurité
-- **Spécification :** Conserver la mention `🚧 En construction` dans l'en-tête tant que les finitions du Sprint 1.1 ne sont pas déployées et vérifiées par Michel.
+### Tâche 1.2.3 : Portabilité de la correction vers PSY7010
+- Documenter et préparer le patch miroir pour la station PSY7010 afin de corriger définitivement le même écueil vécu en séance d'évaluation.
 
 ---
 
