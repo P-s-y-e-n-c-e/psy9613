@@ -42,6 +42,12 @@
 - [x] **Sprint 1.1 Déployé (commit `77cbdd0`) :**
   - Verrouillage du bouton de langue sur `🌐 Français (Original)` pour `doc_seance_01`, `doc_seance_02` et `doc_context`.
   - Mascotte Toad cliquable avec animation de tilt au survol pointant vers PSY7010 (`../psy7010/`), attribuant Toad à PSY9613 et Toadette à PSY7010 (commit `58feb58`).
+- [x] **Lecteur Multi-Podcasts & Switcher d'Épisodes (commit `c132950`) :**
+  - Parité ergonomique stricte avec PSY7010 : barre de sélection d'épisodes, réglages de vitesse (1x, 1.25x, 1.5x), sauts 15s, mémorisation de progression.
+  - 3 épisodes intégrés et diffusables :
+    1. *Épisode 1* : Pilote Séance 2 (Histoire & fondements de l'IA).
+    2. *Épisode 2 (Actif par défaut)* : Grand Deep Dive Pierre Poirier (PSSH vs Connexionnisme).
+    3. *Épisode 3* : Capsule Séance 3 (Pré-cours Mashour 2020 & Cadrage Débat 1 Louis vs Alexandrea).
 
 ### C. Corpus Scientifique & Traductions
 - [x] **5 articles fondamentaux traduits mot à mot en français avec ancres interactives :**
