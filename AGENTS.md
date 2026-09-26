@@ -100,9 +100,9 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 ---
 
-## 🖥️ 5. Architecture Triangulaire du Workspace (HQ, Contenu, Maintenance)
+## 🖥️ 5. Architecture Quadrangulaire du Workspace (HQ, Contenu, Maintenance, Traduction)
 
-Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir une rigueur absolue pour les examens (70 % de la note), les opérations sont réparties entre trois sessions dédiées :
+Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir une rigueur absolue pour les examens (70 % de la note), les opérations sont réparties entre quatre sessions dédiées :
 
 1. **Session « Quartier Général » (HQ / Session Principale) :**
    - **Mission exclusive :** Tour de contrôle académique, stratégie globale de réussite du cours.
@@ -129,13 +129,21 @@ Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir
      * Intégration technique exclusive des banques de questions validées transmises par la session Contenu.
      * Tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub.
 
-4. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
-   - **HQ ne doit JAMAIS court-circuiter Contenu :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques ou de manipuler les fichiers de questions. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais ne se substitue JAMAIS à la session Contenu.
+4. **Session « Traduction académique » (Session Dédiée Anglais → Français) :**
+   - **Mission exclusive :** Traduction intégrale et rigoureuse de l'anglais vers le français de l'ensemble des lectures obligatoires, optionnelles et suggérées fournies sur Moodle.
+   - **Responsabilités :**
+     * Traduction fidèle au mot à mot, sans paraphrase réductrice, alignée sur la terminologie des professeurs (transcriptions GOLD).
+     * Production systématique des deux livrables pour chaque article : le document Markdown maître et la visionneuse interactive HTML (avec fiche de synthèse conceptuelle, marqueurs de page mot à mot `page_[auteur]_[X]_fr` et ancres interactives `anchor_seance_XX_qYY`).
+     * Rapprochement systématique des concepts des textes avec les items de la banque d'examen étalon-or.
+     * Synchronisation immédiate des traductions sur GitHub (`git push origin main`) pour mise à disposition de l'équipe et des audits adversariaux.
+   - **Périmètre strictement confiné & Interdictions :**
+     * STRICTEMENT confinée à la traduction académique anglais → français des textes du cours.
+     * N'est assignée ni à la présidence ou modération des débats, ni à l'ingénierie logicielle du site, ni à la stratégie globale du Quartier Général.
+
+5. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
+   - **HQ ne doit JAMAIS court-circuiter Contenu ni dévier Traduction :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques, ou d'assigner des tâches hors-périmètre (ex: préparation de débat) à la session de traduction. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais respecte scrupuleusement le périmètre exclusif de chaque agent.
    - **Vérification obligatoire de l'état du navigateur (Anti-Collision) :** Avant toute tentative d'interaction avec un modèle via CDP, chaque session DOIT impérativement inspecter l'état réel de l'onglet (`gemini_gem_client.js status` / détection du bouton Stop) pour s'assurer qu'aucun calcul n'est déjà en cours et éviter toute collision ou interruption accidentelle.
    - **Concertation préalable :** Si une session estime qu'une action opérationnelle urgente est requise, elle DOIT envoyer un message à l'autre session (`agentapi send-message`) pour vérifier son statut avant d'agir.
-
-
-
 
 ---
 
