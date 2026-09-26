@@ -48,4 +48,14 @@ $$\text{Verbatim GOLD} \longrightarrow \text{Boucle Dialectique Adversariale (De
 
 ---
 
+## 🍁 5. Règle Linguistique Absolue : Toujours Français Canada, Jamais France
+
+> [!IMPORTANT]
+> **Interdiction Formelle du Français Hexagonal / France (`fr-FR`) :**
+> - **Code linguistique technique :** Toujours spécifier `language: "fr-CA"` (code BCP-47 officiel) lors des appels API et MCP (`studio_create`, `nlm audio create`).
+> - **Cadrage vocal & scriptural :** Les prompts de génération doivent obligatoirement ordonner aux co-animateurs d'adopter un **français québécois / canadien soigné, fluide et universitaire (registre de l'UQAM)**.
+> - **Bannissement des tics parisiens :** Exclusion formelle de toute expression, tournure ou intonation typiquement hexagonale (*« du coup »*, *« en vrai »*, *« pour le coup »*, *« boulot »*, *« bagnole »*, etc.).
+
+---
+
 *Document partagé automatiquement entre les sessions de préparation des podcasts de PSY7010 et PSY9613.*
