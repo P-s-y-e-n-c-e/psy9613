@@ -41,7 +41,7 @@
 - [x] **Canal de feedback étudiant sécurisé :** Formulaire d'envoi par relais HTTPS (`formsubmit.co`) directement vers `mercier.michel.4@courrier.uqam.ca` avec repli `mailto:`. Suppression totale de la modale publique locale (commit `0aa8e3f`).
 - [x] **Sprint 1.1 Déployé (commit `77cbdd0`) :**
   - Verrouillage du bouton de langue sur `🌐 Français (Original)` pour `doc_seance_01`, `doc_seance_02` et `doc_context`.
-  - Easter Egg Toadette cliquable avec animation de tilt au survol pointant vers PSY7010 (`../psy7010/`).
+  - Mascotte Toad cliquable avec animation de tilt au survol pointant vers PSY7010 (`../psy7010/`), attribuant Toad à PSY9613 et Toadette à PSY7010 (commit `58feb58`).
 
 ### C. Corpus Scientifique & Traductions
 - [x] **5 articles fondamentaux traduits mot à mot en français avec ancres interactives :**
