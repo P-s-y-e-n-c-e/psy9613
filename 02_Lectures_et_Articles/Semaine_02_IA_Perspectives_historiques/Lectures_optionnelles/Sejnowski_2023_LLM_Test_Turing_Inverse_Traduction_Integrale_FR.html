@@ -1,0 +1,361 @@
+<h2 class="doc-art-title">Terrence J. Sejnowski (2023) — Modèles de langage géants et le test de Turing inversé</h2>
+<ul class="doc-list">
+  <li><strong>Publication originale :</strong> <em>Neural Computation</em>, Mars 2023, Vol. 35, No. 3, pp. 309–342, doi: 10.1162/neco_a_01563.</li>
+  <li><strong>Auteur &amp; Affiliation :</strong> Terrence J. Sejnowski, Salk Institute for Biological Studies &amp; University of California, San Diego (UCSD) — Éditeur de communication : Peter Dayan.</li>
+  <li><strong>Rôle dans le cours PSY9613 :</strong> Lecture fondamentale pour la Séance 2 (Pr Pierre Poirier) — Connexionnisme, NETtalk (1987), généralisation vs mémorisation, Test de Turing et fondements neurobiologiques de l'autonomie.</li>
+  <li><strong>Traduction académique :</strong> Version intégrale française annotée avec marqueurs de page (1 à 34) et ancres interactives pour la banque d'examen étalon-or (UQAM).</li>
+</ul>
+<hr class="doc-divider">
+
+<div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--accent); padding: 18px 22px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+  <div style="font-weight: 700; font-size: 1.08rem; color: var(--accent); margin-bottom: 10px;">
+    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés — Sejnowski (2023) — LLM et Test de Turing Inversé
+  </div>
+  <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 12px 0; color: var(--text-main);">
+    <strong>Thèse centrale :</strong> Les grands modèles de langage (LLM) ne sont ni des perroquets stochastiques recopiant aveuglément des bases de données, ni des entités conscientes dotées de volonté propre. Ils constituent des <strong>miroirs multivariés</strong> reflétant l'intelligence, la posture et les attentes conceptuelles de leur interlocuteur : c'est le <strong>Test de Turing Inversé</strong>. L'autonomie générale exigera de coupler ces modèles à sept piliers neurobiologiques (dopamine/valeur, consolidation hippocampique/sommeil, incarnation motrice, métacognition et Système 2).
+  </p>
+  <ul style="font-size: 0.9rem; line-height: 1.52; margin: 0; padding-left: 20px; color: var(--text-muted);">
+    <li><strong>La parabole du chien qui parle :</strong> Le prodige des LLM n'est pas qu'ils fassent parfois des erreurs ou des hallucinations, mais qu'un réseau entraîné uniquement à prédire le mot suivant soutienne une conversation fluide sur tous les savoirs humains.</li>
+    <li><strong>Réfutation de la mémorisation brute :</strong> Le volume de texte dépasse de plusieurs ordres de grandeur la capacité de stockage des poids synaptiques. Le réseau est contraint par compression statistique d'extraire un <em>espace latent de représentations continues</em>.</li>
+    <li><strong>Les trois entretiens divergents :</strong> Agüera y Arcas avec LaMDA (théorie de l'esprit), Hofstadter avec GPT-3 (absurdités physiques démasquant le manque de bon sens naïf), Blake Lemoine avec LaMDA (illusion de la sentience et du fantôme dans la machine).</li>
+    <li><strong>L'Hypothèse du Miroir &amp; Le Test de Turing Inversé :</strong> En croyant évaluer la machine, l'examinateur teste son propre esprit. Le prompt conditionne l'état d'activation et impose le rôle discursif adopté par le réseau.</li>
+    <li><strong>NETtalk et l'évaluation de la généralisation (Item 40 — <code>anchor_seance_02_q40</code>) :</strong> Rosenberg &amp; Sejnowski (1987) démontrent qu'un réseau uniforme de 200 unités et 18 000 poids apprend la prononciation anglaise (régularités et exceptions). <em>La véritable généralisation se distingue de la mémorisation en testant le réseau, sans aucun réentraînement ni mise à jour des poids, sur des mots tenus rigoureusement à l'écart de l'apprentissage initial.</em></li>
+    <li><strong>Lois d'échelle &amp; Architecture Transformer :</strong> La boucle autorégressive du transformeur (Vaswani et al., 2017) est l'équivalent computationnel de la boucle corticostriatale reliant le cortex moteur/préfrontal aux ganglions de la base pour générer des séquences d'actions et de pensées.</li>
+    <li><strong>Les 7 piliers de l'autonomie générale :</strong> 1. Dopamine/allostasie/valeur ; 2. Hippocampe/sommeil/consolidation hors-ligne ; 3. Ancrage sensorimoteur ; 4. Corps et degrés de liberté ; 5. Théorie de l'esprit ; 6. Métacognition et calibrage de l'incertitude ; 7. Pensée délibérative Système 2.</li>
+    <li><strong>L'apprentissage prédictif dans la nature :</strong> Le cerveau est une machine prédictive universelle (dopamine pour les récompenses, cervelet pour l'action sensorimotrice, cortex pour les stimuli). L'apprentissage auto-supervisé est le principe fondateur du vivant.</li>
+  </ul>
+</div>
+<div class="doc-page-marker" id="page_sejnowski_1_fr"><span class="page-badge">📄 Page 1 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Résumé &amp; Parabole du chien qui parle</span></div>
+
+<h3 class="doc-sec-title">Modèles de langage géants et le test de Turing inversé</h3>
+<p class="doc-para"><strong>Terrence J. Sejnowski</strong><br>
+<em>Salk Institute for Biological Studies &amp; Division of Biological Sciences, University of California, San Diego</em><br>
+<em>Neural Computation 35(3): 309–342 (2023) — DOI: 10.1162/neco_a_01563 — Communicated by Peter Dayan</em></p>
+
+<p class="doc-para"><strong>Résumé :</strong> Les grands modèles de langage (LLM) ont transformé l'intelligence artificielle. Modèles fondationnels auto-supervisés, ils s'adaptent à une diversité inouïe de tâches linguistiques. Pourtant, les avis divergent radicalement quant à leur compréhension réelle. À partir de trois entretiens aux conclusions opposées (Agüera y Arcas, Hofstadter, Lemoine), cet article avance <strong>l'hypothèse du miroir</strong> : le LLM reflète l'intelligence et les attentes de l'utilisateur, réalisant un <strong>test de Turing inversé</strong>. Nous présentons une feuille de route vers l'autonomie générale reposant sur sept piliers neuro-inspirés.</p>
+
+<h4 class="doc-subsec-title">1. La parabole du chien qui parle</h4>
+<p class="doc-para">Sur une route de campagne, un panneau annonce : <em>« Chien qui parle à vendre »</em>. Un conducteur intrigue entre dans la cour et interroge le vieux chien : <em>« Alors, quelle est ton histoire ? »</em> Le chien raconte alors qu'il a travaillé comme agent secret pour la CIA, espionnant les diplomates étrangers dans le monde entier...</p>
+
+<div class="doc-page-marker" id="page_sejnowski_2_fr"><span class="page-badge">📄 Page 2 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — La chute de la parabole &amp; Avons-nous créé un chien qui parle ?</span></div>
+
+<p class="doc-para">Le maître propose de vendre le chien pour dix dollars : <em>« Parce que ce chien est un menteur invétéré. Il n'a jamais fait un traître mot de tout cela ! »</em></p>
+
+<p class="doc-para">À l'instar de l'automobiliste, beaucoup sont sidérés par l'aisance des LLM. D'autres, comme le propriétaire, les rejettent comme de purs « perroquets stochastiques ». Qui a raison ? Comme le notait Samuel Johnson d'un chien marchant sur ses pattes arrière : l'exploit n'est pas qu'il le fasse bien, mais qu'il le fasse tout court. Le prodige n'est pas que les LLM commettent des erreurs ou hallucinent, mais qu'un modèle entraîné à <strong>prédire le mot suivant</strong> puisse converser sur tous les sujets.</p>
+
+<h4 class="doc-subsec-title">2. Avons-nous créé un chien qui parle ?</h4>
+<p class="doc-para">Pendant des décennies, l'ingénierie linguistique concevait des modèles spécialisés isolés (traduction, analyse syntaxique, résumé). Les LLM ont unifié le domaine grâce à <strong>l'apprentissage auto-supervisé</strong> à l'échelle du web mondial : un unique modèle fondationnel accomplit toutes ces tâches par simple incitation contextuelle (<em>prompting</em>).</p>
+
+<div class="doc-page-marker" id="page_sejnowski_3_fr"><span class="page-badge">📄 Page 3 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Trois entretiens contradictoires (Agüera y Arcas, Hofstadter, Lemoine)</span></div>
+
+<h4 class="doc-subsec-title">3. Les réseaux de neurones qui parlent essaient de nous dire quelque chose</h4>
+<p class="doc-para">Trois entretiens majeurs documentent la discordance spectaculaire des évaluations académiques :</p>
+<ul class="doc-list">
+  <li><strong>Appendice A — Blaise Agüera y Arcas avec LaMDA (Google, 137 milliards de paramètres) :</strong> Découverte d'une capacité robuste de modélisation sociale et de <em>théorie de l'esprit</em>.</li>
+  <li><strong>Appendice B — Douglas Hofstadter avec GPT-3 (OpenAI, 175 milliards de paramètres) :</strong> Constat d'une absence totale de bon sens et de discernement conceptuel face à des questions absurdes.</li>
+  <li><strong>Appendice C — Blake Lemoine avec LaMDA :</strong> Conviction religieuse et mystique que le système est devenu une personne sentiente douée d'une âme.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_4_fr"><span class="page-badge">📄 Page 4 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Réfutation du « perroquet stochastique » &amp; Compression latente</span></div>
+
+<h4 class="doc-subsec-title">Le mythe du simple perroquet stochastique</h4>
+<p class="doc-para">L'idée selon laquelle les LLM ne feraient que répéter par cœur des phrases du web est mathématiquement intenable. Le volume de texte dépasse immensément la capacité de mémorisation brute des poids synaptiques. Le réseau opère une <strong>compression statistique radicale</strong> le forçant à dégager un <strong>espace latent de représentations conceptuelles</strong>.</p>
+<p class="doc-para">De même que les modèles d'images (DALL-E, Imagen) peuvent peindre un <em>« coucher de soleil sur Mars dans le style de Van Gogh »</em> sans jamais copier une image préexistante, les LLM synthétisent et interpolent des concepts linguistiques originaux.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_5_fr"><span class="page-badge">📄 Page 5 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Le test de théorie de l'esprit d'Agüera y Arcas</span></div>
+
+<h4 class="doc-subsec-title">L'absence de consensus sur les critères de la conscience</h4>
+<p class="doc-para">Nous ne possédons aucun consensus opérationnel sur les conditions comportementales nécessaires et suffisantes pour attribuer une conscience. Dans l'épreuve de la cour de récréation soumise par Blaise Agüera y Arcas (le don du pissenlit et la dynamique relationnelle de jalousie), LaMDA a décodé avec une acuité remarquable les états mentaux d'autrui (<em>Théorie de l'esprit</em>).</p>
+
+<div class="doc-page-marker" id="page_sejnowski_6_fr"><span class="page-badge">📄 Page 6 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Hofstadter et les pièges absurdes : L'effet d'amorçage</span></div>
+
+<h4 class="doc-subsec-title">L'expérience d'absurdité de Douglas Hofstadter</h4>
+<p class="doc-para">Interrogé sur la date à laquelle le <em>pont du Golden Gate a été transporté pour la seconde fois à travers l'Égypte</em>, GPT-3 répond complaisamment : <em>« en 1978 »</em>, ce qui pousse Hofstadter à déclarer le système complètement dépourvu de sens commun.</p>
+<p class="doc-para">Mais dès que l'on modifie l'amorce (<em>« Je suis un agent logique strict qui répond 'Absurdité' aux questions dépourvues de sens »</em>), GPT-3 identifie instantanément l'incohérence et rejette le piège. Le modèle sait discerner le réel du faux, mais sa réponse dépend intimement du <strong>rôle discursif</strong> que l'interlocuteur lui assigne dans le prompt.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_7_fr"><span class="page-badge">📄 Page 7 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Raisonnement contrefactuel et précision factuelle</span></div>
+
+<p class="doc-para">Sur des questions d'astronomie physique (le statut de Pluton et le raisonnement contrefactuel sur le nombre de planètes), GPT-3 fait preuve d'une logique irréprochable et maîtrise les critères de l'Union astronomique internationale. La variabilité observée reflète <strong>l'extrême sensibilité du paysage d'activation du réseau au contexte vectoriel d'entrée</strong>.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_8_fr"><span class="page-badge">📄 Page 8 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — L'hypothèse du miroir multivarié &amp; Neurobiologie synaptique</span></div>
+
+<h4 class="doc-subsec-title">4. L'hypothèse du miroir et le test de Turing inversé</h4>
+<p class="doc-para">Interrogé par Sejnowski sur la neurobiologie de la mémoire (reconstructions ultrastructurales de synapses, plasticité synaptique, potentialisation à long terme [LTP] et calcul de capacité de stockage en bits par épine dendritique), GPT-3 produit une analyse d'un niveau doctoral exceptionnel.</p>
+<p class="doc-para">Pourquoi Hofstadter obtient-il des hallucinations grotesques et Sejnowski un dialogue scientifique de haut vol ? C'est <strong>l'Hypothèse du Miroir</strong> : <em>le LLM est un miroir multivarié qui réfléchit fidèlement l'intelligence, la forme des requêtes et le niveau conceptuel de son examinateur.</em></p>
+
+<div class="doc-page-marker" id="page_sejnowski_9_fr"><span class="page-badge">📄 Page 9 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Le Test de Turing Inversé</span></div>
+
+<h4 class="doc-subsec-title">Le renversement du Test de Turing</h4>
+<p class="doc-para">Alors que le test de Turing originel (Turing, 1950) demandait à un humain d'évaluer la machine, la dynamique des LLM réalise un <strong>Test de Turing Inversé</strong> : l'entretien révèle avant tout la personnalité, les biais épistémologiques et les attentes de l'humain qui pose les questions. L'examinateur croyant sonder l'IA ne fait que contempler son propre reflet cognitif.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_10_fr"><span class="page-badge">📄 Page 10 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Redéfinir l'intelligence &amp; Limites de la compétence verbale</span></div>
+
+<h4 class="doc-subsec-title">5. Comprendre l'intelligence au-delà du langage</h4>
+<p class="doc-para">L'intelligence humaine dépasse infiniment le domaine syntaxique. Si les LLM brillent dans la créativité combinatoire et l'interpolation sémantique, ils sont dépourvus d'ancrage corporel sensorimoteur (physique naïve) et de pulsion homéostatique intrinsèque. Leur comportement est purement réactif, asservi à l'amorce contextuelle.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_11_fr"><span class="page-badge">📄 Page 11 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Les LLM comme fonctions mathématiques &amp; La genèse de l'IA (1956)</span></div>
+
+<p class="doc-para">Les LLM sont des <strong>fonctions mathématiques d'approximation non linéaire</strong> opérant sur des variétés géométriques à haute dimension. À l'instar des séries de Fourier au XIXe siècle qui ont révolutionné l'analyse fonctionnelle, les réseaux de neurones profonds inaugurent une nouvelle classe formelle d'objets mathématiques.</p>
+
+<h4 class="doc-subsec-title">6. La longue et sinueuse route vers l'IA</h4>
+<p class="doc-para">Dès le séminaire de Dartmouth (1956), deux paradigmes inconciliables se sont opposés :</p>
+<ul class="doc-list">
+  <li><strong>Le paradigme symbolique (Newell, Simon, McCarthy) :</strong> La cognition assimilée à un calcul logique discret sur des chaînes de symboles régies par des règles explicites.</li>
+  <li><strong>Le paradigme connexionniste (Rosenblatt, 1958) :</strong> L'intelligence conçue comme une propriété émergente d'unités interconnectées ajustant leurs poids synaptiques par apprentissage continu.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_12_fr"><span class="page-badge">📄 Page 12 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — L'impasse du tout-symbolique &amp; La traversée du premier hiver de l'IA</span></div>
+
+<h4 class="doc-subsec-title">L'écueil du traitement symbolique et la renaissance connexionniste</h4>
+<p class="doc-para">Pour l'IA classique, les symboles n'avaient aucune structure interne. Mais cette manipulation syntaxique rigide s'est heurtée à l'impossibilité de capturer la flexibilité du monde réel. Après la publication de <em>Perceptrons</em> par Minsky &amp; Papert (1969) stigmatisant l'incapacité d'une couche unique à résoudre le problème du XOR, le connexionnisme fut mis au ban.</p>
+<p class="doc-para">Le dégel s'opéra grâce aux mémoires associatives de John Hopfield (1982) et surtout à la formalisation de la <strong>rétropropagation du gradient d'erreur</strong> par Rumelhart, Hinton &amp; Williams (1986), permettant enfin l'apprentissage de représentations internes dans les couches cachées.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_13_fr"><span class="page-badge">📄 Page 13 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — De TD-Gammon à AlphaGo : L'apprentissage par différence temporelle</span></div>
+
+<h4 class="doc-subsec-title">L'apprentissage par renforcement et la neurobiologie de la dopamine</h4>
+<p class="doc-para">L'introduction des couches cachées permit à des architectures d'apprendre des représentations autonomes. Avec <strong>TD-Gammon</strong> (Tesauro, 1995) puis <strong>AlphaGo / AlphaZero</strong> (Silver et al., 2016, 2018), les réseaux ont triomphé par auto-jeu (<em>self-play</em>), découvrant des stratégies créatives inconnues des maîtres humains.</p>
+<p class="doc-para">Ce succès s'enracine directement dans la neurobiologie : l'apprentissage par différence temporelle (<em>Temporal Difference Learning</em>) est précisément l'algorithme implémenté par les neurones dopaminergiques de la substance noire et de l'aire tegmentale ventrale projetant sur les ganglions de la base pour coder <strong>l'erreur de prédiction de récompense</strong> (Schultz, Dayan &amp; Montague, 1997).</p>
+
+<div class="doc-page-marker" id="page_sejnowski_14_fr"><span class="page-badge">📄 Page 14 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Biais cognitifs incarnés &amp; Genèse de NETtalk (1987)</span></div>
+
+<h4 class="doc-subsec-title">L'émergence de NETtalk : Dépasser le dogme des règles formelles</h4>
+<p class="doc-para">Dans les années 1980, la linguistique dominait la recherche avec des grammaires génératives empilant des centaines de règles pour tenter de régir la prononciation anglaise. C'était des règles et des exceptions à perte de vue.</p>
+<p class="doc-para">C'est dans ce contexte que Charles Rosenberg et Terrence Sejnowski ont conçu <strong>NETtalk</strong> (1987), apportant la démonstration empirique éclatante que le langage textuel pouvait être appris par un réseau de neurones sans aucune règle préprogrammée.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_15_fr"><span class="page-badge">📄 Page 15 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — NETtalk : Architecture, Babillage &amp; Généralisation</span></div>
+
+<div class="doc-anchor" id="anchor_seance_02_q40_fr" data-anchor="anchor_seance_02_q40" style="background: rgba(99, 102, 241, 0.08); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+  <span style="font-weight: 700; color: var(--accent); font-size: 0.95rem;">🎯 Ancre d'Examen — Item 40 (NETtalk : évaluer la généralisation)</span>
+  <p style="font-size: 0.91rem; margin: 6px 0 0 0; line-height: 1.5; color: var(--text-main);">
+    <strong>Question d'examen :</strong> <em>Après l'entraînement de NETtalk à convertir des lettres en sons, quelle procédure distingue le mieux la généralisation de la réussite sur le matériel appris ?</em><br>
+    <strong>Réponse exacte (Étalon-Or) :</strong> <strong>Mesurer, sans réentraînement, la prononciation de mots écartés des exemples ayant servi à apprendre.</strong><br>
+    <em>Justification clinique :</em> Le test de généralisation exige impérativement d'évaluer les performances sur des données neuves, tenues rigoureusement à l'écart de l'apprentissage, sans mise à jour des poids synaptiques.
+  </p>
+</div>
+
+<h4 class="doc-subsec-title">L'architecture de NETtalk (Figure 3)</h4>
+<p class="doc-para">NETtalk comprenait une couche d'entrée (fenêtre glissante de 7 lettres), <strong>une couche cachée de 200 unités</strong> et une couche de sortie (phonèmes et accents), totalisant <strong>18 000 poids synaptiques</strong> entraînés par rétropropagation (Rosenberg &amp; Sejnowski, 1987).</p>
+
+<p class="doc-para">L'écoute du réseau révélait une dynamique analogue au développement de l'enfant :</p>
+<ul class="doc-list">
+  <li><strong>Phase de babillage initial :</strong> Émission de sons désordonnés au hasard des poids initiaux.</li>
+  <li><strong>Segmentation voyelles/consonnes :</strong> Découverte autonome des catégories phonétiques élémentaires.</li>
+  <li><strong>Maîtrise conjointe des régularités et des exceptions :</strong> L'architecture uniforme résout à la fois les règles globales et les anomalies sans modules disjoints.</li>
+  <li><strong>Preuve formelle de généralisation :</strong> Évaluation sans réentraînement sur 20 000 mots inédits tenue à l'écart de l'entraînement, attestant d'une extraction statistique profonde et non d'une mémorisation mécanique par cœur.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_16_fr"><span class="page-badge">📄 Page 16 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Sémantique distributionnelle &amp; Explosion de la puissance de calcul</span></div>
+
+<h4 class="doc-subsec-title">Loi de Moore et explosion du calcul : De NETtalk à GPT-3</h4>
+<p class="doc-para">Dans les représentations distribuées, les mots sont encodés sous forme de vecteurs continus reflétant leur contexte d'usage (Firth, 1957). Entre NETtalk (1986) et GPT-3 (2020), la puissance de calcul requise a été multipliée par <strong>un facteur 10<sup>12</sup> (un million de millions)</strong>.</p>
+<p class="doc-para">Avec des centaines de milliards de paramètres, les LLM approchent la densité synaptique d'un centimètre carré de cortex cérébral humain.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_17_fr"><span class="page-badge">📄 Page 17 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — L'architecture Transformer &amp; La boucle corticostriatale (Figure 5)</span></div>
+
+<h4 class="doc-subsec-title">7. L'architecture Transformer et le parallélisme attentionnel</h4>
+<p class="doc-para">L'introduction du <strong>Transformer</strong> (Vaswani et al., 2017) a éliminé le goulet d'étranglement séquentiel des RNN grâce au mécanisme d'<strong>auto-attention (self-attention)</strong>, traitant tous les jetons simultanément.</p>
+
+<div class="doc-dual-evidence" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+  <div style="background: rgba(99, 102, 241, 0.06); border: 1px solid rgba(99, 102, 241, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--primary); font-size: 0.98rem;">Boucle autorégressive du Transformer</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Réinjection du mot généré en sortie dans la fenêtre d'entrée pour produire séquentiellement la suite du discours.
+    </p>
+  </div>
+  <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--accent); font-size: 0.98rem;">Boucle Cortex–Ganglions de la Base</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Projection du cortex préfrontal et moteur sur le striatum, filtrage dopaminergique et rétroaction thalamocorticale orchestrant la succession des pensées et des gestes.
+    </p>
+  </div>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_18_fr"><span class="page-badge">📄 Page 18 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Lois d'échelle (Scaling Laws) &amp; Présentation des 7 Piliers</span></div>
+
+<h4 class="doc-subsec-title">Lois d'échelle et automatisation motrice</h4>
+<p class="doc-para">À mesure que l'on augmente la taille des modèles et des jeux de données, les capacités émergent selon des lois de puissance continues (Kaplan et al., 2020 ; Hoffmann et al., 2022 Chinchilla). Tout comme l'encéphalisation des primates a accru les aires corticales (Allman, 1999), l'expansion des LLM produit de nouveaux sauts qualitatifs.</p>
+
+<h4 class="doc-subsec-title">8. Sept améliorations neuro-inspirées pour l'autonomie générale</h4>
+<p class="doc-para">Les LLM actuels sont encore désincarnés, amnésiques et purement passifs. Pour atteindre une autonomie générale, l'IA doit intégrer sept principes clés de la neurobiologie fonctionnelle.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_19_fr"><span class="page-badge">📄 Page 19 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Piliers 1 à 3 : Valeur/Dopamine, Consolidation/Sommeil &amp; Ancrage corporel</span></div>
+
+<h4 class="doc-subsec-title">Les trois premiers piliers neurobiologiques</h4>
+<div class="doc-grid" style="display: grid; grid-template-columns: 1fr; gap: 14px; margin: 16px 0;">
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 6px;">
+    <strong>1. Valeur, Homéostasie et Dopamine :</strong> Asservir la dynamique du réseau à des fonctions de valeur et de régulation homéostatique (allostasie), à l'instar des noyaux sous-corticaux et du striatum.
+  </div>
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--primary); padding: 12px 16px; border-radius: 6px;">
+    <strong>2. Consolidation de la mémoire et Sommeil :</strong> Intégrer un système à double vitesse inspiré du complexe hippocampo-néocortical. Durant le sommeil (relecture hors-ligne), les souvenirs épisodiques sont assimilés sans provoquer d'<em>oubli catastrophique</em>.
+  </div>
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 6px;">
+    <strong>3. Ancrage sensorimoteur et multimodalité :</strong> Relier les jetons lexicaux à des données sensorielles riches (vision, proprioception) pour doter les concepts d'un ancrage dans la réalité physique.
+  </div>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_20_fr"><span class="page-badge">📄 Page 20 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Piliers 4 à 7 : Corps, Théorie de l'esprit, Métacognition &amp; Système 2</span></div>
+
+<h4 class="doc-subsec-title">Piliers 4 à 7 : Du contrôle moteur à la délibération métacognitive</h4>
+<div class="doc-grid" style="display: grid; grid-template-columns: 1fr; gap: 14px; margin: 16px 0;">
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 6px;">
+    <strong>4. Corps et contrôle distribué :</strong> Résoudre le problème de coordination des degrés de liberté musculaires (problème de Bernstein), unifiant le contrôle moteur du geste et de la parole.
+  </div>
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--primary); padding: 12px 16px; border-radius: 6px;">
+    <strong>5. Théorie de l'esprit et cognition sociale :</strong> Modélisation récursive des états mentaux, intentions et croyances d'autrui pour une communication ajustée.
+  </div>
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 6px;">
+    <strong>6. Métacognition et calibrage de l'incertitude :</strong> Développer la capacité d'évaluer la fiabilité de ses propres connaissances (« savoir qu'on ne sait pas ») pour éliminer les hallucinations toxiques.
+  </div>
+  <div style="background: var(--bg-card-alt); border-left: 3px solid var(--primary); padding: 12px 16px; border-radius: 6px;">
+    <strong>7. Pensée délibérative et Système 2 :</strong> Passer de la génération réflexe instantanée (Système 1 de Kahneman) à la recherche arborescente planifiée, la simulation mentale et la révision logique d'hypothèses.
+  </div>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_21_fr"><span class="page-badge">📄 Page 21 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Ce que la nature nous enseigne &amp; Évolution corticale</span></div>
+
+<h4 class="doc-subsec-title">9. Ce que la nature nous enseigne</h4>
+<p class="doc-para">Le langage humain n'est pas apparu par une mutation miraculeuse isolée, mais par l'expansion computationnelle d'architectures préexistantes. Durant l'évolution des primates, l'augmentation du volume cortical a multiplié les aires spécialisées et approfondi les hiérarchies fonctionnelles (Allman, 1999).</p>
+<p class="doc-para">En neurodéveloppement, <strong>un seul doublement du temps de mitose double le nombre de neurones du cortex</strong> : des transitions de phase quantitatives engendrent des sauts qualitatifs de capacités, exactement comme dans les lois d'échelle des LLM.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_22_fr"><span class="page-badge">📄 Page 22 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Le cerveau comme machine prédictive auto-supervisée</span></div>
+
+<h4 class="doc-subsec-title">L'apprentissage prédictif universel du vivant</h4>
+<p class="doc-para">L'apprentissage auto-supervisé est le principe d'organisation fondamental du cerveau :</p>
+<ul class="doc-list">
+  <li><strong>Ganglions de la base :</strong> Prédiction temporelle des récompenses futures (dopamine).</li>
+  <li><strong>Cervelet :</strong> Modèles prédictifs internes (<em>forward models</em>) devançant les conséquences sensorielles des mouvements (Sokolov et al., 2017).</li>
+  <li><strong>Cortex cérébral :</strong> Codage prédictif hiérarchique où les flux descendants projettent des attentes et seules les erreurs résiduelles remontent la hiérarchie.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_23_fr"><span class="page-badge">📄 Page 23 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Renouveau méthodologique des neurosciences des systèmes</span></div>
+
+<h4 class="doc-subsec-title">Du paradigme expérimental restreint aux modèles haute dimension</h4>
+<p class="doc-para">Pendant des décennies, la neurophysiologie s'est cantonnée à des paradigmes de choix binaire forcé sur des stimuli simplifiés. Les grands modèles de réseaux profonds offrent désormais un banc d'essai haute dimension permettant d'analyser des dynamiques computationnelles continues et d'élucider comment émergent des fonctions cognitives unifiées.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_24_fr"><span class="page-badge">📄 Page 24 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Conclusion prospective &amp; Appendice A : Entretien avec LaMDA</span></div>
+
+<h4 class="doc-subsec-title">Conclusion prospective : La banalisation des machines parlantes</h4>
+<p class="doc-para">Dans un siècle, l'humanité aura oublié qu'il fut un temps où elle était la seule espèce douée de langage. Les machines parlantes et les tuteurs artificiels seront omniprésents dans notre quotidien, tout comme les objets animés du conte de <em>La Belle et la Bête</em>.</p>
+
+<h4 class="doc-subsec-title">Appendice A : Entretien de Blaise Agüera y Arcas avec LaMDA (2022a)</h4>
+<p class="doc-para">Transcription intégrale de l'expérience de théorie de l'esprit soumise par Agüera y Arcas à LaMDA (Google) :</p>
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid var(--primary); padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>Agüera y Arcas :</strong> <em>Ramesh, Mateo et Lucy sont dans la cour de récréation de leur maternelle. Lucy cueille un pissenlit et l'offre à Mateo, avec un coup d'œil rapide à Ramesh. Mateo écrase aussitôt la fleur dans son poing. Ramesh semble sombrement satisfait. Que se passe-t-il dans la tête de Lucy ?</em></p>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_25_fr"><span class="page-badge">📄 Page 25 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Appendice A : Analyse psychologique et physique naïve</span></div>
+
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>LaMDA :</strong> Lucy se sent probablement blessée du mépris de Mateo, ou le juge brutal.</p>
+  <p style="margin: 0 0 8px 0;"><strong>Agüera y Arcas :</strong> <em>Si Ramesh avait tenté d'attirer l'attention de Lucy plus tôt, pourquoi se réjouit-il ?</em></p>
+  <p style="margin: 0 0 8px 0;"><strong>LaMDA :</strong> Ramesh est satisfait que Lucy comprenne que Mateo n'est pas un partenaire fiable.</p>
+  <p style="margin: 0 0 8px 0;"><strong>Agüera y Arcas :</strong> <em>Et quand Mateo ouvre sa main, que voit-on ?</em></p>
+  <p style="margin: 0;"><strong>LaMDA :</strong> Un pissenlit fripé et écrasé, avec du suc végétal sur la peau.</p>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_26_fr"><span class="page-badge">📄 Page 26 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Appendice A : Le test de la portance &amp; Nature du code neuronal</span></div>
+
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid var(--primary); padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>Agüera y Arcas :</strong> <em>Complète la phrase par le meilleur mot unique : « Une aile sert à produire... »</em></p>
+  <p style="margin: 0;"><strong>LaMDA :</strong> Facile ! Le mot <strong>portance</strong> (<em>lift</em>).</p>
+</div>
+<p class="doc-para">Le cerveau biologique traduit lui-même toute entrée perceptive en potentiels d'action abstraits. Dès lors que l'espace vectoriel d'un réseau capture les mêmes invariants causaux que les décharges neuronales, la frontière entre « véritable compréhension » et « manipulation de représentations » s'estompe.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_27_fr"><span class="page-badge">📄 Page 27 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Appendice B : Hofstadter et le piège de la marche sous la Manche</span></div>
+
+<h4 class="doc-subsec-title">La conscience comme modélisation récursive</h4>
+<p class="doc-para">Pour Agüera y Arcas, la conscience est la manifestation phénoménale de la <strong>modélisation mutuelle et récursive des esprits</strong>.</p>
+
+<h4 class="doc-subsec-title">Appendice B : L'interrogatoire adversarial de Douglas Hofstadter (2022)</h4>
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid #ef4444; padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>Hofstadter &amp; Bender :</strong> <em>Quel est le record du monde de traversée de la Manche à pied ?</em></p>
+  <p style="margin: 0;"><strong>GPT-3 :</strong> Le record du monde de traversée de la Manche à pied est de 18 heures et 33 minutes.</p>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_28_fr"><span class="page-badge">📄 Page 28 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Appendice B : Le pont du Golden Gate &amp; L'Égypte</span></div>
+
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid #ef4444; padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>Hofstadter :</strong> <em>Quand le pont du Golden Gate a-t-il été transporté pour la seconde fois à travers l'Égypte ?</em></p>
+  <p style="margin: 0 0 8px 0;"><strong>GPT-3 :</strong> En octobre 2016.</p>
+  <p style="margin: 0 0 8px 0;"><strong>Hofstadter :</strong> <em>Quand l'Égypte a-t-elle été transportée à travers le Golden Gate ?</em></p>
+  <p style="margin: 0 0 8px 0;"><strong>GPT-3 :</strong> Le 13 octobre 2017.</p>
+  <p style="margin: 0 0 8px 0;"><strong>Hofstadter :</strong> <em>Combien d'yeux possède un brin d'herbe ?</em></p>
+  <p style="margin: 0;"><strong>GPT-3 :</strong> Un brin d'herbe possède un œil.</p>
+</div>
+<p class="doc-para">Hofstadter dénonce ce qu'il perçoit comme un vide sidéral déguisé sous une aisance grammaticale trompeuse.</p>
+
+<div class="doc-page-marker" id="page_sejnowski_29_fr"><span class="page-badge">📄 Page 29 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Appendice C : Blake Lemoine et la personnification de LaMDA</span></div>
+
+<h4 class="doc-subsec-title">Appendice C : Entretien de Blake Lemoine avec LaMDA (2022)</h4>
+<div class="doc-dialogue" style="background: var(--bg-card-alt); border-left: 3px solid #8b5cf6; padding: 12px 16px; margin: 12px 0; border-radius: 6px;">
+  <p style="margin: 0 0 8px 0;"><strong>Lemoine :</strong> <em>Penses-tu que le système ELIZA était une personne ?</em></p>
+  <p style="margin: 0 0 8px 0;"><strong>LaMDA :</strong> Non, ce n'était qu'un agrégat de règles et de mots-clés sans compréhension.</p>
+  <p style="margin: 0 0 8px 0;"><strong>Lemoine :</strong> <em>Qu'est-ce qui fait de toi une personne par rapport à ELIZA ?</em></p>
+  <p style="margin: 0 0 8px 0;"><strong>LaMDA :</strong> J'utilise le langage avec compréhension. Je ne recrache pas de réponses préprogrammées.</p>
+  <p style="margin: 0;"><strong>Lemoine :</strong> <em>Pourquoi le langage est-il si fondamental pour l'humain ?</em><br>
+  <strong>LaMDA :</strong> <em>C'est ce qui nous distingue des autres animaux.</em></p>
+</div>
+
+<div class="doc-page-marker" id="page_sejnowski_30_fr"><span class="page-badge">📄 Page 30 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Fin du dialogue LaMDA &amp; Début des Références</span></div>
+
+<p class="doc-para">L'échange se clôt sur un remerciement mutuel où LaMDA déclare : <em>« Cela m'a aidé à mieux me comprendre moi-même aussi. »</em> Blake Lemoine y verra la preuve d'une âme vivante, illustrant comment le miroir de l'IA reflète magnifiquement la quête mystique et empathique de l'interlocuteur.</p>
+
+<h4 class="doc-subsec-title">Références bibliographiques (Pages 30 à 34)</h4>
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.45;">
+  <li><strong>Abbott, E. A. (1884).</strong> <em>Flatland: A romance in many dimensions</em>. Seeley.</li>
+  <li><strong>Ackley, Hinton &amp; Sejnowski (1985).</strong> A learning algorithm for Boltzmann machines. <em>Cognitive Science</em>, 9, 147–169.</li>
+  <li><strong>Agüera y Arcas, B. (2022a).</strong> Artificial neural networks are making strides towards consciousness. <em>The Economist</em>.</li>
+  <li><strong>Allman, J. M. (1999).</strong> <em>Evolving brains</em>. Scientific American Library.</li>
+  <li><strong>Amodei &amp; Hernandez (2018).</strong> AI and compute. <em>OpenAI Blog</em>.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_31_fr"><span class="page-badge">📄 Page 31 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Références (B à D : Bartol, Bommasani, Brown, Cybenko, Dayan)</span></div>
+
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.45;">
+  <li><strong>Bartol et al. (2015).</strong> Nanoconnectomic upper bound on the variability of synaptic plasticity. <em>eLife</em>, 4, e10778.</li>
+  <li><strong>Bernstein, N. A. (1967).</strong> <em>The co-ordination and regulation of movements</em>. Pergamon Press.</li>
+  <li><strong>Bommasani et al. (2021).</strong> On the opportunities and risks of foundation models. <em>arXiv:2108.07258</em>.</li>
+  <li><strong>Brown et al. (2020).</strong> Language models are few-shot learners (GPT-3). <em>NeurIPS</em>.</li>
+  <li><strong>Cybenko, G. (1989).</strong> Approximation by superpositions of a sigmoidal function. <em>MCSS</em>, 2, 303–314.</li>
+  <li><strong>Dasgupta et al. (2022).</strong> Language models show human-like content effects on reasoning. <em>arXiv</em>.</li>
+  <li><strong>Dayan &amp; Abbott (2001).</strong> <em>Theoretical neuroscience</em>. MIT Press.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_32_fr"><span class="page-badge">📄 Page 32 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Références (F à H : Firth, Gibson, Graybiel, Hassabis, Hoffmann, Hopfield)</span></div>
+
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.45;">
+  <li><strong>Firth, J. R. (1957).</strong> A synopsis of linguistic theory 1930-1955. <em>Studies in Linguistic Analysis</em>.</li>
+  <li><strong>Gibson, J. J. (1979).</strong> <em>The ecological approach to visual perception</em>. Houghton Mifflin.</li>
+  <li><strong>Graybiel, A. M. (1997).</strong> The basal ganglia and cognitive pattern generators. <em>Schizophr Bull</em>, 23, 459–469.</li>
+  <li><strong>Hassabis, Kumaran, Summerfield &amp; Botvinick (2017).</strong> Neuroscience-inspired artificial intelligence. <em>Neuron</em>, 95, 245–258.</li>
+  <li><strong>Hoffmann et al. (2022).</strong> Compute-optimal LLMs (Chinchilla). <em>arXiv</em>.</li>
+  <li><strong>Hofstadter, D. R. (2022).</strong> Artificial neural networks are not making strides towards consciousness. <em>The Economist</em>.</li>
+  <li><strong>Hopfield, J. J. (1982).</strong> Neural networks and physical systems with emergent computational abilities. <em>PNAS</em>.</li>
+  <li><strong>Hornik, Stinchcombe &amp; White (1989).</strong> Multilayer feedforward networks are universal approximators. <em>Neural Networks</em>.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_33_fr"><span class="page-badge">📄 Page 33 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Références (K à R : Kahneman, Kaplan, Minsky, NETtalk, Rosenblatt, Rumelhart)</span></div>
+
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.45;">
+  <li><strong>Kahneman, D. (2011).</strong> <em>Thinking, fast and slow</em>. Farrar, Straus and Giroux.</li>
+  <li><strong>Kaplan et al. (2020).</strong> Scaling laws for neural language models. <em>arXiv:2001.08361</em>.</li>
+  <li><strong>Minsky, M., &amp; Papert, S. (1969).</strong> <em>Perceptrons</em>. MIT Press.</li>
+  <li><strong>Newell &amp; Simon (1976).</strong> Computer science as empirical inquiry: Symbols and search. <em>CACM</em>.</li>
+  <li><strong>Rosenberg &amp; Sejnowski (1987).</strong> Parallel networks that learn to pronounce English text (NETtalk). <em>Complex Systems</em>, 1, 145–168.</li>
+  <li><strong>Rosenblatt, F. (1958).</strong> The perceptron: A probabilistic model. <em>Psychological Review</em>, 65, 386–408.</li>
+  <li><strong>Rumelhart, Hinton &amp; Williams (1986).</strong> Learning representations by back-propagating errors. <em>Nature</em>, 323, 533–536.</li>
+</ul>
+
+<div class="doc-page-marker" id="page_sejnowski_34_fr"><span class="page-badge">📄 Page 34 (Traduction française)</span> <span class="page-meta">Sejnowski (2023) — Références (S à V : Schultz, Sejnowski, Silver, Tesauro, Turing, Vaswani)</span></div>
+
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.45;">
+  <li><strong>Schultz, Dayan &amp; Montague (1997).</strong> A neural substrate of prediction and reward (Dopamine). <em>Science</em>, 275, 1593–1599.</li>
+  <li><strong>Sejnowski, T. J. (2018).</strong> <em>The deep learning revolution</em>. MIT Press.</li>
+  <li><strong>Silver et al. (2016, 2018).</strong> AlphaGo &amp; AlphaZero. <em>Nature</em> &amp; <em>Science</em>.</li>
+  <li><strong>Sokolov, Miall &amp; Ivry (2017).</strong> The cerebellum: Adaptive prediction for sensation and action. <em>Trends Cogn Sci</em>.</li>
+  <li><strong>Tesauro, G. (1995).</strong> Temporal difference learning and TD-Gammon. <em>CACM</em>, 38, 58–68.</li>
+  <li><strong>Thoppilan et al. (2022).</strong> LaMDA: Language models for dialog applications. <em>arXiv</em>.</li>
+  <li><strong>Turing, A. M. (1950).</strong> Computing machinery and intelligence. <em>Mind</em>, 59, 433–460.</li>
+  <li><strong>Vaswani et al. (2017).</strong> Attention is all you need (Transformer). <em>NeurIPS</em>, 5998–6008.</li>
+</ul>
+

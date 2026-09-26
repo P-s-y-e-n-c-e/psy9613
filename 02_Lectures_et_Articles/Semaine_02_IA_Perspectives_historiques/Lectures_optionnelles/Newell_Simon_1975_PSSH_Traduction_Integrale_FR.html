@@ -1,0 +1,350 @@
+<h2 class="doc-art-title">Allen Newell &amp; Herbert A. Simon (1975) — L'informatique comme enquête empirique : symboles et recherche</h2>
+<ul class="doc-list">
+  <li><strong>Publication originale :</strong> <em>Communications of the ACM</em>, Mars 1976, Vol. 19, No. 3, pp. 113–126, doi: 10.1145/360018.360022.</li>
+  <li><strong>Statut académique :</strong> Conférence du Prix Turing de l'ACM 1975 — Texte fondateur du paradigme symbolique classique (GOFAI) et de la psychologie computationnelle.</li>
+  <li><strong>Rôle dans le cours PSY9613 :</strong> Lecture fondamentale pour la Séance 2 (Pr Pierre Poirier) — Fondements théoriques de l'IA, de la calculabilité et de l'esprit comme système physique de symboles.</li>
+  <li><strong>Traduction académique :</strong> Version intégrale française annotée avec ancres interactives pour l'examen et la banque de questions étalon-or (UQAM).</li>
+</ul>
+<hr class="doc-divider">
+
+<div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 18px 22px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+  <div style="font-weight: 700; font-size: 1.08rem; color: var(--primary); margin-bottom: 10px;">
+    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés — Newell &amp; Simon (1975) — PSSH &amp; Recherche Heuristique
+  </div>
+  <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 12px 0; color: var(--text-main);">
+    <strong>Thèse centrale :</strong> L'intelligence générale repose sur deux lois fondamentales de structure qualitative universelles. Premièrement, <strong>l'Hypothèse du Système de Symboles Physiques (PSSH)</strong> affirme qu'un système de symboles physiques possède les moyens <em>nécessaires et suffisants</em> pour l'action intelligente générale. Deuxièmement, <strong>l'Hypothèse de la Recherche Heuristique</strong> affirme que ces systèmes résolvent des problèmes en explorant sélectivement des espaces de problèmes par génération et modification progressive de structures symboliques afin de juguler l'explosion combinatoire.
+  </p>
+  <ul style="font-size: 0.9rem; line-height: 1.52; margin: 0; padding-left: 20px; color: var(--text-muted);">
+    <li><strong>Lois de structure qualitative :</strong> Caractérisations scientifiques essentielles comparables à la doctrine cellulaire (Schwann &amp; Schleiden), à la tectonique des plaques, à la théorie des germes (Pasteur) et à l'atomisme de Dalton.</li>
+    <li><strong>Désignation &amp; Interprétation :</strong> Une expression <em>désigne</em> un objet si elle confère un accès causal pour agir sur lui ; elle est <em>interprétable</em> si le système peut exécuter le processus qu'elle nomme.</li>
+    <li><strong>5 conditions de clôture :</strong> Arbitraire du symbole, complétude expressive des processus, opérations universelles de modification, stabilité temporelle et mémoire virtuellement infinie.</li>
+    <li><strong>Double versant empirique :</strong> L'Intelligence Artificielle démontre la <strong>suffisance</strong> de l'architecture symbolique ; la Psychologie Cognitive démontre sa <strong>nécessité</strong> chez l'humain (validée par protocoles de réflexion à voix haute / <em>thinking aloud</em>).</li>
+    <li><strong>Explosion combinatoire &amp; Paradoxe de la recherche :</strong> La recherche brute croît comme \(B^D\). La quantité de recherche n'est pas la mesure de l'intelligence : les grands maîtres humains explorent moins de 100 nœuds grâce à une sélectivité heuristique extrême intégrée au générateur.</li>
+    <li><strong>Méthodes faibles vs fortes :</strong> Les méthodes faibles (génération-test, analyse moyens-fins, élagage alpha-bêta) interviennent lorsque les connaissances sont rares ; les méthodes fortes mobilisent une expertise sémantique massive.</li>
+    <li><strong>Dépassement de la recherche aveugle :</strong> Exploitation non locale (analyse causale de Berliner, tableau noir de HEARSAY-II), reconnaissance sémantique (50 000 motifs perceptifs/<em>chunks</em> chez les maîtres d'échecs) et restructuration de l'espace de problème (problème du damier mutilé).</li>
+  </ul>
+</div>
+<div class="doc-page-marker" id="page_newell_1_fr"><span class="page-badge">📄 Page 1 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Conférence Turing &amp; Enquête empirique</span></div>
+
+<div class="doc-citation-box" style="background: rgba(99, 102, 241, 0.05); border-left: 4px solid var(--primary); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 8px 0; color: var(--primary); font-size: 1rem;">Éloge officiel de Bernard A. Galler (Président du Comité du Prix Turing de l'ACM) :</h4>
+  <p class="doc-para" style="margin-bottom: 8px; font-style: italic;">« C'est un privilège de pouvoir décerner le Prix Turing de l'ACM à deux amis de longue date, les professeurs Allen Newell et Herbert A. Simon, tous deux de l'Université Carnegie-Mellon.</p>
+  <p class="doc-para" style="margin-bottom: 8px; font-style: italic;">Dans des efforts scientifiques conjoints s'étendant sur plus de vingt années — initialement en collaboration avec J.C. Shaw à la RAND Corporation, puis avec de nombreux collègues professeurs et étudiants à l'Université Carnegie-Mellon —, ils ont apporté des contributions fondamentales à l'intelligence artificielle, à la psychologie de la cognition humaine et au traitement de listes.</p>
+  <p class="doc-para" style="margin-bottom: 8px; font-style: italic;">En <strong>intelligence artificielle</strong>, ils ont contribué à établir ce domaine comme un champ de recherche scientifique légitime, au développement de la programmation heuristique en général, et plus particulièrement de la recherche heuristique, de l'analyse moyens-fins et des méthodes d'induction ; apportant des démonstrations rigoureuses de la suffisance de ces mécanismes pour résoudre des problèmes complexes et stimulants.</p>
+  <p class="doc-para" style="margin-bottom: 8px; font-style: italic;">En <strong>psychologie</strong>, ils ont été les principaux instigateurs de l'idée selon laquelle la cognition humaine peut être décrite en termes de système de symboles, et ils ont développé des théories détaillées de la résolution de problèmes chez l'humain, de l'apprentissage verbal et du comportement inductif dans plusieurs domaines de tâches, en utilisant des programmes informatiques incarnant ces théories pour simuler le comportement humain.</p>
+  <p class="doc-para" style="margin-bottom: 8px; font-style: italic;">Ils ont été, selon toute apparence, les inventeurs du <strong>traitement de listes</strong>, et ont contribué de manière majeure à la fois à la technologie logicielle et au développement du concept de l'ordinateur comme un système de manipulation de structures symboliques, et non pas simplement comme un processeur de données numériques.</p>
+  <p class="doc-para" style="margin: 0; font-style: italic;">C'est un honneur pour les professeurs Newell et Simon de recevoir ce prix, mais c'est aussi un honneur pour l'ACM de pouvoir ajouter leurs noms à notre liste de récipiendaires, car par leur présence, ils rehaussent le prestige et l'importance du Prix Turing de l'ACM. »</p>
+</div>
+
+<h3 class="doc-sec-title">L'informatique comme enquête empirique : symboles et recherche</h3>
+<p class="doc-para"><strong>Allen Newell &amp; Herbert A. Simon</strong><br>
+<em>Communications of the ACM, Vol. 19, No. 3, Mars 1976 (Conférence prononcée le 20 octobre 1975)</em></p>
+
+<p class="doc-para">L'informatique est l'étude des phénomènes qui entourent les ordinateurs. Les fondateurs de notre société savante l'ont fort bien compris lorsqu'ils se sont baptisés l'<strong>Association for Computing Machinery</strong> (ACM). La machine — non pas simplement le matériel physique (<em>hardware</em>), mais la machine programmée, vivante — est l'organisme même que nous étudions.</p>
+<p class="doc-para">Il s'agit ici de la dixième conférence Turing. Les neuf personnes qui nous ont précédés à cette tribune ont présenté neuf visions différentes de l'informatique. Car notre organisme, la machine, peut être étudié à de multiples niveaux et sous de multiples facettes. Nous sommes profondément honorés d'être parmi vous aujourd'hui pour présenter une perspective supplémentaire, celle-là même qui a imprégné l'ensemble des travaux scientifiques pour lesquels nous sommes honorés. Nous souhaitons parler de l'informatique comme d'une <strong>enquête empirique</strong> (<em>empirical inquiry</em>).</p>
+
+
+<div class="doc-page-marker" id="page_newell_2_fr"><span class="page-badge">📄 Page 2 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — L'ordinateur et l'enquête empirique</span></div>
+
+<p class="doc-para">Notre vision n'en est qu'une parmi d'autres ; les conférences précédentes l'ont amplement démontré. Toutefois, même prises dans leur ensemble, ces conférences ne parviennent pas à couvrir toute l'étendue de notre science. De nombreux aspects fondamentaux n'ont pas encore été représentés dans ces dix récompenses. Et si le moment arrive jamais — certainement pas de sitôt — où la rose des vents aura été complètement parcourue, où l'informatique aura été discutée sous toutes ses coutures, il sera temps de recommencer le cycle. Car le conférencier, tel le lièvre, devra effectuer un sprint annuel pour rattraper l'accumulation de petits gains progressifs que la tortue du développement scientifique et technique aura accomplis dans sa marche régulière. Chaque année créera un nouvel écart et exigera un nouveau sprint, car en science, il n'y a jamais de dernier mot.</p>
+
+<p class="doc-para"><strong>L'informatique est une discipline empirique.</strong> Nous l'aurions volontiers qualifiée de science expérimentale, mais, à l'instar de l'astronomie, de l'économie et de la géologie, certaines de ses formes uniques d'observation et d'expérience ne cadrent pas avec le stéréotype étroit de la méthode expérimentale. Il n'en demeure pas moins qu'il s'agit bel et bien d'expériences. Chaque nouvelle machine construite est une expérience. Construire effectivement la machine revient à poser une question à la nature ; et nous écoutons la réponse en observant la machine en fonctionnement et en l'analysant par tous les moyens d'analyse et de mesure disponibles. Chaque nouveau programme conçu est une expérience. Il pose une question à la nature, et son comportement offre des indices pour une réponse.</p>
+
+<p class="doc-para">Ni les machines ni les programmes ne sont des boîtes noires ; ce sont des artefacts qui ont été conçus, tant sur le plan matériel que logiciel, et nous pouvons les ouvrir pour regarder à l'intérieur. Nous pouvons relier leur structure à leur comportement et tirer de multiples leçons d'une seule et unique expérience. Nous n'avons pas besoin de fabriquer 100 exemplaires, disons, d'un démonstrateur de théorèmes, pour prouver statistiquement qu'il n'a pas surmonté l'explosion combinatoire de la recherche de la manière espérée. L'inspection du programme à la lumière de quelques exécutions révèle la faille et nous permet de passer à la tentative suivante.</p>
+
+<p class="doc-para">Nous construisons des ordinateurs et des programmes pour de nombreuses raisons. Nous les construisons pour servir la société et comme outils destinés à accomplir les tâches économiques de la société. Mais en tant que chercheurs en science fondamentale, nous construisons des machines et des programmes comme un moyen de découvrir de nouveaux phénomènes et d'analyser des phénomènes que nous connaissons déjà. La société se méprend souvent à ce sujet, croyant que les ordinateurs et les programmes ne doivent être construits que pour l'usage économique immédiat qui peut en être fait (ou comme étapes intermédiaires vers un tel usage). Elle doit comprendre que les phénomènes entourant les ordinateurs sont profonds et obscurs, exigeant une intense expérimentation pour évaluer leur nature. Elle doit comprendre que, comme dans toute science, les gains issus de cette expérimentation et de cette compréhension se traduisent par l'acquisition permanente de nouvelles techniques ; et que ce sont ces techniques qui créeront les instruments capables d'aider la société à atteindre ses buts.</p>
+
+<p class="doc-para">Notre propos ici n'est toutefois pas de plaider pour la compréhension du monde extérieur. Il s'agit d'examiner un aspect de notre science : le développement d'une nouvelle compréhension fondamentale par l'enquête empirique. La meilleure façon d'y parvenir est de recourir à des illustrations. On nous pardonnera si, profitant de l'occasion, nous choisissons nos exemples dans le champ de nos propres recherches. Comme cela deviendra évident, ces exemples englobent tout le développement de l'intelligence artificielle, particulièrement dans ses premières années. Ils reposent sur bien plus que nos seules contributions personnelles. Et même là où nous avons apporté des contributions directes, cela s'est fait en coopération avec d'autres. Nos collaborateurs ont notamment inclus Cliff Shaw, avec qui nous avons formé une équipe de trois durant la période stimulante de la fin des années cinquante. Mais nous avons également collaboré avec un grand nombre de collègues et d'étudiants à l'Université Carnegie-Mellon.</p>
+
+<p class="doc-para">Le temps imparti ne nous permet d'aborder que deux exemples. Le premier est le développement de la notion de <strong>système symbolique</strong>. Le second est le développement de la notion de <strong>recherche heuristique</strong>. Ces deux conceptions revêtent une signification profonde pour comprendre comment l'information est traitée et comment l'intelligence est réalisée. Elles sont pourtant loin d'épuiser l'ensemble de l'intelligence artificielle, bien qu'elles nous paraissent exemplaires pour exposer la nature des connaissances fondamentales dans cette branche de l'informatique.</p>
+
+<h3 class="doc-sec-title">I. Symboles et systèmes de symboles physiques</h3>
+<p class="doc-para">L'une des contributions fondamentales de l'informatique à la connaissance a été d'expliquer, à un niveau très fondamental, ce que sont les symboles. Cette explication constitue une proposition scientifique portant sur la Nature. Elle est dérivée empiriquement, au terme d'un développement long et graduel.</p>
+
+<p class="doc-para">Les symboles se situent au fondement même de l'action intelligente, qui constitue, bien entendu, l'objet d'étude premier de l'intelligence artificielle. C'est d'ailleurs une question fondamentale pour l'ensemble de l'informatique. Car toute information est traitée par les ordinateurs au service de finalités déterminées, et nous mesurons l'intelligence d'un système à sa capacité à atteindre les buts fixés en dépit des variations, des difficultés et des complexités posées par l'environnement de la tâche. Cet investissement général de l'informatique dans la réalisation de l'intelligence est parfois masqué lorsque les tâches accomplies sont de portée limitée, car les variations de l'environnement peuvent alors être anticipées avec exactitude. Mais cela devient éclatant dès que nous étendons les ordinateurs à des tâches plus globales, complexes et riches en connaissances — lorsque nous tentons d'en faire nos agents, capables de gérer par eux-mêmes l'ensemble des contingences du monde naturel.</p>
+
+
+<div class="doc-page-marker" id="page_newell_3_fr"><span class="page-badge">📄 Page 3 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Lois de structure qualitative</span></div>
+
+<p class="doc-para">Notre compréhension des exigences systémiques requises pour l'action intelligente n'émerge que lentement. Elle est composite, car aucun élément simple et isolé ne saurait rendre compte de l'intelligence dans toutes ses manifestations. Il n'existe aucun « principe d'intelligence » universel, tout comme il n'existe aucun « principe vital » qui conférerait par sa nature même l'essence de la vie. Mais l'absence d'un <em>deus ex machina</em> simpliste n'implique nullement qu'il n'existe aucune exigence structurelle pour l'intelligence. L'une de ces exigences réside dans la capacité à stocker et à manipuler des symboles. Pour formuler la question scientifique, nous pourrions paraphraser le titre d'un célèbre article de Warren McCulloch [1961] : <em>Qu'est-ce qu'un symbole, pour que l'intelligence puisse en faire usage, et qu'est-ce que l'intelligence, pour qu'elle puisse faire usage d'un symbole ?</em></p>
+
+<h4 class="doc-subsec-title">Lois de structure qualitative</h4>
+<p class="doc-para">Toutes les sciences caractérisent la nature essentielle des systèmes qu'elles étudient. Ces caractérisations sont invariablement de nature <strong>qualitative</strong>, car elles établissent les termes conceptuels au sein desquels des connaissances plus détaillées peuvent être développées. Leur essence peut souvent être résumée dans des énoncés très courts et très généraux. On pourrait juger que ces lois générales, en raison de leur spécificité restreinte, apportent une contribution modeste à l'ensemble d'une science, n'était la preuve historique qui démontre qu'elles constituent en réalité des découvertes de la plus haute importance.</p>
+
+<ul class="doc-list">
+  <li><strong>La doctrine cellulaire en biologie :</strong> L'unité constitutive fondamentale de tous les organismes vivants est la <strong>cellule</strong>. Les cellules se présentent sous une grande diversité de formes, bien qu'elles possèdent toutes un noyau entouré de cytoplasme, le tout enveloppé d'une membrane. Mais cette structure interne ne faisait pas partie, historiquement, de la formulation initiale de la doctrine cellulaire ; il s'agissait d'une spécification ultérieure mise au jour par des investigations approfondies. L'impact de cette loi sur la biologie a pourtant été prodigieux.</li>
+  <li><strong>La tectonique des plaques en géologie :</strong> La surface du globe est une mosaïque de plaques gigantesques — quelques dizaines en tout — qui se déplacent (à des vitesses géologiques) les unes contre les autres, les unes par-dessus et par-dessous les autres, s'enfonçant vers le centre de la Terre où elles perdent leur identité. Les mouvements de ces plaques rendent compte de la dérive des continents, des séismes, du volcanisme et des fosses océaniques. Maintenant qu'elle est admise, la Terre entière semble en offrir des preuves manifestes partout.</li>
+  <li><strong>La théorie des germes des maladies :</strong> Énoncée par Pasteur, cette loi propose que la majorité des maladies infectieuses sont causées par la présence et la multiplication dans l'organisme de minuscules êtres vivants unicellulaires, et que la contagion consiste en la transmission de ces organismes d'un hôte à un autre. La loi nous intime de chercher un type particulier de cause ; elle ne garantit pas que nous le trouverons toujours.</li>
+  <li><strong>La doctrine de l'atomisme :</strong> Issue des travaux de Dalton sur les proportions chimiques fixes, elle affirmait que les éléments sont formés de particules discrètes et uniformes. Mais parce que les atomes sont simples et en variété limitée, des formulations mathématiques quantitatives ont rapidement pris le relais. À l'inverse, avec les cellules, les plaques et les germes, la richesse structurelle préserve intacte la fécondité explicative de la loi qualitative.</li>
+</ul>
+
+
+<div class="doc-page-marker" id="page_newell_4_fr"><span class="page-badge">📄 Page 4 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Systèmes de symboles physiques</span></div>
+
+<p class="doc-para"><strong>Conclusion sur les lois qualitatives :</strong> Les lois de structure qualitative se rencontrent partout en science. Certaines de nos plus grandes découvertes scientifiques comptent parmi elles. Comme l'illustrent ces exemples, elles établissent souvent les conditions mêmes dans lesquelles opère une science tout entière.</p>
+
+<h3 class="doc-sec-title">Systèmes de symboles physiques</h3>
+<p class="doc-para">Revenons maintenant à la question des symboles, et définissons ce qu'est un <strong>système de symboles physiques</strong> (<em>physical symbol system</em>). L'adjectif « physique » dénote deux caractéristiques fondamentales :</p>
+<ol class="doc-list">
+  <li>De tels systèmes obéissent manifestement aux lois de la physique — ils sont matériellement réalisables par des systèmes d'ingénierie constitués de composants matériels ;</li>
+  <li>Bien que notre usage du mot « symbole » préfigure l'interprétation que nous entendons lui donner, il ne se restreint nullement aux seuls systèmes de symboles humains.</li>
+</ol>
+
+<p class="doc-para">Un <strong>système de symboles physiques</strong> consiste en un ensemble d'entités, appelées <strong>symboles</strong>, qui sont des motifs physiques (<em>physical patterns</em>) pouvant apparaître comme composants d'un autre type d'entité appelé une <strong>expression</strong> (ou structure de symboles). Ainsi, une structure de symboles est composée d'un ensemble d'occurrences (<em>tokens</em>) de symboles reliées d'une certaine façon physique (par exemple, une occurrence étant contiguë à une autre). À tout instant, le système contient une collection de ces structures de symboles.</p>
+
+<p class="doc-para">Outre ces structures, le système comprend également une collection de <strong>processus</strong> qui opèrent sur les expressions pour produire d'autres expressions : processus de <em>création</em>, de <em>modification</em>, de <em>reproduction</em> et de <em>destruction</em>. Un système de symboles physiques est une machine qui produit au fil du temps une collection évolutive de structures symboliques. Un tel système s'insère dans un monde d'objets bien plus vaste que ces seules expressions symboliques elles-mêmes.</p>
+
+<span id="anchor_seance_02_q31_fr" class="doc-anchor-target"></span>
+<div class="doc-callout-def" style="background: rgba(16, 185, 129, 0.05); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 8px 0; color: var(--accent); font-size: 1rem;">Deux concepts fondamentaux : Désignation et Interprétation</h4>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>Désignation :</strong> Une expression <strong>désigne</strong> un objet si, étant donné l'expression, le système peut soit affecter l'objet lui-même, soit se comporter de manière dépendante de cet objet. Dans un cas comme dans l'autre, un accès à l'objet via l'expression a été obtenu, ce qui constitue l'essence même de la désignation.</p>
+  <p class="doc-para" style="margin: 0;"><strong>Interprétation :</strong> Le système peut <strong>interpréter</strong> une expression si l'expression désigne un processus et si, étant donné l'expression, le système peut exécuter ce processus. L'interprétation implique une forme particulière d'action dépendante : le système peut évoquer et exécuter ses propres processus à partir des expressions symboliques qui les désignent.</p>
+</div>
+
+<p class="doc-para">Un système capable de désignation et d'interprétation doit satisfaire <strong>cinq conditions de clôture et de complétude</strong> :</p>
+<ul class="doc-list">
+  <li>(1) Un symbole peut être employé pour désigner n'importe quelle expression concevable (arbitraire du symbole atomique).</li>
+  <li>(2) Il existe des expressions qui désignent chaque processus dont la machine est capable.</li>
+  <li>(3) Il existe des processus pour créer toute expression et pour modifier toute expression de façon arbitraire.</li>
+  <li>(4) Les expressions sont stables dans le temps : une fois créées, elles subsistent jusqu'à modification ou effacement explicite.</li>
+  <li>(5) Le nombre d'expressions que le système peut emmagasiner est virtuellement illimité.</li>
+</ul>
+
+<p class="doc-para">Le type de système que nous venons de définir présente un air de famille frappant avec l'ensemble des ordinateurs universels. Si l'on considère un langage de manipulation de symboles, tel que <strong>LISP</strong>, comme définissant une machine abstraite, la parenté devient littéralement fraternelle.</p>
+
+<span id="anchor_seance_02_q36_fr" class="doc-anchor-target"></span><span id="anchor_seance_02_q36" class="doc-anchor-target"></span>
+<div class="doc-callout-law" style="background: rgba(99, 102, 241, 0.08); border-left: 5px solid var(--primary); padding: 16px 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+  <h4 style="margin: 0 0 8px 0; color: var(--primary); font-size: 1.1rem; font-weight: 700;">⚖️ L'Hypothèse du Système de Symboles Physiques (PSSH)</h4>
+  <p class="doc-para" style="font-size: 1.05rem; font-weight: 600; line-height: 1.5; color: var(--text-main); margin-bottom: 12px;">
+    « Un système de symboles physiques possède les moyens nécessaires et suffisants pour l'action intelligente générale. »<br>
+    <span style="font-size: 0.92rem; font-weight: 400; color: var(--text-muted); font-style: italic;">(The Physical Symbol System Hypothesis. A physical symbol system has the necessary and sufficient means for general intelligent action.)</span>
+  </p>
+  <ul class="doc-list" style="margin: 0; padding-left: 20px;">
+    <li><strong>Nécessaire :</strong> Tout système manifestant une intelligence générale s'avérera, à l'analyse, être un système de symboles physiques.</li>
+    <li><strong>Suffisant :</strong> Tout système de symboles physiques de taille appropriée peut être organisé de manière à exhiber une intelligence générale.</li>
+    <li><strong>Action intelligente générale :</strong> La même étendue et adaptabilité que l'action humaine face aux contraintes du monde réel.</li>
+  </ul>
+</div>
+
+<p class="doc-para">L'hypothèse du système de symboles physiques constitue sans équivoque une <strong>loi de structure qualitative</strong>. C'est une <strong>hypothèse empirique</strong> : elle affirme que cette classe délimitée de systèmes matériels rend compte de l'intelligence générale observable dans le monde naturel. Scientifiquement, on ne peut l'attaquer ou la défendre qu'en apportant des preuves empiriques issues de l'observation et de l'expérimentation.</p>
+
+
+<div class="doc-page-marker" id="page_newell_5_fr"><span class="page-badge">📄 Page 5 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Genèse de la PSSH &amp; Machine de Turing</span></div>
+
+<h3 class="doc-sec-title">Développement de l'hypothèse du système de symboles</h3>
+<p class="doc-para">Un système de symboles physiques est une instanciation d'une <strong>machine universelle</strong>. Ainsi, l'hypothèse du système de symboles implique que l'intelligence sera réalisée par un calculateur universel. Toutefois, l'hypothèse va bien au-delà de l'argument classique — souvent avancé au nom d'un déterminisme physique général — selon lequel tout calcul réalisable peut être accompli par une machine universelle, pourvu qu'il soit formellement spécifié. Car elle affirme très précisément que <strong>la machine intelligente est un système de symboles</strong>, formulant ainsi une proposition architecturale précise sur la nature intime des systèmes intelligents.</p>
+
+<h4 class="doc-subsec-title">1. La logique formelle</h4>
+<p class="doc-para">Les racines de l'hypothèse remontent aux programmes de Frege, Whitehead et Russell visant à formaliser la logique : asseoir les concepts de preuve et de déduction sur des règles purement mécaniques. Il en est résulté une vision caractéristique, qualifiée de <strong>« jeu de symboles »</strong> (<em>symbol game</em>) : la logique et les mathématiques étaient conçues comme la manipulation de jetons dépourvus de sens selon des règles purement syntaxiques. Nous qualifions cette phase d'<strong>étape de la manipulation formelle de symboles</strong>.</p>
+<p class="doc-para">Cette attitude s'est reflétée dans la théorie de l'information de Claude Shannon, consacrée à la transmission sélective de signaux sans égard à la signification sémantique.</p>
+
+<span id="anchor_seance_02_q35_fr" class="doc-anchor-target"></span>
+<h4 class="doc-subsec-title">2. Les machines de Turing et l'ordinateur numérique</h4>
+<p class="doc-para">Le modèle théorique d'Alan Turing (1936) se compose d'un <strong>ruban infini</strong> (stockage de données sous forme de 0 et de 1) et d'un <strong>contrôle à états finis</strong>. La lecture d'une case déclenche un branchement conditionnel. Ce modèle abstrait capture l'essence computationnelle de tout ordinateur concevable et introduit les concepts cardinaux de calculabilité, d'indécidabilité et de <strong>machine de Turing universelle</strong> (capable d'émuler toute autre machine à partir de sa description formelle).</p>
+<p class="doc-para">Les travaux indépendants mais convergents d'Emil Post (systèmes de productions) et d'Alonzo Church (fonctions récursives, lambda-calcul) ont établi l'équivalence universelle de ces formalismes. À cette étape, toutefois, les données restaient inertes et le symbole ne désignait encore rien : ce fut néanmoins <strong>la première moitié du principe d'interprétation</strong> (exécuter un automate à partir d'une description textuelle).</p>
+
+<h4 class="doc-subsec-title">3. Le concept de programme enregistré</h4>
+<p class="doc-para">Au milieu des années quarante (dans le sillage de l'ENIAC et de l'architecture de von Neumann), le <strong>concept de programme enregistré en mémoire</strong> (<em>stored program concept</em>) constitue une étape décisive : <strong>les programmes deviennent des données manipulables</strong> par d'autres programmes. Cette avancée incarne la seconde moitié du principe d'interprétation, permettant au système d'interpréter ses propres données internes comme des instructions motrices.</p>
+
+
+<div class="doc-page-marker" id="page_newell_6_fr"><span class="page-badge">📄 Page 6 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Traitement de listes, LISP &amp; Preuves empiriques</span></div>
+
+<h4 class="doc-subsec-title">4. Le traitement de listes (IPL)</h4>
+<p class="doc-para">Franchi en 1956 par Newell, Shaw et Simon, le pas du <strong>traitement de listes</strong> (<em>list processing</em>) introduit des structures dont les éléments sont des <strong>symboles qui désignent</strong> : des listes contenant des adresses mémoires qui donnent un accès direct à d'autres listes. Il apporte trois avancées simultanées :</p>
+<ul class="doc-list">
+  <li><strong>Une mémoire dynamique :</strong> Capable de réorganiser, créer et détruire continuellement ses structures, dépassant la rigidité des cases mémoires fixes ;</li>
+  <li><strong>L'abstraction des types de données :</strong> Dissociation formelle entre le niveau logique des symboles et l'architecture électronique sous-jacente ;</li>
+  <li><strong>Un modèle physique opérationnel de la désignation :</strong> L'adresse mémoire comme support matériel concret du renvoi symbolique et de la référence.</li>
+</ul>
+
+<h4 class="doc-subsec-title">5. LISP et l'abstraction formelle</h4>
+<p class="doc-para">En 1959-1960, John McCarthy crée <strong>LISP</strong>, hissant le traitement de listes au rang d'un système formel universel fondé sur les <em>S-expressions</em>, pleinement indépendant des particularités matérielles des machines hôtes.</p>
+
+<p class="doc-para"><strong>Synthèse de l'évolution conceptuelle :</strong> L'Hypothèse du Système de Symboles Physiques est l'aboutissement convergent de cinq jalons historiques : la <strong>calculabilité</strong> (Turing), la <strong>réalisabilité physique</strong> (ordinateurs), l'<strong>universalité</strong> (Church-Turing), l'<strong>interprétabilité</strong> (programme enregistré) et la <strong>désignation</strong> (traitement de listes et LISP).</p>
+
+<h3 class="doc-sec-title">Les preuves empiriques de la PSSH : Deux versants complémentaires</h3>
+<p class="doc-para">L'hypothèse n'étant pas un théorème déductible <em>a priori</em> mais une généralisation scientifique portant sur la nature, sa validation repose sur deux programmes empiriques majeurs développés depuis le milieu des années cinquante :</p>
+<div class="doc-dual-evidence" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+  <div style="background: rgba(99, 102, 241, 0.06); border: 1px solid rgba(99, 102, 241, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--primary); font-size: 0.98rem;">1. Démonstration de la SUFFISANCE (IA)</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Construire et faire tourner des programmes informatiques symboliques capables de résoudre des tâches complexes exigeant de l'intelligence pour prouver empiriquement qu'un système symbolique physique suffit à produire l'action intelligente.
+    </p>
+  </div>
+  <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--accent); font-size: 0.98rem;">2. Démonstration de la NÉCESSITÉ (Psychologie)</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Examiner l'humain — prototype biologique de l'intelligence générale — pour vérifier si ses opérations mentales (résolution de problèmes, mémoire, raisonnement) s'expliquent nécessairement par les lois d'un système de symboles physiques.
+    </p>
+  </div>
+</div>
+
+
+<div class="doc-page-marker" id="page_newell_7_fr"><span class="page-badge">📄 Page 7 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Suffisance en IA &amp; Psychologie cognitive</span></div>
+
+<h3 class="doc-sec-title">1. La Suffisance en Intelligence Artificielle</h3>
+<p class="doc-para">À l'image du paradigme pastoral <em>« identifier la maladie, trouver le germe »</em>, l'IA a appliqué la méthode empirique systématique : <strong>identifier une tâche intelligente, construire le programme symbolique capable de la résoudre</strong>. Des jeux formels (échecs, dames) aux casse-têtes logiques, puis à la vision artificielle, à la robotique et au traitement du langage naturel, l'accroissement des performances a corroboré la suffisance des architectures symboliques.</p>
+
+<p class="doc-para">Cette exploration a conduit à identifier des mécanismes universels transcendant les tâches individuelles :</p>
+<ul class="doc-list">
+  <li>Le <strong>General Problem Solver (GPS)</strong> : premier système dissociant explicitement la machinerie générale de résolution de problème de la description spécifique de la tâche ;</li>
+  <li>Les architectures formelles de buts et de sous-buts (PLANNER, CONNIVER) ;</li>
+  <li>Les réseaux de discrimination, le filtrage de motifs (<em>pattern matching</em>) et l'élagage d'arbres.</li>
+</ul>
+
+<h3 class="doc-sec-title">2. La Nécessité en Psychologie Cognitive</h3>
+<p class="doc-para">Si l'humain est intelligent, et si la PSSH est vraie, alors <strong>l'esprit humain opère nécessairement comme un système de symboles physiques</strong>. Cette implication a refondé la psychologie cognitive moderne sous le paradigme du <em>traitement de l'information</em> (résolution de problèmes, mémoire sémantique, raisonnement).</p>
+<p class="doc-para">L'alliance empirique entre IA et psychologie s'incarne dans la méthode des <strong>protocoles de réflexion à haute voix</strong> (<em>thinking aloud protocols</em>) : les traces verbales des sujets résolvant un problème révèlent la séquence des états mentaux symboliques et fournissent le schéma directeur direct pour concevoir les algorithmes de résolution (comme ce fut le cas pour le GPS).</p>
+
+
+<div class="doc-page-marker" id="page_newell_8_fr"><span class="page-badge">📄 Page 8 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — L'Hypothèse de la recherche heuristique</span></div>
+
+<p class="doc-para"><strong>L'absence d'alternatives scientifiques viables (Preuve négative) :</strong> Ni le béhaviorisme (fondé sur les associations stimulus-réponse) ni la psychologie de la Gestalt (fondée sur la réorganisation perceptive du champ) n'ont pu démontrer comment leurs concepts postulés pourraient suffire à résoudre des problèmes complexes. Dépourvues de précision algorithmique, ces théories sont spontanément assimilées et reformulées sous l'angle du traitement symbolique de l'information.</p>
+
+<h3 class="doc-sec-title">II. La Recherche Heuristique (Heuristic Search)</h3>
+<p class="doc-para">Savoir que le système de symboles physiques constitue la matrice matérielle de l'intelligence n'explique pas encore <em>comment</em> il résout des problèmes. C'est l'objet de la <strong>deuxième loi de structure qualitative</strong> énoncée par Newell et Simon :</p>
+
+<div class="doc-callout-law" style="background: rgba(99, 102, 241, 0.08); border-left: 5px solid var(--primary); padding: 16px 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+  <h4 style="margin: 0 0 8px 0; color: var(--primary); font-size: 1.1rem; font-weight: 700;">🔍 L'Hypothèse de la Recherche Heuristique</h4>
+  <p class="doc-para" style="font-size: 1.05rem; font-weight: 600; line-height: 1.5; color: var(--text-main); margin-bottom: 12px;">
+    « Les solutions aux problèmes sont représentées sous forme de structures de symboles. Un système de symboles physiques exerce son intelligence dans la résolution de problèmes par la recherche — c'est-à-dire en générant et en modifiant progressivement des structures de symboles jusqu'à ce qu'il produise une structure de solution. »<br>
+    <span style="font-size: 0.92rem; font-weight: 400; color: var(--text-muted); font-style: italic;">(The Heuristic Search Hypothesis. A physical symbol system exercises its intelligence in problem solving by search—that is, by generating and progressively modifying symbol structures until it produces a solution structure.)</span>
+  </p>
+  <ul class="doc-list" style="margin: 0; padding-left: 20px;">
+    <li><strong>Ressources limitées &amp; Nature sérielle :</strong> Tout système physique réel (ordinateur ou esprit humain) possède des ressources matérielles finies ; il opère de manière sérielle, un pas à la fois.</li>
+    <li><strong>Nécessité de l'heuristique :</strong> Face à l'infinité combinatoire des mondes complexes, la force brute est physiquement impossible. L'heuristique est le mécanisme de guidage sélectif qui rend la solution accessible.</li>
+  </ul>
+</div>
+
+
+<div class="doc-page-marker" id="page_newell_9_fr"><span class="page-badge">📄 Page 9 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Espaces de problèmes &amp; Énigme du Ménon</span></div>
+
+<h3 class="doc-sec-title">Résolution de problèmes et paradigme « Génération et Test »</h3>
+<p class="doc-para">Dans le <em>Ménon</em> de Platon, Socrate soulève le paradoxe de la recherche : <em>comment chercher ce qu'on ignore, et comment reconnaître qu'on l'a trouvé si on ne le connaissait pas d'avance ?</em> Platon répondit par la réminiscence de vies antérieures. L'informatique offre une réponse opérationnelle élégante :</p>
+
+<div class="doc-callout-def" style="background: rgba(16, 185, 129, 0.05); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 6px 0; color: var(--accent); font-size: 1rem;">Définition computationnelle du problème</h4>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>1. Un test :</strong> Une procédure de décision évaluant si une structure symbolique candidate constitue ou non une solution valide ;</p>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>2. Un générateur :</strong> Un ensemble d'opérateurs produisant des structures symboliques candidates dans un <strong>espace de problème</strong> (<em>problem space</em>).</p>
+  <p class="doc-para" style="margin: 0;"><strong>Résoudre un problème :</strong> Engendrer séquentiellement des structures candidates jusqu'à ce que l'une d'elles satisfasse le test.</p>
+</div>
+
+<p class="doc-para">Aux échecs, le test (détecter le mat) est immédiat, mais aucun système physique ne possède un « générateur direct de parties gagnantes ». L'intelligence consiste donc à restreindre et guider la génération séquentielle :</p>
+<p class="doc-para" style="font-weight: 600; color: var(--primary); text-align: center; margin: 12px 0;">
+  « Pour un système à ressources limitées, l'intelligence consiste à faire des choix avisés quant à ce qu'il convient de faire ensuite (what to do next). »
+</p>
+
+
+<div class="doc-page-marker" id="page_newell_10_fr"><span class="page-badge">📄 Page 10 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Arbres de recherche &amp; Explosion combinatoire</span></div>
+
+<h3 class="doc-sec-title">Extraction d'information &amp; Réduction des différences</h3>
+<p class="doc-para">Pour que l'intelligence soit possible, l'espace de problème ne doit pas être un désordre chaotique aléatoire : il doit présenter une structure informative que le système est capable de détecter et d'exploiter. Dans l'exemple algébrique $AX + B = CX + D$, le système procède par <strong>analyse moyens-fins</strong> : il compare l'état actuel à l'état solution recherché ($X = E$), identifie les différences de forme et sélectionne les opérateurs de transformation algébrique qui résorbent ces écarts sans altérer l'égalité.</p>
+
+<h3 class="doc-sec-title">Arbres de recherche et le spectre de l'explosion combinatoire</h3>
+<p class="doc-para">Dans la majorité des problèmes complexes, la recherche ramifie en arborescence. Si chaque nœud engendre $B$ branches sur une profondeur $D$, la taille de l'espace croît exponentiellement selon la loi :</p>
+<div style="text-align: center; font-size: 1.25rem; font-weight: 700; color: var(--primary); margin: 12px 0;">
+  Nœuds totaux &asymp; B<sup>D</sup>
+</div>
+
+<p class="doc-para">Aux échecs, là où les programmes conventionnels parcourent des arbres de plus d'un million de positions par la force brute, <strong>les grands maîtres humains n'explorent que rarement plus de cent branches</strong>. Cette prouesse est rendue possible parce que la sélectivité heuristique est intégrée au générateur même de coups :</p>
+
+<div class="doc-callout-def" style="background: rgba(99, 102, 241, 0.05); border-left: 4px solid var(--primary); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 6px 0; color: var(--primary); font-size: 1rem;">Le paradoxe fondamental de la recherche heuristique</h4>
+  <p class="doc-para" style="margin: 0; font-weight: 600; color: var(--text-main);">
+    « La quantité brute de recherche n'est aucunement la mesure de l'intelligence. Ce qui définit un problème n'est pas qu'il requiert une vaste recherche, mais qu'il en exigerait une gigantesque si une intelligence suffisante n'était pas appliquée pour l'élaguer. »
+  </p>
+</div>
+
+
+<div class="doc-page-marker" id="page_newell_11_fr"><span class="page-badge">📄 Page 11 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Méthodes faibles vs fortes &amp; Élagage</span></div>
+
+<h3 class="doc-sec-title">La Boîte à Outils de la Recherche Heuristique</h3>
+<p class="doc-para">Face à la question perpétuelle <em>« Que faire ensuite ? »</em>, deux décisions s'imposent à chaque nœud d'un arbre de recherche :</p>
+<ul class="doc-list">
+  <li><strong>Sélection du nœud d'origine :</strong> Résolue par la <strong>recherche du meilleur d'abord</strong> (<em>best-first search</em>), qui évalue la distance résiduelle au but pour étendre prioritairement le nœud le plus prometteur ;</li>
+  <li><strong>Sélection de la direction d'action :</strong> Résolue par l'<strong>analyse moyens-fins</strong> (<em>means-ends analysis</em>), qui cartographie les différences entre état courant et état cible pour déclencher l'opérateur adéquat ;</li>
+  <li><strong>Élagage de branches futiles :</strong> Rendu opérationnel dans les jeux à deux joueurs par la procédure d'<strong>élagage alpha-bêta</strong> (<em>alpha-beta pruning</em>), réduisant considérablement la taille de l'arbre sans compromettre la décision optimale.</li>
+</ul>
+
+<div class="doc-dual-evidence" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+  <div style="background: rgba(99, 102, 241, 0.06); border: 1px solid rgba(99, 102, 241, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--primary); font-size: 0.98rem;">Méthodes Faibles (Weak Methods)</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Méthodes générales universelles (génération et test, recherche heuristique, moyens-fins) mobilisées lorsque les connaissances du domaine sont rares et que la structure du problème ne permet pas d'éviter la recherche arborescente.
+    </p>
+  </div>
+  <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); padding: 14px; border-radius: 8px;">
+    <h4 style="margin: 0 0 6px 0; color: var(--accent); font-size: 0.98rem;">Méthodes Fortes (Strong Methods)</h4>
+    <p style="font-size: 0.9rem; line-height: 1.45; margin: 0; color: var(--text-main);">
+      Algorithmes spécialisés ou systèmes gorgés de connaissances sémantiques expertes (comme DENDRAL ou la programmation linéaire) qui résolvent le problème de façon quasi déterministe sans ramification explosive.
+    </p>
+  </div>
+</div>
+
+
+<div class="doc-page-marker" id="page_newell_12_fr"><span class="page-badge">📄 Page 12 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Bilan &amp; Information non locale</span></div>
+
+<h3 class="doc-sec-title">Bilan Historique de la Recherche Heuristique</h3>
+<p class="doc-para">Vingt ans de confrontations empiriques dressent un tableau nuancé :</p>
+<ul class="doc-list">
+  <li><strong>Niveau Expert atteint :</strong> Dans des tâches formelles très spécialisées dotées de bases de connaissances massives (DENDRAL en spectrométrie de masse, jeu de dames de Samuel, recherche opérationnelle) ;</li>
+  <li><strong>Niveau Amateur compétent :</strong> Aux échecs et dans les démonstrateurs généraux de théorèmes ;</li>
+  <li><strong>Goulot d'étranglement perceptif :</strong> La vision par ordinateur, la parole continue et la motricité robotique restent à la traîne de l'humain en raison du traitement massivement parallèle incarné dans la rétine et la cochlée biologiques.</li>
+</ul>
+
+<h3 class="doc-sec-title">Vers l'Intelligence sans Recherche Extensive : 3 Voies de Percée</h3>
+<p class="doc-para">L'intelligence consistant à extraire la structure du problème pour minimiser l'exploration, trois innovations méthodologiques permettent de surmonter la recherche aveugle :</p>
+
+<div class="doc-callout-def" style="background: rgba(99, 102, 241, 0.05); border-left: 4px solid var(--primary); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 6px 0; color: var(--primary); font-size: 1rem;">1. L'Exploitation Non Locale de l'Information</h4>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>L'analyse causale de Berliner (1975) :</strong> Aux échecs, plutôt que de redécouvrir indépendamment la même faiblesse tactique dans des milliers de branches distinctes, le système remonte à la cause structurelle du coup fautif et transfère le diagnostic à tous les sous-arbres dérivés.</p>
+  <p class="doc-para" style="margin: 0;"><strong>L'architecture à « Tableau Noir » (HEARSAY-II) :</strong> Dans la reconnaissance vocale, une mémoire centrale partagée (<em>blackboard</em>) permet aux modules acoustiques, phonétiques, syntaxiques et sémantiques d'échanger leurs hypothèses en temps réel, réduisant drastiquement l'espace de recherche par contraintes croisées.</p>
+</div>
+
+
+<div class="doc-page-marker" id="page_newell_13_fr"><span class="page-badge">📄 Page 13 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Reconnaissance &amp; Le Damier Mutilé</span></div>
+
+<h4 class="doc-subsec-title">2. Systèmes de Reconnaissance Sémantique : Substituer la Reconnaissance à la Recherche</h4>
+<p class="doc-para">Les travaux de de Groot, Simon et Chase sur les maîtres d'échecs ont démontré que l'expertise ne procède pas d'un calcul combinatoire surhumain, mais de la reconnaissance instantanée d'environ <strong>50 000 motifs perceptifs complexes (<em>chunks</em>)</strong> acquis par l'expérience et associés en mémoire à des heuristiques motrices éprouvées.</p>
+
+<h4 class="doc-subsec-title">3. Le Changement d'Espace de Représentation : Le Damier Mutilé</h4>
+<div class="doc-callout-def" style="background: rgba(16, 185, 129, 0.05); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 16px 0;">
+  <h4 style="margin: 0 0 6px 0; color: var(--accent); font-size: 1rem;">L'énigme du damier mutilé</h4>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>Le problème :</strong> Un échiquier standard de 64 cases amputé de deux coins diagonalement opposés (reste 62 cases) peut-il être recouvert exactement par 31 dominos de taille 1&times;2 ?</p>
+  <p class="doc-para" style="margin-bottom: 8px;"><strong>L'approche par force brute :</strong> Explorer aveuglément des millions de combinaisons dans l'espace géométrique des pavages pour constater l'échec.</p>
+  <p class="doc-para" style="margin: 0;"><strong>La restructuration sémantique :</strong> Remarquer que deux coins opposés ont la même couleur (le plateau compte donc 32 cases noires et 30 cases blanches). Chaque domino recouvrant impérativement 1 case noire et 1 case blanche, 31 dominos couvriraient 31 cases de chaque. L'impossibilité est démontrée d'emblée sans aucune recherche.</p>
+</div>
+<p class="doc-para">L'intelligence suprême réside ainsi dans le <strong>déplacement de la recherche</strong> : non plus chercher une solution dans un espace figé, mais chercher la représentation symbolique appropriée au sein d'un espace de représentations.</p>
+
+
+<div class="doc-page-marker" id="page_newell_14_fr"><span class="page-badge">📄 Page 14 (Traduction française)</span> <span class="page-meta">Newell &amp; Simon (1975) — Synthèse &amp; Perspectives de Turing</span></div>
+
+<h3 class="doc-sec-title">Synthèse des Deux Piliers Fondamentaux</h3>
+<ol class="doc-list">
+  <li><strong>L'Hypothèse du Système de Symboles Physiques :</strong> L'intelligence réside matériellement dans des systèmes de symboles capables de désignation et d'interprétation. Les humains et les ordinateurs constituent les deux grandes instanciations physiques connues de cette classe.</li>
+  <li><strong>L'Hypothèse de la Recherche Heuristique :</strong> Face aux limites matérielles de traitement, la résolution de problèmes opère obligatoirement par recherche sérielle guidée, génération et test, et élagage heuristique de l'espace combinatoire.</li>
+</ol>
+
+<h3 class="doc-sec-title">Perspectives et Clôture Visionnaire</h3>
+<p class="doc-para">L'informatique est une science de la nature dont les lois qualitatives possèdent la puissance intégrative de la biologie de l'évolution. Évoquant la fin du célèbre article de 1950 d'Alan Turing :</p>
+
+<blockquote style="border-left: 4px solid var(--accent); padding: 10px 16px; margin: 16px 0; background: rgba(16, 185, 129, 0.05); font-style: italic;">
+  « Nous ne pouvons voir qu'à une courte distance devant nous, mais nous pouvons y voir bien des choses qui demandent à être accomplies. » — Alan M. Turing (1950)
+</blockquote>
+
+<p class="doc-para" style="font-weight: 700; color: var(--primary); text-align: center; font-size: 1.15rem; margin: 20px 0;">
+  Pour tout système de symboles physiques sériel, la question primordiale reste à jamais :<br>
+  « Que convient-il de faire ensuite ? » (<em>What to do next?</em>)
+</p>
+
+<h3 class="doc-sec-title">Références Bibliographiques Originales</h3>
+<ul class="doc-list" style="font-size: 0.88rem; line-height: 1.5;">
+  <li><strong>Berliner, H. (1975).</strong> <em>Chess as problem solving: the development of a tactics analyzer.</em> Ph.D. Thesis, Computer Science Dept., Carnegie-Mellon University.</li>
+  <li><strong>McCarthy, J. (1960).</strong> Recursive functions of symbolic expressions and their computation by machine. <em>Communications of the ACM</em>, 3(4), 184–195.</li>
+  <li><strong>McCulloch, W. S. (1961).</strong> What is a number, that a man may know it, and a man, that he may know a number. <em>General Semantics Bulletin</em>, 26–27, 7–18.</li>
+  <li><strong>Nilsson, N. J. (1971).</strong> <em>Problem Solving Methods in Artificial Intelligence.</em> McGraw-Hill, New York.</li>
+  <li><strong>Turing, A. M. (1936).</strong> On computable numbers, with an application to the Entscheidungsproblem. <em>Proc. London Math. Soc.</em>, 42(2), 230–265.</li>
+  <li><strong>Turing, A. M. (1950).</strong> Computing machinery and intelligence. <em>Mind</em>, 59(236), 433–460.</li>
+</ul>
+
+
