@@ -10,14 +10,14 @@
   1. `[S03-Obligatoire] Mashour et al. (2021) - Revisiting the Global Neuronal Workspace` (*Neuron*, 2021)
   2. `[S03-Débat] Directives de Pierre Poirier en classe sur le Débat 1` (Verbatim authentique de classe du 21 septembre)
   3. `[S03-Débat] Cadrage de Présidence et Modération par Michel (Louis vs Alexandrea)` (Structure temporelle, 5–10 min, table ronde, vote de la classe)
-* **Vocation pédagogique :** **Capsule optionnelle d'immersion courte (~10–12 min)** entremêlant les fondements théoriques de l'article obligatoire et la dynamique vivante de la classe pour le premier débat.
+* **Vocation pédagogique :** **Grand Deep Dive Pré-Cours (~23 min)** entremêlant les fondements théoriques de l'article obligatoire (Mashour et al., 2021) et la dynamique vivante de la classe pour le premier débat.
 
 ---
 
 ## 🎧 Métadonnées de la Capsule
-* **Titre officiel Studio :** « L'Espace de Travail Global du cerveau »
-* **Fichier cible :** `PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a`
-* **Format & Durée :** Capsule concise • 04:31 • 8.7 Mo
+* **Titre officiel :** « L'Espace de Travail Global du cerveau & Cadrage du Débat 1 »
+* **Fichier cible :** `PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a`
+* **Format & Durée :** Grand Deep Dive • 23:27 • 45.3 Mo
 * **Statut :** Téléchargé et archivé sur le Google Drive (`02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/`)
 * **Langue :** Français canadien (Québec / UQAM), registre académique collégial.
 

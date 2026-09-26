@@ -664,6 +664,155 @@
     body.dark-mode .q-badge.optional { background: #052e16; color: #86efac; border-color: #14532d; }
 
     .q-counter-text { font-size: 0.86rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-mono); }
+
+    /* BARRE DE PROGRESSION AU-DESSUS DE LA QUESTION (PARITÉ PSY7010) */
+    .q-progress-track {
+      width: 100%;
+      height: 10px;
+      background: #e2e8f0;
+      border-radius: 9999px;
+      overflow: hidden;
+      margin: 10px 0 16px 0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    body.dark-mode .q-progress-track {
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .q-progress-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 9999px;
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      min-width: 8px;
+    }
+
+    /* SCORE DANS L'EN-TÊTE DE LA QUESTION */
+    .q-score-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      font-size: 0.80rem;
+      font-weight: 700;
+      color: var(--text-main);
+      background: var(--bg-card-alt);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    /* TIMELINE CALENDRIER (PARITÉ PSY7010) */
+    .timeline-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .timeline-entry {
+      display: flex;
+      gap: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      align-items: flex-start;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .timeline-entry:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    body.dark-mode .timeline-entry {
+      background: var(--bg-card);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .timeline-date-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      padding: 8px 6px;
+      border-radius: 8px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .timeline-day {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1;
+    }
+    .timeline-month {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+    .timeline-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .timeline-info h4 {
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 0 0 6px 0;
+      line-height: 1.35;
+    }
+    .timeline-info p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.48;
+    }
+    .timeline-debate-box {
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 3px solid #d97706;
+      font-size: 0.86rem;
+      color: #92400e;
+      line-height: 1.45;
+    }
+    body.dark-mode .timeline-debate-box {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fde68a;
+      border-left-color: #f59e0b;
+    }
+    .timeline-exam-box {
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(37, 99, 235, 0.1);
+      border-left: 3px solid var(--primary);
+      font-size: 0.86rem;
+      color: #1e40af;
+      line-height: 1.45;
+    }
+    body.dark-mode .timeline-exam-box {
+      background: rgba(37, 99, 235, 0.2);
+      color: #93c5fd;
+      border-left-color: #60a5fa;
+    }
+    .badge-calendar {
+      background: rgba(168, 85, 247, 0.15) !important;
+      color: #7e22ce !important;
+      border: 1px solid rgba(168, 85, 247, 0.35) !important;
+    }
+    body.dark-mode .badge-calendar {
+      background: rgba(168, 85, 247, 0.25) !important;
+      color: #d8b4fe !important;
+      border-color: rgba(168, 85, 247, 0.5) !important;
+    }
+    .tab-calendar { border-top: 3px solid #a855f7 !important; }
+
     .q-context-box {
       font-size: 0.92rem;
       color: var(--text-muted);
@@ -3036,9 +3185,19 @@
               <span class="q-badge mandatory" id="qDocBadge" onclick="openDocumentFromBadge(this.dataset.docId)" style="cursor: pointer;" title="Ouvrir ce document dans le lecteur">🔴 Haugeland (1981) 📖</span>
               <span class="q-counter-text" id="qProgressText">Question 1 sur 40 • 1 point</span>
             </div>
-            <button type="button" class="feedback-trigger-btn" onclick="openFeedbackModal('question')" title="Signaler une anomalie ou proposer une amélioration sur cette question">
-              <span>💬</span> <span>Feedback</span>
-            </button>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <div class="q-score-box" id="qScoreBox" title="Score actuel (réponses correctes / total questions actives)">
+                Score : <span id="qScoreVal">0</span> / <span id="qScoreTotal">40</span> (<span id="qScorePct">0%</span>)
+              </div>
+              <button type="button" class="feedback-trigger-btn" onclick="openFeedbackModal('question')" title="Signaler une anomalie ou proposer une amélioration sur cette question">
+                <span>💬</span> <span>Feedback</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- BARRE DE PROGRESSION AU-DESSUS DE LA QUESTION (PARITÉ PSY7010) -->
+          <div class="q-progress-track" aria-hidden="true" title="Progression du questionnaire">
+            <div class="q-progress-fill" id="qProgressBarFill" style="width: 2.5%;"></div>
           </div>
 
           <div id="qReserveBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; color: var(--warning); line-height: 1.5;"></div>
@@ -3116,12 +3275,12 @@
               <button type="button" class="podcast-ep-btn active" id="epBtnDeepDiveS02" onclick="switchPodcastEpisode('deep_dive_s02')" role="tab" aria-selected="true" title="Épisode 2 : Bilan magistral Séance 2 avec le Pr Pierre Poirier (Verbatim GOLD)">
                 <span class="podcast-ep-num">Ép. 2</span>
                 <span class="podcast-ep-title">🏛️ De Descartes à NETtalk • Pr Poirier</span>
-                <span class="podcast-ep-duration">13 min</span>
+                <span class="podcast-ep-duration">17 min</span>
               </button>
               <button type="button" class="podcast-ep-btn" id="epBtnPreS03" onclick="switchPodcastEpisode('pre_s03')" role="tab" aria-selected="false" title="Épisode 3 : Pré-cours Séance 3 (Mashour 2021 GNWT & Débat 1 Louis vs Alexandrea présidé par Michel)">
                 <span class="podcast-ep-num">Ép. 3</span>
                 <span class="podcast-ep-title">⚖️ Espace Global &amp; Débat 1</span>
-                <span class="podcast-ep-duration">4 min</span>
+                <span class="podcast-ep-duration">23 min</span>
               </button>
             </div>
 
@@ -3133,8 +3292,8 @@
             <!-- LECTEUR AUDIO STREAMING INTÉGRÉ -->
             <div class="podcast-player-wrap">
               <audio id="localPodcastAudio" preload="metadata" ontimeupdate="updateAudioProgress()" onended="onAudioEnded()">
-                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" type="audio/mp4">
-                <source src="PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" type="audio/mp4">
+                <source src="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a" type="audio/mp4">
+                <source src="PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a" type="audio/mp4">
               </audio>
 
               <div class="custom-audio-controls">
@@ -3152,7 +3311,7 @@
                 <div class="audio-timeline-wrap">
                   <span class="audio-time-label" id="audioCurrentTime">00:00</span>
                   <input type="range" class="audio-seek-slider" id="audioSeekSlider" value="0" min="0" max="100" step="0.1" oninput="seekAudio(this.value)">
-                  <span class="audio-time-label" id="audioDuration" title="Temps restant">13:25</span>
+                  <span class="audio-time-label" id="audioDuration" title="Temps restant">16:46</span>
                 </div>
 
                 <div class="audio-speed-wrap">
@@ -3165,7 +3324,7 @@
           </div>
 
           <div class="podcast-banner-right">
-            <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" download="PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a" id="podcastDownloadBtn" class="podcast-play-btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); margin-bottom: 4px;" title="Télécharger le fichier audio M4A">
+            <a href="02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a" download="PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a" id="podcastDownloadBtn" class="podcast-play-btn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); margin-bottom: 4px;" title="Télécharger le fichier audio M4A">
               ⬇️ Télécharger (.m4a)
             </a>
             <button class="podcast-edit-link-btn" onclick="openPodcastModal()" title="Consulter les directives du prompt">
@@ -3216,8 +3375,8 @@
         <button class="reader-tab" id="tab_doc_dreyfus" onclick="switchTab('doc_dreyfus')" title="Lecture complémentaire : Dreyfus (1972) - Ce que les ordinateurs ne peuvent pas faire">
           🟢 Dreyfus &amp; Critique
         </button>
-        <button class="reader-tab" id="tab_doc_context" onclick="switchTab('doc_context')" title="Contexte pédagogique : Continuité entre Dave Saint-Amour et Pierre Poirier">
-          🏛️ Contexte UQAM
+        <button class="reader-tab" id="tab_doc_calendar" onclick="switchTab('doc_calendar')" title="Calendrier officiel, échéancier des épreuves et thématiques des débats (Automne 2026)">
+          🗓️ Calendrier des Épreuves
         </button>
       </div>
 
@@ -4989,59 +5148,277 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
 
       </div>
 
-<div class="reader-viewport" style="display: none;" id="viewport_doc_context_fr" style="display: none;">
-<h2 class="doc-art-title">Contexte Pédagogique & Continuité - PSY9613</h2>
-<ul class="doc-list">
-  <li><strong>Cours :</strong> PSY9613 - Perception, cognition et intelligence artificielle (UQAM, Automne 2026).</li>
-  <li><strong>Professeurs :</strong> Pr Pierre Poirier (Philosophie des sciences cognitives & IA) & Pr Dave Saint-Amour (Neuropsychologie & Perception).</li>
-  <li><strong>Programme :</strong> Maîtrise en sciences psychologiques appliquées (2194) - Concentration ingénierie et facteurs humains.</li>
-</ul>
-<hr class="doc-divider">
-
-<div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
-  <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Fiche de Synthèse Conceptuelle &amp; Points Clés - Continuité Pédagogique - Dave Saint-Amour ➔ Pierre Poirier
-  </div>
-  <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Thèse centrale :</strong> Articulation conceptuelle entre les fondements psychophysiques et sensorimoteurs de la Séance 1 (perception active, boucle perception-action) et la modélisation computationnelle de la Séance 2 (du moteur sémantique au connexionnisme et aux LLMs).
-  </p>
-  <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Séance 1 (Dave Saint-Amour) :</strong> Psychophysique (Weber-Fechner, TDS), voies dorsale et ventrale, affordances de Gibson, inférence descendante (FEF).</li><li><strong>Séance 2 (Pierre Poirier) :</strong> Métaphore de l'ordinateur, GOFAI (Haugeland, Newell & Simon), riposte connexionniste (McClelland), révolution des LLMs (Sejnowski), critique incarnée (Dreyfus).</li><li><strong>Facteurs Humains :</strong> Les modèles de l'esprit dictent la conception des systèmes interactifs et de la collaboration humain-machine.</li>
-  </ul>
-</div>
-
-<p class="doc-para">
-Cette station d'étude interactive assure la passerelle conceptuelle entre le socle psychophysique de la séance 1 et les architectures computationnelles de la séance 2.
-</p>
-
+<div class="reader-viewport" style="display: none;" id="viewport_doc_calendar_fr">
+  <div class="hub-hero-card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border: 1px solid var(--border-color); border-radius: 14px; padding: 20px; margin-bottom: 24px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px;">
+      <div>
+        <span class="q-badge badge-calendar" style="margin-bottom: 8px;">🗓️ Calendrier Officiel • Automne 2026</span>
+        <h2 class="doc-art-title" style="margin: 6px 0 4px 0; font-size: 1.35rem;">Calendrier des Épreuves, Examens &amp; Thématiques des Débats</h2>
+        <div style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.4;">
+          Programme officiel du cours <strong>PSY9613 — Perception, cognition et intelligence artificielle</strong> (UQAM)<br>
+          Enseignants : <strong>Pr Dave Saint-Amour</strong> (Neuropsychologie &amp; Perception) &amp; <strong>Pr Pierre Poirier</strong> (Philosophie des sciences cognitives &amp; IA)
+        </div>
       </div>
+    </div>
 
-<div class="reader-viewport" id="viewport_doc_context_en" style="display: none;">
-<h2 class="doc-art-title">Pedagogical Continuity & Course Context - PSY9613</h2>
-<ul class="doc-list">
-  <li><strong>Course:</strong> PSY9613 - Perception, cognition et intelligence artificielle (UQAM, Fall 2026).</li>
-  <li><strong>Professors:</strong> Pr Pierre Poirier (Philosophy of Cognitive Science & AI) & Pr Dave Saint-Amour (Neuropsychology & Perception).</li>
-  <li><strong>Program:</strong> Master in Applied Psychological Sciences (2194) - Human Factors & Cognitive Ergonomics.</li>
-</ul>
-<hr class="doc-divider">
-
-<div class="academic-summary-banner" style="background: var(--bg-card-alt); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
-  <div style="font-weight: 700; font-size: 1.05rem; color: var(--primary); margin-bottom: 8px;">
-    📋 Conceptual Executive Summary &amp; Key Takeaways - Continuité Pédagogique - Dave Saint-Amour ➔ Pierre Poirier
-  </div>
-  <p style="font-size: 0.94rem; line-height: 1.55; margin: 0 0 10px 0; color: var(--text-main);">
-    <strong>Core Thesis:</strong> Conceptual pedagogical bridge linking the psychophysical and sensorimotor foundations of Session 1 (active perception, perception-action cycle) to the computational modeling of Session 2 (from semantic engines to connectionism and LLMs).
-  </p>
-  <ul style="font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 20px; color: var(--text-muted);">
-    <li><strong>Session 1 (Dave Saint-Amour):</strong> Psychophysics, signal detection, dorsal/ventral streams, Gibsonian affordances.</li><li><strong>Session 2 (Pierre Poirier):</strong> Computer metaphor, GOFAI, connectionist counter-revolution, LLMs, embodied critique.</li><li><strong>Human Factors:</strong> How computational models shape ergonomic human-AI system design.</li>
-  </ul>
-</div>
-
-<p class="doc-para">
-This study station bridges the empirical foundations of Session 1 with the computational theories of Session 2, preparing students for rigorous scientific analysis of cognitive architectures.
-</p>
-
+    <!-- RÉCAPITULATIF DE LA PONDÉRATION (100 %) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-top: 16px;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 14px; border-left: 4px solid var(--primary);">
+        <div style="font-size: 0.76rem; font-weight: 800; color: var(--primary); text-transform: uppercase;">🎯 Examen 1 (Mi-session)</div>
+        <div style="font-size: 1.1rem; font-weight: 800; color: var(--text-main);">35 % • Semaine 8 (2 nov.)</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">Non-cumulatif • Matière S01 à S07</div>
       </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 14px; border-left: 4px solid #10b981;">
+        <div style="font-size: 0.76rem; font-weight: 800; color: #10b981; text-transform: uppercase;">🎯 Examen 2 (Final)</div>
+        <div style="font-size: 1.1rem; font-weight: 800; color: var(--text-main);">35 % • Semaine 15 (21 déc.)</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">Non-cumulatif • Matière S09 à S14</div>
+      </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 14px; border-left: 4px solid #f59e0b;">
+        <div style="font-size: 0.76rem; font-weight: 800; color: #d97706; text-transform: uppercase;">⚖️ Débats oraux en dyade</div>
+        <div style="font-size: 1.1rem; font-weight: 800; color: var(--text-main);">20 % • Début de chaque séance</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">5 à 10 min / débatteur + Modération</div>
+      </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 14px; border-left: 4px solid #8b5cf6;">
+        <div style="font-size: 0.76rem; font-weight: 800; color: #7c3aed; text-transform: uppercase;">🙋 Participation en classe</div>
+        <div style="font-size: 1.1rem; font-weight: 800; color: var(--text-main);">10 % • Toute la session</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">Présence active et questions aux plénières</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMELINE CHRONOLOGIQUE DES 15 SEMAINES -->
+  <div class="timeline-wrap">
+
+    <!-- SEMAINE 1 -->
+    <div class="timeline-entry" style="border-left: 4px solid var(--primary);">
+      <div class="timeline-date-box">
+        <span class="timeline-day">14</span>
+        <span class="timeline-month">Sept.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 1 — Présentation du cours &amp; Introduction (Pr Dave Saint-Amour)</h4>
+        <p>Perception vs cognition vs intelligence, modèle classique de l'entrée et de la sortie, naissance de la psychologie expérimentale, l'action comme élément constitutif (Held &amp; Hein 1963, TVSS de Bach-y-Rita, théorie de la détection du signal TDS, dissociation des voies ventrale et dorsale, Bosco et al. 2023).</p>
+      </div>
+      <span class="q-badge" style="background: rgba(37, 99, 235, 0.12); color: var(--primary); font-size: 0.74rem; align-self: center;">Socle perceptif</span>
+    </div>
+
+    <!-- SEMAINE 2 -->
+    <div class="timeline-entry" style="border-left: 4px solid #f59e0b;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">21</span>
+        <span class="timeline-month">Sept.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 2 — Intelligence artificielle : Perspectives historiques (Pr Pierre Poirier)</h4>
+        <p>Rupture cartésienne, machine de Turing, système formel et hypothèse du système de symboles physiques (PSSH de Newell &amp; Simon 1976), moteurs sémantiques de Haugeland (1981, analogie du soccer), riposte connexionniste (McClelland 2009), rétropropagation, surface d'erreur 3D et démonstration sonore historique de NETtalk (1987).</p>
+      </div>
+      <span class="q-badge" style="background: rgba(245, 158, 11, 0.12); color: #d97706; font-size: 0.74rem; align-self: center;">Fondements IA</span>
+    </div>
+
+    <!-- SEMAINE 3 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">28</span>
+        <span class="timeline-month">Sept.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 3 — Principes du traitement de l'information (Pr Pierre Poirier)</h4>
+        <p>Théorie de l'information, traitement hiérarchique vs parallèle, représentations locales vs distribuées, cognition incarnée et Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al. 2021).</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 1 en dyade (Ouverture à 14h00) :</strong> <em>« Principes du traitement de l'information : modularité sensorielle spécialisée vs embrasement conscient de l'Espace de Travail Global »</em> (5 à 10 min par débatteur, débat animé par la présidence de séance, discussion en table ronde et vote de la classe).
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 1</span>
+    </div>
+
+    <!-- SEMAINE 4 -->
+    <div class="timeline-entry" style="border-left: 4px solid #38bdf8;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">05</span>
+        <span class="timeline-month">Oct.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 4 — L'Attention (Capsule à la maison • Élections provinciales)</h4>
+        <p><strong>Pas de cours en présence.</strong> Visionnement autonome d'une capsule vidéo sur l'attention à la maison (matière obligatoire à examen). Types d'attention et fonctions cognitives, notions de charge mentale et fatigue attentionnelle, modèles explicatifs (sélection hâtive de Broadbent, sélection tardive de Deutsch &amp; Deutsch, modèles de filtre et d'atténuation de Treisman).</p>
+      </div>
+      <span class="q-badge" style="background: rgba(56, 189, 248, 0.15); color: #0284c7; font-size: 0.74rem; align-self: center;">Capsule vidéo</span>
+    </div>
+
+    <!-- SEMAINE 5 -->
+    <div class="timeline-entry" style="border-left: 4px solid #94a3b8;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">12</span>
+        <span class="timeline-month">Oct.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 5 — Congé de l'Action de grâce</h4>
+        <p><strong>Férié universitaire (aucun cours).</strong> Période de rattrapage des lectures obligatoires, consolidation des concepts de la première moitié de session et préparation des débats oraux.</p>
+      </div>
+      <span class="q-badge" style="background: rgba(148, 163, 184, 0.15); color: #475569; font-size: 0.74rem; align-self: center;">Congé férié</span>
+    </div>
+
+    <!-- SEMAINE 6 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">19</span>
+        <span class="timeline-month">Oct.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 6 — Le cerveau prédictif (Pr Dave Saint-Amour)</h4>
+        <p>Processus ascendants (bottom-up) et descendants (top-down), prédiction et calcul de l'erreur de prédiction, inférence active bayésienne (Karl Friston, Andy Clark, Anil Seth) et implications fondamentales pour la perception et la psychopathologie.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 2 en dyade :</strong> <em>« Le cerveau prédictif : simple raffinement computationnel ou changement de paradigme radical pour les sciences cognitives ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 2</span>
+    </div>
+
+    <!-- SEMAINE 7 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">26</span>
+        <span class="timeline-month">Oct.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 7 — Raisonnement &amp; Prise de décision (Pr Pierre Poirier)</h4>
+        <p>Biais cognitifs, heuristiques de jugement, modèles formels de prise de décision, rationalité limitée (bounded rationality) et consolidation générale avant l'épreuve de mi-session.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 3 en dyade :</strong> <em>« Modèles formels de rationalité vs heuristiques écologiques : l'humain est-il fondamentalement irrationnel ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 3</span>
+    </div>
+
+    <!-- SEMAINE 8 : EXAMEN 1 -->
+    <div class="timeline-entry" style="border-left: 4px solid #ef4444; background: linear-gradient(135deg, rgba(239, 68, 68, 0.04) 0%, rgba(249, 115, 22, 0.04) 100%);">
+      <div class="timeline-date-box" style="border-color: #fca5a5; background: rgba(254, 226, 226, 0.6);">
+        <span class="timeline-day" style="color: #b91c1c;">02</span>
+        <span class="timeline-month" style="color: #b91c1c;">Nov.</span>
+      </div>
+      <div class="timeline-info">
+        <h4 style="color: #b91c1c;">🎯 Semaine 8 — EXAMEN 1 (MI-SESSION • 35 % DE LA NOTE)</h4>
+        <p><strong>Évaluation sommative individuelle en classe.</strong> Épreuve non-cumulative portant rigoureusement sur les notions abordées en classe et les lectures obligatoires des <strong>Semaines 1 à 7</strong> (Perception, Cognition &amp; Fondements de l'IA — Pr Dave Saint-Amour &amp; Pr Pierre Poirier).</p>
+        <div class="timeline-exam-box" style="background: rgba(239, 68, 68, 0.08); border-left-color: #ef4444; color: #991b1b;">
+          <strong>Format de l'épreuve :</strong> Questions à choix multiples et questions à développement court axées sur la compréhension mécanistique, la dissociation conceptuelle et la rigueur psychométrique.
+        </div>
+      </div>
+      <span class="q-badge" style="background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; font-size: 0.74rem; align-self: center;">Épreuve 35 %</span>
+    </div>
+
+    <!-- SEMAINE 9 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">09</span>
+        <span class="timeline-month">Nov.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 9 — Apprentissage et mémoire humaine (Pr Dave Saint-Amour)</h4>
+        <p>Les systèmes multiples de mémoire (mémoire déclarative vs procédurale, mémoire de travail), les compromis de la mémoire (stabilité vs plasticité, spécificité vs généralisation), et modèle neuroscientifique computationnel (théorie des systèmes d'apprentissage complémentaires CLS de McClelland et al.).</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 4 en dyade :</strong> <em>« Les systèmes multiples de mémoire : architecture modulaire étanche ou continuum distribué ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 4</span>
+    </div>
+
+    <!-- SEMAINE 10 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">16</span>
+        <span class="timeline-month">Nov.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 10 — Intelligence artificielle 1 : Réseaux &amp; Apprentissage profond (Pr Pierre Poirier)</h4>
+        <p>Réseaux neuronaux artificiels, perceptrons multicouches (MLP), algorithmes d'apprentissage supervisé, non supervisé et par renforcement, fondements de l'apprentissage profond (Deep Learning), convolutions (CNN) et plongements vectoriels.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 5 en dyade :</strong> <em>« L'apprentissage profond capture-t-il les principes computationnels du cortex cérébral ou de simples approximations statistiques ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 5</span>
+    </div>
+
+    <!-- SEMAINE 11 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">23</span>
+        <span class="timeline-month">Nov.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 11 — Intelligence artificielle 2 : IA Générative &amp; Agents (Pr Pierre Poirier)</h4>
+        <p>IA générative, architectures transformeurs et mécanismes d'attention (Vaswani et al.), grands modèles de langage (LLMs), agents conversationnels, agents « raisonnants » (Chain-of-Thought, inférence au temps de calcul) et test de Turing inversé (Sejnowski 2023).</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 6 en dyade :</strong> <em>« Grands modèles de langage (LLMs) : perroquets stochastiques ou émergence d'une réelle compréhension sémantique ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 6</span>
+    </div>
+
+    <!-- SEMAINE 12 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">30</span>
+        <span class="timeline-month">Nov.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 12 — Les risques et périls de l'IA (Pr Pierre Poirier)</h4>
+        <p>Analyse critique multidimensionnelle des systèmes d'IA : 1) Risques et périls éthiques (biais algorithmiques, équité, surveillance) ; 2) Risques et périls cognitifs et épistémologiques (perte d'autonomie cognitive, hallucinations, délégations abusives) ; 3) Risques et périls sociaux et économiques.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 7 en dyade :</strong> <em>« Les risques existentiels et sociétaux de l'IA générale : menace tangible urgente ou alarmisme disproportionné ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 7</span>
+    </div>
+
+    <!-- SEMAINE 13 -->
+    <div class="timeline-entry" style="border-left: 4px solid #d97706;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">07</span>
+        <span class="timeline-month">Déc.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 13 — Interactions humain-machines &amp; Ergonomie cognitive (Pr Dave Saint-Amour)</h4>
+        <p>Accueil d'un conférencier invité du milieu professionnel. Ergonomie cognitive, analyse de l'activité, charge mentale de travail, facteurs humains, conception centrée sur l'utilisateur et expérience utilisateur (UX) dans les environnements technologiques complexes.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 8 en dyade :</strong> <em>« Interaction humain-machine : l'automatisation avancée doit-elle suppléer l'humain ou l'augmenter ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(217, 119, 6, 0.15); color: #b45309; font-size: 0.74rem; align-self: center;">Débat 8</span>
+    </div>
+
+    <!-- SEMAINE 14 -->
+    <div class="timeline-entry" style="border-left: 4px solid #10b981;">
+      <div class="timeline-date-box">
+        <span class="timeline-day">14</span>
+        <span class="timeline-month">Déc.</span>
+      </div>
+      <div class="timeline-info">
+        <h4>Semaine 14 — Applications pratiques &amp; Expérimentation avec PsychoPy (Pr D. Saint-Amour &amp; Pr P. Poirier)</h4>
+        <p>ABC de l'IA appliquée à la recherche en psychologie cognitive. Démonstration et prise en main du logiciel open-source <strong>PsychoPy</strong> pour la conception d'expérimentations comportementales et psychophysiques précises. Synthèse générale du cours et préparation à l'examen final.</p>
+        <div class="timeline-debate-box">
+          <strong>⚖️ Débat 9 en dyade :</strong> <em>« L'intégration de l'IA générative dans la pratique clinique et la recherche expérimentale : opportunité majeure ou écueil méthodologique ? »</em>
+        </div>
+      </div>
+      <span class="q-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; font-size: 0.74rem; align-self: center;">Débat 9 &amp; PsychoPy</span>
+    </div>
+
+    <!-- SEMAINE 15 : EXAMEN 2 -->
+    <div class="timeline-entry" style="border-left: 4px solid #ef4444; background: linear-gradient(135deg, rgba(239, 68, 68, 0.04) 0%, rgba(249, 115, 22, 0.04) 100%);">
+      <div class="timeline-date-box" style="border-color: #fca5a5; background: rgba(254, 226, 226, 0.6);">
+        <span class="timeline-day" style="color: #b91c1c;">21</span>
+        <span class="timeline-month" style="color: #b91c1c;">Déc.</span>
+      </div>
+      <div class="timeline-info">
+        <h4 style="color: #b91c1c;">🎯 Semaine 15 — EXAMEN 2 (FINAL • 35 % DE LA NOTE)</h4>
+        <p><strong>Évaluation sommative finale individuelle en classe.</strong> Épreuve non-cumulative portant rigoureusement sur la matière vue en classe et les lectures obligatoires des <strong>Semaines 9 à 14</strong> (Apprentissage, Réseaux neuronaux, IA générative, Risques, IHM et Applications pratiques).</p>
+        <div class="timeline-exam-box" style="background: rgba(239, 68, 68, 0.08); border-left-color: #ef4444; color: #991b1b;">
+          <strong>Clôture de la session :</strong> Questions à choix multiples psychométriques et questions d'analyse critique synthétique.
+        </div>
+      </div>
+      <span class="q-badge" style="background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; font-size: 0.74rem; align-self: center;">Épreuve 35 %</span>
+    </div>
+
+  </div>
+</div>
 
 <div class="reader-viewport" style="display: block;" id="viewport_doc_seance_01_fr">
 <h2 class="doc-art-title">Séance 1 — Présentation & Introduction (Pr Dave Saint-Amour)</h2>
@@ -9733,7 +10110,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
     let activeDocId = 'doc_seance_01';
     let docLanguage = 'fr'; // 'fr' | 'en'
-    const FRENCH_ONLY_DOCS = ['doc_seance_01', 'doc_seance_02', 'doc_context'];
+    const FRENCH_ONLY_DOCS = ['doc_seance_01', 'doc_seance_02', 'doc_context', 'doc_calendar'];
     let sourceTextVisible = true;
     let readerFontSize = 1.0;
 
@@ -10225,6 +10602,12 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (progText) {
         progText.textContent = `Question ${currentQuestionIndex + 1} sur ${filteredQuestions.length} • ${q.points || '1 point'} (ID #${q.id})`;
       }
+      const qProgFill = document.getElementById('qProgressBarFill');
+      if (qProgFill && filteredQuestions.length > 0) {
+        const pct = Math.round(((currentQuestionIndex + 1) / filteredQuestions.length) * 100);
+        qProgFill.style.width = pct + '%';
+        qProgFill.parentElement?.setAttribute('title', `Progression : question ${currentQuestionIndex + 1} sur ${filteredQuestions.length} (${pct}%)`);
+      }
 
       // Bannière de réserve documentaire (Q25)
       const qReserveBanner = document.getElementById('qReserveBanner');
@@ -10709,6 +11092,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     function switchTab(docId, autoUnmask = true) {
       if (!docId) return;
       if (!docId.startsWith('doc_')) docId = 'doc_' + docId;
+      if (docId === 'doc_context') docId = 'doc_calendar';
       activeDocId = docId;
 
       if (FRENCH_ONLY_DOCS.includes(docId)) {
@@ -11188,6 +11572,13 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         badge.title = `${corr} réponses correctes sur ${total} questions actives`;
       }
       if (mobBadge) mobBadge.textContent = `🏆 ${corr}/${total}`;
+
+      const scoreVal = document.getElementById('qScoreVal');
+      const scoreTotal = document.getElementById('qScoreTotal');
+      const scorePct = document.getElementById('qScorePct');
+      if (scoreVal) scoreVal.textContent = corr;
+      if (scoreTotal) scoreTotal.textContent = total;
+      if (scorePct) scorePct.textContent = pct + '%';
     }
 
     
@@ -11258,7 +11649,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         'doc_mcclelland': 'McClelland (2009)',
         'doc_sejnowski': 'Sejnowski (2023)',
         'doc_dreyfus': 'Dreyfus & Critiques',
-        'doc_context': 'Contexte PSY9613'
+        'doc_context': 'Calendrier des Épreuves',
+        'doc_calendar': 'Calendrier des Épreuves'
       };
       return titles[docId] || 'Document Source';
     }
@@ -11273,7 +11665,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         'doc_mcclelland': 'badge-mcclelland',
         'doc_sejnowski': 'badge-sejnowski',
         'doc_dreyfus': 'badge-dreyfus',
-        'doc_context': 'badge-context'
+        'doc_context': 'badge-calendar',
+        'doc_calendar': 'badge-calendar'
       };
       return classes[docId] || 'badge-default';
     }
@@ -11488,29 +11881,29 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         tag: '🎙️ Grand Bilan Post-cours • Séance 2 (Étalon-Or)',
         title: "« L'IA au défi de Descartes : La grande traversée avec Pierre Poirier »",
         desc: "Bilan magistral étalon-or basé sur le Verbatim GOLD et les temps réels en classe : de la rupture cartésienne à la machine de Turing, la récursivité de Chomsky, les moteurs sémantiques de Haugeland (analogie du soccer), la surface d'erreur 3D et la démonstration sonore historique de NETtalk (1987).",
-        durationTag: 'Audio 13 min',
-        durationDisplay: '13:25',
-        src: '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a',
+        durationTag: 'Audio 17 min',
+        durationDisplay: '16:46',
+        src: '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a',
         sources: [
-          '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a',
-          'PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a'
+          '02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a',
+          'PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a'
         ],
-        downloadName: 'PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a'
+        downloadName: 'PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a'
       },
       pre_s03: {
         id: 'pre_s03',
         btnId: 'epBtnPreS03',
-        tag: '🎙️ Capsule Pré-cours • Séance 3 (Lundi 28 sept.)',
+        tag: '🎙️ Grand Podcast Pré-cours • Séance 3 (Lundi 28 sept.)',
         title: "« L'Espace de Travail Global du cerveau & Cadrage du Débat 1 »",
-        desc: "Capsule concise (4 min 30) préparant la Séance 3 : les mécanismes de l'Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al.), l'embrasement conscient vs modularité, et le cadrage du Débat 1 (Louis B vs Alexandrea Kelly) modéré par Michel.",
-        durationTag: 'Audio 4 min',
-        durationDisplay: '04:31',
-        src: '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a',
+        desc: "Grand podcast approfondi (23 min 27) préparant la Séance 3 : les mécanismes de l'Espace de Travail Neuronal Global (GNWT de Mashour, Dehaene et al.), l'embrasement conscient vs modularité, et le cadrage méthodologique du Débat 1 (Louis B vs Alexandrea Kelly) modéré par Michel.",
+        durationTag: 'Audio 23 min',
+        durationDisplay: '23:27',
+        src: '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a',
         sources: [
-          '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a',
-          'PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a'
+          '02_Lectures_et_Articles/Semaine_03_Traitement_information/Podcast/PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a',
+          'PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a'
         ],
-        downloadName: 'PSY9613_S03_Capsule_01_PreCours_Mashour_GNWT_Debat01.m4a'
+        downloadName: 'PSY9613_S03_Episode_03_Mashour_GNWT_et_Debat_01.m4a'
       }
     };
 

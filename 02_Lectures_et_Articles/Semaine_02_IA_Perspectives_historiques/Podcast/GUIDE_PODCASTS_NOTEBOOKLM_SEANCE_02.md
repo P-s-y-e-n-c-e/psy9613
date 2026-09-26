@@ -22,7 +22,7 @@
 | Épisode | Statut / Rôle | Titre | Format & Durée | Vocation Pédagogique |
 | :--- | :---: | :--- | :---: | :--- |
 | **Épisode 1 (Pilote pré-cours)** | *Existant* | « La perception est une hallucination contrôlée » | ~22:42 | Mise en bouche avant le cours (lectures Clark, Seth, Dreyfus, Haugeland). |
-| **Épisode 2 (Nouveau / Master)** | **NOUVEAU** ⭐ | « L'IA au défi de Descartes : La grande traversée avec Pierre Poirier » | Grand Deep Dive (13:25 • 25.9 Mo) | **Consolidation post-cours étalon-or** : Ancrage chirurgical sur ce qui s'est réellement dit en classe, analyse des temps de passage (*dwell times*), controverses fondamentales et rigueur d'examen. |
+| **Épisode 2 (Master post-cours)** | **MASTER ÉTALON-OR** ⭐ | « De Descartes à NETtalk » | Grand Deep Dive (16:46 • 32.4 Mo) | **Consolidation post-cours étalon-or** : Ancrage chirurgical sur ce qui s'est réellement dit en classe, analyse des temps de passage (*dwell times*), rupture cartésienne, Turing/Chomsky, Haugeland soccer, surface d'erreur 3D et démonstration sonore historique de NETtalk 1987. |
 
 ---
 
@@ -79,9 +79,11 @@
 
 ## 📦 Fiche de Transfert Technique (Pour Sessions Contenu & Maintenance)
 
-* **Fichier audio final attendu :** `PSY9613_S02_Episode_02_Grand_Deep_Dive_Poirier.m4a`
+* **Fichier audio final officiel :** `PSY9613_S02_Episode_02_De_Descartes_a_NETtalk.m4a`
 * **Emplacement local :** `02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/`
+* **Durée :** 16 min 46 sec (32.4 Mo)
 * **Bannière Web (`index.html`) :**
-  - Mettre en place un commutateur d'épisodes (parité ergonomique avec PSY7010) ou un sélecteur d'onglets pour la Séance 2 :
-    * Onglet 1 : *Épisode 1 (Pilote pré-cours) — « La perception est une hallucination contrôlée » (22:42)*
-    * Onglet 2 : *Épisode 2 (Master post-cours) — « De Descartes à NETtalk : La grande traversée de l'IA » (Actif par défaut avec badge « NOUVEAU »)*.
+  - Mettre en place un commutateur d'épisodes (parité ergonomique avec PSY7010) :
+    * Onglet 1 : *Épisode 1 (Pilote pré-cours) — « La perception est une hallucination contrôlée » (22 min)*
+    * Onglet 2 : *Épisode 2 (Master post-cours) — « De Descartes à NETtalk » (16 min 46 s • Actif par défaut avec badge « ÉTALON-OR »)*.
+    * Onglet 3 : *Épisode 3 (Pré-cours Séance 3) — « L'Espace de Travail Global du cerveau & Cadrage du Débat 1 » (23 min 27 s)*.
