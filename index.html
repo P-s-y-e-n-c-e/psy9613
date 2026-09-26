@@ -164,6 +164,21 @@
       margin-left: 0;
     }
 
+    /* EASTER EGG : MASCOTTE TOADETTE VERS STATION PSY7010 */
+    .header-mascot-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .header-mascot-link:hover img, .header-mascot-icon:hover {
+      transform: scale(1.2) rotate(-10deg);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .header-mascot-icon {
+      transition: transform 0.2s ease;
+    }
+
     /* BADGE EN CONSTRUCTION AVEC TOOLTIP INTERACTIF (CONFORME PSY7010) */
     .construction-badge-wrap {
       position: relative;
@@ -2712,7 +2727,9 @@
     <div class="header-brand-row">
       <div class="header-brand">
         <h1 class="quiz-main-title" style="display: flex; align-items: center; gap: 8px;">
-          <img src="toadette.png" alt="" class="header-mascot-icon" style="height: 32px; width: 32px; border-radius: 50%; object-fit: contain; flex-shrink: 0;">
+          <a href="../psy7010/" class="header-mascot-link" title="Basculer vers la station d'étude PSY7010">
+            <img src="toadette.png" alt="Toadette - PSY7010" class="header-mascot-icon" style="height: 32px; width: 32px; border-radius: 50%; object-fit: contain; flex-shrink: 0;">
+          </a>
           <span>PSY9613 - Station d'Étude</span>
           <span class="construction-badge-wrap" tabindex="0" role="note" aria-label="Plateforme d'étude en cours de perfectionnement et de construction continue. Des ajustements ou coquilles peuvent subsister, merci de vérifier avec les textes de cours officiels. Vos remarques et commentaires sont les bienvenus !">
             <span class="construction-badge">🚧 En construction</span>
@@ -9605,6 +9622,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
     let activeDocId = 'doc_seance_01';
     let docLanguage = 'fr'; // 'fr' | 'en'
+    const FRENCH_ONLY_DOCS = ['doc_seance_01', 'doc_seance_02', 'doc_context'];
     let sourceTextVisible = true;
     let readerFontSize = 1.0;
 
@@ -10289,11 +10307,16 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         return;
       }
       if (!sourceTextVisible) toggleSourceTextVisibility(true);
-      let targetVp = document.getElementById('viewport_' + activeDocId + '_' + docLanguage);
-      if (!targetVp && docLanguage === 'en') {
+      let targetVp;
+      if (FRENCH_ONLY_DOCS.includes(activeDocId)) {
         targetVp = document.getElementById('viewport_' + activeDocId + '_fr');
-      } else if (!targetVp && docLanguage === 'fr') {
-        targetVp = document.getElementById('viewport_' + activeDocId + '_en');
+      } else {
+        targetVp = document.getElementById('viewport_' + activeDocId + '_' + docLanguage);
+        if (!targetVp && docLanguage === 'en') {
+          targetVp = document.getElementById('viewport_' + activeDocId + '_fr');
+        } else if (!targetVp && docLanguage === 'fr') {
+          targetVp = document.getElementById('viewport_' + activeDocId + '_en');
+        }
       }
       if (!targetVp) return;
 
@@ -10440,8 +10463,9 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       // Ciblage résilient de l'ancre selon la langue active
       let targetEl = null;
       const candidates = [];
+      const isFrOnly = FRENCH_ONLY_DOCS.includes(q.doc_id || activeDocId);
       if (q.anchor_id) {
-        if (docLanguage === 'en') {
+        if (!isFrOnly && docLanguage === 'en') {
           candidates.push(q.anchor_id + '_en', q.anchor_id);
         } else {
           candidates.push(q.anchor_id + '_fr', q.anchor_id);
@@ -10459,7 +10483,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
         targetEl.classList.add('active-anchor-pulse');
         targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
-        console.warn(`Ancre ${targetId} introuvable pour la question ${q.id} dans le panneau ${activeDocId} (${docLanguage}).`);
+        console.warn(`Ancre ${q.anchor_id || ('q' + q.id)} introuvable pour la question ${q.id} dans le panneau ${activeDocId} (${docLanguage}).`);
       }
     }
 
@@ -10478,6 +10502,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     function toggleDocLanguage() {
+      if (FRENCH_ONLY_DOCS.includes(activeDocId)) return;
       docLanguage = (docLanguage === 'fr') ? 'en' : 'fr';
       updateLanguageUI();
       switchTab(activeDocId, false);
@@ -10493,6 +10518,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     }
 
     function setDocLanguage(lang) {
+      if (FRENCH_ONLY_DOCS.includes(activeDocId)) return;
       if (docLanguage !== lang) {
         toggleDocLanguage();
       }
@@ -10506,17 +10532,28 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (!btn) return;
       if (icon) icon.textContent = '🌐';
 
-      btn.disabled = false;
-      btn.style.opacity = '1';
-      btn.style.pointerEvents = 'auto';
-      btn.style.cursor = 'pointer';
+      const isFrenchOnly = FRENCH_ONLY_DOCS.includes(activeDocId);
 
-      if (docLanguage === 'fr') {
-        if (label) label.textContent = 'Anglais (Original)';
-        btn.title = "Afficher l'article ou le cours original en anglais";
+      if (isFrenchOnly) {
+        btn.disabled = true;
+        btn.style.opacity = '0.4';
+        btn.style.pointerEvents = 'none';
+        btn.style.cursor = 'not-allowed';
+        if (label) label.textContent = 'Français (Original)';
+        btn.title = "Ce document (notes de cours / contexte UQAM) a été rédigé directement en français.";
       } else {
-        if (label) label.textContent = 'Français (Traduction)';
-        btn.title = "Afficher la traduction française annotée";
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+        btn.style.cursor = 'pointer';
+
+        if (docLanguage === 'fr') {
+          if (label) label.textContent = 'Anglais (Original)';
+          btn.title = "Afficher l'article original en anglais";
+        } else {
+          if (label) label.textContent = 'Français (Traduction)';
+          btn.title = "Afficher la traduction française annotée";
+        }
       }
     }
 
@@ -10534,11 +10571,16 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       }
 
       document.querySelectorAll('.reader-viewport').forEach(vp => vp.style.display = 'none');
-      let targetVp = document.getElementById('viewport_' + docId + '_' + docLanguage);
-      if (!targetVp && docLanguage === 'en') {
+      let targetVp;
+      if (FRENCH_ONLY_DOCS.includes(docId)) {
         targetVp = document.getElementById('viewport_' + docId + '_fr');
-      } else if (!targetVp && docLanguage === 'fr') {
-        targetVp = document.getElementById('viewport_' + docId + '_en');
+      } else {
+        targetVp = document.getElementById('viewport_' + docId + '_' + docLanguage);
+        if (!targetVp && docLanguage === 'en') {
+          targetVp = document.getElementById('viewport_' + docId + '_fr');
+        } else if (!targetVp && docLanguage === 'fr') {
+          targetVp = document.getElementById('viewport_' + docId + '_en');
+        }
       }
       if (targetVp) targetVp.style.display = 'block';
 
