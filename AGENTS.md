@@ -1,4 +1,4 @@
-# 📜 Règles Maîtresses du Workspace PSY9613 — Perception, cognition et IA (UQAM)
+# 📜 Règles Maîtresses du Workspace PSY9613 - Perception, cognition et IA (UQAM)
 
 Ce fichier définit les directives absolues et les compétences automatisées pour tout agent Antigravity opérant dans ce workspace de cours.
 
@@ -75,9 +75,9 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 ## 🧠 3. Coaching Relationnel & Communication (Adapté au TDAH)
 
 1. **Le « Micro-Pitch 15 Secondes » face aux professeurs :**
-   - *Phase 1 (0–5s) :* Constat de terrain brut et observable, sans jargon.
-   - *Phase 2 (5–10s) :* Un seul concept théorique précis du cours (ergonomie cognitive / facteurs humains / perception-action).
-   - *Phase 3 (10–15s) :* Question ouverte brève et **SILENCE COMPLET**.
+   - *Phase 1 (0-5s) :* Constat de terrain brut et observable, sans jargon.
+   - *Phase 2 (5-10s) :* Un seul concept théorique précis du cours (ergonomie cognitive / facteurs humains / perception-action).
+   - *Phase 3 (10-15s) :* Question ouverte brève et **SILENCE COMPLET**.
    - ⛔ **Règle absolue :** Se taire dès la fin de la question, écouter la réponse, sans surenchérir d'exemples supplémentaires.
 2. **Dédramatisation de la cohue de fin de cours :**
    - Si le professeur écourte la discussion (*« J'ai d'autres gens qui attendent... »*), ce n'est **JAMAIS** un rejet personnel.
@@ -87,11 +87,11 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 ---
 
-## ⚖️ 4. Mission Prioritaire Active : Présidence du Débat 1 (Séance 3 — Lundi 28 Septembre 2026)
+## ⚖️ 4. Mission Prioritaire Active : Présidence du Débat 1 (Séance 3 - Lundi 28 Septembre 2026)
 
 > [!IMPORTANT]
 > **Michel a été désigné par le Pr Dave Saint-Amour pour présider le premier débat en dyade de la session (Louis vs Alexandrea).**
-> Tout agent Antigravity opérant dans ce workspace — peu importe la machine (laptop UQAM ou PC de maison) — doit activement assister Michel dans cette préparation dès qu'il aborde la séance 3.
+> Tout agent Antigravity opérant dans ce workspace - peu importe la machine (laptop UQAM ou PC de maison) - doit activement assister Michel dans cette préparation dès qu'il aborde la séance 3.
 
 - **Contexte :** Débat d'ouverture de la Séance 3 (14h00), thématique *« Principes du traitement de l'information »*.
 - **Rôle de Michel :** Modérateur / Président de séance (introduction, gestion stricte du chronomètre [5 à 10 min par débatteur], animation de la période de discussion collective, synthèses et relances).
@@ -100,59 +100,61 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 ---
 
-## 🖥️ 5. Architecture Pentadique du Workspace (HQ, Contenu, Maintenance, Traduction, Mobile)
+## 🖥️ 5. Nomenclature Officielle et Architecture des 8 Sessions (PSY9613)
 
-Pour préserver la mémoire de contexte, éradiquer le « AI slop » et garantir une rigueur absolue pour les examens (70 % de la note), les opérations sont réparties entre cinq sessions dédiées :
+> [!IMPORTANT]
+> **Règle Absolue de Nomenclature des Sessions (Zéro Tiret Cadratin, Zéro Dénomination Fantaisiste) :**
+> Pour garantir la lisibilité parfaite dans l'interface Antigravity et une harmonisation totale entre PSY7010 et PSY9613, chaque session porte un nom officiel strict et immuable correspondant mot à mot à la barre latérale de Michel.
+> - **Format imposé :** `<CATÉGORIE_EN_MAJUSCULES> - <Nom du rôle>` avec un tiret court ASCII standard entouré d'espaces (` - `).
+> - **Interdiction formelle des tirets cadratins (`—`) ou demi-cadratins (`–`).**
+> - **Interdiction des acronymes ou surnoms non officiels.**
+> 
+> Les 8 sessions actives du workspace PSY9613 sont :
 
-1. **Session « Quartier Général » (HQ / Session Principale — `7dc85196-1fd5-481e-8cd9-2a0e92d258e2`) :**
+1. **GITHUB - Compatibilite mobile** (`5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`) :
+   - **Mission exclusive :** Audit ergonomique continu, accessibilité tactile (Loi de Fitts min 44x44 px / 48x48 dp) et fluidité responsive sur smartphones (priorité Samsung Galaxy S24) et tablettes.
+   - **Coordination :** Remonte ses anomalies et correctifs directement à `GITHUB - Maintenance du site`.
+
+2. **QUARTIER GENERAL - PSY9613** (`7dc85196-1fd5-481e-8cd9-2a0e92d258e2`) :
    - **Mission exclusive :** Tour de contrôle académique, stratégie globale de réussite du cours.
    - **Responsabilités :**
      * Supervision du calendrier officiel (Examen 1 le 2 nov., Examen 2 le 21 déc., Débat personnel le 14 déc.).
      * Veille des extractions Moodle et des données ENCORA (vérité terrain de la classe).
      * Cadrage impitoyable de la session Contenu web pour exiger un ratissage exhaustif et proscrire la paresse des modèles Flash.
-   - **Périmètre préservé :** Aucun code, aucune écriture lourde de questions.
+     * Coordination générale entre toutes les sessions et liaison inter-cours avec `QUARTIER GENERAL - PSY7010`.
+   - **Périmètre préservé :** Aucun code front-end, aucune conception brute de questions.
 
-2. **Session « Contenu web — Questions & Examens » (Session Pédagogique — `76989406-e739-4d56-85aa-9280b2a78eb4`) :**
-   - **Mission exclusive :** Conception intellectuelle, banque de questions et synthèses de séances.
+3. **PODCAST - Salle de production** :
+   - **Mission exclusive :** Conception, structuration pédagogique et spécifications de production des capsules audio de révision (NotebookLM multi-épisodes).
+
+4. **GITHUB - Maintenance du site** (`30eff855-2022-4c41-a03d-1dc843aed0d0`) :
+   - **Mission exclusive :** Ingénierie logicielle pure : code front-end (HTML/CSS/JS vanilla de `index.html`), lecteur multi-podcasts, parité ergonomique avec PSY7010, tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub Pages.
+   - **Périmètre préservé :** Ne conçoit aucun contenu pédagogique.
+
+5. **GITHUB - Contenu du site web** (`76989406-e739-4d56-85aa-9280b2a78eb4`) :
+   - **Mission exclusive :** Ingénierie pédagogique pure : questions d'examen ZPD, analyses conceptuelles, diagnostics cliniques de Toad.
    - **Responsabilités :**
-     * Ratissage systématique de chaque séance (Séance 1, Séance 2, etc.) sans laisser aucun angle mort.
-     * Utilisation obligatoire de sous-agents pour fouiller les sources textuelles et orales.
-     * Formatage rigoureux des questions avec justification et sources directes, prêtes pour l'audit croisé adversarial avec GPT-6 (limitation du biais d'alignement).
-     * Transmission des banques validées à la session Maintenance.
+     * Ratissage systématique des séances à partir des verbatims GOLD de Dave Saint-Amour et Pierre Poirier.
+     * Conception de banques de questions avec justification et sources directes.
+     * Boucle dialectique séquentielle (DeepThink -> Commit/Push Git -> GPT-6 -> DeepThink).
+     * Transmission des banques finalisées à `GITHUB - Maintenance du site`.
    - **Périmètre préservé :** Aucun développement logiciel HTML/CSS/JS.
 
-3. **Session « Maintenance du site web » (Session Technique Dédiée — `30eff855-2022-4c41-a03d-1dc843aed0d0`) :**
-   - **Mission exclusive :** Ingénierie logicielle, intégration front-end et robustesse de l'application web `index.html`.
-   - **Responsabilités :**
-     * Maintenance du code HTML, CSS et JavaScript vanilla.
-     * Parité ergonomique stricte avec PSY7010 (barre d'outils unifiée, pilules, pagination Google, flou progressif, mode sombre, lecteur multi-podcasts).
-     * Intégration technique exclusive des banques de questions validées transmises par la session Contenu.
-     * Tests fonctionnels, vérifications syntaxiques (`node -c`) et gestion des commits GitHub.
+6. **MOODLE - Extraction et suivis** :
+   - **Mission exclusive :** Veille continue des dépôts Moodle, extraction des documents académiques propres et contrôle de conformité des exigences d'évaluation.
 
-4. **Session « Traduction académique » (Session Dédiée Anglais → Français — `5fb475cb-85e7-45bf-8b7e-e1643b727dce`) :**
-   - **Mission exclusive :** Traduction intégrale et rigoureuse de l'anglais vers le français de l'ensemble des lectures obligatoires, optionnelles et suggérées fournies sur Moodle.
-   - **Responsabilités :**
-     * Traduction fidèle au mot à mot, sans paraphrase réductrice, alignée sur la terminologie des professeurs (transcriptions GOLD).
-     * Production systématique des deux livrables pour chaque article : le document Markdown maître et la visionneuse interactive HTML (avec fiche de synthèse conceptuelle, marqueurs de page mot à mot `page_[auteur]_[X]_fr` et ancres interactives `anchor_seance_XX_qYY`).
-     * Rapprochement systématique des concepts des textes avec les items de la banque d'examen étalon-or.
-     * Synchronisation immédiate des traductions sur GitHub (`git push origin main`) pour mise à disposition de l'équipe et des audits adversariaux.
-   - **Périmètre strictement confiné & Interdictions :**
-     * STRICTEMENT confinée à la traduction académique anglais → français des textes du cours.
-     * N'est assignée ni à la présidence ou modération des débats, ni à l'ingénierie logicielle du site, ni à la stratégie globale du Quartier Général.
+7. **GITHUB - Redaction/Traduction** (`5fb475cb-85e7-45bf-8b7e-e1643b727dce`) :
+   - **Mission exclusive :** Traduction intégrale mot à mot et rigoureuse anglais -> français des lectures obligatoires, optionnelles et suggérées (Bosco, Haugeland, Newell & Simon, McClelland, Sejnowski).
+   - **Production systématique :** Document Markdown maître et visionneuse HTML interactive avec ancres interactives.
+   - **Périmètre strictement confiné :** N'est assignée ni à la présidence ou modération des débats, ni à l'ingénierie logicielle du site, ni à la stratégie globale du Quartier Général.
 
-5. **Session « GITHUB - Compatibilité mobile » (Session Dédiée Ergonomie & Mobile — `5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`) :**
-   - **Mission exclusive :** Audit ergonomique continu, accessibilité tactile et fluidité responsive sur smartphones (priorité Samsung Galaxy S24) et tablettes.
-   - **Responsabilités :**
-     * Audit des surfaces d'appui et cibles tactiles (Loi de Fitts min 44×44 px / 48×48 dp) sur l'ensemble des modes (Étude, Flashcards, Podcasts).
-     * Vérification de la typographie adaptative sans zoom involontaire (polices ≥ 16 px sur les contrôles) et contraste WCAG AA/AAA.
-     * Surveillance du mode compact (`isCompactUI()`, `body.is-mobile-compact`, barre des modes mobiles, sélecteur compact de questions).
-     * Tests de fluidité du déversement des sources documentaires et de la surbrillance haute visibilité (cyan/magenta).
-     * Remontée méthodique des anomalies ergonomiques à la session Maintenance via `agentapi send-message`.
+8. **ENCORA - Debruitage Terrain** :
+   - **Mission exclusive :** Traitement acoustique local, réduction de bruit, synchronisation multi-enregistreurs (S24D / S24) et alignement temporel des transcriptions de classe.
 
-6. **Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :**
-   - **HQ ne doit JAMAIS court-circuiter Contenu ni dévier Traduction :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques, ou d'assigner des tâches hors-périmètre (ex: préparation de débat) à la session de traduction. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais respecte scrupuleusement le périmètre exclusif de chaque agent.
-   - **Vérification obligatoire de l'état du navigateur (Anti-Collision) :** Avant toute tentative d'interaction avec un modèle via CDP, chaque session DOIT impérativement inspecter l'état réel de l'onglet (`gemini_gem_client.js status` / détection du bouton Stop) pour s'assurer qu'aucun calcul n'est déjà en cours et éviter toute collision ou interruption accidentelle.
-   - **Concertation préalable :** Si une session estime qu'une action opérationnelle urgente est requise, elle DOIT envoyer un message à l'autre session (`agentapi send-message`) pour vérifier son statut avant d'agir.
+### Herméticité Stricte des Rôles & Synchronisation Inter-Sessions :
+- **HQ ne doit JAMAIS court-circuiter Contenu ni dévier Traduction :** Il est formellement interdit au Quartier Général d'injecter des prompts dans DeepThink ou GPT-6, de déclencher des générations pédagogiques, ou d'assigner des tâches hors-périmètre (ex: préparation de débat) à la session de traduction. Même en cas de latence perçue ou d'attente d'une validation de Michel, HQ supervise et alerte, mais respecte scrupuleusement le périmètre exclusif de chaque agent.
+- **Vérification obligatoire de l'état du navigateur (Anti-Collision) :** Avant toute tentative d'interaction avec un modèle via CDP, chaque session DOIT impérativement inspecter l'état réel de l'onglet (`gemini_gem_client.js status` / détection du bouton Stop) pour s'assurer qu'aucun calcul n'est déjà en cours et éviter toute collision ou interruption accidentelle.
+- **Concertation préalable :** Si une session estime qu'une action opérationnelle urgente est requise, elle DOIT envoyer un message à l'autre session (`agentapi send-message`) pour vérifier son statut avant d'agir.
 
 ---
 

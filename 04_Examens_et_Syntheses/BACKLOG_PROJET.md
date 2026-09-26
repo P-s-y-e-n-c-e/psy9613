@@ -1,11 +1,12 @@
-# 📋 Backlog & Feuille de Route Officielle — PSY9613 (Station d'Étude & Examens)
+# 📋 Backlog & Feuille de Route Officielle - PSY9613 (Station d'Étude & Examens)
 
-**Dernière mise à jour :** 26 Septembre 2026 (01h50 EDT)  
-**Responsable de la gouvernance :** Session Quartier Général (HQ)  
+**Dernière mise à jour :** 26 Septembre 2026 (03h55 EDT)  
+**Responsable de la gouvernance :** QUARTIER GENERAL - PSY9613 (`7dc85196-1fd5-481e-8cd9-2a0e92d258e2`)  
 **Acteurs opérationnels :** 
-- Session Contenu Web (`76989406-e739-4d56-85aa-9280b2a78eb4`)
-- Session Maintenance Web (`30eff855-2022-4c41-a03d-1dc843aed0d0`)
-- Session Traduction Académique (`5fb475cb-85e7-45bf-8b7e-e1643b727dce`)
+- GITHUB - Compatibilite mobile (`5c627ff2-5760-4f52-8c2a-fd7e6a9ee406`)
+- GITHUB - Maintenance du site (`30eff855-2022-4c41-a03d-1dc843aed0d0`)
+- GITHUB - Contenu du site web (`76989406-e739-4d56-85aa-9280b2a78eb4`)
+- GITHUB - Redaction/Traduction (`5fb475cb-85e7-45bf-8b7e-e1643b727dce`)
 
 ---
 
@@ -23,7 +24,7 @@
 | **Sprint 1.2 : Moteur de Recherche & Surbrillance Visuelle** | 🟡 En cours | Maintenance | HQ / Michel |
 | **Séance 3 : Présidence du Débat 1 (Louis vs Alexandrea)** | 🔵 Planifié (Séance 3) | HQ / Michel | Dave Saint-Amour |
 | **Banque d'examen Séance 3 (Traitement de l'info)** | 🔵 Planifié | Contenu | Audit adversarial |
-| **Préparation Examen 1 (Séances 1 à 6 — 2 nov. 2026)** | 🔵 Planifié | HQ / Contenu | Michel Mercier |
+| **Préparation Examen 1 (Séances 1 à 6 - 2 nov. 2026)** | 🔵 Planifié | HQ / Contenu | Michel Mercier |
 
 ---
 
@@ -51,11 +52,11 @@
 
 ### C. Corpus Scientifique & Traductions
 - [x] **5 articles fondamentaux traduits mot à mot en français avec ancres interactives :**
-  1. *Bosco et al. (2023)* — Action & Perception
-  2. *Newell & Simon (1975)* — PSSH & Recherche Heuristique
-  3. *McClelland (2009)* — Modélisation en Sciences Cognitives (PDP)
-  4. *Sejnowski (2023)* — LLM et Test de Turing Inversé
-  5. *Haugeland (1981)* — Moteurs Sémantiques & Cognitivisme
+  1. *Bosco et al. (2023)* - Action & Perception
+  2. *Newell & Simon (1975)* - PSSH & Recherche Heuristique
+  3. *McClelland (2009)* - Modélisation en Sciences Cognitives (PDP)
+  4. *Sejnowski (2023)* - LLM et Test de Turing Inversé
+  5. *Haugeland (1981)* - Moteurs Sémantiques & Cognitivisme
 
 ---
 
@@ -86,6 +87,6 @@
 - [ ] **Banque d'examen Séance 3 :** Traitement de l'information, formalisme computationnel, analogique vs numérique.
 
 ### Examens et Jalons Majeurs
-- **2 Novembre 2026 (14h00) :** **Examen Intra (35 % de la note finale)** — Séances 1 à 6.
+- **2 Novembre 2026 (14h00) :** **Examen Intra (35 % de la note finale)** - Séances 1 à 6.
 - **14 Décembre 2026 (14h00) :** **Débat en dyade de Michel (25 % de la note finale)**.
-- **21 Décembre 2026 (14h00) :** **Examen Final (35 % de la note finale)** — Séances 8 à 12.
+- **21 Décembre 2026 (14h00) :** **Examen Final (35 % de la note finale)** - Séances 8 à 12.
