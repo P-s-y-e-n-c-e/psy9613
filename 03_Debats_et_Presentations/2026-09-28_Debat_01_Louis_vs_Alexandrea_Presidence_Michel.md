@@ -57,12 +57,15 @@ Pour un étudiant avec un profil TDAH, avoir une structure externe claire, prév
 - *Relance de secours (si la classe est timide) :*
   - Question méthodologique : *« Sur le plan empirique, les devis expérimentaux cités comportent-ils des limites écologiques majeures ? »*
   - Question conceptuelle : *« Comment vos deux positions s'articulent-elles avec la distinction entre traitement hiérarchique et traitement distribué parallèle ? »*
+  - Question ciblée (ancrée sur l'article partagé par Alexandrea sur Moodle) : *« Dans le modèle de Dehaene et Changeux (2005) sur l'activité spontanée et l'accès à la conscience, comment conciliez-vous le filtrage descendant (top-down) avec la cécité attentionnelle (inattentional blindness) ? Est-ce une contrainte de traitement ou une propriété émergente ? »*
 
 ---
 
-## 📌 Checklist de Préparation (À valider avec Antigravity à la maison)
+## 📌 Checklist de Préparation (Mise à jour 28 sept. 09h00)
 
-- [ ] Obtenir la formulation exacte de la question de débat de Louis et Alexandrea (transmise par Dave Saint-Amour ou consultable sur Moodle).
-- [ ] Consulter le plan d'une page déposé sur Moodle 48h à l'avance (vendredi 26 septembre au soir).
-- [ ] Préparer 2 questions ouvertes sur mesure pour nourrir la discussion.
-- [ ] Imprimer ou avoir sur tablette la fiche mémo chronométrée.
+- [x] **Veille Moodle effectuée (28 sept. 09h00) :**
+  - Aucun devoir remis pour Michel (présidence).
+  - **Repère clé :** Alexandrea Kelly a partagé sur le forum Q&R (27 sept. 10h14) l'article fondateur de Dehaene & Changeux (2005, *PLoS Biology*) : *« Ongoing Spontaneous Activity Controls Access to Consciousness: A Neuronal Model for Inattentional Blindness »* ([PDF local](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/03_Debats_et_Presentations/Dehaene_Changeux_2005_Ongoing_Spontaneous_Activity_Consciousness.pdf)).
+- [ ] Obtenir la formulation exacte de la question de débat de Louis et Alexandrea (auprès des professeurs à 14h00).
+- [x] Préparer les 3 questions ouvertes de relance (ci-dessus).
+- [ ] Avoir la fiche de modération prête à l'écran.

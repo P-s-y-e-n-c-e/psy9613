@@ -86,6 +86,8 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * **Lectures optionnelles :**
   * [1982MarrDavidVisionBook.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/1982MarrDavidVisionBook.pdf) — David Marr (1982), *Vision: A Computational Investigation into the Human Representation and Processing of Visual Information* *(30.8 Mo)*
   * [Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf) *(820 Ko)*
+  * [Scheier et al (1998) - Embedded neural networks_exploiting constraints.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Scheier%20et%20al%20(1998)%20-%20Embedded%20neural%20networks_exploiting%20constraints.pdf) *(1.46 Mo)*
+  * [Top-down influences on visual processing(2013).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Top-down%20influences%20on%20visual%20processing(2013).pdf) *(717 Ko)*
 
 ### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
 * **Lecture obligatoire :**
