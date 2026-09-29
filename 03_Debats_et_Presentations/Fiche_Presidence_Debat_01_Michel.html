@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fiche de Présidence — Débat 1 — Michel Mercier</title>
+  <style>
+    @page {
+      size: letter portrait;
+      margin: 8mm 10mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      height: 262mm;
+      max-height: 262mm;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 5px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-title {
+      font-size: 16.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .header-sub {
+      font-size: 10.5pt;
+      color: #334155;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .badge {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 9pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      color: #475569;
+      font-weight: 700;
+    }
+
+    /* Blocks */
+    .block {
+      border: 1.5px solid #cbd5e1;
+      border-radius: 6px;
+      background: #ffffff;
+    }
+    .block-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .block-title {
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .block-tag {
+      font-weight: 800;
+      border-radius: 4px;
+    }
+
+    /* Color Themes */
+    .theme-blue {
+      border-left: 6px solid #2563eb;
+      background: #f8fafc;
+    }
+    .theme-blue .block-title { color: #1e40af; }
+    .theme-blue .block-tag { background: #dbeafe; color: #1e40af; }
+
+    .theme-green {
+      border-left: 6px solid #059669;
+      background: #f0fdf4;
+    }
+    .theme-green .block-title { color: #065f46; }
+    .theme-green .block-tag { background: #d1fae5; color: #065f46; }
+
+    .theme-purple {
+      border-left: 6px solid #7c3aed;
+      background: #faf5ff;
+    }
+    .theme-purple .block-title { color: #5b21b6; }
+    .theme-purple .block-tag { background: #ede9fe; color: #5b21b6; }
+
+    .theme-amber {
+      border-left: 6px solid #d97706;
+      background: #fffbeb;
+    }
+    .theme-amber .block-title { color: #92400e; }
+    .theme-amber .block-tag { background: #fef3c7; color: #92400e; }
+
+    .theme-rose {
+      border-left: 6px solid #e11d48;
+      background: #fff1f2;
+    }
+    .theme-rose .block-title { color: #9f1239; }
+    .theme-rose .block-tag { background: #ffe4e6; color: #9f1239; }
+
+    /* ========================================= */
+    /* PAGE 1 (RECTO) SPECIFIC STYLES            */
+    /* ========================================= */
+    .page-1 .timeline {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 8px;
+    }
+    .page-1 .t-step {
+      flex: 1;
+      background: #f1f5f9;
+      border-left: 3.5px solid #64748b;
+      padding: 4px 6px;
+      border-radius: 0 4px 4px 0;
+    }
+    .page-1 .t-step.active {
+      background: #e0f2fe;
+      border-left-color: #0284c7;
+    }
+    .page-1 .t-time {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #0369a1;
+      text-transform: uppercase;
+    }
+    .page-1 .t-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .page-1 .block {
+      padding: 9px 13px;
+      margin-bottom: 8px;
+    }
+    .page-1 .block-title {
+      font-size: 12pt;
+    }
+    .page-1 .block-tag {
+      font-size: 9pt;
+      padding: 2px 7px;
+    }
+    .page-1 .script {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      padding: 8px 11px;
+      font-style: italic;
+      color: #0f172a;
+      font-size: 11pt;
+      line-height: 1.38;
+      margin-top: 5px;
+    }
+    .page-1 .script b {
+      font-style: normal;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .page-1 .cue {
+      font-size: 9.8pt;
+      color: #334155;
+      margin-top: 4px;
+      font-weight: 700;
+    }
+
+    /* ========================================= */
+    /* PAGE 2 (VERSO) SPECIFIC STYLES            */
+    /* ========================================= */
+    .page-2 .block {
+      padding: 6px 11px;
+      margin-bottom: 6px;
+    }
+    .page-2 .block-title {
+      font-size: 11pt;
+    }
+    .page-2 .block-tag {
+      font-size: 8.5pt;
+      padding: 2px 7px;
+    }
+    .page-2 .script {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 5px 9px;
+      font-style: italic;
+      color: #0f172a;
+      font-size: 10pt;
+      line-height: 1.32;
+      margin-top: 3px;
+    }
+    .page-2 .script b {
+      font-style: normal;
+      font-weight: 800;
+    }
+    .page-2 .cue {
+      font-size: 9.2pt;
+      color: #334155;
+      margin-top: 3px;
+      font-weight: 700;
+    }
+
+    .q-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+    .q-item {
+      border: 1.5px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 5px 9px;
+      background: #ffffff;
+    }
+    .q-item.q-louis { border-left: 5px solid #059669; }
+    .q-item.q-alex { border-left: 5px solid #7c3aed; }
+    .q-item.q-pointue { border-left: 5px solid #e11d48; }
+
+    .q-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .q-target {
+      font-size: 9pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .q-louis .q-target { color: #065f46; }
+    .q-alex .q-target { color: #5b21b6; }
+    .q-pointue .q-target { color: #9f1239; }
+
+    .q-concept {
+      font-size: 8pt;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .q-text {
+      font-size: 10pt;
+      font-style: italic;
+      color: #0f172a;
+      line-height: 1.32;
+    }
+    .q-text b {
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .rules-box {
+      background: #f8fafc;
+      border: 1.5px dashed #64748b;
+      border-radius: 5px;
+      padding: 5px 9px;
+      margin-bottom: 5px;
+      font-size: 8.8pt;
+      line-height: 1.3;
+      color: #1e293b;
+    }
+    .rules-title {
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 2px;
+      font-size: 8.8pt;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- PAGE 1 : RECTO (CHRONOLOGIE & REFLETS)     -->
+  <!-- ========================================== -->
+  <div class="page page-1 page-break">
+    <div>
+      <div class="header">
+        <div>
+          <div class="header-title">⚖️ CONDUCTEUR DÉBAT 1 — PSY9613</div>
+          <div class="header-sub">Séance 3 • Principes du traitement de l'information • Modérateur : Michel Mercier</div>
+        </div>
+        <div class="badge">RECTO • DÉROULEMENT</div>
+      </div>
+
+      <!-- Timeline Bar -->
+      <div class="timeline">
+        <div class="t-step active"><div class="t-time">00:00 - 02:00</div><div class="t-name">1. Ouverture</div></div>
+        <div class="t-step"><div class="t-time">02:00 - 10:00</div><div class="t-name">2. Louis (8m)</div></div>
+        <div class="t-step"><div class="t-time">10:00 - 18:00</div><div class="t-name">3. Alexandrea (8m)</div></div>
+        <div class="t-step"><div class="t-time">18:00 - 22:00</div><div class="t-name">4. Réaction (4m)</div></div>
+        <div class="t-step"><div class="t-time">22:00 - 35:00</div><div class="t-name">5. Plénière (13m)</div></div>
+        <div class="t-step"><div class="t-time">35:00 - 38:00</div><div class="t-name">6. Clôture</div></div>
+      </div>
+
+      <!-- Étape 1 : Ouverture -->
+      <div class="block theme-blue">
+        <div class="block-header">
+          <div class="block-title">🎙️ 1. OUVERTURE & CADRAGE IMMÉDIAT</div>
+          <span class="block-tag">00:00 – 02:00 (2 min)</span>
+        </div>
+        <div class="script">
+          « Bonjour à tous. Pour ouvrir cette séance sur les principes du traitement de l'information, nous accueillons aujourd'hui <b>Louis Bisson</b> et <b>Alexandrea Kelly</b> pour notre premier débat en dyade. Chacun dispose de <b>8 minutes</b> pour présenter ses arguments appuyés sur la littérature scientifique, avec un signal discret à 7 minutes. Nous enchaînerons avec un échange direct entre eux, puis j'ouvrirai la discussion à l'ensemble de la classe. <b>Louis, à toi la parole pour ouvrir la marche sur la thèse du traitement de l'information.</b> »
+        </div>
+      </div>
+
+      <!-- Étape 2 : Exposé Louis & Reflet -->
+      <div class="block theme-green">
+        <div class="block-header">
+          <div class="block-title">💻 2. EXPOSÉ LOUIS BISSON (POUR) & REFLET D'ÉCOUTE</div>
+          <span class="block-tag">02:00 – 10:00 (8 min)</span>
+        </div>
+        <div class="cue">⏱️ <b>À 7 min :</b> Geste discret (1 doigt levé) ou <i>« Il te reste une minute, Louis »</i>.</div>
+        <div class="script">
+          <b>Reflet préparé pour Louis (à 10:00) :</b><br>
+          « Merci Louis. Si je résume ton idée maîtresse et le reflet de ce que tu nous apportes avec <b>David Marr</b> et <b>Newell & Simon</b>, c'est que pour expliquer l'esprit, on ne peut pas simplement regarder le cerveau comme un organe brut. Tu poses que <b>la cognition est fondamentalement un système de traitement de l'information</b> : l'esprit résout des problèmes en manipulant des représentations symboliques selon des règles formelles. C'est le cœur même du computationnalisme classique. »
+        </div>
+        <div class="cue" style="margin-top:5px;"><b>Transition :</b> <i>« Alexandrea, à toi la parole pour nous présenter la perspective opposée pendant 8 minutes. »</i></div>
+      </div>
+
+      <!-- Étape 3 : Exposé Alexandrea & Reflet -->
+      <div class="block theme-purple">
+        <div class="block-header">
+          <div class="block-title">🧠 3. EXPOSÉ ALEXANDREA KELLY (CONTRE) & REFLET D'ÉCOUTE</div>
+          <span class="block-tag">10:00 – 18:00 (8 min)</span>
+        </div>
+        <div class="cue">
+          ⏱️ <b>À 17 min :</b> Geste discret 1 minute restance. • 📄 <b>Article Moodle partagé :</b> <i>Dehaene & Changeux (2005) — Ongoing Spontaneous Activity</i>
+        </div>
+        <div class="script">
+          <b>Reflet préparé pour Alexandrea (à 18:00) :</b><br>
+          « Merci Alexandrea. Si je traduis l'essence de ta posture et ce reflet fort avec <b>Scheier</b> et <b>Dehaene</b>, c'est que l'esprit ne peut pas être réduit à un logiciel abstrait tournant dans le vide. Tu nous rappelles que <b>la cognition est incarnée</b> : elle émerge d'un corps biologique situé qui agit dans un environnement réel, et d'une dynamique cérébrale endogène continue qui ne se laisse pas enfermer dans un pur calcul algorithmique désincarné. »
+        </div>
+      </div>
+
+      <!-- Étape 4 : Réaction croisée -->
+      <div class="block theme-amber">
+        <div class="block-header">
+          <div class="block-title">⚡ 4. ÉCHANGE DIRECT DYADE (RÉACTION CROISÉE)</div>
+          <span class="block-tag">18:00 – 22:00 (4 min)</span>
+        </div>
+        <div class="script">
+          « Avant d'ouvrir à la classe, je vous laisse <b>une à deux minutes chacun</b> pour rebondir directement sur ce que l'autre vient de dire. <b>Louis, comment réponds-tu à la critique incarnée d'Alexandrea ?</b> Et Alexandrea, ta réplique ensuite. »
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>PSY9613 • UQAM • Automne 2026</span>
+      <span>TOURNER LA PAGE POUR LA PLÉNIÈRE ET LES 4 QUESTIONS CLÉS ➔</span>
+      <span>Page 1 / 2</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 2 : VERSO (PLÉNIÈRE & 4 RELANCES)     -->
+  <!-- ========================================== -->
+  <div class="page page-2">
+    <div>
+      <div class="header">
+        <div>
+          <div class="header-title">🎯 BOÎTE À OUTILS PLÉNIÈRE & QUESTIONS CLÉS</div>
+          <div class="header-sub">Animation de la salle, relances chirurgicales et synthèse finale</div>
+        </div>
+        <div class="badge">VERSO • INTERVENTIONS</div>
+      </div>
+
+      <!-- Étape 5 : Plénière et Régulation -->
+      <div class="block theme-blue">
+        <div class="block-header">
+          <div class="block-title">👥 5. DISCUSSION COLLECTIVE AVEC LA CLASSE</div>
+          <span class="block-tag">22:00 – 35:00 (13 min)</span>
+        </div>
+        <div class="script" style="margin-bottom:3px;">
+          <b>Lancement plénière :</b> « J'ouvre maintenant la discussion à la classe. Je prends les questions par ordre de main levée. [Prénom], on t'écoute. »
+        </div>
+        <div class="cue">
+          🛑 <b>Monopole de parole :</b> <i>« Merci [Prénom], le point est très clair. Pour permettre à tout le monde de participer, voyons comment Louis ou Alexandrea y répondent. »</i>
+        </div>
+      </div>
+
+      <!-- Les 4 Questions Chirurgicales -->
+      <div style="font-size:9.2pt; font-weight:800; color:#0f172a; text-transform:uppercase; margin: 3px 0 2px 2px;">
+        🔥 4 RELANCES CHIRURGICALES (SI BLANC OU POUR POUSSER LE DÉBAT)
+      </div>
+
+      <div class="q-grid">
+        <!-- Q1 : Louis -->
+        <div class="q-item q-louis">
+          <div class="q-meta">
+            <span class="q-target">1. À Louis • Camp Computationnaliste</span>
+            <span class="q-concept">Ancrage des symboles (Harnad) & Robot T3</span>
+          </div>
+          <div class="q-text">
+            « Louis, si penser c'est juste <b>calculer de l'information formelle</b> comme un ordinateur, comment une machine peut-elle vraiment comprendre le sens de ce qu'elle fait, tant qu'elle n'a pas <b>un corps pour bouger dans le monde réel et subir les conséquences réelles de ses actions</b> ? »
+          </div>
+        </div>
+
+        <!-- Q2 : Alexandrea -->
+        <div class="q-item q-alex">
+          <div class="q-meta">
+            <span class="q-target">2. À Alexandrea • Camp Cognition Incarnée</span>
+            <span class="q-concept">Pensée abstraite & Planification future</span>
+          </div>
+          <div class="q-text">
+            « Alexandrea, si la cognition dépend entièrement d'un corps biologique en interaction motrice immédiate, <b>comment ton approche explique-t-elle qu'on soit capables de faire des mathématiques abstraites</b> ou de planifier des scénarios futurs sans rapport avec nos mouvements immédiats, comme le fait d'être ici à l'université en train de théoriser ? »
+          </div>
+        </div>
+
+        <!-- Q3 : Alexandrea / Dehaene (Article Moodle) -->
+        <div class="q-item q-pointue">
+          <div class="q-meta">
+            <span class="q-target">3. Pointue • À Alexandrea sur son article Moodle</span>
+            <span class="q-concept">Dehaene & Changeux (2005) • Activité spontanée</span>
+          </div>
+          <div class="q-text">
+            « Alexandrea, dans <b>l'article de Dehaene (2005) que tu as partagé sur Moodle</b>, les neurones s'allument spontanément en continu, même au repos. <b>Est-ce que cette activité endogène permanente, ce n'est pas justement du code interne</b>, de l'information que le cerveau génère de lui-même avant même d'interagir avec le monde extérieur ? »
+          </div>
+        </div>
+
+        <!-- Q4 : Louis / Marr -->
+        <div class="q-item q-pointue">
+          <div class="q-meta">
+            <span class="q-target">4. Pointue • À Louis sur David Marr (1982)</span>
+            <span class="q-concept">Indépendance matérielle vs Contraintes biologiques</span>
+          </div>
+          <div class="q-text">
+            « Louis, David Marr postule que le niveau computationnel est indépendant de son implémentation physique. <b>Mais est-ce que le fait qu'un être vivant soit fait de chair, de biochimie et d'impératifs de survie ne change pas radicalement la nature même des calculs qu'il effectue ?</b> »
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 6 : Clôture -->
+      <div class="block theme-rose">
+        <div class="block-header">
+          <div class="block-title">🏁 6. SYNTHÈSE FINALE & PASSAGE DE TÉMOIN</div>
+          <span class="block-tag">35:00 – 38:00 (3 min)</span>
+        </div>
+        <div class="script">
+          « Nous arrivons au terme de notre premier débat. Ce qu'on retient aujourd'hui, c'est cette <b>tension fondamentale entre la rigueur formelle du computationnalisme</b> — qui fournit des modèles algorithmiques précis — et <b>la réalité biologique de la cognition incarnée</b> — qui nous rappelle qu'on ne pense jamais hors d'un corps et d'un environnement vivant. Un grand merci à Louis et Alexandrea pour la qualité de leur travail. <b>Je cède maintenant la parole à Dave Saint-Amour et Pierre Poirier pour leurs retours.</b> »
+        </div>
+      </div>
+
+      <!-- Garde-Fou Personnel -->
+      <div class="rules-box">
+        <div class="rules-title">🛡️ POSTURE D'ARBITRE & ÉCONOMIE COGNITIVE (RAPPEL TDAH)</div>
+        <b>1. Rôle d'arbitre, non de plaideur :</b> Tu n'as pas à trancher ni à défendre Harnad. Tu es le maître du temps et le facilitateur des échanges.<br>
+        <b>2. Silence après la question :</b> Dès que tu poses une relance, bouche fermée, écoute complète.<br>
+        <b>3. Moins tu parles, plus ton autorité rayonne :</b> La classe et les profs attendent une modération fluide, rythmée et bienveillante.
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>PSY9613 • Perception, cognition et IA</span>
+      <span>DOCUMENT MAÎTRE POUR LA PRÉSIDENCE DU DÉBAT 1</span>
+      <span>Page 2 / 2</span>
+    </div>
+  </div>
+
+</body>
+</html>

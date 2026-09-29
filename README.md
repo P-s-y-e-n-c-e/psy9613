@@ -53,12 +53,17 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * [Entente_evaluation_F-1021.png](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/00_Plan_du_cours/Entente_evaluation_F-1021.png) — Formulaire officiel F-1021 d'entente d'évaluation approuvée.
 * [cours1_Intro.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/cours1_Intro.pdf) — Diapositives du Cours 1 (14 sept.) : Présentation et introduction *(7.7 Mo)*
 * [Introduction générale au cours PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Introduction%20g%C3%A9n%C3%A9rale%20au%20cours%20PSY9613-2026.pdf) — Diapositives officielles du Cours 2 (21 sept.) : IA — Perspectives historiques *(114 diapos, 5.4 Mo)*
+* [Note de cours_trait de linfo partie cerveau.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Note%20de%20cours_trait%20de%20linfo%20partie%20cerveau.pdf) — Diapositives officielles du Cours 3 (28 sept., partie 1 : neuro / cerveau) par Dave Saint-Amour *(5.6 Mo)*
+* [Cours 3 - (Partie cognition encarnée) PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%203%20-%20(Partie%20cognition%20encarn%C3%A9e)%20PSY9613-2026.pdf) — Diapositives officielles du Cours 3 (28 sept., partie 2 : cognition incarnée) par Pierre Poirier *(1.1 Mo)*
 * [notes_seance_01_2026-09-14.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_01_2026-09-14.md) — Notes de cours complètes & chronologie de la Séance 1.
 * [notes_seance_02_2026-09-21.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_02_2026-09-21.md) — Notes de cours complètes & chronologie en direct de la Séance 2.
+* [notes_seance_03_2026-09-28.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/notes_seance_03_2026-09-28.md) — Notes de cours complètes & chronologie en direct de la Séance 3.
 * [diaporama_cours_02.html](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/diaporama_cours_02.html) — Visionneuse interactive des 114 diapositives de la Séance 2.
+* [diaporama_cours_03.html](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/diaporama_cours_03.html) — Visionneuse interactive des diapositives de la Séance 3.
 * [PSY9613-01_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-01_Transitions.md) — Transitions Séance 1 calibrées pour ENCORA.
 * [PSY9613-02_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions.md) — Transitions Séance 2 calibrées pour ENCORA (version initiale).
 * [PSY9613-02_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
+* [PSY9613-03_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-03_Transitions.md) — Transitions Séance 3 calibrées pour ENCORA.
 
 
 ### 📖 Semaine 1 (14 sept.) — Présentation et introduction
@@ -85,9 +90,11 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Revisiting the global workspace (2021).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_obligatoires/Revisiting%20the%20global%20workspace%20(2021).pdf) *(Mashour et al., 9.0 Mo)*
 * **Lectures optionnelles :**
   * [1982MarrDavidVisionBook.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/1982MarrDavidVisionBook.pdf) — David Marr (1982), *Vision: A Computational Investigation into the Human Representation and Processing of Visual Information* *(30.8 Mo)*
+  * [Marr_1982_Part1_Intro_Philosophical_Preliminaries.txt](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Marr_1982_Part1_Intro_Philosophical_Preliminaries.txt) *(Extrait textuel)*
   * [Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Whyvisionisnotbothhierarchicalandfeedforward(2014).pdf) *(820 Ko)*
   * [Scheier et al (1998) - Embedded neural networks_exploiting constraints.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Scheier%20et%20al%20(1998)%20-%20Embedded%20neural%20networks_exploiting%20constraints.pdf) *(1.46 Mo)*
   * [Top-down influences on visual processing(2013).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Top-down%20influences%20on%20visual%20processing(2013).pdf) *(717 Ko)*
+  * [Theta–gamma coupling(2024).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Theta%E2%80%93gamma%20coupling(2024).pdf) *(2.96 Mo)*
 
 ### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
 * **Lecture obligatoire :**
@@ -104,6 +111,8 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 ### 📖 Semaine 13 (7 déc.) — Interactions humain-machines
 * **Lecture obligatoire :**
   * [steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_13_Interactions_humain_machines/Lectures_obligatoires/steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf) *(150 Ko)*
+* **Lectures optionnelles :**
+  * [Liu(2025)_Human-generative AI collaboration.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_13_Interactions_humain_machines/Lectures_optionnelles/Liu(2025)_Human-generative%20AI%20collaboration.pdf) *(6.0 Mo)*
 
 *(Note : Pour les autres semaines, les professeurs ont pour l'instant mis des images indicatives « À venir » sur Moodle ; les documents réels seront ajoutés au fil de la session).*
 

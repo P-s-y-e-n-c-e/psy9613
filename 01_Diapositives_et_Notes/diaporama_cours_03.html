@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSY9613 — Diaporama Cours 3 : Comment le cerveau traite-t-il l'information ?</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      background-color: var(--background, #090d16);
+      color: var(--foreground, #f8fafc);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .slide-card {
+      background: var(--card, #131b2e);
+      border: 1px solid var(--border, #243049);
+      zoom: var(--slide-zoom, 1.02);
+    }
+    .verbatim-box {
+      background: rgba(10, 14, 23, 0.9);
+      border: 1px solid rgba(46, 61, 86, 0.7);
+    }
+  </style>
+</head>
+<body class="p-3 md:p-5 min-h-screen flex flex-col justify-between">
+  <!-- Top Bar -->
+  <header class="mb-3">
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border,#243049)] pb-2.5">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-400">PSY9613 — Séance 3</span>
+          <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Lundi 28 sept. 2026</span>
+          <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">EDT</span>
+        </div>
+        <h1 class="text-base md:text-lg font-bold text-white mt-0.5">
+          Comment le cerveau traite-t-il l'information ? — Pr Dave Saint-Amour & Pr Pierre Poirier
+        </h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-xs px-2.5 py-1 rounded-full bg-sky-950 text-sky-300 font-medium border border-sky-700/60 flex items-center gap-1.5">
+          <span class="inline-block w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+          29 Diapositives Verbatim Validées
+        </span>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="mt-2.5 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5">
+        <button id="prevBtn" onclick="prevSlide()" class="px-3 py-1.5 rounded-lg bg-[var(--card,#131b2e)] hover:bg-slate-800 border border-[var(--border,#243049)] text-xs font-semibold transition flex items-center gap-1 text-slate-200">
+          ◀ Précédent
+        </button>
+        <span id="slideCounter" class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700 text-sky-300">
+          Diapo 5 / 29
+        </span>
+        <button id="nextBtn" onclick="nextSlide()" class="px-3 py-1.5 rounded-lg bg-[var(--card,#131b2e)] hover:bg-slate-800 border border-[var(--border,#243049)] text-xs font-semibold transition flex items-center gap-1 text-slate-200">
+          Suivant ▶
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 flex-grow max-w-md">
+        <input type="text" id="searchInput" placeholder="Chercher un mot-clé ou concept (/)..." 
+               oninput="filterSlides()" 
+               class="w-full text-xs px-3 py-1.5 rounded-lg bg-[var(--card,#131b2e)] border border-[var(--border,#243049)] text-white focus:outline-none focus:border-sky-500 placeholder-slate-500">
+        <select id="slideSelect" onchange="goToSlide(parseInt(this.value))" class="text-xs px-2 py-1.5 rounded-lg bg-[var(--card,#131b2e)] border border-[var(--border,#243049)] text-slate-200 max-w-[200px]">
+        </select>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <button onclick="adjustZoom(-0.1)" title="Diminuer la taille du texte" class="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-bold transition">A−</button>
+        <button onclick="adjustZoom(0.1)" title="Agrandir la taille du texte" class="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-bold transition">A+</button>
+        <button onclick="toggleVerbatim()" id="toggleVerbatimBtn" class="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 transition flex items-center gap-1">
+          📄 Mode Brut
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slide Display Card -->
+  <main class="flex-grow flex flex-col justify-center my-1.5">
+    <div id="slideContent" class="slide-card rounded-2xl p-5 md:p-6 shadow-2xl min-h-[430px] flex flex-col justify-between transition-all duration-150">
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-2 pt-2 border-t border-[var(--border,#243049)] flex flex-wrap items-center justify-between text-xs text-slate-400">
+    <div class="flex items-center gap-2">
+      <span>Clavier : <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-[10px]">◀</kbd> <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-[10px]">▶</kbd></span>
+      <span>• Recherche : <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-[10px]">/</kbd></span>
+    </div>
+    <div class="text-slate-400">
+      Enseignants : Pr Dave Saint-Amour & Pr Pierre Poirier — PSY9613
+    </div>
+  </footer>
+
+  <script>
+    const slides = [
+      {
+        num: 1,
+        category: "PLAN DU COURS",
+        title: "Cours 3: Comment le cerveau traite-t-il l'information?",
+        subtitle: "PSY9611 / PSY9613 — Perception, cognition et intelligence artificielle",
+        points: [
+          "• Théorie de l'information",
+          "• Traitement hiérarchique et parallèle",
+          "• Traitement spécifique et distribué",
+          "• Mécanismes d’intégration"
+        ],
+        raw_text: "PSY9611 - Perception, cognition et intelligence artificielle\nCours 3: Comment le cerveau traite-t-il l'information?\n• Théorie de l'information\n• Traitement hiérarchique et parallèle\n• Traitement spécifique et distribué\n• Mécanismes d’intégration"
+      },
+      {
+        num: 2,
+        category: "THÉORIE DE L'INFORMATION",
+        title: "L’information selon Shannon",
+        subtitle: "Claude Shannon (1916-2001) — The Mathematical Theory of Communication (1948)",
+        points: [
+          "• Modèle général de communication :",
+          "  [Information Source] — Message ➔ [Transmitter] — Signal ➔ (Noise Source) ➔ Received Signal ➔ [Receiver] — Message ➔ [Destination]",
+          "• Schéma formel d'un système général de transmission de signaux"
+        ],
+        raw_text: "L’information selon Shannon\n1948 — Claude Shannon (1916-2001)\nThe Mathematical Theory of Communication\nFig. 1. — Schematic diagram of a general communication system.\nINFORMATION SOURCE -> TRANSMITTER -> (NOISE SOURCE) -> RECEIVER -> DESTINATION"
+      },
+      {
+        num: 3,
+        category: "THÉORIE DE L'INFORMATION",
+        title: "L’information selon Shannon",
+        subtitle: "Qu’est-ce que l’information? À quoi réfère-t-elle?",
+        points: [
+          "• Pour Shannon, l’information peut être quantifiée (en bits):",
+          "• Démonstration mathématique :",
+          "  I(x) = log₂(1 / p(x))",
+          "       = log₂ 1 − log₂ p(x)",
+          "       = 0 − log₂ p(x)",
+          "       = −log₂ p(x)",
+          "• Courbe logarithmique : Logarithms Measure Information Content (Information Content I(x) = -log2(P(x)))",
+          "• Plus un événement est probable (P proche de 1), moins il apporte d'information.",
+          "• Plus un événement est rare (P proche de 0), plus la quantité d'information (surprisal) est élevée."
+        ],
+        raw_text: "L’information selon Shannon\nQu’est-ce que l’information? À quoi réfère-t-elle?\nPour Shannon, l’information peut être quantifiée (en bits):\nI(x) = log₂(1 / p(x)) = log₂ 1 - log₂ p(x) = 0 - log₂ p(x) = -log₂ p(x)\nLogarithms Measure Information Content: I(x) = -log2(P(x))"
+      },
+      {
+        num: 4,
+        category: "THÉORIE DE L'INFORMATION",
+        title: "L’information selon Shannon",
+        subtitle: "Concepts clés et implications",
+        points: [
+          "TABLEAU DES CONCEPTS & MANIFESTATIONS :",
+          "• Entropie : Quantité d'incertitude dans la source",
+          "• Information : Réduction de cette incertitude (via les processus perceptifs/cognitifs de sélection)",
+          "• Bruit : Altération du signal qui gêne l'interprétation (les signaux sensoriels de l’envir sont souvent ambigus, dégradés ou concurrents)",
+          "• Redondance : Information en trop (ou répétée) utile pour p. ex. corriger des erreurs de transmission dans un canal bruité",
+          "IMPLICATION MAJEURE :",
+          "• « Il importe de savoir combien d'information, mais aussi quel type d’information est utile pour reconnaître, décider ou agir, etc. »"
+        ],
+        raw_text: "L’information selon Shannon\nConcepts clés et implications\nConcept | Manifestation\nEntropie | Quantité d'incertitude dans la source\nInformation | Réduction de cette incertitude (via les processus perceptifs/cognitifs de sélection)\nBruit | Altération du signal qui gêne l'interprétation (les signaux sensoriels de l’envir sont souvent ambigus, dégradés ou concurrents)\nRedondance | Information en trop (ou répétée) utile pour p. ex. corriger des erreurs de transmission dans un canal bruité\nIl importe de savoir combien d'information, mais aussi quel type d’information est utile pour reconnaître, décider ou agir, etc."
+      },
+      {
+        num: 5,
+        category: "THÉORIE DE L'INFORMATION",
+        title: "L’information selon Shannon",
+        subtitle: "Chaîne de transmission appliquée",
+        points: [
+          "• Source (Téléphone émetteur)",
+          "• Encoder (Modem / Encodeur de signal)",
+          "• Channel + Noise (Ligne haute tension / Canal avec bruit)",
+          "• Decoder (Décodeur)",
+          "• Receiver (Téléphone récepteur)"
+        ],
+        raw_text: "L’information selon Shannon\nSource -> Encoder -> Channel (Noise) -> Decoder -> Receiver"
+      },
+      {
+        num: 6,
+        category: "APPLICATION CLINIQUE & RECHERCHE",
+        title: "Traitement de l’information visuelle dans l’amblyopie",
+        subtitle: "Entropy estimation of resting-state EEG variability in amblyopia (Dave Saint-Amour et al.)",
+        points: [
+          "• Étude menée au CHU Sainte-Justine & NeuroQAM : Dave Saint-Amour, Karine Lacourse, Mathieu Simard, Sarah Lippé.",
+          "• Objectif : Explorer si le développement visuel anormal dans l'amblyopie altère l'entropie du signal cérébral au repos.",
+          "• Méthode : EEG haute densité (1000 Hz, électrode Oz), conditions monoculaire et binoculaire.",
+          "• Entropie de Shannon : H = -Σ p(x) log p(x) calculée sur les bandes de fréquence (Daubechies Wavelet db4).",
+          "• Résultats & Discussion : Différences d'entropie spectrale selon l'œil amblyope vs contrôles."
+        ],
+        raw_text: "Traitement de l’information visuelle dans l’amblyopie\nEntropy estimation of resting-state EEG variability in amblyopia\nDave Saint-Amour, Karine Lacourse, Mathieu Simard, Sarah Lippé (CHU Sainte-Justine / NeuroQAM)\nMesure de l'entropie de Shannon H = -sum p(x) log p(x) sur signaux EEG dans l'amblyopie."
+      },
+      {
+        num: 7,
+        category: "LIMITES DU MODÈLE DE SHANNON",
+        title: "Reconnaissance d’un visage dans une foule?",
+        subtitle: "Pourquoi le modèle de Shannon pur est insuffisant pour la cognition humaine",
+        points: [
+          "• Le système doit extraire une certaine quantité d’informations utiles (diagnostiques, pertinentes) dans le signal",
+          "• Il doit ignorer le bruit (foule, etc.)",
+          "• Mais la perception ne copie pas le monde; c’est une construction active d’une représentation/interprétation personnelle du monde",
+          "• Le modèle de Shannon est insuffisant"
+        ],
+        raw_text: "Reconnaissance d’un visage dans une foule?\n• Le système doit extraire une certaine quantité d’informations utiles (diagnostiques, pertinentes) dans le signal\n• Il doit ignorer le bruit (foule, etc.)\n• Mais la perception ne copie pas le monde; c’est une construction active d’une représentation/interprétation personnelle du monde\n• Le modèle de Shannon est insuffisant"
+      },
+      {
+        num: 8,
+        category: "TRAITEMENT HIÉRARCHIQUE",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Principe fondamental — Herzog & Clarke, 2014",
+        points: [
+          "• Principe : L'information passe par des niveaux successifs de transformation, des propriétés simples vers des représentations plus abstraites.",
+          "• Du champ visuel vers les formes : V1 (edges and lines) ➔ V2 (shapes) ➔ V4 (objects) ➔ IT (faces and objects).",
+          "• Expansion de la taille des champs récepteurs (Receptive fields size) au fil de la hiérarchie corticale.",
+          "• Dynamique temporelle : Retina (20-40 ms) ➔ LGN (30-50 ms) ➔ V1 (40-60 ms) ➔ V2 (50-70 ms) ➔ V4 (70-90 ms) ➔ PIT/AIT (80-100 ms) ➔ PFC (100-130 ms) ➔ PMC (120-160 ms) ➔ MC (140-190 ms) ➔ Moelle / Muscle (160-260 ms)."
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nPrincipe : L'information passe par des niveaux successifs de transformation, des propriétés simples vers des représentations plus abstraites.\nHerzog & Clarke, 2014\nRetina -> LGN -> V1 -> V2 -> V4 -> PIT -> AIT -> PFC -> PMC -> MC"
+      },
+      {
+        num: 9,
+        category: "TRAITEMENT HIÉRARCHIQUE",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Approche neurophysiologique — David Hubel & Torsten Wiesel",
+        points: [
+          "• Travaux pionniers sur le cortex visuel primaire (Prix Nobel 1981) :",
+          "• LGN cells (champs concentriques centre-périphérie) convergent vers :",
+          "• Simple cells (sensibles aux barres orientées, fentes lumineuses fixes).",
+          "• Complex cells (sensibles à l'orientation avec invariance de position/mouvement)."
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nApproche neurophysiologique\nDavid Hubel & Torsten Wiesel\nLGN cells -> Simple cells -> Complex cells"
+      },
+      {
+        num: 10,
+        category: "NEUROPHYSIO & IA",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Le Cognitron: la neurophysio au service de l’IA — Fukushima (1980)",
+        points: [
+          "• Fukushima. Biol. Cybernetics 36, 193 202 (1980) — Neocognitron.",
+          "• Correspondance directe entre le modèle hiérarchique de Hubel & Wiesel et le réseau de neurones artificiels :",
+          "  retina ➔ LGB ➔ simple ➔ complex ➔ lower-order hypercomplex ➔ higher-order hypercomplex ➔ grandmother cell ?",
+          "• Chaque module transforme sa représentation d’entrée en représentations supérieures (de plus en plus globales/abstraites).",
+          "• La reconnaissance de pattern devient invariante à la position et à la taille."
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nLe Cognitron: la neurophysio au service de l’IA\nFukushima. Biol. Cybernetics 36, 193 202 (1980)\n• Chaque module transforme sa représentation d’entrée en représentations supérieures (de plus en plus globales/abstraites)\n• La reconnaissance de pattern devient invariante à la position et à la taille"
+      },
+      {
+        num: 11,
+        category: "NEUROPHYSIO & IA",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Réseau de neurones convolutif (CNN)",
+        points: [
+          "• Architecture moderne dérivée du Neocognitron :",
+          "• Low-Level Feature (Filtres de Gabor, contours, textures de base)",
+          "• Mid-Level Feature (Coins, jonctions, parties de formes)",
+          "• High-Level Feature (Formes globales d'objets, silhouettes)",
+          "• Trainable Classifier (Classification / Identification finale)"
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nRéseau de neurones convolutif (CNN)\nLow-Level Feature -> Mid-Level Feature -> High-Level Feature -> Trainable Classifier"
+      },
+      {
+        num: 12,
+        category: "COMPUTATIONNALISME",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Marr: le computationnalisme au service de la neurophysio (Vision, 1982)",
+        points: [
+          "3 niveaux pour comprendre le traitement de l’information d’un système (visuel):",
+          "1. Computationnel (quel est l’objectif du calcul ?; Qu’est-ce que le système est sensé accomplir?)",
+          "2. Représentation et algorithme (c’est le comment du modèle computationnel?; Quelle est la représentation de l’entrée et de la sortie?)",
+          "3. Implémentation matérielle (Comment la représentation et l’algorithme peuvent-ils être réalisés physiquement ?)"
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nMarr: le computationnalisme au service de la neurophysio\nDavid Marr (Vision)\n3 niveaux pour comprendre le traitement de l’information d’un système (visuel):\n1. Computationnel (quel est l’objectif du calcul ?; Qu’est-ce que le système est sensé accomplir?)\n2. Représentation et algorithme (c’est le comment du modèle computationnel?; Quelle est la représentation de l’entrée et de la sortie?)\n3. Implémentation matérielle (Comment la représentation et l’algorithme peuvent-ils être réalisés physiquement ?)"
+      },
+      {
+        num: 13,
+        category: "COMPUTATIONNALISME",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "David Marr (1982) : Les étapes de la représentation visuelle",
+        points: [
+          "ÉTAPES DU TRAITEMENT :",
+          "• Retinal image (Image brute sur la rétine)",
+          "  ⬇",
+          "• Primal sketch (Esquisse primaire : contours, gradients, barres, terminaisons)",
+          "  ⬇",
+          "• 2.5D Sketch (Esquisse 2.5D : profondeur, orientation des surfaces par rapport à l'observateur)",
+          "  ⬇",
+          "• 3D Sketch (Modèle 3D : description volumétrique des formes articulées)",
+          "TRANSITION REPRÉSENTATIONNELLE :",
+          "• Retinal + Primal + 2.5D = Représentation égocentrique (centrée sur l'observateur)",
+          "• 3D Sketch = Représentation allocentrique (centrée sur l'objet, indépendante du point de vue)"
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nDavid Marr (1982)\nRetinal image -> Primal sketch -> 2.5D Sketch -> 3D Sketch\nRepr. égocentrique -> Repr. Allocentrique"
+      },
+      {
+        num: 14,
+        category: "REPRÉSENTATIONS & NEURONES",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Des super neurones — Tanaka, K. (1996)",
+        points: [
+          "• Tanaka, K. (1996). Inferotemporal cortex and object vision. Annual review of neurosc, 19, 109-39.",
+          "• Organisation en colonnes dans le cortex inférotemporal (IT) :",
+          "• Détection de combinaisons de traits visuels géométriques complexes (colonnes répondant à des formes spécifiques associées)."
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nDes super neurones\nTanaka, K. (1996). Inferotemporal cortex and object vision. Annual review of neurosc, 19, 109-39."
+      },
+      {
+        num: 15,
+        category: "REPRÉSENTATIONS & NEURONES",
+        title: "Un seul neurone capable de coder l'identité abstraite ou le concept associé ?",
+        subtitle: "Le « neurone Jennifer Aniston » (Quiroga et al., Nature, 2005)",
+        points: [
+          "• Figure 1. A single unit in the left posterior hippocampus activated exclusively by different views of the actress Jennifer Aniston (Quiroga et al. Nature, 2005)",
+          "• Décharge sélective et invariante : répond aux photographies variées, dessins, profils de l'actrice, mais reste silencieux face à d'autres célébrités, paysages ou animaux.",
+          "• Soulève la question du codage localisé extrême (cellule grand-mère / grandmother cell)."
+        ],
+        raw_text: "Un seul neurone capable de coder l'identité abstraite ou le concept associé ?\nFigure 1. A single unit in the left posterior hippocampus activated exclusively by different views of the actress Jennifer Aniston (Quiroga et al. Nature, 2005)"
+      },
+      {
+        num: 16,
+        category: "LOCAL VS DISTRIBUÉ",
+        title: "Si la perception résulte d’un traitement en étapes successives…",
+        subtitle: "…faut-il imaginer un super neurone pour décoder un objet complexe ?",
+        points: [
+          "• Des neurones peuvent répondre de façon très sélective",
+          "• N'implique pas qu'un concept soit stocké dans une seule unité",
+          "• La cognition n'est pas portée par une seule unité, mais par un patron d'activité dynamique réparti sur plusieurs unités",
+          "• Une représentation nécessite-t-elle toujours un réseau?"
+        ],
+        raw_text: "Si la perception résulte d’un traitement en étapes successives, où des représentations de plus en plus complexes sont construites…, faut-il imaginer un super neurone pour décoder un objet complexe ?\n• Des neurones peuvent répondre de façon très sélective\n• N'implique pas qu'un concept soit stocké dans une seule unité\n• La cognition n'est pas portée par une seule unité, mais par un patron d'activité dynamique réparti sur plusieurs unités\n• Une représentation nécessite-t-elle toujours un réseau?"
+      },
+      {
+        num: 17,
+        category: "LOCAL VS DISTRIBUÉ",
+        title: "Traitement hiérarchique de l'information",
+        subtitle: "Combinaisons distribuées de colonnes corticales — Tsunoda et al. (2001)",
+        points: [
+          "• Tsunoda et al. (2001) Complex objects are represented in macaque inferotemporal cortex … Nat Neurosci 4, 832–38",
+          "• Les super neurones dépendent de la combinaison de plusieurs traits/colonnes :",
+          "• Les stimuli « simplifiés » n’activent que quelques colonnes du stimulus complexe (b) ou, au contraire de nouvelles régions (c).",
+          "• CONCLUSION : Les objets ne sont pas représentés par des neurones codant l'objet entier, mais par des combinaisons distribuées de colonnes corticales représentant des caractéristiques visuelles élémentaires."
+        ],
+        raw_text: "Traitement hiérarchique de l'information\nLes super neurones dépendent de la combinaison des plusieurs traits/colonnes:\nTsunoda et al. (2001) Complex objects are represented in macaque inferotemporal cortex … Nat Neurosci 4, 832–38\n• Les stimuli « simplifiés » n’activent que qq colonnes du stimulus complexe (b) ou, au contraire de nouvelles régions (c)\n• Les objets ne sont pas représentés par des neurones codant l'objet entier, mais par des combinaisons distribuées de colonnes corticales représentant des caractéristiques visuelles élémentaire"
+      },
+      {
+        num: 18,
+        category: "BOUCLES & RÉTROACTIONS",
+        title: "Connections feedforward/feedback et des boucles récurrentes",
+        subtitle: "Complexité anatomique du réseau cortical visuel",
+        points: [
+          "• Diagramme de Felleman & Van Essen (1991) : cartographie dense des aires corticales visuelles interconnectées.",
+          "• Modèle d'Ungerleider (1995) : voies occipito-pariétale (« WHERE ») et occipito-temporale (« WHAT ») avec multiples projections réciproques bidirectionnelles."
+        ],
+        raw_text: "Connections feedforward/feedback et des boucles récurrentes\nFelleman and Van Essen (1991)\nUngerleider (1995) : Parietal 'WHERE' vs Temporal 'WHAT'"
+      },
+      {
+        num: 19,
+        category: "HIÉRARCHIQUE ET PARALLÈLE",
+        title: "Connections feedforward/feedback et des boucles récurrentes",
+        subtitle: "Le traitement hiérarchique et parallèle — Kandel (2000)",
+        points: [
+          "TROIS PRINCIPES DE FONCTIONNEMENT :",
+          "1. Simultanéité : Plusieurs caractéristiques peuvent être extraites en même temps.",
+          "2. Voies multiples : Des computations distinctes peuvent coexister à l'intérieur d'un même système.",
+          "3. Compatibilité : Le parallèle n'exclut pas la hiérarchie; les deux peuvent coexister.",
+          "• Source : Kandel. Principles of neural science. 2000 (Voies magnocellulaire et parvocellulaire)."
+        ],
+        raw_text: "Connections feedforward/feedback et des boucles récurrentes\nLe traitement hiérarchique et parallèle\n• Simultanéité : Plusieurs caractéristiques peuvent être extraites en même temps.\n• Voies multiples : Des computations distinctes peuvent coexister à l'intérieur d'un même système.\n• Compatibilité : Le parallèle n'exclut pas la hiérarchie; les deux peuvent coexister.\nKandel. Principles of neural science. 2000."
+      },
+      {
+        num: 20,
+        category: "BOUCLES & RÉTROACTIONS",
+        title: "Connections feedforward/feedback et des boucles récurrentes",
+        subtitle: "Top-down influences on visual processing (Nat Rev Neurosci, 2013)",
+        points: [
+          "• Les neurones sont adaptatifs : leur fonction varie selon le contexte et la tâche.",
+          "• La vision est un processus actif, influencé par les fonctions cognitives supérieures.",
+          "• Les influences top-down incluent l’attention, mais aussi les attentes, la mémoire de travail et les connaissances acquises.",
+          "• Ces influences modifient l’information traitée par les neurones.",
+          "• Presque toutes les aires visuelles (sauf la rétine) sont concernées par ce contrôle top-down.",
+          "• Un même neurone peut remplir des fonctions différentes selon les informations sélectionnées par les rétroactions corticales."
+        ],
+        raw_text: "Connections feedforward/feedback et des boucles récurrentes\nTop-down influences on visual processing\nNat Rev Neurosci. 2013 10.1038/nrn3476\n• Les neurones sont adaptatifs : leur fonction varie selon le contexte et la tâche.\n• La vision est un processus actif, influencé par les fonctions cognitives supérieures.\n• Les influences top-down incluent l’attention, mais aussi les attentes, la mémoire de travail et les connaissances acquises.\n• Ces influences modifient l’information traitée par les neurones\n• Presque toutes les aires visuelles (sauf la rétine) sont concernées par ce contrôle top-down.\n• Un même neurone peut remplir des fonctions différentes selon les informations sélectionnées par les rétroactions corticales."
+      },
+      {
+        num: 21,
+        category: "BOUCLES & RÉTROACTIONS",
+        title: "Connections feedforward/feedback et des boucles récurrentes",
+        subtitle: "Reverse Hierarchy Theory — Hochstein & Ahissar (Neuron, 2002)",
+        points: [
+          "• Hierarchy & Reverse Hierarchy of cell types & cortical areas :",
+          "• Feedforward hierarchy : sous-tend le traitement implicite pour une vision initiale globale (« vision at a glance »). Les aires supérieures représentent objets et catégories en généralisant sur la position.",
+          "• Feedback connections : ajoutent les détails fins pour une perception explicite minutieuse (« vision with scrutiny »).",
+          "• Perception explicite précoce = post-traitement de haut niveau avec attention diffuse ; plus tard, l'attention se focalise sur les détails spécifiques de bas niveau."
+        ],
+        raw_text: "Connections feedforward/feedback et des boucles récurrentes\nHierarchy & Reverse Hierarchy of cell types & cortical areas\nHochstein & Ahissar, Neuron, 2002\nfeedforward hierarchy underlies implicit processing for initial 'vision at a glance'\nfeedback connections add details to explicit 'vision with scrutiny'"
+      },
+      {
+        num: 22,
+        category: "ESPACE DE TRAVAIL GLOBAL",
+        title: "Connections feedforward/feedback et des boucles récurrentes",
+        subtitle: "Global Workspace Theory (Baars 1988) & GNM (Dehaene, Changeux, Naccache 2011)",
+        points: [
+          "• Baars (1988) : Global Workspace Theory (GWT) reliant mémoire à long terme, systèmes évaluatifs, systèmes attentionnels, perception et moteur.",
+          "• Dehaene, Changeux, Naccache (2011) : Global Neuronal Workspace (GNM) :",
+          "  a) Propagation feed-forward subliminale.",
+          "  b) Embrasement neuronal (global workspace ignition) et réverbération récurrente pour l'accès conscient."
+        ],
+        raw_text: "Connections feedforward/feedback et des boucles récurrentes\nGlobal workspoace – GWT (Baars, 1988)\nDehaene, Changeux, Naccache, 2011\nGNM (FRIC, Deco et al.)\nFeed-forward propagation (subliminal processing) vs Reverberating global neuronal workspace (conscious access)"
+      },
+      {
+        num: 23,
+        category: "SYNTHÈSE CONCEPTUELLE",
+        title: "En somme",
+        subtitle: "Trois constats majeurs sur le traitement de l'information cérébrale",
+        points: [
+          "1. Percevoir, c'est réduire l'incertitude à partir d'un signal fondamentalement bruité.",
+          "2. Le traitement de l’information est hiérarchique et parallèle et fortement influencé par les processus descendants.",
+          "3. Bien qu’on ne puisse nier l’organisation modulaire et locale du cerveau, son fonctionnement « cognitif » repose sur un traitement distribué et dynamique."
+        ],
+        raw_text: "En somme\n• Percevoir, c'est réduire l'incertitude à partir d'un signal fondamentalement bruité.\n• Le traitement de l’information est hiérarchique et parallèle et fortement influencé par les processus descendants\n• Bien qu’on ne puisse nier l’organisation modulaire et locale du cerveau, son fonctionnement « cognitif » repose sur un traitement distribué et dynamique"
+      },
+      {
+        num: 24,
+        category: "OPTIMISATION COMPUTATIONNELLE",
+        title: "Comment minimiser le « cout » computationnel et maximiser la flexibilité du système multi-directionnel?",
+        subtitle: "Le défi du câblage et de l'enchevêtrement des flux d'information",
+        points: [
+          "• Comment le cerveau évite-t-il la saturation et l'explosion combinatoire des connexions bidirectionnelles ?",
+          "• Analogie visuelle : réseau électrique surchargé de câbles entremêlés.",
+          "• Réponses neurobiologiques : Organisation laminaire et dynamiques oscillatoires/synchronisation."
+        ],
+        raw_text: "Comment minimiser le « cout » computationnel et maximiser la flexibilité du système multi-directionnel?"
+      },
+      {
+        num: 25,
+        category: "ORGANISATION LAMINAIRE",
+        title: "Organisation laminaire",
+        subtitle: "Vezoli, M/S, 2016 — Figures A, B, C, D",
+        points: [
+          "• Figure A : Les 6 couches néocorticales (I à VI) et protocole d'injection de traceurs rétrogrades.",
+          "• Figure B : Projections Feedforward (ascendantes) :",
+          "  - Origine : couches supragranulaires (II/III).",
+          "  - Terminaison : couche IV (granulaire) de l'aire supérieure.",
+          "• Figure C : Projections Feedback (descendantes) :",
+          "  - Origine : couches infragranulaires (V/VI).",
+          "  - Terminaisons : couches supragranulaires (I/II) et infragranulaires, évitant strictement la couche IV.",
+          "• Figure D : Indice SLN (Supragranular Labeled Neurons) définissant la hiérarchie continue (SLN > 0.5 = feedforward, SLN < 0.5 = feedback)."
+        ],
+        raw_text: "Organisation laminaire\nVezoli, M/S, 2016\nFigure A : 6 couches corticales et traceurs\nFigure B : Feedforward (supra II/III -> granulaire IV)\nFigure C : Feedback (infra V/VI -> supra/infra évitant IV)\nFigure D : Indice SLN et hiérarchie corticale continue"
+      },
+      {
+        num: 26,
+        category: "OSCILLATIONS & SYNCHRONISATION",
+        title: "Organisation oscillatoire et synchronisation",
+        subtitle: "Électroencéphalogramme (EEG) et décomposition spectrale",
+        points: [
+          "• Bandes de fréquences EEG standards :",
+          "  - Gamma band (> 25 Hz)",
+          "  - Beta band (13 - 25 Hz)",
+          "  - Alpha band (8 - 12 Hz)",
+          "  - Theta band (4 - 8 Hz)",
+          "  - Delta band (1 - 4 Hz)",
+          "• Décomposition spectrale (transformée de Fourier / ondelettes : Temps × Fréquence).",
+          "• Modulation fonctionnelle : augmentation d'alpha (EC : Eyes Closed) vs diminution d'alpha (EO : Eyes Open)."
+        ],
+        raw_text: "Organisation oscillatoire et synchronisation\nÉlectroencéphalogramme (EEG)\nDécomposition spectrale\nGamma (> 25 Hz) | Beta (13-25 Hz) | Alpha (8-12 Hz) | Theta (4-8 Hz) | Delta (1-4 Hz)\nAlpha increase (EC) vs Alpha decrease (EO)"
+      },
+      {
+        num: 27,
+        category: "OSCILLATIONS & SYNCHRONISATION",
+        title: "Organisation oscillatoire et synchronisation",
+        subtitle: "Comment les oscillations cérébrales sont-elles générées?",
+        points: [
+          "TROIS MÉCANISMES GÉNÉRATEURS (PAR ORDRE D'IMPORTANCE DÉCROISSANTE) :",
+          "1. Boucles récurrentes excitation-inhibition (mécanisme principal)",
+          "2. Propriétés intrinsèques des neurones (canaux ioniques pacemaker, résonance membranaire)",
+          "3. Couplage éphaptique (champs électriques extracellulaires locaux influençant les neurones voisins)"
+        ],
+        raw_text: "Organisation oscillatoire et synchronisation\nComment les oscillations cérébrales sont-elles générées?\n1. Boucles récurrentes excitation-inhibition (mécanisme principal)\n2. Propriétés intrinsèques des neurones\n3. Couplage éphaptique\nImportance décroissante (1 -> 2 -> 3)"
+      },
+      {
+        num: 28,
+        category: "OSCILLATIONS & SYNCHRONISATION",
+        title: "Organisation oscillatoire et synchronisation",
+        subtitle: "Couplage theta-gamma — Current Opinion in Behavioral Sciences (2024)",
+        points: [
+          "• Current Opinion in Behavioral Sciences 2024, 59:101433",
+          "• Phase-Amplitude Coupling (PAC) : La phase de l'oscillation lente (Theta) module l'amplitude des oscillations rapides (Gamma).",
+          "• Encodage séquentiel d'assemblées neuronales (Assembly 1, Assembly 2...) au sein des cycles gamma imbriqués dans une onde thêta.",
+          "• Rôle de l'attention : Augmentation du PAC en condition attentionnelle ➔ Transfert élevé d'information (High-Information Transfer entre Area 1 et Area 2)."
+        ],
+        raw_text: "Organisation oscillatoire et synchronisation\nCouplage theta-gamma\nCurrent Opinion in Behavioral Sciences 2024, 59:101433\nPhase-Amplitude Coupling (PAC) : onde lente Theta englobant cycles Gamma.\nAttention augmente le transfert d'information (High-information transfer)."
+      },
+      {
+        num: 29,
+        category: "MODÈLE D'INTÉGRATION GLOBALE",
+        title: "Organisation oscillatoire et synchronisation",
+        subtitle: "Architecture globale du couplage Theta-Gamma — Current Opinion in Behavioral Sciences (2024)",
+        points: [
+          "• Le couplage Theta-Gamma comme intégrateur central du cerveau :",
+          "• Interconnecte :",
+          "  - CONSCIOUSNESS (Conscience)",
+          "  - EXECUTIVE CONTROL (Contrôle exécutif)",
+          "  - WORKING MEMORY (Mémoire de travail)",
+          "  - EPISODIC & SEMANTIC MEMORY (Mémoire épisodique et sémantique)",
+          "  - ATTENTION (Attention)",
+          "  - SENSORY INPUT (Entrées sensorielles)",
+          "  - IMAGINATION & DREAMING (Imagination et rêve)",
+          "  - Perturbations dans les troubles neurocognitifs (NEUROCOGNITIVE DISORDERS)."
+        ],
+        raw_text: "Organisation oscillatoire et synchronisation\nCurrent Opinion in Behavioral Sciences 2024, 59:101433\nTheta-Gamma Coupling reliant Consciousness, Executive Control, Working Memory, Imagination, Dreaming, Episodic/Semantic Memory, Neurocognitive Disorders, Attention, Sensory Input."
+      },
+      // ==========================================
+      // DECK 2 : Pierre Poirier — Cognition encarnée (embodied)
+      // Fichier : Cours 3 - (Partie cognition encarnée) PSY9613-2026.pdf (16 diapositives)
+      // ==========================================
+      {
+        num: "P01",
+        deck: "Poirier",
+        category: "COGNITION ENCARNÉE",
+        title: "PSY9613 — Perception, cognition et IA",
+        subtitle: "Cognition encarnée (embodied) — Pierre Poirier",
+        points: [
+          "• PSY9613 (Automne 2026) : Perception, cognition et intelligence artificielle.",
+          "• Titre : Cognition encarnée (embodied).",
+          "• Enseignant : Pierre Poirier, Département de philosophie, UQAM."
+        ],
+        raw_text: "PSY9613 (Automne 2026)\nPerception, cognition et intelligence artificielle\nCognition encarnée (embodied)\nPierre Poirier\nDépartement de philosophie, UQAM"
+      },
+      {
+        num: "P02",
+        deck: "Poirier",
+        category: "SCIENCES COGNITIVES ENCARNÉES",
+        title: "Sciences cognitives encarnées (embodied)",
+        subtitle: "Antonio R. Damasio — L'erreur de Descartes",
+        points: [
+          "• Référence fondatrice : Antonio R. Damasio, Descartes' Error: Emotion, Reason, and the Human Brain (1994) / L'Erreur de Descartes : la raison des émotions (Odile Jacob).",
+          "• Thèse centrale : La raison pure désincarnée est une illusion cartésienne. La rationalité dépend intimement des signaux somatiques et émotionnels issus du corps."
+        ],
+        raw_text: "Sciences cognitives encarnées (embodied)\nAntonio R. Damasio\nDescartes' Error / L'Erreur de Descartes : la raison des émotions\nLa rationalité dépend du corps et des émotions."
+      },
+      {
+        num: "P03",
+        deck: "Poirier",
+        category: "CORPS ET CERVEAU",
+        title: "Sciences cognitives encarnées (embodied)",
+        subtitle: "The world | The brain | The body — Voies d'évaluation et intéroception",
+        points: [
+          "• Distinction des voies d'évaluation émotionnelle (LeDoux / Damasio) :",
+          "  - Short route (Voie courte sous-corticale) : Thalamus sensoriel ➔ Amygdale (détection brute et urgente des caractéristiques du danger).",
+          "  - Long route (Voie longue corticale) : Thalamus ➔ Cortex sensoriel primaire ➔ unimodal ➔ polymodal ➔ Amygdale & Hippocampe (identification précise de l'objet et du contexte).",
+          "• Boucle corporelle viscérale : Amygdale ➔ Tronc cérébral / Hypothalamus ➔ Effecteurs viscéraux moteurs (coeur, viscères) ➔ Réponses autonomes ➔ Retour sensoriel viscéral ➔ Cortex insulaire / Cortex cingulaire antérieur."
+        ],
+        raw_text: "Sciences cognitives encarnées (embodied)\nThe world | The brain | The body\nShort route vs Long route\nThalamus -> Amygdala (Short route)\nThalamus -> Primary -> unimodal -> polymodal -> Amygdala + Hippocampus (Long route)\nBrainstem/hypothalamus -> The viscera -> Insular cortex / Anterior cingulate cortex"
+      },
+      {
+        num: "P04",
+        deck: "Poirier",
+        category: "BOUCLES SOMATIQUES",
+        title: "Sciences cognitives encarnées (embodied)",
+        subtitle: "Damasio : « Body Loop » vs « As-If Loop »",
+        points: [
+          "• Body Loop (Boucle corporelle réelle) :",
+          "  VMPFC / Amygdale ➔ Tronc cérébral / Hypothalamus ➔ Modifications physiologiques du CORPS ➔ Rétroaction ascendante vers le cortex somatosensoriel (SMC / Insula).",
+          "• 'As if' Loop (Boucle du « comme si ») :",
+          "  Court-circuit interne : VMPFC / Amygdale ➔ Noyaux du tronc cérébral ➔ SMC / Insula (simulation interne de l'état somatique sans passer par le corps physique)."
+        ],
+        raw_text: "Sciences cognitives encarnées (embodied)\nBody Loop vs 'As if' Loop\nVMPFC, AM, SMC/insula, Brainstem Nuclei, Body\nBoucle somatique réelle vs Simulation interne du corps"
+      },
+      {
+        num: "P05",
+        deck: "Poirier",
+        category: "PRINCIPES DE PFEIFER & SCHEIER",
+        title: "Sciences cognitives encarnées (embodied)",
+        subtitle: "Pfeifer & Scheier (1999) — Understanding Intelligence",
+        points: [
+          "SEPT PRINCIPES DE L'INTELLIGENCE ENCARNÉE :",
+          "1. Le principe de l’agent complet : agents autonomes, auto-suffisants, encarnés et situés.",
+          "2. Le principe des processus parallèles faiblement couplés.",
+          "3. Le principe de la coordination sensorimotrice.",
+          "4. Le principe des designs parcimonieux.",
+          "5. Le principe de la redondance.",
+          "6. Le principe de l’équilibre écologique.",
+          "7. Le principe du système de valeurs."
+        ],
+        raw_text: "Sciences cognitives encarnées (embodied)\nRolf Pfeifer and Christian Scheier (Understanding Intelligence)\n1. Principe de l'agent complet\n2. Processus parallèles faiblement couplés\n3. Coordination sensorimotrice\n4. Designs parcimonieux\n5. Redondance\n6. Équilibre écologique\n7. Système de valeurs"
+      },
+      {
+        num: "P06",
+        deck: "Poirier",
+        category: "VISION ACTIVE",
+        title: "Le paradigme de la vision active",
+        subtitle: "Descartes vs Gibson & Dewey : Deux conceptions de l'action",
+        points: [
+          "• René Descartes (Approche computationnelle classique) :",
+          "  « Voir pour mieux agir ! » (La vision construit d'abord un modèle interne passif du monde, puis planifie l'action).",
+          "• John Dewey / James J. Gibson (Approche énactive et écologique) :",
+          "  « Agir pour mieux voir ! » (C'est le mouvement du corps qui structure et fait émerger l'information visuelle)."
+        ],
+        raw_text: "Le paradigme de la vision active\nDescartes : Voir pour mieux agir!\nDewey / Gibson : Agir pour mieux voir!"
+      },
+      {
+        num: "P07",
+        deck: "Poirier",
+        category: "APPROCHE ÉCOLOGIQUE",
+        title: "Le paradigme de la vision active",
+        subtitle: "James J. Gibson (1979) — The Ecological Approach to Visual Perception",
+        points: [
+          "• Citation maîtresse de Gibson :",
+          "  « ...one sees the environment not with the eyes but with the eyes-in-the-head-on-the-body-resting-on-the-ground ».",
+          "• La vision n'est pas un exercice passif de construction d'images mentales dans un cerveau isolé, mais un processus actif, corporel, ancré dans un environnement réel."
+        ],
+        raw_text: "Le paradigme de la vision active\nJames J. Gibson (1979) The Ecological Approach to Visual Perception\nSeeing is an active, bodily process embedded in a real-world environment\n'one sees the environment not with the eyes but with the eyes-in-the-head-on-the-body-resting-on-the-ground'"
+      },
+      {
+        num: "P08",
+        deck: "Poirier",
+        category: "ROBOTIQUE SITUÉE",
+        title: "Une manière d’étudier un « agent complet »",
+        subtitle: "La plateforme robotique Khepera-IV en environnement réel",
+        points: [
+          "• Étude d'un agent complet physique : Robot Khepera-IV opérant dans une arène délimitée.",
+          "• Composantes matérielles : capteurs infrarouges de proximité (senseurs), deux roues motrices indépendantes (moteurs), corps physique (body).",
+          "• Tâche : navigation, évitement d'obstacles (cylindres) et discrimination de cibles."
+        ],
+        raw_text: "Une manière d’étudier un « agent complet »\nRobot Khepera-IV Robot\nProximity sensors, Motors, Body, Obstacles, Target, Robot Platform"
+      },
+      {
+        num: "P09",
+        deck: "Poirier",
+        category: "AGENT NON COMPLET",
+        title: "Un agent non complet",
+        subtitle: "Le modèle connexionniste classique désincarné",
+        points: [
+          "• Exemple de réseau sémantique (Rogers & McClelland, Nat Rev Neurosci) :",
+          "• Réseau abstrait avec unités d'entrée, couche de représentation, couche cachée et attributs de sortie.",
+          "• Caractéristique de l'agent non complet :",
+          "  - Pas de corps physique, pas d'environnement physique interactif.",
+          "  - Les entrées et sorties sont des vecteurs de bits (000100 ➔ 01) déconnectés de la physique du monde."
+        ],
+        raw_text: "Un agent non complet\nRéseau sémantique Rogers & McClelland (Nature Reviews Neuroscience)\nInput units -> Internal/Hidden units -> Output units (bits 0/1)\nAbsence de corps et d'interaction physique"
+      },
+      {
+        num: "P10",
+        deck: "Poirier",
+        category: "SYSTÈMES COUPLÉS",
+        title: "Systèmes couplés agent-environnement",
+        subtitle: "Équations différentielles de Beer (1995)",
+        points: [
+          "• Inputs sensoriels : proviennent de l'environnement externe (et intéroception corporelle).",
+          "• Outputs moteurs : modifient l'environnement (et effecteurs viscéraux) d'une manière détectable par les senseurs.",
+          "• Formalisme mathématique des systèmes dynamiques couplés :",
+          "  $$\\frac{\\partial n}{\\partial t} = f(e) \\quad \\text{et} \\quad \\frac{\\partial e}{\\partial t} = f(n)$$",
+          "  L'état interne du système nerveux ($n$) et l'état de l'environnement ($e$) s'influencent réciproquement en temps continu."
+        ],
+        raw_text: "Systèmes couplés agent-environnement\nInputs sensoriels (externe + intéroception)\nOutputs moteurs (externe + viscéraux)\ndn/dt = f(e) et de/dt = f(n)\nCouplage dynamique continu agent-environnement"
+      },
+      {
+        num: "P11",
+        deck: "Poirier",
+        category: "DYNAMIQUE COMPORTEMENTALE",
+        title: "Systèmes couplés agent-environnement",
+        subtitle: "Boucle fermée Information-Action et émergence comportementale",
+        points: [
+          "• Modèle cybernétique circulaire :",
+          "  - Environnement (état dynamique $\\dot{e} = \\phi(e, F)$).",
+          "  - Senseurs : extraction de l'information $i = \\lambda(e)$.",
+          "  - Agent : dynamique interne $\\dot{a} = \\psi(a, i)$.",
+          "  - Moteurs : génération de l'action $F = \\beta(a)$.",
+          "• Émergence : Le comportement (*behavioral dynamics*) n'est pas programmé dans l'agent, il émerge du couplage réciproque en boucle fermée."
+        ],
+        raw_text: "Systèmes couplés agent-environnement\nEnvironment e_dot = phi(e,F) -> information i = lambda(e) -> Agent a_dot = psi(a,i) -> action F = beta(a)\nÉmergence de la dynamique comportementale (behavioral dynamics)"
+      },
+      {
+        num: "P12",
+        deck: "Poirier",
+        category: "CATÉGORISER DANS L'ACTION",
+        title: "Catégoriser dans l’action",
+        subtitle: "Scheier, Pfeifer and Kunyioshi (1998) — La tâche de discrimination",
+        points: [
+          "• Tâche : Le robot doit distinguer entre des petits et des grands cylindres dans l'arène.",
+          "• Problème physique : Les capteurs infrarouges ont une portée limitée. Un grand cylindre éloigné génère le même profil d'activation sensorielle qu'un petit cylindre proche !",
+          "• Problème de type 2 (Clark & Thornton 1994) : Le mapping entrée-sortie est difficile car les régularités sont marginales ou cachées si l'on reste statique."
+        ],
+        raw_text: "Catégoriser dans l’action\nScheier, Pfeifer and Kunyioshi (1998)\n• Tâche: Distinguer parmi des petits et grands cylindres\n• Problème: Inputs similaires à des distances différentes\n• Problème de type 2 (Clark and Thornton 1994): régularités marginales ou cachées dans les patterns d'entrée"
+      },
+      {
+        num: "P13",
+        deck: "Poirier",
+        category: "CATÉGORISER DANS L'ACTION",
+        title: "Catégoriser dans l’action",
+        subtitle: "Solution non encarnée / située — Échec du « tout-cerveau »",
+        points: [
+          "• Approche computationnelle classique désincarnée :",
+          "  - Ajout d'une couche cachée (*hidden layer*) dans le réseau de neurones.",
+          "  - Apprentissage supervisé pour extraire les régularités mathématiques complexes uniquement au niveau du « cerveau » artificiel.",
+          "• Résultats : Performance très médiocre (moins de 10% de réussite pour discriminer large/small cylinders, même avec 4 ou 8 neurones cachés)."
+        ],
+        raw_text: "Catégoriser dans l’action\nScheier, Pfeifer and Kunyioshi (1998)\nSolution non encarnée / située:\n• Couche cachée, apprentissage supervisé dans le 'cerveau'\n• Bref, chercher à extraire les régularités uniquement au niveau interne\n• Échec : performance très faible (< 10% pour large/small)"
+      },
+      {
+        num: "P14",
+        deck: "Poirier",
+        category: "CATÉGORISER DANS L'ACTION",
+        title: "Catégoriser dans l’action",
+        subtitle: "Agents statiques vs Agents mobiles engagés dans l'action",
+        points: [
+          "• Comparaison expérimentale (Fig. 15) :",
+          "  - (a) Agents statiques : robots qui s'arrêtent devant l'objet pour « réfléchir » et catégoriser. Performance très basse, dépendante de l'angle d'approche.",
+          "  - (b) Agents dynamiques : robots engagés dans une coordination sensorimotrice de contournement (*circling*). Performance élevée (> 80–90%) constante quel que soit l'angle !"
+        ],
+        raw_text: "Catégoriser dans l’action\nScheier, Pfeifer and Kunyioshi (1998)\nFig. 15 Performance :\n(a) agents arrêtés devant l'objet (faible)\n(b) agents engagés dans la coordination sensorimotrice circling (très élevée et invariante)"
+      },
+      {
+        num: "P15",
+        deck: "Poirier",
+        category: "CATÉGORISER DANS L'ACTION",
+        title: "Catégoriser dans l’action",
+        subtitle: "La solution encarnée : Le comportement de contournement (Circling)",
+        points: [
+          "• Principe de la solution encarnée / située :",
+          "  - Pas de couche cachée, pas de modèle interne, pas d'apprentissage supervisé complexe.",
+          "  - Le robot avance vers l'objet, amorce une rotation autour de lui (*circling*) et s'éloigne si c'est un petit cylindre.",
+          "• Mécanisme écologique (Nolfi & Floreano 2000) :",
+          "  En tournant autour du cylindre, le mouvement physique transforme un problème complexe en un profil temporel sensoriel évident (les patterns sensoriels d'un petit cylindre en rotation sont radicalement différents de ceux d'un grand cylindre)."
+        ],
+        raw_text: "Catégoriser dans l’action\nScheier, Pfeifer and Kunyioshi (1998)\nSolution encarnée / située :\n• Pas de couche cachée ni représentation ni apprentissage supervisé\n• Le robot tourne autour de l'objet (circling)\n• 'Sensory patterns when circling a small cylinder are significantly different from those while circling a large one' (Nolfi & Floreano 2000)"
+      },
+      {
+        num: "P16",
+        deck: "Poirier",
+        category: "CATÉGORISER DANS L'ACTION",
+        title: "Catégoriser dans l’action",
+        subtitle: "Émergence de la catégorisation par l'action (Scheier et al. 1998)",
+        points: [
+          "• Courbe évolutive / apprentissage robotique :",
+          "  - Au fil des générations, le taux de bonne classification bondit de 0 à plus de 95%.",
+          "• Leçon épistémologique fondamentale des sciences cognitives encarnées :",
+          "  La catégorisation n'est pas une computation abstraite isolée dans le cerveau ; elle émerge de l'interaction active et physique entre la morphologie du corps, les mouvements dans l'environnement et les flux sensoriels."
+        ],
+        raw_text: "Catégoriser dans l’action\nScheier, Pfeifer and Kunyioshi (1998)\nSolution encarnée / située\nCourbe de performance atteignant >90-95%\nLa catégorisation émerge de l'action motrice et non d'une représentation cérébrale passive"
+      }
+    ];
+
+    let currentIdx = 28; // Diapo 29 active par défaut (index 28)
+    let showRaw = false;
+
+    function renderSlideSelect() {
+      const select = document.getElementById('slideSelect');
+      select.innerHTML = slides.map((s, i) => 
+        `<option value="${i}" ${i === currentIdx ? 'selected' : ''}>${s.deck ? '[' + s.deck + '] ' : ''}${typeof s.num === 'number' && s.num < 10 ? 'D0' + s.num : 'D' + s.num} - ${(s.subtitle || s.title).substring(0, 26)}...</option>`
+      ).join('');
+    }
+
+    function renderSlide(idx) {
+      if (idx < 0 || idx >= slides.length) return;
+      currentIdx = idx;
+      const s = slides[currentIdx];
+
+      document.getElementById('slideCounter').textContent = `Diapo ${s.num} / ${slides.length}`;
+      document.getElementById('slideSelect').value = currentIdx;
+
+      const container = document.getElementById('slideContent');
+
+      if (showRaw) {
+        container.innerHTML = `
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-700/60 pb-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800">
+                Mode Brut Verbatim • Diapo ${s.num} / ${slides.length}
+              </span>
+              <button onclick="toggleVerbatim()" class="text-xs text-sky-400 hover:text-sky-300 transition">Épuré ↗</button>
+            </div>
+            <pre class="verbatim-box p-4 rounded-xl text-xs font-mono text-slate-200 overflow-x-auto whitespace-pre-wrap leading-relaxed">${s.raw_text}</pre>
+          </div>
+        `;
+      } else {
+        let pointsHtml = s.points.map(p => {
+          if (p.startsWith('•')) {
+            return `<li class="flex items-start gap-2.5 text-slate-200 text-sm md:text-base leading-relaxed">
+              <span class="text-sky-400 mt-1 font-bold text-xs">◆</span>
+              <span>${p.substring(1).trim()}</span>
+            </li>`;
+          } else if (p.startsWith('TABLEAU') || p.startsWith('ÉTAPES') || p.startsWith('TROIS') || p.startsWith('IMPLICATION')) {
+            return `<li class="mt-3 mb-1 text-xs font-bold uppercase tracking-wider text-sky-300/90 border-b border-slate-700/60 pb-1">${p}</li>`;
+          } else {
+            return `<li class="text-slate-300 text-sm md:text-base pl-5 leading-relaxed font-mono bg-slate-900/40 p-1.5 rounded my-1">${p}</li>`;
+          }
+        }).join('');
+
+        container.innerHTML = `
+          <div class="flex flex-col h-full justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-mono font-bold tracking-wider text-sky-400 uppercase bg-sky-950/70 border border-sky-800/80 px-2 py-0.5 rounded">
+                  ${s.category || 'PSY9613'} · D${s.num < 10 ? '0' : ''}${s.num}
+                </span>
+                <button onclick="toggleVerbatim()" class="text-xs text-slate-400 hover:text-sky-300 transition">Texte brut ↗</button>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2 leading-snug tracking-tight">${s.title}</h2>
+              ${s.subtitle ? `<h3 class="text-base md:text-lg font-medium text-sky-300/95 mb-4 leading-relaxed border-l-4 border-sky-500/80 pl-3 py-1">${s.subtitle}</h3>` : ''}
+              <div class="mt-4 border-t border-slate-700/60 pt-4">
+                <ul class="space-y-2 list-none">
+                  ${pointsHtml}
+                </ul>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('prevBtn').disabled = (currentIdx === 0);
+      document.getElementById('nextBtn').disabled = (currentIdx === slides.length - 1);
+    }
+
+    let currentZoom = 1.02;
+    function adjustZoom(delta) {
+      currentZoom = Math.min(2.5, Math.max(0.8, Math.round((currentZoom + delta) * 10) / 10));
+      document.getElementById('slideContent').style.zoom = currentZoom;
+    }
+
+    function prevSlide() { if (currentIdx > 0) renderSlide(currentIdx - 1); }
+    function nextSlide() { if (currentIdx < slides.length - 1) renderSlide(currentIdx + 1); }
+    function goToSlide(i) { renderSlide(i); }
+
+    function toggleVerbatim() {
+      showRaw = !showRaw;
+      const btn = document.getElementById('toggleVerbatimBtn');
+      btn.textContent = showRaw ? "🎨 Mode Épuré" : "📄 Mode Brut";
+      btn.classList.toggle('bg-sky-900', showRaw);
+      btn.classList.toggle('text-sky-200', showRaw);
+      renderSlide(currentIdx);
+    }
+
+    function filterSlides() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      if (!q) return;
+      const foundIdx = slides.findIndex(s => 
+        s.title.toLowerCase().includes(q) || 
+        (s.subtitle && s.subtitle.toLowerCase().includes(q)) ||
+        (s.category && s.category.toLowerCase().includes(q)) ||
+        s.raw_text.toLowerCase().includes(q)
+      );
+      if (foundIdx !== -1) renderSlide(foundIdx);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+      if (e.key === 'ArrowLeft') prevSlide();
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === '/') {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+      }
+    });
+
+    renderSlideSelect();
+    renderSlide(44); // Diapo P16 active : Émergence de la performance (>95%) [Fin Deck 2]
+  </script>
+</body>
+</html>

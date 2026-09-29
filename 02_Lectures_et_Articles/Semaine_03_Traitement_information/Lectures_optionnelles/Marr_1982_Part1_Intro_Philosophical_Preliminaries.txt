@@ -1,0 +1,1179 @@
+xi
+Detailed Contents
+Foreword by Shimon Ullman xvii
+Preface xxiii
+PART I
+INTRODUCTION AND 
+PHILOSOPHICAL PRELIMINARIES
+GENERAL INTRODUCTION 3
+Chapter 1
+The Philosophy and the Approach 8
+Background 8
+Understanding Complex Information-Processing Systems 19
+Representation and description 20
+Process 22
+The three levels 24
+Importance of computational theory 27
+The approach of J. J. Gibson 29
+A Representational Framework for Vision 31
+The purpose of vision 32
+Advanced vision 34
+To the desirable via the possible 36
+
+xii 
+Detailed Contents
+PART II
+VISION
+Chapter 2
+Representing the Image 41
+Physical Background of Early Vision 41
+Representing the image 44
+Underlying physical assumptions 44
+Existence of surfaces 44
+Hierarchical organization 44
+Similarity 47
+Spatial continuity 49
+Continuity of discontinuities 49
+Continuity of fl ow 50
+General nature of the representation 51
+Zero-Crossings and the Raw Primal Sketch 54
+Zero-Crossings 54
+Biological implications 61
+The psychophysics of early vision 61
+The physiological realization of the —
+2G fi lters 64
+The physiological detection of zero crossings 64
+The fi rst complete symbolic representation of the image 67
+The raw primal sketch 68
+Philosophical aside 75
+Spatial Arrangement of an Image 79
+Light Sources and Transparency 86
+Other light source effects 88
+Transparency 89
+Conclusions 90
+Grouping Processes and the Full Primal Sketch 91
+Main points in the argument 96
+The computational approach and the psychophysics of texture 
+discrimination 96
+Chapter 3
+From Images to Surfaces 99
+Modular Organization of the Human Visual Processor 99
+Processes, Constraints, and the Available Representations of an Image 103
+Stereopsis 111
+Measuring stereo disparity 111
+Computational theory 111
+
+ 
+Detailed Contents 
+xiii
+Algorithms for stereo matching 116
+A cooperative algorithm 116
+Cooperative algorithms and the stereo matching problem 122
+Biological evidence 125
+A second algorithm 127
+Uniqueness, cooperativity, and the pulling effect 140
+Panum’s fusional area 144
+Impressions of depth from larger disparities 144
+Have we solved the right problem? 148
+Vergence movements and the 2½-D sketch 149
+Neural implementation of stereo fusion 152
+Computing distance and surface orientation from disparity 155
+Computational theory 155
+Distance from the viewer to the surface 155
+Surface orientation from disparity change 156
+Algorithm and implementation 159
+Directional Selectivity 159
+Introduction to visual motion 159
+Computational theory 165
+An algorithm 167
+Neural implementation 169
+Using directional selectivity to separate independently moving 
+surfaces 175
+Computational theory 175
+Algorithm and implementation 177
+Looming 182
+Apparent Motion 182
+Why apparent motion? 183
+The two halves of the problem 184
+The correspondence problem 188
+Empirical fi ndings 188
+What is the input representation? 188
+Two dimensionality of the correspondence process 193
+Ullman’s theory of the correspondence process 196
+A critique of Ullman’s theory 199
+A new look at the correspondence problem 202
+One problem or two? 202
+Separate systems for structure and object constancy 204
+Structure from Motion 205
+The problem 205
+A previous approach 207
+The rigidity constraint 209
+The rigidity assumption  210
+A note about the perspective projection 211
+
+xiv 
+Detailed Contents
+Optical fl ow 212
+The input representation 212
+Mathematical results 213
+Shape Contours 215
+Some examples 216
+Occluding contours 218
+Constraining assumptions 219
+Implications of the assumptions 222
+Surface orientation discontinuities 225
+Surface contours 226
+The puzzle and diffi culty of surface contours 228
+Determining the shape of the contour generator 229
+The effects of more than one contour 230
+Surface Texture 233
+The isolation of texture elements 234
+Surface parameters 234
+Possible measurements 234
+Estimating scaled distance directly 238
+Summary 239
+Shading and Photometric Stereo 239
+Gradient space 240
+Surface illumination, surface refl ectance, and image intensity 243
+The refl ectance map 245
+Recovery of shape from shading 248
+Photometric stereo 249
+Brightness, Lightness, and Color 250
+The Helson–Judd approach 252
+Retinex theory of lightness and color 253
+Algorithms 255
+Extension to color vision 256
+Comments on the retinex theory 257
+Some physical reasons for the importance of simultaneous contrast 259
+Hypothesis of the superfi cial origin of nonlinear changes in intensity 26
+Implications for measurements on a trichromatic image 262
+Summary of the approach 264
+Summary 264
+Chapter 4
+The Immediate Representation of Visible Surfaces 268
+Introduction 268
+Image Segmentation 270
+
+ 
+Detailed Contents 
+xv
+Reformulating the Problem 272
+The Information to be Represented 275
+General Form of the 2½-D Sketch 277
+Possible Forms for the Representation 279
+Possible Coordinate Systems 283
+Interpolation, Continuation, and Discontinuities 285
+Computational Aspects of the Interpolation Problem 288
+Discontinuities 289
+Interpolation methods 290
+Other Internal Computations 291
+Chapter 5
+Representing Shapes for Recognition 295
+Introduction 295
+Issues Raised by the Representation of Shape 296
+Criteria for judging the effectiveness of a shape representation 296
+Accessibility 297
+Scope and uniqueness 297
+Stability and sensitivity 298
+Choices in the design of a shape representation 298
+Coordinate systems 298
+Primitives 300
+Organization 302
+The 3-D Model Representation 302
+Natural coordinate systems 303
+Axis-based descriptions 304
+Modular organization of the 3-D model representation 305
+Coordinate system of the 3-D model 307
+Natural Extensions 309
+Deriving and Using the 3-D Model Representation 313
+Deriving a 3-D model description 313
+Relating viewer-centered to object-centered coordinates 317
+Indexing and the catalogue of 3-D models 318
+Interaction between derivation and recognition 321
+Finding the correspondence between image and catalogued 
+model 322
+Constraint analysis 322
+Psychological Considerations 325
+
+xvi 
+Detailed Contents
+Chapter 6
+Synopsis 329
+PART III
+EPILOGUE
+Chapter 7
+In Defense of the Approach 335
+Introduction 335
+A Conversation 336
+Afterword by Tomaso Poggio 362
+Glossary 368
+Bibliography 375
+Index 393
+
+ 
+Foreword 
+Shimon Ullman
+Research monographs age quickly. With the rapid accumulation of 
+scientific knowledge, it is unusual for a thirty-year-old summary 
+of a research program to remain fresh and engaging. David Marr’s 
+Vision is unique: reading it today is still a rewarding and stimulating 
+experience for a broad range of researchers in the brain and cognitive 
+sciences. 
+ The book describes a general framework proposed by Marr for study-
+ing and understanding visual perception. In this framework, the 
+process of vision proceeds by constructing a set of representations, 
+starting from a description of the input image, and culminating 
+with a description of three-dimensional objects in the surrounding 
+environment. Why these particular representations and how they 
+are computed and used—these are the main technical aspects of the 
+book. But these specifi c problems also led Marr to consider broader 
+problems: how can the brain and its functions be studied and under-
+stood. It is the treatment of these broader problems that makes the 
+book unique. One does not have to agree with all of Marr’s views 
+of thirty years ago to enjoy the book and appreciate his creativity, 
+intellectual power, and ability to integrate insights and data from 
+the fi elds of neuroscience, psychology, and computation.  
+xvii
+
+xviii 
+Foreword
+ I knew David closely, fi rst as a student and then as a colleague. I 
+had many long discussions with him during his years at MIT, and I 
+miss him greatly both as a friend and as a colleague. In these intro-
+ductory remarks, I refl ect briefl y on the development of some of his 
+ideas during these years, how they looked then, and how they look 
+today. 
+ Looking back, it is striking to observe the amazing rate at which 
+the basic framework of the theory evolved soon after Marr’s arrival 
+at MIT. In the Artifi cial Intelligence laboratory at MIT, ongoing re-
+search was often described in internal publications called “AI mem-
+os.” During his years at MIT, Marr produced a fl urry of these memos 
+refl ecting the rate and intensity of his research. In 1974, his fi rst year 
+at MIT, a series of three AI memos described in detail the theory of 
+early vision, with an initial implementation of the so-called primal 
+sketch. As was characteristic of much of his work, the fi rst in the se-
+ries was a careful consideration of the overall goal of low-level vision: 
+an autonomous process, which produces a symbolic representation, 
+useful for higher-level processes. Subsequent memos then described 
+the details of the process, for example, fi nding peaks and derivatives 
+in intensity profi les and making assertions about edges and bars, 
+their location, width, and blur. 
+ An important insight gained from the work on the primal sketch 
+was the realization of the inherent complexity of early visual com-
+putations, including edge detection. A number of edge-detection 
+techniques, such as the so-called Sobel operator, were widely used 
+at the time. They were fast and simple to use, but performed poorly 
+when applied to natural images. Marr, together will Ellen Hildreth, 
+devised a principled and systematic approach to edge detection, later 
+used in the popular Canny edge detector. 
+ The primal sketch and edge-detection models also had implica-
+tions  for the study of cortical circuitry. Following the seminal work 
+of Hubel and Wiesel on the physiology of the primary visual cor-
+tex, cells in this cortical region were often described as “edge detec-
+tors.” The computational work on edge detection made it clear that 
+simple cells in the primary visual cortex could not, by themselves, 
+be edge detectors. They could play a useful role in the process, but 
+more elaborate circuitry, involving multiple units, will be required 
+for reliable edge detection. The general implication was that com-
+putational studies of specifi c visual tasks, such as edge detection and 
+binocular vision, can play a useful, sometimes crucial, role in the 
+understanding of neural circuitry.   
+
+ 
+Foreword 
+xix
+ The work on the primal sketch and subsequently on binocular 
+stereo matching fostered the belief that, due to the enormous com-
+plexity inherent in low-level vision, understanding the circuitry and 
+response properties in the visual system would be diffi cult to at-
+tain and remain incomplete without complementary studies at the 
+computational and algorithmic levels. At the same time, to be of 
+relevance to neurophysiology, computational studies of vision would 
+have to address in detail specifi c visual problems, rather than pursue 
+general mathematical formulations. This conclusion is manifested 
+in Marr’s sharp criticism of a book titled Physics and Mathematics of 
+the Nervous System. A review published in Science in 1975 opens with 
+Marr’s characteristic unabated style: “Many experimental biologists 
+dismiss with contempt the approach of even very able theoreticians 
+to developmental of neurophysiological problems. The outsider 
+needs look no further than this volume to understand why. Some 
+of the papers describe attempts to elucidate problems of biological 
+information processing, but in one way or another they all make the 
+same error of strategy—engaging in the search of a general theory 
+before and actually instead of tackling any of the particular problems 
+at hand.”
+ How is the primal sketch viewed today in neurophysiology and 
+in computational vision? Marr viewed the primal sketch as a rich 
+symbolic description of intensity changes in the image, composed of 
+two main stages: the extraction and classifi cation of local intensity 
+changes, followed by the grouping of the local changes into more 
+extended entities. Plausible anatomical candidates for these compu-
+tations are cortical areas V1 and V2, with V2 playing perhaps a more 
+important role in the grouping stages. There has been some evidence 
+relating V2 to grouping process, based in particular on the responses 
+of V2 units to subjective contours, and their sensitivity to border 
+ownership and fi gure-ground relationships. Area V1 is still often 
+considered in neurophysiology to be a bank of oriented or Gabor-
+like fi lters applied to the image. Many in the fi eld, however, suspect 
+that V1 may provide a substantially richer description of the image, 
+along the line proposed by Marr. Evidence from single units and 
+from brain imaging suggests that V1 may not be as autonomous in 
+its function as suggested by Marr: top-down signals from higher-
+level visual areas appear to have signifi cant effects on the computa-
+tions performed by V1. The complexity of early visual processes is 
+now broadly appreciated from both computational and biological 
+standpoints. Because of this complexity, it is perhaps not surprising 
+
+xx 
+Foreword
+that the full understanding of the computations performed at the 
+level of V1 and V2 is almost as elusive as it was thirty years ago.   
+ Shortly after beginning work on edge detection and the primal 
+sketch, Marr started to consider the problem of computing depth 
+from binocular vision. In another 1974 AI memo, he considered the 
+use of the primal sketch representation for the purpose of computing 
+binocular disparity between the two eyes. This is a problem that, in 
+collaboration with Tommy Poggio and Eric Grimson, occupied Marr 
+for several years.  
+ The work on binocular vision played a formative role in develop-
+ing the notion of a computational theory in the study of vision. In 
+binocular vision, the images of the left and right eyes are combined 
+to obtain depth information. The combination requires the iden-
+tifi cation of corresponding elements in the left and right images. 
+This “correspondence problem” was known to be highly ambigu-
+ous, and, to disambiguate the matching, Marr and Poggio proposed 
+using explicit constraints imposed on the solution by the opacity 
+and continuity of objects in the world. These constraints were then 
+translated into a matching algorithm, which maximized unique-
+ness, continuity, and the number of established matches. It was clear 
+that the use of uniqueness and continuity in binocular matching can 
+be obtained by different algorithms and can be implemented in dif-
+ferent circuits. The general constraints are therefore independent of 
+a specifi c implementation and belong to the level termed “compu-
+tational theory.”  
+ The concept of different levels in the study of vision and the 
+brain in general was given an explicit formulation in a 1976 AI 
+memo by Marr and Poggio titled “From Understanding Computa-
+tion to Understanding Neural Circuitry.” This notion concerning 
+levels of explanations is a central theme in Marr’s book. It has had 
+a far-reaching infl uence in both neuroscience and cognitive science 
+over the years since the publication of the book. This infl uence is 
+clearly refl ected in one of the earliest reviews of Vision by Christo-
+pher Longuet-Higgins, in Science (1982): “When David Marr died 
+last year at the age of 35, he had already become a legend among 
+neuroscientists. His posthumous book Vision is a synopsis of the 
+work that made his reputation—his computational theories of the 
+human visual system.”
+ The fi nal stage in Marr’s theory of visual representations was a 
+particular form of a three-dimensional (3-D) model of objects in the 
+visible environment, developed with Keith Nishihara. The main 
+
+ 
+Foreword 
+xxi
+motivation behind this model was the creation of invariant object 
+representation for the purpose of recognition, which will be inde-
+pendent of the particular viewing direction and irrelevant details in 
+the object’s shape. 
+ The central role of such invariant 3-D models for recognition has 
+been challenged by subsequent psychophysical and computational 
+studies. Computational vision has been dominated in the last decade 
+by an alternative approach to recognition, based on describing the 
+possible image appearances of an object rather than its invariant 3-D 
+structure. It is interesting to note that although the book focuses on 
+3-D models, Marr also discussed the useful role of appearance-based 
+descriptions for recognition. For example, in a working paper dat-
+ing back to 1973, written with C. Hewitt and titled “Video Ergo 
+Scio,” they make the following comment: “Our insistence on using 
+3-D models for the basic representation of objects does not preclude 
+the use of catalogues of appearances of objects from different view 
+points. Indeed, we regard knowledge about appearances as an indis-
+pensable kind of clue.”  
+ My view is that both types of representations are required com-
+putationally, and both are likely to exist within the human visual 
+system. The sometimes heated debate in human psychophysics re-
+garding view-based versus 3-D view-independent representations 
+often assumed a single representation scheme, but psychophysical, 
+brain imaging, and developmental studies suggest that both types 
+of representations are in fact used in human vision. Computation-
+ally, methods for object recognition and classifi cation have focused in 
+recent years almost exclusively on appearance-based representations, 
+with impressive results. However, for dealing with a broader range 
+of problems, including action recognition, the integration of appear-
+ance and 3-D models will be required. Future theories are likely 
+therefore to be broader in scope and to integrate appearance-based 
+representations together with 3-D models of the type put forward 
+by Marr.  
+ Thirty years after the formulation of Marr’s theories, the main 
+problems that occupied him remain fundamental open problems in 
+the study of perception. Given the burst of new ideas and the quick 
+evolution of Marr’s theories during his MIT years, one cannot but 
+wonder how much more progress in the fi eld might have been made 
+if he had been able to pursue his work. 
+ The emergence of new imaging techniques and the availability 
+of powerful computational resources are constantly accelerating the 
+
+xxii 
+Foreword
+rate of acquiring knowledge and developing new computational 
+models. However, putting it all together to understand vision and 
+the brain will require new theories and concepts to integrate in-
+sights from the brain, cognitive, and computation sciences. David 
+Marr’s Vision provides an inspiration for such an effort, which is as 
+relevant today as it was three decades ago. 
+Rehovot, September 2009                                                
+
+xxiii
+ Preface 
+This book is meant to be enjoyed. It describes the adventures I have 
+had in the years since Marvin Minsky and Seymour Papert invited 
+me to the Artifi cial Intelligence Laboratory at the Massachusetts 
+Institute of Technology in 1973. Working conditions were ideal, 
+thanks to Patrick Winston’s skillful administration, to the generos-
+ity of the Advanced Research Projects Agency of the Department of 
+Defense and of the National Science Foundation, and to the freedom 
+arranged for me by Whitman Richards, under the benevolent eye of 
+Richard Held. I was fortunate enough to meet and collaborate with 
+a remarkable collection of people, most especially, Tomaso Poggio. 
+Included among these people were many erstwhile students who be-
+came colleagues and from whom I learned much—Keith Nishihara, 
+Shimon Ullman, Ken Forbus, Kent Stevens, Eric Grimson, Ellen 
+Hildreth, Michael Riley, and John Batali. Berthold Horn kept us 
+close to the physics of light, and Whitman Richards, to the abilities 
+and inabilities of people. 
+ In December 1977, certain events occurred that forced me to 
+write this book a few years earlier than I had planned. Although the 
+book has important gaps, which I hope will soon be fi lled, a new 
+framework for studying vision is already clear and supported by 
+enough solid results to be worth setting down as a coherent whole. 
+ Many people have helped me to live through this somewhat dif-
+fi cult period. Particularly, my parents, my sister, my wife Lucia, and 
+Jennifer, Tomaso, Shimon, Whitman, and Inge gave to me more 
+than I often deserved; although mere thanks are inadequate, I thank 
+them. William Prince steered me to Professor F. G. Hayhoe and 
+Dr. John Rees at Addenbrooke’s Hospital in Cambridge, and them 
+I thank for giving me time.
+Summer 1979 
+David Marr
+
+
+PART I 
+Introduction and 
+Preliminaries 
+
+
+General 
+Introduction 
+What does it mean, to see? The plain man's answer (and Aristotle's, too) 
+would be, to know what is where by looking. In other words, vision is the 
+process of discovering from images what is present in the world, and where 
+it is. 
+Vision is therefore, first and foremost, an information-processing task, 
+but we cannot think of it just as a process. For if we are capable of knowing 
+what is where in the world, our brains must somehow be capable of rep- 
+resenting this information-in 
+all its profusion of color and form, beauty 
+motion, and detail. The study of vision must therefore include not only the 
+study of how to extract from images the various aspects of the world that 
+are useful to us, but also an inquiry into the nature of the internal rep- 
+resentations by which we capture this information and thus make it avail- 
+able as a basis for decisions about our thoughts and actions. This duality- 
+the representation and the processing of information-lies 
+at the heart of 
+most information-processing tasks and will profoundly shape our investi- 
+gation of the particular problems posed by vision. 
+The need to understand information-processing tasks and machines 
+has arisen only quite recently Until people began to dream of and then to 
+build such machines, there was no very pressing need to think deeply 
+
+4 
+General Introduction 
+about them. Once people did begin to speculate about such tasks and 
+machnes, however, it soon became clear that many aspects of the world 
+around us could benefit from an information-processing point of view. 
+Most of the phenomena that are central to us as human beings-the 
+mysteries of life and evolution, of perception and feeling and thought- 
+are primarily phenomena of information processing, and if we are ever to 
+understand them fully, our thinking about them must include this per- 
+spective. 
+The next point-which 
+has to be made rather quickly to those who 
+inhabit a world in which the local utility's billing computer is still capable 
+of sending a final demand for $0.00-is to emphasize that saying that a job 
+is "only" an information-processing task or that an organism is "only" an 
+information-processing machine is not a limiting or a pejorative descrip- 
+tion. Even more importantly, I shall in no way use such a description to try 
+to limit the kind of explanations that are necessary Quite the contrary, in 
+fact. One of the fascinating features of information-processing machines is 
+that in order to understand them completely, one has to be satisfied with 
+one's explanations at many different levels. 
+For example, let us look at the range of perspectives that must be 
+satisfied before one can be said, from a human and scientific point of view, 
+to have understood visual perception. First, and I think foremost, there is 
+the perspective of the plain man. He knows what it is like to see, and unless 
+the bones of one's arguments and theories roughly correspond to what 
+this person knows to be true at first hand, one will probably be wrong (a 
+point made with force and elegance by Austin, 1962). Second, there is the 
+perspective of the brain scientists, the physiologists and anatomists who 
+know a great deal about how the nervous system is built and how parts of 
+it behave. The issues that concern them-how 
+the cells are connected, why 
+they respond as they do, the neuronal dogmas of Barlow (1972)-must 
+be 
+resolved and addressed in any full account of perception. And the same 
+argument applies to the perspective of the experimental psychologists. 
+On the other hand, someone who has bought and played with a small 
+home computer may make quite different demands. "If," he might say, 
+"vision really is an information-processing task, then I should be able to 
+make my computer do it, provided that it has sufficient power, memory 
+and some way of being connected to a home television camera." The 
+explanation he wants is therefore a rather abstract one, telling him what to 
+program and, if possible, a hint about the best algorithms for doing so. He 
+doesn't want to know about rhodopsin, or the lateral geniculate nucleus, 
+or inhibitory interneurons. He wants to know how to program vision. 
+The fundamental point is that in order to understand a device that 
+performs an information-processing task, one needs many different kinds 
+
+General Introduction 
+5 
+of explanations. Part I of this book is concerned with this point, and it plays 
+a prominent role because one of the keystones of the book is the realization 
+that we have had to be more careful about what constitutes an explanation 
+than has been necessary in other recent scientific developments, like those 
+in molecular biology. For the subject of vision, there is no single equation 
+or view that explains everything. Each problem has to be addressed from 
+several points of view-as 
+a problem in representing information, as a 
+computation capable of deriving that representation, and as a problem in 
+the architecture of a computer capable of carrying out both things quickly 
+and reliably 
+If one keeps strongly in mind this necessarily rather broad aspect of 
+the nature of explanation, one can avoid a number of pitfalls. One conse- 
+quence of an emphasis on information processing might be, for example, 
+to introduce a comparison between the human brain and a computer. In 
+a sense, of course, the brain is a computer, but to say this without qualifi- 
+cation is misleading, because the essence of the brain is not simply that it 
+is a computer but that it is a computer which is in the habit of performing 
+some rather particular computations. The term computer usually refers to 
+a machine with a rather standard type of instruction set that usually runs 
+serially but nowadays sometimes in parallel, under the control of programs 
+that have been stored in a memory In order to understand such a computer, 
+one needs to understand what it is made of, how it is put together, what its 
+instruction set is, how much memory it has and how it is accessed, and 
+how the machine may be made to run. But this forms only a small part of 
+understanding a computer that is performing an information-processing 
+task. 
+This point bears reflection, because it is central to why most analogies 
+between brains and computers are too superficial to be useful. Think, for 
+example, of the international network of airline reservation computers, 
+which performs the task of assigning flights for millions of passengers all 
+over the world. To understand this system it is not enough to know how 
+a modern computer works. One also has to understand a little about what 
+aircraft are and what they do; about geography, time zones, fares, exchange 
+rates, and connections; and something about politics, diets, and the various 
+other aspects of human nature that happen to be relevant to this particular 
+task. 
+Thus the critical point is that understanding computers is different 
+from understanding computations. To understand a computer, one has to 
+study that computer. To understand an information-processing task, one 
+has to study that information-processing task. To understand fully a partic- 
+ular machine carrying out a particular information-processing task, one has 
+to do both things. Neither alone will suffice. 
+
+6 
+General Introduction 
+From a philosophical point of view, the approach that I describe is an 
+extension of what have sometimes been called representational theories 
+of mind. On the whole, it rejects the more recent excursions into the 
+philosophy of perception, with their arguments about sense-data, the mol- 
+ecules of perception, and the validity of what the senses tell us; instead, 
+this approach looks back to an older view, according to which the senses 
+are for the most part concerned with telling one what is there. Modern 
+representational theories conceive of the mind as having access to systems 
+of internal representations; mental states are characterized by asserting 
+what the internal representations currently speclfy, and mental processes 
+by how such internal representations are obtained and how they interact. 
+This scheme affords a comfortable framework for our study of visual 
+perception, and I am content to let it form the point of departure for our 
+inquiry As we shall see, pursuing this approach will lead us away from 
+traditional avenues into what is almost a new intellectual landscape. Some 
+of the things we find will seem strange, and it will be hard to reconcile 
+subjectively some of the ideas and theories that are forced on us with what 
+actually goes on inside ourselves when we open our eyes and look at 
+things. Even the basic notion of what constitutes an explanation will have 
+to be developed and broadened a little, to ensure that we do not leave 
+anything out and that every important perspective on the problem is sat- 
+isfied or satisfiable. 
+The book itself is divided into three parts. In the first are contained 
+the philosophical preliminaries, a description of the approach, the repre- 
+sentational framework that is proposed for the overall process of visual 
+perception, and the way that led to it. I have adopted a fairly personal style 
+in the hope that if the reader understands why particular directions were 
+taken at each point, the reasons for the overall approach will be clearer. 
+The second part of the book, Chapters 2 to 6, contains the real analysis. 
+It describes informally, but in some detail, how the approach and frame- 
+work are actually realized, and the results that have been achieved. 
+The third part is somewhat unorthodox and consists of a set of ques- 
+tions and answers that are designed to help the reader to understand the 
+way of thinking behind the approach-to 
+help him acquire the right prej- 
+udices, if you like-and 
+to relate these explanations to his personal expe- 
+rience of seeing. I have often found that one or two of the remarks set out 
+in Part I11 have helped a person to see the point of part of the theory or to 
+circumvent some private difficulty with it, and I hope they may serve a 
+similar purpose here. The reader may find this section means more after 
+having read the first two parts of the book, but an early glance at it may 
+provide the motivation to take the trouble. 
+
+General Introduction 
+7 
+The detailed exposition comes, then, in Part 11. Of course, the subject 
+of human visual perception is not solved here by a long way But over the 
+last six years, my colleagues and I have been fortunate enough to see the 
+establishment of an overall theoretical framework as well as the solution 
+of several rather central problems in visual perception. We feel that the 
+combination amounts to a reasonably strong case that the representational 
+approach is a useful one, and the point of this book is to make that case. 
+How far this approach can be pursued, of course, remains to be seen. 
+
+CHAPTER 
+1 
+The Philosophy 
+and the Approach 
+1.1 BACKGROUND 
+The problems of visual perception have attracted the curiosity of scientists 
+for many centuries. Important early contributions were made by Newton 
+(1704), who laid the foundations for modern work on color vision, and 
+Helmholtz (1910), whose treatise on physiological optics generates interest 
+even today Early in this century, Wertheimer (1912, 1923) noticed the 
+apparent motion not of individual dots but of wholes, or "fields," in images 
+presented sequentially as in a movie. In much the same way we perceive 
+the migration across the sky of a flock of geese: the flock somehow con- 
+stitutes a single entity, and is not seen as individual birds. This observation 
+started the Gestalt school of psychology, which was concerned with describ- 
+ing the qualities of wholes by using terms like solidarity and dktinct~zess, 
+and with trying to formulate the "laws" that governed the creation of these 
+wholes. The attempt failed for various reasons, and the Gestalt school 
+dissolved into the fog of subjectivism. With the death of the school, many 
+
+1.1 Background 
+9 
+FiguYe 1-1. A random-dot stereogram of the type used extensively by Bela Julesz. 
+The left and right images are identical except for a central square region that is 
+displaced sightly in one image. When fused binocularly, the images yield the 
+impression of the central square floating in front of the background. 
+of its early and genuine insights were unfortunately lost to the mainstream 
+of experimental psychology. 
+Since then, students of the psychology of perception have made no 
+serious attempts at an overall understanding of what perception is, con- 
+centrating instead on the analysis of properties and performance. The tri- 
+chromatism of color vision was firmly established (see Brindley, 1970), and 
+the preoccupation with motion continued, with the most interesting devel- 
+opments perhaps being the experiments of Miles (1931) and of Wallach 
+and O'Connell(1953), which established that under suitable conditions an 
+unfamiliar three-dimensional shape can be correctly perceived from only 
+its changing monocular projection.* 
+The development of the digital electronic computer made possible 
+a similar discovery for binocular vision. In 1960 Bela Julesz devised 
+computer-generated random-dot stereograms, which are image pairs con- 
+structed of dot patterns that appear random when viewed monocularly but 
+fuse when viewed one through each eye to give a percept of shapes and 
+surfaces with a clear three-dimensional structure. An example is shown in 
+Figure 1-1. Here the image for the left eye is a matrix of black and white 
+squares generated at random by a computer program. The image for the 
+*The two dimensional image seen by a single eye. 
+
+10 
+The Philosopby and the Approach 
+right eye is made by copying the left image, shifting a square-shaped region 
+at its center slightly to the left, and then providing a new random pattern 
+to fill the gap that the shift creates. If each of the eyes sees only one matrix, 
+as if the matrices were both in the same physical place, the result is the 
+sensation of a square floating in space. Plainly such percepts are caused 
+solely by the stereo disparity between matching elements in the images 
+presented to each eye; from such experiments, we know that the analysis 
+of stereoscopic information, like the analysis of motion, can proceed inde- 
+pendently in the absence of other information. Such findings are of critical 
+importance because they help us to subdivide our study of perception into 
+more specialized parts which can be treated separately I shall refer to these 
+as independent modules of perception. 
+The most recent contribution of psychophysics has been of a different 
+kind but of equal importance. It arose from a combination of adaptation 
+and threshold detection studies and originated from the demonstration 
+by Campbell and Robson (1968) of the existence of independent, spatial- 
+frequency-tuned channels--that is, channels sensitive to intensityvariations 
+in the image occurring at a particular scale or spatial interval-in 
+the early 
+stages of our perceptual apparatus. This paper led to an explosion of arti- 
+cles on various aspects of these channels, which culminated ten years later 
+with quite satisfactory quantitative accounts of the characteristics of the first 
+stages of visual perception (Wilson and Bergen, 1979). I shall discuss this 
+in detail later on. 
+Recently a rather different approach has attracted considerable at- 
+tention. In 1971, Roger N. Shepard and Jacqueline Metzler made line draw- 
+ings of simple objects that differed from one another either by a three- 
+dimensional rotation or by a rotation plus a reflection (see Figure 1-2). 
+They asked how long it took to decide whether two depicted objects dif- 
+fered by a rotation and a reflection or merely a rotation. They found that 
+the time taken depended on the three-dimensional angle of rotation nec- 
+essary to bring the two objects into correspondence. Indeed, the time 
+varied linearly with this angle. One is led thereby to the notion that a 
+mental rotation of sorts is actually being performed-that a mental descrip- 
+tion of the first shape in a pair is being adjusted incrementally in orientation 
+until it matches the second, such adjustment requiring greater time when 
+greater angles are involved. 
+The significance of this approach lies not so much in its results, whose 
+interpretation is controversial, as in the type of questions it raised. For until 
+then, the notion of a representation was not one that visual psychologists 
+took seriously This type of experiment meant that the notion had to be 
+considered. Although the early thoughts of visual psychologists were naive 
+compared with those of the computer vision community, which had had 
+
+Figwe 1-2. 
+Some drawings similar to those used in Shepard and Metzler's exper- 
+iments on mental rotation. The ones shown in (a) are identical, as a clockwise 
+turning of this page by 80" will readily prove. Those in (b) are also identical, and 
+again the relative angle between the two is 80". Here, however, a rotation in depth 
+will make the first coincide with the second. Finally, those in (c) are not at all 
+identical, for no rotation will bring them into congruence. The time taken to decide 
+whether a pair is the same was found to vary linearly with the angle through which 
+one figure must be rotated to be brought into correspondence with the other. This 
+suggested to the investigators that a stepwise mental rotation was in fact being 
+performed by the subjects of their experiments. 
+to face the problem of representation from the beginning, it was not 
+long before the thinking of psychologists became more sophisticated (see 
+Shepard, 1979). 
+But what of explanation? For a long time, the best hope seemed to lie 
+along another line of investigation, that of electrophysiology. The devel- 
+opment of amplifiers allowed Adrian (1928) and his colleagues to record 
+the minute voltage changes that accompanied the transmission of nerve 
+signals. Their investigations showed that the character of the sensation so 
+produced depended on which fiber carried the message, not how the fiber 
+
+12 
+i%e Philosophy and the Appoach 
+was stimulated-as 
+one might have expected from anatomical studies. This 
+led to the view that the peripheral nerve fibers could be thought of as a 
+simple mapping supplying the sensorium with a copy of the physical events 
+at the body surface (Adrian, 1947). The rest of the explanation, it was 
+thought, could safely be left to the psychologists. 
+The next development was the technical improvement in amplification 
+that made possible the recording of single neurons (Granit and Svaetichin, 
+1939; Hartline, 1938; Galambos and Davis, 1943). This led to the notion of 
+a cell's "receptive field (Hartline, 1940) and to the Harvard School's famous 
+series of studies of the behavior of neurons at successively deeper levels 
+of the visual pathway (Kuffler, 1953; Hubel and Wiesel, 1962, 1968). But 
+perhaps the most exciting development was the new view that questions 
+of psychological interest could be illuminated and perhaps even e x p l i e d 
+by neurophysiological experiments. The clearest early example of this was 
+Barlow's (1953) study of ganglion cells in the frog retina, and I cannot put 
+it better than he did: 
+If one explores the responsiveness of single ganglion cells in the frog's retina 
+using handheld targets, one finds that one particular type of ganglion cell is 
+most effectively driven by something like a black disc subtending a degree or 
+so moved rapidly to and fro withii the unit's receptive field. This causes a 
+vigorous discharge which can be maintained without much decrement as long 
+as the movement is continued. Now, if the stimulus which is optimal for this 
+class of cells is presented to intact frogs, the behavioural response is often 
+dramatic; they turn towards the target and make repeated feeding responses 
+consisting of a jump and snap. The selectivity of the retinal neurons and the 
+frog's reaction when they are selectively stimulated, suggest that they are "bug 
+detectors" (Barlow 1953) performing a primitive but vitally important form 
+of recognition. 
+The result makes one suddenly realize that a large part of the sensory 
+machinery involved in a frog's feeding responses may actually reside in the 
+retina rather than in mysterious "centres" that would be too difficult to under- 
+stand by physiological methods. The essential lock-like property resides in 
+each member of a whole class of neurons and allows the cell to discharge 
+only to the appropriate key pattern of sensory stimulation. Lettvin et al. (1959) 
+suggested that there were five different classes of cell in the frog, and Barlow, 
+Hill and Levick (1964) found an even larger number of categories in the rabbit. 
+[Barlow et al.] called these key patterns "trigger features," and Maturana et al. 
+(1960) emphasized another important aspect of the behaviour of these gan- 
+glion cells; a cell continues to respond to the same trigger feature in spite of 
+changes in light intensity over many decades. The properties of the retina are 
+such that a ganglion cell can, figuratively speaking, reach out and determine 
+that something specific is happening in front of the eye. Light is the agent by 
+
+I. 1 Background 
+which it does this, but it is the detailed pattern of the light that carries the 
+information, and the overall level of illumination prevailing at the time is 
+almost totally disregarded. (p. 373) 
+Barlow (1972) then goes on to summarize these findings in the fol- 
+lowing way: 
+The cumulative effect of all the changes I have tried to outline above has been 
+to make us realise that eachsingle neuron canperfom a much more complex 
+and subtle task than hadpreviously been thought (emphasis added). Neurons 
+do not loosely and unreliably remap the luminous intensities of the visual 
+image onto our sensorium, but instead they detect pattern elements, discrim- 
+hate the depth of objects, ignore irrelevant causes of variation and are 
+arranged in an intriguing hierarchy Furthermore, there is evidence that they 
+give prominence to what is informationally important, can respond with great 
+reliability, and can have their pattern selectivity permanently modified by early 
+visual experience. This amounts to a revolution in our outlook. It is now quite 
+inappropriate to regard unit activity as a noisy indication of more basic and 
+reliable processes involved in mental operations: instead, we must regard 
+single neurons as the prime movers of these mechanisms. Thinking is brought 
+about by neurons and we should not use phrases like "unit activity reflects, 
+reveals, or monitors thought processes," because the activities of neurons, 
+quite simply, are thought processes. 
+This revolution stemmed from physiological work and makes us realize 
+that the activity of each single neuron may play a significant role in perception. 
+(p. 380) 
+This aspect of his thinking led Barlow to formulate the first and most 
+important of his five dogmas: 'A description of that activity of a single nerve 
+cell which is transmitted to and influences other nerve cells and of a nerve 
+cell's response to such influences from other cells, is a complete enough 
+description for functional understanding of the nervous system. There is 
+nothing else "looking at" or controlling this activity which must therefore 
+provide a basis for understanding how the brain controls behaviour' (Bar- 
+low, 1972, p. 380). 
+I shall return later on to more carefully examine the validity of this 
+point of view, but for now let us just enjoy it. The vigor and excitement of 
+these ideas need no emphasis. At the time the eventual success of a reduc- 
+tionist approach seemed likely Hubel and Wiesel's (1962,1968) pioneer- 
+ing studies had shown the way; single-unit studies on stereopsis (Barlow, 
+Blakemore, and Pettigrew, 1967) and on color (DeValois, Abramov, and 
+Mead, 1967; Gouras, 1968) seemed to confirm the close links between 
+perception and single-cell recordings, and the intriguing results of Gross, 
+
+14 
+The Philosophy and the Approach 
+Rocha-Miranda, and Bender (1972), who found "hand-detectors" in the 
+inferotemporal cortex, seemed to show that the application of the reduc- 
+tionist approach would not be limited just to the early parts of the visual 
+pathway 
+It was, of course, recognized that physiologists had been lucky: If one 
+probes around in a conventional electronic computer and records the 
+behavior of single elements within it, one is unlikely to be able to discern 
+what a given element is doing. But the brain, thanks to Barlow's first dogma, 
+seemed to be built along more accommodating lines-people 
+were able 
+to determine the functions of single elements of the brain. There seemed 
+no reason why the reductionist approach could not be taken all the way 
+I was myself fully caught up in this excitement. Truth, I also believed, 
+was basically neural, and the central aim of all research was a thorough 
+functional analysis of the structure of the central nervous system. My enthu- 
+siasm found expression in a theory of the cerebellar cortex (Marr, 1969). 
+According to this theory, the simple and regular cortical structure is inter- 
+preted as a simple but powerful memorizing device for learning motor 
+skills; because of a simple combinatorial trick, each of the 15 million Pur- 
+kinje cells in the cerebellum is capable of learning over 200 different 
+patterns and discriminating them from unlearned patterns. Evidence is 
+gradually accumulating that the cerebellum is involved in learning motor 
+skills (Ito, 1978), so that something like this theory may in fact be correct. 
+The way seemed clear. On the one hand we had new experimental 
+techniques of proven power, and on the other, the beginnings of a theo- 
+retical approach that could back them up with a fine analysis of cortical 
+structure. Psychophysics could tell us what needed explaining, and the 
+recent advances in anatomy-the Fink-Heimer technique from Nauta's lab- 
+oratory and the recent successful deployment by Szentagothai and others 
+of the electron microscope-could 
+provide the necessary information 
+about the structure of the cerebral cortex. 
+But somewhere underneath, something was going wrong. The initial 
+discoveries of the 1950s and 1960s were not being followed by equally 
+dramatic discoveries in the 1970s. No neurophysiologists had recorded 
+new and clear high-level correlates of perception. The leaders of the 1960s 
+had turned away from what they had been doing-Hubel 
+and Wiesel con- 
+centrated on anatomy, Barlow turned to psychophysics, and the mainstream 
+of neurophysiology concentrated on development and plasticity (the con- 
+cept that neural connections are not b e d ) or on a more thorough analysis 
+of the cells that had already been discovered (for example, Bishop, 
+Coombs, and Henry, 1971; Schiller, Finlay, and Volrnan, 1976a, 1976b), or 
+on cells in species like the owl (for example, Pettigrew and Konishi, 1976). 
+
+None of the new studies succeeded in elucidating thefinction of the visual 
+cortex. 
+It is difficult to say precisely why this happened, because the reasoning 
+was never made explicit and was probably largely unconscious. However, 
+various factors are identifiable. In my own case, the cerebellar study had 
+two effects. On the one hand, it suggested that one could eventually hope 
+to understand cortical structure in functional terms, and this was exciting. 
+But at the same time the study has disappointed me, because even if the 
+theory was correct, it did not much enlighten one about the motor sys- 
+tem-it 
+did not, for example, tell one how to go about programming a 
+mechanical arm. It suggested that if one wishes to program a mechanical 
+arm so that it operates in a versatile way, then at some point a very large 
+and rather simple type of memory will prove indispensable. But it did not 
+say why, nor what that memory should contain. 
+The discoveries of the visual neurophysiologists left one in a similar 
+situation. Suppose, for example, that one actually found the apocryphal 
+grandmother cell.* Would that really tell us anything much at all? It would 
+tell us that it existed-Gross's 
+hand-detectors tell us almost that-but 
+not 
+why or even how such a thing may be constructed from the ourputs of 
+previously discovered cells. Do the single-unit recordings-the 
+simple and 
+complex cells-tell us much about how to detect edges or why one would 
+want to, except in a rather general way through arguments based on econ- 
+omy and redundancy? If we really knew the answers, for example, we 
+should be able to program them on a computer. But finding a hand- 
+detector certainly did not allow us to program one. 
+As one reflected on these sorts of issues in the early 1970s, it gradually 
+became clear that something important was missing that was not present 
+in either of the disciplines of neurophysiology or psychophysics. The key 
+observation is that neurophysiology and psychophysics have as their busi- 
+ness to describe the behavior of cells or of subjects but not to explain such 
+behavior. What are the visual areas of the cerebral cortex actually doing? 
+What are the problems in doing it that need explaining, and at what level 
+of description should such explanations be sought? 
+The best way of finding out the difficulties of doing something is to 
+try to do it, so at this point I moved to the Artificial Intelligence Laboratory 
+at MIT, where Marvin Minsky had collected a group of people and a power- 
+ful computer for the express purpose of addressing these questions. 
+*A cell that fires only when one's grandmother comes into view 
+
+16 
+The Philosophy and the Approach 
+The first great revelation was that the problems are difficult. Of course, 
+these days this fact is a commonplace. But in the 1960s almost no one 
+realized that machine vision was difficult. The field had to go through the 
+same experience as the machine translation field did in its fiascoes of the 
+1950s before it was at last realized that here were some problems that had 
+to be taken seriously The reason for this misperception is that we humans 
+are ourselves so good at vision. The notion of a feature detector was well 
+established by Barlow and by Hubel and Wiesel, and the idea that extracting 
+edges and lines from images might be at all difficult simply did not occur 
+to those who had not tried to do it. It turned out to be an elusive problem: 
+Edges that are of critical importance from a three-dimensional point of 
+view often cannot be found at all by looking at the intensity changes in an 
+image. Any kind of textured image gives a multitude of noisy edge seg- 
+ments; variations in reflectance and illumination cause no end of trouble; 
+and even if an edge has a clear existence at one point, it is as likely as not 
+to fade out quite soon, appearing only in patches along its length in the 
+image. The common and almost despairing feeling of the early investigators 
+like B.K.P. Horn and TO. Binford was that practically anything could happen 
+in an image and furthermore that practically everything did. 
+Three types of approach were taken to uy to come to grips with these 
+phenomena. The first was unashamedly empirical, associated most with 
+Azriel Rosenfeld. His style was to take some new trick for edge detection, 
+texture discrimination, or something similar, run it on images, and 
+observe the result. Although several interesting ideas emerged in this way 
+including the simultaneous use of operators* of different sizes as an 
+approach to increasing sensitivity and reducing noise (Rosenfeld and 
+Thurston, 1971), these studies were not as useful as they could have been 
+because they were never accompanied by any serious assessment of how 
+well the different algorithms performed. Few attempts were made to com- 
+pare the merits of different operators (although Frarn and Deutsch, 1975, 
+did try), and an approach like trying to prove mathematically which oper- 
+ator was optimal was not even attempted. Indeed, it could not be, because 
+no one had yet formulated precisely what these operators should be trying 
+to do. Nevertheless, considerable ingenuity was shown. The most clever 
+was probably Hueckel's (1973) operator, which solved in an ingenious way 
+the problem of finding the edge orientation that best fit a given intensity 
+change in a small neighborhood of an image. 
+*Operato1 refers to a local calculation to be applied at each location in the image, making 
+use of the intensity there and in the immediate vicinity 
+
+I. I Background 
+17 
+The second approach was to try for depth of analysis by restricting the 
+scope to a world of single, illuminated, matte white toy blocks set against 
+a black background. The blocks could occur in any shapes provided only 
+that all faces were planar and all edges were straight. This restriction 
+allowed more specialized techniques to be used, but it still did not make 
+the problem easy The Binford-Horn line finder (Horn, 1973) was used to 
+find edges, and both it and its sequel (described in Shirai, 1973) made use 
+of the special circumstances of the environment, such as the fact that all 
+edges there were straight. 
+These techniques did work reasonably well, however, and they allowed 
+a preliminary analysis of later problems to emerge-roughly, 
+what does 
+one do once a complete line drawing has been extracted from a scene? 
+Studies of this had begun sometime before with Roberts (1965) and Guz- 
+man (1968), and they culminated in the works of Waltz (1975) and Mack- 
+worth (1973), which essentially solved the interpretation problem for line 
+drawings derived from images of prismatic solids. Waltz's work had a par- 
+ticularly dramatic impact, because it was the first to show explicitly that an 
+exhaustive analysis of all possible local physical arrangements of surfaces, 
+edges, and shadows could lead to an effective and efficient algorithm for 
+interpreting an actual image. Figure 1-3 and its legend convey the main 
+ideas behind Waltz's theory 
+The hope that lay behind this work was, of course, that once the toy 
+world of white blocks had been understood, the solutions found there 
+could be generalized, providing the basis for attacking the more complex 
+problems posed by a richer visual environment. Unfortunately, this turned 
+out not to be so. For the roots of the approach that was eventually suc- 
+cessful, we have to look at the third kind of development that was taking 
+place then. 
+Two pieces of work were important here. Neither is probably of very 
+great significance to human perception for what it actually accomplished- 
+in the end, it is likely that neither will particularly reflect human visual 
+processes-but 
+they are both of importance because of the way in which 
+they were formulated. The first was Land and McCannS (1971) work on the 
+retinex theory of color vision, as developed by them and subsequently by 
+Horn (1974). The starting point is the traditional one of regarding color as 
+a perceptual approximation to reflectance. This allows the formulation of 
+a clear computational question, namely, How can the effects of reflectance 
+changes be separated from the vagaries of the prevailing illumination? Land 
+and McCann suggested using the fact that changes in illumination are usu- 
+ally gradual, whereas changes in reflectance of a surface or of an object 
+boundary are often quite sharp. Hence by filtering out slow changes, those 
+changes due to the reflectance alone could be isolated. Horn devised a 
+
+18 
+7be Philosopby and the Approach 
++ Convex 
+- Concave 
+A Occluding 
+Figure 1-3. Some configurations of edges are physically realizable, and some are 
+not. The trihedral junctions of three convex edges (a) or of three concave edges 
+(b) are realizable, whereas the configuration (c) is impossible. Waltz cataloged all 
+the possible junctions, including shadow edges, for up to four coincident edges. 
+He then found that by using this catalog to implement consistency relations [requir- 
+ing, for example, that an edge be of the same type all along its length like edge E 
+in (d)], the solution to the labeling of a line drawing that included shadows was 
+often uniquely determined. 
+clever parallel algorithm for this, and I suggested how it might be imple- 
+mented by neurons in the retina (Marr, 1974a). 
+I do not now believe that this is at all a correct analysis of color vision 
+or of the retina, but it showed the possible style of a correct analysis. Gone 
+are the ad hoc programs of computer vision; gone is the restriction to a 
+special visual miniworld; gone is any explanation in term of neurons- 
+except as a way of implementing a method. And present is a clear under- 
+standing of what is to be computed, how it is to be done, the physical 
+assumptions on which the method is based, and some kind of analysis of 
+algorithms that are capable of carrying it out. 
+
+1.2 Undmtanding Com#kx IY5formdtion-Processing Systems 
+19 
+The other piece of work was Horn's (1975) analysis of shape from 
+shading, which was the first in what was to become a distinguished series 
+of articles on the formation of images. By carefully analyzing the way in 
+which the illumination, surface geometry, surface reflectance, and view- 
+point conspired to create the measured intensity values in an image, Horn 
+formulated a differential equation that related the image intensity values 
+to the surface geomeuy. If the surface reflectance and illumination are 
+known, one can solve for the surface geometry (see also Horn, 1977). Thus 
+from shading one can derive shape. 
+The message was plain. There must exist an additional level of under- 
+standing at which the character of the information-processing tasks carried 
+out during perception are analyzed and understood in a way that is inde- 
+pendent of the particular mechanisms and structures that implement them 
+in our heads. This was what was missing-the 
+analysis of the problem as 
+an information-processing task. Such analysis does not usurp an under- 
+standing at the other levels-of 
+neurons or of computer programs-but 
+it is a necessary complement to them, since without it there can be no real 
+understanding of the function of all those neurons. 
+This realization was arrived at independently and formulated together 
+by Tomaso Poggio in Tiibingen and myself (Marr and Poggio, 1977; Marr, 
+197%). It was not even quite new-Leon 
+D. Harmon was saying something 
+similar at about the same time, and others had paid lip service to a similar 
+distinction. But the important point is that if the notion of different types 
+of understanding is taken very seriously, it allows the study of the infor- 
+mation-processing basis of perception to be made n&rous. It becomes 
+possible, by separating explanations into different levels, to make explicit 
+statements about what is being computed and why and to construct theo- 
+ries stating that what is being computed is optimal in some sense or is 
+guaranteed to function correctly The ad hoc element is removed, and 
+heuristic computer programs are replaced by solid foundations on which 
+a real subject can be built. This realization-the 
+formulation of what was 
+missing, together with a clear idea of how to supply it-formed 
+the basic 
+foundation for a new integrated approach, which it is the purpose of this 
+book to describe. 
+1.2 UNDERSTANDING COMPLEX 
+INFORMATION-PROCESSING SYSTEMS 
+Almost never can a complex system of any kind be understood as a simple 
+extrapolation from the properties of its elementary components. Consider, 
+for example, some gas in a bottle. A description of thermodynamic effects- 
+
+20 
+B e Philosophy and theApproach 
+temperature, pressure, density and the relationships among these fac- 
+tors-is 
+not formulated by using a large set of equations, one for each of 
+the particles involved. Such effects are described at their own level, that of 
+an enormous collection of particles; the effort is to show that in principle 
+the microscopic and macroscopic descriptions are consistent with one 
+another. If one hopes to achieve a full understanding of a system as com- 
+plicated as a nervous system, a developing embryo, a set of metabolic 
+pathways, a bottle of gas, or even a large computer program, then one must 
+be prepared to contemplate different kinds of explanation at different lev- 
+els of description that are linked, at least in principle, into a cohesive whole, 
+even if linking the levels in complete detail is impractical. For the specific 
+case of a system that solves an information-processing problem, there are 
+in addition the twin strands of process and representation, and both these 
+ideas need some discussion. 
+Representation and Description 
+A representation is a formal system for making explicit certain entities or 
+types of information, together with a specification of how the system does 
+this. And I shall call the result of using a representation to describe a given 
+entity a damption of the entity in that representation (Marr and Nishihara, 
+1978). 
+For example, the Arabic, Roman, and binary numeral systems are all 
+formal systems for representing numbers. The Arabic representation con- 
+sists of a string of symbols drawn from the set (0, 1, 2, 3, 4, 5, 6, 7, 8, 9), 
+and the rule for constructing the description of a particular integer n is 
+that one decomposes n into a sum of multiples of powers of 10 and unites 
+these multiples into a string with the largest powers on the left and the 
+smallest on the right. Thus, thirty-seven equals 3 x 10' + 7 x lo0, which 
+becomes 37, the Arabic numeral system's description of the number. What 
+this description makes explicit is the number's decomposition into powers 
+of 10. The binary numeral system's description of the number thirty-seven 
+is 100101, and this description makes explicit the number's decomposition 
+into powers of 2. In the Roman numeral system, thirty-seven is represented 
+as XXXVII. 
+This definition of a representation is quite general. For example, a 
+representation for shape would be a formal scheme for describing some 
+aspects of shape, together with rules that specify how the scheme is applied 
+to any particular shape. A musical score provides a way of representing a 
+symphony; the alphabet allows the construction of a written representation 
+
+1.2 Understanding Complex Information-Processing Systems 
+2 1 
+of words; and so forth. The phrase "formal scheme" is critical to the defi- 
+nition, but the reader should not be frightened by it. The reason is simply 
+that we are dealing with information-processing machines, and the way 
+such machines work is by using symbols to stand for things-to 
+represent 
+things, in our terminology. To say that something is a formal scheme means 
+only that it is a set of symbols with rules for putting them together-no 
+more and no less. 
+A representation, therefore, is not a foreign idea at all-we 
+all use 
+representations all the time. However, the notion that one can capture 
+some aspect of reality by making a description of it using a symbol and 
+that to do so can be useful seems to me a fascinating and powerful idea. 
+But even the simple examples we have discussed introduce some rather 
+general and important issues that arise whenever one chooses to use one 
+particular representation. For example, if one chooses the Arabic numeral 
+representation, it is easy to discover whether a number is a power of 10 
+but difficult to discover whether it is a power of 2. If one chooses the binary 
+representation, the situation is reversed. Thus, there is a trade-off; any 
+particular representation makes certain information explicit at the expense 
+of information that is pushed into the background and may be quite hard 
+to recover. 
+This issue is important, because haw information is represented can 
+greatly affect how easy it is to do different things with it. This is evident 
+even from our numbers example: It is easy to add, to subtract, and even to 
+multiply if the Arabic or binary representations are used, but it is not at all 
+easy to do these things-especially multiplication-with Roman numerals. 
+This is a key reason why the Roman culture failed to develop mathematics 
+in the way the earlier Arabic cultures had. 
+An analogous problem faces computer engineers today. Electronic 
+technology is much more suited to a binary number system than to the 
+conventional base 10 system, yet humans supply their data and require the 
+results in base 10. The design decision facing the engineer, therefore, is, 
+Should one pay the cost of conversion into base 2, carry out the arithmetic 
+in a binary representation, and then convert back into decimal numbers 
+on output; or should one sacrifice efficiency of circuitry to carry out oper- 
+ations directly in a decimal representation? On the whole, business com- 
+puters and pocket calculators take the second approach, and general pur- 
+pose computers take the first. But even though one is not restricted to 
+using just one representation system for a given type of information, the 
+choice of which to use is important and cannot be taken lightly It deter- 
+mines what information is made explicit and hence what is pushed further 
+into the background, and it has a far-reaching effect on the ease and 
+
