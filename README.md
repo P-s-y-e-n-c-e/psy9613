@@ -62,8 +62,9 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * [diaporama_cours_03.html](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/diaporama_cours_03.html) — Visionneuse interactive des diapositives de la Séance 3.
 * [PSY9613-01_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-01_Transitions.md) — Transitions Séance 1 calibrées pour ENCORA.
 * [PSY9613-02_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions.md) — Transitions Séance 2 calibrées pour ENCORA (version initiale).
-* [PSY9613-02_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
+* [PSY9613-03_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
 * [PSY9613-03_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-03_Transitions.md) — Transitions Séance 3 calibrées pour ENCORA.
+* [Attention_psy9613_diapos.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Attention_psy9613_diapos.pdf) — Diapositives de la Capsule asynchrone sur l'attention (Semaine 4, 5 oct.) *(5.8 Mo)*
 
 
 ### 📖 Semaine 1 (14 sept.) — Présentation et introduction
@@ -95,6 +96,35 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Scheier et al (1998) - Embedded neural networks_exploiting constraints.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Scheier%20et%20al%20(1998)%20-%20Embedded%20neural%20networks_exploiting%20constraints.pdf) *(1.46 Mo)*
   * [Top-down influences on visual processing(2013).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Top-down%20influences%20on%20visual%20processing(2013).pdf) *(717 Ko)*
   * [Theta–gamma coupling(2024).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Theta%E2%80%93gamma%20coupling(2024).pdf) *(2.96 Mo)*
+
+### 📖 Semaine 4 (5 oct.) — Pas de cours en présence : L'attention (Capsule asynchrone)
+* **Diapositives de la capsule :**
+  * [Attention_psy9613_diapos.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Attention_psy9613_diapos.pdf) *(5.8 Mo)*
+* **Activités asynchrones Moodle :**
+  * Capsule vidéo Panopto / LTI : *Capsule_Attention_psy9613*
+  * Conférence externe LTI : *Conférence de Mathieu Landry (U Laval)*
+* **Lecture obligatoire :**
+  * [Lindsay_Attention in psychology...(2020).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_obligatoires/Lindsay_Attention%20in%20psychology...(2020).pdf) *(1.95 Mo)*
+* **Lectures optionnelles :**
+  * [No one knows what attention is (2019).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/No%20one%20knows%20what%20attention%20is%20(2019).pdf) *(851 Ko)*
+  * [Parallel_fast_and_slow_recurrent_cortical_processi.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/Parallel_fast_and_slow_recurrent_cortical_processi.pdf) *(1.76 Mo)*
+  * [strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf) *(67 Ko)*
+
+### 📖 Semaine 6 (19 oct.) — Le cerveau prédictif
+* **Lecture obligatoire :**
+  * [Bottemanne et al. (2023) - Lesprit prédictif_Introduction à la théorie du cerveau bayésien.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_obligatoires/Bottemanne%20et%20al.%20(2023)%20-%20Lesprit%20pr%C3%A9dictif_Introduction%20%C3%A0%20la%20th%C3%A9orie%20du%20cerveau%20bay%C3%A9sien.pdf) *(1.02 Mo)*
+* **Lectures optionnelles :**
+  * [Quelques explications sur les textes.txt](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Quelques%20explications%20sur%20les%20textes.txt) *(Guide pédagogique des professeurs pour l'ordre de lecture)*
+  * [Sprevak  Smith (2023) - An Introduction to predictive processing models of perception and decision making.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Sprevak%20%20Smith%20(2023)%20-%20An%20Introduction%20to%20predictive%20processing%20models%20of%20perception%20and%20decision%20making.pdf) *(645 Ko)*
+  * [Fabry (2017) - Predictive processing and cognitive development.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Fabry%20(2017)%20-%20Predictive%20processing%20and%20cognitive%20development.pdf) *(310 Ko)*
+  * [Clark (2013) - Whatever next_Predictive brains, situated agents, and the future of cognitive science.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Clark%20(2013)%20-%20Whatever%20next_Predictive%20brains%2C%20situated%20agents%2C%20and%20the%20future%20of%20cognitive%20science.pdf) *(1.46 Mo)*
+  * [Metzinger  Wiese (2017) - Philosophy and Predictive Processing.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Metzinger%20%20Wiese%20(2017)%20-%20Philosophy%20and%20Predictive%20Processing.pdf) *(68.55 Mo)*
+
+### 📖 Semaine 7 (26 oct.) — Raisonnement & Prise de décision
+* **Lecture obligatoire :**
+  * [Evans (2010) Intuition and reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_obligatoires/Evans%20(2010)%20Intuition%20and%20reasoning.pdf) *(279 Ko)*
+* **Lecture optionnelle :**
+  * [Todd  Gigerenzer (2007) Environments that make us smart.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_optionnelles/Todd%20%20Gigerenzer%20(2007)%20Environments%20that%20make%20us%20smart.pdf) *(89 Ko)*
 
 ### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
 * **Lecture obligatoire :**
