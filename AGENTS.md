@@ -12,7 +12,7 @@ Ce fichier définit les directives absolues et les compétences automatisées po
 
 ### Commande native d'instanciation :
 ```powershell
-& "C:\Users\Michel\.gemini\antigravity\bin\agentapi.bat" new-conversation --title="<Titre de la session>" "<Prompt initial d'accueil et de directives>"
+& "$env:USERPROFILE\.gemini\antigravity\bin\agentapi.bat" new-conversation --title="<Titre de la session>" "<Prompt initial d'accueil et de directives>"
 ```
 
 ### Commandes disponibles via `agentapi.bat` :
@@ -22,6 +22,17 @@ Ce fichier définit les directives absolues et les compétences automatisées po
    `agentapi get-conversation-metadata <conversation_id>`
 3. **Communiquer entre sessions :**
    `agentapi send-message [--title=<titre>] <recipient_id> <contenu>`
+
+### Procédure d'ancrage dans la barre latérale Antigravity 2.0 (`source = 1`) :
+> [!NOTE]
+> Par défaut, toute session instanciée via `agentapi new-conversation` reçoit l'attribut `source = 19` (contexte IDE/sous-processus) dans sa base de données SQLite locale. L'interface Antigravity 2.0 (bureau) ne rend visibles dans la barre latérale sous `Projects` que les sessions marquées `source = 1` (`CORTEX_TRAJECTORY_SOURCE_CASCADE_CLIENT`).
+> 
+> **Activation immédiate après création :**
+> 1. **Mettre à jour la source dans la base SQLite locale :**
+>    ```powershell
+>    python -c "import sqlite3, os; db=os.path.expandvars(r'%USERPROFILE%\.gemini\antigravity\conversations\<conversation_id>.db'); conn=sqlite3.connect(db); conn.execute('UPDATE trajectory_meta SET source = 1 WHERE cascade_id = ?;', ('<conversation_id>',)); conn.commit(); conn.close()"
+>    ```
+> 2. **Actualiser l'interface :** Recharger la fenêtre Antigravity (`Ctrl + R` / Menu `View -> Reload`) ou redémarrer l'application. La session apparaît alors immédiatement dans l'arborescence du projet.
 
 ---
 
