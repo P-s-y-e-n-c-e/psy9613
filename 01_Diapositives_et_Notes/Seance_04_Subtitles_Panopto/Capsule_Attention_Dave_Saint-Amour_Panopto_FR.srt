@@ -1,0 +1,1736 @@
+1
+00:00:00,830 --> 00:00:04,230
+<font face="Serif" size="18">Bonjour à tous et à toutes. Donc capsule sur la tension.</font>
+
+2
+00:00:04,750 --> 00:00:07,550
+<font face="Serif" size="18">C'est quand même un défi parce que je ne veux pas la faire trop longue.</font>
+
+3
+00:00:08,270 --> 00:00:14,670
+<font face="Serif" size="18">Et quand on parle d'attention, on parle essentiellement du carburant d'à peu près tous les processus cognitifs.</font>
+
+4
+00:00:15,910 --> 00:00:23,390
+<font face="Serif" size="18">Et deux, vous faire ça en visio en vous gardant attentifs.</font>
+
+5
+00:00:24,390 --> 00:00:28,710
+<font face="Serif" size="18">Ben c'est mes deux défis pour pour la prochaine heure ou quelque chose comme ça.</font>
+
+6
+00:00:31,350 --> 00:00:39,230
+<font face="Serif" size="18">Lorsque j'ai préparé donc la capsule, je suis tombé sur ce livre qui est sur la diapo.</font>
+
+7
+00:00:40,870 --> 00:00:47,430
+<font face="Serif" size="18">C'est un livre assez récent, que je n'ai pas dans ma bibliothèque et que je n'aurai pas le temps de lire.</font>
+
+8
+00:00:47,830 --> 00:00:52,710
+<font face="Serif" size="18">Là, pour pour la capsule, mais allant voir la table des matières, je l'ai commandé.</font>
+
+9
+00:00:53,310 --> 00:00:57,710
+<font face="Serif" size="18">Puis ça a l'air très intéressant, ça parle de demande des mécanismes de base,</font>
+
+10
+00:00:58,070 --> 00:01:02,150
+<font face="Serif" size="18">de l'attention, mais aussi un chapitre ou deux sur les facteurs humains, puis des.</font>
+
+11
+00:01:03,350 --> 00:01:08,190
+<font face="Serif" size="18">L'application de plusieurs des concepts dans la.</font>
+
+12
+00:01:08,830 --> 00:01:10,630
+<font face="Serif" size="18">Dans des exemples de la vie de tous les jours.</font>
+
+13
+00:01:10,870 --> 00:01:19,070
+<font face="Serif" size="18">Donc bref, peut être que vous allez lire avant moi, mais je voulais juste vous partager ma petite découverte.</font>
+
+14
+00:01:21,590 --> 00:01:30,070
+<font face="Serif" size="18">Donc qu'est ce que l'attention? Évidemment, je vous mets la fameuse citation de Will William James.</font>
+
+15
+00:01:33,830 --> 00:01:37,670
+<font face="Serif" size="18">Qu'on connait ou qu'on a déjà croisé à un moment donné.</font>
+
+16
+00:01:39,030 --> 00:01:42,750
+<font face="Serif" size="18">Donc tout le monde sait ce que c'est l'attention.</font>
+
+17
+00:01:44,310 --> 00:01:47,350
+<font face="Serif" size="18">Mais en même temps, juste pour le clin d'oeil.</font>
+
+18
+00:01:50,910 --> 00:02:01,280
+<font face="Serif" size="18">Un article que j'ai j'ai vu passer il y a pas longtemps qui s'intitule que personne sait ce que c'est l'attention.</font>
+
+19
+00:02:02,360 --> 00:02:09,080
+<font face="Serif" size="18">Et c'est un peu le paradoxe en même temps, on a l'impression de le savoir.</font>
+
+20
+00:02:09,720 --> 00:02:18,400
+<font face="Serif" size="18">Mais lorsqu'on essaie de mettre le doigt sur le mécanisme en tant que tel, on se rend compte qu'il n'y en a pas juste un.</font>
+
+21
+00:02:19,640 --> 00:02:23,920
+<font face="Serif" size="18">Donc, il y en a une panoplie dans plein de contextes du traitement de l'information.</font>
+
+22
+00:02:24,880 --> 00:02:30,080
+<font face="Serif" size="18">Puis, lorsqu'on essaie de mettre un mot là dessus, ben ça ne fait pas vraiment de sens.</font>
+
+23
+00:02:30,600 --> 00:02:37,120
+<font face="Serif" size="18">D'où le. l'Arctique, personne sait ce que c'est. l'Attention dans cet article là, je le mettrai en lecture optionnel.</font>
+
+24
+00:02:38,000 --> 00:02:45,480
+<font face="Serif" size="18">Essentiellement, les auteurs suggèrent de de ne plus utiliser ce mot et plutôt de parler d'un processus de sélection,</font>
+
+25
+00:02:46,120 --> 00:02:49,520
+<font face="Serif" size="18">mais qui est essentiellement la définition même de l'attention.</font>
+
+26
+00:02:50,000 --> 00:02:53,760
+<font face="Serif" size="18">On va le voir dans les prochaines diapos. Donc.</font>
+
+27
+00:02:58,110 --> 00:03:04,510
+<font face="Serif" size="18">Lorsqu'on parle d'attention, vous vous avez en tête.</font>
+
+28
+00:03:06,550 --> 00:03:09,830
+<font face="Serif" size="18">l'Attention sélective. l'Attention divisée. l'Attention soutenue.</font>
+
+29
+00:03:13,230 --> 00:03:23,310
+<font face="Serif" size="18">Et c'est plein de types d'attention. Et c'est probablement ce qui évoque le plus lorsqu'on parlait des processus top-down ou descendant.</font>
+
+30
+00:03:24,590 --> 00:03:28,790
+<font face="Serif" size="18">C'est probablement celui qui est le plus connu. On cite souvent en exemple.</font>
+
+31
+00:03:31,430 --> 00:03:37,790
+<font face="Serif" size="18">Dans les types d'attention, il y a aussi l'attention externe, l'attention interne.</font>
+
+32
+00:03:38,790 --> 00:03:42,510
+<font face="Serif" size="18">Je vais y revenir un petit peu. J'ai une petite étude que j'ai. J'ai trouvé.</font>
+
+33
+00:03:43,510 --> 00:03:48,030
+<font face="Serif" size="18">Je vais y revenir un petit peu plus tard. l'Attention explicite versus implicite.</font>
+
+34
+00:03:49,910 --> 00:03:59,050
+<font face="Serif" size="18">Donc, essentiellement, si on agit sur notre environnement, par exemple en déplaçant les yeux, en déplaçant la tête ou notre.</font>
+
+35
+00:03:59,570 --> 00:04:04,210
+<font face="Serif" size="18">Notre action vers. Vers un objet. C'est explicite.</font>
+
+36
+00:04:06,290 --> 00:04:09,690
+<font face="Serif" size="18">Particulièrement un mouvement des yeux. C'est.</font>
+
+37
+00:04:10,530 --> 00:04:13,650
+<font face="Serif" size="18">Intimement lié à l'attention, mais ça peut être aussi implicite ou covert.</font>
+
+38
+00:04:14,690 --> 00:04:22,250
+<font face="Serif" size="18">Donc on peut décider de déployer notre attention à gauche tout en regardant tout droit,</font>
+
+39
+00:04:23,330 --> 00:04:30,370
+<font face="Serif" size="18">pour être un petit peu plus à l'affût de certains changements ou de certains stimuli dans notre champ visuel.</font>
+
+40
+00:04:31,970 --> 00:04:38,490
+<font face="Serif" size="18">Donc c'est. C'est le même principe, mais ce n'est pas tout nécessairement.</font>
+
+41
+00:04:39,210 --> 00:04:42,250
+<font face="Serif" size="18">Il y a des similarités et des différences sur ces types d'attention là.</font>
+
+42
+00:04:42,930 --> 00:04:48,970
+<font face="Serif" size="18">Et ce qu'on connaît probablement le plus, c'est la distinction entre exogène et endogène.</font>
+
+43
+00:04:50,770 --> 00:04:54,080
+<font face="Serif" size="18">Je vais pas trop en parler parce que c'est vraiment une distinction Importante.</font>
+
+44
+00:04:55,320 --> 00:04:59,520
+<font face="Serif" size="18">Mais je me suis rappelé que, au printemps dernier,</font>
+
+45
+00:05:01,640 --> 00:05:09,840
+<font face="Serif" size="18">l'Institut des sciences cognitives et Neuro UQAM avait invité Mathieu Landry à venir discuter, donner une conférence.</font>
+
+46
+00:05:11,680 --> 00:05:22,440
+<font face="Serif" size="18">Et il nous avait parlé de ces deux types d'attention là. Et j'ai réécouté la conférence qu'on avait enregistrée, puis je les ai rendu disponibles.</font>
+
+47
+00:05:23,040 --> 00:05:28,560
+<font face="Serif" size="18">Et donc, en fait, ma capsule, je veux pas trop la faire longtemps, mais je vous invite aussi à regarder celle la,</font>
+
+48
+00:05:28,880 --> 00:05:37,960
+<font face="Serif" size="18">la conférence de Mathieu, qui est vraiment axée sur la distinction exogène et endogène.</font>
+
+49
+00:05:41,760 --> 00:05:51,560
+<font face="Serif" size="18">Et il n'en demeure pas moins que peu importe le type d'attention qu'on qu'on, qu'on discute, c'est des processus de contrôle.</font>
+
+50
+00:05:53,400 --> 00:06:01,430
+<font face="Serif" size="18">C'est essentiellement toujours le mot clé sélection contrôle qui qui se manifeste lorsque</font>
+
+51
+00:06:03,190 --> 00:06:09,470
+<font face="Serif" size="18">le temps pour exécuter une tâche et qui peut varier en fonction de la situation.</font>
+
+52
+00:06:11,830 --> 00:06:16,150
+<font face="Serif" size="18">Alors un exemple pourquoi qu'on a on a besoin d'attention.</font>
+
+53
+00:06:16,990 --> 00:06:21,590
+<font face="Serif" size="18">Ça, c'est l'exemple classique de ce qu'on appelle la cécité au changement.</font>
+
+54
+00:06:22,190 --> 00:06:30,870
+<font face="Serif" size="18">Vous avez deux images qui sont présentées très rapidement, et il y a un détail qui change d'une image à l'autre et vous devez le trouver.</font>
+
+55
+00:06:33,230 --> 00:06:36,510
+<font face="Serif" size="18">Donc ça prend un certain temps.</font>
+
+56
+00:06:37,550 --> 00:06:38,830
+<font face="Serif" size="18">Sur le coup, on ne le voit pas nécessairement.</font>
+
+57
+00:06:39,950 --> 00:06:49,150
+<font face="Serif" size="18">Et après, à un moment donné, vous réalisez que c'est le lampadaire qui il manque la la lumière ou l'ampoule,</font>
+
+58
+00:06:51,190 --> 00:07:00,010
+<font face="Serif" size="18">un morceau, disons du lampadaire dans le fond de la figure. Et c'est un exemple qui montre l'importance de sélectionner l'information pertinente.</font>
+
+59
+00:07:01,330 --> 00:07:11,370
+<font face="Serif" size="18">Et c'est au cœur de l'attention, parce que l'environnement informationnel, si je peux dire comme ça, et pratiquement, il est en fait illimité.</font>
+
+60
+00:07:12,450 --> 00:07:19,210
+<font face="Serif" size="18">On reçoit des milliers, des millions d'informations à chaque seconde et on ne peut pas tout percevoir.</font>
+
+61
+00:07:20,370 --> 00:07:22,570
+<font face="Serif" size="18">Donc, ça prend des ressources,</font>
+
+62
+00:07:23,570 --> 00:07:31,410
+<font face="Serif" size="18">on a des ressources cognitives illimitées et ça prend un mécanisme pour sélectionner l'information pertinente pour éviter une surcharge,</font>
+
+63
+00:07:32,490 --> 00:07:41,050
+<font face="Serif" size="18">si je peux dire. Donc, on peut très bien imaginer que, dans une salle de contrôle, de contrôle où il y a de multiples écrans,</font>
+
+64
+00:07:41,610 --> 00:07:46,170
+<font face="Serif" size="18">il peut y avoir des des changements rapides comme comme on vient de le voir.</font>
+
+65
+00:07:48,290 --> 00:07:53,730
+<font face="Serif" size="18">l'Attention va être hautement sollicitée. Hum.</font>
+
+66
+00:07:55,170 --> 00:07:58,290
+<font face="Serif" size="18">Juste une petite étude au passage qui montre.</font>
+
+67
+00:08:01,250 --> 00:08:12,010
+<font face="Serif" size="18">Que la cécité au changement est quand même modulable en fonction de la pertinence ou de la valeur de l'information qu'on lui accorde.</font>
+
+68
+00:08:13,090 --> 00:08:17,490
+<font face="Serif" size="18">Donc vous avez en haut deux images qui sont présentées très rapidement,</font>
+
+69
+00:08:18,690 --> 00:08:26,090
+<font face="Serif" size="18">et ça prend un certain nombre de fois pour se rendre compte que c'est l'espèce de de</font>
+
+70
+00:08:26,410 --> 00:08:30,330
+<font face="Serif" size="18">rampe derrière les deux personnages qui est qui est changée d'une image à l'autre.</font>
+
+71
+00:08:31,530 --> 00:08:41,090
+<font face="Serif" size="18">Mais si on a une information qui change mais qui a plus de sens avec le contexte de l'image, en l'occurrence et Coptair, ici dans la deuxième image,</font>
+
+72
+00:08:42,130 --> 00:08:45,370
+<font face="Serif" size="18">on s'aperçoit du changement beaucoup plus rapidement,</font>
+
+73
+00:08:46,970 --> 00:08:56,940
+<font face="Serif" size="18">à peu près deux fois plus vite Pour ça nous prend cinq ou six images pour s'apercevoir ici qu'on a détecté le changement.</font>
+
+74
+00:08:57,420 --> 00:09:01,580
+<font face="Serif" size="18">Donc tout ça pour dire que. Les.</font>
+
+75
+00:09:03,740 --> 00:09:07,660
+<font face="Serif" size="18">Les. Le contenu sémantique ou le.</font>
+
+76
+00:09:09,940 --> 00:09:18,780
+<font face="Serif" size="18">L'interprétation du contexte et l'importance de l'objet par rapport à la scène visuelle et évidemment pas indépendant de.</font>
+
+77
+00:09:19,540 --> 00:09:23,380
+<font face="Serif" size="18">D'assister au changement et de l'importance qu'on lui accorde.</font>
+
+78
+00:09:24,020 --> 00:09:31,620
+<font face="Serif" size="18">Donc ça aussi, ça va être important Si on veut éviter une cécité au changement, il faut contextualiser et.</font>
+
+79
+00:09:34,460 --> 00:09:39,180
+<font face="Serif" size="18">Même préparer les les participants,</font>
+
+80
+00:09:39,820 --> 00:09:49,770
+<font face="Serif" size="18">les observateurs à s'attendre à des changements dans tel type d'objet ou dans tel type Dans la voix, dans le champ visuel.</font>
+
+81
+00:09:52,970 --> 00:10:02,770
+<font face="Serif" size="18">Le fameux exemple que vous connaissez probablement tous, c'est c'est les expériences de Daniel Simons à Boston,</font>
+
+82
+00:10:03,850 --> 00:10:07,570
+<font face="Serif" size="18">le fameux gorille qui passe dans une scène, puis on ne le voit pas.</font>
+
+83
+00:10:07,730 --> 00:10:12,970
+<font face="Serif" size="18">Ça, c'est pas tout à fait, c'est un phénomène similaire, mais qu'on va appeler la cécité attentionnelle,</font>
+
+84
+00:10:15,210 --> 00:10:20,370
+<font face="Serif" size="18">c'est qu'on est tellement focussé à un objet ou à une tâche qu'il y a des.</font>
+
+85
+00:10:21,050 --> 00:10:26,490
+<font face="Serif" size="18">Donc, c'était en continu. Il y a des éléments dans la scène visuelle qui vont nous échapper et.</font>
+
+86
+00:10:27,970 --> 00:10:35,730
+<font face="Serif" size="18">Et donc ce que ça montre, ça, c'est l'absence d'attention peut empêcher une perception consciente d'un événement</font>
+
+87
+00:10:36,130 --> 00:10:41,890
+<font face="Serif" size="18">qui est pourtant clairement présent et visible dans notre champ visuel.</font>
+
+88
+00:10:44,010 --> 00:10:53,610
+<font face="Serif" size="18">D'où la relation. Je ne veux pas rentrer dans cette littérature là, intime entre l'attention et la conscience,</font>
+
+89
+00:10:54,530 --> 00:10:59,210
+<font face="Serif" size="18">qui sont souvent et très intimement liées, mais pas toujours.</font>
+
+90
+00:11:02,530 --> 00:11:10,410
+<font face="Serif" size="18">Donc les grandes questions qu'on se pose, qu'on peut se poser, qu'on s'est posé depuis longtemps, c'est comment cette sélection se produit, elle?</font>
+
+91
+00:11:11,850 --> 00:11:17,130
+<font face="Serif" size="18">Que devient l'information ignorée? Peut on traiter plusieurs tâches simultanément?</font>
+
+92
+00:11:18,010 --> 00:11:25,210
+<font face="Serif" size="18">l'Attention. Est ce que c'est un filtre? Est ce que c'est une ressource? Et dans la vie de tous les jours, il y a plein d'exemples.</font>
+
+93
+00:11:26,090 --> 00:11:38,130
+<font face="Serif" size="18">Il y en a 1000 où toutes ces questions là deviennent pertinentes et on s'intéresse à l'attention depuis plusieurs siècles.</font>
+
+94
+00:11:38,610 --> 00:11:47,820
+<font face="Serif" size="18">Mais je vais vous parler peut être des travaux majeurs des 50 dernières années qui ont commencé avec des questions de recherche autour dans les.</font>
+
+95
+00:11:48,260 --> 00:11:53,540
+<font face="Serif" size="18">Les tours de contrôle, là. Euh pour euh.</font>
+
+96
+00:11:54,980 --> 00:12:00,820
+<font face="Serif" size="18">Aéronautique pour euh. Pour.</font>
+
+97
+00:12:03,900 --> 00:12:13,020
+<font face="Serif" size="18">Mieux comprendre comment on peut maximiser les performances humaines dans des contextes complètement.</font>
+
+98
+00:12:15,460 --> 00:12:22,660
+<font face="Serif" size="18">Où il y a plein de personnes ou plein de signaux en même temps. ICI, la conduite automobile, ben on peut.</font>
+
+99
+00:12:23,900 --> 00:12:29,500
+<font face="Serif" size="18">Ça peut être un processus relativement automatique, facile si on est sur l'autoroute, mais à partir du moment où on est dans.</font>
+
+100
+00:12:30,300 --> 00:12:38,500
+<font face="Serif" size="18">Dans une situation où il y a plein d'imprévus ou de sons plus complexes, comme une conduite en ville où il y a des.</font>
+
+101
+00:12:39,620 --> 00:12:44,890
+<font face="Serif" size="18">Des vélos, des. Des piétons. Des voitures qui avancent, qui freinent rapidement.</font>
+
+102
+00:12:46,930 --> 00:12:52,530
+<font face="Serif" size="18">La tension est drôlement utile pour pouvoir être fonctionnel dans ce genre de situation.</font>
+
+103
+00:12:55,330 --> 00:13:02,130
+<font face="Serif" size="18">Donc, je le disais, je vais passer. Je vais commencer dans les années 50 avec.</font>
+
+104
+00:13:05,930 --> 00:13:08,210
+<font face="Serif" size="18">Un chercheur qui s'appelle Colleen Cherry.</font>
+
+105
+00:13:11,290 --> 00:13:23,450
+<font face="Serif" size="18">En Angleterre, qui avait pour mandat de comprendre en fait comment une personne peut suivre une conversation dans un environnement très bruyant,</font>
+
+106
+00:13:24,010 --> 00:13:33,170
+<font face="Serif" size="18">comme les salles de contrôle. Et ces travaux ont comme lancé en fait tout un champ de recherche.</font>
+
+107
+00:13:34,130 --> 00:13:39,770
+<font face="Serif" size="18">Tout le champ de mon thème, même encore aujourd'hui, la recherche moderne sur l'attention sélective.</font>
+
+108
+00:13:41,650 --> 00:13:50,560
+<font face="Serif" size="18">Donc lui, il a développé. Je pense C'est lui qui a développé le paradigme d'écoute optique discotheque dit optique sans vision,</font>
+
+109
+00:13:51,880 --> 00:14:06,040
+<font face="Serif" size="18">déformation professionnelle où on présente deux messages différents un dans une oreille, l'autre dans la deuxième oreille et la tâche du participant.</font>
+
+110
+00:14:07,560 --> 00:14:14,960
+<font face="Serif" size="18">Il doit porter attention à une des deux oreilles et répéter le message qui est entendu.</font>
+
+111
+00:14:16,960 --> 00:14:25,760
+<font face="Serif" size="18">Donc ce que Sherry s'est rendu compte, c'est que donc les personnes étaient très bonnes à décoder le message dans l'oreille cible,</font>
+
+112
+00:14:26,560 --> 00:14:32,480
+<font face="Serif" size="18">mais étaient très mauvais pour détecter le contenu sémantique.</font>
+
+113
+00:14:33,680 --> 00:14:37,360
+<font face="Serif" size="18">Donc, de répéter les mots, là, dans le message ignoré,</font>
+
+114
+00:14:37,960 --> 00:14:47,820
+<font face="Serif" size="18">même s'il y avait une capacité à détecter des caractéristiques Physique du message comme le timbre, l'intensité, etc.</font>
+
+115
+00:14:49,580 --> 00:14:53,140
+<font face="Serif" size="18">Donc son constat en fait, c'est que certaines informations sont.</font>
+
+116
+00:14:54,420 --> 00:15:02,060
+<font face="Serif" size="18">Sont traitées alors que d'autres sont sont bloquées. C'était le problème.</font>
+
+117
+00:15:03,620 --> 00:15:04,620
+<font face="Serif" size="18">C'est ce problème là qui.</font>
+
+118
+00:15:05,620 --> 00:15:17,580
+<font face="Serif" size="18">Donc c'était une observation, mais ça a mis sur la table le problème qui va devenir le cœur des théories suivantes de l'attention.</font>
+
+119
+00:15:19,580 --> 00:15:22,620
+<font face="Serif" size="18">Donc, la première personne qui a, disons,</font>
+
+120
+00:15:23,260 --> 00:15:30,740
+<font face="Serif" size="18">proposé une hypothèse plus formelle en lien avec les les travaux de Thierry, mais aussi en lien avec Shannon.</font>
+
+121
+00:15:31,540 --> 00:15:36,940
+<font face="Serif" size="18">Puis tout ça s'articule ensemble. La théorie de l'information de Shannon, etc.</font>
+
+122
+00:15:38,500 --> 00:15:45,810
+<font face="Serif" size="18">Pour proposer un modèle de. De filtre attentionnel, c'est plus bande encore en Angleterre.</font>
+
+123
+00:15:47,010 --> 00:15:57,970
+<font face="Serif" size="18">Et pour lui, la capacité limitée du système cognitif qui a un moment donné devient un seul canal pour traiter l'information.</font>
+
+124
+00:15:58,890 --> 00:16:04,810
+<font face="Serif" size="18">Ça exige absolument un processus de sélection pour bloquer les informations non pertinentes,</font>
+
+125
+00:16:05,410 --> 00:16:08,810
+<font face="Serif" size="18">puis laisser seulement passer les informations pertinentes.</font>
+
+126
+00:16:09,810 --> 00:16:15,570
+<font face="Serif" size="18">Et c'est un peu son modèle ici. Donc, on le voit en bas.</font>
+
+127
+00:16:15,770 --> 00:16:28,410
+<font face="Serif" size="18">En fait, on a des entrées sensorielles qui vont être bloquées par un filtre attentionnel à un moment donné pour aller dans le goulot d'étranglement.</font>
+
+128
+00:16:29,330 --> 00:16:33,050
+<font face="Serif" size="18">Et c'est seulement certaines informations qui vont pouvoir être traitées au niveau supérieur.</font>
+
+129
+00:16:36,090 --> 00:16:39,870
+<font face="Serif" size="18">Et et donc le problème de sept.</font>
+
+130
+00:16:41,070 --> 00:16:48,310
+<font face="Serif" size="18">Et donc le filtre, en fait, sélectionne l'information. Ce qu'il faut retenir ici, c'est avant l'analyse sémantique.</font>
+
+131
+00:16:49,910 --> 00:16:59,670
+<font face="Serif" size="18">Et le problème de ce modèle. Donc ça a été. C'est quand même une belle contribution, mais c'est qui s'est rendu compte que.</font>
+
+132
+00:17:03,150 --> 00:17:07,470
+<font face="Serif" size="18">Il y avait des. Des participants. Comment?</font>
+
+133
+00:17:08,150 --> 00:17:18,070
+<font face="Serif" size="18">Comment on fait, en fait, pour tenir compte du fait que les participants connaissent les caractéristiques physiques du canal ignoré,</font>
+
+134
+00:17:18,710 --> 00:17:26,750
+<font face="Serif" size="18">mais pas son contenu ou très très peu souvent son contenu. Mais ils sont quand même capables de décoder, décoder certaines informations.</font>
+
+135
+00:17:29,470 --> 00:17:40,900
+<font face="Serif" size="18">Et c'est là que vient un peu plus tard le modèle d'atténuation de Anne Trestman, qui en fait essentiellement son.</font>
+
+136
+00:17:42,380 --> 00:17:44,820
+<font face="Serif" size="18">C'est dans la continuité de Brooke Bean.</font>
+
+137
+00:17:46,060 --> 00:17:56,660
+<font face="Serif" size="18">Mais essentiellement, ce qu'elle dit, c'est que ce filtre attentionnel précoce là existe, mais il va agir plutôt comme un contrôle.</font>
+
+138
+00:17:57,180 --> 00:18:04,900
+<font face="Serif" size="18">Le gain, donc, mais il peut, il va laisser passer certaines informations plutôt que de bloquer, là.</font>
+
+139
+00:18:07,860 --> 00:18:14,540
+<font face="Serif" size="18">D'une façon binaire et. Et un de ces de ces arguments, en fait, pour.</font>
+
+140
+00:18:14,980 --> 00:18:21,820
+<font face="Serif" size="18">Pour ce modèle d'atténuation, c'est le fameux cocktail Party effect.</font>
+
+141
+00:18:22,380 --> 00:18:31,500
+<font face="Serif" size="18">Donc, dans le problème ou le cocktail party, on est dans un party puis il y a plein de personnes qui parlent en même temps.</font>
+
+142
+00:18:32,340 --> 00:18:35,700
+<font face="Serif" size="18">On peut entendre son nom dans une conversation,</font>
+
+143
+00:18:36,380 --> 00:18:43,700
+<font face="Serif" size="18">même si on ne prête pas attention à une conversation qui est en périphérie à nous, et donc c'est ce qui est.</font>
+
+144
+00:18:44,020 --> 00:18:50,980
+<font face="Serif" size="18">C'est un élément parmi parmi d'autres qui qui laissait croire à Trestman que.</font>
+
+145
+00:18:54,980 --> 00:19:02,940
+<font face="Serif" size="18">Certaines stimuli sont plus faciles à reconnaître, même quand le signal est faible et.</font>
+
+146
+00:19:04,700 --> 00:19:08,700
+<font face="Serif" size="18">Et donc ce n'est pas une information qui est complètement éliminée, mais plutôt atténuée.</font>
+
+147
+00:19:09,980 --> 00:19:13,380
+<font face="Serif" size="18">Et c'est une question de seuil d'activation, si vous voulez.</font>
+
+148
+00:19:15,860 --> 00:19:21,580
+<font face="Serif" size="18">Donc, on a les deux modèles. En fait, on a le modèle d'attention qui agit.</font>
+
+149
+00:19:24,540 --> 00:19:30,060
+<font face="Serif" size="18">Comme avant. Les significations du sens du stimulus.</font>
+
+150
+00:19:32,180 --> 00:19:36,670
+<font face="Serif" size="18">l'Analyse sémantique, si vous voulez, de Brabant, puis de Taille semaine,</font>
+
+151
+00:19:37,030 --> 00:19:48,590
+<font face="Serif" size="18">mais vous avez de l'autre côté un autre modèle qui a vu le jour, qui plutôt proposait un filtre beaucoup plus tardif.</font>
+
+152
+00:19:49,270 --> 00:19:52,150
+<font face="Serif" size="18">Donc ici, tous les stimuli seraient analysés d'une façon.</font>
+
+153
+00:19:55,670 --> 00:20:02,830
+<font face="Serif" size="18">Perceptive, perceptive et sémantique, et l'attention interviendrait seulement après au moment du choix de la réponse.</font>
+
+154
+00:20:03,390 --> 00:20:06,710
+<font face="Serif" size="18">Donc ça, c'était le modèle de de Deutscher Deutsche.</font>
+
+155
+00:20:08,350 --> 00:20:14,750
+<font face="Serif" size="18">Et on avait deux modèles un petit peu sur la table dans ces années là, et encore.</font>
+
+156
+00:20:20,110 --> 00:20:28,190
+<font face="Serif" size="18">Treize Semaines est venu tester ce modèle là avec une autre étude qui qui est tout simple en fait,</font>
+
+157
+00:20:28,830 --> 00:20:34,350
+<font face="Serif" size="18">c'est qu'on a toujours le paradigme d'écoute dit optique et mais sauf que dans un cas, on.</font>
+
+158
+00:20:35,790 --> 00:20:39,910
+<font face="Serif" size="18">on présente des mots cibles aléatoirement dans l'oreille.</font>
+
+159
+00:20:40,510 --> 00:20:43,430
+<font face="Serif" size="18">Attendue ou non? Attendue. Attentive ou non attentive.</font>
+
+160
+00:20:45,510 --> 00:20:54,790
+<font face="Serif" size="18">Et ce qu'elle a observé, c'est que les mots qui sont présentés dans l'oreille non attentive sont souvent manqués.</font>
+
+161
+00:20:56,590 --> 00:20:59,790
+<font face="Serif" size="18">La personne ne peut pas les détecter. C'était une.</font>
+
+162
+00:21:00,310 --> 00:21:13,190
+<font face="Serif" size="18">Donc elle devait répondre. D'une façon motrice lorsque le mot cible était présenté à gauche ou à droite et.</font>
+
+163
+00:21:14,270 --> 00:21:18,350
+<font face="Serif" size="18">Et donc c'est un. C'est une étude, tout simplement pour. Pour vous dire que l'attention.</font>
+
+164
+00:21:19,310 --> 00:21:24,950
+<font face="Serif" size="18">Ce qu'elle a montré, c'est que l'attention agit avant la sélection de la réponse, donc au niveau perceptif.</font>
+
+165
+00:21:25,910 --> 00:21:35,800
+<font face="Serif" size="18">Et peut être et ou sémantique. Mais clairement, avant la sélection de la réponse, est une étude parmi parmi d'autres.</font>
+
+166
+00:21:36,480 --> 00:21:47,000
+<font face="Serif" size="18">Donc, le modèle de. De sélection précoce et avait gagné et est toujours et toujours d'actualité.</font>
+
+167
+00:21:50,000 --> 00:21:52,480
+<font face="Serif" size="18">Est-ce que j'ai quelque chose d'autre à vous dire là dessus? Non.</font>
+
+168
+00:21:55,440 --> 00:22:05,920
+<font face="Serif" size="18">Donc ce que vous avez peut être vu dans les dans votre parcours au bac, c'est peut être plus dans les modèles de d'attention de treize semaines,</font>
+
+169
+00:22:06,240 --> 00:22:11,080
+<font face="Serif" size="18">c'est peut être plus sa théorie de l'intégration des caractéristiques qui est venu un petit peu plus tard,</font>
+
+170
+00:22:12,600 --> 00:22:16,920
+<font face="Serif" size="18">qui est qui a été un petit peu modifiée par les.</font>
+
+171
+00:22:18,000 --> 00:22:22,200
+<font face="Serif" size="18">Les études plus contemporaines sur l'attention, mais qui est quand même le.</font>
+
+172
+00:22:23,000 --> 00:22:29,480
+<font face="Serif" size="18">Le, la pierre d'assise de beaucoup, beaucoup de choses. Et donc, dans ce modèle là, en fait.</font>
+
+173
+00:22:32,750 --> 00:22:45,430
+<font face="Serif" size="18">Elle propose. Différents stades où l'attention peut venir jouer et son premier stade qu'elle appelle le stade pré attentif.</font>
+
+174
+00:22:47,670 --> 00:22:53,510
+<font face="Serif" size="18">C'est essentiellement un stade où. Les attributs.</font>
+
+175
+00:22:54,070 --> 00:22:57,750
+<font face="Serif" size="18">Et là, je suis dans le domaine visuel, c'est. Son modèle est souvent.</font>
+
+176
+00:23:01,110 --> 00:23:05,590
+<font face="Serif" size="18">Pris dans le modèle visuel, mais c'est souvent.</font>
+
+177
+00:23:11,790 --> 00:23:17,470
+<font face="Serif" size="18">C'est souvent. Les attributs élémentaires visuels comme la couleur, l'orientation, la forme,</font>
+
+178
+00:23:18,430 --> 00:23:26,070
+<font face="Serif" size="18">etc qui vont être traités d'une façon rapide, inconsciente, en parallèle.</font>
+
+179
+00:23:27,590 --> 00:23:35,430
+<font face="Serif" size="18">Et c'est la seulement la la la conjonction ou le liage de ces éléments là qui</font>
+
+180
+00:23:35,830 --> 00:23:41,830
+<font face="Serif" size="18">vont appeler la tension qu'on appelle la tension focalisée ici ou sélective,</font>
+
+181
+00:23:42,670 --> 00:23:46,230
+<font face="Serif" size="18">qui implique un traitement sériel beaucoup plus lent.</font>
+
+182
+00:23:47,510 --> 00:23:52,870
+<font face="Serif" size="18">Et pour donner forme, là, à la perception cohérente d'un objet.</font>
+
+183
+00:23:54,630 --> 00:24:06,350
+<font face="Serif" size="18">Donc ici, dans le stade pré attentif à gauche, c'est très on présente un plein d'éléments ensemble,</font>
+
+184
+00:24:06,990 --> 00:24:15,710
+<font face="Serif" size="18">et à partir du moment où vous en avez un seul qui a une couleur distincte, et c'est la seule caractéristique qui distingue les éléments.</font>
+
+185
+00:24:16,430 --> 00:24:17,550
+<font face="Serif" size="18">C'est très, très facile à détecter.</font>
+
+186
+00:24:18,070 --> 00:24:29,630
+<font face="Serif" size="18">Là, on a l'effet du pop out qui on n'a pas besoin de beaucoup de ressources pour détecter ce petit carré rouge ici.</font>
+
+187
+00:24:33,290 --> 00:24:38,290
+<font face="Serif" size="18">Donc, contrairement à au stade attentif, on prend la même chose,</font>
+
+188
+00:24:38,690 --> 00:24:44,450
+<font face="Serif" size="18">on a des petits éléments vert et rouge, mais ici on va venir combiner des des attributs ensemble.</font>
+
+189
+00:24:45,410 --> 00:24:47,730
+<font face="Serif" size="18">Donc la tâche ici, c'est de détecter le carré rouge,</font>
+
+190
+00:24:49,090 --> 00:24:56,970
+<font face="Serif" size="18">mais il est parmi des distracteurs qui ont la même forme et d'autres distracteurs qui ont la même couleur.</font>
+
+191
+00:24:57,490 --> 00:25:09,490
+<font face="Serif" size="18">Donc il faut faire la bonne conjonction et ça prend beaucoup plus de temps de détecter le carré rouge ici que dans le l'exemple précédent.</font>
+
+192
+00:25:11,290 --> 00:25:18,210
+<font face="Serif" size="18">Donc, l'attention en fait dans le modèle va venir est essentielle pour combiner le fameux binding,</font>
+
+193
+00:25:19,210 --> 00:25:22,210
+<font face="Serif" size="18">les différentes caractéristiques ensemble, puis reconstituer un objet.</font>
+
+194
+00:25:24,010 --> 00:25:24,770
+<font face="Serif" size="18">Dans l'exemple du centre.</font>
+
+195
+00:25:25,690 --> 00:25:39,110
+<font face="Serif" size="18">Là, vous avez plein de stimuli, puis la tâche, c'est de trouver celui qui contient une barre horizontale bleue et une barre verticale rouge.</font>
+
+196
+00:25:39,830 --> 00:25:43,270
+<font face="Serif" size="18">Et encore une fois, pour les mêmes raisons, ça prend du temps,</font>
+
+197
+00:25:43,870 --> 00:25:54,710
+<font face="Serif" size="18">parce que votre attention doit se focaliser à différents endroits dans le champ visuel, d'une façon sérielle, pour faire la tâche.</font>
+
+198
+00:25:55,790 --> 00:26:03,790
+<font face="Serif" size="18">Un exemple un peu plus. Écologique serait peut être de trouver le concombre dans c.</font>
+
+199
+00:26:05,110 --> 00:26:10,630
+<font face="Serif" size="18">Ce. Ce marché de légume.</font>
+
+200
+00:26:11,510 --> 00:26:16,550
+<font face="Serif" size="18">Et encore une fois, il faut prendre la bonne combinaison pour détecter l'objet.</font>
+
+201
+00:26:21,750 --> 00:26:31,860
+<font face="Serif" size="18">Donc on peut. Toujours. Dans ce paradigme de recherche visuelle, Si je vous demande ici à gauche de trouver le robinet le plus vite possible.</font>
+
+202
+00:26:33,300 --> 00:26:46,900
+<font face="Serif" size="18">Vous allez devoir déployer ce mécanisme d'attention focalisée spatiale et de faire une recherche sérielle pour trouver le robinet ici.</font>
+
+203
+00:26:47,660 --> 00:26:52,220
+<font face="Serif" size="18">Si je vous demande de faire la même chose mais dans un contexte naturel,</font>
+
+204
+00:26:54,420 --> 00:27:00,140
+<font face="Serif" size="18">ça va être beaucoup plus facile et beaucoup plus rapide de trouver l'objet ou la cible dans</font>
+
+205
+00:27:00,460 --> 00:27:07,660
+<font face="Serif" size="18">un contexte qu'on connaît et qui vient prédire la position d'un objet par rapport à d'autres.</font>
+
+206
+00:27:08,020 --> 00:27:13,940
+<font face="Serif" size="18">Là, même si c'est quand même ici assez chargé, votre temps de réponse va être beaucoup plus rapide.</font>
+
+207
+00:27:14,380 --> 00:27:17,500
+<font face="Serif" size="18">Donc, évidemment, ça fait partie des processus top-down.</font>
+
+208
+00:27:18,940 --> 00:27:28,480
+<font face="Serif" size="18">De contextualiser. l'Attention vient bien faciliter le processus.</font>
+
+209
+00:27:32,360 --> 00:27:42,710
+<font face="Serif" size="18">L'analogie du du fameux spotlight qui avait été proposée il me semble initialement par Posner dans les années 80.</font>
+
+210
+00:27:44,560 --> 00:27:58,040
+<font face="Serif" size="18">Vous l'avez déjà compris. En fait, c'est cette espèce de de capacité cognitive à balayer le champ visuel pour se déplacer d'un point à un autre.</font>
+
+211
+00:27:59,160 --> 00:28:09,240
+<font face="Serif" size="18">Et c'est cette information là qui est les petits plus qui sont ici, qui est qui privilégié, qui sont plus faciles à décoder.</font>
+
+212
+00:28:11,320 --> 00:28:16,920
+<font face="Serif" size="18">Donc ce on peut avoir en fait ce contrôle là, il peut être contrôle purement top-down,</font>
+
+213
+00:28:17,640 --> 00:28:25,840
+<font face="Serif" size="18">c'est à dire qu'on a une attention endogène volontaire qui va être dirigée sur un stimulus</font>
+
+214
+00:28:26,800 --> 00:28:34,480
+<font face="Serif" size="18">ou un endroit particulier dans le champ visuel qu'on oppose souvent à l'attention exogène,</font>
+
+215
+00:28:36,280 --> 00:28:41,520
+<font face="Serif" size="18">souvent ou involontaire, qui va être captée, qui va capter automatiquement notre attention,</font>
+
+216
+00:28:42,120 --> 00:28:46,240
+<font face="Serif" size="18">comme le petit carré rouge tout à l'heure ou un feu de circulation.</font>
+
+217
+00:28:51,520 --> 00:28:57,720
+<font face="Serif" size="18">Qui qui apparaît sa sa, Ça attire notre attention d'une façon très, très rapide et automatique.</font>
+
+218
+00:28:59,840 --> 00:29:03,320
+<font face="Serif" size="18">Encore une fois, je vous réfère à la capsule ou à la conférence de Mathieu Landry,</font>
+
+219
+00:29:04,000 --> 00:29:12,480
+<font face="Serif" size="18">qui vient en fait confronter ces deux types d'attention là, qui qui qui interagissent dans certains contextes.</font>
+
+220
+00:29:14,560 --> 00:29:19,000
+<font face="Serif" size="18">Donc, on les présente toujours d'une façon indépendante, mais c'est évidemment jamais le cas.</font>
+
+221
+00:29:22,040 --> 00:29:26,620
+<font face="Serif" size="18">Le paradigme encore qui est bien expliqué dans la conférence de Mathieu.</font>
+
+222
+00:29:27,700 --> 00:29:31,900
+<font face="Serif" size="18">C'est le fameux paradigme de Posner. Encore, toujours le même Michael Posner,</font>
+
+223
+00:29:32,860 --> 00:29:41,260
+<font face="Serif" size="18">qui a travaillé beaucoup dans les années 70-80 sur l'allocation ou l'orientation de l'attention dans l'espace.</font>
+
+224
+00:29:42,980 --> 00:29:54,620
+<font face="Serif" size="18">Donc vous avez des conditions exogènes où on va venir ajouter un lissage, un stimulus qui va,</font>
+
+225
+00:29:55,100 --> 00:30:02,340
+<font face="Serif" size="18">qui va nous donner un indice sur l'apparition ou le l'endroit où la cible va apparaître.</font>
+
+226
+00:30:03,300 --> 00:30:15,900
+<font face="Serif" size="18">Et ce cet indice là peut être exogène, c'est à dire on a le le contour ici qui s'élimine en rouge et la cible apparaît à cet endroit là.</font>
+
+227
+00:30:16,060 --> 00:30:21,820
+<font face="Serif" size="18">Donc on est capable de détecter ça très rapidement, mais on peut faire une autre condition où l'indice est temps de gène.</font>
+
+228
+00:30:22,220 --> 00:30:28,490
+<font face="Serif" size="18">Donc on va préalablement présenter une flèche disant attention, la cible va être présentée à droite,</font>
+
+229
+00:30:29,170 --> 00:30:37,530
+<font face="Serif" size="18">on présente la cible à droite et on détecte beaucoup plus rapidement cette cible que lorsqu'elle est à gauche.</font>
+
+230
+00:30:39,090 --> 00:30:46,090
+<font face="Serif" size="18">Et c'est ce fameux paradigme de Posner que vous avez certainement déjà vu.</font>
+
+231
+00:30:47,770 --> 00:30:49,490
+<font face="Serif" size="18">Peut être que vous ne saviez pas.</font>
+
+232
+00:30:50,530 --> 00:31:01,170
+<font face="Serif" size="18">On peut faire varier en fait les intervalles entre le premier indice, entre le premier stimulus qui est l'indice et la cible en tant que tel,</font>
+
+233
+00:31:02,250 --> 00:31:18,970
+<font face="Serif" size="18">de façon à trouver un petit peu la la la la la, on sait ou la la la la vitesse de déploiement des mécanismes ou de l'attention.</font>
+
+234
+00:31:20,050 --> 00:31:23,960
+<font face="Serif" size="18">Et lorsqu'on a des indices périphériques, donc exogènes.</font>
+
+235
+00:31:25,800 --> 00:31:34,160
+<font face="Serif" size="18">On s'aperçoit que le déploiement attentionnel est beaucoup plus rapide que lorsqu'on a des des indices endogènes.</font>
+
+236
+00:31:34,960 --> 00:31:39,000
+<font face="Serif" size="18">Encore une fois, il y a des façons élégantes.</font>
+
+237
+00:31:40,440 --> 00:31:48,480
+<font face="Serif" size="18">Mathieu Landry en parle dans sa présentation. Quelques mots sur les corrélats neurophysiologique.</font>
+
+238
+00:31:51,920 --> 00:32:01,440
+<font face="Serif" size="18">Donc évidemment, avec la méthode qui a été le plus utilisée, c'est les potentiels évoqués pour mesurer qui.</font>
+
+239
+00:32:02,040 --> 00:32:11,760
+<font face="Serif" size="18">Leur principal avantage, c'est qu'ils sont capables de mesurer à la milliseconde près le décours temporel de différents processus,</font>
+
+240
+00:32:12,400 --> 00:32:24,620
+<font face="Serif" size="18">incluant les processus cognitifs. Et dans toute la PA, la controverse met la difficulté de savoir à quel niveau la tension se produit.</font>
+
+241
+00:32:25,100 --> 00:32:27,060
+<font face="Serif" size="18">Est ce que c'est un niveau précoce à un niveau tardif?</font>
+
+242
+00:32:27,740 --> 00:32:36,500
+<font face="Serif" size="18">Donc les potentiels évoqués ont été utilisés assez rapidement pour aider à répondre à ces questions de recherche là dans le domaine de l'attention.</font>
+
+243
+00:32:37,580 --> 00:32:50,500
+<font face="Serif" size="18">Donc, si vous avez un potentiel évoqué auditif et on peut enregistrer des variations d'activité électrique à partir de deux électrodes sur le scalp.</font>
+
+244
+00:32:52,820 --> 00:33:01,780
+<font face="Serif" size="18">Donc, ici, on a les premières zones du tronc cérébral, ensuite les et les structures sous corticale et les structures corticales.</font>
+
+245
+00:33:02,420 --> 00:33:14,060
+<font face="Serif" size="18">Donc chaque chaque onde est associée à l'activité d'une d'une structure dans cette hiérarchie auditive.</font>
+
+246
+00:33:15,260 --> 00:33:19,700
+<font face="Serif" size="18">Et c'est bien connu et bien documenté. Et on a fait.</font>
+
+247
+00:33:19,800 --> 00:33:26,800
+<font face="Serif" size="18">Donc des études avec des conditions où on porte attention aux stimulus auditifs versus pas attentif.</font>
+
+248
+00:33:27,480 --> 00:33:40,000
+<font face="Serif" size="18">Et on trouve donc une autre étude ici avec la magnéto encéphalogramme qui mesure l'activité électrique, mais avec une meilleure précision spatiale.</font>
+
+249
+00:33:41,040 --> 00:33:50,280
+<font face="Serif" size="18">Donc on retrouve des effets de l'attention spatiale dans le domaine auditif des 20, 30, 40 millisecondes.</font>
+
+250
+00:33:50,920 --> 00:33:51,920
+<font face="Serif" size="18">Donc c'est très, très précoce.</font>
+
+251
+00:33:54,000 --> 00:34:06,280
+<font face="Serif" size="18">Donc, l'attention, dans un perspective de top down, est capable d'influencer les premiers niveaux du traitement de l'information auditive.</font>
+
+252
+00:34:07,920 --> 00:34:13,200
+<font face="Serif" size="18">Et même, il y a une étude, ça fait quelques années de ça,</font>
+
+253
+00:34:13,400 --> 00:34:23,580
+<font face="Serif" size="18">mais il y a une étude qui avait démontré que l'attention pouvait influencer les cellules ciliées au niveau de la cochlée.</font>
+
+254
+00:34:24,260 --> 00:34:29,380
+<font face="Serif" size="18">Donc, il y a des appareils en audiologie pour mesurer le déplacement des cellules ciliées.</font>
+
+255
+00:34:30,460 --> 00:34:36,580
+<font face="Serif" size="18">Et ils n'étaient pas pareils dans les conditions où on portait attention ou non au stimulus auditif.</font>
+
+256
+00:34:37,020 --> 00:34:42,340
+<font face="Serif" size="18">Donc, c'est extrêmement précoce dans le domaine visuel aussi.</font>
+
+257
+00:34:44,140 --> 00:34:49,180
+<font face="Serif" size="18">Donc, vous connaissez les. La fameuse, probablement la.</font>
+
+258
+00:34:49,740 --> 00:34:53,580
+<font face="Serif" size="18">Le potentiel évoqué, visuel classique, là, qu'on a.</font>
+
+259
+00:34:53,940 --> 00:34:59,100
+<font face="Serif" size="18">Qu'on a ici, c'est juste ici, les polarités sont inversées, Mais ça, c'est un.</font>
+
+260
+00:35:00,220 --> 00:35:07,580
+<font face="Serif" size="18">C'est un autre problème. Il y a des gens qui mettent le. Le positif en bas, positif en haut, ce qui fait pas de sens pour moi, mais bon.</font>
+
+261
+00:35:08,420 --> 00:35:16,380
+<font face="Serif" size="18">Et donc la fameuse P1, c'est la composante principale d'un potentiel évoqué visuel qui est.</font>
+
+262
+00:35:18,180 --> 00:35:22,500
+<font face="Serif" size="18">généré dans les. Les zones occipitale et on.</font>
+
+263
+00:35:23,860 --> 00:35:28,460
+<font face="Serif" size="18">Dans. En général, on trouve une modulation de la P1.</font>
+
+264
+00:35:28,820 --> 00:35:39,380
+<font face="Serif" size="18">Donc, la P1, qui survient à peu près à 100 millisecondes après l'apparition du stimulus, est plus ample, plus forte si on porte attention au stimulus.</font>
+
+265
+00:35:40,780 --> 00:35:45,660
+<font face="Serif" size="18">Peu importe le champ visuel, que si on ne porte pas attention et.</font>
+
+266
+00:35:48,220 --> 00:35:58,300
+<font face="Serif" size="18">D'une façon contre latérale, c'est évidemment. Si on présente le stimulus à gauche, la plus forte réponse est à droite.</font>
+
+267
+00:35:59,820 --> 00:36:04,220
+<font face="Serif" size="18">Il y a d'autres études qui ont montré cette modulation là, même à des composantes plus précoces.</font>
+
+268
+00:36:07,420 --> 00:36:12,220
+<font face="Serif" size="18">Qu'on appelle la N75 ou la C1, ça dépend de d'où on se situe.</font>
+
+269
+00:36:12,540 --> 00:36:17,050
+<font face="Serif" size="18">Mais c'est des. Dans quelle école de pensée qu'on est là dans quel paradigme?</font>
+
+270
+00:36:17,610 --> 00:36:21,490
+<font face="Serif" size="18">Mais essentiellement, ce sont des composantes qui sont observables à.</font>
+
+271
+00:36:22,130 --> 00:36:35,930
+<font face="Serif" size="18">Entre 60 et 80 millisecondes. Donc on peut moduler l'attention de ces deux là, de cette activité visuelle relativement précoce avec des.</font>
+
+272
+00:36:36,410 --> 00:36:41,130
+<font face="Serif" size="18">Des paradigmes de l'attention. Endogène ou exogène?</font>
+
+273
+00:36:44,370 --> 00:36:48,010
+<font face="Serif" size="18">Évidemment, ce que je viens de dire, c'est. C'est le.</font>
+
+274
+00:36:48,730 --> 00:36:57,970
+<font face="Serif" size="18">C'est ce qui est le plus dur à démontrer. C'est à dire que si l'attention, Cette influence là top-down, vient influencer des processus très,</font>
+
+275
+00:36:58,250 --> 00:37:04,810
+<font face="Serif" size="18">très précoces, l'attention va venir aussi influencer des processus plus tardifs, là.</font>
+
+276
+00:37:07,410 --> 00:37:12,330
+<font face="Serif" size="18">À peu près de la même façon, mais qui impliquent aussi la prise de décision.</font>
+
+277
+00:37:13,210 --> 00:37:18,940
+<font face="Serif" size="18">Donc, c'est pas. C'est pas des c'est pas des euh des des mécanismes qui sont indépendants de l'attention.</font>
+
+278
+00:37:20,820 --> 00:37:23,260
+<font face="Serif" size="18">Et probablement la composante. Si vous.</font>
+
+279
+00:37:24,620 --> 00:37:33,700
+<font face="Serif" size="18">Si le J'ai l'air de l'attention vous intéresse, La composante la plus utilisée maintenant, actuellement, c'est ce qu'on appelle la note n2, PC.</font>
+
+280
+00:37:35,180 --> 00:37:39,900
+<font face="Serif" size="18">Donc, c'est le même principe, vous avez des, des des cibles, des distracteurs,</font>
+
+281
+00:37:41,500 --> 00:37:47,460
+<font face="Serif" size="18">et la réponse va être maximale dans l'hémisphère contre latéral à la cible.</font>
+
+282
+00:37:48,900 --> 00:37:55,380
+<font face="Serif" size="18">Et on peut faire la soustraction des deux hémisphères pour avoir cette cette fameuse composante</font>
+
+283
+00:37:56,420 --> 00:38:01,980
+<font face="Serif" size="18">qu'on appelle la N2 PC parce qu'elle se produit un petit peu plus tardivement de 200.</font>
+
+284
+00:38:03,500 --> 00:38:11,540
+<font face="Serif" size="18">Ça dépend des des tâches, là, autour de 200 millisecondes dans la partie postérieure, contrôle ou latéral.</font>
+
+285
+00:38:12,140 --> 00:38:18,050
+<font face="Serif" size="18">Donc, Et donc ça, c'est une étude en fait.</font>
+
+286
+00:38:18,730 --> 00:38:24,330
+<font face="Serif" size="18">Donc ça, c'est la N2. PC. Mais pourquoi j'ai mis cette étude ci sur un diapo?</font>
+
+287
+00:38:24,730 --> 00:38:30,130
+<font face="Serif" size="18">C'est que c'est intéressant parce que vous avez deux mécanismes.</font>
+
+288
+00:38:31,570 --> 00:38:41,010
+<font face="Serif" size="18">On voit ici très bien, c'est une étude avec la magnéto encéphalogramme et encore une fois avec une tâche classique de cible à gauche,</font>
+
+289
+00:38:41,330 --> 00:38:52,170
+<font face="Serif" size="18">à droite, parmi des distracteurs. Et pour augmenter votre votre perception ou votre performance, l'attention peut faire deux choses.</font>
+
+290
+00:38:54,050 --> 00:39:04,970
+<font face="Serif" size="18">Elle peut accentuer le traitement de l'activité, les réseaux neuronaux impliqués dans le traitement du stimulus cible.</font>
+
+291
+00:39:05,850 --> 00:39:10,290
+<font face="Serif" size="18">Donc, elle peut augmenter la réponse, mais elle peut aussi.</font>
+
+292
+00:39:11,370 --> 00:39:17,320
+<font face="Serif" size="18">Pour augmenter votre performance, diminuer la réponse des distracteurs.</font>
+
+293
+00:39:18,960 --> 00:39:23,360
+<font face="Serif" size="18">Donc, on a tendance et la plupart. Il y a un biais dans la littérature, on.</font>
+
+294
+00:39:24,040 --> 00:39:28,320
+<font face="Serif" size="18">Quand on s'intéresse à l'attention sur le traitement sensoriel,</font>
+
+295
+00:39:29,560 --> 00:39:35,560
+<font face="Serif" size="18">on regarde cette amplification là de la réponse qui est, qui est, qui est un mécanisme vraiment important,</font>
+
+296
+00:39:36,120 --> 00:39:45,200
+<font face="Serif" size="18">puis qu'on le voit à tous les niveaux, dans les arts visuels précoces particulièrement, puis et dans les aires de plus haut niveau.</font>
+
+297
+00:39:46,000 --> 00:39:49,560
+<font face="Serif" size="18">V2, V3, V4, V5, etc.</font>
+
+298
+00:39:50,720 --> 00:39:53,040
+<font face="Serif" size="18">Mais il y a un autre mécanisme qu'il ne faut pas oublier, c'est.</font>
+
+299
+00:39:55,280 --> 00:40:00,560
+<font face="Serif" size="18">Donc vous pouvez être distrait ou vous pouvez en fait avoir une mauvaise performance à une tâche.</font>
+
+300
+00:40:01,120 --> 00:40:05,280
+<font face="Serif" size="18">Si ce qui attire votre attention, ce n'est pas la cible, mais plutôt les distracteurs.</font>
+
+301
+00:40:06,240 --> 00:40:17,670
+<font face="Serif" size="18">Donc, pour une performance optimale, il faut un mécanisme qui augmente la cible, le signal de la cible et qui diminue le signal du distracteurs.</font>
+
+302
+00:40:18,470 --> 00:40:28,510
+<font face="Serif" size="18">C'est ce qu'on voit ici en fait. Pis là, bon, c'est pas important les les, les détails, là, mais en rouge, en fait, c'est la cible.</font>
+
+303
+00:40:29,870 --> 00:40:37,430
+<font face="Serif" size="18">On peut imaginer ici la cible à gauche dans le champ, l'EMI, champ visuel gauche, et on a une augmentation de la réponse.</font>
+
+304
+00:40:38,270 --> 00:40:44,790
+<font face="Serif" size="18">Ça, c'est une modélisation dans les aires visuelles précoces et les distracteurs qui sont modélisés ici en vert.</font>
+
+305
+00:40:46,350 --> 00:40:53,230
+<font face="Serif" size="18">Donc, il n'y avait pas la bonne orientation. Il y a une diminution de la réponse, et les deux ensemble.</font>
+
+306
+00:40:53,870 --> 00:41:04,590
+<font face="Serif" size="18">Il s'avère que c'est des mécanismes qu'on pense distincts, parallèles qui, grâce, comme on l'a vu, aux boucles récurrentes du feedback sur V1,</font>
+
+307
+00:41:06,350 --> 00:41:14,690
+<font face="Serif" size="18">vont en même temps, mais d'une façon parallèle, Activer le stimulus cible et inhiber les stimulus distracteurs.</font>
+
+308
+00:41:18,290 --> 00:41:22,250
+<font face="Serif" size="18">Donc un mot sur maintenant les réseaux neuronaux.</font>
+
+309
+00:41:24,410 --> 00:41:27,650
+<font face="Serif" size="18">Donc à gauche, on a ici une figure tirée d'une.</font>
+
+310
+00:41:30,970 --> 00:41:43,120
+<font face="Serif" size="18">Dune d'un article de revue de Posner. Et c'est pas mal le modèle qui était dominant jusque jusque dans les années 2000.</font>
+
+311
+00:41:43,450 --> 00:41:46,730
+<font face="Serif" size="18">Là, Posner distinguait trois systèmes.</font>
+
+312
+00:41:47,850 --> 00:41:53,290
+<font face="Serif" size="18">Donc le système de. Je vois pas bien sur d'alerte.</font>
+
+313
+00:41:55,330 --> 00:41:57,690
+<font face="Serif" size="18">Donc qui est plus associé a.</font>
+
+314
+00:42:00,610 --> 00:42:12,000
+<font face="Serif" size="18">À la vigilance, si vous voulez, le système d'orientation, donc qui est le déploiement volontaire de son orientation à gauche ou à droite dans les.</font>
+
+315
+00:42:12,480 --> 00:42:17,520
+<font face="Serif" size="18">Les tâches classiques de Posner et un autre système qui est exécutif.</font>
+
+316
+00:42:20,360 --> 00:42:25,160
+<font face="Serif" size="18">En fait, l'orientation peut être volontaire ou involontaire, exogène ou endogène.</font>
+
+317
+00:42:25,880 --> 00:42:35,880
+<font face="Serif" size="18">Exécutif qui est plus un système endogène qui, sans grande surprise, inclut surtout les régions frontales.</font>
+
+318
+00:42:37,720 --> 00:42:42,800
+<font face="Serif" size="18">Ce modèle là est maintenant a été ce qu'on voit plus dans les dernières années.</font>
+
+319
+00:42:43,080 --> 00:42:58,240
+<font face="Serif" size="18">C'est deux systèmes. Un et séparé selon ce qu'on appelle le réseau attentionnel dorsal et le réseau attentionnel ventral.</font>
+
+320
+00:43:01,760 --> 00:43:10,670
+<font face="Serif" size="18">Et grosso modo, ça reprend essentiellement les mêmes structures que Posner avait avait proposé.</font>
+
+321
+00:43:12,070 --> 00:43:15,830
+<font face="Serif" size="18">Mais ici c'est un article de revue.</font>
+
+322
+00:43:16,310 --> 00:43:20,310
+<font face="Serif" size="18">Je vais le mettre dans les lectures optionnelles parce qu'il est très long mais exhaustif,</font>
+
+323
+00:43:21,030 --> 00:43:26,910
+<font face="Serif" size="18">mais qui fait un bon portrait de l'état actuel des réseaux neuronaux impliqués dans l'attention.</font>
+
+324
+00:43:29,270 --> 00:43:30,390
+<font face="Serif" size="18">Et c'est un peu la même logique.</font>
+
+325
+00:43:30,790 --> 00:43:40,190
+<font face="Serif" size="18">Donc le système dorsal serait peut être un petit peu plus impliqué dans le déploiement endogène volontaire de l'attention,</font>
+
+326
+00:43:40,830 --> 00:43:47,070
+<font face="Serif" size="18">alors que dans le cas du système ventral, c'est peut être un petit peu plus exogène.</font>
+
+327
+00:43:48,550 --> 00:43:53,430
+<font face="Serif" size="18">Bien que la distinction, elle, est davantage pédagogique.</font>
+
+328
+00:43:54,310 --> 00:43:59,310
+<font face="Serif" size="18">Dans les faits, les deux systèmes se parlent. Il y a une contribution différentielle selon la situation,</font>
+
+329
+00:44:01,150 --> 00:44:09,210
+<font face="Serif" size="18">l'importance ou la signification du d'un objet parmi dans une scène par exemple, ou parmi parmi d'autres.</font>
+
+330
+00:44:14,450 --> 00:44:19,050
+<font face="Serif" size="18">Donc toutes ces interactions là de endogènes exogènes.</font>
+
+331
+00:44:19,850 --> 00:44:26,210
+<font face="Serif" size="18">Encore une fois, je Je passe très vite parce que. Allez voir la conférence de Mathieu, puis.</font>
+
+332
+00:44:28,530 --> 00:44:36,730
+<font face="Serif" size="18">Vous allez avoir un très bel aperçu des. De l'indépendance et de l'interdépendance des deux systèmes.</font>
+
+333
+00:44:38,290 --> 00:44:44,090
+<font face="Serif" size="18">Euh, là, une étude plus récente, j'avais surtout des vieilles études, là, dans mes affaires.</font>
+
+334
+00:44:44,370 --> 00:44:49,770
+<font face="Serif" size="18">Donc j'ai regardé, je me suis dit il faudrait bien que je dise un mot sur des études plus récentes, puis je suis tombé là dessus.</font>
+
+335
+00:44:52,250 --> 00:45:00,090
+<font face="Serif" size="18">Et pourquoi je vous en parle? C'est con parce que c'est pas souvent qu'on qu'on qu'on s'intéresse à la l'Attention interne,</font>
+
+336
+00:45:00,970 --> 00:45:07,200
+<font face="Serif" size="18">c'est souvent étudié avec des paradigmes expérimentaux, externes et.</font>
+
+337
+00:45:07,960 --> 00:45:14,280
+<font face="Serif" size="18">Et ici, dans cette étude, si on examine si la tension interne, c'est à dire celle qui est,</font>
+
+338
+00:45:15,120 --> 00:45:20,600
+<font face="Serif" size="18">qui est dirigée vers des des éléments en mémoire de travail visuel,</font>
+
+339
+00:45:21,360 --> 00:45:27,320
+<font face="Serif" size="18">dans ce cas, ici, est ce que pour certains éléments en mémoire visuelle, est ce que c'est.</font>
+
+340
+00:45:27,960 --> 00:45:38,840
+<font face="Serif" size="18">Ça vient moduler le traitement sensoriel de la même façon que pourrait le faire l'attention externe d'un d'un item parmi d'autres dans l'espace.</font>
+
+341
+00:45:40,360 --> 00:45:47,440
+<font face="Serif" size="18">On le sait, ça va venir amplifier le signal. Mais est ce que Est ce que c'est la même chose pour l'attention interne?</font>
+
+342
+00:45:48,200 --> 00:45:51,480
+<font face="Serif" size="18">Donc c'est c'est une question de recherche intéressante je trouve.</font>
+
+343
+00:45:53,360 --> 00:45:56,480
+<font face="Serif" size="18">Et et le paradigme en fait ici, il est.</font>
+
+344
+00:45:59,480 --> 00:46:08,620
+<font face="Serif" size="18">Pour tester la tension interne, ce qu'on fait, c'est qu'on présente Un stimulus, donc un réseau de fréquences spatiales rouges et bleues.</font>
+
+345
+00:46:10,380 --> 00:46:13,940
+<font face="Serif" size="18">Et ensuite on demande aux participants.</font>
+
+346
+00:46:15,620 --> 00:46:18,060
+<font face="Serif" size="18">On donne un caillou. ICI c'est couleur bleue.</font>
+
+347
+00:46:18,700 --> 00:46:33,340
+<font face="Serif" size="18">Et donc la personne doit se remémorer ou porter attention à l'élément ou stimulus bleu qui vient d'être présenté Pour l'attention externe.</font>
+
+348
+00:46:33,900 --> 00:46:38,900
+<font face="Serif" size="18">Mais ça, c'est le paradigme habituel. On présente un indice qui est bleu, c'est.</font>
+
+349
+00:46:39,300 --> 00:46:45,980
+<font face="Serif" size="18">Donc ça veut dire attention, je vais te présenter des stimuli, puis tu dois porter attention au bleu.</font>
+
+350
+00:46:46,260 --> 00:46:50,020
+<font face="Serif" size="18">Donc on présente le cube. Ensuite, on présente les deux stimuli.</font>
+
+351
+00:46:51,540 --> 00:46:58,900
+<font face="Serif" size="18">On regarde toujours dans le centre, mais on porte attention d'une façon endogène, là, au stimulus bleu.</font>
+
+352
+00:46:59,660 --> 00:47:05,520
+<font face="Serif" size="18">Donc, c'est un petit peu comme ça qu'on vient à dissocier les deux types d'attention et ce qu'on a mesuré.</font>
+
+353
+00:47:07,320 --> 00:47:16,960
+<font face="Serif" size="18">Donc, c'était une étude. Donc on a mesuré l'activité électrique, On a mesuré spécifiquement ici les oscillations alpha.</font>
+
+354
+00:47:17,960 --> 00:47:20,200
+<font face="Serif" size="18">Souvenez vous, la semaine passée,</font>
+
+355
+00:47:20,560 --> 00:47:30,480
+<font face="Serif" size="18">je vous ai parlé des oscillations alpha en vous disant une chose évidente que vous savez tous et toutes quand vous fermez vos yeux,</font>
+
+356
+00:47:31,560 --> 00:47:40,160
+<font face="Serif" size="18">il y a plus d'activité alpha dans votre cortex visuel que quand vous avez les yeux ouverts ou quand vous êtes attentif à un objet.</font>
+
+357
+00:47:41,840 --> 00:47:49,880
+<font face="Serif" size="18">Et donc cette désynchronisation là, Alpha, c'est très très connu dans le domaine de l'attention.</font>
+
+358
+00:47:50,440 --> 00:47:57,920
+<font face="Serif" size="18">Ce qu'on fait ici, c'est vous avez donc, si on porte attention, disons, la cible, c'est le le stimulus bleu.</font>
+
+359
+00:47:58,400 --> 00:48:03,430
+<font face="Serif" size="18">Donc dans les champs visuel droit bien dans l'hémisphère.</font>
+
+360
+00:48:04,150 --> 00:48:14,950
+<font face="Serif" size="18">Contrôle latéral Vous allez avoir une désynchronisation de l'alpha et de l'autre côté, puisque l'hémisphère n'a pas été stimulé,</font>
+
+361
+00:48:15,510 --> 00:48:21,110
+<font face="Serif" size="18">vous avez une augmentation le différentiel de l'alpha d'un hémisphère par rapport à l'autre.</font>
+
+362
+00:48:21,870 --> 00:48:28,270
+<font face="Serif" size="18">Donc ça, c'est un pattern hyper connu. Et ce qu'ils ont fait dans cette étude là,</font>
+
+363
+00:48:28,510 --> 00:48:37,190
+<font face="Serif" size="18">c'est qu'ils ont mesuré cette désynchronisation là et synchronisation de l'alpha selon la position des items,</font>
+
+364
+00:48:37,830 --> 00:48:42,630
+<font face="Serif" size="18">selon qu'on est en condition d'attention interne ou en condition d'attention externe.</font>
+
+365
+00:48:44,110 --> 00:48:56,150
+<font face="Serif" size="18">Et les résultats sont intéressants. Donc dans les deux cas, on a, on a cette cette activité antagoniste, si vous voulez, des oscillations alpha,</font>
+
+366
+00:48:57,590 --> 00:49:03,470
+<font face="Serif" size="18">OK, donc qui est dépendante de la localisation d'un item par par rapport à l'autre.</font>
+
+367
+00:49:05,470 --> 00:49:12,190
+<font face="Serif" size="18">La différence, c'est que ça dépend de la condition externe d'attention externe.</font>
+
+368
+00:49:13,110 --> 00:49:18,870
+<font face="Serif" size="18">Ce pattern d'activité là est corrélé à la performance comportementale, au temps de réaction.</font>
+
+369
+00:49:20,550 --> 00:49:29,470
+<font face="Serif" size="18">En l'occurrence. Par contre, dans la condition d'attention interne, ce pattern d'activation là était pas corrélé.</font>
+
+370
+00:49:30,950 --> 00:49:42,950
+<font face="Serif" size="18">Il n'y avait pas de changement significatif entre la désynchronisation et la synchronisation, puis il n'y avait pas de d'effet sur sur la performance.</font>
+
+371
+00:49:45,310 --> 00:49:47,190
+<font face="Serif" size="18">Donc c'est une étude qui est intéressante.</font>
+
+372
+00:49:48,070 --> 00:49:57,590
+<font face="Serif" size="18">Ce que ça montre, c'est quand on a des items dans notre tête, un à côté de l'autre, en mémoire à court terme ou en mémoire de travail.</font>
+
+373
+00:49:58,760 --> 00:50:09,400
+<font face="Serif" size="18">Il semble que leur position soit quand même fonctionnellement utile pour pour.</font>
+
+374
+00:50:10,320 --> 00:50:15,640
+<font face="Serif" size="18">Pour le cerveau. C'est à dire que la mémoire de travail va utiliser l'espace comme un principe</font>
+
+375
+00:50:16,120 --> 00:50:23,480
+<font face="Serif" size="18">d'organisation quand même fonctionnel pour stocker et récupérer les événements.</font>
+
+376
+00:50:25,680 --> 00:50:29,240
+<font face="Serif" size="18">Un petit peu comme cette méthode des lieux qu'on.</font>
+
+377
+00:50:31,280 --> 00:50:34,680
+<font face="Serif" size="18">Une technique mnémotechnique pour. Pour se.</font>
+
+378
+00:50:35,320 --> 00:50:40,240
+<font face="Serif" size="18">Une technique de mémoire. Mémo technique.</font>
+
+379
+00:50:40,640 --> 00:50:46,960
+<font face="Serif" size="18">Moi c'est ça. Pour se souvenir le plus possible d'un nombre d'items, on les place dans des endroits différents d'un lieu connu.</font>
+
+380
+00:50:47,680 --> 00:50:55,560
+<font face="Serif" size="18">Ben là, c'est un petit peu comme ça. Donc on a quand même une représentation en mémoire de travail qui est spatialement organisée.</font>
+
+381
+00:50:57,000 --> 00:51:00,630
+<font face="Serif" size="18">Et ça, c'est ça. Ça, c'est corrélé aussi à la performance.</font>
+
+382
+00:51:02,190 --> 00:51:10,790
+<font face="Serif" size="18">Sauf que c'est pas le même mécanisme que la tension externe qui fait un petit peu de cette organisation spatiale là, mais qui, en plus, donne.</font>
+
+383
+00:51:18,550 --> 00:51:22,030
+<font face="Serif" size="18">Un levier, là, pour pour le traitement sensoriel.</font>
+
+384
+00:51:23,710 --> 00:51:30,430
+<font face="Serif" size="18">Là, en mémoire interne, on n'a pas d'informations sensorielles en tant que tel à traiter en ligne, c'est.</font>
+
+385
+00:51:31,190 --> 00:51:35,790
+<font face="Serif" size="18">Elle est absente et donc ça fait du sens que c'est pas exactement les mêmes, les mêmes mécanismes.</font>
+
+386
+00:51:41,630 --> 00:51:45,230
+<font face="Serif" size="18">Voilà, donc je vais mettre aussi l'article dans les lectures optionnelles.</font>
+
+387
+00:51:50,430 --> 00:51:54,070
+<font face="Serif" size="18">Et je voulais aussi Bon, je voulais en parler peut être un peu plus, mais.</font>
+
+388
+00:51:55,930 --> 00:52:10,210
+<font face="Serif" size="18">Euh Mario qui va donner le cours sur passe à l'aqua qui qui est un prof aussi en neuropsychologie qui va donner le cours sur les interactions humains.</font>
+
+389
+00:52:10,610 --> 00:52:15,410
+<font face="Serif" size="18">Machine va parler des concepts de fatigue.</font>
+
+390
+00:52:19,210 --> 00:52:24,930
+<font face="Serif" size="18">Charge mentale, charge cognitive, fatigue cognitive.</font>
+
+391
+00:52:25,810 --> 00:52:30,090
+<font face="Serif" size="18">Et donc je vais passer très vite ici parce que ça va revenir.</font>
+
+392
+00:52:31,410 --> 00:52:34,850
+<font face="Serif" size="18">Mais je voulais quand même vous parler du paradigme de double tâche.</font>
+
+393
+00:52:35,690 --> 00:52:39,490
+<font face="Serif" size="18">C'est un paradigme qu'on utilise beaucoup en sciences cognitives, en neuropsychologie.</font>
+
+394
+00:52:42,850 --> 00:52:53,250
+<font face="Serif" size="18">Et aussi dans le domaine de tout ce qui est facteur humain ergonomie cognitive pour euh,</font>
+
+395
+00:52:53,570 --> 00:53:00,210
+<font face="Serif" size="18">pour comprendre en fait, les, Les comment Plusieurs tâches en même temps.</font>
+
+396
+00:53:01,450 --> 00:53:10,650
+<font face="Serif" size="18">Disons le minimum qui est. Deux hommes viennent de se disputer des ressources cognitives limitées, en l'occurrence l'attention.</font>
+
+397
+00:53:12,730 --> 00:53:20,210
+<font face="Serif" size="18">Comme on l'a déjà dit et comme on dit souvent. Donc, l'exemple est simple.</font>
+
+398
+00:53:20,650 --> 00:53:27,970
+<font face="Serif" size="18">On présente, on fait deux tâches en même temps. Puis on regarde l'interférence d'une sur l'autre.</font>
+
+399
+00:53:29,010 --> 00:53:29,770
+<font face="Serif" size="18">Parfois, il n'y a pas d'interférence.</font>
+
+400
+00:53:30,770 --> 00:53:35,810
+<font face="Serif" size="18">Par exemple, c'est très facile de, je ne sais pas moi, de, de compter à l'envers en faisant du vélo stationnaire.</font>
+
+401
+00:53:37,690 --> 00:53:46,610
+<font face="Serif" size="18">Mais si je vous demande de compter à l'envers en en écrivant un paragraphe sur ce que vous avez fait en fin de semaine,</font>
+
+402
+00:53:47,570 --> 00:53:51,050
+<font face="Serif" size="18">ça va devenir beaucoup plus difficile. Donc c'est encore.</font>
+
+403
+00:53:52,250 --> 00:54:06,040
+<font face="Serif" size="18">C'est comment cette ressource? Cette ou ces ressources attentionnelles viennent se se se se découper pour réaliser les tâches qu'on a à faire.</font>
+
+404
+00:54:07,440 --> 00:54:14,400
+<font face="Serif" size="18">Donc c'est souvent utilisé. Donc pourquoi je vous en parle? Donc en neuropsychologie, on utilise ça aussi pour le vieillissement par exemple,</font>
+
+405
+00:54:15,120 --> 00:54:19,960
+<font face="Serif" size="18">en vieillissant, on a beaucoup plus de difficultés de faire des doubles tâches.</font>
+
+406
+00:54:21,160 --> 00:54:27,240
+<font face="Serif" size="18">C'est comme si une tâche venait occuper ou prendre toutes nos ressources ou presque.</font>
+
+407
+00:54:28,360 --> 00:54:31,640
+<font face="Serif" size="18">Alors que quand on a une deuxième, ben là, il n'en reste plus beaucoup pis on est très mauvais.</font>
+
+408
+00:54:33,280 --> 00:54:38,120
+<font face="Serif" size="18">Donc ça, c'est commun en neuropsychologie du vieillissement, par exemple.</font>
+
+409
+00:54:39,360 --> 00:54:40,000
+<font face="Serif" size="18">Là, je vous en parle ici,</font>
+
+410
+00:54:40,840 --> 00:54:46,560
+<font face="Serif" size="18">parce que c'est aussi utilisé comme mesure indirecte de la charge mentale ou la charge attentionnelle ou la charge cognitive.</font>
+
+411
+00:54:48,960 --> 00:54:53,340
+<font face="Serif" size="18">Il y a comme une confusion ou des distinctions, à tort ou à raison.</font>
+
+412
+00:54:54,180 --> 00:54:58,100
+<font face="Serif" size="18">Dans la littérature, la charge mentale, ça inclut souvent des dimensions affectives.</font>
+
+413
+00:54:59,020 --> 00:55:02,340
+<font face="Serif" size="18">Si on parle juste de processus cognitif, on va parler plus de charge cognitive.</font>
+
+414
+00:55:04,700 --> 00:55:10,820
+<font face="Serif" size="18">Et j'imagine que Mario va vous donner quelques exemples, mais moi, je vous en donne juste un ici, là, dans les.</font>
+
+415
+00:55:11,580 --> 00:55:18,340
+<font face="Serif" size="18">Il y a quelques décennies, on se posait quand même la question si parler au téléphone en voiture était dangereux, hein?</font>
+
+416
+00:55:19,500 --> 00:55:26,020
+<font face="Serif" size="18">Et donc vous avez ici une étude qui a été reprise par par d'autres,</font>
+
+417
+00:55:26,420 --> 00:55:32,540
+<font face="Serif" size="18">et même dans les regrets, dans la mise en place de réglementation de santé publique,</font>
+
+418
+00:55:33,900 --> 00:55:37,740
+<font face="Serif" size="18">où on prend des participants dans un simulateur de conduite en laboratoire,</font>
+
+419
+00:55:38,980 --> 00:55:46,220
+<font face="Serif" size="18">et ils doivent être attentifs à des feux de circulation et en même temps, ils doivent faire une autre tâche.</font>
+
+420
+00:55:46,620 --> 00:55:52,370
+<font face="Serif" size="18">Et dans l'étude, il y avait plusieurs conditions. Il y avait écouter la radio, Écouter un livre audio.</font>
+
+421
+00:55:55,290 --> 00:56:02,170
+<font face="Serif" size="18">Répéter des mots. Puis. Suivre une conversation téléphonique.</font>
+
+422
+00:56:03,490 --> 00:56:06,890
+<font face="Serif" size="18">Et quand donc il n'y avait pas d'interférences.</font>
+
+423
+00:56:07,650 --> 00:56:16,610
+<font face="Serif" size="18">Ou presque pas. Sauf pour la conversation téléphonique qui était de l'ordre de On était deux fois.</font>
+
+424
+00:56:17,810 --> 00:56:28,450
+<font face="Serif" size="18">Les performances étaient détériorées de l'ordre d'à peu près deux fois en double tâche pour détecter les signaux,</font>
+
+425
+00:56:30,130 --> 00:56:36,730
+<font face="Serif" size="18">en l'occurrence les, les, les arrêts, les feux rouges et les temps de réaction également.</font>
+
+426
+00:56:39,210 --> 00:56:48,890
+<font face="Serif" size="18">Et. Et dans cette étude là, si je me souviens bien, c'est pas une question évidemment, d'avoir son téléphone à l'oreille, c'est interdit par la loi.</font>
+
+427
+00:56:49,770 --> 00:56:58,340
+<font face="Serif" size="18">Puis on peut se demander c'est peut être parce que là t'es t'es plus dérangé pis donc on si on remet ça les mains libres, ça va être correct.</font>
+
+428
+00:56:59,540 --> 00:57:06,140
+<font face="Serif" size="18">Et dans l'étude en question, c'est le même effet que se soit porté à à l'oreille ou en main libre.</font>
+
+429
+00:57:06,900 --> 00:57:16,380
+<font face="Serif" size="18">Pourtant, on a le droit d'avoir un téléphone en main libre, là, mais il y a clairement une interférence sur notre capacité ensuite à être.</font>
+
+430
+00:57:19,300 --> 00:57:23,820
+<font face="Serif" size="18">Efficient ou performant à la conduite?</font>
+
+431
+00:57:25,100 --> 00:57:32,820
+<font face="Serif" size="18">Évidemment, ça dépend des contextes. Encore une fois, si vous êtes sur l'autoroute puis vous êtes plus en mode automatique de conduite,</font>
+
+432
+00:57:33,460 --> 00:57:36,580
+<font face="Serif" size="18">ben là vous pouvez clairement suivre la conversation,</font>
+
+433
+00:57:37,380 --> 00:57:41,300
+<font face="Serif" size="18">puis vous allez pouvoir faire les deux tâches en même temps, mais dans des conditions un petit peu plus.</font>
+
+434
+00:57:44,700 --> 00:57:49,260
+<font face="Serif" size="18">Challengeante, là, là, l'effet est vraiment significatif.</font>
+
