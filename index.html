@@ -493,6 +493,57 @@
     }
     .mascot-text { line-height: 1.35; color: var(--text-main); font-weight: 500; }
 
+    /* BANNIÈRE D'AVERTISSEMENT DE MISE À JOUR DU QUIZ (19 OCTOBRE 2026) */
+    .quiz-update-warning {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #fffbeb;
+      border: 2px solid #f59e0b;
+      border-left: 6px solid #d97706;
+      border-radius: 12px;
+      padding: 13px 16px;
+      margin-bottom: 12px;
+      color: #78350f;
+      box-shadow: 0 3px 10px rgba(245, 158, 11, 0.14);
+    }
+    body.dark-mode .quiz-update-warning {
+      background: rgba(245, 158, 11, 0.14);
+      border-color: rgba(245, 158, 11, 0.55);
+      border-left-color: #fbbf24;
+      color: #fef3c7;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    }
+    .quiz-update-warning-icon {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .quiz-update-warning-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .quiz-update-warning-title {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: #92400e;
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+    body.dark-mode .quiz-update-warning-title {
+      color: #fde68a;
+    }
+    .quiz-update-warning-text {
+      font-size: 0.87rem;
+      font-weight: 500;
+      line-height: 1.46;
+      color: #78350f;
+    }
+    body.dark-mode .quiz-update-warning-text {
+      color: #fef3c7;
+    }
+
     /* SECTION FILTER FLEX-WRAP */
     .filter-header-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
     .filter-header-title { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
@@ -3078,6 +3129,19 @@
          ======================================================================= -->
     <section class="quiz-pane" id="quizPane">
       <div class="quiz-content-wrap">
+
+        <!-- AVERTISSEMENT DE MISE À JOUR DU QUIZ (19 OCTOBRE 2026) -->
+        <div class="quiz-update-warning" id="quizUpdateWarning" role="alert">
+          <div class="quiz-update-warning-icon" aria-hidden="true">⚠️</div>
+          <div class="quiz-update-warning-content">
+            <div class="quiz-update-warning-title">
+              Avis du 19 octobre 2026 — Mise à jour du quiz en cours (attendue d'ici le 22 octobre 2026)
+            </div>
+            <div class="quiz-update-warning-text">
+              Une révision complète des banques de questions arrive d'ici quelques jours. D'ici là, veuillez noter que les questions actuelles peuvent contenir des erreurs, des incohérences ou des détails qui n'ont pas été vus en classe.
+            </div>
+          </div>
+        </div>
 
         <!-- BULLE D'ACCUEIL PÉDAGOGIQUE -->
         <div class="mascot-bubble" id="mascotBox">
