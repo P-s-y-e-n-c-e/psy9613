@@ -28,3 +28,35 @@ Ce document consigne les clarifications théoriques et organisationnelles publi�
   - Référence signalée : *A thalamocortical circuit encoding deviations from sensory history* (*Science*, DOI : `10.1126/science.aeg4720`), accessible via Sofia / Bibliothèques UQAM (en complément aux modèles d'apprentissage de McClelland).
 * **Créativité et raisonnement des modèles d'IA :**
   - Vidéo YouTube d'Adam Brown (Perimeter Institute) : *« Training sand to think »* (exploration des LLM et des systèmes multi-agents appliqués à la résolution de conjectures mathématiques).
+
+---
+
+## 3. Intervention de Michel Mercier — Séance 6 : Le cerveau prédictif (19 oct. 2026)
+
+* **Lien direct Moodle :** [`https://ena01.uqam.ca/mod/forum/discuss.php?d=503377`](https://ena01.uqam.ca/mod/forum/discuss.php?d=503377)
+* **Sujet :** `Réflexions sur le cerveau prédictif : somme d'activité neuronale, récursion du bruit et limites du concept d'attention`
+* **Statut :** Publié le lundi 19 octobre 2026 (vérifié dans le DOM Moodle : 11 paragraphes `<p>` distincts).
+* **Texte intégral publié :**
+
+> Bonjour à tous, voici quelques pistes de réflexion en amont du cours d'aujourd'hui sur le cerveau prédictif :
+>
+> **1. Somme d'activité neuronale et paradoxe de l'atténuation (de Lange et al., 2018)**
+>
+> Lorsque l'on mesure l'activité cérébrale globale (en IRMf ou MEG), on observe principalement une somme d'activité. Si un stimulus attendu génère moins d'activité globale, cela ne signifie pas nécessairement que la représentation est affaiblie : une hypothèse alternative est que l'attente permet justement d'inhiber ou de réduire le bruit neuronal environnant pour ne laisser actif que le sous-réseau strictement pertinent (affinement ou *sharpening*).
+>
+> Dans cette perspective, la baisse du signal macroscopique refléterait l'économie métabolique d'un tri réussi plutôt qu'une baisse de fidélité perceptive. À l'inverse, face à un stimulus inattendu, le système doit recruter davantage de ressources pour résoudre l'incertitude et mettre à jour son modèle, ce qui fait grimper la somme d'activité mesurée.
+>
+> **2. Boucle de rétroaction et amplification du bruit (cerveau vs IA générative)**
+>
+> Si la perception repose sur une intégration continue entre les prédictions descendantes (*top-down*) et le signal sensoriel ascendant (*bottom-up*), il existe un risque structurel : celui qu'un bruit initial soit réinjecté dans la boucle et amplifié de manière récursive jusqu'à produire une hallucination ou une dérive.
+>
+> On observe d'ailleurs un phénomène analogue dans les grands modèles de langage (LLM) lors de l'auto-bavardage ou de l'entraînement récursif sur données synthétiques (*model collapse*) : lorsque le système s'alimente de ses propres prédictions sans ancrage externe fort, les erreurs s'accumulent et le signal se dégrade. Chez l'humain, ce sont l'action motrice et la friction physique avec l'environnement réel qui semblent jouer le rôle de garde-fou pour briser cette récursion et recalibrer le modèle interne.
+>
+> **3. Déconstruire le mot « attention » au profit de mécanismes de circuit**
+>
+> Dans le langage courant, on traite souvent l'attention comme une faculté unifiée ou une forme de volonté consciente (*willpower*), ce qui peut s'avérer culpabilisant lorsque cette régulation fait défaut (comme dans le TDAH). Or, à l'échelle computationnelle et neurobiologique, ce que l'on regroupe sous le terme d'« attention » correspond plutôt à un ensemble de mécanismes d'optimisation et de pondération du gain (filtrage du rapport signal/bruit, allocation métabolique, neuromodulation).
+>
+> De la même manière qu'en apprentissage profond (*deep learning*) le mécanisme d'attention désigne un calcul matriciel de pondération contextuelle sans faire appel à un homoncule, gagnerait-on en précision théorique et clinique à décomposer ce terme générique en processus de régulation distincts ?
+>
+> Au plaisir d'en discuter tout à l'heure en classe !
+
