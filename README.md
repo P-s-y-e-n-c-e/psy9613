@@ -113,8 +113,12 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf) *(67 Ko)*
 
 ### 📖 Semaine 6 (19 oct.) — Le cerveau prédictif
-* **Lecture obligatoire :**
+* **Diapositives du cours :**
+  * [Cours 5 - Le cerveau prédictif PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%205%20-%20Le%20cerveau%20pr%C3%A9dictif%20PSY9613-2026.pdf) *(Pierre Poirier — 69 diapos, 2.50 Mo)*
+  * [Cv prédictif_perception visuelle.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cv%20pr%C3%A9dictif_perception%20visuelle.pdf) *(Dave Saint-Amour — 17 diapos, 4.14 Mo)*
+* **Lectures obligatoires :**
   * [Bottemanne et al. (2023) - Lesprit prédictif_Introduction à la théorie du cerveau bayésien.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_obligatoires/Bottemanne%20et%20al.%20(2023)%20-%20Lesprit%20pr%C3%A9dictif_Introduction%20%C3%A0%20la%20th%C3%A9orie%20du%20cerveau%20bay%C3%A9sien.pdf) *(1.02 Mo)*
+  * [de Lange (2018)_How Do Expectations Shape Perception.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_obligatoires/de%20Lange%20(2018)_How%20Do%20Expectations%20Shape%20Perception.pdf) *(de Lange, Heilbron & Kok, 2018 — 16 pages, 3.89 Mo)*
 * **Lectures optionnelles :**
   * [Quelques explications sur les textes.txt](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Quelques%20explications%20sur%20les%20textes.txt) *(Guide pédagogique des professeurs pour l'ordre de lecture)*
   * [Sprevak  Smith (2023) - An Introduction to predictive processing models of perception and decision making.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Sprevak%20%20Smith%20(2023)%20-%20An%20Introduction%20to%20predictive%20processing%20models%20of%20perception%20and%20decision%20making.pdf) *(645 Ko)*
@@ -124,8 +128,9 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 
 ### 📖 Semaine 7 (26 oct.) — Raisonnement & Prise de décision
 * **Lecture obligatoire :**
-  * [Evans (2010) Intuition and reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_obligatoires/Evans%20(2010)%20Intuition%20and%20reasoning.pdf) *(279 Ko)*
-* **Lecture optionnelle :**
+  * [Ackerman  Thompson (2017) Meta-reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_obligatoires/Ackerman%20%20Thompson%20(2017)%20Meta-reasoning.pdf) *(Rakefet Ackerman & Valerie A. Thompson, 2017, Trends in Cognitive Sciences — 11 pages, 1.51 Mo)*
+* **Lectures optionnelles :**
+  * [Evans (2010) Intuition and reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_optionnelles/Evans%20(2010)%20Intuition%20and%20reasoning.pdf) *(279 Ko — reclassé en lecture optionnelle sur Moodle le 19 oct. 2026)*
   * [Todd  Gigerenzer (2007) Environments that make us smart.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_optionnelles/Todd%20%20Gigerenzer%20(2007)%20Environments%20that%20make%20us%20smart.pdf) *(89 Ko)*
 
 ### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
