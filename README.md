@@ -65,6 +65,8 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * [PSY9613-03_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
 * [PSY9613-03_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-03_Transitions.md) — Transitions Séance 3 calibrées pour ENCORA.
 * [Attention_psy9613_diapos.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Attention_psy9613_diapos.pdf) — Diapositives de la Capsule asynchrone sur l'attention (Semaine 4, 5 oct.) *(5.8 Mo)*
+* [Cours 5 - Le cerveau prédictif PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%205%20-%20Le%20cerveau%20pr%C3%A9dictif%20PSY9613-2026.pdf) — Diapositives officielles de la Séance 6 (19 oct., partie 1 : Le cerveau prédictif) par Pierre Poirier *(69 diapos, 2.5 Mo)*
+* [Cv prédictif_perception visuelle.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cv%20pr%C3%A9dictif_perception%20visuelle.pdf) — Diapositives officielles de la Séance 6 (19 oct., partie 2 : Perception visuelle & attention) par Dave Saint-Amour *(17 diapos, 4.14 Mo)*
 
 
 ### 📖 Semaine 1 (14 sept.) — Présentation et introduction

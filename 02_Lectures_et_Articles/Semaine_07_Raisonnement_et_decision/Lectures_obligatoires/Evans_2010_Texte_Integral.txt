@@ -1,0 +1,1627 @@
+--- PAGE 1 ---
+Psychological Inquiry
+ISSN: 1047-840X (Print) 1532-7965 (Online) Journal homepage: www.tandfonline.com/journals/hpli20
+Intuition and Reasoning: A Dual-Process
+Perspective
+Jonathan St B T Evans
+To cite this article: Jonathan St B T Evans (2010) Intuition and Reasoning: A Dual-Process
+Perspective, Psychological Inquiry, 21:4, 313-326, DOI: 10.1080/1047840X.2010.521057
+To link to this article:  https://doi.org/10.1080/1047840X.2010.521057
+Published online: 03 Dec 2010.
+Submit your article to this journal 
+Article views: 8891
+View related articles 
+Citing articles: 72 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=hpli20
+
+
+--- PAGE 2 ---
+Psychological Inquiry, 21: 313–326, 2010
+Copyright C⃝Taylor & Francis Group, LLC
+ISSN: 1047-840X print / 1532-7965 online
+DOI: 10.1080/1047840X.2010.521057
+Intuition and Reasoning: A Dual-Process Perspective
+Jonathan St B T Evans
+School of Psychology, University of Plymouth, Plymouth, England
+A lay deﬁnition of intuition holds that it involves immediate apprehension in the
+absence of reasoning. From a more technical point of view, I argue also that intuition
+should be seen as the contrastive of reasoning, corresponding roughly to the dis-
+tinction between Type 1 (intuitive) and Type 2 (reﬂective) processes in contemporary
+dual process theories of thinking. From this perspective, we already know a great
+deal about intuition: It is quick, provides feelings of conﬁdence, can reﬂect large
+amounts of information processing, and is most likely to provide accurate judgments
+when based on relevant experiential learning. Unlike reasoning, intuition is low ef-
+fort and does not compete for central working memory resources. It provides default
+responses which may—or often may not—be intervened upon with high effort, reﬂec-
+tive reasoning. Intuition has, however, been blamed for a range of cognitive biases in
+the psychological literatures on reasoning and decision making. The evidence indi-
+cates that with novel and abstract problems, not easily linked to previous experience,
+intervention with effortful reasoning is often required to avoid such biases. Hence,
+although it seems that intuition dominates reasoning most of the time—both in the
+laboratory and the real world—it can indeed be a false friend.
+Intuition . . . Immediate apprehension by the mind
+without the intervention of reasoning. — Oxford En-
+glish Dictionary
+The lay deﬁnition of intuition takes us some of the
+way toward ﬁnding the technical meaning needed for
+cognitive psychological study. Intuition is indeed in
+some sense immediate in that it is not preceded by any
+conscious process of reﬂective thinking. I ﬁnd it most
+interesting that the Oxford English Dictionary deﬁnes
+intuition in part by the absence of something – a pro-
+cess of reasoning. A contrast between two such kinds
+of thinking has been made repeatedly by philosophers
+and psychologists for centuries, often writing in ig-
+norance of the relevant work of others (Frankish &
+Evans, 2009). Many terms are used, but in essence the
+idea is that one kind of thinking is slow and reﬂective,
+whereas the other is quick and intuitive. Sometimes
+the conscious nature of the former is emphasised, but
+intuitions are not actually unconscious, as they often
+manifest as feelings. What is apparently not conscious
+about them, however, is any experience of where they
+come from and how they are justiﬁed.
+Like the Oxford English Dictionary, I believe we
+can only hope to ﬁnd a useful understanding of intuition
+by considering it in combination with its contrastive:
+reasoning. I use the term reasoning here in a restric-
+tive sense of slow, reﬂective, deliberative and goal-
+oriented thinking. I avoid the term conscious in this
+deﬁnition for reasons that become clear later. In terms
+of modern psychology, two kinds of thinking corre-
+sponds with a family of dual-process theories that have
+sprung up across many ﬁelds of psychology, including
+the study of learning, memory, attention, social cog-
+nition, thinking, reasoning, and decision making (e.g.,
+Epstein, 1994; Evans & Over, 1996; Reber, 1993; Slo-
+man, 1996; Smith & DeCoster, 2000; Stanovich, 1999).
+A recent review of a number of these theories and asso-
+ciated empirical research is provided by Evans (2008).
+In the tradition observed by Frankish and Evans (2009),
+however, many of these theories have been developed
+independently and without cross-reference. Neverthe-
+less, they all draw upon a broadly similar distinction
+between two types of mental process, which we can
+summarize as follows:
+Type 1 process: fast, intuitive, high capacity
+Type 2 process: slow, reﬂective, low capacity
+Even with this minimal level of description, we see
+that we have now a technical addition to the lay mean-
+ing of the term intuition. Compared with Type 2 pro-
+cesses, Type 1 thinking can handle larger amounts of
+information or process it in parallel. Intuition and the
+closely related notion of insight have similarities with
+perception, as many authors have noted. It is both con-
+scious and unconscious in the same sense. For example,
+when we perceive a face or listen to a piece of music,
+we have a conscious experience that includes a repre-
+sentation of the object and accompanying emotional
+313
+
+
+--- PAGE 3 ---
+EVANS
+experiences. We have, however, no conscious experi-
+ence of the complex information processing that pre-
+cedes this experience. Indeed, we could not have such
+experience because the parallel and rapid processing
+that is required far exceeds the capacity of working
+memory, which seems to be the only part of the mind
+that is consciously accessible, at least in a cognitive
+sense. Intuition similarly has a product, which may be
+a judgement, action, or feeling of conﬁdence, but again
+without awareness of process.
+I use the term working memory here in the sense
+of a central and singular resource of limited capacity
+closely linked with executive and attentional functions.
+A working memory system of this kind is both implied
+by the large research program inspired by Baddeley and
+Hitch (1974; Baddeley, 2007) and the welter of ﬁnd-
+ings linking individual differences in working memory
+capacity with a host of cognitive functions (Barrett,
+Tugade, & Engle, 2004). (Working memory capacity
+is measured by the number of items that can be kept in
+short-term storage while performing a competing cog-
+nitive task.) Recently, dual-process researchers have
+been linking their deﬁnition of Type 2 processing to the
+involvement of this working memory system (Evans,
+2008) and a number of experimental manipulations in-
+tended to demonstrate dual processes either measure
+or manipulate working memory capacity, as I discuss
+next. So a tentative deﬁnition of intuition might link it
+with cognitive processes that do not require access to
+working memory. This is why it is fast, high capacity,
+and lacking consciousness of the underlying process.
+But if we are to look to dual-process theory for an an-
+swer to the problem of intuition, we must ﬁrst clarify
+some potential confusion in the current literature.
+Dual Processes and Modes: Is Intuition a
+Matter of Cognition or Personality?
+Recently (Evans, 2009, 2010) I have discussed a
+number of problems that have arisen in the interpre-
+tation of research on dual-processes. One issue is that
+true dual-process theories, which distinguish between
+two types of cognitive processing, can be confused with
+those that simply describe two modes of processing, for
+example, the holistic and analytic thinking styles that
+have been proposed to distinguish Eastern and Western
+cultures (Buchel & Norenzayan, 2009; Nisbett, Peng,
+Choi, & Norenzayan, 2001). Modes differ from types
+in several important ways. Whereas types of thinking
+are attributed to separate underlying cognitive mech-
+anisms, modes may simply reﬂect the operation of a
+single mechanism in different styles. Modes of think-
+ing can lie on a continuum and be malleable; they
+can relate to personality, culture, motivation, and sit-
+uation. The type hypothesis is much stronger: Type 1
+and 2 processes are discrete and fundamentally differ-
+ent. Thus researchers predict that cognitive ability re-
+lates to Type 2 but not Type 1 processing, that working
+memory loads or short time constraints will selectively
+affect Type 2 processing, and so on. Modes may be cul-
+ture and personality dependent, but types cannot be. In
+the large individual differences programme of Keith
+Stanovich (1999, 2010; Stanovich & West, 2000) it
+has emerged that type differences are related to cogni-
+tive ability, whereas modes of thinking are related to
+personality and cognitive style measures, such as the
+extensively researched Need for Cognition scale (Ca-
+cioppo & Petty, 1982). Rational action, as Stanovich
+(2009c, 2010) has recently argued, may need a combi-
+nation of the two: It requires not only sufﬁcient cog-
+nitive capacity but a disposition to approach problems
+with a rational thinking style.
+Now we may also speak of intuition as a personality
+trait, when we describe a person as “intuitive.” What
+does this mean, and how could this be reconciled with a
+dual process theory at the type level? I have argued re-
+cently that a number of dual-process theories of reason-
+ing and decision making have a structure that I describe
+as default-interventionist (e.g., Evans, 1989, 2006b;
+Kahneman & Frederick, 2002; Stanovich, 1999, 2010).
+Such theories assume a rapid Type 1 (intuitive) pro-
+cess provides a quick default solution to a problem,
+which may be either accepted or intervened upon with
+explicit Type 2 reasoning. When such intervention oc-
+curs, the default intuition may (or may not) be overrid-
+den. There is now neural imaging evidence to support
+this proposal. The brain appears to detect conﬂict when
+intuitive and reﬂective processes would deliver differ-
+ent judgments—in the anterior cingulate cortex—and
+when the default response is overridden, in the right
+lateral prefrontal cortex (De Neys, Vartanian, & Goel,
+2008; Goel & Dolan, 2003; Tsujii & Watanabee, 2009).
+There is also evidence from the social neuroscience lit-
+erature that distinct neural systems are responsible for
+implicit and explicit social judgments and that the for-
+mer are inhibited when the latter take control (Lieber-
+man, 2007, 2009).
+A question of contemporary interest in dual-process
+research is what determines the likelihood of inter-
+vention with Type 2 processing (Evans, 2009). Pos-
+sibilities include the amount of time available, pres-
+ence or absence of competing demands, motivation to
+think “rationally,” and feelings of conﬁdence in the
+initial intuition (Thompson, 2009). To this list we may
+certainly add dispositional thinking styles, related to
+personality. On this basis, a person who is “intuitive”
+might be unkindly described as lacking Need for Cog-
+nition or being deﬁcient in rational thinking disposi-
+tion (Stanovich, 2009c). This is because they rely on
+their initial feeling rather than checking it out with
+explicit reasoning. But this negative spin presupposes
+that Type 2 thinking is in some sense superior to Type
+1 processing. I would suggest that authors making this
+314
+
+
+--- PAGE 4 ---
+INTUITION AND REASONING
+assumption have generally been focused on experimen-
+tal reasoning and decision tasks that are abstract and
+novel in nature, requiring Type 2 reasoning. Other au-
+thors have claimed that implicit processing may be nor-
+mal and effective when problems are complex in nature
+(Berry & Dienes, 1993; Reber, 1993) or when people
+already have relevant experience and expertise (Klein,
+1999; Reyna, 2004). More controversially, some have
+claimed that reliance on “gut feelings” and uncon-
+scious processing is generally advantageous (Dijkster-
+huis, Bos, Nordgren, & von Baaren, 2006; Gigerenzer,
+2007; Gladwell, 2005).
+Frederick (2005) devised the Cognitive Reﬂection
+Test comprised of just three deceptively simple ques-
+tions. Each had an intuitively suggested wrong answer
+and a correct answer that could be quite easily found
+with a little reﬂective reasoning. An example is, “If it
+takes 5 machines 5 minutes to make 5 widgets, how
+long would it take 100 machines to make 100 widgets?
+minutes.” This phrasing of this problem primes
+the intuitive error of “100 minutes,” whereas the cor-
+rect answer (5 min) requires only the simplest numer-
+ical reasoning. In spite of this, people of high IQ are
+very prone to make the intuitive error on these prob-
+lems. For example, Harvard undergraduates average
+only 1.43 of 3 correct, and only 20% managed to solve
+all three. Moreover, Frederick discovered that intuitive
+errors were related to impulsive personality traits. Peo-
+ple getting these wrong were, for example, more likely
+to say they would pay Amazon for next-day delivery
+rather than wait a couple days for free shipping.
+The Cognitive Reﬂection Test is one of many tasks
+used in the cognitive literature on reasoning and deci-
+sion making that indicates that intuition can be false
+friend. Intuitive responses feel right, but that does not
+mean that they are right. The relation between impul-
+sivity and reliance on intuition is also interesting and
+appears in a quite different literature—the psychol-
+ogy of gambling. Gambling is highly popular in West-
+ern societies despite the fact that almost all gamblers
+suffer long-term ﬁnancial losses. Literally millions of
+people ﬂy into Las Vegas alone every month to try
+their luck, mostly at chance games like fruit machines
+and roulette where the odds are rigged in favor of the
+house. Moreover, an alarming 1 to 2% of the popula-
+tion become pathological gamblers, a problem that has
+been linked with both impulsivity and attention deﬁcit
+disorder (Raylu & Oci, 2002). The psychology of gam-
+bling is complex, because it is possible that the thrill
+of engagement compensates for ﬁnancial losses to an
+extent, making it less irrational than ﬁrst appears. How-
+ever, it seems likely that false intuitions about chance
+and probability play a part. I return to this topic later.
+I am suggesting here that intuition is both a matter
+of cognition and personality. Reliance on immediate
+feelings of rightness or conﬁdence, essentially means
+trusting your Type 1 processes, without intervention
+by slower more effortful Type 2 reasoning. Many fac-
+tors affect the likelihood of such intervention, but one
+of these certainly seems to be personality type, with a
+negative link to impulsivity and a positive link to var-
+ious measures of rational thinking dispositions. How-
+ever, authors appear strongly divided on the question
+of whether reliance on intuition is good for thinking.
+Although Gigerenzer (2007) advised us to rely on our
+“gut feelings” in decision making, Stanovich (2009b,
+2009c) argued that failure to apply reﬂective reasoning
+is major cause of bias and irrationality in the real world.
+Of course, the truth may lie in between. For example,
+there are many famous reports of intuition and sudden
+insight playing a role in mathematics (e.g., Poincar´e,
+1927), but no one would accept anything less than the
+most detailed and explicit reasoning as an actual proof.
+It is also more than likely that intuitive thinkers will do
+better in some ﬁelds of activity and analytic thinkers
+in others.
+Intuition and the Two Minds Hypothesis
+As already indicated, dual-process type theories re-
+quire the assumption that Type 1 and 2 processes are
+rooted in distinct cognitive mechanisms. A number
+of authors have been tempted to talk of two systems
+for learning, reasoning, and social processing (Ep-
+stein, 1994; Evans & Over, 1996; Reber, 1993; Slo-
+man, 1996), which take responsibility for Type 1 and
+2 processing, respectively. Stanovich (1999) dubbed
+these System 1 and System 2. These terms have be-
+come popular and applied recently in the ﬁeld of judge-
+ment and decision making by Kahneman and Freder-
+ick (2002). However, two system theories have been
+criticized by those unsympathetic to dual-process the-
+ory (e.g., Gigerenzer & Regier, 1996; Keren & Schul,
+2009; Osman, 2004; Shanks & St John, 1994) and
+also recently questioned and radically revised by those
+working within the paradigm (Evans, 2006a, 2010;
+Stanovich, 2009a; 2010).
+Although some dual-system theorists have conﬁned
+themselves to a particular domain such as learning or
+reasoning, others have speculated much more widely.
+System 1 has hence been associated with a form of
+cognition that is evolutionarily ancient, linked with
+animal cognition and operating mostly unconsciously,
+whereas System 2 has been described as recent, dis-
+tinctively human, and conscious (see Evans, 2008, for
+a detailed review of different dual system theories).
+Used in this way, however, the term system is most
+unsatisfactory. Could System 1, for example, really be
+a single system responsible for implicit learning, intu-
+itive judgement, and implicit social cognition? Is there
+a System 2 that does deductive reasoning, planning,
+consequential decision making, explicit learning, and
+a whole host of other cognitive functions known to be
+315
+
+
+--- PAGE 5 ---
+EVANS
+related to working memory capacity? Certainly there is
+no neuroscientiﬁc evidence to support such simplistic
+claims. In fact, imaging studies suggest that there are
+multiple cognitive systems involved even in different
+deductive reasoning tasks (Goel, 2008).
+Given the lack of coherence in the two systems ap-
+proach, authors critical of dual-process theories may
+argue that we should abandon them in favor of a single-
+process approach, or conﬁne ourselves to cognitive
+models of individual tasks. However, I have suggested
+instead that we should move from taking about two
+systems to the proposal of two minds. The two minds
+theory (Evans, 2010) inherits a number of character-
+istics of earlier dual system accounts. Hence, there
+is an old (intuitive) mind that evolved early and is
+strongly linked with animal cognition and a new (re-
+ﬂective) mind that evolved recently and is distinctively
+human. However, the two minds theory is not sim-
+ply a rebranding of System 1 and 2 as Mind 1 and 2
+as sceptical readers might suspect. First, each mind is
+composed of multiple systems. In developing this idea,
+I am indebted to the philosopher Samuels (2009), who
+suggested that it would make more sense to talk of
+Type 1 and 2 systems rather than Systems 1 and 2. In
+other words, what people have been calling System 1
+and 2 really correspond to two families of systems that
+have the Type 1 and 2 characteristics.
+In the two minds theory, each mind has access to
+different and distinct forms of knowledge together with
+corresponding learning and memory systems. Type 1
+systems within the old mind utilize knowledge gained
+from experiential learning, using evolutionarily an-
+cient mechanisms, which then manifest as intuitive
+judgments and behavioral dispositions as well as any
+instinctively programmed behaviors (much clearer in
+nonhuman animals). By contrast, Type 2 systems in the
+new mind manipulate explicit representations through
+working memory. These are generated by underlying
+mechanisms such as the ventral visual system (con-
+scious perceptions), episodic memory, and high-level
+outputs of linguistic and pragmatic processing (explicit
+meaning). Of course, in terms of their internal work-
+ing, these new mind support systems are Type 1, in that
+they generally have a modular nature with inaccessi-
+ble dedicated processes, which are hardwired into the
+brain. Hence, they are fast, high capacity, consciously
+inaccessible, and so on. The key difference is that old
+mind systems (e.g., habit learning, skill learning) are
+autonomous, meaning they can control behavior di-
+rectly, whereas the Type 1 systems in the new mind
+ﬁrst must cooperate with working memory.
+Each Type 2 system can be thought of as an ad hoc
+committee whose membership is chosen to have just
+the expertise required for the task at hand and that is
+disbanded on its completion. Each such system will be
+temporarily formed and will have access to whatever
+modular support systems are required. For example,
+someone engaged in a reasoning task will require use
+of vision, language, and pragmatic systems to create
+relevant explicit representations. But the proposal that
+working memory must also be engaged is sufﬁcient
+to give Type 2 systems their deﬁning characteristics:
+Only one can function at a time, and each is limited in
+speed and processing capacity and correlated in its efﬁ-
+cacy with individual differences in cognitive capacity.
+The new mind hence draws upon different knowledge
+systems from the old mind: Those which provide ex-
+plicit representations into working memory. Not only
+are the internal workings of such representational sys-
+tems clearly Type 1, but the mechanisms responsible
+for allocation of working memory resources (forma-
+tion of the current Type 2 system) must also, perforce,
+be controlled by unconscious mechanisms. The feel-
+ing that we have of being consciously in control of
+our behavior is very largely an illusion (Bargh, 2005;
+Wegner, 2002).
+In the two minds theory, the new or reﬂective mind
+is not strictly seen as uniquely human because the ba-
+sis for working memory, attention, and recruitment of
+higher level control processes are all present in other
+higher animals (Toates, 2006). However, it is seen as
+uniquely developed in humans due to the coevolution
+of language, meta-representation, and a greatly en-
+larged prefrontal cortex (Evans, 2010). The two minds
+are also associated with two very distinct forms of
+rationality. Both are instrumental—serving to achieve
+goals—but both the goals pursued and mechanisms for
+achieving them differ. Old mind rationality depends
+on the pursuit of short-term goals, satisfying an imme-
+diate need, by mechanisms which depend upon past
+successes. These have been programmed by experi-
+ential learning (e.g., instrumental conditioning) or by
+evolution, which in both cases encourage repetition of
+behaviours that were successful in an earlier environ-
+ment. By contrast, new mind rationality is driven by
+anticipation of the future in the form of consequen-
+tial decision making. This requires an entirely differ-
+ent mechanism, the ability to “decouple” suppositions
+from actual beliefs and run mental simulations (see also
+Stanovich, 2010). Thus hypothetical thinking is the key
+facility provided by the new mind that distinguishes
+our cognition from that of other animals (Evans, 2007;
+Evans & Over, 1996). Hypothetical thinking (as well as
+language) is required for all distinctively human activ-
+ities, such as the invention of mathematics; the ability
+to engage in engineering design; and the capacity to
+write, comprehend, and enjoy novels and dramas. It
+also follows that meta-representations (the represen-
+tation of mental representations) is a key requirement
+for the new mind for the following reason. You only
+need mental representation to believe something, but
+you need meta-representation to suppose something.
+And such suppositions must be represented explicitly,
+so that they are distinguished from actual beliefs.
+316
+
+
+--- PAGE 6 ---
+INTUITION AND REASONING
+In application to reasoning, decision making, and
+social judgment I call the old mind “intuitive” and
+the new mind “reﬂective” (Evans, 2010). Autonomous
+Type 1 systems operating through the old mind have the
+potential to control behavior directly and frequently do
+so, as when I make an habitual drive to work with my
+reﬂective mind freed up to think about the day’s work
+ahead. However, the new mind always has the potential
+to intervene, as happens when a hazardous trafﬁc situ-
+ation is suddenly encountered. In the case of judgment
+and decision making, we call a behavioral propensity
+emanating from the old mind an intuitive judgement.
+If we rely on our intuition, “we” (our brains) do what
+feels right without reﬂecting on it or allocating any
+precious working memory resources. However, these
+intuitions do post conscious feelings, which enable the
+new mind to intervene on default intuitions just as it
+may on default driving behavior. Whether or not we
+actually engage reﬂective reasoning depends upon a
+whole host of factors. These are best illustrated by ex-
+amining some of the literature on dual processing.
+Intuition in Reasoning Tasks
+Some psychologists working in the ﬁeld of deduc-
+tive reasoning appear to assume that their enterprise is
+one of studying the process of explicit reasoning: the
+manipulation of rules and facts to derive conclusions.
+I am not and have never been one of them. I started my
+ﬁrst text book on the ﬁeld with these words:
+In one sense this book is only about deductive rea-
+soning. In another sense it is about language compre-
+hension, mental imagery, learning processes, memory
+organization and the nature of human thought. The
+ﬁrst sense is deﬁned by the paradigms employed; the
+second by the natures of the psychological processes
+which the paradigms evoke. (Evans, 1982, p. 1)
+Although it is true that those engaged in studying
+the psychology of reasoning are generally interested
+in explicit reasoning processes, it is also evident, as
+I demonstrated in this early review, that that many
+different kinds of cognitive processes are brought to
+bear on performance of the tasks that are used in an
+attempt to study reasoning. And it turns out that many
+of these are implicit or intuitive in nature. So the title
+of this section is not as paradoxical as it may seem:
+The attempt to study reasoning has actually led us to
+learn a lot about intuition.
+The deduction paradigm proper involves present-
+ing people with logical arguments comprised of one
+or more premises and a conclusion that may or may
+not follow (a variant involves asking participants to
+generate their own conclusions). It is conventional to
+use participants who have had no formal training in
+logic and to instruct them (a) to assume the truth of the
+premises and (b) to endorse (or generate) only conclu-
+sions which necessarily follow from the premises. The
+historical origin of this rather strange practice is clear:
+a strong philosophical and psychological tradition that
+assumes that people must have some in-built capac-
+ity for logical reasoning to be rational thinkers (see
+Evans, 2002). Thus the paradigm tests people’s ability
+to reasoning logically without having been trained to
+do so. An intensive use of the paradigm between around
+1960 and 2000 led to the following ﬁndings: (a) Peo-
+ple are very poor at solving such reasoning tasks, (b)
+they exhibit many cognitive biases, and (c) reasoning is
+highly content dependent. Although early researchers,
+like Peter Wason, inferred that people were irrational,
+the longer term view developed that logicism itself was
+mistaken: Logic cannot be the basis for rationality in
+an uncertain world (Evans, 2002; Evans & Over, 1996;
+Oaksford & Chater, 1998; Oaksford & Chater, 2007).
+Working in this ﬁeld myself since the 1970s, I was
+less interested in arguments about how deduction might
+be achieved (e.g., rules vs. mental models) and more in-
+terested in understanding exactly what people were do-
+ing on these tasks. A key publication was that of Evans,
+Barston, and Pollard (1983), often cited as the founda-
+tion for the modern study of belief bias in reasoning.
+In fact, belief bias was ﬁrst demonstrated by Wilkins
+(1928), but our article established the modern paradigm
+and the main ﬁndings. Participants were given classical
+syllogisms comprising two premises and a conclusion,
+relating three terms. They were given full deductive
+reasoning instructions (assume the premises, draw nec-
+essary conclusions), and the syllogisms used fell into
+four categories depending upon whether the conclusion
+followed necessarily from the premises (valid/invalid)
+and whether the conclusion presented was believable or
+unbelievable. Examples are shown in Table 1, together,
+with the observed rates at which people endorsed their
+conclusions.
+Three main ﬁndings observed by Evans et al. (1983)
+have been replicated in many later studies (e.g., Klauer,
+Musch, & Naumer, 2000) and can be seen in Table 1.
+First, people endorse more valid than invalid conclu-
+sions, as you would expect if they were reasoning log-
+ically. Second, and contrary to the instructions given,
+they endorse more believable than unbelievable con-
+clusions: the belief bias effect. Third, the belief bias
+is stronger on invalid syllogisms, leading to a signif-
+icant belief by logic interaction. Evans et al. showed
+that the logic-belief conﬂict was within participants
+and the same person might resolve it different ways
+on different trials. This was one of the key ﬁndings
+in the development of dual-process accounts of rea-
+soning in which the validity effect was attributed to
+Type 2 reasoning and the belief bias effect to a Type 1
+intuition. However, more recent analyses (Evans, Han-
+dley, & Harper, 2001; Klauer et al., 2000; see also
+317
+
+
+--- PAGE 7 ---
+EVANS
+Table 1. Examples of the Four Types of Syllogism Used by
+Evans, Barston, and Pollard (1983) Together With
+Acceptance Rates Combined Over Three Experiments.
+Valid-believable
+No police dogs are vicious
+Some highly trained dogs are vicious
+Therefore, some highly trained dogs are not police dogs
+89%
+Valid-unbelievable
+No nutritional things are inexpensive
+Some vitamin tablets are inexpensive
+Therefore, some vitamin tablets are not nutritional
+56%
+Invalid-believable
+No addictive things are inexpensive
+Some cigarettes are inexpensive
+Therefore, some addictive things are not cigarettes
+71%
+Invalid-unbelievable
+No millionaires are hard workers
+Some rich people are hard workers
+Therefore, some millionaires are not rich people
+10%
+Note. From Hypothetical Thinking: Dual Processes in Reasoning
+and Judgement (p. 88) by J. St. B. T. Evans, 2007, Hove, UK:
+Psychology Press. Copyright 2007 by Psychology Press. Reprinted
+with permission.
+Oakhill, Johnson-Laird, & Garnham, 1989) have sug-
+gested that there are actually two different belief bi-
+ases in this task: (a) a Type 1 belief bias consisting of
+an across the board tendency to say yes to believable
+and no to unbelievable conclusions, and (b) a Type
+2 belief bias which motivates reasoning selectively
+to prove believable or disprove unbelievable conclu-
+sions. With the standard paradigm, the Type 2 bias
+produces the observed interaction. This is because on
+invalid-believable problems, people can ﬁnd a model
+of the premises that support the conclusion and hence
+can maintain it; on valid-unbelievable problems, how-
+ever, any attempt to search for a model of the premises
+that excludes the conclusion will fail, as none can be
+found.
+Is there direct evidence that the Type 1 belief bias is
+intuitive? There are several ﬁndings that suggest that
+it is. Recall that one deﬁnition of intuition is that it
+is immediate. Evans and Curtis-Holmes (2005) used
+a speeded task method in which participants were re-
+quired to respond in less than half the time they would
+normally take. This altered the usual pattern of results
+in three ways: (a) The validity effect was greatly re-
+duced, (b) the belief bias effect was increased, and
+(c) the Belief × Logic interaction disappeared. All
+three ﬁndings are consistent with the hypothesis that
+the speeded task enforces reliance on intuition, thus
+enhancing the Type 1 belief bias and inhibiting both
+logical and motivated (Type 2) reasoning. Similar ﬁnd-
+ings have been reported by De Neys (2006) when par-
+ticipants were asked to reason with a concurrent work-
+ing memory load. He also found better performance
+on belief–logic conﬂict problems for participants of
+higher working memory capacity.
+In a recent study, Shynkarkuk and Thompson (2006)
+directly investigated the role of intuition in syllogis-
+tic reasoning. Participants were instructed to give two
+answers: the ﬁrst that came to mind within a short
+time limit and a second given after a free period of
+reﬂection. Participants also rated their subjective feel-
+ings of conﬁdence in their answers. Participants were
+more conﬁdent in their second answers, after a pe-
+riod of reﬂection, but not more accurate. In fact, there
+was no relation at all between conﬁdence and logical
+accuracy in this study. This contrasts with studies of
+meta-cognition and memory, in which conﬁdence rat-
+ings normally have a positive correlation with accuracy
+(Koriat, 1993). Moreover, people were more conﬁdent
+in their conclusions about belief-laden materials, which
+we know to causes belief biases, than in syllogisms
+with abstract content. These ﬁndings suggest that intu-
+ition plays a strong role in reasoning experiments, but
+an unhelpful one.
+In a recent study, Morsanyi and Handley (2010)
+presented syllogistic problems and simply asked par-
+ticipants to rate how much they liked their conclusions.
+The results were remarkably similar to those observed
+on the standard task with the usual main effects and
+interaction. This applied whether or not participants
+were instructed respond intuitively on the basis of their
+feelings, or on the basis of how a person reasoning log-
+ically would respond. What is striking here is that peo-
+ple like valid conclusions as well as believable ones.
+Is validity in some sense intuitive also? That it may
+be is suggested by recent ﬁndings that physiological
+or neurological indicators may signal conﬂict detec-
+tion even when the belief bias dominates (De Neys,
+Moyens, & Vansteenwegen, 2010; see also De Neys
+et al., 2008, for a related ﬁnding on a different task).
+This is a theoretical puzzle, because you cannot know
+there is a conﬂict without knowing whether the argu-
+ment is valid, something generally assumed to require
+Type 2 reasoning. However, it has also been suggested
+that syllogisms provide heuristic cues that are highly
+correlated with validity (Chater & Oaksford, 2004).
+Peter Wason, the founder of the modern psychol-
+ogy of reasoning, demonstrated how cognitive biases
+in reasoning could be intuitively compelling. In the “2
+4 6” task (Wason, 1960), participants are asked to work
+out a rule that the experimenter has in mind which clas-
+siﬁes “triples” of three whole numbers. They are given
+an example that conforms to the rule—2 4 6—and
+asked to generate triples of their own: In each case the
+experimenter tells them whether the generated triples
+conform or not. Typically, people test hypotheses like
+“ascending with equal intervals” and generate positive
+examples: 10 20 30; 1 2 3; 34 36 38; and so on, in
+each case receiving positive feedback. But when they
+announce the rule they are told they are wrong and
+have to carry on. The actual rule is any ascending se-
+quence. Participants get very frustrated and often go
+318
+
+
+--- PAGE 8 ---
+INTUITION AND REASONING
+on generating similar triples offering alternative verbal
+formulations of the same rule (Wason, 1968; see also
+Evans, 2007; Poletiek, 2001, for recent reviews and
+discussion of work with this task). They ﬁnd it hard
+to think of a negative test, such as 1 2 4, which would
+disprove their rule.
+Wason (1966) also devised a reasoning problem,
+known as the four card selection task, which was in-
+tensively studied for the next 30 years or so. In this case
+participants are given a conditional statement such as,
+“If there is an A on one side of the card then there is a
+3 on the other side of the card,” and asked to try to dis-
+cover whether it is true or false. They are told it applies
+to cards that have a letter on one side and a number on
+the other and are shown four such cards, with exposed
+faces that show A, D, 3, 7. They are instructed to turn
+over those cards and only those cards that could prove
+whether the rule is true or false. Most people choose A
+and 3 (sometimes just A), although the correct answer
+according to standard logic is A and 7. They must try to
+ﬁnd a card that has an A on one side and does not have
+a 3 on the other, which would falsify the statement.
+Only the A and 7 (not a 3) could do this.
+Wason’s original explanation was a veriﬁcation
+bias, which implies faulty Type 2 reasoning. However,
+he retracted this when I demonstrated a matching bias
+on the task. If the rule is changed to “If there is an A on
+one side of the card then there is NOT a 3 on the other
+side of the card,” participants still choose A and 3, the
+cards matching the values in the statement, and they
+are now logically correct (Evans & Lynch, 1973; for a
+review of much subsequent research, see Evans, 1998).
+For whatever reason, the matching cards are intuitively
+compelling, suggesting that card choices are under con-
+trol of Type 1 processes. Participants will come up with
+rationalizations of these choices in the context of the
+instructions whether or not the negation is present (Lu-
+cas & Ball, 2005; Wason & Evans, 1975), arguing that
+they are verifying or falsifying the statement as applies
+in either case. Later research showed that people focus
+their attention selectively on matching cards (Ball, Lu-
+cas, Miles, & Gale, 2003; Evans, 1996). Only a small
+minority of people with very high general intelligence
+appear to be able to overcome matching bias and at-
+tend to the 7 card on the standard problem (Stanovich
+& West, 1998). However, recent analyses suggest that
+participants do reason about the cards to which they
+attend, often leading them to withhold choice of an
+irrelevant card, even when it matches (Evans & Ball,
+2010).
+When the selection task uses realistic materials and
+is placed in a familiar context, it is often much easier to
+solve. For example, if you are told to play the role of a
+police ofﬁcer checking that the following rule is being
+obeyed, “If people are drinking alcohol then they must
+be over 18 years of age,” the four cards can be used to
+represent four drinkers. One side shows the beverage
+and the other side the age of the drinker. Given the
+cards “beer,” “Coke,” “21 years of age,” and “16 years
+of age,” most people will choose to investigate the beer
+drinker and the underage drinker, which is logically
+correct and not subject to matching bias (Griggs &
+Cox, 1982). Does this mean that people have switched
+from faulty intuition to good logical reasoning? Not so.
+The evidence suggests that they have switched from
+faulty intuition to good intuition, as their experience
+of permission and obligation rules provides helpful
+cues. On such rules, attention is directed from the start
+toward the correct cards (Evans, 1996) and there is
+little relation between these choices and measures of
+cognitive ability (Stanovich & West, 1998). It has even
+been argued that solving such problems requires no
+reasoning at all (Sperber & Girotto, 2002).
+This brief survey of the psychology of reasoning
+allows us to draw a most interesting conclusion. The
+performance of tasks speciﬁcally designed to look for
+explicit Type 2 reasoning are often strongly inﬂuenced,
+or even dominated by, Type 1 intuitive processes. This
+ﬁnding is quite remarkable when you consider that
+(a) these tasks routinely include instructions designed
+to engage effortful and systematic reasoning and (b)
+most employ university students of above population
+average intelligence as their participants. It compels us
+to the conclusion that intuition rather than reasoning is
+the dominant form of human thinking. Although such
+intuitions can lead to correct answers, they more often
+generate cognitive biases as well as inspiring feelings
+of conﬁdence in the wrong answers.
+Why does reasoning apparently play so little part
+in reasoning experiments? One view is that reasoning
+evolved for the purposes of argumentation (Mercier
+& Sperber, in press) and hence is more often used
+to construct justiﬁcations for intuitive responses than
+to generate the answers themselves. However, even if
+reasoning did evolve in that way it may have been
+“exapted” for another purpose. It seems impossible
+to explain the unique intellectual, technological, and
+cultural achievements of the human species without
+assuming that genuine Type 2 thinking can underlie
+our problem solving and decision making. Stanovich
+(2009c) certainly believes so but has suggested that
+people are by nature “cognitive misers” who minimize
+the deployment of effortful reasoning, hence often rely-
+ing on intuition. Although this may often be successful
+where we have relevant experiential learning, the rea-
+soning literature shows that it can also have potentially
+disastrous consequences for people required to reason
+in a modern technological world. Stanovich stressed
+that the inclination to reason is related to rational think-
+ing disposition rather than general intelligence, which
+instead predicts the accuracy of any reasoning that gets
+applied. This suggests the importance of education and
+training in persuading people, where appropriate, to
+reason explicitly rather than to rely on intuition.
+319
+
+
+--- PAGE 9 ---
+EVANS
+Intuition in Judgment and Decision Making
+Everyday experience suggests that decisions can be
+made both intuitively and reﬂectively. For example, if
+a friend asks you what you would like to drink, the
+answer will often just appear instantly as what you feel
+like on that occasion. Of course, you may also engage
+in reﬂection: You may feel like a gin and tonic but set-
+tle for an orange juice as you will be driving your car
+shortly. This example seems similar to the notion of
+Type 2 reasoning overriding a default Type 1 intuition
+in the reasoning research previously discussed. It also
+illustrates what I termed new mind rationality earlier
+in this article: Long-term goals and anticipated con-
+sequences may take over from immediate satisfaction
+of desires. Such overrides in everyday decision mak-
+ing occur frequently: the student with a hangover who
+wants to stay in bed but gets up to attend a lecture,
+the married person who resists a tempting sexual op-
+portunity, the dieter who refuses a favorite food, and
+so on. Intuitive decision making need not arise from
+immediate desires, however, and may instead reﬂect
+lazy thinking or cognitive biases as in many of the
+examples already discussed in the reasoning ﬁeld. As
+the earlier cited work of Frederick (2005) illustrates,
+people well capable of applying some basic reasoning
+to a problem may nevertheless rely on immediate and
+faulty intuitions.
+The theory of rational decision making, which was
+imported into psychology from the discipline of eco-
+nomics, requires that a rational person should antic-
+ipate the consequences of their decisions, estimating
+the probability and utility of various outcomes, com-
+bining the two to calculate the expected utility of each
+action, and then choosing the action that maximizes
+this quantity (von Neumann & Morgenstern, 1944; in-
+troduced to psychology by Edwards, 1954, 1961). In
+psychological terms, this requires sophisticated hypo-
+thetical thinking: The individual must carry out mental
+simulations of the future consequences of all possi-
+ble actions. For many years, psychological research on
+decision making was focused on demonstrating vio-
+lations of decision theory rather than elucidating the
+underlying cognitive processes (for reviews of rele-
+vant literature, see D. J. Koehler & Harvey, 2004). The
+famous prospect theory article by Kahneman and Tver-
+sky (Kahneman & Tversky, 1979; see also Tversky &
+Kahneman, 1992) demonstrated numerous violations
+of expected utility as well as proposing an alternative
+descriptive account of risky choice.
+One reason that people may fail to maximize ex-
+pected utility is that they are not actually think-
+ing consequentially, that is, people do not engage in
+sufﬁcient reasoning about the consequences of their
+choices. More cognitively oriented laboratory research
+has demonstrated this directly (Baron, 1994), whereas
+studies of expert decision making in the ﬁeld also found
+little evidence of classically rational decision making
+(Klein, 1999). However, in the latter case it is often ob-
+served that the correct course of action comes to mind
+immediately for an expert decision maker. Where rel-
+evant experiential learning has taken place, intuition
+may be a reliable basis for decision making in many
+cases. Klein (1999) also observed, however, that when
+problems are novel or unusual, explicit mental simu-
+lations may be carried out. I have argued with many
+examples (Evans, 2007) that when people do conduct
+such mental simulations they tend to focus on a single
+hypothesis, unless there is good reason to give it up.
+This explains many phenomena, including the perse-
+verance with a faulty hypothesis on the Wason 2 4 6
+problem, discussed earlier. I call this the “singularity
+principle” of hypothetical thinking.
+In the reasoning research discussed earlier, I showed
+that even when people are reasoning, their focus may
+be restricted by preconscious intuitive processes. For
+example, people reason about the cards to which they
+attend on the selection task, but attention is cued by
+intuitive processes like matching bias. They may apply
+reasoning to try to prove a believable conclusion or to
+disprove an unbelievable one, but not vice versa. In
+the same way, there are many examples of restricted
+attention in decision making tasks. Legrenzi, Girotto
+and Johnson-Laird (1993) noted that when asked to
+decide whether they would spend an evening in a par-
+ticular way, people do not request to know what alter-
+natives are available. Instead, they focus on the case
+given, for example, whether to attend an expensive but
+high-quality opera, an apparent case of the singularity
+principle. Many studies have also shown that the way
+in which the experimenter frames a decision problem
+may have dramatic impact on the choices taken (see
+Keren, 2010). For example, asking people to choose
+to accept, or instead reject, one of two candidates will
+focus them on either positive or negative reasons for
+their choice, leading to inconsistent decisions (Shaﬁr,
+Simenson, & Tversky, 1993). So, again, intuitive and
+pragmatic processes rapidly provide the focus for rea-
+soning, affecting its outcome.
+Psychologists have been particular interested in de-
+cisions made under risk, which require estimation of
+probabilities and utilities associated with particular
+outcomes. Because these typically deviate from ex-
+pected utility, much work has focused on judgments
+of subjective probabilities and how they are formed.
+In a famous series of papers published from the early
+1970s onwards, Amos Tversky and Danny Kahneman
+proposed that such judgments are by reliance on heuris-
+tics, or shortcut rules of thumb. Because such heuris-
+tics were typically blamed for a number of observed
+cognitive biases, this became known as the “heuris-
+tics and biases” research program (Gilovich, Grifﬁn,
+& Kahneman, 2002; Kahneman, Slovic, & Tversky,
+1982). For example, reliance on a representativeness
+320
+
+
+--- PAGE 10 ---
+INTUITION AND REASONING
+heuristic was blamed for neglect of sample size (Kah-
+neman & Tversky, 1972), neglect of base rates (Kah-
+neman & Tversky, 1973) and the conjunction fallacy
+(Tversky & Kahneman, 1983). A judgment by repre-
+sentativeness is essentially one based on similarity of
+salient features. For example, when asked to judge the
+likelihood that a sample is drawn from a particular
+population, people tend to compare their mean scores,
+neglecting other statistically relevant features, such as
+sample size.
+This research program is controversial and for our
+purposes also has an important ambiguity. The two
+issues are (a) are heuristics good or bad, and (b) are
+they based on explicit (Type 2) or implicit (Type 1)
+processes? Let me consider these separately. Kahne-
+man and Tversky’s work was widely cited as show-
+ing evidence of human irrationality, leading to a joint
+attack on their work and the early studies of Peter
+Wason (Cohen, 1981) from a rationalist perspective.
+Their work was also criticized by Gerd Gigerzner (e.g.,
+Gigerenzer, 1991), who subsequently developed a re-
+search program of his own in which the adaptive value
+of heuristics was stressed (Gigerenzer, Todd, & the
+ABC Research Group, 1999) known as the “fast and
+frugal heuristics” program. A neutral view might be
+that heuristics are neither good nor bad. As originally
+pointed by Newell and Simon (1972), they are shortcut
+solutions to complex problems that may save enormous
+amounts of processing effort but that are not guaran-
+teed to succeed. Thus we might see these two programs
+as focusing on cases where heuristics are useful, on one
+hand, and lead to biases, on the other.
+The more pertinent question for our purposes is
+(b). Are heuristics Type 1 or Type 2? In the reason-
+ing literature, the term “heuristic processes” is often
+used as a synonym for Type 1 or intuitive process-
+ing. On the other hand, an heuristic can be thought
+of as a simple but explicit rule that someone can fol-
+low deliberately. The early publications on heuristics
+were quite ambiguous in this respect. For example,
+the availability heuristic (Schwarz & Vaughn, 2002;
+Tversky & Kahneman, 1973) is deﬁned as judging the
+probability of an event by the ease with which items
+come to mind. This could be intuitive: We might feel
+that events are probable because they easily activate
+our memory system. It could also be reﬂective: We
+might reason that events easily recalled must have oc-
+curred more frequently. Both Kahneman and Gigeren-
+zer seem to agree that heuristics are Type 1. Kahneman
+and Frederick (2002) retrospectively adopted dual pro-
+cess theory (but see Kahneman & Tversky, 1982, for
+a forerunner), attributing biases to System 1 that may
+or may not be overridden by explicit System 2 reason-
+ing. By the latter device, they explain in common with
+Stanovich (1999, 2010) why participants may some-
+times avoid the dominant bias and ﬁnd a normative
+solution. Gigerenzer is a well-known critic of dual-
+process theory (e.g., Gigerenzer & Regier, 1996), but
+his advocacy of reliance on “gut feelings” in judgment
+(Gigerenzer, 2007) nevertheless suggests that he sees
+heuristics as intuitive.
+I am inclined to agree with Betsch (2008) that these
+literatures confuse two different kinds of judgment,
+which he calls intuitive and heuristic. Intuitive judge-
+ment is based on feelings of rightness or conﬁdence and
+is therefore Type 1. Heuristic judgement, on the other
+hand, is based on simple but explicit rules and is there-
+fore Type 2. Although in general Type 1 processing is
+quicker than Type 2, it is nonetheless a fallacy to be-
+lieve that a process is necessarily Type 1 just because it
+is quick (Evans, in press). In common with Gigernzer,
+Gladwell (2005) adopted the jingle “less is more” to ad-
+vocate the merits of intuitive judgment. But this phrase
+is ambiguous: What exactly is less? The time taken?
+The amount of information processed? The effort re-
+quired? The ﬁrst case that Gladwell discussed in his
+book is of an art expert who immediately “knows” that
+a statute is a fake but is unable to prove it for some
+time after. This is clearly a case of intuitive judgment.
+However, a later example of “less is more” is that of
+a hospital emergency room examining patients with
+chest pains. He shows how a hospital that replaced a
+complex series of diagnostic tests with just three simple
+questions achieved better results in trying to determine
+whether the patient should be treated as having a sus-
+pected heart attack. But this is clearly heuristic and not
+intuitive judgement. Explicit rule following is a Type
+2 process however short and simple the rules may be.
+One of the most widely investigated phenomena in-
+spired by the heuristics and biases programme is often
+known as the “base rate fallacy.” According to Bayes’
+theorem, which is a direct consequence of the probabil-
+ity calculus, posterior judgements about a hypothesis
+given some evidence should depend on two multiplica-
+tive factors: (a) the prior probability of the hypothesis
+and (b) the diagnosticity of the evidence, that is the
+extent to which it favors the hypothesis under con-
+sideration relative to rival hypotheses. For example, a
+positive medical test for a disease might be a hundred
+times more likely to occur in someone with the disease
+than without it. But if the base rate probability of hav-
+ing the disease in the population is 1 in 1,000, then it
+is still very likely to be false positive result. Early re-
+search by Kahneman and Tversky (1973) showed that
+people will focus strongly on the diagnostic informa-
+tion to the neglect of the base rate or prior probability,
+a ﬁnding that they attributed to the representativeness
+heuristic. Due to simpliﬁed and inaccurate citation,
+this led to myth that people ignore base rates, whereas
+the evidence shows that they underweight them (J. J.
+Koehler, 1996). However, it is generally agreed that
+even the relative neglect of base rates is an important
+cognitive bias affecting decision making in medicine
+and other real-world applications.
+321
+
+
+--- PAGE 11 ---
+EVANS
+Correct Bayesian reasoning is really difﬁcult to
+achieve for someone not trained in statistics. Even
+participants of higher cognitive ability neglect base
+rates unless pragmatic cues to their relevance are pro-
+vided (Stanovich, 1999). You need both to somehow
+derive Bayes’ theorem, which is not given by the exper-
+imenter, and to do the arithmetic necessary to combine
+base rates and diagnostic data. People are generally
+good at it only when probabilities are both presented
+as frequencies and arranged in “nested sets” (Barbey
+& Sloman, 2007; Cosmides & Tooby, 1996; Gigeren-
+zer & Hoffrage, 1995; Hoffrage, Gigerenzer, Krauss,
+& Martigon, 2002). For example, if you are told that
+out of 1,000 people, 1 will have the disease and test
+positive but 50 healthy people will also test positive,
+then people have little difﬁculty in saying (correctly)
+that a person with a positive result is only about 2%
+likely to have the disease. If instead you are simply told
+that the false positive rate for a medical test is 1 in 20
+and the base rate for the condition is 1 in 1,000, peo-
+ple most commonly say that a person with a positive
+test results is 95% likely to have the disease! (Cos-
+mides & Tooby, 1996; Evans, Handley, Perham, Over,
+& Thompson, 2000). The nested sets presentation ap-
+pears to cue a mental model that makes the logical
+relationships transparent and thus facilitates Type 2
+reasoning.
+Although the intuitive response to the complex ver-
+sion of this problem is typically based on the diagnostic
+information, there is still some (fallacious) reasoning
+involved. People must argue something like, “The test
+has a false positive rate of 1 in 20, which means it
+is right 95% of the time.” Moreover, as has not often
+been noted in this literature, these studies also showed
+that a minority of participants give the answer 1 in
+1,000, thus matching the base rate. What they are ap-
+parently unable to do is to integrate the two pieces of
+information. Clearly, the standard probability presen-
+tation of the Bayesian reasoning problem fails to meet
+a key criterion for the intervention of good reasoning:
+Participants must have the “mindware” for the task
+(Stanovich, 2010). Without the relevant education, no
+one carries Bayes’ theorem around in their heads. But
+why do most people focus on the diagnostic rather than
+base rate information? My colleagues and I hypothe-
+sised that this was due to a bias in the normal format of
+the task. In many studies the diagnostic data are more
+intuitive because they are based on stereotypes and ex-
+isting beliefs, whereas prior probabilities are conveyed
+only by explicit base rate information. We managed to
+devise a task in which this was switched around: Base
+rates were conveyed by genuine prior beliefs and diag-
+nostic information by statistics (Evans, Handley, Over,
+& Perham, 2002). This shifted the balance of power
+and in one experiment led to base rates dominating the
+judgments. So we can see that a form of belief bias
+operates in this paradigm.
+The correct conclusion to draw from research on
+Bayesian reasoning and base rate neglect is that this is
+not a problem that can be reliably solved by intuition,
+not because people are stupid or irrational but simply
+because they do not have the relevant rules available
+without training. Of course, it then follows that where
+good Bayesian reasoning is required for professional
+expertise, such training should be provided. This in-
+cludes not only doctors but those in other professions
+who sometimes need statistical reasoning, for exam-
+ple, lawyers and judges who are required to interpret
+DNA evidence, which can easily result in fallacious
+reasoning in the untrained (Gigerenzer, 2002).
+The judgment and decision literature has lagged be-
+hind the psychology of reasoning in the adoption of
+process-tracing measures such as response latencies,
+verbal protocols, and neural-imaging as well as the use
+of other dual-process manipulations such as working
+memory load, speeded tasks, and correlate with cog-
+nitive ability measures. For this reason, it is not easy
+to sort out what in these literatures is genuinely intu-
+itive in the sense of being based on Type 1 processing.
+However, there is recent evidence that supports Kah-
+neman and Frederick’s (2002) proposal that heuristics
+and biases should be interpreted within a dual-process
+framework. Take the case of the conjunction fallacy,
+famously illustrated by the Linda problem (Tversky &
+Kahneman, 1983). Participants are given a brief de-
+scription of Linda as follows:
+Linda is 31 years old, single, outspoken, and very
+bright. She majored in philosophy. As a student, she
+was deeply concerned with issues of discrimination
+and social justice, and also participated in antinuclear
+demonstrations.
+When asked to rank a series of statements about
+Linda, the original study showed that, on average, par-
+ticipants rated “Linda is a bank teller and is active in
+the feminist movement” as signiﬁcantly more likely
+than “Linda is a bank teller.” However, this amounts
+to an assertion that P(A&B) > P(A), which cannot be
+true for any A and B by the laws of probability (and
+those of simple logic). On the face of it this seems
+a clear bias of intuitive judgment. On the description
+given you would not expect Linda to be a bank teller
+but you would expect her to be a feminist. When the
+feminist description is added, the statement feels more
+probable.
+What has emerged in recent research is that perfor-
+mance on the Linda problem and a number of other
+decision problems is better among those of higher cog-
+nitive ability, but only if a within participant design
+is used (Stanovich & West, 2008). In the between-
+participant design, individuals simply rate the proba-
+bility of one or the other statement, and the conjunction
+will be rated higher, regardless of cognitive ability.
+322
+
+
+--- PAGE 12 ---
+INTUITION AND REASONING
+Why should this be? Stanovich (2010) agreed with
+Kahneman and Frederick (2002) that ﬁnding the cor-
+rect solution on problems like this requires “System
+2” intervention. However, he has reﬁned his earlier
+claims that such interventions are more likely to oc-
+cur in those of higher ability (Stanovich, 1999). This
+is now viewed as only one of several requirements for
+default intuitions to be overridden by reasoning. One,
+as previously mentioned, is possession of the relevant
+“mindware.” Another is the perceived need for reason-
+ing, which may be inﬂuenced by a number of factors
+such as instructions given, feelings of conﬁdence in
+the intuitive answer, and the rational thinking dispo-
+sition of the individual. The point about the within-
+participant design is that individuals can see that they
+are wanting to assign a higher value to P(A&B) than
+to P(A), which may cue the need for reasoning and
+the detection of the inconsistency. This now makes
+it comparable to a belief bias experiment in which
+high-ability participants will inhibit beliefs but only
+if given strict deductive reasoning instructions of the
+kind described earlier (Evans, Handley, Neilens, Ba-
+con, & Over, 2010). Hence, intervention on intuitions
+by reasoning requires both the cognitive capacity for
+the relevant reasoning and the awareness of the need for
+doing so.
+If one assumes the perspective of the normative the-
+ory that is built into our research paradigms, then the
+psychology of reasoning appears to be unconnected
+with the study of judgment and decision making. The
+former assess people’s ability to make certain deduc-
+tions from assumed premises; the latter ﬁeld investi-
+gates people’s ability to choose actions by calculating
+and comparing their consequences. The psychological
+reality, however, is quite different. The two research
+ﬁelds have similar methods and similar ﬁndings. Re-
+searchers in both ﬁelds give participants problems to
+solve in the laboratory for which they lack any requi-
+site training. Most people (consciously or not) rely on
+intuitive feelings about the answers and frequently get
+them wrong. A small number of exceptionally intel-
+ligent participants manage to reason out the answers
+from ﬁrst principles, but even then they usually need
+help in the form of instructions or structural clues in
+the problem to get them on the right track. Perhaps the
+approach is fundamentally misconceived. One could
+argue that we will learn more about rationality by
+studying people’s ability to apply rule-based reason-
+ing that they have been taught, rather than by con-
+stantly studying the performance of na¨ıve participants
+on novel problems.
+Conclusions
+The case for distinctively human powers of reason-
+ing and reﬂective thinking that underlie the unique
+achievements of our species seems beyond doubt.
+However, in reviewing the case for the two minds hy-
+pothesis (Evans, 2010), I was struck over and over by
+the dominance of intuition in control of our behavior.
+The belief that we have in ourselves as conscious con-
+trolling agents does seem to be largely illusory. When
+we have a severe phobia, insight into the condition may
+not help us to escape it; if we have a gambling habit,
+our powers of reasoning merely serve to rationalize our
+behavior and confabulate erroneous theories of chance
+events. As I have shown in this article, when we study
+na¨ıve reasoning and decision making in the laboratory,
+immediate, intuitive, and effort-free answers strongly
+compete with those based on reﬂective reasoning, often
+resulting in cognitive biases.
+Although historically, philosophers and other schol-
+ars have stressed the importance of (logical) reasoning
+to achieve rationality, there has been a recent fashion
+for emphasising instead the value of reliance on in-
+tuition. From a dual-process perspective, neither view
+is correct. The evidence suggests that intuition is the
+dominant basis for real world decision making and is
+often effective; however, it also shows that reliance on
+intuition can be dangerous and that intervention with
+high-effort and explicit reasoning is often required,
+especially when problems have novel features. The
+problem with doing what feels right is that one has
+no reasoned basis for one’s actions. This problem is
+greatly exacerbated by our tendency to reason after the
+event, confabulating justiﬁcations for our intuitions and
+constructing an illusion of conscious control.
+Although the value of focusing on na¨ıve participants
+and novel problems in the study of reasoning and de-
+cision making is debatable, this practice has taught us
+some important lessons. The ﬁrst and most obvious is
+that people are not good at ﬁnding normative solutions
+to problems in logic, probability, and decision theory
+without special training. The massive evidence of cog-
+nitive biases on these tasks needs to be explained, for
+these are systematic and not random errors. Although
+some of these can be attributed to limits in working
+memory capacity and in reasoning strategy, many turn
+out to reﬂect reliance on intuition. Moreover, these
+intuitions are convincing to the individual—they feel
+right, they have conﬁdence in them, and they frequently
+deter them from more effortful reasoning. Worse still,
+we can always ﬁnd a rational sounding explanation for
+our actions.
+Why is it that intuition so often dominates reason-
+ing? I think there are two answers to this. The ﬁrst is
+that intuitive feelings largely reﬂect experiential learn-
+ing. In the real world, dealing with familiar environ-
+ments, intuition will often serve us well. The second
+reason is to do with fundamental cognitive architec-
+ture of the human mind. Although intuitive processes
+operate rapidly, in parallel and with no effort, reﬂec-
+tive reasoning is quite the opposite. Reﬂection requires
+323
+
+
+--- PAGE 13 ---
+EVANS
+use of central working memory: There is only one
+such system—it has low capacity, requires high effort,
+and can be applied only to one task at a time. We are
+miserly with this cognitive resource because we have
+to be. The task of psychologists is to identity when
+intuition can safely be relied upon and when it cannot.
+From an educational viewpoint, we need not just to
+ﬁnd ways of training people to reason well. We also
+need to ﬁnd ways of making people aware of the sit-
+uations in which such effortful processing needs to be
+applied.
+Acknowledgments
+I thank Shira Elqayam for a critical reading of an
+earlier draft of this article.
+Note
+Address correspondence to Jonathan St B T
+Evans, School of Psychology, University of Plymouth,
+Plymouth PL4 8AA, England. E-mail: j.evans@
+plymouth.ac.uk
+References
+Baddeley, A. D., & Hitch, G. J. (1974). Working memory. In
+G.A.Bower (Ed.), The Psychology of Learning and Motivation
+(Vol. 8, pp. 47–90). New York, NY: Academic Press.
+Baddeley, A. (2007). Working memory, thought and action. Oxford,
+UK: Oxford University Press.
+Ball, L. J., Lucas, E. J., Miles, J. N. V., & Gale, A. G. (2003). In-
+spection times and the selection task: What do eye-movements
+reveal about relevance effects? Quarterly Journal of Experi-
+mental Psychology, 56 A, 1053–1077.
+Barbey, A. K., & Sloman, S. A. (2007). Base-rate respect: From
+ecological validity to dual processes. Behavioral and Brain
+Sciences, 30, 241–297.
+Bargh, J. A. (2005). Bypassing the will: Demystifying the noncon-
+scious control of social behavior. In R. R. Hassin, J. S. Uleman,
+& J. A. Bargh (Eds.), The new unconscious (pp. 37–58). Oxford,
+UK: Oxford University Press.
+Baron, J. (1994). Nonconsequentialist decisions. Behavioral and
+Brain Sciences, 17, 1–42.
+Barrett, L. F., Tugade, M. M., & Engle, R. W. (2004). Individual dif-
+ferences in working memory capacity and dual-process theories
+of the mind. Psychological Bulletin, 130, 553–573.
+Berry, D. C., & Dienes, Z. (1993). Implicit learning. Hove, UK:
+Erlbaum.
+Betsch, T. (2008). The nature of intuition and its neglect in research
+on judgement and decision making. In H. Plessner, C. Betsch,
+& T. Betsch (Eds.), Intuition in judgment and decision making
+(pp. 3–22). New York, NY: Erlbaum.
+Buchel, C., & Norenzayan, A. (2009). Thinking across cultures: Im-
+plications for dual processes. In J. St.B.T. Evans & K. Frankish
+(Eds.), In two minds: Dual processes and beyond (pp. 217–238).
+Oxford, UK: Oxford University Press.Cacioppo, J. T., & Petty,
+R. E. (1982). The need for cognition. Journal of Personality
+and Social Psychology, 42, 116–131.
+Chater, N., & Oaksford, M. (2004). Rationality, rational analysis, and
+human reasoning. In K. I. Manktelow & M. C. Chung (Eds.),
+Psychology of reasoning: Theoretical and historical perspec-
+tives (pp. 43–74). Hove, UK: Psychology Press.
+Cohen, L. J. (1981). Can human irrationality be experimentally
+demonstrated? Behavioral and Brain Sciences, 4, 317–370.
+Cosmides, L., & Tooby, J. (1996). Are humans good intuitive statisti-
+cians after all? Rethinking some conclusions from the literature
+on judgment under uncertainty. Cognition, 58, 1–73.
+De Neys, W. (2006). Dual processing in reasoning - Two systems
+but one reasoner. Psychological Science, 17, 428–433.
+De Neys, W., Moyens, E., & Vansteenwegen, D. (2010). Feeling
+we’re biased: Autonomic arousal and reasoning conﬂict. Cog-
+nitive, affective and behavioral neuroscience, 10, 208–216.
+De Neys, W., Vartanian, O., & Goel, V. (2008). Smarter than we
+think: When our brains detect that we are biased. Psychological
+Science, 19, 483–489.
+Dijksterhuis, A., Bos, M. W., Nordgren, L. F., & von Baaren, R. B.
+(2006). On making the right choice: The deliberation-without-
+attention effect. Science, 311, 1005–1007.
+Edwards, W. (1954). The theory of decision making. Psychological
+Bulletin, 41, 380–417.
+Edwards, W. (1961). Behavioral decision theory. Annual Review of
+Psychology, 67, 441–452.
+Epstein, S. (1994). Integration of the cognitive and psychodynamic
+unconscious. American Psychologist, 49, 709–724.
+Evans, J. St. B. T. (1982). The psychology of deductive reasoning.
+London, UK: Routledge.
+Evans, J. St. B. T. (1989). Bias in human reasoning: Causes and
+consequences. Brighton, UK: Erlbaum.
+Evans, J. St. B. T. (1996). Deciding before you think: Relevance and
+reasoning in the selection task. British Journal of Psychology,
+87, 223–240.
+Evans, J. St. B. T. (1998). Matching bias in conditional reasoning:
+Do we understand it after 25 years? Thinking & Reasoning, 4,
+45–82.
+Evans,J.St.B.T.(2002).Logic and human reasoning: An assessment
+of the deduction paradigm. Psychological Bulletin, 128, 978–
+996.
+Evans, J. St. B. T. (2006a). Dual system theories of cognition:
+some issues. Proceedings of the 28th Annual Meeting of
+the Cognitive Science Society, Vancouver, http://www.cogsci.
+rpi.edu/CSJarchive/proceedings/2006/docs/p202.pdf, 202-207.
+Evans, J. St. B. T. (2006b). The heuristic-analytic theory of rea-
+soning: Extension and evaluation. Psychonomic Bulletin and
+Review, 13, 378–395.
+Evans, J. St. B. T. (2007). Hypothetical thinking: Dual processes in
+reasoning and judgement. Hove, UK: Psychology Press.
+Evans, J. St. B. T. (2008). Dual-processing accounts of reasoning,
+judgment and social cognition. Annual Review of Psychology,
+59, 255–278.
+Evans, J. St. B. T. (2009). How many dual-process theories do we
+need: One, two or many? In J. St. B. T. Evans & K. Frankish
+(Eds.), In two minds: Dual processes and beyond (pp. 31–54).
+Oxford, UK: Oxford University Press.
+Evans, J. St. B. T. (2010). Thinking twice: Two minds in one brain.
+Oxford, UK: Oxford University Press.
+Evans, J. St. B. T. (in press). Dual-process theories of reasoning:
+facts and fallacies. In K. Holyoak & R. G. Morrison (Eds.), The
+Oxford handbook of thinking and reasoning. New York, NY:
+Oxford University Press.
+Evans, J. St. B. T. & Ball, L. J. (2010). Do people reason on the Wa-
+son selection task: A new look at the data of Ball et al. (2003).
+Quarterly Journal of Experimental Psychology, 63, 434–
+441.
+Evans, J. St. B. T., Barston, J. L., & Pollard, P. (1983). On the conﬂict
+between logic and belief in syllogistic reasoning. Memory &
+Cognition, 11, 295–306.
+324
+
+
+--- PAGE 14 ---
+INTUITION AND REASONING
+Evans, J. St. B. T., & Curtis-Holmes, J. (2005). Rapid responding
+increases belief bias: Evidence for the dual-process theory of
+reasoning. Thinking & Reasoning, 11, 382–389.
+Evans, J. St. B. T., Handley, S. J., & Harper, C. (2001). Necessity,
+possibility and belief: A study of syllogistic reasoning. Quar-
+terly Journal of Experimental Psychology, 54A, 935–958.
+Evans, J. St. B. T., Handley, S., Neilens, H., Bacon, A. M., & Over,
+D. E. (2010). The inﬂuence of cognitive ability and instruc-
+tional set on causal conditional inference. Quarterly Journal of
+Experimental Psychology, 63, 892–909.
+Evans, J. St. B. T., Handley, S. J., Over, D. E., & Perham, N. (2002).
+Background beliefs in Bayesian inference. Memory & Cogni-
+tion, 30, 179–190.
+Evans, J. St. B. T., Handley, S. J., Perham, N., Over, D. E., &
+Thompson, V. A. (2000). Frequency versus probability formats
+in statistical word problems. Cognition, 77, 197–213.
+Evans, J. St. B. T., & Lynch, J. S. (1973). Matching bias in the
+selection task. British Journal of Psychology, 64, 391–397.
+Evans, J. St. B. T., & Over, D. E. (1996). Rationality and reasoning.
+Hove, UK: Psychology Press.
+Frankish, K., & Evans, J. St. B. T. (2009). The duality of mind:
+An historical perpsective. In J. St. B. T. Evans & K. Frankish
+(Eds.), In two minds: Dual processes and beyond (pp. 1–30).
+Oxford, UK: Oxford University Press.
+Frederick, S. (2005). Cognitive reﬂection and decision making. Jour-
+nal of Economic Perspectives, 19(4), 25–42.
+Gigerenzer, G. (1991). How to make cognitive illusions disappear:
+Beyond “heuristics and biases.” In W. Stroebe & M. Hewstone
+(Eds.), European review of social psychology (pp. 83–115).
+Chichester, UK: Wiley.
+Gigerenzer, G. (2002). Reckoning with risk. London, UK: Penguin.
+Gigerenzer, G. (2007). Gut feelings. London, UK: Penguin.
+Gigerenzer, G., & Hoffrage, U. (1995). How to improve Bayesian
+reasoning without instruction: frequency formats. Psychologi-
+cal Review, 102, 684–704.
+Gigerenzer, G., & Regier, T. (1996). How do we tell an associa-
+tion from a rule? Comment on Sloman (1996). Psychological
+Bulletin, 119, 23–26.
+Gigerenzer, G., Todd, P. M., & the ABC Research Group. (1999).
+Simple heuristics that make us smart. New York, NY: Oxford
+University Press.
+Gilovich, T., Grifﬁn, D., & Kahneman, D. (2002). Heuristics and
+biases: The psychology of intuitive judgement. Cambridge, UK:
+Cambridge University Press.
+Gladwell, M. (2005). Blink. London, UK: Penguin.
+Goel, V. (2008). Anatomy of deductive reasoning. Trends in Cogni-
+tive Sciences, 11, 435–441.
+Goel, V., & Dolan, R. J. (2003). Explaining modulation of reasoning
+by belief. Cognition, 87, B11–B22.
+Griggs, R. A., & Cox, J. R. (1982). The elusive thematic materials ef-
+fect in the Wason selection task. British Journal of Psychology,
+73, 407–420.
+Hoffrage, U., Gigerenzer, G., Krauss, S., & Martigon, L. (2002).
+Representation facilitates reasoning: what natural frequencies
+are and what they are not. Cognition, 84, 343–352.
+Intuition. (2007). In Oxford English Dictionary (p. 1422). New York,
+NY: Oxford University Press.
+Kahneman, D., & Frederick, S. (2002). Representativeness revisited:
+Attribute substitution in intuitive judgement. In T. Gilovich, D.
+Grifﬁn, & D. Kahneman (Eds.), Heuristics and biases: The
+psychology of intuitive judgment (pp. 49–81). Cambridge, UK:
+Cambridge University Press.
+Kahneman, D., Slovic, P., & Tversky, A. (1982). Judgment under un-
+certainty: Heuristics and biases. Cambridge, UK: Cambridge
+University Press.
+Kahneman, D., & Tversky, A. (1972). Subjective probability: A
+judgment of representativeness. Cognitive Psychology, 3, 430–
+454.
+Kahneman, D., & Tversky, A. (1973). On the psychology of predic-
+tion. Psychological Review, 80, 237–251.
+Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis
+of decision under risk. Econometrica, 47, 263–291.
+Kahneman, D., & Tversky, A. (1982). On the study of statistical
+intuition. Cognition, 12, 325–326.
+Keren, G. (2010). (Ed.).Perspectives on framing. Hove, UK: Psy-
+chology Press.
+Keren, G., & Schul, Y. (2009). Two is not always better than one:
+A critical evaluation of two-system theories. Perspectives on
+Psychological Science, 4, 533–550.
+Klauer, K. C., Musch, J., & Naumer, B. (2000). On belief bias in
+syllogistic reasoning. Psychological Review, 107, 852–884.
+Klein, G. (1999). Sources of power. Cambridge, MA: MIT Press.
+Koehler, D. J., & Harvey, N. (2004). (Eds.).Blackwell handbook of
+judgment and decision making. Oxford, UK: Blackwell.
+Koehler, J. J. (1996). The base rate fallacy reconsidered: Descrip-
+tive, normative and methodological challenges. Behavioral and
+Brain Sciences, 19, 1–53.
+Koriat, A. (1993). How do we know what we know? The accessibility
+model of the feeling of knowing. Psychological Review, 100,
+609–639.
+Legrenzi, P., Girotto, V., & Johnson-Laird, P. N. (1993). Focusing in
+reasoning and decision making. Cognition, 49, 37–66.
+Lieberman, M. D. (2007). Social cognitive neuroscience: A review
+of core processes. Annual Review of Psychology, 58, 259–
+289.
+Lieberman, M. D. (2009). What zombies can’t do: A social cog-
+nitive neuroscience approach to the irreducibility of reﬂective
+consciousness. In J. St. B. T. Evans & K. Frankish (Eds.), In
+two minds: Dual processes and beyond (pp. 293–316). Oxford,
+UK: Oxford University Press.
+Lucas, E. J., & Ball, L. J. (2005). Think-aloud protocols and the
+selection task: Evidence for relevance effects and rationalisation
+processes. Thinking and Reasoning, 11, 35–66.
+Mercier, H., & Sperber, D. (in press). Why do humans reason?
+Arguments for an argumentative theory. Behavioral and Brain
+Sciences.
+Morsanyi, K., & Handley, S. (2010). Logic feels so good—I like it.
+Evidence for an implicit tendency for logicality in syllogistic
+reasoning. Unpublished manuscript, University of Plymouth.
+Newell, A., & Simon, H. A. (1972). Human problem solving. Engle-
+wood Cliffs, NJ: Prentice-Hall.
+Nisbett, R., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture
+and systems of thought: Holistic vs. analytic cognition. Psy-
+chological Review, 108, 291–310.
+Oakhill, J., Johnson-Laird, P. N., & Garnham, A. (1989). Believabil-
+ity and syllogistic reasoning. Cognition, 31, 117–140.
+Oaksford, M., & Chater, N. (1998). Rationality in an uncertain
+world. Hove, UK: Psychology Press.
+Oaksford, M., & Chater, N. (2007). Bayesian rationality. Oxford,
+UK: Oxford University Press.
+Osman, M. (2004). An evaluation of dual-process theories of rea-
+soning. Psychonomic Bulletin and Review, 11, 988–1010.
+Poincar´e, H. (1927). The foundations of science. New York, NY:
+Science House.
+Poletiek, F. (2001). Hypothesis-testing behaviour. Hove, UK: Psy-
+chology Press.
+Raylu, N., & Oci, T. P. S. (2002). Pathological gambing: A compre-
+hensive review. Clinical Psychology Review, 22, 1009–1061.
+Reber, A. S. (1993). Implicit learning and tacit knowledge. Oxford,
+UK: Oxford University Press.
+Reyna, V. F. (2004). How people make decisions that involve risk: A
+dual-processes approach. Current Directions in Psychological
+Science, 13, 60–66.
+Samuels, R. (2009). The magic number two plus or minus: Some
+comments on dual-processing theories of cognition. In J. St. B.
+T. Evans & K. Frankish (Eds.), In two minds: Dual processes
+325
+
+
+--- PAGE 15 ---
+EVANS
+and beyond (pp. 129–146). Oxford, UK: Oxford University
+Press.
+Schwarz, N., & Vaughn, L. A. (2002). The availability heuristic
+revisited: Ease of recall and content of recall as distinct sources.
+In T. Gilovich, D. Grifﬁn, & D. Kahneman (Eds.), Heuristics
+and biases: The psychology of intuitive judgment (pp. 103–119).
+Cambridge, UK: Cambridge University Press.
+Shaﬁr, E., Simenson, I., & Tversky, A. (1993). Reason-based choice.
+Cognition, 49, 11–36.
+Shanks, D. R., & St John, M. F. (1994). Characteristics of dissociable
+human learning systems. Behavioral and Brain Sciences, 17,
+367–447.
+Shynkarkuk, J. M., & Thompson, V. A. (2006). Conﬁdence and
+accuracy in deductive reasoning. Memory & Cognition, 34,
+619–632.
+Sloman, S. A. (1996). The empirical case for two systems of reason-
+ing. Psychological Bulletin, 119, 3–22.
+Smith, E. R., & DeCoster, J. (2000). Dual-process models in social
+and cognitive psychology: Conceptual integration and links to
+underlying memory systems. Personality and Social Psychol-
+ogy Review, 4, 108–131.
+Sperber, D., & Girotto, V. (2002). Use or misuse of the selection
+task? Rejoinder to Fiddick, Cosmides and Tooby. Cognition,
+85, 277–290.
+Stanovich, K. E. (1999). Who is rational? Studies of individual dif-
+ferences in reasoning. Mahwah, NJ: Erlbaum.
+Stanovich, K. E. (2009a). Is it time for a tri-process theory. Distin-
+guishing the reﬂective and the algorithmic mind. In J. St. B. T.
+Evans & K. Frankish (Eds.), In two minds: Dual processes and
+beyond (pp. 55–88). Oxford, UK: Oxford University Press.
+Stanovich, K. E. (2009b, November/December). The thinking that
+IQ tests miss. Scientiﬁc American, pp. 33–39.
+Stanovich, K. E. (2009c). What intelligence tests miss. The psychol-
+ogy of rational thought. New Haven, CT: Yale University Press.
+Stanovich, K. E. (2010). Rationality and the reﬂective mind. New
+York, NY: Oxford University Press.
+Stanovich, K. E., & West, R. F. (1998). Cognitive ability and variation
+in selection task performance. Thinking & Reasoning, 4, 193–
+230.
+Stanovich, K. E., & West, R. F. (2000). Advancing the rationality
+debate. Behavioral and Brain Sciences, 23, 701–726.
+Stanovich, K. E., & West, R. F. (2008). On the relative independence
+of thinking biases and cognitive ability. Journal of Personality
+and Social Psychology, 94, 672–695.
+Thompson, V. A. (2009). Dual-process theories: A metacognitive
+perspective. In J. St. B. T. Evans & K. Frankish (Eds.), In two
+minds: Dual processes and beyond (pp. 171–196). Oxford, UK:
+Oxford University Press.
+Toates, F. (2006). A model of the hierarchy of behaviour, cogni-
+tion and consciousness. Consciousness and Cognition, 15, 75–
+118.
+Tsujii, T., & Watanabee, S. (2009). Neural correlates of dual-task ef-
+fect on belief-bias syllogistic reasoning: A near-infrared spec-
+troscopty study. Brain Research, 1287, 118–125.
+Tversky, A., & Kahneman, A. (1992). Advances in prospect theory:
+Cumulative representation of uncertainty. Journal of Risk and
+Uncertainty, 5, 297–323.
+Tversky, A., & Kahneman, D. (1973). Availability: A heuristic for
+judging frequency and probability. Cognitive Psychology, 5,
+207–232.
+Tversky, A., & Kahneman, D. (1983). Extensional vs intuitive rea-
+soning: The conjunction fallacy in probability judgment. Psy-
+chological Review, 90, 293–315.
+von Neumann, J., & Morgenstern, O. (1944). Theory of games and
+economic behavior. Princeton, NJ: Princeton University Press.
+Wason, P. C. (1960). On the failure to eliminate hypotheses in a con-
+ceptual task. Quarterly Journal of Experimental Psychology,
+12–40.
+Wason, P. C. (1966). Reasoning. In B. M. Foss (Ed.), New horizons
+in psychology I (pp. 106–137). Harmandsworth, UK: Penguin.
+Wason, P. C. (1968). Reasoning about a rule. Quarterly Journal of
+Experimental Psychology, 20, 273–281.
+Wason, P. C., & Evans, J. St. B. T. (1975). Dual processes in reason-
+ing? Cognition, 3, 141–154.
+Wegner, D. M. (2002). The illusion of conscious will. Cambridge,
+MA: MIT Books.
+Wilkins, M. C. (1928). The effect of changed material on the ability
+to do formal syllogistic reasoning. Archives of Psychology, 1.
+326
