@@ -65,11 +65,11 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 * [PSY9613-03_Transitions_v2.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-02_Transitions_v2.md) — Triangulation finale v2 des transitions (89 transitions affinées et justifiées croisées WhisperX).
 * [PSY9613-03_Transitions.md](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/PSY9613-03_Transitions.md) — Transitions Séance 3 calibrées pour ENCORA.
 * [Attention_psy9613_diapos.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Attention_psy9613_diapos.pdf) — Diapositives de la Capsule asynchrone sur l'attention (Semaine 4, 5 oct.) *(5.8 Mo)*
-* [Cours 5 - Le cerveau prédictif PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%205%20-%20Le%20cerveau%20pr%C3%A9dictif%20PSY9613-2026.pdf) — Diapositives officielles de la Séance 6 (19 oct., partie 1 : Le cerveau prédictif) par Pierre Poirier *(69 diapos, 2.5 Mo)*
-* [Cv prédictif_perception visuelle.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cv%20pr%C3%A9dictif_perception%20visuelle.pdf) — Diapositives officielles de la Séance 6 (19 oct., partie 2 : Perception visuelle & attention) par Dave Saint-Amour *(17 diapos, 4.14 Mo)*
+* [Cours 5 - Le cerveau prédictif PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%205%20-%20Le%20cerveau%20pr%C3%A9dictif%20PSY9613-2026.pdf) — Diapositives officielles du Cours 5 (19 oct., Semaine 6, partie 1 : Le cerveau prédictif) par Pierre Poirier *(69 diapos, 2.5 Mo)*
+* [Cv prédictif_perception visuelle.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cv%20pr%C3%A9dictif_perception%20visuelle.pdf) — Diapositives officielles du Cours 5 (19 oct., Semaine 6, partie 2 : Perception visuelle & attention) par Dave Saint-Amour *(17 diapos, 4.14 Mo)*
 
 
-### 📖 Semaine 1 (14 sept.) — Présentation et introduction
+### 📖 Cours 1 (14 sept. — Semaine 1) — Présentation et introduction
 * **Lecture suggérée (pas obligatoire cette semaine) :**
   * [Bosco et al (2023) The influence of action on perception spans different effectors.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_01_Introduction/Lectures_obligatoires/Bosco%20et%20al%20(2023)%20The%20influence%20of%20action%20on%20perception%20spans%20different%20effectors.pdf) *(2.3 Mo)*
 * **Lectures optionnelles :**
@@ -77,7 +77,7 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [DEUBEL (1996)_VR.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_01_Introduction/Lectures_optionnelles/DEUBEL%20(1996)_VR.pdf) *(1.2 Mo)*
   * [Profitt_2005_see-the-ball-hit-the-ball.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_01_Introduction/Lectures_optionnelles/Profitt_2005_see-the-ball-hit-the-ball.pdf) *(49 Ko)*
 
-### 📖 Semaine 2 (21 sept.) — IA : Perspectives historiques
+### 📖 Cours 2 (21 sept. — Semaine 2) — IA : Perspectives historiques
 * **🎙️ Podcast audio d'introduction :**
   * [La_perception_est_une_hallucination_contrôlée.m4a](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Podcast/La_perception_est_une_hallucination_contr%C3%B4l%C3%A9e.m4a) — Discussion audio préparatoire (*« La perception est une hallucination contrôlée »*, 43.8 Mo).
 * **Lecture suggérée :**
@@ -88,7 +88,7 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Newell and Simon (1975) - Computer science as empirical inquiry.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Lectures_optionnelles/Newell%20and%20Simon%20(1975)%20-%20Computer%20science%20as%20empirical%20inquiry.pdf) *(1.6 Mo)*
   * [Sejnowski (2023) - Large Language Models and the Reverse Turing Test.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_02_IA_Perspectives_historiques/Lectures_optionnelles/Sejnowski%20(2023)%20-%20Large%20Language%20Models%20and%20the%20Reverse%20Turing%20Test.pdf) *(3.3 Mo)*
 
-### 📖 Semaine 3 (28 sept.) — Principes du traitement de l'information
+### 📖 Cours 3 (28 sept. — Semaine 3) — Principes du traitement de l'information
 * **Lecture obligatoire :**
   * [Revisiting the global workspace (2021).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_obligatoires/Revisiting%20the%20global%20workspace%20(2021).pdf) *(Mashour et al., 9.0 Mo)*
 * **Lectures optionnelles :**
@@ -99,7 +99,7 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Top-down influences on visual processing(2013).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Top-down%20influences%20on%20visual%20processing(2013).pdf) *(717 Ko)*
   * [Theta–gamma coupling(2024).pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_03_Traitement_information/Lectures_optionnelles/Theta%E2%80%93gamma%20coupling(2024).pdf) *(2.96 Mo)*
 
-### 📖 Semaine 4 (5 oct.) — Pas de cours en présence : L'attention (Capsule asynchrone)
+### 📖 Cours 4 (5 oct. — Semaine 4) — Pas de cours en présence : L'attention (Capsule asynchrone)
 * **Diapositives de la capsule :**
   * [Attention_psy9613_diapos.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Attention_psy9613_diapos.pdf) *(5.8 Mo)*
 * **Activités asynchrones Moodle :**
@@ -112,7 +112,7 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Parallel_fast_and_slow_recurrent_cortical_processi.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/Parallel_fast_and_slow_recurrent_cortical_processi.pdf) *(1.76 Mo)*
   * [strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_04_Attention/Lectures_optionnelles/strayer-johnston-2001-driven-to-distraction-dual-task-studies-of-simulated-driving-and-conversing-on-a-cellular.pdf) *(67 Ko)*
 
-### 📖 Semaine 6 (19 oct.) — Le cerveau prédictif
+### 📖 Cours 5 (19 oct. — Semaine 6) — Le cerveau prédictif
 * **Diapositives du cours :**
   * [Cours 5 - Le cerveau prédictif PSY9613-2026.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cours%205%20-%20Le%20cerveau%20pr%C3%A9dictif%20PSY9613-2026.pdf) *(Pierre Poirier — 69 diapos, 2.50 Mo)*
   * [Cv prédictif_perception visuelle.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/01_Diapositives_et_Notes/Cv%20pr%C3%A9dictif_perception%20visuelle.pdf) *(Dave Saint-Amour — 17 diapos, 4.14 Mo)*
@@ -126,26 +126,26 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
   * [Clark (2013) - Whatever next_Predictive brains, situated agents, and the future of cognitive science.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Clark%20(2013)%20-%20Whatever%20next_Predictive%20brains%2C%20situated%20agents%2C%20and%20the%20future%20of%20cognitive%20science.pdf) *(1.46 Mo)*
   * [Metzinger  Wiese (2017) - Philosophy and Predictive Processing.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_06_Cerveau_predictif/Lectures_optionnelles/Metzinger%20%20Wiese%20(2017)%20-%20Philosophy%20and%20Predictive%20Processing.pdf) *(68.55 Mo)*
 
-### 📖 Semaine 7 (26 oct.) — Raisonnement & Prise de décision
+### 📖 Cours 6 (26 oct. — Semaine 7) — Raisonnement & Prise de décision
 * **Lecture obligatoire :**
   * [Ackerman  Thompson (2017) Meta-reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_obligatoires/Ackerman%20%20Thompson%20(2017)%20Meta-reasoning.pdf) *(Rakefet Ackerman & Valerie A. Thompson, 2017, Trends in Cognitive Sciences — 11 pages, 1.51 Mo)*
 * **Lectures optionnelles :**
   * [Evans (2010) Intuition and reasoning.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_optionnelles/Evans%20(2010)%20Intuition%20and%20reasoning.pdf) *(279 Ko — reclassé en lecture optionnelle sur Moodle le 19 oct. 2026)*
   * [Todd  Gigerenzer (2007) Environments that make us smart.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_07_Raisonnement_et_decision/Lectures_optionnelles/Todd%20%20Gigerenzer%20(2007)%20Environments%20that%20make%20us%20smart.pdf) *(89 Ko)*
 
-### 📖 Semaine 9 (9 nov.) — Apprentissage et mémoire humaine
+### 📖 Cours 7 (9 nov. — Semaine 9) — Apprentissage et mémoire humaine
 * **Lecture obligatoire :**
   * [McClelland, McNaughton and OReilly (1995) - Why there are complementary learning systems in the hippocampus and neocortex.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_09_Memoire_humaine/Lectures_obligatoires/McClelland,%20McNaughton%20and%20OReilly%20(1995)%20-%20Why%20there%20are%20complementary%20learning%20systems%20in%20the%20hippocampus%20and%20neocortex.pdf) *(4.8 Mo)*
 
-### 📖 Semaine 10 (16 nov.) — Intelligence artificielle 1 (Réseaux neuronaux)
+### 📖 Cours 8 (16 nov. — Semaine 10) — Intelligence artificielle 1 (Réseaux neuronaux)
 * **Lecture obligatoire :**
   * [Rogers and McClelland (2003) - The parallel distributed processing approach to semantic cognition.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_10_IA_1_Reseaux_neuronaux/Lectures_obligatoires/Rogers%20and%20McClelland%20%20(2003)%20-%20The%20parallel%20distributed%20processing%20approach%20to%20semantic%20cognition.pdf) *(1.9 Mo)*
 
-### 📖 Semaine 11 (23 nov.) — Intelligence artificielle 2 (IA générative & LLMs)
+### 📖 Cours 9 (23 nov. — Semaine 11) — Intelligence artificielle 2 (IA générative & LLMs)
 * **Lecture obligatoire :**
   * [Sejnowski (2023) - Large Language Models and the Reverse Turing Test.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_11_IA_2_IA_generative/Lectures_obligatoires/Sejnowski%20(2023)%20-%20Large%20Language%20Models%20and%20the%20Reverse%20Turing%20Test.pdf) *(3.3 Mo)*
 
-### 📖 Semaine 13 (7 déc.) — Interactions humain-machines
+### 📖 Cours 11 (7 déc. — Semaine 13) — Interactions humain-machines
 * **Lecture obligatoire :**
   * [steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf](file:///g:/My%20Drive/UQAM/Maitrise%20(2194)/PSY9613/02_Lectures_et_Articles/Semaine_13_Interactions_humain_machines/Lectures_obligatoires/steyvers-kumar-2023-three-challenges-for-ai-assisted-decision-making.pdf) *(150 Ko)*
 * **Lectures optionnelles :**
@@ -159,18 +159,18 @@ Les dossiers Moodle du cours ont été inspectés et tous les documents scientif
 
 | Semaine | Date | Thème / Activités |
 | :---: | :--- | :--- |
-| **01** | 14 sept. | **Présentation et introduction** (Perception vs cognition vs intelligence, modèle classique, action) |
-| **02** | 21 sept. | **IA : Perspectives historiques** (Problème classique de la cognition, solutions computationnelle et connexionniste) |
-| **03** | 28 sept. | *Débats oraux* + **Traitement de l'information** (Théorie de l'info, hiérarchique vs parallèle, cognition incarnée) |
-| **04** | 5 oct. | **Pas de cours en présence (Élections prov.)** — Capsule asynchrone sur l'attention à visionner |
-| **05** | 12 oct. | **Congé (Action de grâce)** |
-| **06** | 19 oct. | *Débats oraux* + **Le cerveau prédictif** (Processus ascendants/descendants, inférence active/bayésienne) |
-| **07** | 26 oct. | *Débats oraux* + **Raisonnement & Prise de décision** (Biais cognitifs, modèles décisionnels) |
+| **01 (Cours 1)** | 14 sept. | **Présentation et introduction** (Perception vs cognition vs intelligence, modèle classique, action) |
+| **02 (Cours 2)** | 21 sept. | **IA : Perspectives historiques** (Problème classique de la cognition, solutions computationnelle et connexionniste) |
+| **03 (Cours 3)** | 28 sept. | *Débats oraux* + **Traitement de l'information** (Théorie de l'info, hiérarchique vs parallèle, cognition incarnée) |
+| **04 (Cours 4)** | 5 oct. | **Pas de cours en présence (Élections prov.)** — Capsule asynchrone sur l'attention à visionner |
+| **05 (Congé)** | 12 oct. | **Congé (Action de grâce)** |
+| **06 (Cours 5)** | 19 oct. | *Débats oraux* + **Le cerveau prédictif** (Processus ascendants/descendants, inférence active/bayésienne) |
+| **07 (Cours 6)** | 26 oct. | *Débats oraux* + **Raisonnement & Prise de décision** (Conférencier invité : Pierre-Luc De Chantal, Biais cognitifs, modèles décisionnels) (Biais cognitifs, modèles décisionnels) |
 | **08** | 2 nov. | 📝 **EXAMEN 1 EN CLASSE (35 %)** |
-| **09** | 9 nov. | *Débats oraux* + **Apprentissage et mémoire humaine** (Systèmes de mémoire, modèle neuroscientifique) |
-| **10** | 16 nov. | *Débats oraux* + **Intelligence artificielle 1** (Réseaux neuronaux, machine learning, deep learning) |
-| **11** | 23 nov. | *Débats oraux* + **Intelligence artificielle 2** (IA générative, agents conversationnels et agents "raisonnants") |
-| **12** | 30 nov. | *Débats oraux* + **Risques et périls de l’IA** (Enjeux éthiques, cognitifs, épistémologiques et sociaux) |
-| **13** | 7 déc. | *Débats oraux* + **Interactions humain-machines** (Conférencier invité, ergonomie cognitive, UX) |
-| **14** | 14 déc. | **Applications pratiques** (ABC de l'IA et initiation au logiciel PsychoPy) |
+| **09 (Cours 7)** | 9 nov. | *Débats oraux* + **Apprentissage et mémoire humaine** (Systèmes de mémoire, modèle neuroscientifique) |
+| **10 (Cours 8)** | 16 nov. | *Débats oraux* + **Intelligence artificielle 1** (Réseaux neuronaux, machine learning, deep learning) |
+| **11 (Cours 9)** | 23 nov. | *Débats oraux* + **Intelligence artificielle 2** (IA générative, agents conversationnels et agents "raisonnants") |
+| **12 (Cours 10)** | 30 nov. | *Débats oraux* + **Risques et périls de l’IA** (Enjeux éthiques, cognitifs, épistémologiques et sociaux) |
+| **13 (Cours 11)** | 7 déc. | *Débats oraux* + **Interactions humain-machines** (Conférencier invité, ergonomie cognitive, UX) |
+| **14 (Cours 12)** | 14 déc. | **Applications pratiques** (ABC de l'IA et initiation au logiciel PsychoPy) |
 | **15** | 21 déc. | 📝 **EXAMEN 2 EN CLASSE (35 %)** |
