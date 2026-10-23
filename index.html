@@ -7761,6 +7761,9 @@ In his seminal critique, Hubert Dreyfus demonstrated that GOFAI relied on four u
           Programme officiel du cours <strong>PSY9613 — Perception, cognition et intelligence artificielle</strong> (UQAM • Lundi de 14h00 à 17h00)<br>
           Responsables : <strong>Dave Saint-Amour</strong> (Neuropsychologie &amp; Perception) &amp; <strong>Pierre Poirier</strong> (Philosophie des sciences cognitives &amp; IA) • Auxiliaire : <strong>Sophie Lalonde-Roux</strong>
         </div>
+        <div id="calendarDynamicStatus" style="margin-top: 10px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 8px; background: rgba(217, 119, 6, 0.14); border: 1px solid rgba(217, 119, 6, 0.35); color: var(--text-main); font-size: 0.84rem; font-weight: 600;">
+          📍 Synchronisation automatique avec la date du jour...
+        </div>
       </div>
     </div>
 
@@ -20414,6 +20417,10 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       }
       if (targetVp) targetVp.style.display = 'block';
 
+      if (docId === 'doc_calendar' && typeof updateCalendarTimelineStatus === 'function') {
+        updateCalendarTimelineStatus(true);
+      }
+
       updateLanguageUI();
       clearSearch();
     }
@@ -21176,22 +21183,36 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     // =========================================================================
     // 22. INITIALISATION AU CHARGEMENT DU DOM & SYNCHRONISATION TEMPORELLE
     // =========================================================================
-    function updateCalendarTimelineStatus() {
+    function updateCalendarTimelineStatus(scrollToCurrent = false) {
       try {
-        const todayStr = new Intl.DateTimeFormat('en-CA', {
+        const now = new Date();
+        const parts = new Intl.DateTimeFormat('en-CA', {
           timeZone: 'America/Toronto',
           year: 'numeric',
           month: '2-digit',
-          day: '2-digit'
-        }).format(new Date());
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).formatToParts(now);
+        const map = {};
+        parts.forEach(p => { map[p.type] = p.value; });
+        const todayStr = `${map.year}-${map.month}-${map.day}`;
+        const currentHour = parseInt(map.hour, 10) || 0;
+
         const entries = document.querySelectorAll('#officialCourseTimeline .timeline-entry[data-date]');
         if (!entries || entries.length === 0) return;
-        let nextFound = false;
+
+        let currentEntry = null;
         entries.forEach(entry => {
           const dateStr = entry.getAttribute('data-date');
           const badge = entry.querySelector('.timeline-status-badge');
           entry.classList.remove('timeline-past', 'timeline-current');
-          if (dateStr < todayStr) {
+
+          // Une séance du lundi (14h00–17h00) est complétée dès que la date est passée ou qu'il est 17h00 le jour même
+          const isPast = (dateStr < todayStr) || (dateStr === todayStr && currentHour >= 17);
+
+          if (isPast) {
             entry.classList.add('timeline-past');
             if (badge) {
               badge.className = 'q-badge badge-past timeline-status-badge';
@@ -21199,14 +21220,21 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
               badge.textContent = entry.getAttribute('data-status-past') || '✓ Complété';
               badge.title = 'Séance passée';
             }
-          } else if (!nextFound) {
-            nextFound = true;
+          } else if (!currentEntry) {
+            currentEntry = entry;
             entry.classList.add('timeline-current');
             if (badge) {
               badge.className = 'q-badge badge-current timeline-status-badge';
               badge.style.display = '';
-              badge.textContent = (dateStr === todayStr) ? '📍 Aujourd\'hui (14h00)' : '📍 Prochaine séance';
-              badge.title = 'Prochaine séance du trimestre';
+              if (dateStr === todayStr) {
+                badge.textContent = (currentHour >= 14 && currentHour < 17)
+                  ? '🟢 En cours (14h00–17h00)'
+                  : '📍 Aujourd\'hui (14h00)';
+                badge.title = 'Séance du jour';
+              } else {
+                badge.textContent = '📍 Prochaine séance';
+                badge.title = 'Prochaine séance à l\'horaire';
+              }
             }
           } else {
             if (badge) {
@@ -21215,6 +21243,38 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
             }
           }
         });
+
+        const statusBanner = document.getElementById('calendarDynamicStatus');
+        if (statusBanner) {
+          if (currentEntry) {
+            const titleEl = currentEntry.querySelector('.timeline-info h4');
+            const rawTitle = titleEl ? titleEl.textContent.replace(/^🎯\s*/, '').trim() : 'Séance suivante';
+            const dStr = currentEntry.getAttribute('data-date');
+            const [y, m, d] = dStr.split('-').map(Number);
+            const sessionDate = new Date(Date.UTC(y, m - 1, d, 12, 0, 0));
+            const formattedDate = new Intl.DateTimeFormat('fr-CA', {
+              timeZone: 'UTC',
+              weekday: 'long',
+              day: 'numeric',
+              month: 'long'
+            }).format(sessionDate);
+            if (dStr === todayStr) {
+              statusBanner.textContent = (currentHour >= 14 && currentHour < 17)
+                ? `🟢 Séance en cours aujourd'hui (14h00–17h00) : ${rawTitle}`
+                : `📍 Aujourd'hui à 14h00 : ${rawTitle}`;
+            } else {
+              statusBanner.textContent = `📍 Prochaine échéance (${formattedDate} à 14h00) : ${rawTitle}`;
+            }
+          } else {
+            statusBanner.textContent = '✅ Trimestre d\'automne 2026 complété (Cours 1 à 12 et Examens 1 & 2).';
+          }
+        }
+
+        if (scrollToCurrent && currentEntry) {
+          setTimeout(() => {
+            currentEntry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 80);
+        }
       } catch (e) {}
     }
 
@@ -21225,6 +21285,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       loadStoredProgress();
       updateMasteryCounter();
       updateCalendarTimelineStatus();
+      setInterval(() => updateCalendarTimelineStatus(false), 60000);
       switchTab(activeDocId, false);
       filterCategory('all');
       initKeyboardShortcuts();
