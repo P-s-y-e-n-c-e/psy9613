@@ -414,13 +414,38 @@
 
     @media (max-width: 640px) {
       .exp-header {
+        position: relative;
         padding: 10px 12px;
+      }
+      .exp-header-inner, .brand-group, .header-controls {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .header-controls .ctrl-btn {
+        flex: 1 1 auto;
+        padding: 8px 10px;
+        font-size: 0.86rem;
+      }
+      .filter-bar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .filter-pill {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 0.88rem;
+        padding: 8px 12px;
       }
       .exp-card {
         padding: 16px;
       }
-      .ctrl-btn, .back-link, .filter-pill {
-        font-size: 16px;
+      .exp-hero-banner {
+        padding: 14px 16px;
+      }
+      .exp-hero-title {
+        font-size: 1.06rem;
       }
     }
   </style>
@@ -483,7 +508,7 @@
     <div class="modal-box">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
         <h2 id="expFbModalTitle" style="margin: 0; font-size: 1.08rem; color: var(--primary);">💬 Votre avis sur cette question candidate</h2>
-        <button type="button" class="ctrl-btn" onclick="closeExpFeedbackModal()" style="min-height: 36px; padding: 4px 10px;">✕</button>
+        <button type="button" class="ctrl-btn" onclick="closeExpFeedbackModal()" style="min-height: 44px; min-width: 44px; padding: 6px 12px;" aria-label="Fermer">✕</button>
       </div>
       <div id="expFbTargetBadge" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 12px;"></div>
       <div style="margin-bottom: 12px;">
@@ -842,8 +867,8 @@
         const fbBtn = document.createElement('button');
         fbBtn.type = 'button';
         fbBtn.className = 'ctrl-btn';
-        fbBtn.style.minHeight = '36px';
-        fbBtn.style.padding = '4px 10px';
+        fbBtn.style.minHeight = '44px';
+        fbBtn.style.padding = '6px 12px';
         fbBtn.style.fontSize = '0.82rem';
         fbBtn.innerHTML = '<span>💬</span> <span>Feedback</span>';
         fbBtn.onclick = () => openExpFeedbackModal(q);
