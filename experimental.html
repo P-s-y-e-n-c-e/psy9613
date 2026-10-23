@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>PSY9613 — Module Expérimental Inter-Cours (Cours 1 à 5)</title>
+  <style>
+    :root {
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-header: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --accent: #0ea5e9;
+      --success: #16a34a;
+      --success-bg: rgba(22, 163, 74, 0.10);
+      --danger: #dc2626;
+      --danger-bg: rgba(220, 38, 38, 0.10);
+      --warning: #d97706;
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 6px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    body.dark-mode, html[data-theme="dark"] body {
+      --bg-body: #0b0f19;
+      --bg-card: #131b2e;
+      --bg-card-alt: #1b253d;
+      --bg-header: #0f172a;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #26334d;
+      --primary: #818cf8;
+      --primary-hover: #6366f1;
+      --accent: #38bdf8;
+      --success: #22c55e;
+      --success-bg: rgba(34, 197, 94, 0.14);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.14);
+      --warning: #f59e0b;
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 26px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .exp-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-header);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .exp-header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 44px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: all 0.15s ease;
+    }
+
+    .back-link:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 44px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(129, 140, 248, 0.12);
+      border: 1px solid rgba(129, 140, 248, 0.35);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .ctrl-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 44px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .ctrl-btn:hover {
+      border-color: var(--primary);
+    }
+
+    /* Main Container */
+    .exp-container {
+      max-width: 980px;
+      margin: 24px auto 64px;
+      padding: 0 16px;
+    }
+
+    /* Explicit Experimental Banner */
+    .exp-hero-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.14) 0%, rgba(14, 165, 233, 0.10) 100%);
+      border: 1px solid rgba(129, 140, 248, 0.4);
+      border-left: 5px solid var(--primary);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .exp-hero-title {
+      margin: 0 0 8px 0;
+      font-size: 1.22rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .exp-hero-desc {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .exp-hero-sub {
+      margin: 8px 0 0 0;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .filter-pill {
+      min-height: 44px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-pill.active, .filter-pill:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Question Cards */
+    .exp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease;
+    }
+
+    .exp-card.answered-correct {
+      border-color: rgba(34, 197, 94, 0.5);
+    }
+
+    .exp-card.answered-wrong {
+      border-color: rgba(239, 68, 68, 0.5);
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .badge-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .exp-id-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      font-weight: 800;
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+
+    .exp-courses-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(14, 165, 233, 0.14);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.84rem;
+    }
+
+    .exp-card-topic {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .exp-card-question {
+      font-size: 1.06rem;
+      font-weight: 600;
+      margin: 0 0 16px 0;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .opt-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      text-align: left;
+      font-size: 0.96rem;
+      line-height: 1.45;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .opt-btn:disabled {
+      cursor: default;
+    }
+
+    .opt-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      font-weight: 800;
+      font-size: 0.86rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .opt-btn.correct {
+      background: var(--success-bg);
+      border-color: var(--success);
+    }
+
+    .opt-btn.correct .opt-letter {
+      background: var(--success);
+      color: #ffffff;
+      border-color: var(--success);
+    }
+
+    .opt-btn.incorrect {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+    }
+
+    .opt-btn.incorrect .opt-letter {
+      background: var(--danger);
+      color: #ffffff;
+      border-color: var(--danger);
+    }
+
+    .exp-explanation-box {
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: var(--bg-card-alt);
+      border-left: 4px solid var(--primary);
+      font-size: 0.93rem;
+      line-height: 1.55;
+      display: none;
+    }
+
+    .exp-explanation-box.visible {
+      display: block;
+    }
+
+    .exp-status-line {
+      font-weight: 800;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .exp-status-line.ok {
+      color: var(--success);
+    }
+
+    .exp-status-line.err {
+      color: var(--danger);
+    }
+
+    /* Feedback Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 16px;
+    }
+
+    .modal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      max-width: 540px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+    }
+
+    @media (max-width: 640px) {
+      .exp-header {
+        padding: 10px 12px;
+      }
+      .exp-card {
+        padding: 16px;
+      }
+      .ctrl-btn, .back-link, .filter-pill {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body class="dark-mode">
+
+  <header class="exp-header">
+    <div class="exp-header-inner">
+      <div class="brand-group">
+        <a href="index.html" class="back-link" title="Retourner à la station d'étude principale (116 questions)">
+          <span>←</span> <span>Station principale (116 Q)</span>
+        </a>
+        <div class="score-pill" id="expScorePill">
+          🏆 Score : <span id="expScoreVal">0</span> / 12 (<span id="expScorePct">0%</span>)
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <button type="button" class="ctrl-btn" id="shuffleToggleBtn" onclick="toggleShuffleOptions()" title="Mélanger ou rétablir l'ordre des options A, B, C, D">
+          <span>🔀</span> <span id="shuffleBtnLabel">Mélanger A–D : Actif</span>
+        </button>
+        <button type="button" class="ctrl-btn" onclick="resetExpProgress()" title="Réinitialiser mes réponses sur ces 12 questions">
+          <span>🔄</span> <span>Réinitialiser</span>
+        </button>
+        <button type="button" class="ctrl-btn" id="themeBtn" onclick="toggleTheme()" title="Basculer le mode sombre / clair">
+          <span id="themeIcon">☀️</span> <span id="themeLabel">Mode clair</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="exp-container">
+    <section class="exp-hero-banner" role="region" aria-label="Présentation du module expérimental">
+      <h1 class="exp-hero-title">
+        <span>🧪</span>
+        <span>MODULE EXPÉRIMENTAL — Questions Globales &amp; Croisements Inter-Cours (Cours 1 à 5)</span>
+      </h1>
+      <p class="exp-hero-desc">
+        Cet espace séparé regroupe <strong>12 questions candidates de synthèse transversale (format 2×2)</strong> qui mettent en dialogue les concepts, paradigmes expérimentaux et architectures computationnelles d'un cours à l'autre (dans l'esprit de la comparaison entre le neurone de McCulloch &amp; Pitts et le Perceptron).
+      </p>
+      <p class="exp-hero-sub">
+        💡 <strong>Statut :</strong> Questions candidates en évaluation par les pairs. N'hésitez pas à utiliser le bouton <em>💬 Feedback</em> sur chaque carte pour partager vos observations ou signaler toute ambiguïté.
+      </p>
+    </section>
+
+    <div class="filter-bar" role="tablist" aria-label="Filtrer par cours croisé">
+      <button type="button" class="filter-pill active" data-filter="all" onclick="setCourseFilter('all', this)">🌟 Toutes les questions (12)</button>
+      <button type="button" class="filter-pill" data-filter="Cours 1" onclick="setCourseFilter('Cours 1', this)">🔷 Croisements Cours 1</button>
+      <button type="button" class="filter-pill" data-filter="Cours 2" onclick="setCourseFilter('Cours 2', this)">🔶 Croisements Cours 2</button>
+      <button type="button" class="filter-pill" data-filter="Cours 3" onclick="setCourseFilter('Cours 3', this)">🟣 Croisements Cours 3</button>
+      <button type="button" class="filter-pill" data-filter="Cours 4" onclick="setCourseFilter('Cours 4', this)">🟢 Croisements Cours 4</button>
+      <button type="button" class="filter-pill" data-filter="Cours 5" onclick="setCourseFilter('Cours 5', this)">🔴 Croisements Cours 5</button>
+    </div>
+
+    <div id="questionsListContainer"></div>
+  </main>
+
+  <!-- Modale de Feedback Étudiant -->
+  <div class="modal-backdrop" id="expFeedbackModal" role="dialog" aria-modal="true" aria-labelledby="expFbModalTitle">
+    <div class="modal-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <h2 id="expFbModalTitle" style="margin: 0; font-size: 1.08rem; color: var(--primary);">💬 Votre avis sur cette question candidate</h2>
+        <button type="button" class="ctrl-btn" onclick="closeExpFeedbackModal()" style="min-height: 36px; padding: 4px 10px;">✕</button>
+      </div>
+      <div id="expFbTargetBadge" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 12px;"></div>
+      <div style="margin-bottom: 12px;">
+        <label for="expFbComment" style="display: block; font-weight: 700; font-size: 0.88rem; margin-bottom: 6px;">Observations ou suggestions :</label>
+        <textarea id="expFbComment" rows="4" placeholder="Clarté du croisement inter-cours, plausibilité des distracteurs, reformulation suggérée..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card-alt); color: var(--text-main); font-family: inherit; font-size: 16px;"></textarea>
+      </div>
+      <div style="margin-bottom: 16px;">
+        <label for="expFbAuthor" style="display: block; font-weight: 600; font-size: 0.84rem; margin-bottom: 4px; color: var(--text-muted);">Votre prénom ou courriel UQAM (optionnel) :</label>
+        <input type="text" id="expFbAuthor" placeholder="" style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card-alt); color: var(--text-main); font-family: inherit; font-size: 16px;">
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <button type="button" class="ctrl-btn" onclick="closeExpFeedbackModal()">Annuler</button>
+        <button type="button" class="ctrl-btn" id="expFbSubmitBtn" onclick="submitExpFeedback()" style="background: var(--primary); color: #ffffff; border-color: var(--primary);">📤 Envoyer</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const EXP_QUESTIONS = [
+  {
+    "id": "EXP-Q1",
+    "courses": "Cours 1 × Cours 5",
+    "title": "Canal sensoriel vs Attentes préalables (Illusion normale vs Hallucination vs Schizophrénie)",
+    "stem": "En croisant l'analyse ascendante et descendante du Cours 1 avec le continuum clinique du cerveau prédictif au Cours 5, comment se distinguent l'illusion du masque creux chez le sujet neurotypique, la résistance à cette illusion dans la schizophrénie et l'hallucination auditive induite au laboratoire ?",
+    "options": [
+      "L'illusion normale et l'hallucination résultent d'attentes préalables descendantes fortes, tandis que la schizophrénie sous-pondère ces attentes face au signal sensoriel.",
+      "L'illusion normale découle d'une défaillance du canal sensoriel périphérique, tandis que la schizophrénie et l'hallucination amplifient excessivement les attentes préalables.",
+      "La schizophrénie et l'hallucination partagent une abolition des attentes descendantes, tandis que l'illusion normale repose uniquement sur la saillance ascendante.",
+      "L'hallucination provient d'une hyperactivité sensorielle pure sans attente préalable, tandis que la schizophrénie impose des attentes rigides sur le masque."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pont inter-cours (Cours 1 × Cours 5 — Dave Saint-Amour) : Au Cours 1 (fonctionnalisme de James, caractère ambigu 13/B) comme au Cours 5 (masque creux de Chaplin, Powers et al.), une attente préalable (prior) forte domine un signal ambigu (illusion normale) ou absent (hallucination conditionnée). À l'inverse, dans la schizophrénie (et l'autisme), l'affaiblissement des attentes descendantes laisse primer l'entrée sensorielle brute, ce qui permet de voir le masque réellement en creux."
+  },
+  {
+    "id": "EXP-Q2",
+    "courses": "Cours 1 × Cours 3",
+    "title": "Action guidée sans conscience perceptive (Illusion d'Ebbinghaus vs Vision aveugle)",
+    "stem": "Au Cours 1, l'ouverture préparatoire des doigts échappe à l'illusion visuelle d'Ebbinghaus lors de la saisie d'un jeton. Au Cours 3, un patient atteint de vision aveugle après une lésion de l'aire visuelle primaire évite un obstacle sans le percevoir consciemment. Quel principe anatomo-fonctionnel relie ces deux dissociations ?",
+    "options": [
+      "La voie ventrale temporale ajuste directement la pince digitale, tandis que l'aire visuelle primaire intacte assure l'évitement réflexe des obstacles.",
+      "La voie dorsale pariétale guide l'action motrice en temps réel et peut recevoir des entrées sous-corticales sans expérience visuelle consciente.",
+      "Le système visuel unifié calcule d'abord une représentation consciente erronée, puis le cervelet corrige tardivement la trajectoire durant le mouvement.",
+      "L'ouverture des doigts et l'évitement d'obstacles dépendent exclusivement de la rétroaction descendante des aires frontales vers l'aire visuelle primaire."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 1 × Cours 3 — Dave Saint-Amour) : Au Cours 1 (Aglioti et al., Milner & Goodale), la voie dorsale occipito-pariétale (vision pour l'action) code la taille métrique réelle pour calibrer la pince digitale, contrairement à la voie ventrale (vision pour la perception) trompée par le contexte. Au Cours 3 (vision aveugle / blindsight), cette même voie dorsale pariétale continue de guider l'action locomotrice grâce aux relais sous-corticaux (colliculus supérieur et pulvinar) malgré la destruction de V1 qui prive la voie ventrale d'accès conscient."
+  },
+  {
+    "id": "EXP-Q3",
+    "courses": "Cours 2 × Cours 3",
+    "title": "Traitement sériel explicite vs Traitement parallèle distribué (GOFAI/Scrutation vs PDP/Coup d'œil)",
+    "stem": "En mettant en parallèle les architectures historiques de l'intelligence artificielle (Cours 2) et l'organisation du traitement visuel dans le cerveau (Cours 3), quelle correspondance relie le mode d'opération des modèles computationnels et les étapes de la perception ?",
+    "options": [
+      "Le système symbolique applique sériellement des règles explicites comme la scrutation attentive, tandis que le réseau connexionniste opère massivement en parallèle.",
+      "Le système symbolique propage des activations parallèles comme la vision d'un coup d'œil, tandis que le connexionnisme exécute des règles sérielles.",
+      "Les deux architectures traitent l'information de manière strictement sérielle, mais seul le système symbolique ajuste des poids synaptiques distribués.",
+      "Le réseau connexionniste manipule des symboles logiques dans une mémoire de travail centrale, tandis que le système symbolique apprend par coactivation."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pont inter-cours (Cours 2 × Cours 3 — Pierre Poirier & Dave Saint-Amour) : Au Cours 2, les systèmes de production symboliques (Newell & Simon) évaluent sériellement des règles explicites SI-ALORS en mémoire de travail (ce qui reflète l'introspection consciente et la vision avec scrutation sérielle du Cours 3), tandis que les réseaux connexionnistes PDP (McClelland, Sejnowski) résolvent simultanément de multiples contraintes en parallèle (à l'image du balayage perceptif rapide de la vision d'un coup d'œil)."
+  },
+  {
+    "id": "EXP-Q4",
+    "courses": "Cours 2 × Cours 3",
+    "title": "Modèle tridimensionnel de David Marr vs Robotique incarnée de Brooks et Pfeifer",
+    "stem": "David Marr (Cours 2 et 3) soutient que la vision construit progressivement un modèle tridimensionnel centré sur l'objet pour permettre la reconnaissance. Comment l'approche de la cognition incarnée de Brooks et Pfeifer (Cours 3) remet-elle en question cette architecture ?",
+    "options": [
+      "Elle soutient que l'agent doit d'abord enrichir l'esquisse primaire par des règles logiques avant de planifier tout déplacement moteur.",
+      "Elle démontre que le couplage sensori-moteur direct avec l'environnement permet d'agir efficacement sans construire de modèle interne complet du monde.",
+      "Elle remplace le modèle tridimensionnel par une mémoire symbolique centrale stockant les coordonnées géométriques exactes de chaque obstacle rencontré.",
+      "Elle postule que la perception visuelle dépend uniquement des attentes descendantes du cortex frontal sans aucune contribution du mouvement corporel."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 2 × Cours 3 — Pierre Poirier & Dave Saint-Amour) : Dans l'architecture classique de Marr (présentée au Cours 2 par Poirier puis au Cours 3 par Saint-Amour), le cerveau reconstruit une représentation interne complète (esquisse primaire -> 2,5D centrée sur le spectateur/égocentrique -> modèle 3D centré sur l'objet/allocentrique) avant de décider et d'agir. Au Cours 3, la cognition incarnée (Brooks, Pfeifer & Scheier avec le robot Khepera) montre au contraire que l'action en boucle fermée avec l'environnement résout le problème perceptif sans représentation centrale lourde."
+  },
+  {
+    "id": "EXP-Q5",
+    "courses": "Cours 1 × Cours 4",
+    "title": "Attention pré-saccadique (Deubel & Schneider) vs Hard et Soft Attention en IA (Lindsay)",
+    "stem": "Au Cours 1, l'expérience de Deubel et Schneider montre que le champ oculaire frontal déploie l'attention sur la cible juste avant la saccade. Au Cours 4, Grace Lindsay distingue l'attention dure (hard attention) et l'attention douce (soft attention) en apprentissage profond. Comment ces mécanismes s'articulent-ils ?",
+    "options": [
+      "Le gain perceptif avant le mouvement des yeux illustre l'attention couverte, tandis que l'attention dure sélectionne séquentiellement des régions comme les saccades.",
+      "Le déplacement physique de la fovéa correspond à l'attention douce différentiable, tandis que l'attention couverte fixe réalise une sélection stochastique.",
+      "Le champ oculaire frontal bloque toute attention couverte avant la saccade, tout comme l'attention douce élimine les régions périphériques de l'image.",
+      "L'attention pré-saccadique et l'attention douce déplacent physiquement les capteurs rétiniens, tandis que l'attention dure pondère continûment toute la scène."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pont inter-cours (Cours 1 × Cours 4 — Dave Saint-Amour & Grace Lindsay) : Dans Deubel & Schneider (Cours 1), avant même que l'œil ne bouge (attention ouverte / overt), le champ oculaire frontal oriente déjà l'attention couverte (covert) vers la cible. Au Cours 4 (Lindsay, 2020), l'attention dure (hard attention) imite le déplacement saccadique ouvert en échantillonnant séquentiellement un sous-patch (non différentiable, entraîné par renforcement), alors que l'attention douce (soft attention) pondère l'ensemble du champ sans déplacer de capteur."
+  },
+  {
+    "id": "EXP-Q6",
+    "courses": "Cours 3 × Cours 4",
+    "title": "Rythmes corticaux Alpha et Gamma entre hiérarchie visuelle et contrôle attentionnel",
+    "stem": "Au Cours 3, Dave Saint-Amour décrit les fréquences oscillatoires associées aux flux ascendant (feedforward) et descendant (feedback) dans les couches corticales. Au Cours 4, il détaille avec Mathieu Landry le rôle des oscillations alpha lors de l'orientation spatiale de l'attention. Quelle synthèse relie ces deux séances ?",
+    "options": [
+      "Les ondes gamma portent les prédictions descendantes lentes, tandis que les ondes alpha amplifient localement le traitement ascendant de la cible.",
+      "Les ondes gamma véhiculent le flux ascendant rapide, tandis que les ondes alpha assurent le contrôle descendant et inhibent les régions ignorées.",
+      "Les deux fréquences circulent uniquement des aires primaires vers le cortex frontal pour supprimer toute rétroaction descendante durant l'attention.",
+      "Les ondes alpha caractérisent l'embrasement sensoriel précoce des couches superficielles, tandis que les ondes gamma mettent le cortex visuel au repos."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 3 × Cours 4 — Dave Saint-Amour & Mathieu Landry) : Au Cours 3, le flux ascendant (feedforward, couches supragranulaires II/III) s'exprime dans les hautes fréquences gamma, tandis que le flux descendant (feedback, couches infragranulaires V/VI) utilise les bandes alpha et bêta. Au Cours 4, ce contrôle descendant alpha se manifeste par une synchronisation inhibitrice du côté ignoré/distracteur et une désynchronisation facilitatrice du côté attendu."
+  },
+  {
+    "id": "EXP-Q7",
+    "courses": "Cours 3 × Cours 4",
+    "title": "Filtre attentionnel (Broadbent / Treisman) vs Espace de travail neuronal global (Dehaene / Mashour)",
+    "stem": "En croisant les modèles classiques de l'attention sélective en écoute dichotique (Cours 4) avec la théorie de l'espace de travail neuronal global (Cours 3), que devient un stimulus verbal non attendu (comme son propre prénom ou un mot masqué) dans le système cognitif ?",
+    "options": [
+      "Le filtre de Broadbent et l'espace global s'accordent pour affirmer qu'aucun traitement sensoriel ne survit sans attention volontaire préalable.",
+      "Le stimulus ignoré subit un traitement local atténué sans conscience, mais franchit le seuil de diffusion globale s'il est pertinent.",
+      "Le modèle de sélection tardive bloque le stimulus dès le nerf auditif, tandis que l'espace global génère une ignition purement occipitale.",
+      "Tout stimulus non attendu déclenche systématiquement un embrasement fronto-pariétal complet, mais l'atténuateur de Treisman efface ensuite sa trace motrice."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 3 × Cours 4 — Dave Saint-Amour) : Au Cours 4, le modèle d'atténuation de Treisman montre que le canal non attendu n'est pas totalement bloqué (contrairement à Broadbent) : il est atténué, mais un mot à seuil bas (comme notre prénom) franchit le seuil conscient. Au Cours 3, le GNWT (Dehaene, Mashour) fournit le mécanisme neurobiologique exact de ce passage : un stimulus non attendu ou subliminal reçoit un traitement local dans les aires sensorielles, mais nécessite l'amplification attentionnelle pour franchir le seuil non linéaire d'ignition fronto-pariétale."
+  },
+  {
+    "id": "EXP-Q8",
+    "courses": "Cours 2 × Cours 5",
+    "title": "Rétropropagation supervisée de l'erreur (Connexionnisme) vs Codage prédictif (Rao & Ballard)",
+    "stem": "Pierre Poirier souligne une inversion majeure entre le fonctionnement d'un réseau connexionniste classique entraîné par rétropropagation (Cours 2) et l'architecture du codage prédictif hiérarchique dans le cortex (Cours 5). Qu'est-ce qui circule vers l'avant (feedforward) et vers l'arrière (feedback) dans ces deux modèles ?",
+    "options": [
+      "Le réseau classique monte le signal sensoriel et descend l'erreur supervisée, tandis que le codage prédictif descend la prédiction et monte l'erreur.",
+      "Les deux modèles font monter l'erreur de prédiction vers l'avant et redescendre les représentations sensorielles complètes vers les couches basses.",
+      "Le réseau classique descend des prédictions génératives sans superviseur, tandis que le codage prédictif monte uniquement les attentes déjà confirmées.",
+      "Le codage prédictif propage le signal sensoriel intégral vers le haut, tandis que le réseau classique ajuste ses poids sans rétroaction."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pont inter-cours (Cours 2 × Cours 5 — Pierre Poirier) : Au Cours 2, dans un réseau multicouche classique (Rumelhart, McClelland), l'activation sensorielle se propage vers l'avant (feedforward) jusqu'à la sortie, puis le signal d'erreur fourni par un superviseur externe redescend (backpropagation) pour ajuster les poids. Au Cours 5 (Rao & Ballard, Friston), le flux est inversé : les niveaux supérieurs envoient leurs prédictions vers le bas (feedback), et seules les erreurs de prédiction résiduelles montent vers le haut (feedforward)."
+  },
+  {
+    "id": "EXP-Q9",
+    "courses": "Cours 1 × Cours 5",
+    "title": "Théorie de la détection du signal (Sensibilité vs Critère) et Inférence bayésienne (Vraisemblance vs Prior)",
+    "stem": "Dans une tâche de détection d'un stimulus visuel faible dans le bruit (Cours 1), on augmente fortement la probabilité annoncée d'apparition de la cible sans modifier le contraste physique à l'écran. Comment cette manipulation se traduit-elle conjointement en détection du signal (Cours 1) et dans le cadre bayésien (Cours 5) ?",
+    "options": [
+      "Elle augmente la sensibilité sensorielle pure du récepteur et élargit la variance du bruit ascendant en neutralisant la croyance préalable.",
+      "Elle abaisse le critère décisionnel vers une stratégie libérale en renforçant la croyance préalable, sans modifier la sensibilité sensorielle physique.",
+      "Elle déplace le critère vers une stratégie conservatrice qui réduit les fausses alarmes en supprimant le poids de la croyance préalable.",
+      "Elle améliore simultanément la résolution physique de la rétine et la précision de la vraisemblance ascendante sans changer le critère."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 1 × Cours 5 — Dave Saint-Amour & Pierre Poirier) : Au Cours 1 (TDS), augmenter la probabilité d'apparition de la cible (ou récompenser les détections) ne change pas la capacité discriminatoire physique du système sensoriel (sensibilité constante), mais déplace le critère interne vers une attitude libérale (plus de détections correctes ET plus de fausses alarmes). Au Cours 5, ce déplacement du critère correspond exactement au renforcement de la croyance préalable (prior) qui tire l'estimation postérieure vers l'hypothèse attendue."
+  },
+  {
+    "id": "EXP-Q10",
+    "courses": "Cours 3 × Cours 5",
+    "title": "Information de Shannon, Surprise informationnelle (Surprisal) et Économie métabolique",
+    "stem": "Au Cours 3, Dave Saint-Amour présente la théorie de l'information de Shannon selon laquelle un événement très rare véhicule une grande quantité d'information. Au Cours 5, ce principe est repris sous l'angle de la surprise informationnelle et du codage prédictif. Quelle conséquence neurophysiologique directe en découle ?",
+    "options": [
+      "Le cerveau amplifie massivement la décharge des neurones sensoriels pour les stimuli fréquents afin de consolider ses croyances préalables habituelles.",
+      "Un stimulus hautement prévisible porte peu d'information nouvelle et voit sa réponse neuronale atténuée, tandis qu'un stimulus rare génère une forte erreur.",
+      "Un événement statistiquement rare comme l'éléphant dans la classe possède une surprise informationnelle nulle dès lors qu'il est planifié consciemment.",
+      "Le cortex visuel transmet intégralement les pixels prévisibles et filtre les événements improbables pour protéger son budget énergétique limité."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 3 × Cours 5 — Dave Saint-Amour & Pierre Poirier) : Selon Shannon (Cours 3), un événement probable apporte peu d'information (faible réduction d'incertitude), tandis qu'un événement rare en apporte beaucoup. Au Cours 5, cette mesure devient la surprise informationnelle (surprisal) : pour économiser l'énergie métabolique (contrainte introduite dès le Cours 3), le cerveau atténue la réponse aux entrées prévisibles (expectation suppression) et réserve ses décharges ascendantes aux erreurs de prédiction (comme la négativité de discordance MMN)."
+  },
+  {
+    "id": "EXP-Q11",
+    "courses": "Cours 4 × Cours 5",
+    "title": "Attention sélective vs Attentes probabilistes (Pertinence vs Probabilité — de Lange et al.)",
+    "stem": "Les Cours 4 et 5 distinguent soigneusement l'attention sélective et les attentes probabilistes (expectation), longtemps confondues dans la littérature. Comment leurs déterminants respectifs et leurs effets sur l'amplitude de la réponse corticale s'opposent-ils ?",
+    "options": [
+      "L'attention dépend de la probabilité statistique et réduit la réponse corticale, tandis que l'attente dépend de la tâche et l'amplifie.",
+      "L'attention cible la pertinence pour la tâche et augmente le gain neuronal, tandis que l'attente reflète la probabilité et atténue la réponse.",
+      "L'attention et l'attente augmentent toutes deux l'amplitude globale des potentiels évoqués en supprimant le traitement des stimuli pertinents.",
+      "L'attente probabiliste agit uniquement après trois cents millisecondes dans le cortex frontal, tandis que l'attention éteint l'aire visuelle primaire."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pont inter-cours (Cours 4 × Cours 5 — Dave Saint-Amour, de Lange et al., 2018) : Au Cours 4, l'attention sélective est guidée par la pertinence comportementale (ce qui est utile pour la tâche) et augmente le gain neuronal (hausse du rapport signal/bruit, composante N2pc). Au Cours 5, l'attente (expectation) est guidée par la probabilité statistique de ce qui va arriver et produit l'effet inverse sur l'intensité globale : une atténuation de la réponse évoquée (expectation suppression), tout en affinant la netteté de la représentation."
+  },
+  {
+    "id": "EXP-Q12",
+    "courses": "Cours 1 × Cours 3 × Cours 5",
+    "title": "Action motrice, Couplage incarné et Inférence active de Karl Friston",
+    "stem": "En reliant le rôle de l'action dans la perception (Cours 1), la robotique incarnée (Cours 3) et le principe de minimisation de l'erreur de prédiction de Friston (Cours 5), comment l'inférence active unifie-t-elle la perception et le mouvement volontaire ?",
+    "options": [
+      "La perception et l'action réduisent toutes deux l'erreur de prédiction, soit en révisant le modèle interne, soit en modifiant physiquement l'entrée sensorielle.",
+      "La perception minimise l'erreur de prédiction dans le cortex, tandis que l'action motrice augmente volontairement la surprise informationnelle de l'organisme.",
+      "L'inférence active sépare hermétiquement la commande motrice et la perception en réservant les prédictions descendantes à la reconnaissance visuelle passive.",
+      "L'action motrice précède toujours toute prédiction corticale et oblige le cerveau à effacer ses croyances préalables à chaque mouvement oculaire."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pont inter-cours (Cours 1 × Cours 3 × Cours 5 — Dave Saint-Amour & Pierre Poirier) : Dès le Cours 1 (Held & Hein, Bosco et al.) et le Cours 3 (cognition incarnée, Khepera), l'action façonne directement l'entrée perceptive. Au Cours 5, l'inférence active de Friston formalise cette unité : le cerveau n'a que deux moyens complémentaires pour réduire l'écart (l'erreur de prédiction) entre son modèle et le monde — soit changer ses croyances internes pour coller aux sens (perception), soit bouger le corps et les yeux pour échantillonner des entrées conformes à ses prédictions (action)."
+  }
+];
+    const STORAGE_KEY_ANSWERS = 'psy9613_exp_c1_c5_answers_v1';
+    const STORAGE_KEY_SHUFFLE = 'psy9613_exp_c1_c5_shuffle_v1';
+    const STORAGE_KEY_THEME = 'psy9613_theme';
+
+    let userAnswers = {};
+    let shuffleEnabled = true;
+    let activeFilter = 'all';
+    let optionOrderMap = new Map();
+    let activeFeedbackItem = null;
+
+    function loadState() {
+      try {
+        const savedTheme = localStorage.getItem(STORAGE_KEY_THEME);
+        const isDark = savedTheme ? (savedTheme === 'dark' || savedTheme === '1') : true;
+        document.body.classList.toggle('dark-mode', isDark);
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        updateThemeUI();
+
+        const rawAns = localStorage.getItem(STORAGE_KEY_ANSWERS);
+        if (rawAns) {
+          const parsed = JSON.parse(rawAns);
+          if (parsed && typeof parsed === 'object') userAnswers = parsed;
+        }
+        const rawShuf = localStorage.getItem(STORAGE_KEY_SHUFFLE);
+        if (rawShuf !== null) {
+          shuffleEnabled = (rawShuf === 'true');
+        }
+      } catch (e) {}
+      updateShuffleUI();
+      buildOptionOrders();
+    }
+
+    function saveAnswers() {
+      try {
+        localStorage.setItem(STORAGE_KEY_ANSWERS, JSON.stringify(userAnswers));
+      } catch (e) {}
+    }
+
+    function buildOptionOrders() {
+      optionOrderMap.clear();
+      EXP_QUESTIONS.forEach(q => {
+        const indices = [0, 1, 2, 3];
+        if (shuffleEnabled) {
+          for (let i = indices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [indices[i], indices[j]] = [indices[j], indices[i]];
+          }
+        }
+        optionOrderMap.set(q.id, indices);
+      });
+    }
+
+    function toggleShuffleOptions() {
+      shuffleEnabled = !shuffleEnabled;
+      try {
+        localStorage.setItem(STORAGE_KEY_SHUFFLE, String(shuffleEnabled));
+      } catch (e) {}
+      updateShuffleUI();
+      buildOptionOrders();
+      renderQuestions();
+    }
+
+    function updateShuffleUI() {
+      const lbl = document.getElementById('shuffleBtnLabel');
+      if (lbl) {
+        lbl.textContent = shuffleEnabled ? 'Mélanger A–D : Actif' : 'Ordre original A–D';
+      }
+    }
+
+    function toggleTheme() {
+      const isDark = document.body.classList.toggle('dark-mode');
+      const mode = isDark ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', mode);
+      try {
+        localStorage.setItem(STORAGE_KEY_THEME, mode);
+      } catch (e) {}
+      updateThemeUI();
+    }
+
+    function updateThemeUI() {
+      const isDark = document.body.classList.contains('dark-mode');
+      const icon = document.getElementById('themeIcon');
+      const label = document.getElementById('themeLabel');
+      if (icon) icon.textContent = isDark ? '☀️' : '🌓';
+      if (label) label.textContent = isDark ? 'Mode clair' : 'Mode sombre';
+    }
+
+    function setCourseFilter(filterVal, btnEl) {
+      activeFilter = filterVal;
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderQuestions();
+    }
+
+    function updateScoreUI() {
+      let correctCount = 0;
+      EXP_QUESTIONS.forEach(q => {
+        if (userAnswers[q.id] === q.correctIndex) correctCount++;
+      });
+      const total = EXP_QUESTIONS.length;
+      const pct = Math.round((correctCount / total) * 100);
+      document.getElementById('expScoreVal').textContent = correctCount;
+      document.getElementById('expScorePct').textContent = pct + '%';
+    }
+
+    function selectExpOption(qId, origOptIdx) {
+      if (userAnswers[qId] !== undefined) return;
+      userAnswers[qId] = origOptIdx;
+      saveAnswers();
+      updateScoreUI();
+      renderQuestions();
+    }
+
+    function resetExpProgress() {
+      if (!confirm('Réinitialiser vos réponses sur les 12 questions expérimentales ?')) return;
+      userAnswers = {};
+      saveAnswers();
+      buildOptionOrders();
+      updateScoreUI();
+      renderQuestions();
+    }
+
+    function renderQuestions() {
+      const container = document.getElementById('questionsListContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const letters = ['A', 'B', 'C', 'D'];
+      const filtered = EXP_QUESTIONS.filter(q => activeFilter === 'all' || q.courses.includes(activeFilter));
+
+      filtered.forEach(q => {
+        const answeredIdx = userAnswers[q.id];
+        const isAnswered = (answeredIdx !== undefined && answeredIdx !== null);
+        const isCorrect = isAnswered && (answeredIdx === q.correctIndex);
+
+        const card = document.createElement('article');
+        card.className = 'exp-card' + (isAnswered ? (isCorrect ? ' answered-correct' : ' answered-wrong') : '');
+
+        const topRow = document.createElement('div');
+        topRow.className = 'card-top-row';
+
+        const badges = document.createElement('div');
+        badges.className = 'badge-group';
+
+        const idBadge = document.createElement('span');
+        idBadge.className = 'exp-id-badge';
+        idBadge.textContent = '🧪 ' + q.id;
+
+        const coursesBadge = document.createElement('span');
+        coursesBadge.className = 'exp-courses-badge';
+        coursesBadge.textContent = '🔗 ' + q.courses;
+
+        badges.appendChild(idBadge);
+        badges.appendChild(coursesBadge);
+
+        const fbBtn = document.createElement('button');
+        fbBtn.type = 'button';
+        fbBtn.className = 'ctrl-btn';
+        fbBtn.style.minHeight = '36px';
+        fbBtn.style.padding = '4px 10px';
+        fbBtn.style.fontSize = '0.82rem';
+        fbBtn.innerHTML = '<span>💬</span> <span>Feedback</span>';
+        fbBtn.onclick = () => openExpFeedbackModal(q);
+
+        topRow.appendChild(badges);
+        topRow.appendChild(fbBtn);
+
+        const topic = document.createElement('div');
+        topic.className = 'exp-card-topic';
+        topic.textContent = q.title;
+
+        const stem = document.createElement('h2');
+        stem.className = 'exp-card-question';
+        stem.textContent = q.question;
+
+        const optsWrap = document.createElement('div');
+        optsWrap.className = 'options-list';
+
+        const order = optionOrderMap.get(q.id) || [0, 1, 2, 3];
+        order.forEach((origIdx, displayPos) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'opt-btn';
+          if (isAnswered) {
+            btn.disabled = true;
+            if (origIdx === q.correctIndex) btn.classList.add('correct');
+            else if (origIdx === answeredIdx) btn.classList.add('incorrect');
+          } else {
+            btn.onclick = () => selectExpOption(q.id, origIdx);
+          }
+
+          const letSpan = document.createElement('span');
+          letSpan.className = 'opt-letter';
+          letSpan.textContent = letters[displayPos];
+
+          const txtSpan = document.createElement('span');
+          txtSpan.textContent = q.options[origIdx];
+
+          btn.appendChild(letSpan);
+          btn.appendChild(txtSpan);
+          optsWrap.appendChild(btn);
+        });
+
+        const expBox = document.createElement('div');
+        expBox.className = 'exp-explanation-box' + (isAnswered ? ' visible' : '');
+        if (isAnswered) {
+          const status = document.createElement('div');
+          status.className = 'exp-status-line ' + (isCorrect ? 'ok' : 'err');
+          status.textContent = isCorrect
+            ? '✅ Excellente réponse !'
+            : '❌ Réponse incorrecte — La proposition exacte est mise en évidence en vert.';
+
+          const bridgeText = document.createElement('div');
+          bridgeText.innerHTML = '<strong>🔗 Synthèse inter-cours (' + q.courses + ') :</strong> ' + q.explanation;
+
+          expBox.appendChild(status);
+          expBox.appendChild(bridgeText);
+        }
+
+        card.appendChild(topRow);
+        card.appendChild(topic);
+        card.appendChild(stem);
+        card.appendChild(optsWrap);
+        card.appendChild(expBox);
+        container.appendChild(card);
+      });
+    }
+
+    function openExpFeedbackModal(q) {
+      activeFeedbackItem = q;
+      document.getElementById('expFbTargetBadge').textContent = q.id + ' (' + q.courses + ') — ' + q.title;
+      document.getElementById('expFbComment').value = '';
+      document.getElementById('expFeedbackModal').style.display = 'flex';
+      setTimeout(() => document.getElementById('expFbComment').focus(), 50);
+    }
+
+    function closeExpFeedbackModal() {
+      document.getElementById('expFeedbackModal').style.display = 'none';
+      activeFeedbackItem = null;
+    }
+
+    async function submitExpFeedback() {
+      if (!activeFeedbackItem) return;
+      const comment = document.getElementById('expFbComment').value.trim();
+      if (!comment) {
+        alert('Veuillez écrire votre observation avant de transmettre.');
+        return;
+      }
+      const author = document.getElementById('expFbAuthor').value.trim();
+      const btn = document.getElementById('expFbSubmitBtn');
+      btn.disabled = true;
+      btn.textContent = '⏳ Envoi...';
+
+      const payload = {
+        _subject: `[PSY9613 - Module Expérimental] Feedback sur ${activeFeedbackItem.id} (${activeFeedbackItem.courses})`,
+        _template: 'table',
+        _captcha: 'false',
+        'Question exp.': `${activeFeedbackItem.id} (${activeFeedbackItem.courses})`,
+        'Titre': activeFeedbackItem.title,
+        'Observation': comment,
+        'Auteur': author || 'Anonyme'
+      };
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/mercier.michel.4@courrier.uqam.ca', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        closeExpFeedbackModal();
+        alert('✅ Merci ! Votre observation sur ' + activeFeedbackItem.id + ' a été transmise.');
+      } catch (e) {
+        const subj = encodeURIComponent(`[PSY9613 - Module Expérimental] Feedback ${activeFeedbackItem.id}`);
+        const body = encodeURIComponent(`Question : ${activeFeedbackItem.id} (${activeFeedbackItem.courses})
+Observation : ${comment}
+De : ${author || 'Anonyme'}`);
+        window.location.href = `mailto:mercier.michel.4@courrier.uqam.ca?subject=${subj}&body=${body}`;
+        closeExpFeedbackModal();
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '📤 Envoyer';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadState();
+      updateScoreUI();
+      renderQuestions();
+    });
+  </script>
+</body>
+</html>
