@@ -84,6 +84,14 @@
 
 ---
 
+
+### Tâche 1.2.5 : Portabilité de la persistance de position vers la station classique (`index.html`)
+- **Constat d'usage (Session d'étude Michel) :** Lors d'un rafraîchissement (`F5` / Reload), l'utilisateur était renvoyé à la Question 1, imposant de recliquer jusqu'à la question courante.
+- **Solution validée en production sur `fullscreen.html` :** Mémorisation automatique de `currentIndex` et de l'ordre pseudo-aléatoire dans le stockage local, avec restauration immédiate au `DOMContentLoaded`.
+- **Mandat pour le retour d'Argon :** Porter cette persistance transparente dans `index.html` sans régression sur les filtres ni sur les ancres de navigation.
+
+---
+
 ## 📅 4. Prochaines Étapes & Échéancier Académique
 
 ### Séances 3 & 4 (28 Septembre & 5 Octobre 2026)
