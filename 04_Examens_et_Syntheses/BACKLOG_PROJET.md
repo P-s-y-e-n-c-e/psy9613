@@ -95,3 +95,23 @@
 - **2 Novembre 2026 (14h00) :** **Examen Intra (35 % de la note finale)** - Séances 1 à 6.
 - **14 Décembre 2026 (14h00) :** **Débat en dyade de Michel (25 % de la note finale)**.
 - **21 Décembre 2026 (14h00) :** **Examen Final (35 % de la note finale)** - Séances 8 à 12.
+
+
+---
+
+## 🍄 5. Système de Gamification Mario & Mode Boss Bowser (Feuille de Route)
+
+> [!NOTE]
+> **Vision conceptuelle (Initiative Michel Mercier) :**
+> Intégration d'une couche ludique et stimulante directement inspirée de l'univers de Super Mario Bros pour dynamiser les révisions d'examen et récompenser la maîtrise approfondie.
+
+### A. Économie des Pièces d'Or (Style Mario Bros)
+- **Mécanique :** Chaque bonne réponse engrange des pièces d'or sonores et visuelles (`🪙 +1 Coin`).
+- **Combos et Multiplicateurs :** Séries consécutives de bonnes réponses (3 d'affilée, 5 d'affilée, 10 d'affilée) débloquant des multiplicateurs et un jingle 1-Up classique.
+- **Persistance :** Compteur de pièces cumulées dans le stockage local avec total affiché dans la barre d'outils.
+
+### B. Mode Boss « Défi Bowser » (Questions qui tuent)
+- **Concept :** Questions transversales avancées, pièges doctrinaux subtils et dissociations neurophysiologiques à haute exigence critique (« questions de boss »).
+- **Déclenchement :** Apparition aléatoire de Bowser après une série de 10 pièces ou palier de maîtrise atteint.
+- **Avatar & Thématique visuelle :** Ambiance lave/château sombre, musique ou effets de flammes rétro, enjeu doublé en pièces d'or.
+- **Objectif pédagogique :** Préparer Michel aux questions à développement et aux pièges les plus retors des examens de Dave Saint-Amour et Pierre Poirier.
