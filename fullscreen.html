@@ -216,6 +216,9 @@
     }
 
     .score-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(6px, 0.4vw, 10px);
       font-size: clamp(1rem, 1.1vw, 1.6rem);
       font-weight: 800;
       padding: clamp(4px, 0.5vh, 8px) clamp(10px, 0.8vw, 18px);
@@ -223,6 +226,13 @@
       border: 1px solid var(--success);
       color: var(--success);
       border-radius: clamp(6px, 0.8vh, 12px);
+    }
+    .tv-coin-icon {
+      height: clamp(1.2rem, 1.3vw, 1.8rem);
+      width: auto;
+      vertical-align: middle;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
     }
 
     /* Fine barre de progression attachée sous l'en-tête (4px fixes) */
@@ -687,7 +697,7 @@
 
       <!-- Actions -->
       <div class="tv-actions">
-        <div class="score-badge" id="scoreBadge">🪙 0 / 116 (0%)</div>
+        <div class="score-badge" id="scoreBadge"><img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText">0 / 116 (0%)</span></div>
         <button class="tv-btn" id="soundToggleBtn" onclick="toggleSound()" title="Couper le son [S]">
           <span id="soundIcon">🔊</span>
         </button>
@@ -1104,7 +1114,7 @@
 
         if (nextAutoBtn) {
           if (isLast) {
-            nextAutoBtn.innerHTML = '<span>🪙 Série terminée !</span>';
+            nextAutoBtn.innerHTML = '<span><img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario" style="height: 1.1em; vertical-align: middle; margin-right: 6px;"> Série terminée !</span>';
             nextAutoBtn.disabled = true;
           } else {
             nextAutoBtn.innerHTML = '<span>Suivante ▶</span> <span class="key-pill" style="color: #fff; background: rgba(0,0,0,0.25);">[→]</span>';
@@ -1188,9 +1198,14 @@
       });
       const total = RAW_QUESTIONS.length;
       const pct = Math.round((corr / total) * 100);
-      const badge = document.getElementById('scoreBadge');
-      if (badge) {
-        badge.textContent = `🪙 ${corr} / ${total} (${pct}%)`;
+      const scoreText = document.getElementById('scoreText');
+      if (scoreText) {
+        scoreText.textContent = `${corr} / ${total} (${pct}%)`;
+      } else {
+        const badge = document.getElementById('scoreBadge');
+        if (badge) {
+          badge.innerHTML = `<img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText">${corr} / ${total} (${pct}%)</span>`;
+        }
       }
     }
 
