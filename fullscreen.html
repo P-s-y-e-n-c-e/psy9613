@@ -276,6 +276,61 @@
       padding: clamp(4px, 0.8vh, 12px) 0;
     }
 
+    /* Mode Répondu : compactage dynamique et ajustement parfait dans l'écran */
+    .tv-stage.answered {
+      justify-content: flex-start;
+      gap: clamp(6px, 1vh, 14px);
+      padding: clamp(4px, 0.6vh, 10px) 0;
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+    .tv-stage.answered::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tv-stage.answered .tv-question-box {
+      margin-bottom: 0;
+    }
+
+    .tv-stage.answered .tv-question-meta {
+      font-size: clamp(0.85rem, 0.9vw, 1.25rem);
+      margin-bottom: clamp(2px, 0.3vh, 4px);
+    }
+
+    .tv-stage.answered .tv-question-text {
+      font-size: clamp(1.15rem, min(1.4vw, 2.3vh), 1.85rem);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .tv-stage.answered .tv-options {
+      gap: clamp(6px, 0.8vh, 10px);
+      margin-bottom: 0;
+    }
+
+    .tv-stage.answered .option-card {
+      padding: clamp(6px, 0.8vh, 10px) clamp(12px, 1.2vw, 20px);
+      min-height: clamp(38px, 4.2vh, 56px);
+      font-size: clamp(1rem, 1.1vw, 1.45rem);
+    }
+
+    .option-card.hidden-unselected {
+      display: none !important;
+    }
+
+    .tv-stage.answered .tv-feedback {
+      padding: clamp(10px, 1.2vh, 18px) clamp(16px, 1.6vw, 30px);
+      max-height: clamp(180px, 34vh, 320px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+      margin-top: 0;
+    }
+
+    .tv-stage.answered .feedback-body {
+      font-size: clamp(1rem, min(1.2vw, 2vh), 1.65rem);
+      line-height: 1.35;
+    }
+
     /* Énoncé de la question */
     .tv-question-box {
       display: flex;
@@ -766,7 +821,7 @@
     </div>
 
     <!-- Scène Principale : Question + Options + Rétroaction -->
-    <main class="tv-stage">
+    <main class="tv-stage" id="tvStage">
       <!-- Question -->
       <div class="tv-question-box">
         <div class="tv-question-meta">
@@ -1101,6 +1156,8 @@
 
       const q = filteredQuestions[currentIndex];
       focusedOptionIndex = -1;
+      const ansInfo = userProgress[q.id];
+      const hasAnswered = Boolean(ansInfo);
 
       // Métadonnées
       document.getElementById('courseBadge').textContent = `Cours ${q.session}`;
@@ -1115,13 +1172,16 @@
 
       // Énoncé
       document.getElementById('questionText').textContent = q.question;
+      const stageEl = document.getElementById('tvStage');
+      if (stageEl) {
+        if (hasAnswered) stageEl.classList.add('answered');
+        else stageEl.classList.remove('answered');
+      }
 
       // Options
       const container = document.getElementById('optionsContainer');
       container.innerHTML = '';
       const letters = ['A', 'B', 'C', 'D'];
-      const ansInfo = userProgress[q.id];
-      const hasAnswered = Boolean(ansInfo);
 
       q.options.forEach((optText, idx) => {
         const card = document.createElement('div');
@@ -1134,7 +1194,8 @@
           } else if (idx === ansInfo.selected) {
             card.classList.add('incorrect');
           } else {
-            card.classList.add('dimmed');
+            // Masque les options distractrices non choisies pour libérer l'espace pour l'explication
+            card.classList.add('hidden-unselected');
           }
         } else {
           card.onclick = () => selectOption(idx);
