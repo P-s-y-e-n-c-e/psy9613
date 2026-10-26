@@ -55,7 +55,7 @@
     }
 
     /* -------------------------------------------------------------
-       ZERO SCROLL STRICT & RESPONSIVE 16:9 DYNAMIQUE (1080p À 4K)
+       ZERO SCROLL STRICT & LAYOUT FLEXBOX PARFAITEMENT ÉQUILIBRÉ
        ------------------------------------------------------------- */
     *, *::before, *::after {
       box-sizing: border-box;
@@ -67,7 +67,7 @@
       width: 100vw;
       height: 100vh;
       max-height: 100vh;
-      overflow: hidden !important; /* STRICTEMENT AUCUNE BARRE DE SCROLL */
+      overflow: hidden !important; /* STRICTEMENT AUCUN DÉFILEMENT */
       background: var(--bg-main);
       color: var(--text-main);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -75,23 +75,23 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Conteneur Plein Écran Fluide (s'adapte de 1080p à 4K sans bande noire latérale) */
+    /* Conteneur Plein Écran Fluide Flexbox (Aucun vide fantôme) */
     .tv-wrapper {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
+      display: flex;
+      flex-direction: column;
       height: 100vh;
       max-height: 100vh;
       width: 100vw;
       max-width: 100vw;
       margin: 0;
-      padding: clamp(8px, 1.4vh, 28px) clamp(16px, 2.5vw, 64px);
-      gap: clamp(6px, 1.1vh, 20px);
+      padding: clamp(8px, 1.2vh, 18px) clamp(16px, 2.5vw, 48px);
       box-sizing: border-box;
       overflow: hidden !important;
+      justify-content: space-between;
     }
 
     /* -------------------------------------------------------------
-       1. EN-TÊTE ÉPURÉE DYNAMIQUE
+       1. EN-TÊTE ÉPURÉE
        ------------------------------------------------------------- */
     .tv-topbar {
       display: flex;
@@ -102,7 +102,8 @@
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: clamp(10px, 1.2vh, 18px);
-      height: clamp(46px, 5.5vh, 84px);
+      height: clamp(44px, 5.2vh, 76px);
+      min-height: clamp(44px, 5.2vh, 76px);
       flex-shrink: 0;
     }
 
@@ -125,8 +126,8 @@
     }
 
     .tv-mascot-img {
-      height: clamp(34px, 4.2vh, 64px);
-      width: clamp(34px, 4.2vh, 64px);
+      height: clamp(32px, 3.8vh, 56px);
+      width: clamp(32px, 3.8vh, 56px);
       border-radius: 50%;
       object-fit: contain;
       flex-shrink: 0;
@@ -136,9 +137,9 @@
     .tv-badge {
       display: inline-flex;
       align-items: center;
-      padding: clamp(4px, 0.6vh, 10px) clamp(10px, 0.9vw, 20px);
+      padding: clamp(4px, 0.5vh, 8px) clamp(10px, 0.8vw, 18px);
       border-radius: clamp(6px, 0.8vh, 12px);
-      font-size: clamp(1.05rem, 1.15vw, 1.7rem);
+      font-size: clamp(1rem, 1.1vw, 1.6rem);
       font-weight: 800;
       background: var(--primary);
       color: #ffffff;
@@ -169,7 +170,7 @@
     }
 
     .tv-btn {
-      padding: clamp(4px, 0.6vh, 10px) clamp(10px, 0.9vw, 20px);
+      padding: clamp(4px, 0.5vh, 8px) clamp(10px, 0.8vw, 18px);
       font-size: clamp(0.95rem, 1.05vw, 1.5rem);
       font-weight: 700;
       border-radius: clamp(6px, 0.8vh, 12px);
@@ -182,7 +183,7 @@
       gap: clamp(4px, 0.4vw, 8px);
       transition: all 0.15s ease;
       white-space: nowrap;
-      min-height: clamp(34px, 4vh, 60px);
+      min-height: clamp(32px, 3.8vh, 54px);
     }
 
     .tv-btn:hover, .tv-btn:focus {
@@ -215,23 +216,27 @@
     }
 
     .score-badge {
-      font-size: clamp(1.05rem, 1.15vw, 1.7rem);
+      font-size: clamp(1rem, 1.1vw, 1.6rem);
       font-weight: 800;
-      padding: clamp(4px, 0.6vh, 10px) clamp(10px, 0.9vw, 20px);
+      padding: clamp(4px, 0.5vh, 8px) clamp(10px, 0.8vw, 18px);
       background: rgba(34, 197, 94, 0.18);
       border: 1px solid var(--success);
       color: var(--success);
       border-radius: clamp(6px, 0.8vh, 12px);
     }
 
-    /* Barre de progression continue sous l'en-tête */
+    /* Fine barre de progression attachée sous l'en-tête (4px fixes) */
     .progress-track {
       width: 100%;
-      height: clamp(4px, 0.6vh, 8px);
+      height: 4px;
+      min-height: 4px;
+      max-height: 4px;
       background: rgba(255, 255, 255, 0.08);
-      border-radius: 4px;
+      border-radius: 2px;
       overflow: hidden;
-      margin-top: -4px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      flex-shrink: 0;
     }
 
     .progress-fill {
@@ -242,23 +247,25 @@
     }
 
     /* -------------------------------------------------------------
-       2. SCÈNE PRINCIPALE DYNAMIQUE
+       2. SCÈNE PRINCIPALE : UTILISE TOUT L'ESPACE DISPONIBLE
        ------------------------------------------------------------- */
     .tv-stage {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: clamp(8px, 1.2vh, 20px);
+      gap: clamp(8px, 1.6vh, 24px);
+      flex: 1;
       min-height: 0;
       overflow: hidden;
       position: relative;
+      padding: clamp(4px, 0.8vh, 12px) 0;
     }
 
     /* Énoncé de la question */
     .tv-question-box {
       display: flex;
       flex-direction: column;
-      gap: clamp(4px, 0.6vh, 10px);
+      gap: clamp(4px, 0.6vh, 8px);
       flex-shrink: 0;
     }
 
@@ -272,7 +279,7 @@
     }
 
     .tv-question-text {
-      font-size: clamp(1.8rem, min(2.5vw, 4.6vh), 3.4rem);
+      font-size: clamp(1.8rem, min(2.5vw, 4.4vh), 3.4rem);
       line-height: 1.28;
       font-weight: 800;
       color: var(--text-main);
@@ -283,7 +290,7 @@
     .tv-options {
       display: flex;
       flex-direction: column;
-      gap: clamp(8px, 1.1vh, 20px);
+      gap: clamp(8px, 1.2vh, 20px);
       flex-shrink: 0;
     }
 
@@ -291,18 +298,18 @@
       display: flex;
       align-items: center;
       gap: clamp(14px, 1.5vw, 32px);
-      padding: clamp(10px, 1.3vh, 24px) clamp(16px, 1.8vw, 36px);
-      min-height: clamp(56px, 7vh, 116px);
+      padding: clamp(10px, 1.3vh, 22px) clamp(16px, 1.8vw, 36px);
+      min-height: clamp(54px, 6.8vh, 110px);
       background: var(--bg-card);
       border: 2px solid var(--border-color);
-      border-radius: clamp(12px, 1.3vh, 22px);
+      border-radius: clamp(10px, 1.3vh, 20px);
       cursor: pointer;
       transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       user-select: none;
     }
 
-    /* Survol Souris / Curseur classique */
+    /* Survol Souris */
     .option-card:hover {
       background: var(--bg-card-hover);
       border-color: var(--accent);
@@ -326,9 +333,9 @@
     }
 
     .option-letter {
-      width: clamp(44px, 5.2vh, 84px);
-      height: clamp(44px, 5.2vh, 84px);
-      min-width: clamp(44px, 5.2vh, 84px);
+      width: clamp(42px, 5vh, 80px);
+      height: clamp(42px, 5vh, 80px);
+      min-width: clamp(42px, 5vh, 80px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -394,21 +401,21 @@
     }
 
     /* -------------------------------------------------------------
-       3. PANNEAU DE RÉTROACTION & EXPLICATION DYNAMIQUE
+       3. PANNEAU DE RÉTROACTION & EXPLICATION
        ------------------------------------------------------------- */
     .tv-feedback {
       display: none;
       background: var(--bg-card);
       border: 2px solid var(--border-color);
-      border-radius: clamp(12px, 1.4vh, 22px);
-      padding: clamp(10px, 1.4vh, 26px) clamp(16px, 1.8vw, 36px);
+      border-radius: clamp(10px, 1.3vh, 20px);
+      padding: clamp(10px, 1.3vh, 22px) clamp(16px, 1.8vw, 36px);
       flex-shrink: 0;
       animation: slideUp 0.18s ease-out;
       box-shadow: var(--shadow-card);
     }
 
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(10px); }
+      from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -416,12 +423,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: clamp(12px, 1.2vw, 24px);
-      margin-bottom: clamp(6px, 0.8vh, 12px);
+      gap: clamp(10px, 1.2vw, 24px);
+      margin-bottom: clamp(4px, 0.6vh, 10px);
     }
 
     .feedback-verdict {
-      font-size: clamp(1.4rem, 2.6vh, 2.6rem);
+      font-size: clamp(1.35rem, 2.4vh, 2.4rem);
       font-weight: 800;
       display: flex;
       align-items: center;
@@ -438,8 +445,8 @@
     }
 
     .btn-advance {
-      padding: clamp(8px, 1vh, 18px) clamp(18px, 1.8vw, 36px);
-      font-size: clamp(1.2rem, 1.35vw, 2.2rem);
+      padding: clamp(6px, 0.8vh, 16px) clamp(16px, 1.6vw, 32px);
+      font-size: clamp(1.15rem, 1.3vw, 2.1rem);
       font-weight: 800;
       background: var(--primary);
       color: #ffffff;
@@ -451,7 +458,7 @@
       gap: clamp(6px, 0.6vw, 12px);
       box-shadow: 0 0 clamp(16px, 1.5vw, 30px) var(--primary-glow);
       transition: all 0.15s ease;
-      min-height: clamp(44px, 5.2vh, 80px);
+      min-height: clamp(40px, 4.8vh, 74px);
     }
 
     .btn-advance:hover, .btn-advance:focus {
@@ -461,15 +468,15 @@
     }
 
     .btn-details {
-      padding: clamp(6px, 0.8vh, 14px) clamp(12px, 1.2vw, 24px);
-      font-size: clamp(1rem, 1.15vw, 1.8rem);
+      padding: clamp(5px, 0.7vh, 12px) clamp(12px, 1.1vw, 22px);
+      font-size: clamp(0.95rem, 1.1vw, 1.7rem);
       font-weight: 700;
       background: transparent;
       color: var(--accent);
       border: 1px solid var(--accent);
       border-radius: clamp(6px, 0.8vh, 12px);
       cursor: pointer;
-      min-height: clamp(38px, 4.4vh, 68px);
+      min-height: clamp(36px, 4.2vh, 64px);
       display: inline-flex;
       align-items: center;
       gap: clamp(4px, 0.5vw, 10px);
@@ -480,21 +487,21 @@
     }
 
     .feedback-body {
-      font-size: clamp(1.15rem, min(1.45vw, 2.5vh), 2.1rem);
+      font-size: clamp(1.1rem, min(1.4vw, 2.4vh), 2rem);
       line-height: 1.38;
       font-weight: 600;
       color: var(--text-main);
     }
 
     .feedback-source-cite {
-      margin-top: clamp(4px, 0.6vh, 10px);
-      font-size: clamp(0.95rem, 1.05vw, 1.5rem);
+      margin-top: clamp(4px, 0.5vh, 8px);
+      font-size: clamp(0.9rem, 1vw, 1.4rem);
       color: var(--text-muted);
       font-style: italic;
     }
 
     /* -------------------------------------------------------------
-       4. BARRE INFÉRIEURE DYNAMIQUE
+       4. BARRE INFÉRIEURE
        ------------------------------------------------------------- */
     .tv-bottombar {
       display: flex;
@@ -505,13 +512,14 @@
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: clamp(10px, 1.2vh, 18px);
-      height: clamp(46px, 5.5vh, 84px);
+      height: clamp(44px, 5.2vh, 76px);
+      min-height: clamp(44px, 5.2vh, 76px);
       flex-shrink: 0;
     }
 
     .nav-arrow-btn {
-      padding: clamp(4px, 0.6vh, 10px) clamp(14px, 1.2vw, 28px);
-      font-size: clamp(1.05rem, 1.15vw, 1.7rem);
+      padding: clamp(4px, 0.5vh, 8px) clamp(14px, 1.2vw, 26px);
+      font-size: clamp(1rem, 1.1vw, 1.6rem);
       font-weight: 700;
       border-radius: clamp(6px, 0.8vh, 12px);
       cursor: pointer;
@@ -521,7 +529,7 @@
       background: transparent;
       border: 1px solid var(--border-color);
       color: var(--text-main);
-      min-height: clamp(34px, 4vh, 60px);
+      min-height: clamp(32px, 3.8vh, 54px);
       transition: all 0.15s ease;
     }
 
@@ -695,7 +703,7 @@
       </div>
     </header>
 
-    <!-- Barre de progression continue -->
+    <!-- Barre de progression continue (4px de hauteur seulement) -->
     <div class="progress-track">
       <div class="progress-fill" id="progressFill"></div>
     </div>
@@ -933,7 +941,6 @@
                   map.delete(id);
                 }
               });
-              // Ajouter les éventuels reliquats
               map.forEach(q => orderedList.push(q));
               if (orderedList.length === list.length && orderedList.length > 0) {
                 list = orderedList;
@@ -953,7 +960,6 @@
 
       filteredQuestions = list;
 
-      // Restaurer l'index sauvegardé ou borner
       try {
         const savedIdx = parseInt(localStorage.getItem(INDEX_KEY), 10);
         if (!isNaN(savedIdx) && savedIdx >= 0 && savedIdx < filteredQuestions.length) {
