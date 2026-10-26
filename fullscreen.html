@@ -527,8 +527,8 @@
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: clamp(10px, 1.2vh, 18px);
-      height: clamp(44px, 5.2vh, 76px);
-      min-height: clamp(44px, 5.2vh, 76px);
+      height: clamp(52px, 6.2vh, 88px);
+      min-height: clamp(52px, 6.2vh, 88px);
       flex-shrink: 0;
     }
 
@@ -561,10 +561,50 @@
     .airmouse-legend {
       display: flex;
       align-items: center;
-      gap: clamp(8px, 1vw, 22px);
+      justify-content: center;
+      gap: clamp(8px, 1.1vw, 24px);
+      flex: 1;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(2px, 0.3vh, 4px);
+      text-align: center;
+    }
+
+    .legend-item .key-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-color);
+      padding: clamp(2px, 0.25vh, 4px) clamp(6px, 0.5vw, 10px);
+      border-radius: clamp(4px, 0.5vh, 6px);
+      color: var(--accent);
+      font-family: monospace;
+      font-size: clamp(0.85rem, 0.9vw, 1.25rem);
+      font-weight: 700;
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+
+    .legend-label {
+      font-size: clamp(0.75rem, 0.8vw, 1.1rem);
       color: var(--text-muted);
-      font-size: clamp(0.95rem, 1vw, 1.5rem);
       font-weight: 600;
+      white-space: nowrap;
+      letter-spacing: 0.2px;
+      line-height: 1.1;
+    }
+
+    .legend-sep {
+      color: var(--border-color);
+      font-size: clamp(0.8rem, 0.9vw, 1.2rem);
+      opacity: 0.6;
+      user-select: none;
     }
 
     .key-pill {
@@ -767,21 +807,40 @@
       </button>
 
       <div class="airmouse-legend">
-        <span>Curseur / Souris : Clic</span>
-        <span>•</span>
-        <span>Flèches <span class="key-pill">↑ / ↓</span> Options</span>
-        <span>•</span>
-        <span><span class="key-pill">OK / Entrée</span> Valider</span>
-        <span>•</span>
-        <span><span class="key-pill">← / →</span> Naviguer</span>
-        <span>•</span>
-        <span><span class="key-pill">1,2,3,4</span> Choix direct</span>
-        <span>•</span>
-        <span><span class="key-pill">T</span> Source</span>
-        <span>•</span>
-        <span><span class="key-pill">R</span> Aléatoire</span>
-        <span>•</span>
-        <span><span class="key-pill">S</span> Son</span>
+        <div class="legend-item">
+          <span class="key-pill">↑ / ↓</span>
+          <span class="legend-label">Options</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">OK / Entrée</span>
+          <span class="legend-label">Valider</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">← / →</span>
+          <span class="legend-label">Naviguer</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">1, 2, 3, 4</span>
+          <span class="legend-label">Choix direct</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">T</span>
+          <span class="legend-label">Source</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">R</span>
+          <span class="legend-label">Aléatoire</span>
+        </div>
+        <span class="legend-sep">•</span>
+        <div class="legend-item">
+          <span class="key-pill">S</span>
+          <span class="legend-label">Son</span>
+        </div>
       </div>
 
       <button class="nav-arrow-btn" id="nextBtn" onclick="nextQuestion()">
