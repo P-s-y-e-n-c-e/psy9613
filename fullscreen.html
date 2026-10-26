@@ -167,6 +167,11 @@
       align-items: center;
       gap: clamp(4px, 0.4vw, 10px);
       overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .tv-filters::-webkit-scrollbar {
+      display: none;
     }
 
     .tv-btn {
@@ -679,7 +684,6 @@
         </a>
         <span class="tv-badge" id="courseBadge">Cours 1</span>
         <span class="tv-badge secondary" id="qNumBadge">Q1</span>
-        <span class="tv-tag" id="topicTag">Épistémologie</span>
       </div>
 
       <!-- Filtres Cours & Aléatoire -->
@@ -1042,7 +1046,7 @@
       // Métadonnées
       document.getElementById('courseBadge').textContent = `Cours ${q.session}`;
       document.getElementById('qNumBadge').textContent = q.course_q_num || `#${q.id}`;
-      document.getElementById('topicTag').textContent = q.topic_category || q.tag || '';
+      const topicTag = document.getElementById('topicTag'); if (topicTag) topicTag.textContent = q.topic_category || q.tag || '';
       document.getElementById('questionCounter').textContent = `Question ${currentIndex + 1} sur ${filteredQuestions.length}`;
       document.getElementById('courseFullTitle').textContent = q.doc_title || `Séance ${q.session}`;
 
