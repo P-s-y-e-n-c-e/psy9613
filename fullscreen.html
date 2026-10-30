@@ -821,6 +821,252 @@
       color: var(--warning);
       font-weight: 700;
     }
+
+    /* -------------------------------------------------------------
+       6. MONITEUR VERTICAL 9:16 (ex: 1440x2560 @ 100 % zoom)
+          Isolation stricte en portrait : zéro impact sur les écrans 16:9 / paysage
+       ------------------------------------------------------------- */
+    @media (orientation: portrait) {
+      .score-badge .score-denom {
+        display: none;
+      }
+    }
+
+    @media (orientation: portrait) and (min-width: 700px) {
+      .tv-wrapper {
+        padding: clamp(10px, 1.0vh, 22px) clamp(14px, 1.8vw, 34px);
+      }
+
+      /* En-tête : C1 à C5 + Aléatoire visibles intégralement et harmonieusement proportionnés */
+      .tv-topbar {
+        gap: clamp(8px, 0.85vw, 18px);
+        padding: 0 clamp(10px, 1.1vw, 22px);
+        height: clamp(52px, 3.5vh, 84px);
+        min-height: clamp(52px, 3.5vh, 84px);
+      }
+
+      .tv-brand {
+        gap: clamp(6px, 0.65vw, 14px);
+      }
+
+      .tv-mascot-img {
+        width: clamp(32px, 3.0vw, 56px);
+        height: clamp(32px, 3.0vw, 56px);
+      }
+
+      .tv-badge {
+        padding: clamp(5px, 0.45vh, 10px) clamp(8px, 0.78vw, 16px);
+        font-size: clamp(0.84rem, 1.06vw, 1.6rem);
+      }
+
+      .tv-filters {
+        gap: clamp(4px, 0.48vw, 10px);
+        flex: 1;
+        justify-content: center;
+        min-width: 0;
+      }
+
+      .tv-topbar .tv-btn {
+        padding: clamp(5px, 0.45vh, 10px) clamp(8px, 0.78vw, 16px);
+        font-size: clamp(0.82rem, 1.04vw, 1.55rem);
+        min-height: clamp(34px, 2.35vh, 56px);
+        gap: clamp(4px, 0.4vw, 8px);
+      }
+
+      .tv-actions {
+        gap: clamp(5px, 0.5vw, 11px);
+      }
+
+      .score-badge {
+        padding: clamp(5px, 0.45vh, 10px) clamp(9px, 0.8vw, 17px);
+        font-size: clamp(0.84rem, 1.06vw, 1.6rem);
+        gap: clamp(5px, 0.45vw, 9px);
+      }
+
+      .tv-coin-icon {
+        height: clamp(1.05rem, 1.3vw, 1.95rem);
+      }
+
+      /* Scène principale 9:16 : maximisation de la question et des choix sur toute la hauteur */
+      .tv-stage {
+        justify-content: space-between;
+        gap: calc(var(--p-scale, 1) * 1.9vh);
+        padding: calc(var(--p-scale, 1) * 1.2vh) clamp(8px, 0.75vw, 16px);
+        overflow: hidden;
+      }
+
+      .option-card.focused {
+        transform: scale(1.006) !important;
+      }
+
+      .tv-question-box {
+        gap: calc(var(--p-scale, 1) * 0.7vh);
+        flex-shrink: 0;
+      }
+
+      .tv-question-meta {
+        font-size: calc(var(--p-scale, 1) * 1.65vw);
+      }
+
+      .tv-question-text {
+        font-size: calc(var(--p-scale, 1) * 3.85vw);
+        line-height: 1.24;
+        text-wrap: pretty;
+      }
+
+      .tv-options {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        gap: calc(var(--p-scale, 1) * 1.4vh);
+        min-height: 0;
+      }
+
+      .option-card {
+        flex: 1 0 auto;
+        min-height: 0;
+        padding: calc(var(--p-scale, 1) * 1.35vh) calc(var(--p-scale, 1) * 1.95vw);
+        gap: calc(var(--p-scale, 1) * 1.65vw);
+        border-radius: clamp(14px, 1.1vh, 26px);
+        border-width: clamp(2px, 0.16vw, 4px);
+      }
+
+      .option-letter {
+        width: calc(var(--p-scale, 1) * 6.0vw);
+        height: calc(var(--p-scale, 1) * 6.0vw);
+        min-width: calc(var(--p-scale, 1) * 6.0vw);
+        font-size: calc(var(--p-scale, 1) * 2.85vw);
+        border-radius: clamp(10px, 0.85vh, 20px);
+      }
+
+      .option-text {
+        font-size: calc(var(--p-scale, 1) * 3.0vw);
+        line-height: 1.29;
+      }
+
+      .option-status-icon {
+        font-size: calc(var(--p-scale, 1) * 3.2vw);
+      }
+
+      .toad-status-icon,
+      .toad-verdict-icon {
+        width: calc(var(--p-scale, 1) * 4.4vw);
+        height: calc(var(--p-scale, 1) * 4.4vw);
+      }
+
+      /* État répondu en 9:16 : question + réponse(s) + rétroaction équilibrées sans boîte vide */
+      .tv-stage.answered {
+        justify-content: space-evenly;
+        gap: calc(var(--p-scale, 1) * 1.6vh);
+        padding: calc(var(--p-scale, 1) * 1.0vh) clamp(8px, 0.75vw, 16px);
+        overflow: hidden;
+      }
+
+      .tv-stage.answered .tv-question-meta {
+        font-size: calc(var(--p-scale, 1) * 1.55vw);
+      }
+
+      .tv-stage.answered .tv-question-text {
+        font-size: calc(var(--p-scale, 1) * 3.45vw);
+        line-height: 1.23;
+      }
+
+      .tv-stage.answered .tv-options {
+        flex: 0 0 auto;
+        gap: calc(var(--p-scale, 1) * 1.25vh);
+      }
+
+      .tv-stage.answered .option-card {
+        flex: 0 0 auto;
+        padding: calc(var(--p-scale, 1) * 1.55vh) calc(var(--p-scale, 1) * 2.0vw);
+        min-height: 0;
+      }
+
+      .tv-stage.answered .option-letter {
+        width: calc(var(--p-scale, 1) * 5.4vw);
+        height: calc(var(--p-scale, 1) * 5.4vw);
+        min-width: calc(var(--p-scale, 1) * 5.4vw);
+        font-size: calc(var(--p-scale, 1) * 2.6vw);
+      }
+
+      .tv-stage.answered .option-text {
+        font-size: calc(var(--p-scale, 1) * 2.65vw);
+        line-height: 1.28;
+      }
+
+      .tv-stage.answered .tv-feedback {
+        flex: 0 0 auto;
+        max-height: none;
+        overflow-y: auto;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(var(--p-scale, 1) * 1.3vh);
+        padding: calc(var(--p-scale, 1) * 2.1vh) calc(var(--p-scale, 1) * 2.2vw);
+      }
+
+      .tv-stage.answered .feedback-header-row {
+        margin-bottom: 0;
+        gap: clamp(10px, 1.0vw, 18px);
+      }
+
+      .tv-stage.answered .feedback-verdict {
+        font-size: calc(var(--p-scale, 1) * 2.25vw);
+      }
+
+      .tv-stage.answered .feedback-actions {
+        flex-shrink: 0;
+      }
+
+      .tv-stage.answered .btn-details {
+        font-size: calc(var(--p-scale, 1) * 1.38vw);
+        padding: clamp(6px, 0.6vh, 14px) clamp(12px, 1.15vw, 22px);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .tv-stage.answered .btn-advance {
+        font-size: calc(var(--p-scale, 1) * 1.7vw);
+        padding: clamp(8px, 0.7vh, 16px) clamp(16px, 1.5vw, 30px);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .tv-stage.answered .feedback-body {
+        font-size: calc(var(--p-scale, 1) * 2.45vw);
+        line-height: 1.36;
+      }
+
+      .tv-stage.answered .feedback-source-cite {
+        font-size: calc(var(--p-scale, 1) * 1.55vw);
+        margin-top: 0;
+      }
+
+      /* Modale Source [T] lisible en portrait */
+      .modal-header h3 {
+        font-size: clamp(1.4rem, 2.5vw, 2.8rem);
+      }
+      .modal-body,
+      #modalExplanation {
+        font-size: clamp(1.15rem, 2.0vw, 2.2rem) !important;
+      }
+      .source-meta-box {
+        font-size: clamp(1.05rem, 1.8vw, 2.0rem);
+      }
+
+      /* Mesure intrinsèque synchrone avant peinture */
+      .tv-stage.measuring-fit {
+        justify-content: flex-start !important;
+      }
+      .tv-stage.measuring-fit .tv-options,
+      .tv-stage.measuring-fit .option-card,
+      .tv-stage.measuring-fit .tv-feedback {
+        flex: 0 0 auto !important;
+        overflow-y: visible !important;
+        max-height: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -852,12 +1098,12 @@
 
       <!-- Actions -->
       <div class="tv-actions">
-        <div class="score-badge" id="scoreBadge"><img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText">0 / 116 (0%)</span></div>
+        <div class="score-badge" id="scoreBadge"><img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText"><span class="score-corr">0</span><span class="score-denom"> / 116</span> <span class="score-pct">(0%)</span></span></div>
         <button class="tv-btn" id="soundToggleBtn" onclick="toggleSound()" title="Couper le son [S]">
           <span id="soundIcon">🔊</span>
         </button>
-        <button class="tv-btn" onclick="toggleSourceModal()" title="Voir la source et les diapos [T]">
-          <span>📖</span> <span>Source</span>
+        <button class="tv-btn" id="sourceTopBtn" onclick="toggleSourceModal()" title="Voir la source et les diapos [T]">
+          <span>📖</span>
         </button>
         <button class="tv-btn" onclick="toggleTheme()" title="Basculer le thème clair / sombre [M]">
           <span id="themeIcon">🌙</span>
@@ -879,7 +1125,7 @@
     <!-- Scène Principale : Question + Options + Rétroaction -->
     <main class="tv-stage" id="tvStage">
       <!-- Question -->
-      <div class="tv-question-box">
+      <div class="tv-question-box" id="questionBox">
         <div class="tv-question-meta">
           <span id="questionCounter">Question 1 sur 116</span>
           <span>•</span>
@@ -1327,6 +1573,55 @@
       document.getElementById('nextBtn').disabled = isLast;
 
       updateScoreBadge();
+      fitPortraitStage();
+    }
+
+    // Ajustement dynamique de la taille du texte en mode vertical 9:16 (ex: 1440x2560)
+    function fitPortraitStage() {
+      const stage = document.getElementById('tvStage');
+      if (!stage || !stage.style || typeof stage.style.setProperty !== 'function') return;
+      const isPortraitMonitor = Boolean(
+        window.matchMedia && window.matchMedia('(orientation: portrait) and (min-width: 700px)').matches
+      );
+      if (!isPortraitMonitor) {
+        if (typeof stage.style.removeProperty === 'function') stage.style.removeProperty('--p-scale');
+        return;
+      }
+      const availH = stage.clientHeight;
+      if (!availH || availH <= 0) return;
+
+      const qBox = document.getElementById('questionBox');
+      const optBox = document.getElementById('optionsContainer');
+      const fbBox = document.getElementById('feedbackContainer');
+      if (!qBox || !optBox || typeof qBox.offsetHeight !== 'number') return;
+
+      const isAnswered = stage.classList.contains('answered');
+      const lastEl = (isAnswered && fbBox && fbBox.style.display !== 'none') ? fbBox : optBox;
+
+      const targetH = availH * (isAnswered ? 0.92 : 0.89);
+      const hardMaxH = availH - 4;
+
+      stage.classList.add('measuring-fit');
+      let low = 0.60;
+      let high = isAnswered ? 1.42 : 1.36;
+      let best = 0.60;
+
+      for (let i = 0; i < 9; i++) {
+        const mid = (low + high) / 2;
+        stage.style.setProperty('--p-scale', mid.toFixed(4));
+        const padV = qBox.offsetTop;
+        const usedH = lastEl.offsetTop + lastEl.offsetHeight + padV;
+        const overflowsHorizontally = stage.scrollWidth > stage.clientWidth + 2;
+        if (usedH <= targetH && usedH <= hardMaxH && !overflowsHorizontally) {
+          best = mid;
+          low = mid;
+        } else {
+          high = mid;
+        }
+      }
+
+      stage.style.setProperty('--p-scale', best.toFixed(4));
+      stage.classList.remove('measuring-fit');
     }
 
     // Validation d'une option
@@ -1396,13 +1691,14 @@
       });
       const total = RAW_QUESTIONS.length;
       const pct = Math.round((corr / total) * 100);
+      const inner = `<span class="score-corr">${corr}</span><span class="score-denom"> / ${total}</span> <span class="score-pct">(${pct}%)</span>`;
       const scoreText = document.getElementById('scoreText');
       if (scoreText) {
-        scoreText.textContent = `${corr} / ${total} (${pct}%)`;
+        scoreText.innerHTML = inner;
       } else {
         const badge = document.getElementById('scoreBadge');
         if (badge) {
-          badge.innerHTML = `<img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText">${corr} / ${total} (${pct}%)</span>`;
+          badge.innerHTML = `<img src="mario_coin.png" class="tv-coin-icon" alt="Pièce Mario"> <span id="scoreText">${inner}</span>`;
         }
       }
     }
@@ -1550,6 +1846,10 @@
       if (['r', 'R'].includes(e.key)) { toggleRandomMode(); return; }
       if (['f', 'F'].includes(e.key)) { toggleFullscreen(); return; }
       if (['m', 'M'].includes(e.key)) { toggleTheme(); return; }
+    });
+
+    window.addEventListener('resize', () => {
+      fitPortraitStage();
     });
 
     // Démarrage avec restauration de position
