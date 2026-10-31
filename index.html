@@ -3090,53 +3090,47 @@
 
       .exp-module-callout { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
-    /* BADGE ÉTOILE SUPER MARIO BROS. 1 - PRIORITÉ EXAMEN 1 */
-    .q-priority-wrap {
-      display: none;
-      align-items: center;
-      margin-bottom: 10px;
+    /* ÉTOILE SUPER MARIO BROS. 1 - TRANSPARENCE PURE (ZÉRO PASTILLE, ZÉRO TEXTE) */
+    .q-title-wrap {
+      margin-bottom: 18px;
+      line-height: 1.46;
     }
+    .q-title-wrap .q-title {
+      display: inline;
+      margin-bottom: 0;
+    }
+    .q-priority-wrap,
     .exam-priority-badge {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      padding: 4px 12px 4px 9px;
-      border-radius: 9999px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.01em;
-      background: linear-gradient(135deg, #fffbeb, #fef3c7);
-      border: 1.5px solid #f59e0b;
-      color: #92400e;
-      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.18);
-      white-space: nowrap;
+      justify-content: center;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
       user-select: none;
     }
-    :root[data-theme="dark"] .exam-priority-badge,
-    body.dark-mode .exam-priority-badge {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(217, 119, 6, 0.14));
-      border-color: rgba(251, 191, 36, 0.68);
-      color: #fde68a;
-      box-shadow: 0 0 12px rgba(245, 158, 11, 0.24);
+    .q-priority-wrap {
+      display: none;
+      vertical-align: -4px;
+      margin-right: 9px;
     }
-    .exam-priority-badge .mario-star-icon {
-      height: 18px;
+    .mario-star-icon {
+      height: 24px;
       width: auto;
       image-rendering: pixelated;
       vertical-align: middle;
       flex-shrink: 0;
-      filter: drop-shadow(0 1px 1px rgba(120, 53, 15, 0.45));
+      background: transparent;
+      filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.25));
     }
-    :root[data-theme="dark"] .exam-priority-badge .mario-star-icon,
-    body.dark-mode .exam-priority-badge .mario-star-icon {
-      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.65));
-    }
-    .fc-priority-badge {
-      padding: 3px 9px 3px 7px;
-      font-size: 0.73rem;
+    :root[data-theme="dark"] .mario-star-icon,
+    body.dark-mode .mario-star-icon {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
     }
     .fc-priority-badge .mario-star-icon {
-      height: 15px;
+      height: 21px;
     }
   </style>
 </head>
@@ -3157,7 +3151,7 @@
         <div class="quiz-sub-date">Examen 1 (Mi-session, 35 %) - Cours 1 à 5 : Perception, Cognition &amp; Intelligence Artificielle (Dave Saint-Amour, Pierre Poirier &amp; Mathieu Landry)</div>
       </div>
       <div class="mobile-header-tools mobile-only" style="display: flex; align-items: center; gap: 8px;">
-        <div id="mobMasteryBadge" class="mastery-counter" style="padding: 4px 8px; font-size: 0.78rem;">🏆 0/116</div>
+        <div id="mobMasteryBadge" class="mastery-counter" style="padding: 4px 8px; font-size: 0.78rem;">🏆 0/91</div>
         <button class="tool-btn" onclick="openOptionsModal()" style="padding: 5px 10px; font-size: 0.8rem;" title="Options">⚙️</button>
       </div>
     </div>
@@ -3177,8 +3171,8 @@
           📚 Mode Étude
         </button>
 
-        <div id="masteryBadge" class="mastery-counter" title="Réponses maîtrisées dans cette séance">
-          🏆 0 / 116 (0%)
+        <div id="masteryBadge" class="mastery-counter" title="Base 100 % : 91 questions étoilées (jusqu'à 127 % avec les 25 questions supplémentaires)">
+          🏆 0 / 91 (0%)
         </div>
 
         <button id="headerFlashcardBtn" class="tool-btn flashcard-header-btn" onclick="setMode('flashcards')" title="Mode Flashcards">
@@ -3295,9 +3289,8 @@
               </button>
               <div class="fc-meta-info" style="flex-wrap: wrap;">
                 <span class="fc-badge" id="fcDocBadge">🔷 Cours 1 (Dave Saint-Amour)</span>
-                <span class="exam-priority-badge fc-priority-badge" id="fcExamPriorityBadge" style="display: none;" title="Question ciblée sur la matière prioritaire de l'Examen 1 (consignes Moodle)">
-                  <img src="mario_star.png" class="mario-star-icon" alt="Étoile Super Mario">
-                  <span>Priorité Examen 1</span>
+                <span class="exam-priority-badge fc-priority-badge" id="fcExamPriorityBadge" style="display: none;" title="Matière prioritaire pour l'examen">
+                  <img src="mario_star.png" class="mario-star-icon" alt="Matière prioritaire pour l'examen">
                 </span>
                 <span class="fc-counter" id="fcCounterText">Flashcard 1 sur 116</span>
               </div>
@@ -3397,8 +3390,8 @@
               <span class="q-counter-text" id="qProgressText">Question 1 sur 116 • 1 point</span>
             </div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <div class="q-score-box" id="qScoreBox" title="Score actuel (réponses correctes / total questions actives)">
-                Score : <span id="qScoreVal">0</span> / <span id="qScoreTotal">116</span> (<span id="qScorePct">0%</span>)
+              <div class="q-score-box" id="qScoreBox" title="Base 100 % : 91 questions étoilées (jusqu'à 127 % sur les 116 questions)">
+                Score : <span id="qScoreVal">0</span> / <span id="qScoreTotal">91</span> (<span id="qScorePct">0%</span>)
               </div>
               <button type="button" class="feedback-trigger-btn" onclick="openFeedbackModal('question')" title="Signaler une anomalie ou proposer une amélioration sur cette question">
                 <span>💬</span> <span>Feedback</span>
@@ -3413,13 +3406,12 @@
 
           <div id="qReserveBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; color: var(--warning); line-height: 1.5;"></div>
           <div class="q-context-box" id="qContextText"></div>
-          <div class="q-priority-wrap" id="qExamPriorityWrap" style="display: none;">
-            <span class="exam-priority-badge" id="qExamPriorityBadge" title="Question ciblée sur la matière prioritaire de l'Examen 1 (consignes Moodle)">
-              <img src="mario_star.png" class="mario-star-icon" alt="Étoile Super Mario">
-              <span>Priorité Examen 1</span>
+          <div class="q-title-wrap">
+            <span class="q-priority-wrap exam-priority-badge" id="qExamPriorityWrap" style="display: none;" title="Matière prioritaire pour l'examen">
+              <img src="mario_star.png" class="mario-star-icon" alt="Matière prioritaire pour l'examen">
             </span>
+            <h2 class="q-title" id="qQuestionTitle"></h2>
           </div>
-          <h2 class="q-title" id="qQuestionTitle"></h2>
 
           <div class="options-grid" id="optionsGrid"></div>
 
@@ -20083,7 +20075,7 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
       const prioWrap = document.getElementById('qExamPriorityWrap');
       if (prioWrap) {
-        prioWrap.style.display = q.exam1_priority ? 'flex' : 'none';
+        prioWrap.style.display = q.exam1_priority ? 'inline-flex' : 'none';
       }
 
       const titleEl = document.getElementById('qQuestionTitle');
@@ -21075,28 +21067,31 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
     function updateMasteryCounter() {
       const activeQs = QUESTIONS;
       let corr = 0;
+      let starBaseline = 0;
       activeQs.forEach(q => {
+        if (q.exam1_priority) starBaseline++;
         const ans = userAnswers[q.id];
         if (ans && ans.optionId !== undefined && ans.optionId !== null && ans.optionId === q.correctIndex) {
           corr++;
         }
       });
-      const total = activeQs.length;
-      const pct = total > 0 ? Math.round((corr / total) * 100) : 0;
-      const str = `🏆 ${corr} / ${total} (${pct}%)`;
+      const baseline = starBaseline > 0 ? starBaseline : activeQs.length;
+      const pct = baseline > 0 ? Math.round((corr / baseline) * 100) : 0;
+      const maxPct = baseline > 0 ? Math.round((activeQs.length / baseline) * 100) : 100;
+      const str = `🏆 ${corr} / ${baseline} (${pct}%)`;
       const badge = document.getElementById('masteryBadge');
       const mobBadge = document.getElementById('mobMasteryBadge');
       if (badge) {
         badge.textContent = str;
-        badge.title = `${corr} réponses correctes sur ${total} questions actives`;
+        badge.title = `${corr} réponses correctes • Base 100 % : ${baseline} questions étoilées (jusqu'à ${maxPct} % sur les ${activeQs.length} questions)`;
       }
-      if (mobBadge) mobBadge.textContent = `🏆 ${corr}/${total}`;
+      if (mobBadge) mobBadge.textContent = `🏆 ${corr}/${baseline}`;
 
       const scoreVal = document.getElementById('qScoreVal');
       const scoreTotal = document.getElementById('qScoreTotal');
       const scorePct = document.getElementById('qScorePct');
       if (scoreVal) scoreVal.textContent = corr;
-      if (scoreTotal) scoreTotal.textContent = total;
+      if (scoreTotal) scoreTotal.textContent = baseline;
       if (scorePct) scorePct.textContent = pct + '%';
     }
 
