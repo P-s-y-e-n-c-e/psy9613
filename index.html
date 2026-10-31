@@ -3089,6 +3089,55 @@
     }
 
       .exp-module-callout { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+    /* BADGE ÉTOILE SUPER MARIO BROS. 1 - PRIORITÉ EXAMEN 1 */
+    .q-priority-wrap {
+      display: none;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .exam-priority-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 4px 12px 4px 9px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      background: linear-gradient(135deg, #fffbeb, #fef3c7);
+      border: 1.5px solid #f59e0b;
+      color: #92400e;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.18);
+      white-space: nowrap;
+      user-select: none;
+    }
+    :root[data-theme="dark"] .exam-priority-badge,
+    body.dark-mode .exam-priority-badge {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(217, 119, 6, 0.14));
+      border-color: rgba(251, 191, 36, 0.68);
+      color: #fde68a;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.24);
+    }
+    .exam-priority-badge .mario-star-icon {
+      height: 18px;
+      width: auto;
+      image-rendering: pixelated;
+      vertical-align: middle;
+      flex-shrink: 0;
+      filter: drop-shadow(0 1px 1px rgba(120, 53, 15, 0.45));
+    }
+    :root[data-theme="dark"] .exam-priority-badge .mario-star-icon,
+    body.dark-mode .exam-priority-badge .mario-star-icon {
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.65));
+    }
+    .fc-priority-badge {
+      padding: 3px 9px 3px 7px;
+      font-size: 0.73rem;
+    }
+    .fc-priority-badge .mario-star-icon {
+      height: 15px;
+    }
   </style>
 </head>
 <body>
@@ -3244,8 +3293,12 @@
               <button class="secondary-btn fc-return-study-btn" onclick="setMode('study')" title="Revenir aux questions" style="font-weight: 700; font-size: 0.78rem;">
                 📚 Revenir aux questions
               </button>
-              <div class="fc-meta-info">
+              <div class="fc-meta-info" style="flex-wrap: wrap;">
                 <span class="fc-badge" id="fcDocBadge">🔷 Cours 1 (Dave Saint-Amour)</span>
+                <span class="exam-priority-badge fc-priority-badge" id="fcExamPriorityBadge" style="display: none;" title="Question ciblée sur la matière prioritaire de l'Examen 1 (consignes Moodle)">
+                  <img src="mario_star.png" class="mario-star-icon" alt="Étoile Super Mario">
+                  <span>Priorité Examen 1</span>
+                </span>
                 <span class="fc-counter" id="fcCounterText">Flashcard 1 sur 116</span>
               </div>
             </div>
@@ -3360,6 +3413,12 @@
 
           <div id="qReserveBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; color: var(--warning); line-height: 1.5;"></div>
           <div class="q-context-box" id="qContextText"></div>
+          <div class="q-priority-wrap" id="qExamPriorityWrap" style="display: none;">
+            <span class="exam-priority-badge" id="qExamPriorityBadge" title="Question ciblée sur la matière prioritaire de l'Examen 1 (consignes Moodle)">
+              <img src="mario_star.png" class="mario-star-icon" alt="Étoile Super Mario">
+              <span>Priorité Examen 1</span>
+            </span>
+          </div>
           <h2 class="q-title" id="qQuestionTitle"></h2>
 
           <div class="options-grid" id="optionsGrid"></div>
@@ -11981,7 +12040,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix confond la distinction cognition/intelligence avec une coupure entre réception sensorielle initiale (perception) et processus de raisonnement/décision ; or, la Diapo 7 et le cours ([00:53:20]) incluent explicitement la perception, le raisonnement, la décision et la résolution de problèmes au sein de la cognition.",
       "C": "Ce choix tombe dans le piège historique des tests de quotient intellectuel dénoncé en classe ([00:50:47], [00:58:43–01:01:33]), qui réduit l'intelligence à un potentiel général décontextualisé tout en attribuant le choix de la stratégie optimale à la seule cognition, alors que prioriser la stratégie adaptée au contexte relève précisément de l'intelligence ([00:54:14]).",
       "D": "Ce choix inverse le caractère évaluatif des deux concepts : la cognition n'est pas une mesure d'efficacité quantitative ([00:55:16]), et dans les tours de Londres ([01:00:32], [01:01:33]), alors que les mécanismes internes entre les deux oreilles demeurent en partie opaques (« boîte noire »), le nombre minimal d'essais constitue une mesure comportementale évaluant l'efficacité de la stratégie en contexte (l'intelligence), laquelle inclut prédire, résoudre et généraliser (Diapo 8)."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 2,
@@ -12042,7 +12102,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option décrit un couplage direct perception-action (codage commun) court-circuitant l'étape centrale, ce qui contredit l'architecture séquentielle du modèle classique où le traitement cognitif et les représentations s'intercalent obligatoirement entre l'entrée et la sortie.",
       "C": "Cette proposition place l'action en amont de la prise d'information sensorielle (principe de l'exploration et de la perception active), inversant l'ordre hiérarchique du modèle classique où l'action ne constitue que l'exécution finale du traitement cognitif.",
       "D": "Le schéma classique de la Diapo 9 et l'explication de Dave Saint-Amour ([01:03:11]) établissent une séquence linéaire unidirectionnelle dans laquelle l'organisme reçoit d'abord une entrée sensorielle (détecter un stimulus visuel), effectue un traitement central représentatif et décisionnel (raisonner pour évaluer un danger), puis commande une sortie motrice (agir ou fuir)."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 3,
@@ -12103,7 +12164,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si l'identification du seuil différentiel est juste, l'écart minimal requis pour percevoir une différence n'est pas fixe en grammes quelle que soit la charge, mais augmente selon une proportion relative de l'intensité de départ.",
       "C": "Le dispositif de comparaison somesthésique de Weber caractérise le seuil différentiel, où la plus petite différence perceptible dépend du rapport relatif à la masse initiale.",
       "D": "Double erreur : l'expérience mesure un seuil différentiel entre deux poids et l'écart physique requis augmente avec la charge de départ au lieu de diminuer."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 4,
@@ -12164,7 +12226,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Piège de la progression linéaire réfuté en classe ([01:09:46–01:11:46]) : doubler la puissance électrique ne double pas la luminosité perçue, et une relation linéaire rendrait l'exposition à la lumière extérieure insoutenable.",
       "C": "Comme le précise Dave Saint-Amour à [01:13:45], la stimulation douloureuse fait exception à la courbe logarithmique habituelle de Weber-Fechner et suit une progression beaucoup plus exponentielle (adaptée à l'alerte face à un danger), contrairement à la vision ou à l'audition.",
       "D": "Si le système maintenait une sensibilité identique à chaque ajout physique fixe, la différence entre deux grands ensembles de points serait aussi facile et rapide à percevoir que celle entre deux petits ensembles, ce que dément la démonstration de la Diapo 11."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 5,
@@ -12225,7 +12288,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Le couplage entre un stimulus physique constant et un bruit externe et physiologique interne fluctuant génère une distribution normale de la force du signal interne. À critère constant, les valeurs de cette distribution tombent tantôt à droite du critère (succès), tantôt à gauche (raté), expliquant la variabilité des réponses.",
       "C": "Le bruit physiologique interne (comme les fluctuations liées au rythme cardiaque ou à l'activité nerveuse de fond) n'exerce pas une soustraction fixe et le bruit externe ne s'interrompt pas par intermittence : tous deux varient continuellement selon une distribution normale qui peut aussi bien rehausser qu'affaiblir la force du signal interne, au point de générer des fausses alarmes en l'absence même de stimulus.",
       "D": "Supposer qu'un stimulus faible produit une force du signal interne nulle lorsqu'il est masqué par le bruit et que l'observateur répond alors par pur hasard réintroduit le postulat erroné du seuil fixe. Dans la théorie de la détection du signal, même un stimulus faible ou absent engendre une force du signal interne continue et non nulle, sur laquelle le critère opère une coupure statistique."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 6,
@@ -12286,7 +12350,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option inverse la dynamique du critère décisionnel et la confond avec une hausse de la sensibilité. À sensibilité constante, un déplacement du critère fait varier les succès et les fausses alarmes dans le même sens (tous deux augmentent si le critère devient libéral, tous deux diminuent s'il devient conservateur). Une hausse des succès accompagnée d'une baisse des fausses alarmes traduit au contraire un écartement accru des courbes (meilleure discrimination).",
       "C": "L'insertion d'essais de bruit pur (sans cible) ne force nullement le participant à adopter un critère neutre à la jonction des deux courbes : l'intérêt des essais sans signal n'est pas d'annuler le biais subjectif, mais de mesurer les fausses alarmes pour dissocier ce biais de la sensibilité perceptive ([01:20:33]).",
       "D": "Lorsque l'observateur adopte un critère libéral (déplacé vers la gauche sur l'axe de la force du signal interne), il accepte plus facilement le signal même en cas de doute, ce qui augmente conjointement les succès et les fausses alarmes ([01:23:58], [01:32:44]). Mettre en regard ces deux proportions neutralise l'effet du déplacement du critère et isole la discrimination réelle (l'écartement entre les distributions du bruit et du signal) du biais de réponse."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 7,
@@ -12347,7 +12412,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La qualité physique de l'information sensorielle étant inchangée, la sensibilité reste stable. Parallèlement, les encouragements et la récompense par bonne réponse incitent l'observateur à répondre plus facilement « présent » (critère plus libéral, déplacé vers la gauche), ce qui augmente à la fois les bonnes réponses et les fausses alarmes.",
       "C": "Bien que cette option maintienne correctement la sensibilité constante et décrive avec exactitude la conséquence d'un déplacement conservateur (déplacer le seuil vers la droite réduit à la fois les fausses alarmes et les bonnes réponses, Diapo 17), elle inverse la direction du déplacement produit par la récompense.",
       "D": "Bien qu'elle identifie correctement le déplacement vers un critère plus libéral, cette option lui attribue à tort un gain de sensibilité ainsi qu'une hausse conjointe des bonnes réponses et des rejets corrects. Or, à sensibilité constante, un biais libéral fait augmenter les fausses alarmes et diminue donc nécessairement le taux de rejets corrects."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 8,
@@ -12408,7 +12474,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Piège d'inversion directionnelle décrivant un scénario libéral. Abaisser le seuil revient à décaler le critère vers la gauche pour accepter le signal même en cas de doute, ce qui diminue les ratés mais augmente le taux de fausses alarmes, à l'opposé de l'objectif visé par le clinicien.",
       "C": "À sensibilité constante, la volonté de réduire les fausses alarmes se traduit par un déplacement conservateur du critère vers la droite, exigeant un signal interne plus fort, ce qui diminue les fausses alarmes au prix d'une hausse des détections ratées ([01:35:12], Diapo 17).",
       "D": "Piège de confusion entre le critère neutre (situé à la jonction des deux distributions) et une modification de la sensibilité. D'une part, vouloir éviter prioritairement les fausses alarmes décale le décideur vers la droite du point neutre ; d'autre part, le positionnement du seuil de décision ne modifie pas la distance séparant les deux courbes."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 9,
@@ -12469,7 +12536,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix projette à contresens les concepts de l'école allemande (l'addition structuraliste de sensations élémentaires à la Wundt et le seuil différentiel de Weber et Fechner) sur la démonstration de James. Or, le tracé physique central demeure strictement identique dans les deux séries et l'effet contextuel ne repose ni sur un abaissement du seuil différentiel ni sur une modification du signal physique.",
       "C": "Ce distracteur commet une erreur d'abolition du canal des sens : chez James, la contribution interne du contexte et des attentes complète et oriente la réception sensorielle sans la supplanter entièrement ni rendre les traits du stimulus inopérants.",
       "D": "Ce distracteur réduit le phénomène à un simple biais de réponse verbale ultérieure après une représentation visuelle supposée invariante, alors que la démonstration de James établit que le contexte prédictif façonne bel et bien l'expérience perceptive elle-même (« on voit l'objet le plus probable »)."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 10,
@@ -12530,7 +12598,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur inverse la directionnalité du modèle : l'illusion ne naît pas d'une détection ascendante préalable d'une discordance géométrique suivie d'une hypothèse explicite, mais de l'application immédiate d'une inférence inconsciente issue des représentations internes sur les indices entrants.",
       "C": "Conformément aux travaux d'Helmholtz, de Gregory et au modèle computationnel du cerveau prédictif de Friston (Diapos 20–22, [02:05:56–02:08:44]), nos représentations internes projettent une inférence inconsciente sur les indices visuels entrants, ce qui produit une erreur de prédiction initiale avant que la comparaison sensorielle continue ne rectifie l'interprétation.",
       "D": "Devant le trompe-l'œil peint sur le trottoir (Diapo 23), la réaction d'évitement ne précède pas la prédiction perceptive : ce sont au contraire nos représentations internes et nos prédictions qui génèrent d'abord l'erreur de prédiction visuelle et orientent le comportement ([02:08:44])."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 11,
@@ -12591,7 +12660,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Confusion avec la modulation de la perception par l'action motrice. À la Diapo 24, l'exemple de Tinbergen illustre au contraire la séquence Perception vers Cognition (reconnaissance) vers Action, où l'action de survie est commandée par la perception du stimulus visuel en mouvement.",
       "C": "Confusion entre mécanisme inné et apprentissage associatif. L'enseignant souligne à [02:09:58] que des oisillons âgés de quelques jours à peine parviennent de façon innée à discriminer visuellement le prédateur dans le ciel pour éviter la prédation, sans nécessiter un apprentissage préalable.",
       "D": "Conformément à la Diapo 24 et à l'explication orale de Dave Saint-Amour ([02:09:58]), c'est la forme combinée à la direction du mouvement qui permet aux oisillons de quelques jours de discriminer de façon innée le prédateur dans le ciel, illustrant un cas où « l'action est déterminée à cent pour cent par la perception »."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 12,
@@ -12652,7 +12722,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément aux Diapos 27 et 28 et aux explications de Dave Saint-Amour ([02:14:28–02:18:27]), l'affordance gibsonienne désigne l'ensemble des possibilités d'action offertes à un organisme par un objet ou un environnement, tandis que chez Norman en expérience utilisateur, elle désigne la capacité d'un élément à suggérer intuitivement son utilisation.",
       "C": "Chez Gibson, l'affordance n'est pas une propriété physique isolée indépendante de l'animal, mais une propriété relationnelle directement liée aux capacités d'action de l'organisme ([02:13:29–02:14:12]) ; chez Norman, elle vise un usage immédiat et intuitif sans devoir s'appuyer sur des consignes explicites ([02:18:27]).",
       "D": "Ce distracteur confond l'affordance avec le flux optique (optical flow, Diapo 27, [02:14:28]), qui désigne le pattern visuel de défilement périphérique généré par le déplacement de l'observateur et informant instantanément sur la vitesse, la direction et l'imminence d'une collision."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 13,
@@ -12713,7 +12784,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Les deux chatons sont exposés exactement aux mêmes lignes verticales pendant la même durée ; l'échec du chaton passif ne provient pas d'une baisse de sensibilité de la rétine, mais de l'absence d'action motrice active couplée à la vision.",
       "C": "Lors du test de la falaise visuelle, le chaton passif est libre de marcher sur la plateforme et ses pattes reçoivent les signaux tactiles normaux ; son échec découle d'un déficit de développement de la perception visuelle de la profondeur et non d'un blocage tactile.",
       "D": "Ce distracteur suppose à tort que les deux chatons ont développé une vision identique et ne diffèrent que par leur tonus ou leurs réflexes moteurs, alors que l'expérience démontre précisément que sans mouvement actif, la perception visuelle de la profondeur elle-même ne se développe pas normalement ([02:19:52])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 14,
@@ -12774,7 +12846,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur inverse le principe de la perception active mis en évidence par Bach-y-Rita ([02:22:08]) : lorsque la personne demeure passive et reçoit la stimulation sans gouverner la caméra, la performance est beaucoup moins efficace que lorsque l'utilisateur oriente lui-même la caméra.",
       "C": "Conformément à la Diapo 29 et aux explications de l'enseignant ([02:22:08–02:23:31]), les performances sont significativement supérieures lorsque l'utilisateur contrôle et oriente lui-même la caméra (notamment par les mouvements de la tête), ce couplage actif permettant au cerveau de passer d'une simple stimulation tactile à l'impression d'une représentation visuelle.",
       "D": "La bascule vers une représentation visuelle ne résulte pas d'une adaptation passive ou d'une extinction des récepteurs de la peau sous l'effet des picots métalliques, mais bien de l'action exploratoire active de la personne qui gouverne ses entrées sensorielles."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 15,
@@ -12835,7 +12908,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option commet l'erreur consistant à croire qu'une entrée visuelle similaire produit un traitement sensoriel identique et que la différence n'émerge qu'au stade d'un jugement tardif ; or, le cours souligne explicitement que le sentiment de maîtrise et l'action modifient directement le traitement sensoriel de l'espace et de la vitesse ([02:24:01]).",
       "C": "Ce piège confond la structure géométrique du flux optique (stabilité du champ central vs défilement périphérique vu à la Diapo 27, [02:14:28]) avec le mécanisme de la perception active de la Diapo 30 : même lorsque le passager regarde droit devant lui, sa passivité sans contrôle moteur suffit à dégrader sa mémorisation de l'itinéraire et à modifier sa perception de la vitesse.",
       "D": "L'implication active du conducteur dans le contrôle du déplacement et le sentiment de maîtrise qui en découle transforment directement son traitement sensoriel, ce qui facilite l'encodage de l'espace multidimensionnel et module conjointement la vitesse perçue et l'anxiété ([02:24:01])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 16,
@@ -12896,7 +12970,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à la Diapo 31 et à l'analyse en classe ([02:26:25–02:34:29]), laisser passivement le travail cognitif à la machine réduit l'engagement cérébral (dette cognitive), tandis qu'utiliser activement l'outil pour explorer des idées ou pour examiner un texte que l'on a soi-même rédigé opère un déplacement des compétences et un transfert cognitif qui maintiennent l'engagement actif.",
       "C": "La baisse des métriques électroencéphalographiques dans le groupe ChatGPT ne traduit pas une automatisation experte bénéfique, mais un désengagement cognitif (« dette cognitive » et principe « use it or lose it ») lorsque l'utilisateur laisse la machine faire le travail cognitif à sa place ([02:26:25], [02:29:49], [02:31:43]).",
       "D": "La Diapo 31 (cerveau seul, moteur de recherche, grand modèle de langage) et l'explication de Dave Saint-Amour ([02:26:25], [02:30:51], [02:32:55]) distinguent nettement Google et ChatGPT : chercher des articles sur Google pour valider les auteurs et les sources mobilise une compétence active acquise au fil du temps, différente de la délégation directe de la rédaction à un modèle de langage."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 17,
@@ -12957,7 +13032,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien que cette option attribue correctement la représentation consciente à la voie ventrale et la motricité à la voie dorsale, elle rabat leur fonctionnement sur le modèle sériel classique (Perception vers Cognition vers Action) réfuté à la Diapo 34 : si la voie dorsale ne faisait que traduire séquentiellement le jugement conscient ventral, le geste de préhension hériterait des illusions perceptives de contexte.",
       "C": "Ériger la dissociation fonctionnelle en cloisonnement étanche contredit l'explication de Dave Saint-Amour ([02:37:34]) : bien que reposant sur des structures distinctes, les deux voies « se parlent ensemble » et coordonnent leurs représentations lors de l'action.",
       "D": "Conformément à l'enseignement de Dave Saint-Amour ([02:37:34] et Diapo 34), la voie ventrale soutient la représentation mentale consciente et la voie dorsale assure le guidage de l'action dans l'espace, tout en interagissant pour élaborer des représentations interprétées conjointement."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 18,
@@ -13018,7 +13094,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix décrit la prédiction erronée du modèle classique et contredit le résultat empirique : contrairement au jugement conscient, l'écartement entre le pouce et l'index lors de l'approche ne subit pas l'illusion de contraste de taille.",
       "C": "L'ouverture de préhension (grip aperture) est mesurée pendant le mouvement d'approche de la main avant même de toucher l'objet : la voie dorsale calibre d'emblée la pince sur la taille physique réelle sans attendre un retour tactile.",
       "D": "Ce distracteur inverse totalement la dissociation observée : c'est le jugement conscient (verbal ou par pointage) qui est trompé par les cercles environnants, tandis que le guidage moteur de l'ouverture de la main résiste à l'illusion."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 19,
@@ -13079,7 +13156,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément aux Diapos 33 à 35 et à l'enseignement de Dave Saint-Amour ([02:35:13–02:39:06]), le calibrage de l'ouverture de préhension (grip aperture) respecte la taille réelle de l'objet dans les deux illusions, tandis que la force appliquée (grip force) pour le soulever subit l'influence de la taille illusoire perçue.",
       "C": "Cette option inverse la dissociation observée : l'ouverture du geste de préhension pendant l'approche résiste à l'illusion visuelle, alors que le calibrage anticipé de la force appliquée au soulèvement subit le biais de la taille illusoire perçue.",
       "D": "Cette proposition généralise à tort l'immunité motrice de l'ouverture des doigts à l'ensemble des paramètres de la préhension et ignore le fait que la force appliquée au soulèvement n'échappe pas à l'illusion de taille."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 20,
@@ -13140,7 +13218,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur confond la phase de planification pré-saccadique avec la suppression saccadique qui survient durant le mouvement de l'œil : pendant la préparation de la saccade, le champ oculaire frontal rehausse au contraire la sensibilité visuelle sur la position cible avant le départ de l'œil ([02:40:40–02:41:24]).",
       "C": "L'amélioration perceptive pré-saccadique n'est pas diffuse sur tout l'hémichamp pointé : elle est sélectivement ancrée sur la position exacte de la saccade programmée et persiste même lorsqu'une double tâche tente d'attirer volontairement l'attention ailleurs ([02:42:05]).",
       "D": "Conformément aux explications données en classe ([02:42:59–02:43:34]), à la Diapo 37 et à Bosco et al. (2023, §1.1), le champ oculaire frontal agit comme une interface prédictive qui couple d'avance la programmation motrice de la saccade aux réseaux attentionnels et au cortex visuel sur la cible — un mécanisme que l'on peut moduler expérimentalement par stimulation transcrânienne électrique ([02:42:59])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 21,
@@ -13201,7 +13280,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Le recueil du jugement après la partie ne suffit pas non plus à démontrer que la réussite motrice a causé la modification perceptive ni à écarter l'hypothèse inverse d'une différence perceptive préalable ([02:45:56]).",
       "C": "Conformément à l'analyse méthodologique présentée en classe ([02:45:56]), l'association observée après la partie demeure corrélationnelle : elle laisse ouvertes les deux directions causales possibles (Perception vers Action ou Action vers Perception) et motive le passage à des protocoles expérimentaux contrôlés en laboratoire ([02:48:17]).",
       "D": "Bien que la mesure soit prise tout de suite après la partie et ne persiste probablement pas dans le temps (transcription du cours [02:45:19–02:45:39]), cela n'invalide nullement le phénomène : comme le souligne l'enseignant ([02:46:17]), ces études démontrent au contraire que la perception et l'action ne sont pas indépendantes."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 22,
@@ -13262,7 +13342,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément aux deux résultats de la Diapo 39 et aux explications de Dave Saint-Amour ([02:48:17–02:48:46]), connaître à l'avance l'action à exécuter suffit déjà à biaiser le jugement de taille en amont du mouvement, et la modification perceptive est plus prononcée après un geste de préhension (grasping) qu'après un geste d'atteinte (reaching).",
       "C": "Ce distracteur inverse la sensibilité respective des deux gestes : c'est la préhension entre le pouce et l'index (grasping), et non le simple geste d'atteinte (reaching), qui exige un calibrage fin de la taille et transforme davantage l'estimation perceptive.",
       "D": "Dans l'étude de Bosco et ses collaborateurs, la modification de la taille perçue s'observe de façon convergente aussi bien lorsque le participant répond verbalement à l'aide d'une règle graduée que lorsqu'il indique la taille manuellement avec ses doigts."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 23,
@@ -13323,7 +13404,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Postuler une représentation commune unique stockée dans un même réseau tranche de manière définitive une question architecturale que l'enseignant présente explicitement comme ouverte ([02:48:46]), car des représentations distinctes mais étroitement en interaction peuvent tout autant produire ces modulations réciproques.",
       "C": "Cette option préserve à tort un encodage perceptif initial indépendant en reportant la convergence au stade tardif de la réponse, ce qui contredit la conclusion centrale du cours selon laquelle les représentations motrices reconfigurent activement l'expérience perceptive elle-même dès la phase de planification (Diapos 39–41).",
       "D": "À rebours d'un cloisonnement local sans partage représentatif, la revue de Bosco et al. (2023, Diapo 40) démontre que l'influence de l'action sur la perception se généralise à travers différents effecteurs moteurs (œil, main, jambe) et appuie l'hypothèse de représentations partagées ou en interaction."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 24,
@@ -13384,7 +13466,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option tente de préserver un traitement sensoriel ascendant autonome en réduisant l'effet de l'action à un déplacement post-perceptif du critère de décision, alors que le cours (Diapos 37, 41) et Bosco et al. (2023) établissent une modulation précoce de la sensibilité visuelle et une reconfiguration active de l'expérience perceptive elle-même.",
       "C": "Conformément à la conclusion de la Diapo 41, de Dave Saint-Amour ([02:50:00]) et de Bosco et al. (2023), la relation perception–cognition–action repose sur un couplage bidirectionnel au sein duquel les représentations motrices (en phase de planification comme d'exécution) reconfigurent activement l'expérience perceptive elle-même.",
       "D": "Si le modèle des deux voies visuelles présenté par Mel Goodale (illustré par l'adaptation en trois dimensions de l'illusion d'Ebbinghaus, Diapo 34) montre que l'ouverture de préhension peut échapper à une illusion perceptive, ériger cette dissociation en séparation étanche contredit à la fois l'influence de l'illusion de Ponzo sur la force appliquée (Diapo 35) et la modulation directe de la perception par la cognition motrice (Diapos 36–41 ; Bosco et al., 2023)."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 25,
@@ -13445,7 +13528,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'explication de Dave Saint-Amour ([02:52:12–02:52:41]), la hiérarchie visuelle inversée postule que le traitement part de la région frontale et de ce à quoi l'observateur s'attend, en s'appuyant sur la surabondance des connexions feed-back pour orienter le traitement dans les relais visuels plus précoces.",
       "C": "Cette option confond la hiérarchie visuelle inversée avec une primauté de la voie dorsale dédiée à l'action, en ignorant le point de départ dans la région frontale et le rôle directeur de ce à quoi on s'attend soulignés en clôture de séance ([02:52:25]).",
       "D": "Cette option restreint l'inversion à un filtrage exercé par le cortex visuel sur le relais thalamique avant toute implication de la région frontale, contredisant le départ dans la région frontale à partir des attentes de l'observateur qui définit le modèle ([02:52:12–02:52:25])."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 26,
@@ -13506,7 +13590,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'extrait commenté en classe ([00:41:11–00:44:40]), les qualités des objets extérieurs (lumière, sons, odeurs, goûts, chaleur) et les passions intérieures (faim, soif) impriment des changements dans le cerveau (sens commun, mémoire, fantaisie — que Poirier rapproche des chapitres sur la perception, l'attention et la mémoire d'un manuel contemporain de psychologie cognitive sur la Diapo 5) qui distribuent les « esprits animaux » dans les muscles pour mouvoir les membres sans décision de la volonté.",
       "C": "Ce distracteur réintroduit une médiation mentale obligatoire de l'âme consciente entre l'entrée sensorielle et la sortie motrice. Dans le modèle mécaniste du Traité de l'homme, la transformation de l'impression sensorielle en distribution musculaire des esprits animaux s'opère matériellement à travers l'organisation des nerfs et du cerveau.",
       "D": "Ce choix inverse l'argument cartésien des têtes coupées et des animaux-machines ([00:41:47–00:42:18] et [00:46:17]). Descartes invoque le fait que des têtes d'animaux tranchées se remuent encore et mordent la terre « nonobstant qu'elles ne soient plus animées » pour prouver qu'un mouvement coordonné ne requiert aucune âme ni pensée, si bien qu'un automate ayant les organes d'un singe serait en tout de même nature que cet animal sans raison."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 27,
@@ -13567,7 +13652,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Selon Descartes ([00:51:13–00:52:11]), c'est précisément parce que les organes mécaniques ont besoin d'une « particulière disposition pour chaque action particulière » qu'il est moralement impossible d'en réunir une diversité suffisante dans une machine pour égaler l'universalité de la raison humaine.",
       "C": "Ces deux capacités correspondent exactement à la productivité linguistique adaptée au sens de l'échange (premier critère, [00:48:08–00:49:55]) et à la flexibilité générale d'un « instrument universel » permettant d'agir dans toutes sortes de rencontres (second critère, [00:50:21–00:52:27]).",
       "D": "Accroître un catalogue de réponses préenregistrées (comme dans les assistants vocaux Siri ou Google Home mentionnés par Poirier à [00:49:55]) et réunir des organes spécialisés pour des tâches délimitées (comme les voitures autonomes Waymo dans leur créneau à [00:50:23]) relèvent toujours d'une spécialisation mécanique finie, et non d'une adaptation générale aux occurrences imprévues de la vie."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 28,
@@ -13628,7 +13714,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur inverse l'argument cartésien commenté en classe ([00:52:11 ; 00:54:24]) : parce que chaque action mécanique requiert une disposition particulière d'organes, il est impossible pour une machine de pré-stocker un répertoire fini de dispositions couvrant chaque situation imprévue du monde.",
       "C": "Ce choix confond l'infinité potentielle (l'absence de limite supérieure à la complexité d'une phrase ou d'une représentation, expliquée par Fodor et Poirier à [00:59:16–00:59:45]) avec la production effective d'un nombre infini d'énoncés au cours d'une vie finie.",
       "D": "Ce choix substitue au problème explicatif de la productivité cognitive l'issue dualiste que Descartes adopte faute de solution mécanique (postuler que la pensée appartient à un monde différent proche de Dieu, dans la tradition de Platon, [01:00:20–01:00:47]), alors que Turing (1936, 1950) et Fodor (1975) cherchent à résoudre ce problème par un mécanisme naturel."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 29,
@@ -13689,7 +13776,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'évaluation à l'aveugle porte sur la performance communicationnelle et fait abstraction de la nature électronique ou biologique du support matériel qui engendre le texte.",
       "C": "Bien que l'indiscernabilité des textes bouscule nos intuitions au point de nous demander si la machine est « consciemment intelligente » ([00:56:32]), le juge n'a aucun accès direct à d'éventuels états subjectifs internes.",
       "D": "Le jeu de l'imitation repose sur l'incapacité de l'évaluateur (le professeur) à différencier la production linguistique de la machine de celle d'un humain, ce qui exige d'arranger diversement les paroles plutôt que de réciter des réponses préprogrammées ([00:56:10–00:57:57 ; 01:02:20–01:02:41])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 30,
@@ -13750,7 +13838,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La récursivité (une règle finie qui peut se réappliquer à son propre résultat, comme insérer une phrase dans une phrase) permet à un ensemble fini de règles d'engendrer un nombre potentiellement infini de phrases sans limite supérieure dans la grammaire ([01:11:47–01:13:33], Diapos 18–20).",
       "C": "Comme le précise Pierre Poirier en citant Chomsky ([01:12:52]), la compétence grammaticale formelle n'impose aucune borne supérieure au nombre d'enchâssements possibles : ce sont les contraintes matérielles de la mémoire et du cerveau qui limitent la performance effective.",
       "D": "S'il fallait ajouter une nouvelle règle grammaticale particulière pour chaque niveau d'enchâssement ou chaque longueur de phrase, le code exigerait une infinité de règles, ce qui contredirait le principe d'un usage infini de moyens finis."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 31,
@@ -13811,7 +13900,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Invoquer un plateau de jeu et un objectif de victoire confond les règles constitutives qui définissent la légalité formelle d'un système (quelles transitions sont permises) avec le but poursuivi ou les heuristiques stratégiques permettant de choisir un bon coup parmi plusieurs coups légaux.",
       "C": "Tant chez Haugeland (1981) que dans la présentation de Pierre Poirier ([01:18:11], Diapos 24–25), tout système formel est exhaustivement spécifié sur le plan syntaxique par son ensemble de pièces, sa position de départ et son ensemble de règles de transition.",
       "D": "Ce choix confond la structure formelle avec son substrat physique. En vertu du principe d'indépendance par rapport au médium (medium independence, [01:19:41]), un même système formel peut être instancié sur du bois, sur un écran ou par téléphone sans que les propriétés matérielles du support fassent partie de sa définition syntaxique."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 32,
@@ -13872,7 +13962,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Partager la position initiale et les positions gagnantes ne fixe pas les règles de transition intermédiaires, et le cours précise qu'une position gagnante n'est même pas nécessaire à la définition générale d'un système formel.",
       "C": "Observer la même succession de configurations lors d'une seule partie ne suffit pas, car deux systèmes formels distincts peuvent partager une trajectoire particulière tout en autorisant des coups différents dans les autres états.",
       "D": "Disposer du même nombre fini de pièces et du même nombre de configurations possibles ne garantit pas l'équivalence formelle tant que la position de départ et les règles de transition reliant ces états ne se correspondent pas."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 33,
@@ -13933,7 +14024,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Attribuer un référent direct désignant des objets physiques aux pièces élémentaires ne suffit pas à garantir que ce qu'affirment les formules initiales soit vrai : une règle d'inférence valide appliquée à une prémisse fausse ne garantit pas la vérité de la conclusion.",
       "C": "Appliquer de manière exhaustive les règles de transition syntaxiques (substitution uniforme et Modus Ponens) génère toutes les dérivations légales du système, mais ne corrige pas la fausseté éventuelle de la position de départ.",
       "D": "La préservation de la vérité est une garantie conditionnelle ([01:25:38], Diapo 28 ; Haugeland, 1981, p. 44) : lorsque des règles d'inférence qui préservent la vérité s'appliquent à une position de départ (des axiomes) vraie sous l'interprétation choisie, toutes les conclusions dérivées légalement sont nécessairement vraies sous cette même interprétation."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 34,
@@ -13994,7 +14086,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Dans un automate à états finis, le passage d'un état interne à un autre enregistre l'information utile sur le crédit déjà reçu au cours de la transaction. La fonction de transition combine cet état interne courant et la nouvelle pièce insérée pour déterminer le nouvel état, libérer le produit et rendre la monnaie lorsque le seuil requis est atteint ([01:32:36–01:33:17]).",
       "C": "Un automate à états finis n'a pas besoin de multiplier les états pour retenir l'ordre chronologique exact d'insertion lorsque deux séquences distinctes de pièces aboutissent au même crédit accumulé et appellent exactement les mêmes transitions futures.",
       "D": "Ce choix confond un automate à états finis avec une machine de Turing. Un automate à états finis ne possède qu'une mémoire d'état interne finie sans ruban externe ; l'ajout d'une tête de lecture-écriture et d'un ruban de mémoire externe caractérise le passage à la machine de Turing (Diapos 34 et 47, [01:33:36])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 35,
@@ -14055,7 +14148,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix confond l'interprétation sémantique avec les règles de transition syntaxiques. Le système formel possède déjà sa position de départ et ses règles de transition complètes (Diapos 37–40) qui régissent mécaniquement les déplacements autorisés des pièces, indépendamment de toute interprétation sportive.",
       "C": "Comme l'établissent les diapositives 41 à 45 ([01:37:37–01:40:41]), la fonction d'interprétation projette le domaine formel vers le co-domaine représenté en attribuant un référent à chaque élément (but, joueurs A et B, passe, course). C'est précisément tant qu'une telle interprétation associe des référents aux pièces manipulées par les règles que ces pièces deviennent des symboles et que le système relève de la computation symbolique.",
       "D": "Ce choix inverse la direction de la fonction d'interprétation (qui va du domaine formel vers le co-domaine représenté, Diapos 43 et 45) et confond la relation sémantique de référence avec une causalité physique directe exercée par le monde extérieur sur les règles internes du système formel."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 36,
@@ -14116,7 +14210,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La machine n'a commis aucune erreur mécanique dans l'exécution de sa table d'instructions : c'est précisément parce qu'elle a appliqué fidèlement sa règle syntaxique préprogrammée que le contresens s'est produit.",
       "C": "Le terme anglais « fans » figurait bien dans le dictionnaire du système avec une correspondance programmée vers le français (« ventilateurs »), mais cette règle a été déclenchée sans sensibilité au contexte sportif de l'énoncé.",
       "D": "Le calcul n'a nullement été paralysé par un conflit logique interne entre règles de transition : l'automate a produit une sortie déterministe qui s'avérait sémantiquement inadaptée à la situation réelle."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 37,
@@ -14177,7 +14272,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La Machine de Turing Universelle calcule l'ensemble des fonctions calculables par des machines de Turing particulières, mais elle ne résout aucun problème mathématiquement indécidable ou non calculable.",
       "C": "La machine ne reconfigure pas matériellement sa tête de lecture ni ses rouages internes, car la simulation s'effectue sans modifier les composants physiques ni la table d'instructions propre de la Machine Universelle : comme l'explique Haugeland (1981, section III), son ruban héberge sous forme symbolique la machine virtuelle imitée et son programme, ce qui fonde l'indépendance du médium et l'analogie avec le cerveau ([01:50:18]).",
       "D": "Conformément à la Diapo 50 et au verbatim ([01:49:59]), la Machine Universelle est capable de lire sur son ruban la description codée de n'importe quelle machine de Turing particulière ainsi que ses arguments, d'en simuler les opérations et de produire le résultat de toute fonction calculable."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 38,
@@ -14238,7 +14334,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Restitue avec exactitude la direction logique des deux implications présentées sur la Diapo 52 : la nécessité fonde l'étude psychologique des représentations et des règles de l'esprit humain, tandis que la suffisance fonde la possibilité de réaliser l'intelligence générale dans un ordinateur adéquatement programmé.",
       "C": "Si la première moitié sur la nécessité psychologique est exacte, la seconde contredit directement l'hypothèse de Newell et Simon, qui porte sur l'action intelligente générale et non sur des tâches étroitement circonscrites.",
       "D": "Un système symbolique physique requiert un mécanisme physique quelconque capable d'implémenter un système computationnel (indépendance du médium chez Haugeland, qu'il soit biologique ou électronique) et la suffisance des moyens exige une organisation programmatique appropriée plutôt qu'un assemblage matériel spontané."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 39,
@@ -14299,7 +14396,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inverse les rôles respectifs du premier et du deuxième niveau : c'est la théorie computationnelle qui fixe en amont le but global du système visuel, et c'est le niveau de la représentation et de l'algorithme qui spécifie les règles transformant l'image rétinienne en primitives volumétriques.",
       "C": "Identifie correctement le but fixé par la théorie computationnelle, mais inverse la direction causale du traitement algorithmique : le système visuel part des intensités rétiniennes et d'esquisses centrées sur le spectateur (viewer-centred) pour aboutir à un modèle centré sur l'objet (object-centred), et non l'inverse.",
       "D": "Confond le deuxième niveau (représentation et algorithme) avec le troisième niveau (implémentation matérielle) : la décomposition récursive et hiérarchique des formes en primitives de surfaces et de volumes (ou géons) relève du niveau représentationnel et algorithmique, et non directement du substrat matériel."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 40,
@@ -14360,7 +14458,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Le Perceptron de Rosenblatt n'apprend pas par exposition passive non supervisée : son ajustement progressif des poids et du poids associé au biais exige un signal d'erreur indiquant l'écart par rapport à la classification attendue ([02:41:09]).",
       "C": "Restitue la rupture historique et mécaniste fondamentale exposée par Pierre Poirier : le passage d'une ingénierie de portes logiques câblées à la main chez McCulloch et Pitts (1943) à un apprentissage automatique supervisé par signal d'erreur ajustant les poids synaptiques dans le Perceptron de Rosenblatt (1958).",
       "D": "Le Perceptron classique présenté par Rosenblatt (1958) et formalisé sous la forme d'un Single Layer Perceptron ne comporte pas de couche cachée ; il ne trace qu'une frontière linéaire droite (pente et ordonnée à l'origine d'une droite) et échoue face aux problèmes non linéairement séparables."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 41,
@@ -14421,7 +14520,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Modifier le poids associé au biais ne fait que translater l'ordonnée à l'origine de la droite de séparation dans le plan d'entrée sans pouvoir courber la frontière de décision.",
       "C": "Substituer une sigmoïde continue au seuil binaire sur un réseau dépourvu de couche cachée adoucit la transition probabiliste autour de la frontière, mais la séparation demeure strictement rectiligne et échoue sur le « ou » exclusif.",
       "D": "L'ajout d'une couche cachée intermédiaire non linéaire entre les entrées et la sortie recombine l'espace d'entrée pour tracer des séparations courbes et érige le réseau multicouche en approximateur universel (Diapo 69, [02:46:01–02:47:00])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 42,
@@ -14482,7 +14582,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Contredit le principe fondamental des réseaux multicouches ([02:53:32–02:53:52]) : les représentations de la couche cachée ne sont pas programmées d'avance par le modélisateur, et l'apprentissage modifie l'ensemble des poids des connexions à travers les couches plutôt qu'un simple seuil global en sortie.",
       "C": "Inverse à la fois le rôle du modélisateur sur les couches périphériques ([02:52:58–02:53:32]) et le principe même de la fonction d'intégration ([03:01:20–03:02:33]), qui remplace une décision non pondérée où chaque entrée compterait également par une somme pondérée selon la pertinence discriminative de chaque attribut.",
       "D": "Outre le fait que nous ne déterminons pas les représentations de la couche cachée ([02:53:32]), Pierre Poirier souligne que la couleur est très peu informative pour distinguer un chat d'un chien ([03:02:33]) : le réseau apprend donc à diminuer le poids de la couleur et non à le renforcer."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 43,
@@ -14543,7 +14644,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Rendre la décision proportionnelle à la somme pondérée des entrées sans limite supérieure confond la fonction sigmoïde avec une fonction linéaire non bornée (Diapos 76–77 et 83, [02:59:41–03:00:13 ; 03:09:15–03:09:32]).",
       "C": "Inverse à la fois la réalité biologique et la propriété mathématique de la sigmoïde : un neurone biologique conserve une activité spontanée faible au repos sans tomber à zéro ([03:09:11–03:09:18]), et c'est la fonction à seuil qui produit un saut binaire non différentiable bloquant la rétropropagation ([03:00:13]).",
       "D": "Synthétise exactement le double rôle enseigné en classe : sur le plan biologique, la sigmoïde traduit un taux de décharge gradué entre une activité spontanée faible et un plafond maximal asymptotique (Diapo 83, [03:08:59–03:09:44]), et sur le plan computationnel, sa différentiabilité permet d'entraîner les réseaux multicouches par rétropropagation de l'erreur (Diapo 76, [03:00:13])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 44,
@@ -14604,7 +14706,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Dans l'apprentissage pragmatique supervisé, le système compare la sortie produite à la réalité attendue et utilise ce signal d'erreur pour ajuster graduellement ses poids le long d'une trajectoire (path of weights) qui s'approche du minimum global d'erreurs, tout en restant un système qui approxime la solution ([03:11:43–03:13:51]).",
       "C": "Décrit l'apprentissage corrélationnel non supervisé (associatif ou hebbien), qui opère automatiquement par simple coordination entre l'activité neuronale et l'événement sans recourir à un signal d'erreur externe ([03:11:06–03:11:29], Diapos 84–85).",
       "D": "Dans un espace comptant des milliers ou des milliards de dimensions (une dimension par poids synaptique), la position optimale est inconnue au départ : le réseau débute au hasard avec un taux d'erreur très élevé et descend pas à pas la pente d'erreur sans atteindre une garantie d'absence totale d'erreurs ([03:11:43–03:13:51])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 45,
@@ -14665,7 +14768,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La prononciation d'une lettre dépendant à la fois de ce qui précède et de ce qui suit, la fenêtre fournit trois lettres de chaque côté (et non uniquement les lettres précédentes). De plus, lui soumettre des mots d'une autre langue (comme du français après un entraînement en anglais) donne un fort accent étranger ou un résultat inintelligible en raison des différences phonologiques entre les deux langues ([03:15:47 ; 03:26:53]).",
       "C": "Pour prononcer la lettre du milieu (middle letter), le réseau reçoit une fenêtre de trois lettres de chaque côté afin de capter le contexte phonétique sans alourdir l'architecture ([03:15:47–03:16:06]). Contrairement aux systèmes contemporains probabilistes, il tranche de façon déterministe en retenant l'activation concurrente la plus forte ([03:18:19–03:19:24]), et sa généralisation se mesure sans réentraînement sur des mots individuels inédits de la même langue ([03:21:01–03:25:44]).",
       "D": "Contrairement aux fenêtres d'attention mobiles des architectures contemporaines et aux modèles actuels probabilistes, ce réseau utilise une fenêtre fixe et prend ses décisions de manière déterministe ([03:16:48 ; 03:19:24]). En outre, le test de généralisation s'effectue sans réajuster les poids sur les mots de test ([03:21:01])."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 46,
@@ -14726,7 +14830,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix confond le statut des couches périphériques avec celui de la couche cachée ([02:52:58–02:53:52]). Si le codage des unités d'entrée (les lettres) et des unités de sortie (les traits phonétiques) est décidé par les chercheurs, l'organisation interne de la couche cachée n'est pas fixée à l'avance mais émerge de la tâche d'apprentissage.",
       "C": "Ce choix prête au réseau une mémorisation localiste mot par mot. Or, l'architecture traite une fenêtre locale centrée sur la lettre du milieu et projette dans sa couche cachée des représentations distribuées qui regroupent les phonèmes selon leur proximité phonologique plutôt que d'isoler chaque mot du corpus enfantin.",
       "D": "Supposer que le réseau formalise d'abord les règles explicites de la grammaire anglaise inverse le parallèle établi par Pierre Poirier avec l'acquisition humaine du langage ([03:30:47–03:31:34]). Comme l'illustre la boutade des linguistes (« si on connaissait automatiquement la grammaire de la langue qu'on parle, on n'aurait pas besoin de linguiste »), l'enfant comme le réseau connexionniste maîtrisent la structure de la langue de manière implicite dans leur réseau sans formuler ni analyser consciemment une grammaire formelle préalable."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 47,
@@ -14787,7 +14892,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Face à l'explosion combinatoire des états dans un espace de problème complexe (qui dépasse les ressources physiques de tout calculateur concevable, contrairement à un jeu trivial comme le morpion), un système symbolique physique résout les problèmes par génération et test sélectifs : il emploie des heuristiques (rules of thumb), c'est-à-dire des règles pratiques d'élagage qui écartent les branches stériles pour concentrer l'exploration sur quelques pistes pertinentes, mais sans garantie absolue de succès.",
       "C": "Ce choix confond le contrôle heuristique avec le passage à un système analogique. Tant chez Newell et Simon que chez Haugeland (quatrième et cinquième sections), la recherche heuristique s'opère au sein d'un système formel numérique (digital) qui manipule des structures de symboles discrets.",
       "D": "Ce choix confond une heuristique et un algorithme. Haugeland souligne qu'un algorithme est une procédure infaillible garantie d'aboutir au résultat recherché, tandis qu'une heuristique est une règle empirique plausible mais faillible (par exemple, « ne pas échanger sa dame contre un pion » est une bonne heuristique, mais elle fait manquer un sacrifice de dame victorieux)."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 48,
@@ -14848,7 +14954,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si les réseaux connexionnistes rendent bien compte de la représentation par prototypes selon l'analogie fonctionnelle-cognitive, ils ne stockent pas ces prototypes dans des adresses mémoire passives séparées d'un processeur central (architecture sérielle de von Neumann). La mémoire connexionniste est adressable par le contenu à même les poids synaptiques et demeure intrinsèquement sensible au contexte (comme l'illustre la fenêtre contextuelle de lettres dans NETtalk).",
       "C": "Bien que l'apprentissage pragmatique dirigé par l'erreur fasse converger progressivement un réseau initialisé aléatoirement vers le minimum global d'erreurs, Pierre Poirier rappelle que ces réseaux demeurent des approximateurs qui ne garantissent pas l'absence totale d'erreurs. De plus, c'est le neurone binaire « tout-ou-rien » de McCulloch et Pitts (1943) qui visait le calcul propositionnel déductif strict, tandis que les modèles à traitement parallèle distribué opèrent par activations graduées et approximation statistique.",
       "D": "Parce que chaque connaissance est répartie sur une vaste population d'unités et de connexions (modélisée au niveau mésoscopique en neurosciences cognitives computationnelles), une destruction partielle ou une entrée bruitée ne provoque pas une panne brutale en tout-ou-rien, mais une baisse graduelle de performance (graceful degradation), le réseau reconstruisant le patron cible en satisfaisant simultanément de multiples contraintes souples."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 49,
@@ -14909,7 +15016,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Exprime exactement la définition présentée en classe où l'information réduit l'incertitude et augmente à mesure que la probabilité de l'événement diminue et que la surprise s'accroît.",
       "C": "Confond les propriétés physiques du canal de transmission avec la valeur informationnelle du signal, laquelle dépend de la probabilité d'occurrence de l'événement et non de son intensité énergétique.",
       "D": "Confond la courbe de surprise d'un événement individuel avec une courbe en cloche : lorsque la probabilité d'un événement continue de diminuer au-delà de l'équiprobabilité d'une pièce de monnaie, la quantité d'information véhiculée par son apparition continue d'augmenter au lieu de diminuer."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 50,
@@ -14970,7 +15078,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'activation dans la bande alpha ne distingue pas significativement l'œil amblyope de l'œil sain, et la simple redondance sensorielle du canal ne peut pas remplacer les attentes et connaissances préalables nécessaires face à une foule.",
       "C": "Dans l'amblyopie, l'entropie de Shannon montre au contraire une hausse de l'imprédictibilité et du désordre neuronal dans les basses fréquences (et non une baisse), et la reconnaissance d'un visage dans une foule requiert une modulation descendante.",
       "D": "Combine exactement la sensibilité de l'entropie aux différences de complexité fréquentielle dans l'amblyopie et la nécessité des processus descendants pour isoler une cible pertinente parmi le bruit d'une foule."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 51,
@@ -15031,7 +15140,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inverse l'évolution spatiale des champs récepteurs (qui s'élargissent vers le cortex inféro-temporal au lieu de rétrécir) et nie à tort l'influence des boucles récurrentes sur le traitement visuel.",
       "C": "Si l'abstraction des formes croît effectivement le long de la voie ventrale, la dynamique temporelle ne suit pas une séquence linéaire pure car l'activation locale des cellules pyramidales et les rétroactions rapides brouillent la chronométrie d'une aire à l'autre.",
       "D": "Inverse à la fois la hiérarchie fonctionnelle de la voie ventrale (l'aire primaire détectant les lignes simples et le cortex inféro-temporal les visages) et le rôle incontournable des boucles de rétroaction."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 52,
@@ -15092,7 +15202,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si l'invariance spatiale du néocognitron s'inspire bien des cellules complexes, ni le modèle de Fukushima ni les premiers réseaux convolutifs n'intégraient de boucles descendantes modulant leur première couche.",
       "C": "Identifie exactement l'invariance spatiale héritée des cellules complexes, la réduction dimensionnelle vers l'information saillante dans les réseaux convolutifs, et l'absence de prise en compte du contexte descendant dans ces premiers modèles.",
       "D": "La première couche d'un réseau convolutif extrait des traits élémentaires de bas niveau (orientations, fréquences spatiales, couleurs) à l'image des cellules simples, et non des visages complets guidés par des attentes descendantes."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 53,
@@ -15153,7 +15264,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Respecte à la fois la primauté épistémologique du niveau computationnel (définir l'objectif fonctionnel du système avant le comment) et la bascule spatiale des esquisses égocentriques vers le modèle tridimensionnel allocentrique invariant à l'angle.",
       "C": "Inverse l'ordre des niveaux en donnant la priorité à l'implémentation matérielle et méconnaît la nature allocentrique du modèle tridimensionnel final.",
       "D": "Bien qu'elle reconnaisse la primauté du niveau computationnel, cette option qualifie à tort d'allocentrique l'esquisse à deux dimensions et demie, laquelle demeure égocentrique et dépendante du point de vue de l'observateur."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 54,
@@ -15214,7 +15326,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Double erreur factuelle : la décharge des neurones sélectifs aux visages dans le cortex inféro-temporal n'est pas figée mais diminue avec la répétition (plasticité/habituation, Diapo 14), et la simplification d'un objet en imagerie optique (Diapo 17) n'est pas linéairement proportionnelle puisqu'elle peut activer de nouvelles colonnes corticales initialement inhibées.",
       "C": "Inverse l'organisation du cortex inférotemporal : le cortex inféro-temporal est structuré en colonnes corticales codant des caractéristiques visuelles élémentaires dont la combinaison distribuée représente l'objet complexe, et non en cellules grand-mères isolées (Diapos 14 et 17).",
       "D": "Intègre fidèlement les trois preuves neurophysiologiques du cours : plasticité dynamique des réponses sélectives (Diapo 14), absence de stockage conceptuel dans une unité isolée au profit d'un réseau dynamique (Diapos 15–16), et codage par combinaisons distribuées de colonnes corticales (Diapo 17)."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 55,
@@ -15275,7 +15388,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien que les neurones de l'aire primaire soient adaptatifs, le contournement par le collicule supérieur ne procure aucune expérience consciente et l'inactivation magnétique du pôle occipital abolit la conscience du mouvement.",
       "C": "Contrairement à la rétine, les neurones de l'aire visuelle primaire modifient dynamiquement leur champ récepteur selon le contexte, et l'aire du mouvement ne peut produire seule la conscience sans rétroaction vers le pôle occipital.",
       "D": "Si la plasticité d'orientation des neurones primaires est exacte, la stimulation magnétique du pôle occipital chez le sujet sain abolit la prise de conscience du mouvement (liée au rétro-traitement cortical) et non la voie sous-corticale colliculaire."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 56,
@@ -15336,7 +15450,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Décrit justement la théorie de la hiérarchie inversée, mais inverse le sens des flux du codage prédictif en faisant descendre le signal d'erreur au lieu de la prédiction.",
       "C": "Restitue exactement la montée implicite aboutissant à la perception consciente globale initiale (vision at a glance), la redescente attentionnelle vers les aires basses pour scruter les détails fins (vision with scrutiny) et l'opposition avec les modèles prédictifs où la prédiction descend et l'erreur monte.",
       "D": "Confond les deux architectures en leur attribuant un flux identique, alors que leurs directions fonctionnelles sont inversées et que l'accès aux détails fins requiert un retour descendant vers l'aire visuelle primaire et non une délégation au cortex frontal."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 57,
@@ -15397,7 +15512,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Identifie exactement qu'un stimulus subliminal génère une représentation visuelle locale par propagation ascendante sans atteindre la conscience, tandis que l'accès conscient requiert l'embrasement réverbérant de boucles récurrentes et de rétroactions partageant l'information dans l'espace global.",
       "C": "Reconnaît correctement l'élaboration d'une représentation visuelle subliminale locale, mais réduit à tort l'accès conscient à une amplification locale dans l'aire visuelle primaire sans partage réverbérant dans l'espace global.",
       "D": "En condition subliminale, la propagation ascendante échoue précisément à embraser l'espace de travail global (failure of ignition) et demeure confinée aux aires sensorielles locales."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 58,
@@ -15458,7 +15574,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si l'entropie de transfert quantifie bien le flux causal directionnel entre régions, le traitement cognitif distribué n'abolit nullement l'organisation modulaire locale en colonnes corticales spécialisées.",
       "C": "Reconnaît avec justesse la coexistence des modules locaux et du réseau distribué par couplage bidirectionnel, mais réduit à tort l'entropie de transfert dirigée de Deco et ses collaborateurs à une simple mesure d'amplitude locale du signal.",
       "D": "Contredit le bilan en prétendant que les connexions descendantes suffisent sans flux ascendant, et confond la connectivité effective dynamique mesurée par l'entropie de transfert avec la mesure structurelle statique de la myélinisation."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 59,
@@ -15519,7 +15636,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Confond l'organisation en colonnes avec la ségrégation laminaire des flux et fait partir à tort les deux voies de la couche granulaire centrale, alors que celle-ci constitue la couche de réception du flux ascendant.",
       "C": "Inverse les couches de terminaison dans l'aire cible : ce sont les projections ascendantes qui se terminent dans la couche granulaire centrale, tandis que les projections descendantes l'évitent.",
       "D": "Décrit avec exactitude la ségrégation laminaire mise en évidence par l'équipe de Kennedy : origine supragranulaire (superficielle) vers la couche granulaire pour le flux ascendant, et origine infragranulaire (profonde) évitant la couche granulaire pour le flux descendant."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 60,
@@ -15580,7 +15698,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Réduit l'onde alpha à une synchronisation passive et inverse la hiérarchie des générateurs en plaçant le couplage éphaptique (troisième et dernier mécanisme) devant les boucles synaptiques excitation-inhibition.",
       "C": "Identifie exactement le rôle inhibiteur top-down de l'onde alpha occipitale les yeux fermés ainsi que l'ordre d'importance décroissante des trois générateurs d'oscillations cérébrales.",
       "D": "Identifie correctement l'inhibition top-down exercée par l'onde alpha les yeux fermés, mais place à tort les propriétés intrinsèques pacemakers thalamiques devant le mécanisme générateur principal que constituent les boucles récurrentes excitation-inhibition."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 61,
@@ -15641,7 +15760,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Décrit avec exactitude le codage local en gamma, la synchronisation à longue distance par la phase de l'onde thêta qui module l'amplitude du gamma (couplage phase-amplitude), la prédominance des ondes rapides lors de l'engagement cognitif actif et le calage dynamique de la phase par l'attention.",
       "C": "Inverse le profil spectral de l'engagement cognitif (une forte puissance des ondes lentes signe un désengagement cognitif) et prête à tort au cerveau une horloge interne fixe et régulière comparable à celle d'un ordinateur.",
       "D": "Inverse la direction du couplage phase-amplitude (c'est la phase de l'onde lente thêta qui module l'amplitude des bouffées rapides gamma, et non l'inverse) et nie le rôle amplificateur de l'attention descendante."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 62,
@@ -15702,7 +15822,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Reconduit le dualisme cartésien (« l'erreur de Descartes ») en opposant la décision rationnelle aux marqueurs somatiques, alors qu'une lésion du cortex préfrontal ventromédian coupant l'accès aux signaux émotionnels compromet gravement la prise de décision quotidienne.",
       "C": "Inverse les fonctions respectives des deux voies cérébrales du schéma The Brain : c'est la voie courte thalamo-amygdalienne directe qui déclenche le sursaut initial face à l'inattendu, tandis que la voie longue corticale assure l'analyse fine et la modulation contextuelle.",
       "D": "Ampute le schéma The Body de sa boucle de rétroaction ascendante : les modifications viscérales et hormonales ne s'épuisent pas en périphérie mais remontent par l'intéroception vers le cortex insulaire et le cortex cingulaire antérieur."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 63,
@@ -15763,7 +15884,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si le rôle viscéral de la Body Loop est exact, cette option commet un contresens sur la faille de l'intellectualisme en la confondant avec un réductionnisme moteur, alors qu'elle désigne au contraire l'excès d'abstraction représentationnelle prêté aux processus pratiques.",
       "C": "Inverse le tableau neuropsychologique des patients d'Antonio Damasio : une lésion du cortex préfrontal ventromédian laisse intactes les connaissances intellectuelles générales et la logique formelle, mais abolit l'accès décisionnel aux marqueurs somatiques de la Body Loop et de la 'As if' Loop.",
       "D": "Identifie exactement le passage par les effecteurs viscéraux du corps dans la Body Loop, le court-circuitage corporel par simulation somatique interne dans la 'As if' Loop (cortex somatosensoriel et insula) et la définition de la faille de l'intellectualisme par Pierre Poirier."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 64,
@@ -15824,7 +15946,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Étudier d'abord chaque module hors du corps avant d'y greffer tardivement des capteurs sensoriels reproduit l'approche classique désincarnée critiquée par Pierre Poirier ([03:05:06–03:05:29]), qui consiste à isoler un sous-système abstrait en dehors d'un agent complet.",
       "C": "Restitue fidèlement l'exigence méthodologique de Pierre Poirier (ne pas étudier les sous-systèmes en faisant abstraction de l'agent complet) ainsi que les caractéristiques de l'agent complet (autonome, auto-suffisant, encarné, situé) et les principes associés (redondance, coordination sensorimotrice) de Rolf Pfeifer et son collègue (1999).",
       "D": "Retient la définition de l'agent complet mais exclut à tort le principe de la redondance (principe 5) et le principe du système de valeurs (principe 7), qui figurent explicitement parmi les sept principes de Rolf Pfeifer et son collègue."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 65,
@@ -15885,7 +16008,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Restitue fidèlement la rupture exposée par Pierre Poirier entre le modèle cartésien passif et représentationnel (« Voir pour mieux agir ! ») et le paradigme de la vision active encarnée de Dewey et Gibson (« Agir pour mieux voir ! »).",
       "C": "Commet un contresens sur la citation écologique de Gibson (resting-on-the-ground) : l'ancrage postural du corps sur le sol exprime l'encastrement moteur de l'exploration visuelle active et non une immobilité de l'observateur.",
       "D": "Contredit directement l'approche écologique de Dewey et Gibson, lesquels rejettent précisément le modèle de la caméra passive et l'idée d'un système visuel autonome séparé de la tête, du corps et de la locomotion."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 66,
@@ -15946,7 +16070,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Commet une double erreur : d'une part, le réseau connexionniste non complet possède bel et bien des unités internes et une couche cachée (Hidden / Internal Units), et d'autre part, le robot mobile modifie directement ses prochaines entrées sensorielles par ses mouvements.",
       "C": "Contredit la diapositive sur les systèmes couplés agent-environnement, où Pierre Poirier précise explicitement entre parenthèses que les entrées sensorielles incluent l'intéroception et que les sorties motrices incluent les effecteurs viscéraux modifiant le milieu corporel interne.",
       "D": "Efface la différence fondamentale entre les deux systèmes : contrairement au robot mobile Khepera, le réseau connexionniste désincarné n'exerce aucune force motrice sur l'environnement physique et se borne à afficher des vecteurs binaires pour l'expérimentateur."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 67,
@@ -16007,7 +16132,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si l'ambiguïté géométrique entre un grand cylindre distant et un petit cylindre proche est exacte, l'ajout d'une couche cachée entraînée par apprentissage supervisé dans le modèle « tout-cerveau » échoue radicalement à discriminer les deux classes de cylindres.",
       "C": "Contredit les résultats empiriques de l'équipe de Rolf Pfeifer : lorsque le contrôleur immobilise le robot devant l'objet, la performance s'effondre dès que l'on s'écarte d'un angle d'approche frontal unique et très particulier.",
       "D": "La similarité des entrées entre un grand cylindre distant et un petit cylindre proche rend les régularités pertinentes marginales ou cachées (problème de type deux), et la solution non encarnée cherchant à les extraire uniquement dans le « cerveau » via une couche cachée supervisée échoue globalement."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 68,
@@ -16068,7 +16194,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Triple contresens : dans l'analogie du vaisseau spatial, l'orbite s'effectue à distance constante (et non variable) autour de l'objet, le réseau n'emmagasine aucune représentation interne et le robot quitte les petits cylindres (et non les grands).",
       "C": "En tournant autour du cylindre à distance constante (en gardant un senseur de distance constant comme un vaisseau en orbite autour d'une planète), le robot génère par son mouvement des patterns sensoriels dynamiques distincts et quitte les petits cylindres sans couche cachée, ni représentation, ni apprentissage supervisé (équipe de Rolf Pfeifer).",
       "D": "Si le mouvement de contournement (circling) est exact, la solution encarnée de l'équipe de Rolf Pfeifer exclut précisément toute couche cachée, toute représentation interne du rayon et tout apprentissage supervisé."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 69,
@@ -16129,7 +16256,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Articule fidèlement la leçon méthodologique de Pierre Poirier sur la parcimonie du petit réseau sensorimoteur et la distinction épistémologique de Dave Saint-Amour entre le classificateur fondé sur des étiquettes d'entraînement et la catégorie définie dynamiquement par le contexte.",
       "C": "Inverse la distinction épistémologique de Dave Saint-Amour : le réseau minimal du robot agit comme un simple classificateur réactif (et non comme un système formant des catégories conceptuelles flexibles), et c'est la catégorie — non le classificateur — qui se redéfinit dynamiquement selon le contexte.",
       "D": "Si la première proposition restitue exactement la leçon de parcimonie de Pierre Poirier, la seconde confond les deux concepts de Dave Saint-Amour : les étiquettes fixes d'un classificateur ne permettent justement pas de redéfinir une catégorie selon le contexte."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 70,
@@ -16190,7 +16318,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à la critique contemporaine exposée par Dave Saint-Amour, l'attention n'est pas un système unitaire mais un ensemble de processus de sélection qui s'articulent selon la cible externe ou interne, l'engagement moteur explicite ou implicite et le contrôle exogène ou endogène.",
       "C": "Cette affirmation commet un contresens sur la critique contemporaine, qui rejette précisément l'idée que l'attention constitue un construit homogène ou un système neuronal unitaire.",
       "D": "La taxonomie fonctionnelle présentée en cours intègre pleinement l'orientation exogène (bottom-up) déclenchée par des stimuli saillants ainsi que le déploiement implicite (covert) sans mouvement oculaire."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 71,
@@ -16251,7 +16380,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option contredit simultanément les deux résultats empiriques : la signification sémantique accélère fortement la détection des modifications centrales en cécité au changement, et la traversée physique du champ visuel central ne garantit pas la prise de conscience en l'absence d'attention.",
       "C": "Si la seconde proposition décrit correctement la cécité attentionnelle, la première inverse les résultats empiriques sur la cécité au changement : ce sont les éléments d'intérêt central porteurs de sens dans le contexte de la scène qui sont détectés beaucoup plus rapidement que les détails d'intérêt marginal.",
       "D": "En cécité au changement, la pertinence sémantique et l'importance contextuelle de l'objet (intérêt central par opposition à marginal) accélèrent nettement le repérage de la modification, tandis que la cécité attentionnelle démontre que sans allocation attentionnelle, un observateur peut manquer la perception consciente d'un stimulus parfaitement visible."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 72,
@@ -16312,7 +16442,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette proposition décrit un filtrage tardif post-sémantique, alors que chez Broadbent le message ignoré ne franchit pas le goulot d'étranglement et n'accède pas au traitement sémantique de haut niveau.",
       "C": "Le registre sensoriel et le filtre sélectif de Broadbent opèrent sur les caractéristiques physiques élémentaires du signal acoustique et non sur une analyse préalable de la pertinence verbale ou sémantique.",
       "D": "Si le filtre bloquait le signal avant même le registre sensoriel, les participants seraient incapables de rapporter les changements physiques du canal ignoré comme une modification d'intensité ou de timbre vocal observée par Cherry."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 73,
@@ -16373,7 +16504,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien que les thèses de Treisman et de Deutsch et Deutsch soient décrites avec exactitude, l'expérience de détection motrice en écoute dichotique ne montre pas une détection égale entre les deux canaux mais une omission massive des mots cibles présentés dans l'oreille ignorée.",
       "C": "Chez Treisman, le filtre perceptif précoce agit comme un contrôle de gain qui atténue le message ignoré sans l'éliminer, permettant aux mots à forte valeur dotés d'un bas seuil d'activation de franchir le seuil de conscience, tandis que chez Deutsch et Deutsch tous les messages subissent une analyse sémantique complète avant un filtre de réponse tardif ; lors du test expérimental en écoute dichotique, le fait que les mots cibles du canal ignoré soient très souvent manqués lors d'une tâche de détection motrice prouve que l'attention agit dès le traitement perceptif et sémantique, avant la sélection de la réponse.",
       "D": "Bien que l'omission fréquente des cibles du canal ignoré valide effectivement l'intervention précoce de l'attention, cette option permute les auteurs en attribuant la sélection tardive à Treisman et l'atténuation précoce à Deutsch et Deutsch."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 74,
@@ -16434,7 +16566,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Distingue exactement l'extraction parallèle d'une caractéristique unique au stade pré-attentif (pop-out), le liage sériel lent des conjonctions d'attributs par l'attention sélective (binding) et l'accélération de la recherche par les prédictions descendantes d'un contexte connu.",
       "C": "Si l'effet facilitateur de la scène de cuisine familière est exact, la détection d'un attribut unique (feature search) ne requiert pas un balayage sériel lent mais s'opère en parallèle au stade pré-attentif (pop-out).",
       "D": "Bien que la détection parallèle d'un attribut isolé (pop-out) soit correctement décrite, une scène de cuisine familière n'entrave pas le guidage descendant (top-down) mais l'active pour orienter rapidement l'attention vers l'évier."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 75,
@@ -16495,7 +16628,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "D'une part, le déplacement du projecteur attentionnel dans le paradigme de Posner s'opère à fixation constante sans mouvement oculaire explicite et, d'autre part, le regard humain constitue un indice social plus efficace qu'une simple flèche géométrique.",
       "C": "Inverse le décours temporel d'installation de l'attention (l'indice périphérique exogène agit beaucoup plus vite que l'indice central endogène lorsque varie le délai entre l'indice et la cible) ainsi que la hiérarchie d'efficacité entre la flèche et le regard des yeux.",
       "D": "Caractérise avec exactitude la capture automatique et rapide de l'attention exogène par un indice périphérique saillant, ainsi que l'orientation volontaire, plus lente et d'efficacité variable (supériorité du regard) de l'attention endogène par un indice symbolique."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 76,
@@ -16556,7 +16690,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'apport fondamental des potentiels évoqués et de la magnétoencéphalographie est précisément de réfuter l'idée d'une imperméabilité sensorielle initiale en prouvant une modulation attentionnelle dès les premières étapes corticales et sous-corticales.",
       "C": "En vision également, l'attention module précocement les aires occipitales en amplifiant la première onde positive occipitale, ainsi que des composantes visuelles encore plus précoces selon le paradigme utilisé.",
       "D": "D'une part, l'attention descendante agit jusqu'au niveau périphérique des cellules ciliées de la cochlée en audition, et d'autre part, l'amplification de la première onde positive occipitale en vision survient du côté contralatéral et non ipsilatéral au champ visuel ciblé."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 77,
@@ -16617,7 +16752,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option cumule une inversion hémisphérique (la réponse est maximale du côté contralatéral à la cible) et une inversion fonctionnelle entre la négativité de la cible et la positivité du distracteur.",
       "C": "Après quelques centaines de millisecondes dans les régions postérieures, la soustraction entre l'hémisphère contralatéral, où la réponse est maximale, et l'hémisphère ipsilatéral isole la négativité postérieure contralatérale. En magnétoencéphalographie (Diapo 21), des boucles récurrentes de rétroaction sur l'aire visuelle primaire activent simultanément la cible via la négativité de la cible et inhibent activement les distracteurs via la positivité du distracteur.",
       "D": "L'amplification par la négativité de la cible et la suppression active par la positivité du distracteur ne s'exécutent pas l'une après l'autre mais opèrent de façon conjointe et parallèle."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 78,
@@ -16678,7 +16814,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Restitue fidèlement les trois systèmes de Posner ainsi que la spécialisation préférentielle des réseaux dorsal (endogène) et ventral (exogène) qui communiquent et interagissent selon le contexte.",
       "C": "Confond les fonctions des systèmes de Posner : c'est le système d'alerte (et non d'orientation) qui sous-tend la vigilance, et le contrôle exécutif repose principalement sur les régions frontales.",
       "D": "Cumule la confusion entre les systèmes d'alerte et d'orientation chez Posner, l'inversion fonctionnelle entre les réseaux dorsal et ventral, et la négation de leur interaction dynamique."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 79,
@@ -16739,7 +16876,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Identifie correctement la désynchronisation alpha contralatérale et la synchronisation ipsilatérale communes aux deux conditions, mais inverse la condition dans laquelle ce patron prédit la performance comportementale (attention externe et non interne).",
       "C": "Inverse la polarité interhémisphérique de la modulation alpha (qui se désynchronise en contralatéral et se synchronise en ipsilatéral) et affirme à tort que ce patron prédit la performance dans les deux tâches.",
       "D": "Décrit exactement la désynchronisation alpha contralatérale et la synchronisation ipsilatérale communes aux deux conditions (organisation spatiale de la mémoire de travail) ainsi que la corrélation comportementale observée spécifiquement en attention externe."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 80,
@@ -16800,7 +16938,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur reflète l'illusion courante selon laquelle le retrait de la contrainte motrice suffit à sécuriser la conduite, alors que l'étude démontre que le dispositif mains libres produit la même interférence attentionnelle que le téléphone tenu à l'oreille.",
       "C": "L'écoute d'un livre audio n'entraîne quasiment aucune interférence en simulateur, tandis que la conversation téléphonique augmente fortement la probabilité de manquer des feux rouges en plus d'allonger les temps de réaction.",
       "D": "Ce distracteur confond l'écoute passive et l'interaction verbale active, car l'écoute de la radio sert justement de condition contrôle ne provoquant presque aucune baisse de performance par rapport à la conduite seule."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 81,
@@ -16861,7 +17000,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien que la justification méthodologique de l'équilibre comportemental soit exacte, le classificateur réussit au contraire à discriminer l'attention volontaire de l'attention involontaire très tôt après l'apparition de la cible.",
       "C": "L'égalité du gain de validité comportemental assure un niveau de difficulté comparable entre les deux conditions, et l'algorithme de classification distingue très précocement les deux formes d'attention grâce à un patron topographique contralatéral.",
       "D": "L'égalisation du gain comportemental ne supprime nullement la réponse visuelle précoce, et la signature topographique permettant au classificateur de distinguer les deux attentions est contralatérale et non ipsilatérale au champ visuel ciblé."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 82,
@@ -16922,7 +17062,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'impossibilité de conclure à la similarité par le simple non-rejet de l'hypothèse nulle justifie le recours à la généralisation croisée entre conditions, qui démontre une différenciation précoce suivie d'une convergence tardive des deux systèmes attentionnels.",
       "C": "Au-delà de l'enjeu épistémologique du non-rejet de l'hypothèse nulle, la généralisation croisée réussit significativement au-dessus du hasard en fenêtre tardive, réfutant l'idée d'un cloisonnement permanent entre les deux formes d'attention.",
       "D": "Si la limite épistémologique d'une absence de différence statistique est bien identifiée, cette option inverse le décours temporel du transfert d'apprentissage : c'est la différenciation qui survient tôt après l'apparition de la cible, tandis que la généralisation croisée culmine tardivement lors des processus liés à la décision."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 83,
@@ -16983,7 +17124,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Si le rôle du comportement comme garant face à l'épiphénomène est exact, cette option commet un contresens sur l'adage « la carte n'est pas le territoire » : une représentation utile compresse la dimensionnalité en éliminant les détails superflus plutôt qu'en multipliant les dimensions neuronales.",
       "C": "Cette option nie le problème méthodologique de l'épiphénomène en supposant qu'une variation électroencéphalographique cause d'emblée l'action sans qu'il soit nécessaire de vérifier par médiation son lien prédictif avec les temps de réponse.",
       "D": "En plus de rejeter à tort la vérification comportementale par médiation, cette option inverse la fonction adaptative des représentations : un manifold contraint l'activité neuronale pour conserver la structure spatiale et fonctionnelle utile à l'action, et non le bruit cortical."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 84,
@@ -17044,7 +17186,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Réductionnisme erroné et inversion chronologique : Mathieu Landry insiste sur la nature multidimensionnelle de ces effets (qu'on ne peut réduire à la seule première onde positive occipitale), et le contrôle du gain précède l'accumulation d'évidence.",
       "C": "Inversion fonctionnelle entre la phase précoce et la phase tardive : l'amplification du gain sensoriel survient précocement de manière différenciée, avant la convergence tardive liée à l'accumulation d'évidence décisionnelle.",
       "D": "L'analyse de médiation démontre le rôle causal et multidimensionnel de l'activité cérébrale sur les temps de réponse, s'articulant autour d'un gain sensoriel précoce propre à chaque forme d'attention suivi d'une convergence tardive d'accumulation d'évidence vers un seuil décisionnel partagé."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 85,
@@ -17105,7 +17248,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La randomisation temporelle casse le rythme de la tâche pour bloquer l'anticipation rythmique du cerveau, et le distracteur opposé provoque à la fois la perte du bénéfice comportemental d'indiçage et l'échec du classificateur d'attention volontaire.",
       "C": "Contresens méthodologique sur le contrôle temporel : casser le rythme par randomisation vise au contraire à empêcher l'anticipation temporelle afin d'isoler des effets purement spatiaux.",
       "D": "Négation de l'interférence neurophysiologique : mis à l'épreuve dans la condition avec distracteur opposé, le classificateur entraîné à reconnaître l'attention volontaire n'est plus en mesure de décoder le signal."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 86,
@@ -17166,7 +17310,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix inverse la polarité fonctionnelle des oscillations alpha : pour ouvrir les vannes du traitement sensoriel dans l'hémisphère contralatéral, l'attention volontaire diminue l'amplitude alpha au lieu de renforcer sa synchronisation.",
       "C": "Ce choix reprend la thèse sceptique réfutée par l'analyse de modération de la médiation, laquelle démontre statistiquement que les variations du rythme alpha contribuent directement à l'impact du distracteur sur le comportement.",
       "D": "Loin de stabiliser la carte de priorisation spatiale, le distracteur opposé interfère avec la latéralisation alpha, perturbe la connectivité du circuit dorsal et élimine l'effet bénéfique d'indiçage spatial au niveau comportemental."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 87,
@@ -17227,7 +17372,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix confond le processus post-décisionnel très tardif avec le contrôle précoce du gain sensoriel qui survient tout au début du traitement visuel, bien avant l'exécution de la réponse.",
       "C": "L'accumulation d'évidence précède la prise de décision pour franchir le seuil de réponse, tandis que ce troisième effet survient une fois la décision déjà prise et que la distraction se déploie sur plusieurs dimensions plutôt qu'une seule.",
       "D": "Puisque la décision et la réponse bimanuelle sont déjà effectuées sans biais moteur latéralisé, cet effet tardif correspond à une évaluation post-décisionnelle issue des modèles prédictifs signalant une erreur potentielle afin que l'attention augmente la précision des prédictions."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 88,
@@ -17288,7 +17434,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien que la justification méthodologique des modèles à états cachés (latents) face au moyennage soit exacte, cette option inverse l'ordre fonctionnel entre la phase précoce d'exploration coûteuse du champ visuel et la phase tardive d'exploitation économe.",
       "C": "Les modèles à états cachés permettent de modéliser les variations temporelles de l'état cérébral masquées par la moyenne inter-essais, tandis que l'amplification différentielle précoce traduit une exploration coûteuse du champ visuel suivie d'une convergence tardive d'exploitation optimisant les ressources.",
       "D": "D'une part, la modélisation d'états complexes ou causaux demeure très gourmande en essais expérimentaux (d'où le recours aux grands consortiums comme ManyLabs) et, d'autre part, les deux formes d'attention convergent tardivement pour éviter de dédoubler les mécanismes décisionnels."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 89,
@@ -17349,7 +17496,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce distracteur confond le contrôle expérimental en laboratoire (où l'on casse le rythme entre les essais pour éviter l'anticipation temporelle) avec la réalité virtuelle (où l'on introduit du scintillement), et réduit à tort l'attention multisensorielle à un réservoir invariant alors que les modalités opèrent parfois indépendamment.",
       "C": "Si l'usage du scintillement en réalité virtuelle est correctement décrit, les travaux de John Driver démontrent que les modalités sensorielles ne restent pas isolées en permanence mais présentent des effets marqués d'interaction et de convergence, par exemple entre l'audition et la vision à l'écoute de son propre prénom.",
       "D": "Bien que le questionnement sur les ressources cognitives suscité par la convergence intermodale soit juste, en réalité virtuelle on introduit volontairement du scintillement sur les objets au lieu de l'éviter afin d'exploiter la synchronisation cérébrale précoce."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 90,
@@ -17410,7 +17558,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inversion entre l'architecture classique sans attention et l'architecture avec attention : l'encodeur-décodeur traditionnel ne transmettait pas un vecteur par mot au décodeur, mais un seul vecteur de taille fixe, alors que c'est l'architecture avec attention qui conserve un vecteur d'annotation par élément d'entrée avant de les combiner dynamiquement dans un vecteur de contexte.",
       "C": "Confusion avec la non-différentiabilité de l'attention dure : tant l'encodeur-décodeur récurrent classique que le mécanisme d'attention douce reposent sur des fonctions continues et dérivables comme la normalisation softmax, ce qui permet de les entraîner de bout en bout par descente de gradient et rétropropagation de l'erreur.",
       "D": "Comme l'explique Grace W. Lindsay, l'encodeur traditionnel sans attention devait résumer toute la phrase source dans un vecteur unique de longueur fixe, indépendant de la longueur ou de la complexité de l'entrée et statique tout au long du décodage, créant un goulot d'étranglement qui écrasait l'information des séquences longues et empêchait d'interroger sélectivement différentes parties de la phrase au fil de la génération."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 91,
@@ -17471,7 +17620,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'attention douce attribue des poids continus normalisés à toutes les parties de l'entrée pour en produire une combinaison pondérée dérivable pouvant être entraînée de bout en bout par descente de gradient et rétropropagation, tandis que l'attention dure opère un choix discret et stochastique d'un seul emplacement au détriment des autres, ce qui brise la dérivabilité et oblige à recourir à l'apprentissage par renforcement.",
       "C": "Inversion des régimes d'entraînement associés à la dérivabilité : bien que cette option associe justement l'attention douce à une distribution continue et l'attention dure à des sélections stochastiques, c'est la continuité dérivable de l'attention douce qui autorise la rétropropagation du gradient, alors que l'échantillonnage discret de l'attention dure requiert l'apprentissage par renforcement.",
       "D": "Double contresens sur l'économie computationnelle et sur l'auto-attention des modèles Transformer : d'une part, c'est l'attention dure par aperçus fovéaux qui économise les ressources de calcul en évitant de traiter toute l'image en haute résolution, et d'autre part, l'auto-attention des modèles Transformer repose sur une pondération douce et dérivable plutôt que sur de l'attention dure."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 92,
@@ -17532,7 +17682,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Le bilan comparatif de Grace W. Lindsay établit exactement l'inverse : ce sont les formes d'attention visuelle spatiale et basée sur les caractéristiques qui présentent les parallèles les plus étroits et les plus directs entre biologie et apprentissage automatique, tandis que l'éveil global lié à la vigilance demeure un phénomène biologique sans analogue artificiel évident.",
       "C": "De l'introduction à la conclusion de son article, Grace W. Lindsay identifie le contrôle flexible de ressources computationnelles limitées comme le dénominateur commun fondamental qui unit l'attention biologique et l'attention artificielle face aux goulots d'étranglement informationnels, tout en soulignant que leurs substrats et algorithmes d'implémentation divergent fréquemment.",
       "D": "La baisse de la variabilité de décharge neuronale et la synchronisation oscillatoire répondent aux contraintes biophysiques propres aux neurones biologiques bruités produisant des potentiels d'action et n'ont pas d'équivalent dans les réseaux profonds standards, tandis que la sélection dépendante du contexte rapproche au contraire les deux domaines."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 93,
@@ -17593,7 +17744,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Piège de confusion avec la marche dans le brouillard : dans une pièce noire connue où l'organisme prédit déjà l'obscurité, la privation de lumière confirme la prédiction visuelle externe sans générer d'erreur visuelle, de sorte que ce sont les erreurs intéroceptives internes qui forcent l'organisme à quitter la pièce.",
       "C": "Piège sur l'inférence active et les arcs réflexes : un réflexe moteur ou proprioceptif n'est déclenché que lorsqu'il existe un écart entre l'état postural prédit et l'état ressenti, si bien que lorsque le cerveau prédit l'immobilité, les boucles proprioceptives ne déclenchent pas de mouvement exploratoire autonome.",
       "D": "Inversion du fonctionnement du modèle génératif : lorsque les entrées sensorielles correspondent aux prédictions descendantes, l'absence d'erreur ascendante confirme et stabilise les croyances antérieures (priors) loin de provoquer leur dissolution."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 94,
@@ -17654,7 +17806,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à Rao et Ballard ainsi qu'à Friston, chaque échelon supérieur envoie ses prédictions vers le niveau inférieur via les connexions descendantes, et les erreurs de prédiction résiduelles remontent par les connexions ascendantes.",
       "C": "Correspond à l'erreur fréquente dissipée par Pierre Poirier en classe : les prédictions ne sautent pas directement du sommet cortical aux capteurs périphériques, car une génération de prédictions et une comparaison locale avec les erreurs s'effectuent à chaque échelon intermédiaire de la hiérarchie.",
       "D": "Confond le codage prédictif avec d'autres modèles hiérarchiques d'amplification descendante décrits par de Lange et ses collaborateurs : faire remonter la représentation sensorielle intégrale contredirait le principe d'emmagasinage et de traitement parcimonieux (analogue à une compression d'image) qui économise les ressources en ne propageant vers le haut que le résidu d'erreur non anticipé."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 95,
@@ -17715,7 +17868,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Pierre Poirier met explicitement en garde contre le contresens historique consistant à confondre l'énergie libre thermodynamique (physique ou métabolique) avec l'énergie libre variationnelle de Karl Friston, qui est une mesure purement informationnelle calculée sur des distributions de probabilités.",
       "C": "Conformément à l'exposé de Pierre Poirier et à l'analyse de Sprevak et Smith, le calcul bayésien fournit la norme idéale d'inférence mais s'avère infaisable directement à l'échelle de la complexité du monde réel, de sorte que la minimisation des erreurs de prédiction sert d'algorithme biologique pour l'approximer. Pierre Poirier précise ainsi que la minimisation de l'énergie libre variationnelle constitue un principe général directeur (Principle Theory), tandis que le codage prédictif par minimisation des erreurs de prédiction en est le mécanisme d'implémentation empiriquement réfutable et falsifiable au sens de Karl Popper (Implementation Theory).",
       "D": "Loin d'éliminer les croyances antérieures (priors), la minimisation hiérarchique des erreurs de prédiction confronte en continu les prédictions descendantes issues de ces croyances antérieures aux signaux sensoriels ascendants."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 96,
@@ -17776,7 +17930,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Cette option inverse la probabilité a priori et la vraisemblance : un monstre géant aurait une forte vraisemblance de faire trembler un immeuble s'il attaquait, mais c'est sa probabilité a priori (prior) qui est extrêmement faible au départ.",
       "C": "Comme l'explique Pierre Poirier, le fait que l'évidence sensorielle se soit déjà produite simplifie la normalisation par l'évidence globale, mais n'annule pas le rôle des croyances antérieures (priors), qui continuent de pondérer la vraisemblance.",
       "D": "Conformément à l'explication de Pierre Poirier, le choix rationnel sous incertitude (le maximum a posteriori) combine la probabilité a priori élevée de l'hypothèse et sa forte vraisemblance d'avoir causé l'évidence sensorielle, ce qui favorise d'abord le tremblement de terre."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 97,
@@ -17837,7 +17992,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'ajustement graduel du répertoire comportemental après l'exécution aveugle d'actions soumises aux renforcements positifs ou négatifs décrit l'échelon des créatures skinnériennes, chez qui la sélection s'opère ontogénétiquement par essais et erreurs aveugles directement dans l'environnement réel via le conditionnement opérant.",
       "C": "Conformément au troisième échelon de la Tour de Dennett exposé par Pierre Poirier, les créatures poppériennes utilisent une représentation interne du monde, d'elles-mêmes et de leurs actions possibles pour simuler et prédire le futur afin de trier leurs options en amont du comportement réel.",
       "D": "Décrit le mécanisme d'apprentissage associatif hebbien local (analogue au conditionnement classique de Pavlov par contiguïté temporelle) discuté par Pierre Poirier en réponse à Michel : bien qu'il permette d'entraîner localement les connexions synaptiques d'un réseau prédictif, il ne définit pas l'environnement sélectif interne poppérien qui pré-évalue des actions candidates avant leur exécution."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 98,
@@ -17898,7 +18054,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Confond l'attente subjective ponctuelle avec la mesure informationnelle fréquentiste : même anticipé consciemment ce jour-là par Pierre Poirier et Dave Saint-Amour, un éléphant dans une salle de classe reste statistiquement rarissime sur l'ensemble de leur carrière et conserve donc un fort surprisal.",
       "C": "Confond la surprise ponctuelle d'un événement (surprisal) avec l'entropie de Shannon, qui représente la surprise moyenne à long terme d'une distribution d'observations et ne s'inverse pas par une seule occurrence.",
       "D": "Contredit le fondement même de l'introduction de l'énergie libre variationnelle exposé sur les diapositives de Pierre Poirier : un organisme a accès à sa surprise ponctuelle mais ne peut pas calculer directement la surprise moyenne (entropie) de la distribution postérieure réelle, ce que l'énergie libre variationnelle permet d'approximer."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 99,
@@ -17959,7 +18116,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Double piège de l'entropie globale inaccessible et de la chambre noire (Dark Room Problem) : l'organisme n'a pas directement accès à la surprise moyenne (entropie) de la distribution postérieure réelle du monde extérieur. De plus, rester immobile dans une « chambre noire » privée de stimulation externe ne résout pas les erreurs de prédiction intéroceptives vitales liées à la faim ou au froid.",
       "C": "Piège de confusion avec la suppression par l'attente (de Lange et collaborateurs) : l'amortissement (dampening) et l'affinement (sharpening) désignent les deux mécanismes neurophysiologiques débattus pour expliquer la baisse d'activité corticale face à un stimulus visuel attendu, et non les deux voies générales de réduction de l'énergie libre variationnelle de l'organisme.",
       "D": "Résume avec exactitude les deux volets complémentaires de la stratégie générale du principe de l'énergie libre présentée sur les diapositives de Pierre Poirier : ajuster la distribution de reconnaissance interne aux signaux reçus (volet perceptif) ou agir dans l'environnement et restructurer sa niche écologique afin de modifier les signaux sensoriels eux-mêmes."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 100,
@@ -18020,7 +18178,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'explication de Pierre Poirier et à l'intégration sensori-motrice décrite par Bottemanne et collaborateurs, le cerveau anticipe les conséquences visuelles de sa propre commande saccadique, tandis que le déplacement mécanique passif de l'œil par le doigt n'est pas prédit de cette manière et fait surgir une erreur de prédiction consciente.",
       "C": "Les prédictions descendantes ne s'interrompent nullement pendant la saccade : au contraire, elles prédisent activement l'absence d'information pertinente durant le mouvement et la scène attendue en fin de saccade afin de supprimer l'erreur de prédiction.",
       "D": "La stabilité visuelle lors des saccades ne relève pas d'une simple habituation ou adaptation sensorielle passive à la fréquence du mouvement (distinction classique entre habituation et suppression par l'attente soulignée par Dave Saint-Amour et de Lange et collaborateurs), mais d'une prédiction descendante couplée à l'action motrice."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 101,
@@ -18081,7 +18240,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inverse l'effet d'une saison stable : en été ou en hiver, la faible variance confère une haute précision à l'estimateur, ce qui amplifie (au lieu d'amortir) le poids ascendant d'une anomalie thermique imprévue.",
       "C": "Conformément à l'exposé de Pierre Poirier et à l'article de Bottemanne et ses collaborateurs, la précision correspond à l'inverse de la variance : lorsque la variance attendue est faible (haute précision en saison stable), un écart imprévu reçoit un poids accru dans le traitement ascendant pour mettre à jour le modèle.",
       "D": "Confond les deux paramètres de la distribution normale : la moyenne encode la valeur centrale attendue à partir des observations passées, tandis que la précision (inverse de la variance) encode le degré de certitude autour de cette moyenne et varie fortement selon les saisons."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 102,
@@ -18142,7 +18302,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inverse l'organisation spatiotemporelle de la hiérarchie : ce sont les bas niveaux qui traitent les caractéristiques spatialement étroites et temporellement rapides, tandis que les niveaux supérieurs encodent les régularités abstraites et stables à grande échelle.",
       "C": "Affirmer que le cerveau résout l'ambiguïté en combinant de bas en haut les détecteurs de traits jusqu'aux représentations catégorielles abstraites décrit l'architecture purement ascendante (feed-forward) d'un réseau d'apprentissage profond classique allant de la petite échelle vers la grande échelle, que Pierre Poirier oppose précisément à l'utilisation descendante des estimateurs dans le cerveau prédictif (de la grande échelle vers la petite échelle).",
       "D": "Lorsqu'un indice sensoriel local est ambigu pris isolément (comme l'ensoleillement à travers la vitre ou la grimace faciale en gros plan), le cerveau ne suspend pas ses attentes préalables : il mobilise au contraire les prédicteurs contextuels des niveaux supérieurs pour lever l'ambiguïté."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 103,
@@ -18203,7 +18364,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Contrairement à une restitution sans perte, Pierre Poirier souligne explicitement, en évoquant le débat entre le vinyle analogique continu, le disque compact et la compression audio, que ce type de compression entraîne une perte d'information et fournit une approximation statistique économe du signal.",
       "C": "Le codage prédictif n'élimine pas les écarts locaux imprévus pour transmettre une moyenne globale : ce sont au contraire les régularités attendues qui sont prédites par les connexions descendantes, tandis que les variations imprévues constituent l'erreur de prédiction transmise aux échelons supérieurs.",
       "D": "Conformément à la démonstration de Pierre Poirier (Rao et Ballard), le codage prédictif exploite les corrélations spatiales et temporelles du signal sensoriel pour compresser l'information de manière parcimonieuse en transmettant la part résiduelle échappant aux prédictions."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 104,
@@ -18264,7 +18426,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'explication de Pierre Poirier, une précision trop haute et inflexible dans les bas niveaux propulse les moindres erreurs sensorielles ou viscérales vers le haut (perception précise de Laurent Mottron, hypersensibilité aux coutures de chaussettes, douleurs gastriques) et retarde le développement des modèles abstraits de haut niveau (décodage des émotions faciales).",
       "C": "Ce choix confond le modèle prédictif de l'autisme avec l'exemple de la marche dans le brouillard, où une modalité sensorielle dégradée (faible précision) est compensée par l'attention endogène. Dans l'autisme, la précision accordée aux erreurs de bas niveau est d'emblée excessivement élevée et inflexible.",
       "D": "Dans le codage prédictif, les représentations de haut niveau envoient des prédictions descendantes pour expliquer et amortir les signaux attendus aux niveaux inférieurs, sans saturer les récepteurs périphériques ascendants."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 105,
@@ -18325,7 +18488,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Bien qu'une forte incertitude sensorielle accroisse le poids relatif des attentes préalables (priors) lors de l'inférence perceptive, le rôle spécifique de l'attention endogène mobilisée dans le brouillard n'est pas d'abaisser le gain sensoriel, mais de l'augmenter proactivement dans les bas niveaux afin d'extraire à temps le moindre signal pertinent.",
       "C": "Ce mécanisme correspond à l'attention exogène (extrinsèque), où une bouffée ascendante d'erreurs de prédiction imprévues force passivement l'allocation de précision, alors que la conduite dans le brouillard repose sur l'attention endogène descendante.",
       "D": "Ce mécanisme décrit l'habituation expliquée par Pierre Poirier en réponse à une question en classe, où le système apprend à prédire qu'il n'y aura pas de changement et atténue l'erreur résiduelle, ce qui peut induire une cécité inattentionnelle (inattentional blindness)."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 106,
@@ -18386,7 +18550,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "L'instabilité ou la volatilité du capteur sensoriel diminue — et non augmente — la précision accordée aux erreurs de prédiction montantes afin d'éviter de prendre un bruit transitoire pour un signal réel.",
       "C": "Le clignotement de la caméra abaisse la fiabilité (précision) de l'entrée visuelle, ce qui sous-pondère l'erreur de prédiction montante et conduit l'opérateur à soutenir son modèle interne préalable tout en vérifiant avant d'interrompre la chaîne.",
       "D": "L'alternance perceptive bistable (comme dans la rivalité binoculaire entre l'image d'un tigre et celle d'un éléphant) survient lorsque deux entrées sensorielles discordantes déclenchent des mises à jour successives entre deux hypothèses concurrentes, et non lorsqu'une croyance préalable robuste fait face à un capteur momentanément bruité."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 107,
@@ -18447,7 +18612,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'analyse de Dave Saint-Amour et de l'article de Floris de Lange et ses collaborateurs, le cerveau interprète ces stimuli ambigus à l'aide d'heuristiques ou d'a priori bâtis sur les régularités statistiques stables de notre environnement naturel (présence d'une surface occultante au premier plan pour la figure de Kanizsa et éclairage provenant d'en haut pour la convexité des sphères).",
       "C": "Ces illusions apparaissent instantanément sans dépendre d'une habituation par répétition du stimulus, et l'aire visuelle primaire manifeste au contraire une activation spécifique en réponse aux contours illusoires de la figure de Kanizsa.",
       "D": "Conformément aux inférences inconscientes d'Hermann von Helmholtz et aux études d'imagerie laminaire à ultra-haut champ de Floris de Lange et ses collaborateurs, ces prédictions opèrent de manière automatique et activent sélectivement par rétroaction (feedback) les couches profondes de l'aire visuelle primaire, modifiant ainsi véritablement l'apparence perceptive de blancheur et de relief."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 108,
@@ -18508,7 +18674,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Sur le schéma du modèle prédictif, la prédiction dominante n'explique que l'entrée concordante (explaining away) et laisse persister une forte erreur de prédiction ascendante sur l'autre voie rétinienne. Il n'y a donc pas d'annulation simultanée des erreurs sur les deux rétines.",
       "C": "Loin de chercher à construire un percept hybride, la hiérarchie prédictive attribue une probabilité a priori quasi nulle à une chimère maison-visage (ou tigre-éléphant), ce qui empêche la fusion perceptive et produit l'alternance consciente.",
       "D": "Conformément au schéma de Hohwy et Friston présenté par Dave Saint-Amour et à l'analyse de Bottemanne et ses collaborateurs, l'improbabilité a priori d'un objet hybride empêche la fusion des deux images, tandis que l'erreur de prédiction ascendante générée par l'œil non expliqué s'accumule et force périodiquement le basculement vers l'hypothèse alternative."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 109,
@@ -18569,7 +18736,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix inverse les spécialisations sensorielles exposées en classe : si l'audition possède une meilleure résolution temporelle que la vision, c'est la précision spatiale supérieure du système visuel qui domine la localisation dans l'espace et attire la position perçue de la voix ou du toucher vers l'objet vu.",
       "C": "Ce choix confond la pondération bayésienne multisensorielle avec la suppression par l'attente (expectation suppression, de Lange et collaborateurs) : l'illusion du ventriloque ne résulte pas d'une extinction du cortex auditif primaire par l'attente, mais de la prépondérance accordée au signal visuel dans l'estimation spatiale.",
       "D": "Ce choix inverse le rôle de la croyance préalable et de l'erreur de prédiction : loin de renverser nos croyances a priori, la synchronie temporelle entre la voix et le mouvement des lèvres active puissamment l'attente d'une cause commune, conduisant le cerveau à fusionner les deux signaux au profit de la position visuelle plus précise."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 110,
@@ -18630,7 +18798,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "La suppression par l'attente (expectation suppression) désigne l'atténuation de la réponse neuronale évoquée lorsqu'un stimulus attendu se confirme (par réduction de l'erreur de prédiction ou affinement de la représentation), et non une inhibition de la détection causée par l'absence de contexte.",
       "C": "Conformément à l'explication de Dave Saint-Amour en classe, une scène cohérente permet au cerveau d'exploiter les régularités statistiques apprises dans l'environnement pour générer des prédictions spatiales inter-objets, évitant ainsi la recherche sérielle lente et coûteuse qu'impose l'absence d'indices contextuels.",
       "D": "Dave Saint-Amour souligne que bien avant sa théorie des géons, Biederman mettait déjà en évidence l'effet facilitateur global de la scène visuelle : le contexte ne déforme pas les composantes géométriques de l'objet et ne remplace pas l'inférence probabiliste, il agit précisément comme une attente contextuelle descendante qui guide l'inférence perceptive."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 111,
@@ -18691,7 +18860,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à l'analyse de Floris de Lange et ses collaborateurs présentée par Dave Saint-Amour, l'imagerie laminaire à ultra-haut champ démontre que le triangle illusoire de Kanizsa active sélectivement les couches profondes du cortex visuel primaire en évitant la couche granulaire intermédiaire, signature anatomique d'une prédiction descendante.",
       "C": "Malgré l'absence de trait physique tracé au centre sur la rétine, le cortex visuel primaire n'est pas inhibé sur le contour illusoire, car ses couches profondes sont sélectivement activées par la rétroaction descendante qui reconstruit la forme attendue.",
       "D": "Seule l'imagerie conventionnelle à basse résolution donnait l'impression d'une activation globale indifférenciée, alors que l'imagerie laminaire à ultra-haut champ dissocie nettement un contour physique réel qui active fortement la couche granulaire intermédiaire d'un contour illusoire de Kanizsa qui active sélectivement les couches profondes."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 112,
@@ -18752,7 +18922,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Ce choix confond l'exploration active avec une illusion perceptive descendante, car toucher une tasse froide ne bloque pas le signal thermique ascendant mais déclenche au contraire une erreur de prédiction franche qui corrige la croyance visuelle.",
       "C": "Loin d'aveugler les récepteurs thermiques cutanés pour protéger l'hypothèse initiale, l'action motrice échantillonne activement l'environnement afin de confronter la prédiction visuelle au retour somatosensoriel réel.",
       "D": "Conformément à l'analyse de Dave Saint-Amour, l'action motrice met à l'épreuve la prédiction issue de l'indice visuel de vapeur et entraîne une erreur de prédiction correctrice qui révise le modèle interne si la tasse s'avère froide."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 113,
@@ -18813,7 +18984,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Conformément à la démonstration de Pierre Poirier (Friston, Bottemanne et collaborateurs), percevoir, rêver et imaginer procèdent du même mécanisme génératif descendant issu du modèle interne, la perception étant simplement bridée et ajustée en continu par les erreurs sensorielles montantes.",
       "C": "Inverse le rôle respectif des deux flux : ce sont les prédictions descendantes (et non l'inhibition du flux descendant au profit des erreurs montantes) qui engendrent le contenu phénoménal de la perception, du rêve et de l'imagination.",
       "D": "Reprend précisément la thèse du modèle séquentiel classique (représentation symbolique centrale intercalée entre l'entrée sensorielle et la sortie motrice) que Pierre Poirier barre d'un cercle rouge et remplace par une hiérarchie générative d'estimateurs statistiques."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 114,
@@ -18874,7 +19046,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Chaque bloc de Hinton apprend de façon auto-supervisée à reconstruire et prédire ses propres entrées sans étiquetage externe préalable afin d'extraire un alphabet de caractéristiques, avant un éventuel usage supervisé global tel que reconnaître un chat dans une image sur Internet.",
       "C": "Conformément à l'explication de Pierre Poirier, l'apprentissage procède bloc par bloc en montant : chaque niveau apprend à prédire les états du niveau inférieur, voit ses connexions gelées une fois stabilisé, et sert de base d'entraînement au niveau supérieur.",
       "D": "Le pré-entraînement modulaire ne part pas du sommet abstrait vers la périphérie : il progresse du bas vers le haut à partir des entrées sensorielles de premier niveau, selon une logique séquentielle que Poirier rapproche de la maturation progressive du système nerveux humain."
-    }
+    },
+    "exam1_priority": false
   },
   {
     "id": 115,
@@ -18935,7 +19108,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Décrit le couplage réactif élémentaire d'un véhicule de Braitenberg sélectionné par algorithme évolutionnaire ou apprentissage par renforcement sans modèle, dépourvu de la hiérarchie générative descendante ajoutée au centre de l'architecture de Friston.",
       "C": "Décrit le modèle séquentiel classique purement ascendant (perception, représentation symbolique, puis action), explicitement rejeté par l'approche du traitement prédictif en faveur d'une boucle récurrente gouvernée par des prédictions descendantes.",
       "D": "Conformément à la présentation de Pierre Poirier et à l'article de Bottemanne et collaborateurs, l'inférence active de Friston loge une hiérarchie générative profonde au cœur de la boucle sensori-motrice : les prédictions descendantes déclenchent l'action pour conformer les entrées sensorielles, proprioceptives et intéroceptives aux attentes du modèle interne."
-    }
+    },
+    "exam1_priority": true
   },
   {
     "id": 116,
@@ -18996,7 +19170,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       "B": "Inverse symétriquement les effets neurophysiologiques respectifs de l'attente (qui réduit la réponse globale aux entrées probables) et de l'attention (qui amplifie le gain synaptique des signaux pertinents).",
       "C": "Inverse la distinction fonctionnelle cardinale établie par de Lange et collaborateurs et reprise par Dave Saint-Amour : c'est l'attente qui encode la probabilité statistique a priori (« qu'est-ce qui est probable ? ») et l'attention qui sélectionne la pertinence comportementale (« qu'est-ce qui est pertinent pour la tâche ? »).",
       "D": "Confond les deux processus par assimilation : si l'attente réduit bien l'amplitude de la réponse neuronale globale (expectation suppression), l'attention augmente au contraire le gain de précision et amplifie le signal pertinent, pouvant même contrecarrer ou inverser la suppression par l'attente."
-    }
+    },
+    "exam1_priority": true
   }
 ];
 
@@ -19906,6 +20081,11 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       const ctxEl = document.getElementById('qContextText');
       if (ctxEl) ctxEl.textContent = q.context || '';
 
+      const prioWrap = document.getElementById('qExamPriorityWrap');
+      if (prioWrap) {
+        prioWrap.style.display = q.exam1_priority ? 'flex' : 'none';
+      }
+
       const titleEl = document.getElementById('qQuestionTitle');
       if (titleEl) titleEl.textContent = q.question;
 
@@ -20528,6 +20708,8 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
 
       const q = doc.getElementById('fcQuestionText');
       if (q) q.textContent = 'Aucune carte dans ce filtre.';
+      const fcPrioEmpty = doc.getElementById('fcExamPriorityBadge');
+      if (fcPrioEmpty) fcPrioEmpty.style.display = 'none';
       const fcCounterText = doc.getElementById('fcCounterText');
       if (fcCounterText) fcCounterText.textContent = "0 / 0";
       const empty = doc.getElementById('fcEmptyState');
@@ -20569,6 +20751,10 @@ Terminer par quelques distinctions à restituer, sans prédire les questions de 
       if (docBadge) {
         docBadge.textContent = getDocBadgeTitle(q.doc_id);
         docBadge.className = 'fc-badge ' + getDocBadgeClass(q.doc_id);
+      }
+      const fcPrioBadge = document.getElementById('fcExamPriorityBadge');
+      if (fcPrioBadge) {
+        fcPrioBadge.style.display = q.exam1_priority ? 'inline-flex' : 'none';
       }
 
       // Recto
